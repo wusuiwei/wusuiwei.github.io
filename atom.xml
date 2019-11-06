@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-06T15:27:40.599Z</updated>
+  <updated>2019-11-06T18:04:22.620Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,72 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【设计模式】单例模式</title>
+    <link href="http://yoursite.com/2019/11/07/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://yoursite.com/2019/11/07/【设计模式】单例模式/</id>
+    <published>2019-11-06T17:34:05.000Z</published>
+    <updated>2019-11-06T18:04:22.620Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="../images/1492879820728.jpg" alt="1492879820728"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;../images/1492879820728.jpg&quot; alt=&quot;1492879820728&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>java技术</title>
+    <link href="http://yoursite.com/2019/11/07/java%E6%8A%80%E6%9C%AF/"/>
+    <id>http://yoursite.com/2019/11/07/java技术/</id>
+    <published>2019-11-06T17:29:14.000Z</published>
+    <updated>2019-11-06T17:38:00.367Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="asserts/%E4%B8%AD.jpg" alt="中"></p><p>法打飞机埃里克森</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">"hello"</span>);</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;asserts/%E4%B8%AD.jpg&quot; alt=&quot;中&quot;&gt;&lt;/p&gt;
+&lt;p&gt;法打飞机埃里克森&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span cla
+      
+    
+    </summary>
+    
+    
+      <category term="JavaSE" scheme="http://yoursite.com/categories/JavaSE/"/>
+    
+    
+      <category term="java" scheme="http://yoursite.com/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>中国简史</title>
+    <link href="http://yoursite.com/2019/11/07/%E4%B8%AD%E5%9B%BD%E7%AE%80%E5%8F%B2/"/>
+    <id>http://yoursite.com/2019/11/07/中国简史/</id>
+    <published>2019-11-06T17:28:25.000Z</published>
+    <updated>2019-11-06T17:36:47.945Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
