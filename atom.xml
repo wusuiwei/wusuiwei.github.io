@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-11-06T18:04:22.620Z</updated>
+  <updated>2019-11-06T18:10:09.772Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://yoursite.com/2019/11/07/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
     <id>http://yoursite.com/2019/11/07/【设计模式】单例模式/</id>
     <published>2019-11-06T17:34:05.000Z</published>
-    <updated>2019-11-06T18:04:22.620Z</updated>
+    <updated>2019-11-06T18:10:09.772Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="../images/1492879820728.jpg" alt="1492879820728"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/images/1492879820728.jpg" alt="1492879820728"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;../images/1492879820728.jpg&quot; alt=&quot;1492879820728&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;/images/1492879820728.jpg&quot; alt=&quot;1492879820728&quot;&gt;&lt;/p&gt;
 
       
     
