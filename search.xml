@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>【Java笔记】基本语法</title>
-    <url>/2019/11/07/java/%E3%80%90Java%E7%AC%94%E8%AE%B0%E3%80%91%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<p><img src="/images/1.jpg" alt="1"></p>
-<p><img src="/images/1492879820728.jpg" alt="1492879820728"></p>
+    <title>【设计模式】工厂方法模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<img src="/img/git.png" width = "900" height = "600" alt="git" align=center />
+摘要内容......
+<a id="more"></a>
+
 ]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Untitled</title>
+    <url>/2019/11/07/Untitled/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>【Java笔记】基本语法</title>
+    <url>/2019/11/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E7%AC%94%E8%AE%B0%E3%80%91%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+    <content><![CDATA[]]></content>
       <categories>
         <category>Java笔记</category>
       </categories>
@@ -16,7 +31,7 @@
   </entry>
   <entry>
     <title>【Java笔记】异常处理</title>
-    <url>/2019/11/07/java/%E3%80%90Java%E7%AC%94%E8%AE%B0%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
+    <url>/2019/11/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E7%AC%94%E8%AE%B0%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
