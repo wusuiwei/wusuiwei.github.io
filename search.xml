@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>【设计模式】工厂方法模式</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<img src="/img/git.png" width = "900" height = "600" alt="git" align=center />
-摘要内容......
-<a id="more"></a>
-
-]]></content>
+    <title>【设计模式】抽象工厂模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
       <categories>
         <category>设计模式</category>
       </categories>
   </entry>
   <entry>
-    <title>Untitled</title>
-    <url>/2019/11/07/Untitled/</url>
-    <content><![CDATA[]]></content>
+    <title>【设计模式】工厂方法模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
   </entry>
   <entry>
     <title>【Java笔记】基本语法</title>
