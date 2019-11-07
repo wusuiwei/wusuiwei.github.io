@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2019-11-06T18:10:09.772Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://wusuiwei.github.io/"/>
+  <updated>2019-11-07T06:53:30.643Z</updated>
+  <id>http://wusuiwei.github.io/</id>
   
   <author>
     <name>wusuiwei</name>
@@ -17,86 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>【设计模式】单例模式</title>
-    <link href="http://yoursite.com/2019/11/07/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://yoursite.com/2019/11/07/【设计模式】单例模式/</id>
-    <published>2019-11-06T17:34:05.000Z</published>
-    <updated>2019-11-06T18:10:09.772Z</updated>
+    <title>【Java笔记】基本语法</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/java/%E3%80%90Java%E7%AC%94%E8%AE%B0%E3%80%91%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/java/【Java笔记】基本语法/</id>
+    <published>2019-11-07T06:06:04.000Z</published>
+    <updated>2019-11-07T06:53:30.643Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="/images/1492879820728.jpg" alt="1492879820728"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="/images/1.jpg" alt="1"></p><p><img src="/images/1492879820728.jpg" alt="1492879820728"></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;/images/1492879820728.jpg&quot; alt=&quot;1492879820728&quot;&gt;&lt;/p&gt;
+        &lt;p&gt;&lt;img src=&quot;/images/1.jpg&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/images/1492879820728.jpg&quot; alt=&quot;1492879820728&quot;&gt;&lt;/p&gt;
 
       
     
     </summary>
     
     
+      <category term="Java笔记" scheme="http://wusuiwei.github.io/categories/Java%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Java" scheme="http://wusuiwei.github.io/tags/Java/"/>
+    
+      <category term="语法" scheme="http://wusuiwei.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
   <entry>
-    <title>java技术</title>
-    <link href="http://yoursite.com/2019/11/07/java%E6%8A%80%E6%9C%AF/"/>
-    <id>http://yoursite.com/2019/11/07/java技术/</id>
-    <published>2019-11-06T17:29:14.000Z</published>
-    <updated>2019-11-06T17:38:00.367Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="asserts/%E4%B8%AD.jpg" alt="中"></p><p>法打飞机埃里克森</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(<span class="string">"hello"</span>);</span><br></pre></td></tr></table></figure>]]></content>
+    <title>【Java笔记】异常处理</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/java/%E3%80%90Java%E7%AC%94%E8%AE%B0%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/java/【Java笔记】异常处理/</id>
+    <published>2019-11-07T06:05:15.000Z</published>
+    <updated>2019-11-07T06:05:45.219Z</updated>
     
     <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;asserts/%E4%B8%AD.jpg&quot; alt=&quot;中&quot;&gt;&lt;/p&gt;
-&lt;p&gt;法打飞机埃里克森&lt;/p&gt;
-&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span cla
-      
-    
-    </summary>
-    
-    
-      <category term="JavaSE" scheme="http://yoursite.com/categories/JavaSE/"/>
-    
-    
-      <category term="java" scheme="http://yoursite.com/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>中国简史</title>
-    <link href="http://yoursite.com/2019/11/07/%E4%B8%AD%E5%9B%BD%E7%AE%80%E5%8F%B2/"/>
-    <id>http://yoursite.com/2019/11/07/中国简史/</id>
-    <published>2019-11-06T17:28:25.000Z</published>
-    <updated>2019-11-06T17:36:47.945Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2019/11/06/hello-world/"/>
-    <id>http://yoursite.com/2019/11/06/hello-world/</id>
-    <published>2019-11-06T15:27:40.599Z</published>
-    <updated>2019-11-06T15:27:40.599Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
     
     </summary>
     
