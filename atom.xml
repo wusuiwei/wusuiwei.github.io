@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wusuiwei.github.io/"/>
-  <updated>2019-11-07T07:25:06.025Z</updated>
+  <updated>2019-11-07T07:35:09.550Z</updated>
   <id>http://wusuiwei.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>【设计模式】抽象工厂模式</title>
-    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】抽象工厂模式/</id>
+    <title>【设计模式】适配器模式</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】适配器模式/</id>
+    <published>2019-11-07T07:23:49.000Z</published>
+    <updated>2019-11-07T07:35:09.550Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+
+      
+    
+    </summary>
+    
+    
+      <category term="设计模式" scheme="http://wusuiwei.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【设计模式】单例模式</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】单例模式/</id>
     <published>2019-11-07T07:19:57.000Z</published>
-    <updated>2019-11-07T07:25:06.025Z</updated>
+    <updated>2019-11-07T07:35:06.822Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
@@ -41,11 +67,11 @@
   </entry>
   
   <entry>
-    <title>【设计模式】工厂方法模式</title>
-    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】工厂方法模式/</id>
-    <published>2019-11-07T07:12:33.000Z</published>
-    <updated>2019-11-07T07:21:11.351Z</updated>
+    <title>【设计模式】抽象工厂模式</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】抽象工厂模式/</id>
+    <published>2019-11-07T07:19:57.000Z</published>
+    <updated>2019-11-07T07:32:35.537Z</updated>
     
     <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
@@ -54,6 +80,34 @@
       
       
         &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+
+      
+    
+    </summary>
+    
+    
+      <category term="设计模式" scheme="http://wusuiwei.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【设计模式】工厂方法模式</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】工厂方法模式/</id>
+    <published>2019-11-07T07:12:33.000Z</published>
+    <updated>2019-11-07T07:35:03.802Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+
       
     
     </summary>
