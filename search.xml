@@ -1,6 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【Spring笔记】核心容器</title>
+    <url>/2019/11/08/Spring%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A0%B8%E5%BF%83%E5%AE%B9%E5%99%A8/</url>
+    <content><![CDATA[<p>IOC容器根据XML文件、Java注释或Java config文件中的配置信息创建、装配、管理bean，Spring应用只需要声明所需的类就可以直接使用这些bean的功能。如下图：</p>
+<p> <img src="/images/5ab6e3c3c7c024947945a20841bd20ea_498x296.png" alt="The Spring IoC container"></p>
+<a id="more"></a>
+
+<h1 id="Spring-IOC-Container"><a href="#Spring-IOC-Container" class="headerlink" title="Spring IOC Container"></a>Spring IOC Container</h1><h2 id="IOC-vs-DI"><a href="#IOC-vs-DI" class="headerlink" title="IOC vs. DI"></a>IOC vs. DI</h2><blockquote>
+<h2 id="1-What-is-Inversion-of-Control-IoC"><a href="#1-What-is-Inversion-of-Control-IoC" class="headerlink" title="1. What is Inversion of Control (IoC)"></a>1. What is Inversion of Control (IoC)</h2><p>In traditional programming, the flow of the business logic is determined by objects that are statically assigned to one another. With <em>inversion of control</em>, the flow depends on the object graph that is instantiated by the assembler and is made possible by object interactions being defined through abstractions. The binding process is achieved through <em>dependency injection</em>, although some argue that the use of a service locator also provides inversion of control.</p>
+<p><strong>Inversion of control as a design guideline</strong> serves the following purposes:</p>
+<ol>
+<li>There is a decoupling of the execution of a certain task from implementation.</li>
+<li>Every module can focus on what it is designed for.</li>
+<li>Modules make no assumptions about what other systems do but rely on their contracts.</li>
+<li>Replacing modules has no side effect on other modules.</li>
+</ol>
+</blockquote>
+<blockquote>
+<h2 id="2-What-is-Dependency-Injection-DI"><a href="#2-What-is-Dependency-Injection-DI" class="headerlink" title="2. What is Dependency Injection (DI)"></a>2. What is Dependency Injection (DI)</h2><p>IoC is a design paradigm with the goal of giving more control to the targeted components of your application, the ones getting the work done. While <em>Dependency injection</em> is a pattern used to create instances of objects that other objects rely on without knowing at compile time which class will be used to provide that functionality. IoC relies on dependency injection because a mechanism is needed in order to activate the components providing the specific functionality.</p>
+<p>The two concepts work together in this way to allow for much more flexible, reusable, and encapsulated code to be written. As such, they are important concepts in designing object-oriented solutions.</p>
+</blockquote>
+<h2 id="IOC-Container"><a href="#IOC-Container" class="headerlink" title="IOC Container"></a>IOC Container</h2><p>IOC容器根据XML文件、Java注释或Java config文件中的配置信息创建、装配、管理bean，Spring应用只需要声明所需的类就可以直接使用这些bean的功能。如下图：</p>
+<p> <img src="/images/5ab6e3c3c7c024947945a20841bd20ea_498x296.png" alt="The Spring IoC container"> </p>
+<p>IOC容器执行的主要任务：</p>
+<ul>
+<li>创建bean实例</li>
+<li>根据配置文件装配bean</li>
+<li>为bean设置初始化参数</li>
+<li>管理bean的生命周期</li>
+</ul>
+<blockquote>
+<p><strong>什么是Java Bean？</strong></p>
+<p>Bean是Java中基本的代码重用单位，是遵守一定约定的Java类。</p>
+<ul>
+<li>必须是个公有(public)类</li>
+<li>有无参构造函数</li>
+<li>用公共方法暴露内部成员属性(getter,setter)</li>
+</ul>
+<p>在Spring中，Bean就是普通的Java类，由Spring IoC容器实例化、组装、管理。</p>
+</blockquote>
+<p>Spring提供了两种类型的IOC容器实现：</p>
+<ul>
+<li><code>BeanFactory</code>：IOC容器的基本实现,是Spring框架的基础设施，面向Spring本身。</li>
+<li><code>ApplicationContext</code>:提供了更多的高级特性，是<code>BeanFactory</code>的子接口.面向使用Spring框架的开发者，几乎所有场合都直接使用<code>ApplicationContext</code>而非<code>BeanFactory</code>。</li>
+</ul>
+<p><code>ApplicationContext</code>初始化时实例化所有的Bean，主要实现类如下</p>
+<p><img src="/images/1545965390369.png" alt="1545965390369"></p>
+<ul>
+<li><code>ClassPathXmlApplicationContext</code>从类路径下加载配置文件。</li>
+<li><code>FileSystemXmlApplicationContext</code>从文件系统中加载配置文件。</li>
+</ul>
+<p><code>ConfigurableApplicationContext</code> extends <code>ApplicationContext</code>，主要新增了refresh()和close()方法，让ApplicationContext具有启动、刷新和关闭上下文的能力。</p>
+<blockquote>
+<p>创建ApplicationContext</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">ApplicationContext context = <span class="keyword">new</span> FileSystemXmlApplicationContext(<span class="string">"beans.xml"</span>);</span><br><span class="line">HelloWorld obj = (HelloWorld) context.getBean(<span class="string">"helloWorld"</span>);</span><br></pre></td></tr></table></figure>
+
+<h2 id="Spring-HelloWorld"><a href="#Spring-HelloWorld" class="headerlink" title="Spring HelloWorld"></a><strong>Spring HelloWorld</strong></h2><blockquote>
+<p>创建POJO(Customer.java)</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Customer</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String gender;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>配置元数据(beans.xml)</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"customer"</span> <span class="attr">class</span>=<span class="string">"com.wusuiwei.spring.helloworld.Customer"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"id"</span> <span class="attr">value</span>=<span class="string">"1"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"gender"</span> <span class="attr">value</span>=<span class="string">"男"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">value</span>=<span class="string">"张三"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>加载配置文件(beans.xml)与POJO(Customer.java)，通过ioc容器获取bean对象</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//通过ClassPathXmlApplicationContext加载上下文</span></span><br><span class="line">        ApplicationContext context = <span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">"beans.xml"</span>);</span><br><span class="line">        <span class="comment">//从上下文中获取相应的bean对象</span></span><br><span class="line">        Customer customer = (Customer) context.getBean(<span class="string">"customer"</span>);</span><br><span class="line">        System.out.println(customer.toString());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>运行结果：<code>Customer(id=1, name=张三, gender=男)</code></p>
+</blockquote>
+<h1 id="Spring-Bean-Configuration"><a href="#Spring-Bean-Configuration" class="headerlink" title="Spring Bean Configuration"></a>Spring Bean Configuration</h1><h2 id="XML-based-Configuration"><a href="#XML-based-Configuration" class="headerlink" title="XML-based Configuration"></a>XML-based Configuration</h2><h3 id="Bean-Definition"><a href="#Bean-Definition" class="headerlink" title="Bean Definition"></a>Bean Definition</h3><ul>
+<li>构造器实例化</li>
+</ul>
+<blockquote>
+<p>Java Bean（Car.java)</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.wusuiwei.spring.ioc;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> lombok.AllArgsConstructor;</span><br><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"><span class="keyword">import</span> lombok.NoArgsConstructor;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Car</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String brand;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">double</span> price;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>xml配置（beans.xml)</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"> <span class="comment">&lt;!--无参构造器创建--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"car"</span> <span class="attr">class</span>=<span class="string">"com.wusuiwei.spring.ioc.Car"</span>/&gt;</span></span><br><span class="line"><span class="comment">&lt;!--有参构造器创建--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"car2"</span> <span class="attr">class</span>=<span class="string">"com.wusuiwei.spring.ioc.Car"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">index</span>=<span class="string">"0"</span> <span class="attr">value</span>=<span class="string">"大众"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">index</span>=<span class="string">"1"</span> <span class="attr">value</span>=<span class="string">"300000"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+</blockquote>
+<ul>
+<li>实例工厂方法实例化</li>
+</ul>
+<blockquote>
+<p> Java Bean（Car.java)</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.wusuiwei.spring.ioc;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> lombok.AllArgsConstructor;</span><br><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"><span class="keyword">import</span> lombok.NoArgsConstructor;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Car</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String brand;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">double</span> price;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Java Bean Factory(InstanceCarFactory.java)</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">InstanceCarFactory</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Map&lt;String,Car&gt; cars=<span class="keyword">null</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">InstanceCarFactory</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        cars = <span class="keyword">new</span> HashMap&lt;String, Car&gt;();</span><br><span class="line">        cars.put(<span class="string">"Audi"</span>, <span class="keyword">new</span> Car(<span class="string">"Audi"</span>, <span class="number">32000</span>));</span><br><span class="line">        cars.put(<span class="string">"Ford"</span>, <span class="keyword">new</span> Car(<span class="string">"Ford"</span>, <span class="number">40000</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Car <span class="title">getCar</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span>  cars.get(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>配置文件（beans.xml)</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--实例工厂方法配置bean--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--配置实例工厂类实例--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"instanceCarFactory"</span> <span class="attr">class</span>=<span class="string">"com.master.yi.spring.factory.InstanceCarFactory"</span>&gt;</span><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">	factory-bean:指向实例工厂类的实例</span></span><br><span class="line"><span class="comment">	factory-method：指向实例工厂类的工厂方法</span></span><br><span class="line"><span class="comment">	constructor-arg：如果工厂方法需要传参，则使用constructor-arg传入参数</span></span><br><span class="line"><span class="comment">	--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"car2"</span> <span class="attr">factory-bean</span>=<span class="string">"instanceCarFactory"</span> <span class="attr">factory-method</span>=<span class="string">"getCar"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">value</span>=<span class="string">"Ford"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>静态工厂方法实例化</li>
+</ul>
+<blockquote>
+<p> Java Bean（Car.java)</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.wusuiwei.spring.ioc;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> lombok.AllArgsConstructor;</span><br><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"><span class="keyword">import</span> lombok.NoArgsConstructor;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Car</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String brand;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">double</span> price;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Java Bean Factory(StaticCarFactory.java)</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StaticCarFactory</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span>  Map&lt;String,Car&gt; cars= <span class="keyword">new</span> HashMap&lt;String, Car&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        cars.put(<span class="string">"Audi"</span>, <span class="keyword">new</span> Car(<span class="string">"Audi"</span>, <span class="number">32000</span>));</span><br><span class="line">        cars.put(<span class="string">"Ford"</span>, <span class="keyword">new</span> Car(<span class="string">"Ford"</span>, <span class="number">40000</span>));</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Car <span class="title">getCar</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> cars.get(name);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>配置文件（beans.xml)</p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!--静态工厂方法配置bean--&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">	class:指向静态工厂类的全类名</span></span><br><span class="line"><span class="comment">	factory-method：指向静态工厂类的工厂方法</span></span><br><span class="line"><span class="comment">	constructor-arg：如果工厂方法需要传参，则使用constructor-arg传入参数</span></span><br><span class="line"><span class="comment">	--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"car1"</span> <span class="attr">class</span>=<span class="string">"com.master.yi.spring.factory.StaticCarFactory"</span> <span class="attr">factory-method</span>=<span class="string">"getCar"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">value</span>=<span class="string">"Audi"</span>&gt;</span><span class="tag">&lt;/<span class="name">constructor-arg</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Dependency-Injection"><a href="#Dependency-Injection" class="headerlink" title="Dependency Injection"></a>Dependency Injection</h3><ol>
+<li>属性注入</li>
+</ol>
+<ul>
+<li>属性注入即通过Java bean 属性的<code>setter</code>方法注入bean的属性值或依赖的对象。</li>
+<li>标签：<code>&lt;property&gt;&lt;/property&gt;</code><ul>
+<li><code>name</code>属性：必填，指定bean的属性名</li>
+<li><code>value</code>属性/value子节点：赋值</li>
+<li><code>ref</code>属性/ref子节点：赋引用值</li>
+<li>子标签<code>ref</code>、<code>value</code>、<code>bean</code>、<code>array</code>、<code>list</code>、<code>map</code>、<code>set</code>、<code>null</code>、<code>props</code>、<code>meta</code>、<code>description</code>、<code>idref</code>:指定属性值及其他信息</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"person"</span> <span class="attr">class</span>=<span class="string">"com.master.yi.spring.Person"</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">value</span>=<span class="string">"Jacket"</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>构造器注入</li>
+</ol>
+<ul>
+<li>通过构造方法注入Bean的属性或依赖的对象，它保证了Bean实力在实例化后就可以使用。</li>
+<li>构造方法注入在<code>constructor-org&gt;</code>元素里声明属性，<code>constructor-org&gt;</code>中没有name属性。</li>
+<li>标签：<code>&lt;constructor-org&gt;&lt;/constructor-org&gt;</code><ul>
+<li><code>type</code>:指定参数的名称</li>
+<li><code>index</code>：指定参数的顺序</li>
+<li><code>name</code>：指定参数名称</li>
+<li><code>value</code>/value子节点:赋值</li>
+<li><code>ref</code>/ref子节点：赋引用值</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"car3"</span> <span class="attr">class</span>=<span class="string">"com.wusuiwei.spring.ioc.Car"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">type</span>=<span class="string">"java.lang.Long"</span> <span class="attr">value</span>=<span class="string">"300000"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">"brand"</span> <span class="attr">value</span>=<span class="string">"奥迪"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>接口注入(xml配置方式不支持)</li>
+</ol>
+<h3 id="Bean-Autowiring"><a href="#Bean-Autowiring" class="headerlink" title="Bean Autowiring"></a>Bean Autowiring</h3><p>Spring提供了<code>@Autowired</code>注解进行自动装配，可以用于多个地方：</p>
+<ul>
+<li>setter方法</li>
+<li>构造方法</li>
+<li>成员属性</li>
+<li>任意方法</li>
+</ul>
+<h3 id="Bean-Definition-Inheritance"><a href="#Bean-Definition-Inheritance" class="headerlink" title="Bean Definition Inheritance"></a>Bean Definition Inheritance</h3><h3 id="Bean-Scope"><a href="#Bean-Scope" class="headerlink" title="Bean Scope"></a>Bean Scope</h3><table>
+<thead>
+<tr>
+<th align="left">Scope</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>singleton</code></td>
+<td align="left">(Default) Scopes a single bean definition to a single object instance for each Spring IoC container.</td>
+</tr>
+<tr>
+<td align="left"><code>prototype</code></td>
+<td align="left">Scopes a single bean definition to any number of object instances.</td>
+</tr>
+<tr>
+<td align="left"><code>request</code></td>
+<td align="left">Scopes a single bean definition to the lifecycle of a single HTTP request. That is, each HTTP request has its own instance of a bean created off the back of a single bean definition. Only valid in the context of a web-aware Spring <code>ApplicationContext</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>session</code></td>
+<td align="left">Scopes a single bean definition to the lifecycle of an HTTP <code>Session</code>. Only valid in the context of a web-aware Spring <code>ApplicationContext</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>application</code></td>
+<td align="left">Scopes a single bean definition to the lifecycle of a <code>ServletContext</code>. Only valid in the context of a web-aware Spring <code>ApplicationContext</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>websocket</code></td>
+<td align="left">Scopes a single bean definition to the lifecycle of a <code>WebSocket</code>. Only valid in the context of a web-aware Spring <code>ApplicationContext</code>.</td>
+</tr>
+</tbody></table>
+<p>常用的有<code>singleton</code>、<code>prototype</code></p>
+<ul>
+<li>singleton` : 默认值，每个容器仅创建一次，并存储在缓存中，后续的请求和应用都得到该实例。</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- To specify singleton scope is redundant --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"beanId"</span> <span class="attr">class</span>=<span class="string">"com.howtodoinjava.BeanClass"</span> <span class="attr">scope</span>=<span class="string">"singleton"</span> /&gt;</span></span><br><span class="line">//or</span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"beanId"</span> <span class="attr">class</span>=<span class="string">"com.howtodoinjava.BeanClass"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>prototype</code>：对该bean的请求都会创建新的实例。</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"beanId"</span> <span class="attr">class</span>=<span class="string">"com.howtodoinjava.BeanClass"</span> <span class="attr">scope</span>=<span class="string">"prototype"</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Bean-Life-Cycle"><a href="#Bean-Life-Cycle" class="headerlink" title="Bean Life Cycle"></a>Bean Life Cycle</h3><p>Spring Bean的生命周期从spring容器创建开始，直到最终容器销毁bean。</p>
+<h3 id="BeanPostProcessors"><a href="#BeanPostProcessors" class="headerlink" title="BeanPostProcessors"></a>BeanPostProcessors</h3><h2 id="Annotation-based-Configuration"><a href="#Annotation-based-Configuration" class="headerlink" title="Annotation-based Configuration"></a>Annotation-based Configuration</h2><h3 id="Component-Scan"><a href="#Component-Scan" class="headerlink" title="Component Scan"></a>Component Scan</h3><blockquote>
+<p><strong>组件扫描</strong></p>
+<ol>
+<li><p>使用<code>&lt;context:component-scan&gt;</code>标签开启组件扫描配置</p>
+<ul>
+<li><code>base-pachage</code>属性：spring会自动扫描基类包及其子包下的所有类，多个包可以用逗号分隔- </li>
+<li><code>resource-pattern</code>属性：spring会过滤特定的类</li>
+<li><code>&lt;context:include-filter&gt;</code>子节点：要包含的目标类</li>
+<li><code>&lt;context:exclude-filter&gt;</code>子节点：要排除的目标类</li>
+<li><code>&lt;context:include-filter&gt;</code> 和 <code>&lt;context:exclude-filter&gt;</code> 子节点 支持多种类型的过滤表达式：</li>
+</ul>
+</li>
+</ol>
+<p><img src="/images/1571818551051.png" alt="1571818551051"></p>
+</blockquote>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:context</span>=<span class="string">"http://www.springframework.org/schema/context"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 自动扫描`com.wusuiwei.spring` 包及其子包下的所有 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.wusuiwei.spring"</span> <span class="attr">resource-pattern</span>=<span class="string">"autowire/*.class"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>常用于标识组件的注解：</p>
+<ul>
+<li><code>@Componet</code>：  基本注解, 标识了一个受 Spring 管理的组件 </li>
+<li><code>@Repository</code>：  标识持久层组件 </li>
+<li><code>@Service</code>： 标识服务层(业务层)组件 </li>
+<li><code>@Controller</code>： 标识表现层组件 </li>
+</ul>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Service;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PositionService</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">save</span><span class="params">()</span></span></span><br><span class="line"><span class="function">	</span>&#123;</span><br><span class="line">		System.out.println(<span class="string">"PositionService save..."</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Component-Autowiring"><a href="#Component-Autowiring" class="headerlink" title="Component Autowiring"></a>Component Autowiring</h3><p><strong>使用 @Autowired自动装配Bean</strong></p>
+<p><code>@Autowired</code>注解用法：</p>
+<ul>
+<li><p>@Autowired 注解自动装配单个Java Bean属性</p>
+</li>
+<li><p>@Autowired 注解自动装配任意方法的参数</p>
+</li>
+<li><p>@Authwired 注解也可以应用在<strong>数组类型</strong>的属性上, 此时 Spring 将会把所有匹配的 Bean 进行自动装配.</p>
+</li>
+<li><p>@Authwired 注解也可以应用在<strong>集合属性</strong>上, 此时 Spring 读取该集合的类型信息, 然后自动装配所有与之兼容的 Bean. </p>
+</li>
+<li><p>@Authwired 注解用在 <strong>java.util.Map</strong> 上时, 若该 Map 的键值为 String, 那么 Spring 将自动装配与之 Map 值类型兼容的 Bean, 此时 Bean 的名称作为键值</p>
+</li>
+<li><p>默认情况下, 当 IOC 容器里存在多个类型兼容的 Bean 时, 通过类型的自动装配将无法工作. 此时可以在 <strong>@Qualifier</strong> 注解里提供 Bean 的名称. <strong>Spring 允许对方法的入参标注 @Qualifiter 已指定注入 Bean 的名称</strong>。</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">A</span> </span>&#123;&#125;</span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">B</span> </span>&#123;&#125;</span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">C</span> </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span> </span>&#123;</span><br><span class="line">	<span class="meta">@Autowired</span> <span class="comment">//从成员变量注入</span></span><br><span class="line">	<span class="keyword">private</span> A a;</span><br><span class="line">	<span class="keyword">private</span> B b;</span><br><span class="line">	<span class="keyword">private</span> C c;</span><br><span class="line"></span><br><span class="line">	<span class="meta">@Autowired</span> <span class="comment">//从构造方法注入</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="title">MyClass</span><span class="params">(C c)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.c = c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> A <span class="title">getA</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> a;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setA</span><span class="params">(A a)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.a = a;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> B <span class="title">getB</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> b;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="meta">@Autowired</span> <span class="comment">//从普通/setter方法注入</span></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setB</span><span class="params">(B b)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.b = b;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> C <span class="title">getC</span><span class="params">()</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> c;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setC</span><span class="params">(C c)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">this</span>.c = c;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Java-based-Configuration"><a href="#Java-based-Configuration" class="headerlink" title="Java-based Configuration"></a>Java-based Configuration</h2>]]></content>
+      <categories>
+        <category>Spring笔记</category>
+      </categories>
+      <tags>
+        <tag>Spring Core</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Spring笔记】框架概述</title>
+    <url>/2019/11/08/Spring%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<p>Spring框架是分层的Java SE/EE 应用 full-stack 轻量级开源框架。</p>
+<p>Spring框架核心特性：<strong>IOC(Inverse Of Control)</strong> 和 <strong>AOP(Aspect Oriented Programming)</strong>。</p>
+<blockquote>
+<p> <strong>JEE – Java Enterprise Edition / Java企业版</strong><br> 主要用于开发企业软件的Java版本。企业软件例子：会计软件、帐单管理、业务流程管理、CMS、CRM、ERP等。 </p>
+</blockquote>
+<p>Spring框架的优势：</p>
+<ul>
+<li>方便解耦，简化开发 （高内聚低耦合） </li>
+<li>AOP编程的支持</li>
+<li>声明式事务的支持</li>
+<li>方便程序的测试</li>
+<li>方便集成各种优秀框架</li>
+<li>降低JavaEE API的使用难度</li>
+</ul>
+<a id="more"></a>
+
+<hr>
+<h2 id="Spring框架体系结构"><a href="#Spring框架体系结构" class="headerlink" title="Spring框架体系结构"></a>Spring框架体系结构</h2><p>Spring框架大概由20个模块组成，可分为几个大的层次：核心容器、数据访问、集成、Web、AOP（面向切面编程）、工具和测试等，如下图所示。 </p>
+<p><img src="/images/spring-overview.png" alt="Spring5 overview"></p>
+<h2 id="Spring框架之HelloWorld-IDEA版本"><a href="#Spring框架之HelloWorld-IDEA版本" class="headerlink" title="Spring框架之HelloWorld(IDEA版本)"></a>Spring框架之HelloWorld(IDEA版本)</h2><ol>
+<li><strong>引入依赖</strong></li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- spring-core --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.0.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- spring-context --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-context<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.0.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- spring-beans --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-beans<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.2.0.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!-- lombok 简化JavaBean开发 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.18.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>创建Java Bean</li>
+</ol>
+<p>Customer.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.wusuiwei.spring.helloworld;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Customer</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String gender;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>创建Bean的xml装配文件</li>
+</ol>
+<p>applicationContext.xml</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"customer"</span> <span class="attr">class</span>=<span class="string">"com.wusuiwei.spring.helloworld.Customer"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"id"</span> <span class="attr">value</span>=<span class="string">"1"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"gender"</span> <span class="attr">value</span>=<span class="string">"男"</span>/&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">value</span>=<span class="string">"张三"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>创建主类，运行查看结果</li>
+</ol>
+<p>HelloWorld.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.wusuiwei.spring.helloworld;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ApplicationContext context = <span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">"applicationContext.xml"</span>);</span><br><span class="line">        Customer customer = (Customer) context.getBean(<span class="string">"customer"</span>);</span><br><span class="line">        System.out.println(customer.toString());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<p><code>Customer(id=1, name=张三, gender=男)</code></p>
+]]></content>
+      <categories>
+        <category>Spring笔记</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【每日英语】The Unbearable Lightness of Being</title>
     <url>/2019/11/08/%E6%AF%8F%E6%97%A5%E8%8B%B1%E8%AF%AD/%E3%80%90%E6%AF%8F%E6%97%A5%E8%8B%B1%E8%AF%AD%E3%80%912019-11-8/</url>
     <content><![CDATA[<p> 没有任何办法可以检验何种选择更好我们经历着生活中突然临头的一切，毫无防备，就像演员进入初排如果生活的第一排练便是生活本身，那生活有什么价值呢？ </p>
