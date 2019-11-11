@@ -168,22 +168,17 @@
   </entry>
   
   <entry>
-    <title>【设计模式】建造者模式</title>
-    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】建造者模式/</id>
+    <title>【设计模式】单例模式</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】单例模式/</id>
     <published>2019-11-07T07:19:57.000Z</published>
-    <updated>2019-11-11T07:55:29.714Z</updated>
+    <updated>2019-11-11T08:18:11.806Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<p> <img src="/images/singleton-pattern.png" alt="Singleton Pattern"> </p><a id="more"></a><h1 id="单例模式详解"><a href="#单例模式详解" class="headerlink" title="单例模式详解"></a>单例模式详解</h1><h2 id="定义与特点"><a href="#定义与特点" class="headerlink" title="定义与特点"></a>定义与特点</h2><h2 id="结构与实现"><a href="#结构与实现" class="headerlink" title="结构与实现"></a>结构与实现</h2>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-
-      
+      &lt;p&gt; &lt;img src=&quot;/images/singleton-pattern.png&quot; alt=&quot;Singleton Pattern&quot;&gt; &lt;/p&gt;
     
     </summary>
     
@@ -193,7 +188,7 @@
     
       <category term="Design Pattern" scheme="http://wusuiwei.github.io/tags/Design-Pattern/"/>
     
-      <category term="Builder Pattern" scheme="http://wusuiwei.github.io/tags/Builder-Pattern/"/>
+      <category term="Singleton Pattern" scheme="http://wusuiwei.github.io/tags/Singleton-Pattern/"/>
     
   </entry>
   
@@ -224,17 +219,22 @@
   </entry>
   
   <entry>
-    <title>【设计模式】单例模式</title>
-    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】单例模式/</id>
+    <title>【设计模式】建造者模式</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】建造者模式/</id>
     <published>2019-11-07T07:19:57.000Z</published>
-    <updated>2019-11-11T08:18:11.806Z</updated>
+    <updated>2019-11-11T07:55:29.714Z</updated>
     
-    <content type="html"><![CDATA[<p> <img src="/images/singleton-pattern.png" alt="Singleton Pattern"> </p><a id="more"></a><h1 id="单例模式详解"><a href="#单例模式详解" class="headerlink" title="单例模式详解"></a>单例模式详解</h1><h2 id="定义与特点"><a href="#定义与特点" class="headerlink" title="定义与特点"></a>定义与特点</h2><h2 id="结构与实现"><a href="#结构与实现" class="headerlink" title="结构与实现"></a>结构与实现</h2>]]></content>
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt; &lt;img src=&quot;/images/singleton-pattern.png&quot; alt=&quot;Singleton Pattern&quot;&gt; &lt;/p&gt;
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+
+      
     
     </summary>
     
@@ -244,7 +244,7 @@
     
       <category term="Design Pattern" scheme="http://wusuiwei.github.io/tags/Design-Pattern/"/>
     
-      <category term="Singleton Pattern" scheme="http://wusuiwei.github.io/tags/Singleton-Pattern/"/>
+      <category term="Builder Pattern" scheme="http://wusuiwei.github.io/tags/Builder-Pattern/"/>
     
   </entry>
   
@@ -279,6 +279,29 @@
   </entry>
   
   <entry>
+    <title>【设计模式】概述</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%A6%82%E8%BF%B0/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】概述/</id>
+    <published>2019-11-07T07:12:33.000Z</published>
+    <updated>2019-11-11T08:34:03.199Z</updated>
+    
+    <content type="html"><![CDATA[<p> <img src="/images/Java-Design-Patterns.png=100*100" alt="Java Design Patterns"></p><a id="more"></a><h2 id="设计模式分类"><a href="#设计模式分类" class="headerlink" title="设计模式分类"></a>设计模式分类</h2><table><thead><tr><th>范围\目的</th><th>创建型模式</th><th>结构型模式</th><th>行为型模式</th></tr></thead><tbody><tr><td>类模式</td><td>工厂方法</td><td>(类）适配器</td><td>模板方法<br />解释器</td></tr><tr><td>对象模式</td><td>单例<br />原型<br />抽象工厂 <br />建造者</td><td>代理 <br />(对象）适配器<br />桥接<br />装饰<br />外观<br />享元<br />组合</td><td>策略<br />命令<br />职责链<br />状态<br />观察者<br />中介者<br />迭代器<br />访问者<br />备忘录</td></tr></tbody></table><h3 id="根据目的分类"><a href="#根据目的分类" class="headerlink" title="根据目的分类"></a>根据目的分类</h3><ul><li>创建者模式：用于描述“怎样创建对象”，GoF提供了单例、原型、工厂方法、抽象工厂、建造者等5种创建者模式。</li><li>结构型模式：用于描述“如何将类或对象按某种布局组成更大的结构”，GoF提供了代理、适配器、桥接、装饰、外观、享元、组合等7种结构型模式。</li><li>行为型模式：用于描述“类或对象之间怎样相互协作共同完成单个对象都无法单独完成的任务，以及怎样分配职责”，GoF提供了模板方法、策略、命令、职责链、状态、观察者、中介者、迭代器、访问者、备忘录、解释器等11种行为型模式。</li></ul><h3 id="根据作用范围分类"><a href="#根据作用范围分类" class="headerlink" title="根据作用范围分类"></a>根据作用范围分类</h3><ul><li>类模式：用于“处理类与子类之间的关系，这些关系通过继承来建立，是静态的，在编译时刻确定下来了”，GoF提供了工厂方法、（类）适配器、模板方法、解释器属于该模式。</li><li>对象模式：用于“处理对象之间的关系，这些关系可以通过组合或聚合的关系来实现，在运行时刻是可以变化的，更具动态性”，GoF中除以上4种，其他都是对象模式。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; &lt;img src=&quot;/images/Java-Design-Patterns.png=100*100&quot; alt=&quot;Java Design Patterns&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="设计模式" scheme="http://wusuiwei.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="Design Pattern" scheme="http://wusuiwei.github.io/tags/Design-Pattern/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【设计模式】面向对象设计原则</title>
     <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/"/>
     <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】面向对象设计原则/</id>
@@ -303,29 +326,6 @@
       <category term="Design Pattern" scheme="http://wusuiwei.github.io/tags/Design-Pattern/"/>
     
       <category term="Design Principles" scheme="http://wusuiwei.github.io/tags/Design-Principles/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【设计模式】概述</title>
-    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%A6%82%E8%BF%B0/"/>
-    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】概述/</id>
-    <published>2019-11-07T07:12:33.000Z</published>
-    <updated>2019-11-11T08:30:20.153Z</updated>
-    
-    <content type="html"><![CDATA[<p> <img src="/images/Java-Design-Patterns.png" alt="Java Design Patterns"> </p><a id="more"></a><h2 id="设计模式分类"><a href="#设计模式分类" class="headerlink" title="设计模式分类"></a>设计模式分类</h2><table><thead><tr><th>范围\目的</th><th>创建型模式</th><th>结构型模式</th><th>行为型模式</th></tr></thead><tbody><tr><td>类模式</td><td>工厂方法</td><td>(类）适配器</td><td>模板方法<br />解释器</td></tr><tr><td>对象模式</td><td>单例<br />原型<br />抽象工厂 <br />建造者</td><td>代理 <br />(对象）适配器<br />桥接<br />装饰<br />外观<br />享元<br />组合</td><td>策略<br />命令<br />职责链<br />状态<br />观察者<br />中介者<br />迭代器<br />访问者<br />备忘录</td></tr></tbody></table><h3 id="根据目的分类"><a href="#根据目的分类" class="headerlink" title="根据目的分类"></a>根据目的分类</h3><ul><li>创建者模式：用于描述“怎样创建对象”，GoF提供了单例、原型、工厂方法、抽象工厂、建造者等5种创建者模式。</li><li>结构型模式：用于描述“如何将类或对象按某种布局组成更大的结构”，GoF提供了代理、适配器、桥接、装饰、外观、享元、组合等7种结构型模式。</li><li>行为型模式：用于描述“类或对象之间怎样相互协作共同完成单个对象都无法单独完成的任务，以及怎样分配职责”，GoF提供了模板方法、策略、命令、职责链、状态、观察者、中介者、迭代器、访问者、备忘录、解释器等11种行为型模式。</li></ul><h3 id="根据作用范围分类"><a href="#根据作用范围分类" class="headerlink" title="根据作用范围分类"></a>根据作用范围分类</h3><ul><li>类模式：用于“处理类与子类之间的关系，这些关系通过继承来建立，是静态的，在编译时刻确定下来了”，GoF提供了工厂方法、（类）适配器、模板方法、解释器属于该模式。</li><li>对象模式：用于“处理对象之间的关系，这些关系可以通过组合或聚合的关系来实现，在运行时刻是可以变化的，更具动态性”，GoF中除以上4种，其他都是对象模式。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt; &lt;img src=&quot;/images/Java-Design-Patterns.png&quot; alt=&quot;Java Design Patterns&quot;&gt; &lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="设计模式" scheme="http://wusuiwei.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-    
-      <category term="Design Pattern" scheme="http://wusuiwei.github.io/tags/Design-Pattern/"/>
     
   </entry>
   

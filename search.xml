@@ -483,17 +483,18 @@
       </categories>
   </entry>
   <entry>
-    <title>【设计模式】建造者模式</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
+    <title>【设计模式】单例模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<p> <img src="/images/singleton-pattern.png" alt="Singleton Pattern"> </p>
+<a id="more"></a>
 
-]]></content>
+<h1 id="单例模式详解"><a href="#单例模式详解" class="headerlink" title="单例模式详解"></a>单例模式详解</h1><h2 id="定义与特点"><a href="#定义与特点" class="headerlink" title="定义与特点"></a>定义与特点</h2><h2 id="结构与实现"><a href="#结构与实现" class="headerlink" title="结构与实现"></a>结构与实现</h2>]]></content>
       <categories>
         <category>设计模式</category>
       </categories>
       <tags>
         <tag>Design Pattern</tag>
-        <tag>Builder Pattern</tag>
+        <tag>Singleton Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -507,18 +508,17 @@
       </categories>
   </entry>
   <entry>
-    <title>【设计模式】单例模式</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<p> <img src="/images/singleton-pattern.png" alt="Singleton Pattern"> </p>
-<a id="more"></a>
+    <title>【设计模式】建造者模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
 
-<h1 id="单例模式详解"><a href="#单例模式详解" class="headerlink" title="单例模式详解"></a>单例模式详解</h1><h2 id="定义与特点"><a href="#定义与特点" class="headerlink" title="定义与特点"></a>定义与特点</h2><h2 id="结构与实现"><a href="#结构与实现" class="headerlink" title="结构与实现"></a>结构与实现</h2>]]></content>
+]]></content>
       <categories>
         <category>设计模式</category>
       </categories>
       <tags>
         <tag>Design Pattern</tag>
-        <tag>Singleton Pattern</tag>
+        <tag>Builder Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -536,21 +536,9 @@
       </tags>
   </entry>
   <entry>
-    <title>【设计模式】面向对象设计原则</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</url>
-    <content><![CDATA[<a id="more"></a>]]></content>
-      <categories>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>Design Pattern</tag>
-        <tag>Design Principles</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【设计模式】概述</title>
     <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<p> <img src="/images/Java-Design-Patterns.png" alt="Java Design Patterns"> </p>
+    <content><![CDATA[<p> <img src="/images/Java-Design-Patterns.png=100*100" alt="Java Design Patterns"></p>
 <a id="more"></a>
 
 <h2 id="设计模式分类"><a href="#设计模式分类" class="headerlink" title="设计模式分类"></a>设计模式分类</h2><table>
@@ -590,6 +578,18 @@
       </categories>
       <tags>
         <tag>Design Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【设计模式】面向对象设计原则</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>Design Pattern</tag>
+        <tag>Design Principles</tag>
       </tags>
   </entry>
   <entry>
