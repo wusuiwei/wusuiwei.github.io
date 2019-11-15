@@ -61,7 +61,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;3-1Q116103K1205.gif">
 <meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;3-1Q116103K1205-1573820059937.gif">
-<meta property="og:updated_time" content="2019-11-15T13:51:56.634Z">
+<meta property="og:updated_time" content="2019-11-15T13:57:55.399Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;3-1Q116103K1205.gif">
 
@@ -251,7 +251,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2019-11-15 19:44:57 / 修改时间：21:51:56" itemprop="dateCreated datePublished" datetime="2019-11-15T19:44:57+08:00">2019-11-15</time>
+              <time title="创建时间：2019-11-15 19:44:57 / 修改时间：21:57:55" itemprop="dateCreated datePublished" datetime="2019-11-15T19:44:57+08:00">2019-11-15</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -298,7 +298,7 @@
 
       
         <p><strong>策略模式：</strong>定义了算法族，分别封装起来，让它们之间可以互相替换，此模式让算法的变化独立于使用算法的客户。策略模式的结构如下：</p>
-<p> <img src="/images/3-1Q116103K1205.gif" alt="策略模式的结构图"> </p>
+<p> <img src="/images/3-1Q116103K1205.gif" alt="Strategy Pattern"> </p>
 <a id="more"></a>
 
 <hr>
@@ -310,7 +310,7 @@
 <li>环境(Context)类：持有一个策略类的引用，最终给客户端调用。</li>
 </ul>
 <p>其结构图如下图：</p>
-<p> <img src="/images/3-1Q116103K1205-1573820059937.gif" alt="策略模式的结构图"> </p>
+<p> <img src="/images/3-1Q116103K1205-1573820059937.gif" alt="Strategy Pattern"> </p>
 <h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><p>【例】游戏设定：游戏中有多种角色：国王(King)、皇后(Queen)、骑士(Knight)、妖怪(Troll)等，武器种类有匕首(King)、斧头(King)、宝剑(King)、弓箭(King)等，每个角色一次只能使用一种武器，而且游戏过程中可以换用其他武器。请分析并实现这个业务。</p>
 <p>分析：每个角色游戏过程中可以换用不同的武器，即可以使用不同的武器。</p>
 <p>首先，定义一个使用武器的抽象策略类（WeaponBahavior)，里面包括一个使用武器的抽象方法<code>useWeapon()</code>，然后定义使用匕首(King)、斧头(King)、宝剑(King)、弓箭(King)等武器的具体策略类，他们实现了抽象策略类的抽象方法。</p>
