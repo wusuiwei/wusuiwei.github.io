@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>【设计模式】观察者模式</title>
+    <url>/2019/11/18/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p><strong>观察者模式</strong>（又被称为发布-订阅（Publish/Subscribe）模式，属于行为型模式的一种，它定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态变化时，会通知所有的观察者对象，使他们能够自动更新自己。 </p>
+</blockquote>
+<a id="more"></a>
+
+<p><strong>功能需求</strong>–天气预报项目</p>
+<ul>
+<li>气象站可以将每天测量到的温度、湿度、气压等数据以公告的方式发布出去（比如发布到自己的网站或第三方）</li>
+<li>需要设计开放型API，便于其他第三方也能接入气象站获取数据</li>
+<li>提供温度、气压和湿度的接口</li>
+<li>测量数据更新时，要能实时通知第三方</li>
+</ul>
+<hr>
+<h3 id="普通解决方案"><a href="#普通解决方案" class="headerlink" title="普通解决方案"></a>普通解决方案</h3><h4 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h4><h3 id="观察者模式原理"><a href="#观察者模式原理" class="headerlink" title="观察者模式原理"></a>观察者模式原理</h3><h4 id="设计模式定义"><a href="#设计模式定义" class="headerlink" title="设计模式定义"></a>设计模式定义</h4><h4 id="设计模式类图"><a href="#设计模式类图" class="headerlink" title="设计模式类图"></a>设计模式类图</h4><h3 id="观察者模式解决方案"><a href="#观察者模式解决方案" class="headerlink" title="观察者模式解决方案"></a>观察者模式解决方案</h3><h4 id="观察者模式的优点"><a href="#观察者模式的优点" class="headerlink" title="观察者模式的优点"></a>观察者模式的优点</h4><h4 id="观察者模式的缺点"><a href="#观察者模式的缺点" class="headerlink" title="观察者模式的缺点"></a>观察者模式的缺点</h4><h3 id="观察者模式的应用场景"><a href="#观察者模式的应用场景" class="headerlink" title="观察者模式的应用场景"></a>观察者模式的应用场景</h3>]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>Design Pattern</tag>
+        <tag>Observer Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【设计模式】策略模式</title>
     <url>/2019/11/15/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<p><strong>策略模式：</strong>定义了算法族，分别封装起来，让它们之间可以互相替换，此模式让算法的变化独立于使用算法的客户。策略模式的结构如下：</p>
@@ -546,21 +571,14 @@
       </categories>
   </entry>
   <entry>
-    <title>【设计模式】单例模式</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<blockquote>
-<p> 单例模式(Singleton Pattern)：单例模式确保某一个类只有一个实例，并提供一个访问它的全剧访问点。 </p>
-</blockquote>
-<img src="/images/singleton-pattern.png" height="50%" width="50%" />
+    <title>【设计模式】抽象工厂模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
 
-<a id="more"></a>]]></content>
+]]></content>
       <categories>
         <category>设计模式</category>
       </categories>
-      <tags>
-        <tag>Design Pattern</tag>
-        <tag>Singleton Pattern</tag>
-      </tags>
   </entry>
   <entry>
     <title>【设计模式】建造者模式</title>
@@ -577,14 +595,21 @@
       </tags>
   </entry>
   <entry>
-    <title>【设计模式】抽象工厂模式</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
+    <title>【设计模式】单例模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p> 单例模式(Singleton Pattern)：单例模式确保某一个类只有一个实例，并提供一个访问它的全剧访问点。 </p>
+</blockquote>
+<img src="/images/singleton-pattern.png" height="50%" width="50%" />
 
-]]></content>
+<a id="more"></a>]]></content>
       <categories>
         <category>设计模式</category>
       </categories>
+      <tags>
+        <tag>Design Pattern</tag>
+        <tag>Singleton Pattern</tag>
+      </tags>
   </entry>
   <entry>
     <title>【设计模式】面向对象设计原则</title>
