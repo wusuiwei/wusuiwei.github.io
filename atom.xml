@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wusuiwei.github.io/"/>
-  <updated>2019-11-19T06:33:27.582Z</updated>
+  <updated>2019-11-21T13:39:20.440Z</updated>
   <id>http://wusuiwei.github.io/</id>
   
   <author>
@@ -17,13 +17,83 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>自动化测试/自动化测试模式介绍</title>
+    <link href="http://wusuiwei.github.io/2019/11/21/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://wusuiwei.github.io/2019/11/21/自动化测试/自动化测试模式介绍/</id>
+    <published>2019-11-21T13:39:20.440Z</published>
+    <updated>2019-11-21T13:39:20.440Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自动化测试/Web自动化测试之PageObject思想</title>
+    <link href="http://wusuiwei.github.io/2019/11/21/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BPageObject%E6%80%9D%E6%83%B3/"/>
+    <id>http://wusuiwei.github.io/2019/11/21/自动化测试/Web自动化测试之PageObject思想/</id>
+    <published>2019-11-21T13:36:27.439Z</published>
+    <updated>2019-11-21T13:36:27.439Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>自动化测试/Web自动化测试之Selenium Webdriver入门</title>
+    <link href="http://wusuiwei.github.io/2019/11/21/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BSelenium%20Webdriver%E5%85%A5%E9%97%A8/"/>
+    <id>http://wusuiwei.github.io/2019/11/21/自动化测试/Web自动化测试之Selenium Webdriver入门/</id>
+    <published>2019-11-21T13:33:34.179Z</published>
+    <updated>2019-11-21T16:43:37.750Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【设计模式】装饰者模式</title>
+    <link href="http://wusuiwei.github.io/2019/11/21/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://wusuiwei.github.io/2019/11/21/设计模式/【设计模式】装饰者模式/</id>
+    <published>2019-11-21T05:45:49.000Z</published>
+    <updated>2019-11-22T13:02:32.114Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>“装饰者模式”</strong>动态的将责任附加到对象上。若要扩展功能，装饰者提供了比继承更有弹性的替代方案。</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;“装饰者模式”&lt;/strong&gt;动态的将责任附加到对象上。若要扩展功能，装饰者提供了比继承更有弹性的替代方案。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="设计模式" scheme="http://wusuiwei.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="Design Pattern" scheme="http://wusuiwei.github.io/tags/Design-Pattern/"/>
+    
+      <category term="Decorator Pattern" scheme="http://wusuiwei.github.io/tags/Decorator-Pattern/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【设计模式】观察者模式</title>
     <link href="http://wusuiwei.github.io/2019/11/18/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/"/>
     <id>http://wusuiwei.github.io/2019/11/18/设计模式/【设计模式】观察者模式/</id>
     <published>2019-11-18T13:45:49.000Z</published>
-    <updated>2019-11-19T06:33:27.582Z</updated>
+    <updated>2019-11-22T13:02:32.114Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>观察者模式</strong>（又被称为发布-订阅（Publish/Subscribe）模式，属于行为型模式的一种，它定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态变化时，会通知所有的观察者对象，使他们能够自动更新自己。</p><a id="more"></a><p><strong>功能需求</strong>–天气预报项目</p><ul><li>气象站可以将每天测量到的温度、湿度、气压等数据以公告的方式发布出去（比如发布到自己的网站或第三方）</li><li>需要设计开放型API，便于其他第三方也能接入气象站获取数据</li><li>提供温度、气压和湿度的接口</li><li>测量数据更新时，要能实时通知第三方</li></ul><hr><h3 id="传统的设计方案"><a href="#传统的设计方案" class="headerlink" title="传统的设计方案"></a>传统的设计方案</h3><h4 id="方案设计"><a href="#方案设计" class="headerlink" title="方案设计"></a>方案设计</h4><h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><h4 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h4><h3 id="观察者模式的原理"><a href="#观察者模式的原理" class="headerlink" title="观察者模式的原理"></a>观察者模式的原理</h3><h3 id="观察者模式的设计方案"><a href="#观察者模式的设计方案" class="headerlink" title="观察者模式的设计方案"></a>观察者模式的设计方案</h3><h4 id="方案设计-1"><a href="#方案设计-1" class="headerlink" title="方案设计"></a>方案设计</h4><h4 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h4><h4 id="优缺点分析"><a href="#优缺点分析" class="headerlink" title="优缺点分析"></a>优缺点分析</h4><h3 id="观察者模式的应用场景"><a href="#观察者模式的应用场景" class="headerlink" title="观察者模式的应用场景"></a>观察者模式的应用场景</h3>]]></content>
+    <content type="html"><![CDATA[<p><strong>观察者模式</strong>（又被称为发布-订阅（Publish/Subscribe）模式，属于行为型模式的一种，它定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态变化时，会通知所有的观察者对象，使他们能够自动更新自己。</p><a id="more"></a><hr><h3 id="功能需求–天气预报项目"><a href="#功能需求–天气预报项目" class="headerlink" title="功能需求–天气预报项目"></a>功能需求–天气预报项目</h3><blockquote><ul><li>气象站可以将每天测量到的温度、湿度、气压等数据以公告的方式发布出去（比如发布到自己的网站或第三方）</li><li>需要设计开放型API，便于其他第三方也能接入气象站获取数据</li><li>提供温度、气压和湿度的接口</li><li>测量数据更新时，要能实时通知第三方</li></ul></blockquote><hr><h3 id="传统的设计方案"><a href="#传统的设计方案" class="headerlink" title="传统的设计方案"></a>传统的设计方案</h3><h4 id="方案设计"><a href="#方案设计" class="headerlink" title="方案设计"></a>方案设计</h4><p>此系统的三部分为气象站（通过物理设备获取气象信息）、WeatherData对象（追踪气象数据并更新布告板）、布告板（显示气象信息）。</p><p><img src="/images/15741511334251.png" alt="1574151133425"></p><h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * WeatherData 气象数据</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wusuiwei</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/11/19</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WeatherData</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> temperature;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> pressure;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> humidity;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">private</span> CurrentConditionsDisplay currentConditionsDisplay;</span><br><span class="line">    <span class="keyword">private</span> StatisticsDisPlay statisticsDisPlay;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">WeatherData</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.currentConditionsDisplay = <span class="keyword">new</span> CurrentConditionsDisplay();</span><br><span class="line">        <span class="keyword">this</span>.statisticsDisPlay = <span class="keyword">new</span> StatisticsDisPlay();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">dataChange</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        currentConditionsDisplay.update(temperature,pressure,humidity);</span><br><span class="line">        statisticsDisPlay.update(temperature,pressure,humidity);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">float</span> <span class="title">getTemperature</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> temperature;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">float</span> <span class="title">getPressure</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> pressure;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">float</span> <span class="title">getHumidity</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> humidity;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setData</span><span class="params">(<span class="keyword">float</span> temperature, <span class="keyword">float</span> pressure, <span class="keyword">float</span> humidity)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.temperature = temperature;</span><br><span class="line">        <span class="keyword">this</span>.pressure = pressure;</span><br><span class="line">        <span class="keyword">this</span>.humidity = humidity;</span><br><span class="line">        dataChange();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * “目前状况”布告板，用于显示气象信息</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wusuiwei</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/11/19</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CurrentConditionsDisplay</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> temperature;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> pressure;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> humidity;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">float</span> temperature,<span class="keyword">float</span> pressure,<span class="keyword">float</span> humidity)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.humidity=humidity;</span><br><span class="line">        <span class="keyword">this</span>.pressure = pressure;</span><br><span class="line">        <span class="keyword">this</span>.temperature = temperature;</span><br><span class="line">        display();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">display</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"***Today mTemperature: "</span>+ temperature+<span class="string">"***"</span>);</span><br><span class="line">        System.out.println(<span class="string">"***Today mPressure: "</span>+ pressure+<span class="string">"***"</span>);</span><br><span class="line">        System.out.println(<span class="string">"***Today mHumidity: "</span>+ humidity+<span class="string">"***"</span>);</span><br><span class="line">        System.out.println(<span class="string">"===================================================="</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * “气象统计”布告板，用于显示气象统计信息</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wusuiwei</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/11/19</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StatisticsDisPlay</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> temperature;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> pressure;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">float</span> humidity;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> i=<span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">update</span><span class="params">(<span class="keyword">float</span> temperature,<span class="keyword">float</span> pressure,<span class="keyword">float</span> humidity)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.humidity=humidity;</span><br><span class="line">        <span class="keyword">this</span>.pressure = pressure;</span><br><span class="line">        <span class="keyword">this</span>.temperature = temperature;</span><br><span class="line">        display();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">display</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (temperature &gt;= <span class="number">32</span>) &#123;</span><br><span class="line">            i++;</span><br><span class="line">            System.out.println(<span class="string">"***High Temperature's Day In Summer: "</span>+ i+<span class="string">"***"</span>);</span><br><span class="line">            System.out.println(<span class="string">"===================================================="</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 终端，用于收集气象信息</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wusuiwei</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/11/19</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Client</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//创建 WeatherData</span></span><br><span class="line">        WeatherData weatherData = <span class="keyword">new</span> WeatherData();</span><br><span class="line">        <span class="comment">//更新天气情况</span></span><br><span class="line">        weatherData.setData(<span class="number">32</span>, <span class="number">150</span>, <span class="number">40</span>);</span><br><span class="line">        <span class="comment">//天气变化</span></span><br><span class="line">        weatherData.setData(<span class="number">31</span>, <span class="number">160</span>, <span class="number">20</span>);</span><br><span class="line">        weatherData.setData(<span class="number">31</span>, <span class="number">158</span>, <span class="number">19</span>);</span><br><span class="line">        weatherData.setData(<span class="number">32</span>, <span class="number">160</span>, <span class="number">21</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h4><ul><li>无法在运行时动态添加/删除布告板</li><li>添加新的布告板需要修改代码</li><li>面向实现编程，而非面向接口编程</li><li>未封装改变的部分</li></ul><h3 id="观察者模式的原理"><a href="#观察者模式的原理" class="headerlink" title="观察者模式的原理"></a>观察者模式的原理</h3><h4 id="模式定义"><a href="#模式定义" class="headerlink" title="模式定义"></a>模式定义</h4><p><strong>观察者模式</strong>定义了对象之间一对多依赖，这样一来，当一个对象改变状态时，他的所有依赖者都会收到通知并自动更新。</p><h4 id="模式图解"><a href="#模式图解" class="headerlink" title="模式图解"></a>模式图解</h4><p><img src="/images/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F.gif" alt="12"></p><ul><li>Subject: 目标</li><li>ConcreteSubject: 具体目标</li><li>Observer: 观察者</li><li>ConcreteObserver: 具体观察者</li></ul><h3 id="观察者模式的设计方案"><a href="#观察者模式的设计方案" class="headerlink" title="观察者模式的设计方案"></a>观察者模式的设计方案</h3><h4 id="方案设计-1"><a href="#方案设计-1" class="headerlink" title="方案设计"></a>方案设计</h4><p><img src="/images/15742121602391.png" alt="1574212160239"></p><h4 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h4><h4 id="优缺点分析"><a href="#优缺点分析" class="headerlink" title="优缺点分析"></a>优缺点分析</h4><h3 id="观察者模式的应用场景"><a href="#观察者模式的应用场景" class="headerlink" title="观察者模式的应用场景"></a>观察者模式的应用场景</h3>]]></content>
     
     <summary type="html">
     
@@ -220,6 +290,65 @@
   </entry>
   
   <entry>
+    <title>【自动化测试】Android自动化测试环境搭建</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Android%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/自动化测试/Android自动化测试之环境搭建/</id>
+    <published>2019-11-07T07:23:49.000Z</published>
+    <updated>2019-11-22T13:02:32.114Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><ol><li>安装Android SDK并配置环境变量</li></ol><p>下载地址：<a href="http://tools.android-studio.org/index.php/sdk/" target="_blank" rel="noopener">http://tools.android-studio.org/index.php/sdk/</a></p><p>环境变量配置：</p><ul><li>ANDROID_HOME：C:\software\airdroid\</li><li>Path:%ANDROID_HOME%\platform-tools;%ANDROID_HOME%\tools</li></ul><ol start="2"><li>安装node</li></ol><p>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></p><p>校验版本：<code>node -v</code></p><ol start="3"><li>安装appium</li></ol><p>下载地址：<a href="https://github.com/appium/appium-desktop/releases/tag/v1.15.1" target="_blank" rel="noopener">https://github.com/appium/appium-desktop/releases/tag/v1.15.1</a></p><ol start="4"><li>获取手机参数</li></ol><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">adb devices <span class="comment">#获取手机devicesName</span></span><br><span class="line">adb install packagesname <span class="comment">#安装应用</span></span><br><span class="line">adb uninstall packagesname <span class="comment">#卸载应用</span></span><br><span class="line">adb shell pm list packages <span class="comment">#查看设备所有包名</span></span><br><span class="line">adb shell pm path packagename <span class="comment">#查看安装包的路径</span></span><br><span class="line">adb shell pull packagepath <span class="comment">#包pull到本地</span></span><br><span class="line">adb shell dumpsys window windows|findstr <span class="string">"mCurrent"</span> <span class="comment">#获取当前窗口活动</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+&lt;ol&gt;
+&lt;li&gt;安装Android SDK并配置环境变量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;下载地址：&lt;a href=&quot;http://tools.android-studio.org/index.php/sdk/&quot; target=&quot;_blank&quot;
+      
+    
+    </summary>
+    
+    
+      <category term="设计模式" scheme="http://wusuiwei.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="自动化测试" scheme="http://wusuiwei.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="Android自动化测试" scheme="http://wusuiwei.github.io/tags/Android%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【自动化测试】测试报告生成</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/自动化测试/自动化测试之测试报告生成/</id>
+    <published>2019-11-07T07:23:49.000Z</published>
+    <updated>2019-11-21T17:06:49.366Z</updated>
+    
+    <content type="html"><![CDATA[<p>这里汇集了使用到的所有测试报告生成方法。</p><ul><li>IDEA+Maven+TestNG+ReportNG 生成测试报告</li></ul><a id="more"></a><h3 id="IDEA-Maven-TestNG-ReportNG-生成测试报告"><a href="#IDEA-Maven-TestNG-ReportNG-生成测试报告" class="headerlink" title="IDEA+Maven+TestNG+ReportNG 生成测试报告"></a>IDEA+Maven+TestNG+ReportNG 生成测试报告</h3><p>1.新建maven项目</p><p>2.项目文件下添加TestNG配置文件</p><p><img src="/images/image-20191122003725162.png" alt="image-20191122003725162"></p><p>3.添加testng及reportng依赖</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependencies</span>&gt;</span>       </span><br><span class="line">    <span class="comment">&lt;!-- 添加testNG依赖 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.testng<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>testng<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>7.0.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">&lt;!-- 添加reportNG依赖 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.uncommons<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>reportng<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.1.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 排除testNG依赖 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.testng<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>testng<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.google.inject<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>guice<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 添加插件,添加ReportNg的监听器，修改最后的TestNg的报告 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-surefire-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.22.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">suiteXmlFiles</span>&gt;</span></span><br><span class="line">                    <span class="comment">&lt;!-- 配置 testng.xml 位置，相对位置从当前项目根目录算起--&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">suiteXmlFile</span>&gt;</span>testNG.xml<span class="tag">&lt;/<span class="name">suiteXmlFile</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">suiteXmlFiles</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">name</span>&gt;</span>usedefaultlisteners<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">value</span>&gt;</span>false<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">name</span>&gt;</span>listener<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">                        <span class="tag">&lt;<span class="name">value</span>&gt;</span>org.uncommons.reportng.HTMLReporter,  org.uncommons.reportng.JUnitXMLReporter<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">workingDirectory</span>&gt;</span>target/<span class="tag">&lt;/<span class="name">workingDirectory</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">forkMode</span>&gt;</span>always<span class="tag">&lt;/<span class="name">forkMode</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure><p>4.运行maven test</p><p>5.浏览器中查看<code>target/surefire-reports/html/index.html</code>文件</p><p><img src="/images/image-20191122004202038.png" alt="image-20191122004202038"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这里汇集了使用到的所有测试报告生成方法。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IDEA+Maven+TestNG+ReportNG 生成测试报告&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+      <category term="设计模式" scheme="http://wusuiwei.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="自动化测试" scheme="http://wusuiwei.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【设计模式】适配器模式</title>
     <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/"/>
     <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】适配器模式/</id>
@@ -246,28 +375,30 @@
   </entry>
   
   <entry>
-    <title>【设计模式】抽象工厂模式</title>
-    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】抽象工厂模式/</id>
+    <title>【设计模式】单例模式</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】单例模式/</id>
     <published>2019-11-07T07:19:57.000Z</published>
-    <updated>2019-11-08T01:13:43.832Z</updated>
+    <updated>2019-11-12T08:15:06.923Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<blockquote><p> 单例模式(Singleton Pattern)：单例模式确保某一个类只有一个实例，并提供一个访问它的全剧访问点。 </p></blockquote><img src="/images/singleton-pattern.png" height="50%" width="50%" /><a id="more"></a>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-
-      
+      &lt;blockquote&gt;
+&lt;p&gt; 单例模式(Singleton Pattern)：单例模式确保某一个类只有一个实例，并提供一个访问它的全剧访问点。 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;img src=&quot;/images/singleton-pattern.png&quot; height=&quot;50%&quot; width=&quot;50%&quot; /&gt;
     
     </summary>
     
     
       <category term="设计模式" scheme="http://wusuiwei.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
+    
+      <category term="Design Pattern" scheme="http://wusuiwei.github.io/tags/Design-Pattern/"/>
+    
+      <category term="Singleton Pattern" scheme="http://wusuiwei.github.io/tags/Singleton-Pattern/"/>
     
   </entry>
   
@@ -302,30 +433,28 @@
   </entry>
   
   <entry>
-    <title>【设计模式】单例模式</title>
-    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/"/>
-    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】单例模式/</id>
+    <title>【设计模式】抽象工厂模式</title>
+    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/"/>
+    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】抽象工厂模式/</id>
     <published>2019-11-07T07:19:57.000Z</published>
-    <updated>2019-11-12T08:15:06.923Z</updated>
+    <updated>2019-11-08T01:13:43.832Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p> 单例模式(Singleton Pattern)：单例模式确保某一个类只有一个实例，并提供一个访问它的全剧访问点。 </p></blockquote><img src="/images/singleton-pattern.png" height="50%" width="50%" /><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<a id="more"></a>]]></content>
     
     <summary type="html">
     
-      &lt;blockquote&gt;
-&lt;p&gt; 单例模式(Singleton Pattern)：单例模式确保某一个类只有一个实例，并提供一个访问它的全剧访问点。 &lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;img src=&quot;/images/singleton-pattern.png&quot; height=&quot;50%&quot; width=&quot;50%&quot; /&gt;
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+
+
+      
     
     </summary>
     
     
       <category term="设计模式" scheme="http://wusuiwei.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
     
-    
-      <category term="Design Pattern" scheme="http://wusuiwei.github.io/tags/Design-Pattern/"/>
-    
-      <category term="Singleton Pattern" scheme="http://wusuiwei.github.io/tags/Singleton-Pattern/"/>
     
   </entry>
   
@@ -384,89 +513,6 @@
       <category term="Design Pattern" scheme="http://wusuiwei.github.io/tags/Design-Pattern/"/>
     
       <category term="Factory Pattern" scheme="http://wusuiwei.github.io/tags/Factory-Pattern/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【设计模式】概述</title>
-    <link href="http://wusuiwei.github.io/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%A6%82%E8%BF%B0/"/>
-    <id>http://wusuiwei.github.io/2019/11/07/设计模式/【设计模式】概述/</id>
-    <published>2019-11-07T07:12:33.000Z</published>
-    <updated>2019-11-12T07:52:12.929Z</updated>
-    
-    <content type="html"><![CDATA[ <img src="/images/Java-Design-Patterns.png" width="60%" height="30%"><a id="more"></a><h2 id="设计模式分类"><a href="#设计模式分类" class="headerlink" title="设计模式分类"></a>设计模式分类</h2><table><thead><tr><th>类模式</th><th>工厂方法</th><th>(类）适配器</th><th>模板方法<br />解释器</th></tr></thead><tbody><tr><td>范围\目的</td><td>创建型模式</td><td>结构型模式</td><td>行为型模式</td></tr><tr><td>对象模式</td><td>单例<br />原型<br />抽象工厂 <br />建造者</td><td>代理 <br />(对象）适配器<br />桥接<br />装饰<br />外观<br />享元<br />组合</td><td>策略<br />命令<br />职责链<br />状态<br />观察者<br />中介者<br />迭代器<br />访问者<br />备忘录</td></tr></tbody></table><h3 id="根据目的分类"><a href="#根据目的分类" class="headerlink" title="根据目的分类"></a>根据目的分类</h3><ul><li>创建者模式：用于描述“怎样创建对象”，GoF提供了单例、原型、工厂方法、抽象工厂、建造者等5种创建者模式。</li><li>结构型模式：用于描述“如何将类或对象按某种布局组成更大的结构”，GoF提供了代理、适配器、桥接、装饰、外观、享元、组合等7种结构型模式。</li><li>行为型模式：用于描述“类或对象之间怎样相互协作共同完成单个对象都无法单独完成的任务，以及怎样分配职责”，GoF提供了模板方法、策略、命令、职责链、状态、观察者、中介者、迭代器、访问者、备忘录、解释器等11种行为型模式。</li></ul><h3 id="根据作用范围分类"><a href="#根据作用范围分类" class="headerlink" title="根据作用范围分类"></a>根据作用范围分类</h3><ul><li>类模式：用于“处理类与子类之间的关系，这些关系通过继承来建立，是静态的，在编译时刻确定下来了”，GoF提供了工厂方法、（类）适配器、模板方法、解释器属于该模式。</li><li>对象模式：用于“处理对象之间的关系，这些关系可以通过组合或聚合的关系来实现，在运行时刻是可以变化的，更具动态性”，GoF中除以上4种，其他都是对象模式。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;img src=&quot;/images/Java-Design-Patterns.png&quot; width=&quot;60%&quot; height=&quot;30%&quot;&gt;
-    
-    </summary>
-    
-    
-      <category term="设计模式" scheme="http://wusuiwei.github.io/categories/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-    
-      <category term="Design Pattern" scheme="http://wusuiwei.github.io/tags/Design-Pattern/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【Java笔记】异常处理</title>
-    <link href="http://wusuiwei.github.io/2019/11/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E7%AC%94%E8%AE%B0%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
-    <id>http://wusuiwei.github.io/2019/11/07/Java笔记/【Java笔记】异常处理/</id>
-    <published>2019-11-07T06:06:04.000Z</published>
-    <updated>2019-11-08T01:13:51.230Z</updated>
-    
-    <content type="html"><![CDATA[<a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-
-      
-    
-    </summary>
-    
-    
-      <category term="Java笔记" scheme="http://wusuiwei.github.io/categories/Java%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="Java" scheme="http://wusuiwei.github.io/tags/Java/"/>
-    
-      <category term="Exception" scheme="http://wusuiwei.github.io/tags/Exception/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【Java笔记】基本语法</title>
-    <link href="http://wusuiwei.github.io/2019/11/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E7%AC%94%E8%AE%B0%E3%80%91%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <id>http://wusuiwei.github.io/2019/11/07/Java笔记/【Java笔记】基本语法/</id>
-    <published>2019-11-07T06:06:04.000Z</published>
-    <updated>2019-11-08T05:12:11.920Z</updated>
-    
-    <content type="html"><![CDATA[<a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-
-      
-    
-    </summary>
-    
-    
-      <category term="Java笔记" scheme="http://wusuiwei.github.io/categories/Java%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="Java" scheme="http://wusuiwei.github.io/tags/Java/"/>
-    
-      <category term="语法" scheme="http://wusuiwei.github.io/tags/%E8%AF%AD%E6%B3%95/"/>
     
   </entry>
   
