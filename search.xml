@@ -1,6 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>项目笔记/hydrogen-master/【Hydrogen】项目环境搭建</title>
+    <url>/2019/11/29/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-master/%E3%80%90Hydrogen%E3%80%91%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>【SpringBoot】拦截器</title>
+    <url>/2019/11/29/Spring%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
+    <content><![CDATA[<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
+<p>实现java web token的拦截</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>拦截器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【接口自动化测试框架（Java版）】基本环境搭建</title>
+    <url>/2019/11/27/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>从本文起，将详细介绍 Java 自动化框架的搭建及相关知识学习，我也是边写边学，不一定完全正确，如果有异常情况，请在评论区留言。</p>
+<p>本文主要介绍JDK安装配置、IDEA安装配置、SpringBoot项目创建。</p>
+<a id="more"></a>
+
+<p>应用技术：SpringBoot、HttpClient、Spring Data JPA、TestNG、ReportNG、Jenkins、Vue等技术</p>
+<h4 id="JDK-环境搭建"><a href="#JDK-环境搭建" class="headerlink" title="JDK 环境搭建"></a>JDK 环境搭建</h4><p>想要运行java项目，必须有jdk环境，我使用的是JDK8.</p>
+<p>下载地址： <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a> </p>
+<p>选择自己系统的相应版本并下载安装即可。</p>
+<p>jdk需要配置环境变量：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">变量名：JAVA_HOME</span><br><span class="line">变量值：C:\Program Files (x86)\Java\jdk1.8.0_91        // 要根据自己的实际路径配置</span><br><span class="line">变量名：CLASSPATH</span><br><span class="line">变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;         //记得前面有个&quot;.&quot;</span><br><span class="line">变量名：Path</span><br><span class="line">变量值：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</span><br></pre></td></tr></table></figure>
+
+<p>检查是否安装成功：</p>
+<p>运行CMD，执行命令：<code>java -version</code></p>
+<p><img src="/images/image-20191127195442440.png" alt="image-20191127195442440"></p>
+<h4 id="IDEA-环境搭建"><a href="#IDEA-环境搭建" class="headerlink" title="IDEA 环境搭建"></a>IDEA 环境搭建</h4><p>搭建过程非常简单，仅需要下载安装并输入注册码即可。</p>
+<p>下载地址： <a href="https://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">https://www.jetbrains.com/idea/download/</a> ( <strong>Ultimate</strong> 版本)</p>
+<p>注册码（亲测可用，建议官方购买)：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">CATF44LT7C-eyJsaWNlbnNlSWQiOiJDQVRGNDRMVDdDIiwibGljZW5zZWVOYW1lIjoiVmxhZGlzbGF2IEtvdmFsZW5rbyIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiJGb3IgZWR1Y2F0aW9uYWwgdXNlIG9ubHkiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In0seyJjb2RlIjoiQUMiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDgifSx7ImNvZGUiOiJEUE4iLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDgifSx7ImNvZGUiOiJQUyIsInBhaWRVcFRvIjoiMjAyMC0wMS0wOCJ9LHsiY29kZSI6IkdPIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In0seyJjb2RlIjoiRE0iLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDgifSx7ImNvZGUiOiJDTCIsInBhaWRVcFRvIjoiMjAyMC0wMS0wOCJ9LHsiY29kZSI6IlJTMCIsInBhaWRVcFRvIjoiMjAyMC0wMS0wOCJ9LHsiY29kZSI6IlJDIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In0seyJjb2RlIjoiUkQiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDgifSx7ImNvZGUiOiJQQyIsInBhaWRVcFRvIjoiMjAyMC0wMS0wOCJ9LHsiY29kZSI6IlJNIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In0seyJjb2RlIjoiV1MiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDgifSx7ImNvZGUiOiJEQiIsInBhaWRVcFRvIjoiMjAyMC0wMS0wOCJ9LHsiY29kZSI6IkRDIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In1dLCJoYXNoIjoiMTE1MzA4ODUvMCIsImdyYWNlUGVyaW9kRGF5cyI6MCwiYXV0b1Byb2xvbmdhdGVkIjpmYWxzZSwiaXNBdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlfQ==-BZLL+H88k449OQC56NsqU0fwb6wMAX1Di+CK5HS46DuOD1E68HPiTqREdn8DzrLVAoMkJReaH30RaIDLwUI8GEFifDcCYE5RbpE5ApNJ8mcUJr8oA1nrjY9IzZCgrSBFr4GAOLqSfXH+1UJ3K8UPqGh8nThomnKW9Jvv9pA7HIH/KrNm2RLV/aNMHWO8Q44A8ToXm7g5FS2lW903URPQ0KFgxT11w/KL81UkHm6yUXC7/LTAygIBArI8j+XUk3rlz4rpi2wrJclYXukrKQqH/V6CTbnVV3d6XAdtCqjryQ2Ga7bP/XTLjwAGwPEB3Q1W7LHNQ7CsyvZG/oTSOgD2YQ==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn/72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN/lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D/cXmgpOyW/1SmBz3XjVIi/zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV/bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit/pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow==</span><br></pre></td></tr></table></figure>
+
+<h4 id="SpringBoot-项目创建"><a href="#SpringBoot-项目创建" class="headerlink" title="SpringBoot 项目创建"></a>SpringBoot 项目创建</h4><p>从IDEA搭建项目过程非常简单，下面将简要介绍一下</p>
+<p><img src="/images/image-20191127194915867.png" alt="image-20191127194915867"></p>
+<p>首先，选择”Spring Initalizr”,下一步：</p>
+<p><img src="/images/image-20191127195614517.png" alt="image-20191127195614517"></p>
+<p>输入Group、Artifact，下一步:</p>
+<p><img src="/images/image-20191127195953736.png" alt="image-20191127195953736"></p>
+<p>然后选择依赖，这里我们暂时先不选择任何依赖，下一步：</p>
+<p><img src="/images/image-20191127200110798.png" alt="image-20191127200110798"></p>
+<p>输入项目名及项目本次存储地址，”Finish”即可创建一个SpringBoot项目。</p>
+<p><img src="/images/image-20191127200144375.png" alt="image-20191127200144375"></p>
+<p>好了，至此，SpringBoot项目基本搭建完成，开心~~</p>
+]]></content>
+      <categories>
+        <category>接口自动化</category>
+      </categories>
+      <tags>
+        <tag>自动化测试</tag>
+        <tag>接口自动化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
+    <url>/2019/11/27/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
+    <content><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p>
+<a id="more"></a>
+
+<h4 id="HttpClient-介绍"><a href="#HttpClient-介绍" class="headerlink" title="HttpClient 介绍"></a>HttpClient 介绍</h4><p> <a href="http://hc.apache.org/index.html" target="_blank" rel="noopener">HttpClient</a>是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。 </p>
+<p>HttpClient相比传统JDK自带的URLConnection，增加了易用性和灵活性，它不仅使客户端发送Http请求变得容易，而且也方便开发人员测试接口（基于Http协议的），提高了开发的效率，也方便提高代码的健壮性。因此熟练掌握HttpClient是很重要的必修内容，掌握HttpClient后，相信对于Http协议的了解会更加深入。</p>
+<p><strong>org.apache.commons.httpclient.HttpClient与org.apache.http.client.HttpClient的区别</strong></p>
+<p>Commons的HttpClient项目现在是生命的尽头，不再被开发,  已被Apache HttpComponents项目HttpClient和HttpCore  模组取代，提供更好的性能和更大的灵活性。  </p>
+<p><strong>HttpClient 特性</strong></p>
+<ul>
+<li>实现了所有 HTTP 的方法（GET,POST,PUT,DELETE 等）</li>
+<li>支持自动转向</li>
+<li>支持 HTTPS 协议</li>
+<li>支持代理服务器等</li>
+</ul>
+<p>引用HttpClient非常简单，仅需要在maven中添加相关依赖即可：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="原生HttpClient使用"><a href="#原生HttpClient使用" class="headerlink" title="原生HttpClient使用"></a>原生HttpClient使用</h4><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testGet</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//申明Get请求</span></span><br><span class="line">    HttpGet httpGet = <span class="keyword">new</span> HttpGet(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpGet);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//4.判断状态码</span></span><br><span class="line">    <span class="keyword">if</span> (response.getStatusLine().getStatusCode() == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//从响应中取出实体</span></span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        <span class="comment">//使用工具类EntityUtils将实体并转换成字符串</span></span><br><span class="line">        String s = EntityUtils.toString(entity);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPost</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//声明Post请求</span></span><br><span class="line">    HttpPost httpPost = <span class="keyword">new</span> HttpPost(<span class="string">"https://www.oschina.net/"</span>);</span><br><span class="line">    <span class="comment">//3.开源中国为了安全，防止恶意攻击，在post请求中都限制了浏览器才能访问</span></span><br><span class="line">    httpPost.addHeader(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>);</span><br><span class="line">    ArrayList&lt;NameValuePair&gt; params = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"scope"</span>, <span class="string">"project"</span>));</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"q"</span>, <span class="string">"java"</span>));</span><br><span class="line">    UrlEncodedFormEntity formEntity = <span class="keyword">new</span> UrlEncodedFormEntity(params, Charset.forName(<span class="string">"utf-8"</span>));</span><br><span class="line">    httpPost.setEntity(formEntity);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpPost);</span><br><span class="line">    <span class="comment">//判断状态码</span></span><br><span class="line">    <span class="keyword">if</span>(response.getStatusLine().getStatusCode()==<span class="number">200</span>)&#123;</span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        String string = EntityUtils.toString(entity, <span class="string">"utf-8"</span>);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//6.关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="SpringBoot集成HttpClient"><a href="#SpringBoot集成HttpClient" class="headerlink" title="SpringBoot集成HttpClient"></a>SpringBoot集成HttpClient</h4><p>引入Maven依赖</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>接口自动化</category>
+      </categories>
+      <tags>
+        <tag>自动化测试</tag>
+        <tag>接口自动化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>自动化测试/自动化测试模式介绍</title>
     <url>/2019/11/21/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[]]></content>
@@ -13,7 +111,9 @@
   <entry>
     <title>自动化测试/Web自动化测试之Selenium Webdriver入门</title>
     <url>/2019/11/21/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BSelenium%20Webdriver%E5%85%A5%E9%97%A8/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h2 id="元素定位方法"><a href="#元素定位方法" class="headerlink" title="元素定位方法"></a>元素定位方法</h2><p><code>id</code>定位</p>
+<p><code>class</code>定位</p>
+]]></content>
   </entry>
   <entry>
     <title>【设计模式】装饰者模式</title>
@@ -144,6 +244,105 @@
 ]]></content>
   </entry>
   <entry>
+    <title>【SpringBoot】JWT实现用户认证与鉴权</title>
+    <url>/2019/11/08/Spring%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/</url>
+    <content><![CDATA[<p>[TOC]</p>
+<a id="more"></a>
+
+<h3 id="JWT概要"><a href="#JWT概要" class="headerlink" title="JWT概要"></a>JWT概要</h3><blockquote>
+<p> JSON Web Token（JWT）是一个开放的标准（RFC 7519），它定义了一个紧凑且自包含的方式，用于在各方之间以JSON对象安全地传输信息。这些信息可以通过数字签名进行验证和信任。可以使用秘密（使用HMAC算法）或使用RSA的公钥/私钥对来对JWT进行签名。<br>具体的jwt介绍可以查看官网的介绍：<a href="https://jwt.io/introduction/" target="_blank" rel="noopener">https://jwt.io/introduction/</a> </p>
+</blockquote>
+<h3 id="JWT请求流程"><a href="#JWT请求流程" class="headerlink" title="JWT请求流程"></a>JWT请求流程<img src="/images/17.png" alt="JSON Web令牌如何工作"></h3><p>中文介绍：</p>
+<ol>
+<li>用户使用账号和面发出post请求；</li>
+<li>服务器使用私钥创建一个jwt；</li>
+<li>服务器返回这个jwt给浏览器；</li>
+<li>浏览器将该jwt串在请求头中像服务器发送请求；</li>
+<li>服务器验证该jwt；</li>
+<li>返回响应的资源给浏览器。</li>
+</ol>
+<h3 id="JWT组成"><a href="#JWT组成" class="headerlink" title="JWT组成"></a>JWT组成</h3><p> jwt含有三部分：头部（header）、载荷（payload）、签证（signature） </p>
+<p><strong>Header</strong></p>
+<p>头部一般有两部分信息：声明类型、声明加密的算法（通常使用HMAC SHA256）<br>头部一般使用base64加密：<code>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9</code><br>解密后：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"typ"</span>:<span class="string">"JWT"</span>,</span><br><span class="line">    <span class="attr">"alg"</span>:<span class="string">"HS256"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>payload</strong></p>
+<p>该部分一般存放一些有效的信息。jwt的标准定义包含五个字段：</p>
+<ul>
+<li><code>iss</code>：该JWT的签发者</li>
+<li><code>sub</code>: 该JWT所面向的用户</li>
+<li><code>aud</code>: 接收该JWT的一方</li>
+<li><code>exp(expires)</code>: 什么时候过期，这里是一个Unix时间戳</li>
+<li><code>iat(issued at)</code>: 在什么时候签发的</li>
+</ul>
+<p>这个只是JWT的定义标准，不强制使用。另外自己也可以添加一些公开的不涉及安全的方面的信息。</p>
+<p><strong>signature</strong></p>
+<p>JWT最后一个部分。该部分是使用了HS256加密后的数据；包含三个部分：</p>
+<ul>
+<li>header (base64后的)</li>
+<li>payload (base64后的)</li>
+<li>secret 私钥</li>
+</ul>
+<p>secret是保存在服务器端的，jwt的签发生成也是在服务器端的，secret就是用来进行jwt的签发和jwt的验证，所以，它就是你服务端的私钥，在任何场景都不应该流露出去。一旦客户端得知这个secret, 那就意味着客户端是可以自我签发jwt了。</p>
+<h3 id="SpringBoot项目集成JWT"><a href="#SpringBoot项目集成JWT" class="headerlink" title="SpringBoot项目集成JWT"></a>SpringBoot项目集成JWT</h3><ol>
+<li>添加JWT依赖：</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.jsonwebtoken<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jjwt<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.9.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>SpringBoot配置文件中配置JWT配置信息</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#jwt配置</span></span><br><span class="line"><span class="attr">jwt:</span></span><br><span class="line">  <span class="attr">secret:</span> <span class="string">VTBoc2EyTnRPVzVhVnpkdGJra3piR2x4U0c1eE5qZzk=</span></span><br><span class="line">  <span class="attr">issuer:</span> <span class="string">hydrogen网关服务器</span></span><br><span class="line">  <span class="attr">subject:</span> <span class="string">hydrogen用户</span></span><br><span class="line">  <span class="attr">ttlMillis:</span> <span class="number">86400000</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>定义一个接口<code>Payload</code>，用于拓展的JWT载荷。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Payload</span> </span>&#123;</span><br><span class="line">    <span class="function">String <span class="title">key</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>定义一个JwtConfig类，用于加载配置：</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.context.properties.ConfigurationProperties;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@ConfigurationProperties</span>(prefix = <span class="string">"jwt"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JwtConfig</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 秘钥</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String secret;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 签发主体</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String issuer;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 签发主题</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String subject;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * token有效期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long ttlMillis;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>提供JWT的工具类：</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wusuiwei</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/11/29</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JwtUtil</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">createJWT</span><span class="params">(Payload payload, JwtConfig jwtConfig)</span> </span>&#123;</span><br><span class="line">        Claims claims = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">//载荷</span></span><br><span class="line">        String key = payload.key();</span><br><span class="line">        <span class="keyword">if</span> (key != <span class="keyword">null</span>) &#123;</span><br><span class="line">            String value = JSON.toJSONString(payload);</span><br><span class="line">            claims = <span class="keyword">new</span> DefaultClaims();</span><br><span class="line">            claims.put(<span class="string">"module"</span>, key);</span><br><span class="line">            claims.put(key, value);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Date expiration = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">//过期时间</span></span><br><span class="line">        <span class="keyword">if</span> (jwtConfig.getTtlMillis() != <span class="keyword">null</span> &amp;&amp; jwtConfig.getTtlMillis() &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            expiration = <span class="keyword">new</span> Date(System.currentTimeMillis() + jwtConfig.getTtlMillis());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//签名密钥</span></span><br><span class="line">        <span class="keyword">byte</span>[] secretBytes = DatatypeConverter.parseBase64Binary(jwtConfig.getSecret());</span><br><span class="line">        Key secretKey = <span class="keyword">new</span> SecretKeySpec(secretBytes, SignatureAlgorithm.HS256.getJcaName());</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> Jwts.builder().setHeaderParam(<span class="string">"typ"</span>, <span class="string">"JWT"</span>)</span><br><span class="line">                .setClaims(claims)</span><br><span class="line">                .setExpiration(expiration)</span><br><span class="line">                .signWith(SignatureAlgorithm.HS256, secretKey).compact();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Claims <span class="title">parseJWT</span><span class="params">(String token, JwtConfig jwtConfig)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Jwts.parser()</span><br><span class="line">                .setSigningKey(DatatypeConverter.parseBase64Binary(jwtConfig.getSecret()))</span><br><span class="line">                .parseClaimsJws(token)</span><br><span class="line">                .getBody();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>实现一个拦截器，处理鉴权</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">import com.wusuiwei.hydrogen.base.jwt.JwtConfig;</span><br><span class="line">import com.wusuiwei.hydrogen.base.jwt.JwtUtil;</span><br><span class="line">import org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line">import org.springframework.http.HttpMethod;</span><br><span class="line">import org.springframework.web.method.HandlerMethod;</span><br><span class="line">import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;</span><br><span class="line"></span><br><span class="line">import javax.servlet.http.HttpServletRequest;</span><br><span class="line">import javax.servlet.http.HttpServletResponse;</span><br><span class="line">import java.lang.annotation.Annotation;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @author wusuiwei</span><br><span class="line"> * @since 2019/11/29</span><br><span class="line"> */</span><br><span class="line">public class JWTIntercepter extends HandlerInterceptorAdapter &#123;</span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line">    private JwtConfig jwtConfig;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception &#123;</span><br><span class="line">        // 忽略带JwtIgnore注解的请求, 不做后续token认证校验</span><br><span class="line">        if (handler instanceof HandlerMethod) &#123;</span><br><span class="line">            HandlerMethod handlerMethod = (HandlerMethod) handler;</span><br><span class="line">            Annotation annotation = handlerMethod.getMethod().getAnnotation(JwtIgnore.class);</span><br><span class="line">//            JwtIgnore jwtIgnore = handlerMethod.getMethodAnnotation(JwtIgnore.class);</span><br><span class="line">            if (annotation != null) &#123;</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        String authHeader = request.getHeader(&quot;authorization&quot;);</span><br><span class="line">        if (HttpMethod.OPTIONS.equals(request.getMethod())) &#123;</span><br><span class="line">            response.setStatus(HttpServletResponse.SC_OK);</span><br><span class="line">            return true;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            if (authHeader == null || !authHeader.startsWith(&quot;Bearer&quot;)) &#123;</span><br><span class="line">                throw new RuntimeException(&quot;请登录~&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            //获取token</span><br><span class="line">            String token = authHeader.substring(7);</span><br><span class="line">            JwtUtil.parseJWT(token, jwtConfig);</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中，为了实现绕过登录认证，提供了<code>@JwtIgnore</code>注解，只需要将其注解在请求方法上，则可以绕过登录：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.*;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wusuiwei</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/11/29</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Target</span>(ElementType.METHOD)</span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> JwtIgnore &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>注：jwt可能会出现跨域问题，暂时不予处理，等后期相关知识具备时再处理。</strong></p>
+<hr>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>JWT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SpringBoot】Spring Data JPA</title>
+    <url>/2019/11/08/Spring%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<a id="more"></a>]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>Spring Data JPA</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Spring笔记】面向切面编程</title>
     <url>/2019/11/08/Spring%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B/</url>
     <content><![CDATA[<p><strong>AOP</strong>(Aspect-Oriented Programming, 面向切面编程): 是一种新的方法论, 是对传统 OOP(Object-Oriented Programming, 面向对象编程) 的补充.</p>
@@ -266,6 +465,23 @@
       </categories>
       <tags>
         <tag>Spring AOP</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Spring笔记】面向切面编程</title>
+    <url>/2019/11/08/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E3%80%90Hydrogen%E3%80%91%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<p>本系统将采用前后端分离的架构，后端采用SpringBoot等相关框架，前端采用Vue相关框架。</p>
+<a id="more"></a>
+
+<p>登录功能：</p>
+]]></content>
+      <categories>
+        <category>Spring笔记</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>hydrogen</tag>
+        <tag>jwt</tag>
       </tags>
   </entry>
   <entry>
@@ -689,6 +905,61 @@
       </categories>
   </entry>
   <entry>
+    <title>【Hydrogen-ui】Vue.js 环境准备（IDEA）</title>
+    <url>/2019/11/07/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-ui-master/%E3%80%90Hydrogen-ui%E3%80%91Vue.js%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%EF%BC%88IDEA%EF%BC%89/</url>
+    <content><![CDATA[<p>记录了IDEA下编辑Vue.js 代码的配置</p>
+<a id="more"></a>
+
+<ol>
+<li>添加”vue.js”插件</li>
+</ol>
+<p><img src="/images/1574915669322.png" alt="1574915669322"></p>
+<ol start="2">
+<li>配置支持 ECMAScript 6</li>
+</ol>
+<p><img src="/images/1574915705512.png" alt="1574915705512"></p>
+<ol start="3">
+<li>搭建Vue项目</li>
+</ol>
+<p><img src="/images/20190509180042603.png" alt="img"></p>
+<p><img src="/images/20190509180056736.png" alt="img"></p>
+<p><img src="/images/20190509180117154.png" alt="img"></p>
+<ol start="4">
+<li>安装 Vue脚手架</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i -g vue-cli</span><br></pre></td></tr></table></figure>
+
+<p>验证是否安装成功：<code>vue -V</code></p>
+<p><strong>npm下载慢的问题</strong>：添加国内镜像。</p>
+<p>临时使用:<code>npm --registry https://registry.npm.taobao.org install express</code></p>
+<p>持久使用:<code>npm config set registry https://registry.npm.taobao.org</code></p>
+<p>验证是否配置成功：<code>npm config get registry</code>或<code>npm info express</code></p>
+<ol start="5">
+<li>项目初始化</li>
+</ol>
+<p>切换到项目的上级目录，执行：<code>vue init webpack demo</code></p>
+<ol start="6">
+<li>运行项目</li>
+</ol>
+<p>运行项目：<code>npm run dev</code></p>
+<ol start="7">
+<li>验证项目是否运行成功：localhost:8080</li>
+</ol>
+<p><img src="/images/1574918874140.png" alt="1574918874140"></p>
+<hr>
+<ul>
+<li><strong>webpack</strong> ：一个现代 JavaScript 应用程序的<em>静态模块打包器(module bundler)</em>。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>项目笔记</category>
+      </categories>
+      <tags>
+        <tag>hydrogen</tag>
+        <tag>hydrogen-ui-master</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【设计模式】单例模式</title>
     <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<blockquote>
@@ -827,6 +1098,83 @@
       <tags>
         <tag>Java</tag>
         <tag>Exception</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Java】注解</title>
+    <url>/2018/05/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E3%80%91%E6%B3%A8%E8%A7%A3/</url>
+    <content><![CDATA[<a id="more"></a>
+
+<h3 id="JDK内置注解"><a href="#JDK内置注解" class="headerlink" title="JDK内置注解"></a>JDK内置注解</h3><ul>
+<li><code>@Override</code>：限定重写父类方法，该方法只能用于方法</li>
+<li><code>@Deprecated</code>：用于表示某个程序元素（类、方法等）已过时</li>
+<li><code>@SuppressWarnings</code>：抑制编译器警告</li>
+</ul>
+<h3 id="元注解"><a href="#元注解" class="headerlink" title="元注解"></a>元注解</h3><p>查看JDK内置的注解源码，可以发现有注解标注在注解上，例如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target</span>(ElementType.METHOD)</span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.SOURCE)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Override &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>【元注解】： 用于修饰注解的注解，通常用在注解的定义上 。</p>
+<p>Java中有以下几个元注解：</p>
+<ul>
+<li>@Target：注解的作用目标</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="meta">@Target</span>(ElementType.ANNOTATION_TYPE)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Target &#123;</span><br><span class="line">    ElementType[] value();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>@Target</code>可以使用value传值，表示注解的作用目标</p>
+<p>ElementType是一个枚举类，有以下值：</p>
+<p>ElementType.TYPE： 作用于 类、接口和枚举 上<br>ElementType.FIELD： 作用于  属性字段  上<br>ElementType.METHOD： 作用于  方法 上<br>ElementType.PARAMETER： 作用于  方法参数  上<br>ElementType.CONSTRUCTOR： 作用于  构造器  上<br>ElementType.LOCAL_VARIABLE： 作用于  本地局部变量  上<br>ElementType.ANNOTATION_TYPE： 作用于  注解  上<br>ElementType.PACKAGE： 作用于 包  上<br>ElementType.TYPE_PARAMETER：  @since 1.8<br>ElementType.TYPE_USE：  @since 1.8 </p>
+</blockquote>
+<ul>
+<li>@Retention：注解的生命周期</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="meta">@Target</span>(ElementType.ANNOTATION_TYPE)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Retention &#123;</span><br><span class="line">    <span class="function">RetentionPolicy <span class="title">value</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p><code>@Retention</code>用于标记注解的生命周期</p>
+<p>RetentionPolicy是一个枚举类，有以下值：</p>
+<p>RetentionPolicy.SOURCE： 当前注解编译期可见，不会写入 class 文件 </p>
+<p>RetentionPolicy.CLASS： 类加载阶段丢弃，会写入 class 文件 </p>
+<p>RetentionPolicy.RUNTIME： 永久保存，可以反射获取 </p>
+</blockquote>
+<ul>
+<li>@Documented：注解是否应当被包含在 JavaDoc 文档中</li>
+<li>@Inherited：是否允许子类继承该注解</li>
+</ul>
+<h3 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h3><p>自定义注解的方法非常简单，可以使用元注解进行修饰，例如：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="meta">@Target</span>(ElementType.TYPE)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    <span class="function">RetentionPolicy <span class="title">value</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="注解解析"><a href="#注解解析" class="headerlink" title="注解解析"></a>注解解析</h3><p>对于一个类、枚举、接口来说，java.lang.Class类提供了以下方法用于反射注解：</p>
+<ul>
+<li>getAnnotation：返回指定的注解</li>
+<li>isAnnotationPresent：判定当前元素是否被指定注解修饰</li>
+<li>getAnnotations：返回所有的注解</li>
+<li>getDeclaredAnnotation：返回本元素的指定注解</li>
+<li>getDeclaredAnnotations：返回本元素的所有注解，不包含父类继承而来的</li>
+</ul>
+<p>方法、参数的获取方法是类似的，这里不做详细介绍。</p>
+<p>下面将详细介绍反射获取注解的实现过程：</p>
+<ul>
+<li>自定义注解<code>MyAnnotation</code></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.ElementType;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.Retention;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.RetentionPolicy;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.Target;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Target</span>(&#123;ElementType.TYPE,ElementType.METHOD&#125;)</span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>测试类<code>AnnotationTest</code>解析注解</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@MyAnnotation</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AnnotationTest</span> </span>&#123;</span><br><span class="line">    <span class="meta">@MyAnnotation</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hello</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> ClassNotFoundException, NoSuchMethodException </span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span> present = Class.forName(<span class="string">"com.wusuiwei.hydrogen.AnnotationTest"</span>).isAnnotationPresent(MyAnnotation<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        System.out.println(present);</span><br><span class="line"></span><br><span class="line">        Method hello = Class.forName(<span class="string">"com.wusuiwei.hydrogen.AnnotationTest"</span>).getMethod(<span class="string">"hello"</span>);</span><br><span class="line">        MyAnnotation annotation = hello.getAnnotation(MyAnnotation<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        System.out.println(annotation);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>运行结果：<code>true</code></p>
+</blockquote>
+<hr>
+]]></content>
+      <categories>
+        <category>Java笔记</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>Annotation</tag>
       </tags>
   </entry>
 </search>
