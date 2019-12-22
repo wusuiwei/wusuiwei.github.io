@@ -56,24 +56,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>【SpringBoot】拦截器</title>
-    <url>/2019/11/29/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
-<p>实现java web token的拦截</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>拦截器</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Spring Boot】异常处理机制</title>
     <url>/2019/11/29/Java%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Boot%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/</url>
     <content><![CDATA[<blockquote>
@@ -162,6 +144,24 @@
       <tags>
         <tag>SpringBoot</tag>
         <tag>异常处理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SpringBoot】拦截器</title>
+    <url>/2019/11/29/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
+<p>实现java web token的拦截</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>拦截器</tag>
       </tags>
   </entry>
   <entry>
@@ -388,22 +388,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>【SpringBoot】Spring Data JPA</title>
-    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91JPA%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>JPA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Java】IO 流</title>
     <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E3%80%91IO%20%E6%B5%81/</url>
     <content><![CDATA[<blockquote>
@@ -443,21 +427,18 @@
   </entry>
   <entry>
     <title>【SpringBoot】Spring Data JPA</title>
-    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91JPA%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
 <a id="more"></a>
-
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.2.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
         <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>SpringBoot</tag>
-        <tag>Spring Data JPA</tag>
+        <tag>JPA</tag>
       </tags>
   </entry>
   <entry>
@@ -548,6 +529,25 @@
       <tags>
         <tag>SpringBoot</tag>
         <tag>JWT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SpringBoot】Spring Data JPA</title>
+    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.2.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>Spring Data JPA</tag>
       </tags>
   </entry>
   <entry>
@@ -1468,9 +1468,198 @@
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
 <p>本文主要用于Java SE核心技术的复习与总结，文件比较长，耐心查看。</p>
+<p><img src="/images/image-20191222205312777.png" alt="image-20191222205312777"></p>
 <a id="more"></a>
 
-<h1 id="Java-SE"><a href="#Java-SE" class="headerlink" title="Java SE"></a>Java SE</h1><h2 id="Java-语言概述"><a href="#Java-语言概述" class="headerlink" title="Java 语言概述"></a>Java 语言概述</h2><h2 id="Java-基本语法"><a href="#Java-基本语法" class="headerlink" title="Java 基本语法"></a>Java 基本语法</h2><h2 id="Java-面向对象编程"><a href="#Java-面向对象编程" class="headerlink" title="Java 面向对象编程"></a>Java 面向对象编程</h2><h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h2 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h2><h2 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h2><h2 id="集合框架"><a href="#集合框架" class="headerlink" title="集合框架"></a>集合框架</h2><h2 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h2><h2 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h2><h2 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h2><h2 id="常用类"><a href="#常用类" class="headerlink" title="常用类"></a>常用类</h2><h2 id="反射机制"><a href="#反射机制" class="headerlink" title="反射机制"></a>反射机制</h2><h2 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h2><h2 id="Java-8-新特性"><a href="#Java-8-新特性" class="headerlink" title="Java 8 新特性"></a>Java 8 新特性</h2><h3 id="Lambda-表达式"><a href="#Lambda-表达式" class="headerlink" title="Lambda 表达式"></a>Lambda 表达式</h3><h3 id="Stream-API"><a href="#Stream-API" class="headerlink" title="Stream API"></a>Stream API</h3><h2 id="Java-9-11新特性"><a href="#Java-9-11新特性" class="headerlink" title="Java 9~11新特性"></a>Java 9~11新特性</h2><h1 id="项目实战"><a href="#项目实战" class="headerlink" title="项目实战"></a>项目实战</h1>]]></content>
+<h1 id="Java-SE"><a href="#Java-SE" class="headerlink" title="Java SE"></a>Java SE</h1><h2 id="Java-语言概述"><a href="#Java-语言概述" class="headerlink" title="Java 语言概述"></a>Java 语言概述</h2><h2 id="Java-基本语法"><a href="#Java-基本语法" class="headerlink" title="Java 基本语法"></a>Java 基本语法</h2><h3 id="关键字和保留字"><a href="#关键字和保留字" class="headerlink" title="关键字和保留字"></a>关键字和保留字</h3><p>关键字定义：<strong>被Java 语言赋予了特殊含义，用做专门用途的字符串（单词）</strong>。</p>
+<p>官方地址： <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html" target="_blank" rel="noopener">https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html</a></p>
+<p>关键字：</p>
+<table>
+<thead>
+<tr>
+<th><code>abstract</code></th>
+<th><code>continue</code></th>
+<th><code>for</code></th>
+<th><code>new</code></th>
+<th><code>switch</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>assert</code>***</td>
+<td><code>default</code></td>
+<td><code>goto</code>*</td>
+<td><code>package</code></td>
+<td><code>synchronized</code></td>
+</tr>
+<tr>
+<td><code>boolean</code></td>
+<td><code>do</code></td>
+<td><code>if</code></td>
+<td><code>private</code></td>
+<td><code>this</code></td>
+</tr>
+<tr>
+<td><code>break</code></td>
+<td><code>double</code></td>
+<td><code>implements</code></td>
+<td><code>protected</code></td>
+<td><code>throw</code></td>
+</tr>
+<tr>
+<td><code>byte</code></td>
+<td><code>else</code></td>
+<td><code>import</code></td>
+<td><code>public</code></td>
+<td><code>throws</code></td>
+</tr>
+<tr>
+<td><code>case</code></td>
+<td><code>enum</code>****</td>
+<td><code>instanceof</code></td>
+<td><code>return</code></td>
+<td><code>transient</code></td>
+</tr>
+<tr>
+<td><code>catch</code></td>
+<td><code>extends</code></td>
+<td><code>int</code></td>
+<td><code>short</code></td>
+<td><code>try</code></td>
+</tr>
+<tr>
+<td><code>char</code></td>
+<td><code>final</code></td>
+<td><code>interface</code></td>
+<td><code>static</code></td>
+<td><code>void</code></td>
+</tr>
+<tr>
+<td><code>class</code></td>
+<td><code>finally</code></td>
+<td><code>long</code></td>
+<td><code>strictfp</code>**</td>
+<td><code>volatile</code></td>
+</tr>
+<tr>
+<td><code>const</code>*</td>
+<td><code>float</code></td>
+<td><code>native</code></td>
+<td><code>super</code></td>
+<td><code>while</code></td>
+</tr>
+</tbody></table>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">注：</span><br><span class="line">*	 		not used</span><br><span class="line">**	 		added in 1.2</span><br><span class="line">***	 		added in 1.4</span><br><span class="line">****	 	added in 5.0</span><br></pre></td></tr></table></figure>
+
+<p>保留字定义：现有Java版本尚未使用，但以后版本可能会作为关键字使用。（goto、 const ）</p>
+<h4 id="标识符"><a href="#标识符" class="headerlink" title="标识符"></a>标识符</h4><p>定义：<strong>Java 对各种 变量、 方法和 类等要素命名时使用的字符序列称为标识符</strong>。</p>
+<p>定义规则：</p>
+<ul>
+<li>由 由26 个英文字母大小写，0-9 ，_或 或 $ 组成</li>
+<li>数字不可以开头。</li>
+<li>不可以使用关键字和保留字，但能包含关键字和保留字。</li>
+<li>Java 中严格区分大小写，长度无限制。</li>
+</ul>
+<p>Java中的命名规范：</p>
+<ul>
+<li>包名：多单词组成时所有字母都小写：xxxyyyzzz</li>
+<li>类名、接口名：多单词组成时，所有单词的首字母大写：XxxYyyZzz</li>
+<li>变量名、方法名：多单词组成时，第一个单词首字母小写，第二个单词开始每个<br>单词首字母大写：xxxYyyZzz</li>
+<li>常量名：所有字母都大写。多单词时每个单词用下划线连接：XXX_YYY_ZZZ</li>
+</ul>
+<p>注：更多细节可以参考书籍<strong>《代码整洁之道》</strong>。</p>
+<h4 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h4><p>定义：</p>
+<ul>
+<li>内存中的一个存储区域</li>
+<li>该区域的数据可以在同一类型范围内不断变化</li>
+<li>变量是程序中最基本的存储单元。包含变量类型、变量名和存储的值</li>
+</ul>
+<p>变量的分类：</p>
+<img src="/images/image-20191223003651243.png" alt="image-20191223003651243" style="zoom:50%;" />
+
+<h5 id="基本数据类型"><a href="#基本数据类型" class="headerlink" title="基本数据类型"></a>基本数据类型</h5><p><strong>整数类型</strong>：byte、short、int、long</p>
+<ul>
+<li>Java常量默认int类型，声明long常量通常需要以“L”或”l”结尾</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>占用存储空间</th>
+<th>表数范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>1字节=8bit位</td>
+<td>-128~127</td>
+</tr>
+<tr>
+<td>short</td>
+<td>2字节</td>
+<td>-2^15~2^15-1</td>
+</tr>
+<tr>
+<td>int</td>
+<td>4字节</td>
+<td>-2^31~2^31-1(约21亿)</td>
+</tr>
+<tr>
+<td>long</td>
+<td>8字节</td>
+<td>-2^63~2^63-1</td>
+</tr>
+</tbody></table>
+<p><strong>浮点类型</strong>：float、double</p>
+<ul>
+<li>Java 的浮点型常量默认为double型，声明float 型常量，须后加‘f’ 或‘F’ </li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>占用存储空间</th>
+<th>表数范围</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>单精度float</td>
+<td>4字节</td>
+<td>-3.403E38 ~ 3.403E38</td>
+</tr>
+<tr>
+<td>双精度double</td>
+<td>8字节</td>
+<td>-1.798E308 ~ 1.798E308</td>
+</tr>
+</tbody></table>
+<p><strong>字符型</strong>：char</p>
+<ul>
+<li>声明字符型时，使用单引号，如<code>&#39;a&#39;</code>.</li>
+<li>Java中的所有字符都使用Unicode编码，一个字符可以存储一个汉字、字母、其他书面语的一个字符。</li>
+</ul>
+<p><strong>布尔型</strong>：boolean</p>
+<ul>
+<li>boolean类型数据只允许取值true或false，无null</li>
+</ul>
+<h5 id="基本数据类型变量间转换"><a href="#基本数据类型变量间转换" class="headerlink" title="基本数据类型变量间转换"></a>基本数据类型变量间转换</h5><p><strong>自动类型转换</strong>：容量小的类型自动转换为容量大的数据类型。</p>
+<p><img src="/images/image-20191223010045620.png" alt="image-20191223010045620"></p>
+<ul>
+<li>byte,short,char之间不会相互转换，他们三者在计算时首先转换为int类型。</li>
+<li>boolean类型不能与其它数据类型运算。</li>
+<li>当把任何基本数据类型的值和字符串(String)进行连接运算时(+)，基本数据类<br>型的值将自动转化为字符串(String)类型。</li>
+</ul>
+<p><strong>强制类型转换</strong>：容量大的类型强制转换为容量小的数据类型。</p>
+<ul>
+<li>使用<code>()</code>强制转换符：<code>double i=12.5; int j=(int)i;</code></li>
+</ul>
+<h5 id="基本数据类型与String间转换"><a href="#基本数据类型与String间转换" class="headerlink" title="基本数据类型与String间转换"></a>基本数据类型与String间转换</h5><p>基本数据类型转String：</p>
+<ul>
+<li>使用基本类型的封装类的toString()方法</li>
+<li>String类的valueOf()方法,<code>int a=12;String s=String.valueOf(a);</code></li>
+<li>加一个<code>&quot;&quot;</code>类实现自动类型转换，<code>int i=1; String s=&quot;&quot;+i;</code></li>
+</ul>
+<p>String转基本数据类型：使用包装类的方法转换。如：<code>String a=43; int i= Integer.parseInt(a);</code></p>
+<h5 id="进制与进制间的转换（基本概念，不用细解）"><a href="#进制与进制间的转换（基本概念，不用细解）" class="headerlink" title="进制与进制间的转换（基本概念，不用细解）"></a>进制与进制间的转换（基本概念，不用细解）</h5><h3 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h3><h3 id="程序流程控制"><a href="#程序流程控制" class="headerlink" title="程序流程控制"></a>程序流程控制</h3><h2 id="Java-面向对象编程"><a href="#Java-面向对象编程" class="headerlink" title="Java 面向对象编程"></a>Java 面向对象编程</h2><h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h2 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h2><h2 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h2><h2 id="集合框架"><a href="#集合框架" class="headerlink" title="集合框架"></a>集合框架</h2><h2 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h2><h2 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h2><h2 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h2><h2 id="常用类"><a href="#常用类" class="headerlink" title="常用类"></a>常用类</h2><h2 id="反射机制"><a href="#反射机制" class="headerlink" title="反射机制"></a>反射机制</h2><h2 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h2><h2 id="Java-8-新特性"><a href="#Java-8-新特性" class="headerlink" title="Java 8 新特性"></a>Java 8 新特性</h2><h3 id="Lambda-表达式"><a href="#Lambda-表达式" class="headerlink" title="Lambda 表达式"></a>Lambda 表达式</h3><h3 id="Stream-API"><a href="#Stream-API" class="headerlink" title="Stream API"></a>Stream API</h3><h2 id="Java-9-11新特性"><a href="#Java-9-11新特性" class="headerlink" title="Java 9~11新特性"></a>Java 9~11新特性</h2><h1 id="项目实战"><a href="#项目实战" class="headerlink" title="项目实战"></a>项目实战</h1>]]></content>
       <categories>
         <category>Java</category>
       </categories>
