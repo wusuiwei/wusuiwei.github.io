@@ -1,13 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>项目笔记/hydrogen-master/【Hydrogen】项目环境搭建</title>
-    <url>/2019/11/29/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-master/%E3%80%90Hydrogen%E3%80%91%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <title>前端知识/Vue知识框架</title>
+    <url>/2019/12/07/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/Vue%E7%9F%A5%E8%AF%86%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>项目笔记/hydrogen-master/【Hydrogen】项目环境搭建</title>
+    <url>/2019/11/29/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-master/%E3%80%90Hydrogen%E3%80%91%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<p>登录页：</p>
+<ul>
+<li>登录（自动注册）</li>
+<li>忘记密码</li>
+</ul>
+<p>账号信息</p>
+<p>项目组管理：</p>
+<ul>
+<li>项目列表</li>
+<li>邀请加入项目组</li>
+<li>移交管理员</li>
+<li>删除成员</li>
+<li>退出项目组/解散项目组（仅自己一个人时可解散）</li>
+</ul>
+<p>测试数据库管理：</p>
+<ul>
+<li>mysql</li>
+</ul>
+<p>用例管理：</p>
+<ul>
+<li>新增用例</li>
+<li>修改用例</li>
+<li>删除用例</li>
+<li>运行用例</li>
+<li>复制用例</li>
+</ul>
+<p>测试用例集管理：</p>
+<ul>
+<li>新增用例集</li>
+</ul>
+<p>参数化环境管理</p>
+<ul>
+<li>查询</li>
+<li>新增</li>
+<li>修改</li>
+<li>删除</li>
+<li>参数值管理<ul>
+<li>查询</li>
+<li>新增</li>
+<li>修改</li>
+<li>删除</li>
+</ul>
+</li>
+</ul>
+<p>测试报告</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>【SpringBoot】拦截器</title>
+    <url>/2019/11/29/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
+<p>实现java web token的拦截</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>拦截器</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Spring Boot】异常处理机制</title>
-    <url>/2019/11/29/Spring%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Boot%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/</url>
+    <url>/2019/11/29/Java%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Boot%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -19,28 +87,81 @@
 </ul>
 <a id="more"></a>
 
-<h3 id="默认异常处理"><a href="#默认异常处理" class="headerlink" title="默认异常处理"></a>默认异常处理</h3><h3 id="自定义异常处理"><a href="#自定义异常处理" class="headerlink" title="自定义异常处理"></a>自定义异常处理</h3><h3 id="统一异常处理实践"><a href="#统一异常处理实践" class="headerlink" title="统一异常处理实践"></a>统一异常处理实践</h3>]]></content>
+<h3 id="默认异常处理"><a href="#默认异常处理" class="headerlink" title="默认异常处理"></a>默认异常处理</h3><p>默认情况下，Spring Boot 分情况提供了两种处理方式：</p>
+<ul>
+<li>浏览器访问（ Accept: text/html ）：返回一个 error 页面</li>
+</ul>
+<p><img src="/images/image-20191130232129074.png" alt="image-20191130232129074"></p>
+<ul>
+<li>其他客户端访问（如Postman，Accept: */*）：返回一个json数据</li>
+</ul>
+<p><img src="/images/image-20191130232326570.png" alt="image-20191130232326570"></p>
+<p>原理：</p>
+<p>异常处理的自动配置类：<code>org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration</code> </p>
+<p>向 Spring 容器中添加了以下组件：</p>
+<ul>
+<li>DefaultErrorAttributes</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>BasicErrorController</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"$&#123;server.error.path:$&#123;error.path:/error&#125;&#125;"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BasicErrorController</span> <span class="keyword">extends</span> <span class="title">AbstractErrorController</span> </span>&#123;</span><br><span class="line">    <span class="comment">//产生html类型的数据</span></span><br><span class="line">    <span class="meta">@RequestMapping</span>(produces = MediaType.TEXT_HTML_VALUE)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">errorHtml</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> </span>&#123;</span><br><span class="line">        HttpStatus status = getStatus(request);</span><br><span class="line">        Map&lt;String, Object&gt; model = Collections</span><br><span class="line">            .unmodifiableMap(getErrorAttributes(request, isIncludeStackTrace(request, MediaType.TEXT_HTML)));</span><br><span class="line">        response.setStatus(status.value());</span><br><span class="line">        <span class="comment">//去哪个页面作为错误页面，包含页面地址和页面内容</span></span><br><span class="line">        ModelAndView modelAndView = resolveErrorView(request, response, status, model);</span><br><span class="line">        <span class="keyword">return</span> (modelAndView != <span class="keyword">null</span>) ? modelAndView : <span class="keyword">new</span> ModelAndView(<span class="string">"error"</span>, model);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//产生json数据</span></span><br><span class="line">    <span class="meta">@RequestMapping</span></span><br><span class="line">    <span class="keyword">public</span> ResponseEntity&lt;Map&lt;String, Object&gt;&gt; error(HttpServletRequest request) &#123;</span><br><span class="line">        HttpStatus status = getStatus(request);</span><br><span class="line">        <span class="keyword">if</span> (status == HttpStatus.NO_CONTENT) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> ResponseEntity&lt;&gt;(status);</span><br><span class="line">        &#125;</span><br><span class="line">        Map&lt;String, Object&gt; body = getErrorAttributes(request, isIncludeStackTrace(request, MediaType.ALL));</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ResponseEntity&lt;&gt;(body, status);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>ErrorPageCustomizer</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Value</span>(<span class="string">"$&#123;error.path:/error&#125;"</span>)</span><br><span class="line"><span class="keyword">private</span> String path = <span class="string">"/error"</span>;<span class="comment">//系统错误之后来到error请求来进行处理；</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>DefaultErrorViewResolver</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ModelAndView <span class="title">resolveErrorView</span><span class="params">(HttpServletRequest request, HttpStatus status, Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    ModelAndView modelAndView = resolve(String.valueOf(status.value()), model);</span><br><span class="line">    <span class="keyword">if</span> (modelAndView == <span class="keyword">null</span> &amp;&amp; SERIES_VIEWS.containsKey(status.series())) &#123;</span><br><span class="line">        modelAndView = resolve(SERIES_VIEWS.get(status.series()), model);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> modelAndView;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> ModelAndView <span class="title">resolve</span><span class="params">(String viewName, Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//默认Spring Boot可以去找到一个页面：/error/404.html</span></span><br><span class="line">    String errorViewName = <span class="string">"error/"</span> + viewName;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//模板引擎可以解析这个页面地址就用模板引擎解析</span></span><br><span class="line">    TemplateAvailabilityProvider provider = <span class="keyword">this</span>.templateAvailabilityProviders.getProvider(errorViewName,</span><br><span class="line">                                                                                           <span class="keyword">this</span>.applicationContext);</span><br><span class="line">    <span class="keyword">if</span> (provider != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="comment">//如果模板引擎可用的情况下返回到errorViewName指定的视图地址</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ModelAndView(errorViewName, model);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//模板引擎不可用，就在静态资源文件夹下找errorViewName对应的界面 error/404.html</span></span><br><span class="line">    <span class="keyword">return</span> resolveResource(errorViewName, model);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>异常处理步骤：</p>
+<p>一旦系统出现4xx或5xx之类的错误；ErrorPageCustomizer就会生效（定制错误的响应规则）；就会来到/erroe请求，就会被BasicErrorController处理：</p>
+<p>1) 响应页面，去哪个页面由DefaultErrorViewResolver解析</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> ModelAndView <span class="title">resolveErrorView</span><span class="params">(HttpServletRequest request, HttpServletResponse response, HttpStatus status,</span></span></span><br><span class="line"><span class="function"><span class="params">                                        Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (ErrorViewResolver resolver : <span class="keyword">this</span>.errorViewResolvers) &#123;</span><br><span class="line">        ModelAndView modelAndView = resolver.resolveErrorView(request, status, model);</span><br><span class="line">        <span class="keyword">if</span> (modelAndView != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> modelAndView;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>2）如何定制错误响应：</p>
+<ul>
+<li><p>如何定制错误的页面：</p>
+<ul>
+<li>在有模板引擎情况下，将错误页面命名为<code>404.html</code>，放在模板引擎文件夹下的error文件夹下<ul>
+<li>也可以使用4xx或5xx作为错误页面的文件名来匹配错误，优先精确匹配404.html</li>
+<li>页面可以获取到的信息：<ul>
+<li>timestamp:时间戳</li>
+<li>status：状态码</li>
+<li>error：错误提示</li>
+<li>exception：异常</li>
+<li>message：异常消息</li>
+<li>errors：JSR303数据校验的错误</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>没有模板引擎，静态资源文件夹下error文件中404.html页面</li>
+<li>以上位置都未配置错误页面，则默认来到springboot默认错误页面</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>如何定制错误的JSON数据：</p>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+<h3 id="自定义异常处理"><a href="#自定义异常处理" class="headerlink" title="自定义异常处理"></a>自定义异常处理</h3><p><strong>定制错误页面</strong></p>
+<p><strong>定制错误JSON数据</strong></p>
+<h3 id="统一异常处理实践"><a href="#统一异常处理实践" class="headerlink" title="统一异常处理实践"></a>统一异常处理实践</h3>]]></content>
       <categories>
         <category>SpringBoot</category>
       </categories>
       <tags>
         <tag>SpringBoot</tag>
         <tag>异常处理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【SpringBoot】拦截器</title>
-    <url>/2019/11/29/Spring%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
-    <content><![CDATA[<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
-<p>实现java web token的拦截</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>拦截器</tag>
       </tags>
   </entry>
   <entry>
@@ -257,8 +378,8 @@
       </tags>
   </entry>
   <entry>
-    <title>书籍购买-20191112</title>
-    <url>/2019/11/12/%E4%B9%A6%E7%B1%8D%E8%B4%AD%E4%B9%B0-20191112/</url>
+    <title>读书笔记/书籍购买-20191112</title>
+    <url>/2019/11/12/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E4%B9%A6%E7%B1%8D%E8%B4%AD%E4%B9%B0-20191112/</url>
     <content><![CDATA[<p>计算机基础相关</p>
 <p>数据库</p>
 <p>java语言相关</p>
@@ -268,8 +389,67 @@
   </entry>
   <entry>
     <title>【SpringBoot】Spring Data JPA</title>
-    <url>/2019/11/08/Spring%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<a id="more"></a>
+    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91JPA%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>JPA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Java】IO 流</title>
+    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E3%80%91IO%20%E6%B5%81/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><code>java.io</code>是平时项目中经常使用到的功能，无论文件读写还是端口监听都会使用Java IO操作。</p>
+<p>本文章将详细讲述Java IO的操作，详情如下：</p>
+<ul>
+<li>基本文件/文件夹操作</li>
+<li>IO 流</li>
+<li>面试必备</li>
+</ul>
+<a id="more"></a>
+
+<h2 id="基本文件-文件夹操作"><a href="#基本文件-文件夹操作" class="headerlink" title="基本文件/文件夹操作"></a>基本文件/文件夹操作</h2><h3 id="文件-文件夹操作"><a href="#文件-文件夹操作" class="headerlink" title="文件/文件夹操作"></a>文件/文件夹操作</h3><p><strong><code>java.io.File</code>类提供了多种对文件/文件夹操作的方法。</strong>以下演示了部分操作：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//createNewFile() : 新增文件或文件夹</span></span><br><span class="line">File file1 = <span class="keyword">new</span> File(<span class="string">"a.txt"</span>);</span><br><span class="line">System.out.println(<span class="string">"创建文件file1:"</span>+file1.createNewFile());</span><br><span class="line">File file2 = <span class="keyword">new</span> File(<span class="string">"d:\\a.txt"</span>);</span><br><span class="line">System.out.println(<span class="string">"创建文件file2:"</span>+file2.createNewFile());</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查看文件名或文件路由</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">//getName():访问文件名</span></span><br><span class="line">System.out.println(<span class="string">"file1文件名："</span>+file1.getName());</span><br><span class="line"><span class="comment">//getParent()：文件上级目录</span></span><br><span class="line">System.out.println(<span class="string">"file1文件上级目录："</span>+file1.getParent());</span><br><span class="line"><span class="comment">//getAbsoluteFile()：文件绝对路径</span></span><br><span class="line">System.out.println(<span class="string">"file1文件绝对路径："</span>+file1.getAbsoluteFile());</span><br><span class="line"><span class="comment">//getPath(): 文件项目路径</span></span><br><span class="line">System.out.println(<span class="string">"file1文件相对路径："</span>+file1.getPath());</span><br><span class="line">System.out.println(<span class="string">"file1文件相对路径："</span>+file2.getPath());</span><br><span class="line"><span class="comment">//renameTo():文件重命名</span></span><br><span class="line">File file3 = <span class="keyword">new</span> File(<span class="string">"d:\\b.txt"</span>);</span><br><span class="line"><span class="keyword">boolean</span> b = file1.renameTo(file3);</span><br><span class="line">System.out.println(<span class="string">"file1 重命名为 file3："</span>+b);</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 文件属性检测</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">//exists()</span></span><br><span class="line">System.out.println(<span class="string">"file1文件是否存在："</span>+file1.exists());</span><br><span class="line"><span class="comment">//canWrite()、canRead()、canExcute()：文件是否可写、可读、可执行</span></span><br><span class="line">System.out.println(<span class="string">"file2文件是否可写："</span>+file2.canWrite());</span><br><span class="line"><span class="comment">//isFile()、isDirectory()</span></span><br><span class="line">System.out.println(<span class="string">"file2是否为文件："</span>+file2.isFile());</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 获取常规文件信息</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">System.out.println(<span class="string">"file2的最后修改时间："</span>+<span class="keyword">new</span> Date(file2.lastModified()));</span><br><span class="line">System.out.println(<span class="string">"file2 文件大小："</span>+file2.length());</span><br><span class="line"></span><br><span class="line"><span class="comment">// delete() : 删除文件</span></span><br><span class="line">file3.delete();</span><br><span class="line">file2.delete();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//mkdir()：创建文件夹</span></span><br><span class="line">File dir1 = <span class="keyword">new</span> File(<span class="string">"D:\\IO"</span>);</span><br><span class="line">dir1.mkdir();</span><br><span class="line"><span class="comment">//list() 、 listFiles()：获取文件夹下的文件名列表或文件列表</span></span><br><span class="line">String[] list = dir1.list();</span><br><span class="line"><span class="keyword">for</span> (String s : list) &#123;</span><br><span class="line">    System.out.println(s);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 文件夹的其他操作与文件相同，暂不赘述</span></span><br><span class="line"><span class="comment">//查看文件名或文件路由：getName()、getParent()、getAbsoluteFile()、getPath()、renameTo()</span></span><br><span class="line"><span class="comment">//文件检测：exists()、canWrite()、canRead()、canExcute()、isFile()、isDirectory()</span></span><br><span class="line"><span class="comment">//获取常规文件信息：lastModified()、length()</span></span><br><span class="line"></span><br><span class="line">dir1.delete();</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h2><p><strong>IO 流</strong> 用来处理设备之间的数据传输。</p>
+<p>流的分类：</p>
+<ul>
+<li>按操作数据单位分：字节流和字符流</li>
+<li>按流向分：输入流和输出流</li>
+<li>按角色分：节点流和处理流</li>
+</ul>
+<p>按照数据操作单位分为字节流和字符流，<code>java.io</code>包下设计40多个类，可分为：<img src="/images/2331536-faede093458803b1.webp" alt="img"></p>
+<p> 根据不同的使用范围，可分为以下： </p>
+<p><img src="/images/image-20191209231209010.png" alt="image-20191209231209010"></p>
+<h2 id="面试必备"><a href="#面试必备" class="headerlink" title="面试必备"></a>面试必备</h2>]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+        <tag>IO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SpringBoot】Spring Data JPA</title>
+    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.2.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -282,8 +462,11 @@
   </entry>
   <entry>
     <title>【SpringBoot】JWT实现用户认证与鉴权</title>
-    <url>/2019/11/08/Spring%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/</url>
-    <content><![CDATA[<p>Http协议是无状态协议，通常需要实现用户认证，实现认证的方式有传统的Session认证和基于Token的认证，下面将介绍基于token的认证方式。</p>
+    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>Http协议是无状态协议，通常需要实现用户认证，实现认证的方式有传统的Session认证和基于Token的认证，下面将介绍基于token的认证方式。</p>
 <a id="more"></a>
 
 <h3 id="JWT概要"><a href="#JWT概要" class="headerlink" title="JWT概要"></a>JWT概要</h3><blockquote>
@@ -369,8 +552,11 @@
   </entry>
   <entry>
     <title>【Spring笔记】面向切面编程</title>
-    <url>/2019/11/08/Spring%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B/</url>
-    <content><![CDATA[<p><strong>AOP</strong>(Aspect-Oriented Programming, 面向切面编程): 是一种新的方法论, 是对传统 OOP(Object-Oriented Programming, 面向对象编程) 的补充.</p>
+    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><strong>AOP</strong>(Aspect-Oriented Programming, 面向切面编程): 是一种新的方法论, 是对传统 OOP(Object-Oriented Programming, 面向对象编程) 的补充.</p>
 <p>AOP 的主要编程对象是切面(aspect), 而切面模块化横切关注点.</p>
 <p>在应用 AOP 编程时, 仍然需要定义公共功能, 但可以明确的定义这个功能在哪里, 以什么方式应用, 并且不必修改受影响的类. 这样一来横切关注点就被模块化到特殊的对象(切面)里.</p>
 <p>AOP 的好处:</p>
@@ -510,8 +696,11 @@
   </entry>
   <entry>
     <title>【Spring笔记】核心容器</title>
-    <url>/2019/11/08/Spring%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A0%B8%E5%BF%83%E5%AE%B9%E5%99%A8/</url>
-    <content><![CDATA[<p>IOC容器根据XML文件、Java注释或Java config文件中的配置信息创建、装配、管理bean，Spring应用只需要声明所需的类就可以直接使用这些bean的功能。如下图：</p>
+    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A0%B8%E5%BF%83%E5%AE%B9%E5%99%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>IOC容器根据XML文件、Java注释或Java config文件中的配置信息创建、装配、管理bean，Spring应用只需要声明所需的类就可以直接使用这些bean的功能。如下图：</p>
 <p> <img src="/images/5ab6e3c3c7c024947945a20841bd20ea_498x296.png" alt="The Spring IoC container"></p>
 <a id="more"></a>
 
@@ -778,8 +967,11 @@
   </entry>
   <entry>
     <title>【Spring笔记】框架概述</title>
-    <url>/2019/11/08/Spring%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<p>Spring框架是分层的Java SE/EE 应用 full-stack 轻量级开源框架。</p>
+    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>Spring框架是分层的Java SE/EE 应用 full-stack 轻量级开源框架。</p>
 <p>Spring框架核心特性：<strong>IOC(Inverse Of Control)</strong> 和 <strong>AOP(Aspect Oriented Programming)</strong>。</p>
 <blockquote>
 <p> <strong>JEE – Java Enterprise Edition / Java企业版</strong><br> 主要用于开发企业软件的Java版本。企业软件例子：会计软件、帐单管理、业务流程管理、CMS、CRM、ERP等。 </p>
@@ -1097,37 +1289,202 @@
       </tags>
   </entry>
   <entry>
-    <title>【Java笔记】基本语法</title>
-    <url>/2019/11/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E7%AC%94%E8%AE%B0%E3%80%91%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
-    <content><![CDATA[<a id="more"></a>
+    <title>Java 学习路线图</title>
+    <url>/2019/11/07/Java%20%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
 
+<p><strong>Java 学习路线图</strong></p>
+<ul>
+<li>Java核心<ul>
+<li>Java核心语法</li>
+<li>Java面向对象核心</li>
+<li>集合框架</li>
+<li>异常机制</li>
+<li>Java常用API</li>
+<li>Java泛型、枚举、注解</li>
+<li>反射机制</li>
+<li>线程、线程通信</li>
+<li>网络编程</li>
+<li>Java 8 新特性</li>
+<li>Java9~13新特性</li>
+<li>数据结构与算法</li>
+<li>设计模式</li>
+<li>集成开发环境的使用</li>
+</ul>
+</li>
+<li>Java与数据库交互<ul>
+<li>SQL与PL/SQL的使用</li>
+<li>MySQL数据库</li>
+<li>数据库事务</li>
+<li>存储过程</li>
+<li>函数</li>
+<li>存储引擎</li>
+<li>JDBC</li>
+<li>C3P0、Druid数据库连接池</li>
+</ul>
+</li>
+<li>Java Web前后端交互<ul>
+<li>Html基础与CSS</li>
+<li>JavaScript与Jquery</li>
+<li>XML与XML解析</li>
+<li>Tomcat服务器安装与配置</li>
+<li>Http协议</li>
+<li>服务器组件Servlet</li>
+<li>JSP</li>
+<li>EL表达式</li>
+<li>会话控制Cookie与Session</li>
+<li>服务器组件Filter</li>
+<li>服务器组件Listener</li>
+<li>异步数据传输框架Ajax</li>
+<li>文件的上传下载</li>
+<li>前端框架Bootstrap</li>
+</ul>
+</li>
+<li>Java EE框架<ul>
+<li>系统整体分层解耦框架Spring</li>
+<li>Spring IOC容器</li>
+<li>Spring AOP容器</li>
+<li>Spring高级应用</li>
+<li>轻量级Web框架SpringMVC</li>
+<li>轻量级持久化层框架Mybatis</li>
+<li>Mybatis自定义插件开发</li>
+<li>反向代码生成器MybatisGenerator</li>
+<li>Mybatis增强器Mybatis_Plus</li>
+<li>快速集成构建框架SpringBoot</li>
+<li>微服务构建框架SpringCloud</li>
+<li>服务网关SpringCloudGateway</li>
+<li>分布式配置SpringCloudConfig</li>
+<li>消息总线SpringCloudBus</li>
+<li>客户端负载均衡SpringCloudRibbon</li>
+<li>服务熔断与服务降级SpringCloud Hystrix</li>
+<li>服务注册与发现SpringCloud Eureka</li>
+<li>申明式服务调用SpringCloud Feign</li>
+<li>Web安全框架SpringSecurity</li>
+<li>分布式Session管理SpringSession</li>
+<li>缓存机制</li>
+</ul>
+</li>
+<li>常用工具和环境<ul>
+<li>项目构建、jar包管理工具Maven</li>
+<li>日志输出Log4j</li>
+<li>分布式版本管理工具Git和Github</li>
+<li>分布式系统与内存数据库Redis</li>
+<li>MySQL集群</li>
+<li>服务器操作系统Linux常用操作、进程、线程</li>
+<li>Java虚拟机JVM原理、优化</li>
+<li>高并发编程工具JUC</li>
+<li>命令解析器Shell</li>
+<li>Intellij IDEA的使用</li>
+</ul>
+</li>
+<li>Java EE高级<ul>
+<li>服务器操作系统Linux常用操作</li>
+<li>远程调用技术WebService</li>
+<li>企业级现代数据访问技术SpringData</li>
+<li>MySQL索引优化与锁</li>
+<li>MyCat实现MySQL的分布式、分库分表、读写分离</li>
+<li>支付接口调用开发</li>
+<li>Nginx反向代理、负载均衡、动静分离</li>
+<li>全文索引数据库Solr</li>
+<li>分布式构建框架Dubbo</li>
+<li>Tomcat性能优化</li>
+<li>JVM内存模式、参数调优</li>
+<li>Java并发包JUC</li>
+</ul>
+</li>
+<li>互联网架构新技术<ul>
+<li>分布式架构中的注册中心Zookeeper</li>
+<li>全文检索引擎ElasticSearch</li>
+<li>日志收集、转发工具Logstash</li>
+<li>用于分析ElasticSearch中数据的可视化平台 Kibana</li>
+<li>分布式发布-订阅消息系统Kafka</li>
+<li>虚拟化应用容器Docker</li>
+<li>大数据分析存储框架Hadoop</li>
+<li>数仓仓库工具Hive</li>
+<li>MapReduce编程模型</li>
+<li>前端技术栈Node.js+Vue.js</li>
+<li>消息队列ActiveMQ</li>
+<li>消息队列RabbitMQ</li>
+<li>消息队列RocketMQ</li>
+<li>数据库增量订阅Canal</li>
+<li>实时接口文档Swagger2</li>
+<li>社交登录SpringSocial</li>
+<li>分布式配置、服务发现与注册Nacas</li>
+<li>服务熔断Sentinel</li>
+<li>分布式事务Seata</li>
+</ul>
+</li>
+<li>大数据技术<ul>
+<li>大数据技术概论</li>
+<li>Hadoop概述与安装</li>
+<li>HDFS伪分布式文件</li>
+<li>Hadoop-HA高可用</li>
+<li>HDFS完全分布式</li>
+<li>Hive入门</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><strong>Java 学习路线图</strong></p>
+<p>java核心技术：Java基础</p>
+<p>数据库技术：</p>
+<ul>
+<li>MySQL–&gt;JDBC–&gt;Mybatis（MP等）–&gt;hibernate–&gt;SpringData</li>
+<li>redis</li>
+</ul>
+<p>Web开发框架：Spring–&gt;SpringMVC–&gt;SpringBoot–&gt;SpringCloud(或Dubbo)</p>
+<p>框架整合：SSM、SSP等。</p>
+<p>常用工具：</p>
+<ul>
+<li>maven</li>
+<li>docker</li>
+<li>linux</li>
+<li>tomcat</li>
+<li>jenkins</li>
+<li>nginx</li>
+<li>git&amp;github</li>
+</ul>
+<p>思维训练：</p>
+<ul>
+<li>设计模式</li>
+<li>数据结构与算法</li>
+</ul>
+<p>前端技术：html–&gt;css–&gt;javascript–&gt;jQuery–&gt;Ajax–&gt;Vue</p>
 ]]></content>
       <categories>
-        <category>Java笔记</category>
+        <category>Java</category>
       </categories>
       <tags>
         <tag>Java</tag>
-        <tag>语法</tag>
       </tags>
   </entry>
   <entry>
-    <title>【Java笔记】异常处理</title>
-    <url>/2019/11/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E7%AC%94%E8%AE%B0%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
-    <content><![CDATA[<a id="more"></a>
+    <title>【Java】Java核心技术</title>
+    <url>/2019/11/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E3%80%91Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>本文主要用于Java SE核心技术的复习与总结，文件比较长，耐心查看。</p>
+<a id="more"></a>
 
-]]></content>
+<h1 id="Java-SE"><a href="#Java-SE" class="headerlink" title="Java SE"></a>Java SE</h1><h2 id="Java-语言概述"><a href="#Java-语言概述" class="headerlink" title="Java 语言概述"></a>Java 语言概述</h2><h2 id="Java-基本语法"><a href="#Java-基本语法" class="headerlink" title="Java 基本语法"></a>Java 基本语法</h2><h2 id="Java-面向对象编程"><a href="#Java-面向对象编程" class="headerlink" title="Java 面向对象编程"></a>Java 面向对象编程</h2><h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h2 id="枚举类"><a href="#枚举类" class="headerlink" title="枚举类"></a>枚举类</h2><h2 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h2><h2 id="集合框架"><a href="#集合框架" class="headerlink" title="集合框架"></a>集合框架</h2><h2 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h2><h2 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h2><h2 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h2><h2 id="常用类"><a href="#常用类" class="headerlink" title="常用类"></a>常用类</h2><h2 id="反射机制"><a href="#反射机制" class="headerlink" title="反射机制"></a>反射机制</h2><h2 id="网络编程"><a href="#网络编程" class="headerlink" title="网络编程"></a>网络编程</h2><h2 id="Java-8-新特性"><a href="#Java-8-新特性" class="headerlink" title="Java 8 新特性"></a>Java 8 新特性</h2><h3 id="Lambda-表达式"><a href="#Lambda-表达式" class="headerlink" title="Lambda 表达式"></a>Lambda 表达式</h3><h3 id="Stream-API"><a href="#Stream-API" class="headerlink" title="Stream API"></a>Stream API</h3><h2 id="Java-9-11新特性"><a href="#Java-9-11新特性" class="headerlink" title="Java 9~11新特性"></a>Java 9~11新特性</h2><h1 id="项目实战"><a href="#项目实战" class="headerlink" title="项目实战"></a>项目实战</h1>]]></content>
       <categories>
-        <category>Java笔记</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>Java</tag>
-        <tag>Exception</tag>
+        <tag>Java SE</tag>
       </tags>
   </entry>
   <entry>
     <title>【Java】注解</title>
     <url>/2018/05/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E3%80%91%E6%B3%A8%E8%A7%A3/</url>
-    <content><![CDATA[<a id="more"></a>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
 
 <h3 id="JDK内置注解"><a href="#JDK内置注解" class="headerlink" title="JDK内置注解"></a>JDK内置注解</h3><ul>
 <li><code>@Override</code>：限定重写父类方法，该方法只能用于方法</li>
