@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Java笔记/Untitled 1</title>
+    <url>/2020/02/19/Java%E7%AC%94%E8%AE%B0/Untitled%201/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Java笔记/Spring Cloud 笔记之 Feign</title>
     <url>/2020/01/17/Java%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Feign/</url>
     <content><![CDATA[]]></content>
@@ -14,25 +19,6 @@
     <title>Java笔记/【SpringCloud】Eureka</title>
     <url>/2020/01/17/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringCloud%E3%80%91Eureka/</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>理解微服务架构</title>
-    <url>/2020/01/17/Java%E7%AC%94%E8%AE%B0/SpringCloud%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<ul>
-<li><a href="理解微服务架构.md">理解微服务架构</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Spring Cloud</category>
-      </categories>
-      <tags>
-        <tag>微服务架构</tag>
-      </tags>
   </entry>
   <entry>
     <title>Java笔记/【Docker】常用操作总结</title>
@@ -101,26 +87,6 @@
       </categories>
       <tags>
         <tag>NoSql</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>SpringBoot学习总结</title>
-    <url>/2019/12/15/Java%E7%AC%94%E8%AE%B0/SpringBoot%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>本篇文章将归纳SpringBoot相关技术的使用he内部原理，内容包括微服务概念、配置文件、日志框架的使用、Web开发、Thymeleaf模板引擎、Docker容器技术、Mybatis、Spring Data JPA、自定义Starts等。</p>
-<a id="more"></a>
-
-<ul>
-<li>[SpringBoot 入门](Spring Cloud笔记之Ribbon.md)</li>
-</ul>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
       </tags>
   </entry>
   <entry>
@@ -524,44 +490,6 @@
       </categories>
       <tags>
         <tag>JPA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Java】IO 流</title>
-    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E3%80%91IO%20%E6%B5%81/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p><code>java.io</code>是平时项目中经常使用到的功能，无论文件读写还是端口监听都会使用Java IO操作。</p>
-<p>本文章将详细讲述Java IO的操作，详情如下：</p>
-<ul>
-<li>基本文件/文件夹操作</li>
-<li>IO 流</li>
-<li>面试必备</li>
-</ul>
-<a id="more"></a>
-
-<h2 id="基本文件-文件夹操作"><a href="#基本文件-文件夹操作" class="headerlink" title="基本文件/文件夹操作"></a>基本文件/文件夹操作</h2><h3 id="文件-文件夹操作"><a href="#文件-文件夹操作" class="headerlink" title="文件/文件夹操作"></a>文件/文件夹操作</h3><p><strong><code>java.io.File</code>类提供了多种对文件/文件夹操作的方法。</strong>以下演示了部分操作：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//createNewFile() : 新增文件或文件夹</span></span><br><span class="line">File file1 = <span class="keyword">new</span> File(<span class="string">"a.txt"</span>);</span><br><span class="line">System.out.println(<span class="string">"创建文件file1:"</span>+file1.createNewFile());</span><br><span class="line">File file2 = <span class="keyword">new</span> File(<span class="string">"d:\\a.txt"</span>);</span><br><span class="line">System.out.println(<span class="string">"创建文件file2:"</span>+file2.createNewFile());</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 查看文件名或文件路由</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">//getName():访问文件名</span></span><br><span class="line">System.out.println(<span class="string">"file1文件名："</span>+file1.getName());</span><br><span class="line"><span class="comment">//getParent()：文件上级目录</span></span><br><span class="line">System.out.println(<span class="string">"file1文件上级目录："</span>+file1.getParent());</span><br><span class="line"><span class="comment">//getAbsoluteFile()：文件绝对路径</span></span><br><span class="line">System.out.println(<span class="string">"file1文件绝对路径："</span>+file1.getAbsoluteFile());</span><br><span class="line"><span class="comment">//getPath(): 文件项目路径</span></span><br><span class="line">System.out.println(<span class="string">"file1文件相对路径："</span>+file1.getPath());</span><br><span class="line">System.out.println(<span class="string">"file1文件相对路径："</span>+file2.getPath());</span><br><span class="line"><span class="comment">//renameTo():文件重命名</span></span><br><span class="line">File file3 = <span class="keyword">new</span> File(<span class="string">"d:\\b.txt"</span>);</span><br><span class="line"><span class="keyword">boolean</span> b = file1.renameTo(file3);</span><br><span class="line">System.out.println(<span class="string">"file1 重命名为 file3："</span>+b);</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 文件属性检测</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">//exists()</span></span><br><span class="line">System.out.println(<span class="string">"file1文件是否存在："</span>+file1.exists());</span><br><span class="line"><span class="comment">//canWrite()、canRead()、canExcute()：文件是否可写、可读、可执行</span></span><br><span class="line">System.out.println(<span class="string">"file2文件是否可写："</span>+file2.canWrite());</span><br><span class="line"><span class="comment">//isFile()、isDirectory()</span></span><br><span class="line">System.out.println(<span class="string">"file2是否为文件："</span>+file2.isFile());</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 获取常规文件信息</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">System.out.println(<span class="string">"file2的最后修改时间："</span>+<span class="keyword">new</span> Date(file2.lastModified()));</span><br><span class="line">System.out.println(<span class="string">"file2 文件大小："</span>+file2.length());</span><br><span class="line"></span><br><span class="line"><span class="comment">// delete() : 删除文件</span></span><br><span class="line">file3.delete();</span><br><span class="line">file2.delete();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//mkdir()：创建文件夹</span></span><br><span class="line">File dir1 = <span class="keyword">new</span> File(<span class="string">"D:\\IO"</span>);</span><br><span class="line">dir1.mkdir();</span><br><span class="line"><span class="comment">//list() 、 listFiles()：获取文件夹下的文件名列表或文件列表</span></span><br><span class="line">String[] list = dir1.list();</span><br><span class="line"><span class="keyword">for</span> (String s : list) &#123;</span><br><span class="line">    System.out.println(s);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 文件夹的其他操作与文件相同，暂不赘述</span></span><br><span class="line"><span class="comment">//查看文件名或文件路由：getName()、getParent()、getAbsoluteFile()、getPath()、renameTo()</span></span><br><span class="line"><span class="comment">//文件检测：exists()、canWrite()、canRead()、canExcute()、isFile()、isDirectory()</span></span><br><span class="line"><span class="comment">//获取常规文件信息：lastModified()、length()</span></span><br><span class="line"></span><br><span class="line">dir1.delete();</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="IO流"><a href="#IO流" class="headerlink" title="IO流"></a>IO流</h2><p><strong>IO 流</strong> 用来处理设备之间的数据传输。</p>
-<p>流的分类：</p>
-<ul>
-<li>按操作数据单位分：字节流和字符流</li>
-<li>按流向分：输入流和输出流</li>
-<li>按角色分：节点流和处理流</li>
-</ul>
-<p>按照数据操作单位分为字节流和字符流，<code>java.io</code>包下设计40多个类，可分为：<img src="/images/2331536-faede093458803b1.webp" alt="img"></p>
-<p> 根据不同的使用范围，可分为以下： </p>
-<p><img src="/images/image-20191209231209010.png" alt="image-20191209231209010"></p>
-<h2 id="面试必备"><a href="#面试必备" class="headerlink" title="面试必备"></a>面试必备</h2>]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>IO</tag>
       </tags>
   </entry>
   <entry>
@@ -1316,16 +1244,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【设计模式】抽象工厂模式</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>设计模式</category>
-      </categories>
-  </entry>
-  <entry>
     <title>【设计模式】建造者模式</title>
     <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<a id="more"></a>
@@ -1338,6 +1256,16 @@
         <tag>Design Pattern</tag>
         <tag>Builder Pattern</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>【设计模式】抽象工厂模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
   </entry>
   <entry>
     <title>【设计模式】面向对象设计原则</title>
@@ -1421,7 +1349,7 @@
 
 <p><strong>Java 学习路线图</strong></p>
 <ul>
-<li>Java核心<ul>
+<li>Java核心（10天）<ul>
 <li>Java核心语法</li>
 <li>Java面向对象核心</li>
 <li>集合框架</li>
@@ -1438,7 +1366,7 @@
 <li>集成开发环境的使用</li>
 </ul>
 </li>
-<li>Java与数据库交互<ul>
+<li>Java与数据库交互（15）<ul>
 <li>SQL与PL/SQL的使用</li>
 <li>MySQL数据库</li>
 <li>数据库事务</li>
@@ -1449,7 +1377,7 @@
 <li>C3P0、Druid数据库连接池</li>
 </ul>
 </li>
-<li>Java Web前后端交互<ul>
+<li>Java Web前后端交互（5）<ul>
 <li>Html基础与CSS</li>
 <li>JavaScript与Jquery</li>
 <li>XML与XML解析</li>
@@ -1466,7 +1394,7 @@
 <li>前端框架Bootstrap</li>
 </ul>
 </li>
-<li>Java EE框架<ul>
+<li>Java EE框架（40）<ul>
 <li>系统整体分层解耦框架Spring</li>
 <li>Spring IOC容器</li>
 <li>Spring AOP容器</li>
@@ -1518,7 +1446,7 @@
 <li>Java并发包JUC</li>
 </ul>
 </li>
-<li>互联网架构新技术<ul>
+<li>互联网架构新技术（5）<ul>
 <li>分布式架构中的注册中心Zookeeper</li>
 <li>全文检索引擎ElasticSearch</li>
 <li>日志收集、转发工具Logstash</li>
@@ -1551,8 +1479,44 @@
 </li>
 </ul>
 <hr>
-<p><strong>Java 学习路线图</strong></p>
-<p>java核心技术：Java基础</p>
+<p><strong>Java 学习路线图</strong>（2020-02-13–2020-05-10）</p>
+<p>java基础阶段：（10）</p>
+<p>相关工具：linux、IDEA</p>
+<ol>
+<li><p>java基础：<a href="https://www.bilibili.com/video/av48144058/?spm_id_from=333.788.b_636f6d6d656e74.5" target="_blank" rel="noopener">Java核心技术</a>、<a href="www.bilibili.com/video/av54029771/">java数据结构与算法</a>、<a href="https://www.bilibili.com/video/av57936239/?spm_id_from=333.788.b_636f6d6d656e74.20" target="_blank" rel="noopener">java设计模式</a></p>
+</li>
+<li><p>JUC：可延后学习</p>
+</li>
+<li><p>面试题总结</p>
+</li>
+</ol>
+<p>学习指南：</p>
+<ol>
+<li>学习IO时，同时学习NIO，对比学习；</li>
+<li>学习集合时，学习java数据结构与算法，加深印象；</li>
+<li>学习linux及idea的使用教程；（1）</li>
+</ol>
+<p>数据库技术阶段：（15）</p>
+<ol>
+<li>数据库基础：<a href="www.bilibili.com/video/av21400736/">MySQL基础</a>、<a href="https://www.bilibili.com/video/av21334868/?spm_id_from=333.788.b_636f6d6d656e74.37" target="_blank" rel="noopener">MySQL高级</a>）–(5)</li>
+<li>数据架构相关：<a href="https://www.bilibili.com/video/av80469766/?spm_id_from=333.788.b_636f6d6d656e74.54" target="_blank" rel="noopener">Mycat</a>可延后学习</li>
+<li>框架：Mybatis、Mybatisplus、通用Mapper、hibernate、jpa、springdata–(10)</li>
+</ol>
+<p>Web基础：（10）</p>
+<ol>
+<li>基础：javascript、css、html、XML（2）</li>
+<li>Java Web基础：servlet/jsp、mvc、cookie、session、EL表达式、简单标签、JSTL表达式、Fileter/Listener、文件上传下载、国际化（3）</li>
+<li>项目实战（5）</li>
+</ol>
+<p>Java EE：（30）</p>
+<p>Spring–&gt;SpringMVC–&gt;SpringBoot–&gt;SpringCloud</p>
+<p>MySQL基础–&gt;MySQL高级–&gt;MyCAT</p>
+<p>Mybatis–&gt;Mybatisplus–&gt;通用mapper</p>
+<p>hibernate–&gt;Jpa–&gt;SpringData Jpa</p>
+<p>Redis</p>
+<p>常用工具：Docker、Nginx、Jenkins、git、maven</p>
+<p>SSM项目实战：（30）</p>
+<p>面试阶段：（10）</p>
 <p>数据库技术：</p>
 <ul>
 <li>MySQL–&gt;JDBC–&gt;Mybatis（MP等）–&gt;hibernate–&gt;SpringData</li>
@@ -1585,16 +1549,884 @@
       </tags>
   </entry>
   <entry>
-    <title>【Java】Java核心技术</title>
-    <url>/2019/11/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E3%80%91Java%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF/</url>
+    <title>Spring Boot 笔记之 缓存</title>
+    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20%E7%BC%93%E5%AD%98/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<p>本文主要用于Java SE核心技术的复习与总结，文件比较长，耐心查看。</p>
+<a id="more"></a>
+
+<h3 id="JSR107"><a href="#JSR107" class="headerlink" title="JSR107"></a>JSR107</h3><h3 id="Spring-缓存原理"><a href="#Spring-缓存原理" class="headerlink" title="Spring 缓存原理"></a>Spring 缓存原理</h3>]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>Spring Boot</tag>
+        <tag>缓存</tag>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring Boot 笔记之 缓存</title>
+    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%20/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>Spring Boot</tag>
+        <tag>缓存</tag>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Redis 学习总结</title>
+    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/Redis%20%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>本文主要介绍 Redis 相关基础知识。主要包括以下内容：</p>
+<ul>
+<li>Redis 数据结构</li>
+<li>Redis 配置文件</li>
+<li>Redis 持久化</li>
+<li>Redis 事务</li>
+<li>Redis 订阅发布</li>
+<li>Redis 主从复制</li>
+<li>Jedis的使用</li>
+</ul>
+<a id="more"></a>
+
+<h3 id="Redis-概要"><a href="#Redis-概要" class="headerlink" title="Redis 概要"></a>Redis 概要</h3><h4 id="Redis介绍"><a href="#Redis介绍" class="headerlink" title="Redis介绍"></a>Redis介绍</h4><p>官网： <a href="https://redis.io/" target="_blank" rel="noopener">https://redis.io/</a> </p>
+<p>中文网站：  <a href="https://www.redis.net.cn/" target="_blank" rel="noopener">https://www.redis.net.cn/</a> </p>
+<p>命令参考： <a href="http://redisdoc.com/index.html" target="_blank" rel="noopener">http://redisdoc.com/index.html</a> </p>
+<p><strong>Redis</strong>（REmote DIctionary Server）是一个开源的高性能的key-value存储系统。具有以下特点：</p>
+<ul>
+<li>Redis支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用。</li>
+<li>Redis不仅仅支持简单的key-value类型的数据，同时还提供list，set，sorted set，hash等数据结构的存储。</li>
+<li>Redis支持数据的备份，即master-slave模式的数据备份。</li>
+<li>优势：<ul>
+<li>性能极高 – Redis能读的速度是110000次/s,写的速度是81000次/s 。</li>
+<li>丰富的数据类型 – Redis支持二进制案例的 String, List, Hash, Set 及 Sorted Set 数据类型操作。</li>
+<li>原子 – Redis的所有操作都是原子性的，同时Redis还支持对几个操作全并后的原子性执行。</li>
+<li>丰富的特性 – Redis还支持 publish/subscribe, 通知, key 过期等等特性</li>
+</ul>
+</li>
+</ul>
+<h4 id="Redis-使用场景"><a href="#Redis-使用场景" class="headerlink" title="Redis 使用场景"></a>Redis 使用场景</h4><h4 id="基于Docker安装Redis"><a href="#基于Docker安装Redis" class="headerlink" title="基于Docker安装Redis"></a><strong>基于Docker安装Redis</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 创建并运行一个名为 myredis 的容器</span></span><br><span class="line">docker run \</span><br><span class="line">--restart=always #开机启动容器</span><br><span class="line">-d #后台运行</span><br><span class="line">-p 6379:6379 \ # 端口映射 宿主机:容器</span><br><span class="line">-v /data/redis/data:/data:rw \ # 映射数据目录 rw 为读写</span><br><span class="line">-v /data/redis/conf/redis.conf:/etc/redis/redis.conf:ro \ # 挂载配置文件 ro 为readonly</span><br><span class="line">--privileged=true \ # 给与容器内的root用户root权限，否则只有外部普通用户权限</span><br><span class="line">--name myredis redis redis-server /etc/redis/redis.conf # 容器名字 redis实例名 配置文件</span><br><span class="line">--appendonly yes #开启持久化</span><br></pre></td></tr></table></figure>
+
+<h4 id="redis-客户端"><a href="#redis-客户端" class="headerlink" title="redis 客户端"></a>redis 客户端</h4><p>在redis server上执行命令，需要安装redis客户端。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">本地redis服务器</span></span><br><span class="line">redis-cli</span><br><span class="line"><span class="meta">#</span><span class="bash">远程redis服务器：redis-cli -h host -p port -a password</span></span><br><span class="line">redis-cli -h 127.0.0.1 -p 6379 -a "mypass"</span><br></pre></td></tr></table></figure>
+
+<h3 id="Redis-数据类型"><a href="#Redis-数据类型" class="headerlink" title="Redis 数据类型"></a>Redis 数据类型</h3><p> <strong>key</strong>的类型只能为字符串，<strong>value</strong>支持五种数据类型：字符串、列表、集合、散列表、有序集合。 </p>
+<h4 id="Redis-key"><a href="#Redis-key" class="headerlink" title="Redis key"></a>Redis key</h4><p>基本命令如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3543.html" target="_blank" rel="noopener">Redis Type 命令</a></td>
+<td align="left">返回 key 所储存的值的类型。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3533.html" target="_blank" rel="noopener">Redis PEXPIREAT 命令</a></td>
+<td align="left">设置 key 的过期时间亿以毫秒计。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3534.html" target="_blank" rel="noopener">Redis PEXPIREAT 命令</a></td>
+<td align="left">设置 key 过期时间的时间戳(unix timestamp) 以毫秒计</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3541.html" target="_blank" rel="noopener">Redis Rename 命令</a></td>
+<td align="left">修改 key 的名称</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3537.html" target="_blank" rel="noopener">Redis PERSIST 命令</a></td>
+<td align="left">移除 key 的过期时间，key 将持久保持。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3536.html" target="_blank" rel="noopener">Redis Move 命令</a></td>
+<td align="left">将当前数据库的 key 移动到给定的数据库 db 当中。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3540.html" target="_blank" rel="noopener">Redis RANDOMKEY 命令</a></td>
+<td align="left">从当前数据库中随机返回一个 key 。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3529.html" target="_blank" rel="noopener">Redis Dump 命令</a></td>
+<td align="left">序列化给定 key ，并返回被序列化的值。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3539.html" target="_blank" rel="noopener">Redis TTL 命令</a></td>
+<td align="left">以秒为单位，返回给定 key 的剩余生存时间(TTL, time to live)。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3531.html" target="_blank" rel="noopener">Redis Expire 命令</a></td>
+<td align="left">seconds 为给定 key 设置过期时间。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3528.html" target="_blank" rel="noopener">Redis DEL 命令</a></td>
+<td align="left">该命令用于在 key 存在是删除 key。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3538.html" target="_blank" rel="noopener">Redis Pttl 命令</a></td>
+<td align="left">以毫秒为单位返回 key 的剩余的过期时间。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3542.html" target="_blank" rel="noopener">Redis Renamenx 命令</a></td>
+<td align="left">仅当 newkey 不存在时，将 key 改名为 newkey 。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3530.html" target="_blank" rel="noopener">Redis EXISTS 命令</a></td>
+<td align="left">检查给定 key 是否存在。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3532.html" target="_blank" rel="noopener">Redis Expireat 命令</a></td>
+<td align="left">EXPIREAT 的作用和 EXPIRE 类似，都用于为 key 设置过期时间。 不同在于 EXPIREAT 命令接受的时间参数是 UNIX 时间戳(unix timestamp)。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3535.html" target="_blank" rel="noopener">Redis Keys 命令</a></td>
+<td align="left">查找所有符合给定模式( pattern)的 key 。</td>
+</tr>
+</tbody></table>
+<h4 id="Redis-value"><a href="#Redis-value" class="headerlink" title="Redis value"></a>Redis value</h4><p><strong>value</strong> 支持的数据类型有：字符串、列表、集合、散列表、有序集合。</p>
+<h5 id="字符串（String）"><a href="#字符串（String）" class="headerlink" title="字符串（String）"></a>字符串（String）</h5><p><strong>Redis String</strong> 可存储的类型有字符串、整数或者浮点数。</p>
+<p>常用命令如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3552.html" target="_blank" rel="noopener">Redis Setnx 命令</a></td>
+<td align="left">只有在 key 不存在时设置 key 的值。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3546.html" target="_blank" rel="noopener">Redis Getrange 命令</a></td>
+<td align="left">返回 key 中字符串值的子字符</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3555.html" target="_blank" rel="noopener">Redis Mset 命令</a></td>
+<td align="left">同时设置一个或多个 key-value 对。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3551.html" target="_blank" rel="noopener">Redis Setex 命令</a></td>
+<td align="left">将值 value 关联到 key ，并将 key 的过期时间设为 seconds (以秒为单位)。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3544.html" target="_blank" rel="noopener">Redis SET 命令</a></td>
+<td align="left">设置指定 key 的值</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3545.html" target="_blank" rel="noopener">Redis Get 命令</a></td>
+<td align="left">获取指定 key 的值。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3548.html" target="_blank" rel="noopener">Redis Getbit 命令</a></td>
+<td align="left">对 key 所储存的字符串值，获取指定偏移量上的位(bit)。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3550.html" target="_blank" rel="noopener">Redis Setbit 命令</a></td>
+<td align="left">对 key 所储存的字符串值，设置或清除指定偏移量上的位(bit)。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3561.html" target="_blank" rel="noopener">Redis Decr 命令</a></td>
+<td align="left">将 key 中储存的数字值减一。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3562.html" target="_blank" rel="noopener">Redis Decrby 命令</a></td>
+<td align="left">key 所储存的值减去给定的减量值（decrement） 。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3554.html" target="_blank" rel="noopener">Redis Strlen 命令</a></td>
+<td align="left">返回 key 所储存的字符串值的长度。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3556.html" target="_blank" rel="noopener">Redis Msetnx 命令</a></td>
+<td align="left">同时设置一个或多个 key-value 对，当且仅当所有给定 key 都不存在。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3559.html" target="_blank" rel="noopener">Redis Incrby 命令</a></td>
+<td align="left">将 key 所储存的值加上给定的增量值（increment） 。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3560.html" target="_blank" rel="noopener">Redis Incrbyfloat 命令</a></td>
+<td align="left">将 key 所储存的值加上给定的浮点增量值（increment） 。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3553.html" target="_blank" rel="noopener">Redis Setrange 命令</a></td>
+<td align="left">用 value 参数覆写给定 key 所储存的字符串值，从偏移量 offset 开始。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3557.html" target="_blank" rel="noopener">Redis Psetex 命令</a></td>
+<td align="left">这个命令和 SETEX 命令相似，但它以毫秒为单位设置 key 的生存时间，而不是像 SETEX 命令那样，以秒为单位。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3563.html" target="_blank" rel="noopener">Redis Append 命令</a></td>
+<td align="left">如果 key 已经存在并且是一个字符串， APPEND 命令将 value 追加到 key 原来的值的末尾。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3547.html" target="_blank" rel="noopener">Redis Getset 命令</a></td>
+<td align="left">将给定 key 的值设为 value ，并返回 key 的旧值(old value)。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3549.html" target="_blank" rel="noopener">Redis Mget 命令</a></td>
+<td align="left">获取所有(一个或多个)给定 key 的值。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3558.html" target="_blank" rel="noopener">Redis Incr 命令</a></td>
+<td align="left">将 key 中储存的数字值增一。</td>
+</tr>
+</tbody></table>
+<h5 id="列表（List）"><a href="#列表（List）" class="headerlink" title="列表（List）"></a>列表（List）</h5><p><strong>Redis List</strong> 可存储列表，按照插入顺序排序。</p>
+<p><strong>使用场景：微博 TimeLine、消息队列</strong> </p>
+<p>常见命令如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3580.html" target="_blank" rel="noopener">Redis Lindex 命令</a></td>
+<td align="left">通过索引获取列表中的元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3592.html" target="_blank" rel="noopener">Redis Rpush 命令</a></td>
+<td align="left">在列表中添加一个或多个值</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3586.html" target="_blank" rel="noopener">Redis Lrange 命令</a></td>
+<td align="left">获取列表指定范围内的元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3591.html" target="_blank" rel="noopener">Redis Rpoplpush 命令</a></td>
+<td align="left">移除列表的最后一个元素，并将该元素添加到另一个列表并返回</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3577.html" target="_blank" rel="noopener">Redis Blpop 命令</a></td>
+<td align="left">移出并获取列表的第一个元素， 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3578.html" target="_blank" rel="noopener">Redis Brpop 命令</a></td>
+<td align="left">移出并获取列表的最后一个元素， 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3579.html" target="_blank" rel="noopener">Redis Brpoplpush 命令</a></td>
+<td align="left">从列表中弹出一个值，将弹出的元素插入到另外一个列表中并返回它； 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3587.html" target="_blank" rel="noopener">Redis Lrem 命令</a></td>
+<td align="left">移除列表元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3582.html" target="_blank" rel="noopener">Redis Llen 命令</a></td>
+<td align="left">获取列表长度</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3589.html" target="_blank" rel="noopener">Redis Ltrim 命令</a></td>
+<td align="left">对一个列表进行修剪(trim)，就是说，让列表只保留指定区间内的元素，不在指定区间之内的元素都将被删除。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3583.html" target="_blank" rel="noopener">Redis Lpop 命令</a></td>
+<td align="left">移出并获取列表的第一个元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3585.html" target="_blank" rel="noopener">Redis Lpushx 命令</a></td>
+<td align="left">将一个或多个值插入到已存在的列表头部</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3581.html" target="_blank" rel="noopener">Redis Linsert 命令</a></td>
+<td align="left">在列表的元素前或者后插入元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3590.html" target="_blank" rel="noopener">Redis Rpop 命令</a></td>
+<td align="left">移除并获取列表最后一个元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3588.html" target="_blank" rel="noopener">Redis Lset 命令</a></td>
+<td align="left">通过索引设置列表元素的值</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3584.html" target="_blank" rel="noopener">Redis Lpush 命令</a></td>
+<td align="left">将一个或多个值插入到列表头部</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3593.html" target="_blank" rel="noopener">Redis Rpushx 命令</a></td>
+<td align="left">为已存在的列表添加值</td>
+</tr>
+</tbody></table>
+<h5 id="散列表（Hash）"><a href="#散列表（Hash）" class="headerlink" title="散列表（Hash）"></a>散列表（Hash）</h5><p><strong>Redis Hash</strong>是键值对集合，特别适合存储对象。</p>
+<p><strong>使用场景：</strong> <strong>存储、读取、修改用户属性</strong> </p>
+<p>常见命令如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3573.html" target="_blank" rel="noopener">Redis Hmset 命令</a></td>
+<td align="left">同时将多个 field-value (域-值)对设置到哈希表 key 中。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3572.html" target="_blank" rel="noopener">Redis Hmget 命令</a></td>
+<td align="left">获取所有给定字段的值</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3574.html" target="_blank" rel="noopener">Redis Hset 命令</a></td>
+<td align="left">将哈希表 key 中的字段 field 的值设为 value 。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3567.html" target="_blank" rel="noopener">Redis Hgetall 命令</a></td>
+<td align="left">获取在哈希表中指定 key 的所有字段和值</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3566.html" target="_blank" rel="noopener">Redis Hget 命令</a></td>
+<td align="left">获取存储在哈希表中指定字段的值/td&gt;</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3565.html" target="_blank" rel="noopener">Redis Hexists 命令</a></td>
+<td align="left">查看哈希表 key 中，指定的字段是否存在。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3568.html" target="_blank" rel="noopener">Redis Hincrby 命令</a></td>
+<td align="left">为哈希表 key 中的指定字段的整数值加上增量 increment 。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3571.html" target="_blank" rel="noopener">Redis Hlen 命令</a></td>
+<td align="left">获取哈希表中字段的数量</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3564.html" target="_blank" rel="noopener">Redis Hdel 命令</a></td>
+<td align="left">删除一个或多个哈希表字段</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3576.html" target="_blank" rel="noopener">Redis Hvals 命令</a></td>
+<td align="left">获取哈希表中所有值</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3569.html" target="_blank" rel="noopener">Redis Hincrbyfloat 命令</a></td>
+<td align="left">为哈希表 key 中的指定字段的浮点数值加上增量 increment 。</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3570.html" target="_blank" rel="noopener">Redis Hkeys 命令</a></td>
+<td align="left">获取所有哈希表中的字段</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3575.html" target="_blank" rel="noopener">Redis Hsetnx 命令</a></td>
+<td align="left">只有在字段 field 不存在时，设置哈希表字段的值。</td>
+</tr>
+</tbody></table>
+<h5 id="集合（Set）"><a href="#集合（Set）" class="headerlink" title="集合（Set）"></a>集合（Set）</h5><p><strong>Redis Set</strong> 可存储 string类型的无序集合，集合成员是唯一的，不能重复。</p>
+<p><strong>使用场景：1.共同好友、二度好友 2.利用唯一性，可以统计访问网站的所有独立 IP 3.好友推荐的时候，根据 tag 求交集，大于某个 threshold 就可以推荐</strong></p>
+<p>常见命令如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3606.html" target="_blank" rel="noopener">Redis Sunion 命令</a></td>
+<td align="left">返回所有给定集合的并集</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3595.html" target="_blank" rel="noopener">Redis Scard 命令</a></td>
+<td align="left">获取集合的成员数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3604.html" target="_blank" rel="noopener">Redis Srandmember 命令</a></td>
+<td align="left">返回集合中一个或多个随机数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3601.html" target="_blank" rel="noopener">Redis Smembers 命令</a></td>
+<td align="left">返回集合中的所有成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3598.html" target="_blank" rel="noopener">Redis Sinter 命令</a></td>
+<td align="left">返回给定所有集合的交集</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3605.html" target="_blank" rel="noopener">Redis Srem 命令</a></td>
+<td align="left">移除集合中一个或多个成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3602.html" target="_blank" rel="noopener">Redis Smove 命令</a></td>
+<td align="left">将 member 元素从 source 集合移动到 destination 集合</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3594.html" target="_blank" rel="noopener">Redis Sadd 命令</a></td>
+<td align="left">向集合添加一个或多个成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3600.html" target="_blank" rel="noopener">Redis Sismember 命令</a></td>
+<td align="left">判断 member 元素是否是集合 key 的成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3597.html" target="_blank" rel="noopener">Redis Sdiffstore 命令</a></td>
+<td align="left">返回给定所有集合的差集并存储在 destination 中</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3596.html" target="_blank" rel="noopener">Redis Sdiff 命令</a></td>
+<td align="left">返回给定所有集合的差集</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3608.html" target="_blank" rel="noopener">Redis Sscan 命令</a></td>
+<td align="left">迭代集合中的元素</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3599.html" target="_blank" rel="noopener">Redis Sinterstore 命令</a></td>
+<td align="left">返回给定所有集合的交集并存储在 destination 中</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3607.html" target="_blank" rel="noopener">Redis Sunionstore 命令</a></td>
+<td align="left">所有给定集合的并集存储在 destination 集合中</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3603.html" target="_blank" rel="noopener">Redis Spop 命令</a></td>
+<td align="left">移除并返回集合中的一个随机元素</td>
+</tr>
+</tbody></table>
+<h5 id="有序集合（-Sorted-Set）"><a href="#有序集合（-Sorted-Set）" class="headerlink" title="有序集合（ Sorted Set）"></a>有序集合（ Sorted Set）</h5><p><strong>使用场景：1.带有权重的元素，比如一个游戏的用户得分排行榜 2.比较复杂的数据结构，一般用到的场景不算太多</strong> </p>
+<p>常见命令如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3625.html" target="_blank" rel="noopener">Redis Zrevrank 命令</a></td>
+<td align="left">返回有序集合中指定成员的排名，有序集成员按分数值递减(从大到小)排序</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3614.html" target="_blank" rel="noopener">Redis Zlexcount 命令</a></td>
+<td align="left">在有序集合中计算指定字典区间内成员数量</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3627.html" target="_blank" rel="noopener">Redis Zunionstore 命令</a></td>
+<td align="left">计算给定的一个或多个有序集的并集，并存储在新的 key 中</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3621.html" target="_blank" rel="noopener">Redis Zremrangebyrank 命令</a></td>
+<td align="left">移除有序集合中给定的排名区间的所有成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3610.html" target="_blank" rel="noopener">Redis Zcard 命令</a></td>
+<td align="left">获取有序集合的成员数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3619.html" target="_blank" rel="noopener">Redis Zrem 命令</a></td>
+<td align="left">移除有序集合中的一个或多个成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3613.html" target="_blank" rel="noopener">Redis Zinterstore 命令</a></td>
+<td align="left">计算给定的一个或多个有序集的交集并将结果集存储在新的有序集合 key 中</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3618.html" target="_blank" rel="noopener">Redis Zrank 命令</a></td>
+<td align="left">返回有序集合中指定成员的索引</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3612.html" target="_blank" rel="noopener">Redis Zincrby 命令</a></td>
+<td align="left">有序集合中对指定成员的分数加上增量 increment</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3617.html" target="_blank" rel="noopener">Redis Zrangebyscore 命令</a></td>
+<td align="left">通过分数返回有序集合指定区间内的成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3616.html" target="_blank" rel="noopener">Redis Zrangebylex 命令</a></td>
+<td align="left">通过字典区间返回有序集合的成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3626.html" target="_blank" rel="noopener">Redis Zscore 命令</a></td>
+<td align="left">返回有序集中，成员的分数值</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3622.html" target="_blank" rel="noopener">Redis Zremrangebyscore 命令</a></td>
+<td align="left">移除有序集合中给定的分数区间的所有成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3628.html" target="_blank" rel="noopener">Redis Zscan 命令</a></td>
+<td align="left">迭代有序集合中的元素（包括元素成员和元素分值）</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3624.html" target="_blank" rel="noopener">Redis Zrevrangebyscore 命令</a></td>
+<td align="left">返回有序集中指定分数区间内的成员，分数从高到低排序</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3620.html" target="_blank" rel="noopener">Redis Zremrangebylex 命令</a></td>
+<td align="left">移除有序集合中给定的字典区间的所有成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3623.html" target="_blank" rel="noopener">Redis Zrevrange 命令</a></td>
+<td align="left">返回有序集中指定区间内的成员，通过索引，分数从高到底</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3615.html" target="_blank" rel="noopener">Redis Zrange 命令</a></td>
+<td align="left">通过索引区间返回有序集合成指定区间内的成员</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3611.html" target="_blank" rel="noopener">Redis Zcount 命令</a></td>
+<td align="left">计算在有序集合中指定区间分数的成员数</td>
+</tr>
+<tr>
+<td align="left"><a href="https://www.redis.net.cn/order/3609.html" target="_blank" rel="noopener">Redis Zadd 命令</a></td>
+<td align="left">向有序集合添加一个或多个成员，或者更新已存在成员的分数</td>
+</tr>
+</tbody></table>
+<h3 id="Redis-配置文件"><a href="#Redis-配置文件" class="headerlink" title="Redis 配置文件"></a>Redis 配置文件</h3><h3 id="Redis-持久化"><a href="#Redis-持久化" class="headerlink" title="Redis 持久化"></a>Redis 持久化</h3><h3 id="Redis-事务"><a href="#Redis-事务" class="headerlink" title="Redis 事务"></a>Redis 事务</h3><h3 id="Redis-发布订阅"><a href="#Redis-发布订阅" class="headerlink" title="Redis 发布订阅"></a>Redis 发布订阅</h3><h3 id="Redis-主从复制"><a href="#Redis-主从复制" class="headerlink" title="Redis 主从复制"></a>Redis 主从复制</h3><h3 id="Jedis-的使用"><a href="#Jedis-的使用" class="headerlink" title="Jedis 的使用"></a>Jedis 的使用</h3>]]></content>
+      <categories>
+        <category>Reids</category>
+      </categories>
+      <tags>
+        <tag>Redis</tag>
+        <tag>Jedis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SpringBoot】集成Redis</title>
+    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E9%9B%86%E6%88%90Redis/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>Reids</category>
+      </categories>
+      <tags>
+        <tag>Redis</tag>
+        <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>理解微服务架构</title>
+    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/%E7%90%86%E8%A7%A3%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>Reids</category>
+      </categories>
+      <tags>
+        <tag>微服务架构</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【MySQL】优化篇</title>
+    <url>/2018/05/10/Java%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E4%BC%98%E5%8C%96%E7%AF%87/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>SQL优化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【MySQL】基础知识点总结</title>
+    <url>/2018/05/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>这篇文章主要介绍MySQL的一些基本用法与总结。</p>
+<a id="more"></a>
+
+<h3 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h3><p><strong>MySQL(<a href="https://www.mysql.com)：轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：轻量级关系型数据库。</a></strong></p>
+<p><strong>基于Docker安装：</strong></p>
+<ul>
+<li>拉取最新的 MySQL 镜像：<code>docker pull mysql</code></li>
+<li>启动镜像，映射端口、指定root密码并挂载日志、配置文件及数据</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">DB_HOME=/home/mysql</span><br><span class="line">DB_CONF_PATH=$DB_HOME/conf:/etc/mysql/conf.d</span><br><span class="line">DB_LOG_PATH=$DB_HOME/logs:/var/log/mysql</span><br><span class="line">DB_DATA_PATH=$DB_HOME/data:/var/lib/mysql</span><br><span class="line">docker run -p 3306:3306 --name mysql -v $DB_CONF_PATH -v $DB_LOG_PATH -v $DB_DATA_PATH -e MYSQL_ROOT_PASSWORD=toor -d mysql</span><br></pre></td></tr></table></figure>
+
+<h3 id="MySQL-数据类型"><a href="#MySQL-数据类型" class="headerlink" title="MySQL 数据类型"></a>MySQL 数据类型</h3><h4 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h4><p>MySQL支持所有标准SQL中的数值类型，包括严格数值类型(INTEGER、SMALLINT、DECIMAL、NUMBERIC)，以及近似数值数据类型（FLOAT、REAL和DOUBLE PRECISION），并在此基础上做了拓展。</p>
+<p><strong>整型</strong></p>
+<table>
+<thead>
+<tr>
+<th>MySQL数据类型</th>
+<th>含义（有符号）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tinyint(m)</td>
+<td>1个字节 范围(-128~127)</td>
+</tr>
+<tr>
+<td>smallint(m)</td>
+<td>2个字节 范围(-32768~32767)</td>
+</tr>
+<tr>
+<td>mediumint(m)</td>
+<td>3个字节 范围(-8388608~8388607)</td>
+</tr>
+<tr>
+<td>int(m)</td>
+<td>4个字节 范围(-2147483648~2147483647)</td>
+</tr>
+<tr>
+<td>bigint(m)</td>
+<td>8个字节 范围(+-9.22*10的18次方)</td>
+</tr>
+</tbody></table>
+<p><strong>浮点型</strong></p>
+<table>
+<thead>
+<tr>
+<th>MySQL数据类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float(m,d)</td>
+<td>单精度浮点型  8位精度(4字节)   m总个数，d小数位</td>
+</tr>
+<tr>
+<td>double(m,d)</td>
+<td>双精度浮点型  16位精度(8字节)   m总个数，d小数位</td>
+</tr>
+</tbody></table>
+<p><strong>定点型</strong></p>
+<h4 id="日期和时间类型"><a href="#日期和时间类型" class="headerlink" title="日期和时间类型"></a>日期和时间类型</h4><h4 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h4><h3 id="MySQL-运算符"><a href="#MySQL-运算符" class="headerlink" title="MySQL 运算符"></a>MySQL 运算符</h3><p>MySQL支持多种类型的运算符，包括算术运算符、比较运算符、逻辑运算符、位运算符。</p>
+<h4 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h4><h4 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h4><h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><h4 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h4><h3 id="MySQL-常用函数"><a href="#MySQL-常用函数" class="headerlink" title="MySQL 常用函数"></a>MySQL 常用函数</h3><h4 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h4><h4 id="数值函数"><a href="#数值函数" class="headerlink" title="数值函数"></a>数值函数</h4><h4 id="日期和时间函数"><a href="#日期和时间函数" class="headerlink" title="日期和时间函数"></a>日期和时间函数</h4><h4 id="流程函数"><a href="#流程函数" class="headerlink" title="流程函数"></a>流程函数</h4><h4 id="其他常用函数"><a href="#其他常用函数" class="headerlink" title="其他常用函数"></a>其他常用函数</h4><h3 id="MySQL-SQL语句"><a href="#MySQL-SQL语句" class="headerlink" title="MySQL SQL语句"></a>MySQL SQL语句</h3><h4 id="DDL-Data-Definition-Languages"><a href="#DDL-Data-Definition-Languages" class="headerlink" title="DDL(Data Definition Languages)"></a>DDL(Data Definition Languages)</h4><p><strong>数据库操作</strong></p>
+<ul>
+<li><p>查看当前所有数据库</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">databases</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建数据库：CREATE DATABASE 数据库名;</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">DATABASE</span> RUNOOB;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>选择数据库：use 数据库名;</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">use</span> RUNOOB;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除数据库：drop database &lt;数据库名&gt;;</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> RUNOOB;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><strong>数据表操作</strong></p>
+<ul>
+<li><p>查看所有数据表</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">tables</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看单表创建语句</p>
+<p>语法：<code>show create table 数据表名 ;</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">create</span> <span class="keyword">table</span> emp;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看单表结构</p>
+<p>语法：<code>desc 数据库名;</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">desc temp;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建数据表</p>
+<p>语法：<code>CREATE TABLE table_name (column_name column_type);</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> <span class="string">`runoob_tbl`</span>(</span><br><span class="line">   <span class="string">`runoob_id`</span> <span class="built_in">INT</span> <span class="keyword">UNSIGNED</span> AUTO_INCREMENT,</span><br><span class="line">   <span class="string">`runoob_title`</span> <span class="built_in">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`runoob_author`</span> <span class="built_in">VARCHAR</span>(<span class="number">40</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`submission_date`</span> <span class="built_in">DATE</span>,</span><br><span class="line">   PRIMARY <span class="keyword">KEY</span> ( <span class="string">`runoob_id`</span> )</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除数据表</p>
+<p>语法：<code>DROP TABLE table_name ;</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> runoob_tbl;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改数据表名</p>
+<p>语法：<code>ALTER TABLE table_name RENAME [TO] new_table_name;</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">rename</span> emp1;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><strong>数据表结构操作</strong></p>
+<ul>
+<li><p>增加表字段</p>
+<p>语法：<code>ALTER TABLE table_name ADD [COLUMN] column_definition [FIRST | AFTER col_name];</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">ADD</span> <span class="keyword">column</span> age <span class="built_in">int</span>(<span class="number">11</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除表字段</p>
+<p>语法：<code>ALTER TABLE table_name DROP [COLUMN] col_name;</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">DROP</span>  <span class="keyword">column</span> age;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改表字段</p>
+<p>说明：modify 和 change 都可以修改表结构定义，change 需要写两次列名，不方便，但可以修改列名，modify则不能</p>
+<ul>
+<li>修改表字段名</li>
+</ul>
+<p>语法：<code>ALTER TABLE table_name CHANGE [COLUMN] old_col_name column_definition  [FIRST | AFTER col_name];</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">CHANGE</span> age age1 <span class="built_in">int</span>(<span class="number">11</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改表字段属性</li>
+</ul>
+<p>语法：<code>ALTER TABLE table_name MODIFY [COLUMN] old_col_name column_definition  [FIRST | AFTER col_name];</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">MODIFY</span> age <span class="built_in">varchar</span>(<span class="number">20</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改表字段排列顺序：ADD/CHANGE/MODIFY后</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">ADD</span> birth  <span class="built_in">date</span> <span class="keyword">after</span> age；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">change</span> birth birth1 <span class="built_in">date</span> <span class="keyword">after</span> gender；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">MODIFY</span> age <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">first</span>；</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="DML-Data-Manipulation-Languages"><a href="#DML-Data-Manipulation-Languages" class="headerlink" title="DML(Data Manipulation Languages)"></a>DML(Data Manipulation Languages)</h4><p><strong>插入记录</strong></p>
+<p>语法：<code>INSERT INTO table_name[(field1,field2,...fieldn)] VALUES(value1,value2,...,valuen);</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">desc emp;<span class="comment">#ename,hiredate,sal,deptno</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> emp <span class="keyword">VALUES</span>(<span class="string">"lisa"</span>,<span class="string">"1993-06-04"</span>,<span class="string">"3000"</span>,<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>删除记录</strong></p>
+<p>语法：<code>DELETE FROM table_name [WHERE CONDITION];</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> ename=<span class="string">"dony"</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>更新记录</strong></p>
+<p>语法：<code>UPDATE table_name SET field1=value1,field2=value2,...,fieldn=valuen [WHERE CONDITION];</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> emp <span class="keyword">SET</span> sal = <span class="number">4000</span> <span class="keyword">WHERE</span> ename=<span class="string">"lisa"</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>查询记录</strong></p>
+<p>语法：<code>SELETE * FROM table_name;</code></p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">SELETE * FROM emp;</span><br><span class="line"><span class="keyword">SELECT</span> ename,hiredate,sal,deptno <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>去重：<code>DISTINCT</code></li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> ename <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>条件:<code>WHERE</code></li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> deptno=<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>排序：<code>ORDER BY</code></p>
+<p>语法：<code>SELECT * FROM table_name [WHERE CONDITION] [ORDER BY field1 [DESC/ASC],field2 [DESC/ASC]]</code>;</p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">ORDER</span> <span class="keyword">BY</span> sal <span class="keyword">desc</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>限制：<code>LIMIT</code></p>
+<p>语法：<code>SELECT * FROM table_name LIMIT offset_start,row_count</code></p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">LIMIT</span> <span class="number">1</span>,<span class="number">20</span>;<span class="comment">#从1开始，20行</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>聚合</p>
+<p>语法：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> [field1,field2,...,fieldn]fun_name</span><br><span class="line"><span class="keyword">FROM</span> table_name </span><br><span class="line">[<span class="keyword">WHERE</span> where_condition] </span><br><span class="line">[<span class="keyword">GROUP</span> <span class="keyword">BY</span> field1,field2,...,fieldn] </span><br><span class="line">[<span class="keyword">WITH</span> <span class="keyword">ROLLUP</span>] </span><br><span class="line">[<span class="keyword">HAVING</span> where_condition];</span><br></pre></td></tr></table></figure>
+
+<p>参数说明：</p>
+<ul>
+<li>fun_name表示要做的聚合操作，常用的有：sum,count(*),max,min</li>
+<li>GROUP BY 表示进行分类聚合的字段</li>
+<li>WITH ROLLUP 是可选语法，表明是否对分类聚合后的结果进行再汇总</li>
+<li>HAVING 表示对分类后的结果再进行条件的过滤</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">count</span>(<span class="number">1</span>) <span class="keyword">FROM</span> emp;<span class="comment">#查看总人数</span></span><br><span class="line"><span class="keyword">SELECT</span> deptno,<span class="keyword">count</span>(<span class="number">1</span>) <span class="keyword">FROM</span> emp <span class="keyword">GROUP</span> <span class="keyword">BY</span> deptno;<span class="comment">#统计各部门人数</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SUM</span>(sal),<span class="keyword">max</span>(sal),<span class="keyword">min</span>(sal) <span class="keyword">FROM</span> emp;<span class="comment">#查询员工工资总额，最高和最低薪水</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>表连接</p>
+<ul>
+<li>内连接</li>
+<li>外连接<ul>
+<li>左连接</li>
+<li>右连接</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>子查询</p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>UNION联合查询</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#插入记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#删除记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#更新记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#查询记录：</span></span><br><span class="line"><span class="comment"># 去重：DISTINCT</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 条件</span></span><br><span class="line"><span class="comment"># 排序:ORDER BY</span></span><br><span class="line"><span class="comment"># 限制：LIMIT</span></span><br><span class="line"><span class="comment"># 聚合:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接查询</span></span><br><span class="line"><span class="comment"># 子查询</span></span><br><span class="line"><span class="comment"># union联合查询</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="DCL-Data-Control-Languages"><a href="#DCL-Data-Control-Languages" class="headerlink" title="DCL(Data Control Languages)"></a>DCL(Data Control Languages)</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="MySQL-视图"><a href="#MySQL-视图" class="headerlink" title="MySQL 视图"></a>MySQL 视图</h3><h3 id="MySQL-存储过程"><a href="#MySQL-存储过程" class="headerlink" title="MySQL 存储过程"></a>MySQL 存储过程</h3><h3 id="MySQL-触发器"><a href="#MySQL-触发器" class="headerlink" title="MySQL 触发器"></a>MySQL 触发器</h3><h3 id="MySQL-事务"><a href="#MySQL-事务" class="headerlink" title="MySQL 事务"></a>MySQL 事务</h3><h3 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h3><ol>
+<li><p><strong>Navicat 连接 MySQL 数据库失败?</strong></p>
+<p>原因分析：MySQL 8.0 +使用了<code>caching_sha2_password</code>加密方式，而navicat不支持。</p>
+<p>解决方案：修改为原有的加密规则<code>mysql_native_password</code>.</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">use</span> mysql;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘root’@’localhost’ <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> ‘<span class="keyword">password</span>’ <span class="keyword">PASSWORD</span> <span class="keyword">EXPIRE</span> <span class="keyword">NEVER</span>; <span class="comment">#修改加密规则,如果远程需要连接，则'localhost'改为'%'</span></span><br><span class="line">4. <span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘root’@’localhost’ <span class="keyword">IDENTIFIED</span> <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> ‘<span class="keyword">password</span>’; <span class="comment">#更新一下用户的密码,,如果远程需要连接，则'localhost'改为'%'</span></span><br><span class="line"><span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>; <span class="comment">#刷新权限</span></span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ol>
+]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【面试题】JavaSE面试总结</title>
+    <url>/2018/05/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90%E9%9D%A2%E8%AF%95%E9%A2%98%E3%80%91JavaSE%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>本篇文章将介绍JavaSE面试过程中的题目及相关知识点总结。</p>
+<a id="more"></a>
+
+<h3 id="自增变量"><a href="#自增变量" class="headerlink" title="自增变量"></a>自增变量</h3><p>面试题：写出如下代码段的运行结果</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">    i = i++;</span><br><span class="line">    <span class="keyword">int</span> j = i++;</span><br><span class="line">    <span class="keyword">int</span> k = i + ++i * i++;</span><br><span class="line">    System.out.println(<span class="string">"i="</span> + i);</span><br><span class="line">    System.out.println(<span class="string">"j="</span> + j);</span><br><span class="line">    System.out.println(<span class="string">"k="</span> + k);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i=4</span><br><span class="line">j=1</span><br><span class="line">k=11</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>JavaSE</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>面试总结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Java】Java核心技术</title>
+    <url>/2018/03/05/Java%E7%AC%94%E8%AE%B0/Java%20SE%20%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>本文主要是 Java SE 核心技术的复习与总结，内容比较长，耐心查看。</p>
 <p><img src="/images/image-20191222205312777.png" alt="image-20191222205312777"></p>
 <a id="more"></a>
 
-<h1 id="Java-SE"><a href="#Java-SE" class="headerlink" title="Java SE"></a>Java SE</h1><h2 id="Java-语言概述"><a href="#Java-语言概述" class="headerlink" title="Java 语言概述"></a>Java 语言概述</h2><h2 id="Java-基本语法"><a href="#Java-基本语法" class="headerlink" title="Java 基本语法"></a>Java 基本语法</h2><h3 id="关键字和保留字"><a href="#关键字和保留字" class="headerlink" title="关键字和保留字"></a>关键字和保留字</h3><p>关键字定义：<strong>被Java 语言赋予了特殊含义，用做专门用途的字符串（单词）</strong>。</p>
+<h2 id="Java-语言概述"><a href="#Java-语言概述" class="headerlink" title="Java 语言概述"></a>Java 语言概述</h2><h2 id="Java-基本语法"><a href="#Java-基本语法" class="headerlink" title="Java 基本语法"></a>Java 基本语法</h2><h3 id="关键字和保留字"><a href="#关键字和保留字" class="headerlink" title="关键字和保留字"></a>关键字和保留字</h3><p>关键字定义：<strong>被Java 语言赋予了特殊含义，用做专门用途的字符串（单词）</strong>。</p>
 <p>官方地址： <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html" target="_blank" rel="noopener">https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html</a></p>
 <p>关键字：</p>
 <table>
@@ -2186,936 +3018,109 @@
       </categories>
       <tags>
         <tag>Java SE</tag>
+        <tag>Java 8</tag>
+        <tag>Java 9~11</tag>
+        <tag>面向对象</tag>
+        <tag>IO</tag>
+        <tag>集合</tag>
+        <tag>多线程</tag>
+        <tag>常用API</tag>
+        <tag>枚举</tag>
+        <tag>注解</tag>
+        <tag>泛型</tag>
+        <tag>网络编程</tag>
+        <tag>反射</tag>
       </tags>
   </entry>
   <entry>
-    <title>Redis 学习总结</title>
-    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/Redis%20%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
+    <title>MySQL学习总结</title>
+    <url>/2018/03/05/Java%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<p>本文主要介绍 Redis 相关基础知识。主要包括以下内容：</p>
-<ul>
-<li>Redis 数据结构</li>
-<li>Redis 配置文件</li>
-<li>Redis 持久化</li>
-<li>Redis 事务</li>
-<li>Redis 订阅发布</li>
-<li>Redis 主从复制</li>
-<li>Jedis的使用</li>
-</ul>
+<p>本文主要是 MySQL 学习及使用过程中的总结，内容将随理解的不断加深优化。</p>
 <a id="more"></a>
 
-<h3 id="Redis-概要"><a href="#Redis-概要" class="headerlink" title="Redis 概要"></a>Redis 概要</h3><h4 id="Redis介绍"><a href="#Redis介绍" class="headerlink" title="Redis介绍"></a>Redis介绍</h4><p>官网： <a href="https://redis.io/" target="_blank" rel="noopener">https://redis.io/</a> </p>
-<p>中文网站：  <a href="https://www.redis.net.cn/" target="_blank" rel="noopener">https://www.redis.net.cn/</a> </p>
-<p>命令参考： <a href="http://redisdoc.com/index.html" target="_blank" rel="noopener">http://redisdoc.com/index.html</a> </p>
-<p><strong>Redis</strong>是一个开源的高性能的key-value存储系统。具有以下特点：</p>
-<ul>
-<li>Redis支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用。</li>
-<li>Redis不仅仅支持简单的key-value类型的数据，同时还提供list，set，sorted set，hash等数据结构的存储。</li>
-<li>Redis支持数据的备份，即master-slave模式的数据备份。</li>
-<li>优势：<ul>
-<li>性能极高 – Redis能读的速度是110000次/s,写的速度是81000次/s 。</li>
-<li>丰富的数据类型 – Redis支持二进制案例的 String, List, Hash, Set 及 Sorted Set 数据类型操作。</li>
-<li>原子 – Redis的所有操作都是原子性的，同时Redis还支持对几个操作全并后的原子性执行。</li>
-<li>丰富的特性 – Redis还支持 publish/subscribe, 通知, key 过期等等特性</li>
-</ul>
-</li>
-</ul>
-<h4 id="基于Docker安装Redis"><a href="#基于Docker安装Redis" class="headerlink" title="基于Docker安装Redis"></a><strong>基于Docker安装Redis</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 创建并运行一个名为 myredis 的容器</span></span><br><span class="line">docker run \</span><br><span class="line">--restart=always #开机启动容器</span><br><span class="line">-d #后台运行</span><br><span class="line">-p 6379:6379 \ # 端口映射 宿主机:容器</span><br><span class="line">-v /data/redis/data:/data:rw \ # 映射数据目录 rw 为读写</span><br><span class="line">-v /data/redis/conf/redis.conf:/etc/redis/redis.conf:ro \ # 挂载配置文件 ro 为readonly</span><br><span class="line">--privileged=true \ # 给与容器内的root用户root权限，否则只有外部普通用户权限</span><br><span class="line">--name myredis redis redis-server /etc/redis/redis.conf # 容器名字 redis实例名 配置文件</span><br><span class="line">--appendonly yes #开启持久化</span><br></pre></td></tr></table></figure>
-
-<p> <strong>redis 客户端</strong></p>
-<p>在redis上执行命令，需要安装redis客户端。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">本地redis服务器</span></span><br><span class="line">redis-cli</span><br><span class="line"><span class="meta">#</span><span class="bash">远程redis服务器：redis-cli -h host -p port -a password</span></span><br><span class="line">redis-cli -h 127.0.0.1 -p 6379 -a "mypass"</span><br></pre></td></tr></table></figure>
-
-<h3 id="Redis-数据类型"><a href="#Redis-数据类型" class="headerlink" title="Redis 数据类型"></a>Redis 数据类型</h3><p> <strong>key</strong>的类型只能为字符串，<strong>value</strong>支持五种数据类型：字符串、列表、集合、散列表、有序集合。 </p>
-<h4 id="Redis-key"><a href="#Redis-key" class="headerlink" title="Redis key"></a>Redis key</h4><p>基本命令如下：</p>
-<table>
-<thead>
-<tr>
-<th align="left">命令</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3543.html" target="_blank" rel="noopener">Redis Type 命令</a></td>
-<td align="left">返回 key 所储存的值的类型。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3533.html" target="_blank" rel="noopener">Redis PEXPIREAT 命令</a></td>
-<td align="left">设置 key 的过期时间亿以毫秒计。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3534.html" target="_blank" rel="noopener">Redis PEXPIREAT 命令</a></td>
-<td align="left">设置 key 过期时间的时间戳(unix timestamp) 以毫秒计</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3541.html" target="_blank" rel="noopener">Redis Rename 命令</a></td>
-<td align="left">修改 key 的名称</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3537.html" target="_blank" rel="noopener">Redis PERSIST 命令</a></td>
-<td align="left">移除 key 的过期时间，key 将持久保持。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3536.html" target="_blank" rel="noopener">Redis Move 命令</a></td>
-<td align="left">将当前数据库的 key 移动到给定的数据库 db 当中。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3540.html" target="_blank" rel="noopener">Redis RANDOMKEY 命令</a></td>
-<td align="left">从当前数据库中随机返回一个 key 。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3529.html" target="_blank" rel="noopener">Redis Dump 命令</a></td>
-<td align="left">序列化给定 key ，并返回被序列化的值。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3539.html" target="_blank" rel="noopener">Redis TTL 命令</a></td>
-<td align="left">以秒为单位，返回给定 key 的剩余生存时间(TTL, time to live)。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3531.html" target="_blank" rel="noopener">Redis Expire 命令</a></td>
-<td align="left">seconds 为给定 key 设置过期时间。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3528.html" target="_blank" rel="noopener">Redis DEL 命令</a></td>
-<td align="left">该命令用于在 key 存在是删除 key。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3538.html" target="_blank" rel="noopener">Redis Pttl 命令</a></td>
-<td align="left">以毫秒为单位返回 key 的剩余的过期时间。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3542.html" target="_blank" rel="noopener">Redis Renamenx 命令</a></td>
-<td align="left">仅当 newkey 不存在时，将 key 改名为 newkey 。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3530.html" target="_blank" rel="noopener">Redis EXISTS 命令</a></td>
-<td align="left">检查给定 key 是否存在。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3532.html" target="_blank" rel="noopener">Redis Expireat 命令</a></td>
-<td align="left">EXPIREAT 的作用和 EXPIRE 类似，都用于为 key 设置过期时间。 不同在于 EXPIREAT 命令接受的时间参数是 UNIX 时间戳(unix timestamp)。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3535.html" target="_blank" rel="noopener">Redis Keys 命令</a></td>
-<td align="left">查找所有符合给定模式( pattern)的 key 。</td>
-</tr>
-</tbody></table>
-<h4 id="Redis-value"><a href="#Redis-value" class="headerlink" title="Redis value"></a>Redis value</h4><p><strong>value</strong> 支持的数据类型有：字符串、列表、集合、散列表、有序集合。</p>
-<h5 id="字符串（String）"><a href="#字符串（String）" class="headerlink" title="字符串（String）"></a>字符串（String）</h5><p><strong>Redis String</strong> 可存储的类型有字符串、整数或者浮点数。</p>
-<p>常用命令如下：</p>
-<table>
-<thead>
-<tr>
-<th align="left">命令</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3552.html" target="_blank" rel="noopener">Redis Setnx 命令</a></td>
-<td align="left">只有在 key 不存在时设置 key 的值。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3546.html" target="_blank" rel="noopener">Redis Getrange 命令</a></td>
-<td align="left">返回 key 中字符串值的子字符</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3555.html" target="_blank" rel="noopener">Redis Mset 命令</a></td>
-<td align="left">同时设置一个或多个 key-value 对。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3551.html" target="_blank" rel="noopener">Redis Setex 命令</a></td>
-<td align="left">将值 value 关联到 key ，并将 key 的过期时间设为 seconds (以秒为单位)。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3544.html" target="_blank" rel="noopener">Redis SET 命令</a></td>
-<td align="left">设置指定 key 的值</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3545.html" target="_blank" rel="noopener">Redis Get 命令</a></td>
-<td align="left">获取指定 key 的值。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3548.html" target="_blank" rel="noopener">Redis Getbit 命令</a></td>
-<td align="left">对 key 所储存的字符串值，获取指定偏移量上的位(bit)。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3550.html" target="_blank" rel="noopener">Redis Setbit 命令</a></td>
-<td align="left">对 key 所储存的字符串值，设置或清除指定偏移量上的位(bit)。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3561.html" target="_blank" rel="noopener">Redis Decr 命令</a></td>
-<td align="left">将 key 中储存的数字值减一。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3562.html" target="_blank" rel="noopener">Redis Decrby 命令</a></td>
-<td align="left">key 所储存的值减去给定的减量值（decrement） 。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3554.html" target="_blank" rel="noopener">Redis Strlen 命令</a></td>
-<td align="left">返回 key 所储存的字符串值的长度。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3556.html" target="_blank" rel="noopener">Redis Msetnx 命令</a></td>
-<td align="left">同时设置一个或多个 key-value 对，当且仅当所有给定 key 都不存在。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3559.html" target="_blank" rel="noopener">Redis Incrby 命令</a></td>
-<td align="left">将 key 所储存的值加上给定的增量值（increment） 。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3560.html" target="_blank" rel="noopener">Redis Incrbyfloat 命令</a></td>
-<td align="left">将 key 所储存的值加上给定的浮点增量值（increment） 。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3553.html" target="_blank" rel="noopener">Redis Setrange 命令</a></td>
-<td align="left">用 value 参数覆写给定 key 所储存的字符串值，从偏移量 offset 开始。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3557.html" target="_blank" rel="noopener">Redis Psetex 命令</a></td>
-<td align="left">这个命令和 SETEX 命令相似，但它以毫秒为单位设置 key 的生存时间，而不是像 SETEX 命令那样，以秒为单位。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3563.html" target="_blank" rel="noopener">Redis Append 命令</a></td>
-<td align="left">如果 key 已经存在并且是一个字符串， APPEND 命令将 value 追加到 key 原来的值的末尾。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3547.html" target="_blank" rel="noopener">Redis Getset 命令</a></td>
-<td align="left">将给定 key 的值设为 value ，并返回 key 的旧值(old value)。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3549.html" target="_blank" rel="noopener">Redis Mget 命令</a></td>
-<td align="left">获取所有(一个或多个)给定 key 的值。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3558.html" target="_blank" rel="noopener">Redis Incr 命令</a></td>
-<td align="left">将 key 中储存的数字值增一。</td>
-</tr>
-</tbody></table>
-<h5 id="列表（List）"><a href="#列表（List）" class="headerlink" title="列表（List）"></a>列表（List）</h5><p><strong>Redis List</strong> 可存储列表，按照插入顺序排序。</p>
-<p><strong>使用场景：微博 TimeLine、消息队列</strong> </p>
-<p>常见命令如下：</p>
-<table>
-<thead>
-<tr>
-<th align="left">命令</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3580.html" target="_blank" rel="noopener">Redis Lindex 命令</a></td>
-<td align="left">通过索引获取列表中的元素</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3592.html" target="_blank" rel="noopener">Redis Rpush 命令</a></td>
-<td align="left">在列表中添加一个或多个值</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3586.html" target="_blank" rel="noopener">Redis Lrange 命令</a></td>
-<td align="left">获取列表指定范围内的元素</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3591.html" target="_blank" rel="noopener">Redis Rpoplpush 命令</a></td>
-<td align="left">移除列表的最后一个元素，并将该元素添加到另一个列表并返回</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3577.html" target="_blank" rel="noopener">Redis Blpop 命令</a></td>
-<td align="left">移出并获取列表的第一个元素， 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3578.html" target="_blank" rel="noopener">Redis Brpop 命令</a></td>
-<td align="left">移出并获取列表的最后一个元素， 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3579.html" target="_blank" rel="noopener">Redis Brpoplpush 命令</a></td>
-<td align="left">从列表中弹出一个值，将弹出的元素插入到另外一个列表中并返回它； 如果列表没有元素会阻塞列表直到等待超时或发现可弹出元素为止。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3587.html" target="_blank" rel="noopener">Redis Lrem 命令</a></td>
-<td align="left">移除列表元素</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3582.html" target="_blank" rel="noopener">Redis Llen 命令</a></td>
-<td align="left">获取列表长度</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3589.html" target="_blank" rel="noopener">Redis Ltrim 命令</a></td>
-<td align="left">对一个列表进行修剪(trim)，就是说，让列表只保留指定区间内的元素，不在指定区间之内的元素都将被删除。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3583.html" target="_blank" rel="noopener">Redis Lpop 命令</a></td>
-<td align="left">移出并获取列表的第一个元素</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3585.html" target="_blank" rel="noopener">Redis Lpushx 命令</a></td>
-<td align="left">将一个或多个值插入到已存在的列表头部</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3581.html" target="_blank" rel="noopener">Redis Linsert 命令</a></td>
-<td align="left">在列表的元素前或者后插入元素</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3590.html" target="_blank" rel="noopener">Redis Rpop 命令</a></td>
-<td align="left">移除并获取列表最后一个元素</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3588.html" target="_blank" rel="noopener">Redis Lset 命令</a></td>
-<td align="left">通过索引设置列表元素的值</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3584.html" target="_blank" rel="noopener">Redis Lpush 命令</a></td>
-<td align="left">将一个或多个值插入到列表头部</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3593.html" target="_blank" rel="noopener">Redis Rpushx 命令</a></td>
-<td align="left">为已存在的列表添加值</td>
-</tr>
-</tbody></table>
-<h5 id="散列表（Hash）"><a href="#散列表（Hash）" class="headerlink" title="散列表（Hash）"></a>散列表（Hash）</h5><p><strong>Redis Hash</strong>是键值对集合，特别适合存储对象。</p>
-<p><strong>使用场景：</strong> <strong>存储、读取、修改用户属性</strong> </p>
-<p>常见命令如下：</p>
-<table>
-<thead>
-<tr>
-<th align="left">命令</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3573.html" target="_blank" rel="noopener">Redis Hmset 命令</a></td>
-<td align="left">同时将多个 field-value (域-值)对设置到哈希表 key 中。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3572.html" target="_blank" rel="noopener">Redis Hmget 命令</a></td>
-<td align="left">获取所有给定字段的值</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3574.html" target="_blank" rel="noopener">Redis Hset 命令</a></td>
-<td align="left">将哈希表 key 中的字段 field 的值设为 value 。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3567.html" target="_blank" rel="noopener">Redis Hgetall 命令</a></td>
-<td align="left">获取在哈希表中指定 key 的所有字段和值</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3566.html" target="_blank" rel="noopener">Redis Hget 命令</a></td>
-<td align="left">获取存储在哈希表中指定字段的值/td&gt;</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3565.html" target="_blank" rel="noopener">Redis Hexists 命令</a></td>
-<td align="left">查看哈希表 key 中，指定的字段是否存在。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3568.html" target="_blank" rel="noopener">Redis Hincrby 命令</a></td>
-<td align="left">为哈希表 key 中的指定字段的整数值加上增量 increment 。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3571.html" target="_blank" rel="noopener">Redis Hlen 命令</a></td>
-<td align="left">获取哈希表中字段的数量</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3564.html" target="_blank" rel="noopener">Redis Hdel 命令</a></td>
-<td align="left">删除一个或多个哈希表字段</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3576.html" target="_blank" rel="noopener">Redis Hvals 命令</a></td>
-<td align="left">获取哈希表中所有值</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3569.html" target="_blank" rel="noopener">Redis Hincrbyfloat 命令</a></td>
-<td align="left">为哈希表 key 中的指定字段的浮点数值加上增量 increment 。</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3570.html" target="_blank" rel="noopener">Redis Hkeys 命令</a></td>
-<td align="left">获取所有哈希表中的字段</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3575.html" target="_blank" rel="noopener">Redis Hsetnx 命令</a></td>
-<td align="left">只有在字段 field 不存在时，设置哈希表字段的值。</td>
-</tr>
-</tbody></table>
-<h5 id="集合（Set）"><a href="#集合（Set）" class="headerlink" title="集合（Set）"></a>集合（Set）</h5><p><strong>Redis Set</strong> 可存储 string类型的无序集合，集合成员是唯一的，不能重复。</p>
-<p><strong>使用场景：1.共同好友、二度好友 2.利用唯一性，可以统计访问网站的所有独立 IP 3.好友推荐的时候，根据 tag 求交集，大于某个 threshold 就可以推荐</strong></p>
-<p>常见命令如下：</p>
-<table>
-<thead>
-<tr>
-<th align="left">命令</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3606.html" target="_blank" rel="noopener">Redis Sunion 命令</a></td>
-<td align="left">返回所有给定集合的并集</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3595.html" target="_blank" rel="noopener">Redis Scard 命令</a></td>
-<td align="left">获取集合的成员数</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3604.html" target="_blank" rel="noopener">Redis Srandmember 命令</a></td>
-<td align="left">返回集合中一个或多个随机数</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3601.html" target="_blank" rel="noopener">Redis Smembers 命令</a></td>
-<td align="left">返回集合中的所有成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3598.html" target="_blank" rel="noopener">Redis Sinter 命令</a></td>
-<td align="left">返回给定所有集合的交集</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3605.html" target="_blank" rel="noopener">Redis Srem 命令</a></td>
-<td align="left">移除集合中一个或多个成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3602.html" target="_blank" rel="noopener">Redis Smove 命令</a></td>
-<td align="left">将 member 元素从 source 集合移动到 destination 集合</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3594.html" target="_blank" rel="noopener">Redis Sadd 命令</a></td>
-<td align="left">向集合添加一个或多个成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3600.html" target="_blank" rel="noopener">Redis Sismember 命令</a></td>
-<td align="left">判断 member 元素是否是集合 key 的成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3597.html" target="_blank" rel="noopener">Redis Sdiffstore 命令</a></td>
-<td align="left">返回给定所有集合的差集并存储在 destination 中</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3596.html" target="_blank" rel="noopener">Redis Sdiff 命令</a></td>
-<td align="left">返回给定所有集合的差集</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3608.html" target="_blank" rel="noopener">Redis Sscan 命令</a></td>
-<td align="left">迭代集合中的元素</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3599.html" target="_blank" rel="noopener">Redis Sinterstore 命令</a></td>
-<td align="left">返回给定所有集合的交集并存储在 destination 中</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3607.html" target="_blank" rel="noopener">Redis Sunionstore 命令</a></td>
-<td align="left">所有给定集合的并集存储在 destination 集合中</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3603.html" target="_blank" rel="noopener">Redis Spop 命令</a></td>
-<td align="left">移除并返回集合中的一个随机元素</td>
-</tr>
-</tbody></table>
-<h5 id="有序集合（-Sorted-Set）"><a href="#有序集合（-Sorted-Set）" class="headerlink" title="有序集合（ Sorted Set）"></a>有序集合（ Sorted Set）</h5><p><strong>使用场景：1.带有权重的元素，比如一个游戏的用户得分排行榜 2.比较复杂的数据结构，一般用到的场景不算太多</strong> </p>
-<p>常见命令如下：</p>
-<table>
-<thead>
-<tr>
-<th align="left">命令</th>
-<th align="left">描述</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3625.html" target="_blank" rel="noopener">Redis Zrevrank 命令</a></td>
-<td align="left">返回有序集合中指定成员的排名，有序集成员按分数值递减(从大到小)排序</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3614.html" target="_blank" rel="noopener">Redis Zlexcount 命令</a></td>
-<td align="left">在有序集合中计算指定字典区间内成员数量</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3627.html" target="_blank" rel="noopener">Redis Zunionstore 命令</a></td>
-<td align="left">计算给定的一个或多个有序集的并集，并存储在新的 key 中</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3621.html" target="_blank" rel="noopener">Redis Zremrangebyrank 命令</a></td>
-<td align="left">移除有序集合中给定的排名区间的所有成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3610.html" target="_blank" rel="noopener">Redis Zcard 命令</a></td>
-<td align="left">获取有序集合的成员数</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3619.html" target="_blank" rel="noopener">Redis Zrem 命令</a></td>
-<td align="left">移除有序集合中的一个或多个成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3613.html" target="_blank" rel="noopener">Redis Zinterstore 命令</a></td>
-<td align="left">计算给定的一个或多个有序集的交集并将结果集存储在新的有序集合 key 中</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3618.html" target="_blank" rel="noopener">Redis Zrank 命令</a></td>
-<td align="left">返回有序集合中指定成员的索引</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3612.html" target="_blank" rel="noopener">Redis Zincrby 命令</a></td>
-<td align="left">有序集合中对指定成员的分数加上增量 increment</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3617.html" target="_blank" rel="noopener">Redis Zrangebyscore 命令</a></td>
-<td align="left">通过分数返回有序集合指定区间内的成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3616.html" target="_blank" rel="noopener">Redis Zrangebylex 命令</a></td>
-<td align="left">通过字典区间返回有序集合的成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3626.html" target="_blank" rel="noopener">Redis Zscore 命令</a></td>
-<td align="left">返回有序集中，成员的分数值</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3622.html" target="_blank" rel="noopener">Redis Zremrangebyscore 命令</a></td>
-<td align="left">移除有序集合中给定的分数区间的所有成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3628.html" target="_blank" rel="noopener">Redis Zscan 命令</a></td>
-<td align="left">迭代有序集合中的元素（包括元素成员和元素分值）</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3624.html" target="_blank" rel="noopener">Redis Zrevrangebyscore 命令</a></td>
-<td align="left">返回有序集中指定分数区间内的成员，分数从高到低排序</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3620.html" target="_blank" rel="noopener">Redis Zremrangebylex 命令</a></td>
-<td align="left">移除有序集合中给定的字典区间的所有成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3623.html" target="_blank" rel="noopener">Redis Zrevrange 命令</a></td>
-<td align="left">返回有序集中指定区间内的成员，通过索引，分数从高到底</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3615.html" target="_blank" rel="noopener">Redis Zrange 命令</a></td>
-<td align="left">通过索引区间返回有序集合成指定区间内的成员</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3611.html" target="_blank" rel="noopener">Redis Zcount 命令</a></td>
-<td align="left">计算在有序集合中指定区间分数的成员数</td>
-</tr>
-<tr>
-<td align="left"><a href="https://www.redis.net.cn/order/3609.html" target="_blank" rel="noopener">Redis Zadd 命令</a></td>
-<td align="left">向有序集合添加一个或多个成员，或者更新已存在成员的分数</td>
-</tr>
-</tbody></table>
-<h3 id="Redis-配置文件"><a href="#Redis-配置文件" class="headerlink" title="Redis 配置文件"></a>Redis 配置文件</h3><h3 id="Redis-持久化"><a href="#Redis-持久化" class="headerlink" title="Redis 持久化"></a>Redis 持久化</h3><h3 id="Redis-事务"><a href="#Redis-事务" class="headerlink" title="Redis 事务"></a>Redis 事务</h3><h3 id="Redis-发布订阅"><a href="#Redis-发布订阅" class="headerlink" title="Redis 发布订阅"></a>Redis 发布订阅</h3><h3 id="Redis-主从复制"><a href="#Redis-主从复制" class="headerlink" title="Redis 主从复制"></a>Redis 主从复制</h3><h3 id="Jedis-的使用"><a href="#Jedis-的使用" class="headerlink" title="Jedis 的使用"></a>Jedis 的使用</h3>]]></content>
-      <categories>
-        <category>Reids</category>
-      </categories>
-      <tags>
-        <tag>Redis</tag>
-        <tag>Jedis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【SpringBoot】缓存机制</title>
-    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>Reids</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>缓存</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【SpringBoot】集成Redis</title>
-    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E9%9B%86%E6%88%90Redis/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>Reids</category>
-      </categories>
-      <tags>
-        <tag>Redis</tag>
-        <tag>SpringBoot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>理解微服务架构</title>
-    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/%E7%90%86%E8%A7%A3%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>Reids</category>
-      </categories>
-      <tags>
-        <tag>微服务架构</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【MySQL】优化篇</title>
-    <url>/2018/05/10/Java%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E4%BC%98%E5%8C%96%E7%AF%87/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-
-
-
-
-]]></content>
-      <categories>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-        <tag>SQL优化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Java】注解</title>
-    <url>/2018/05/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Java%E3%80%91%E6%B3%A8%E8%A7%A3/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="JDK内置注解"><a href="#JDK内置注解" class="headerlink" title="JDK内置注解"></a>JDK内置注解</h3><ul>
-<li><code>@Override</code>：限定重写父类方法，该方法只能用于方法</li>
-<li><code>@Deprecated</code>：用于表示某个程序元素（类、方法等）已过时</li>
-<li><code>@SuppressWarnings</code>：抑制编译器警告</li>
-</ul>
-<h3 id="元注解"><a href="#元注解" class="headerlink" title="元注解"></a>元注解</h3><p>查看JDK内置的注解源码，可以发现有注解标注在注解上，例如：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Target</span>(ElementType.METHOD)</span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.SOURCE)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Override &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>【元注解】： 用于修饰注解的注解，通常用在注解的定义上 。</p>
-<p>Java中有以下几个元注解：</p>
-<ul>
-<li>@Target：注解的作用目标</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="meta">@Target</span>(ElementType.ANNOTATION_TYPE)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Target &#123;</span><br><span class="line">    ElementType[] value();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><code>@Target</code>可以使用value传值，表示注解的作用目标</p>
-<p>ElementType是一个枚举类，有以下值：</p>
-<p>ElementType.TYPE： 作用于 类、接口和枚举 上<br>ElementType.FIELD： 作用于  属性字段  上<br>ElementType.METHOD： 作用于  方法 上<br>ElementType.PARAMETER： 作用于  方法参数  上<br>ElementType.CONSTRUCTOR： 作用于  构造器  上<br>ElementType.LOCAL_VARIABLE： 作用于  本地局部变量  上<br>ElementType.ANNOTATION_TYPE： 作用于  注解  上<br>ElementType.PACKAGE： 作用于 包  上<br>ElementType.TYPE_PARAMETER：  @since 1.8<br>ElementType.TYPE_USE：  @since 1.8 </p>
-</blockquote>
-<ul>
-<li>@Retention：注解的生命周期</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="meta">@Target</span>(ElementType.ANNOTATION_TYPE)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> Retention &#123;</span><br><span class="line">    <span class="function">RetentionPolicy <span class="title">value</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p><code>@Retention</code>用于标记注解的生命周期</p>
-<p>RetentionPolicy是一个枚举类，有以下值：</p>
-<p>RetentionPolicy.SOURCE： 当前注解编译期可见，不会写入 class 文件 </p>
-<p>RetentionPolicy.CLASS： 类加载阶段丢弃，会写入 class 文件 </p>
-<p>RetentionPolicy.RUNTIME： 永久保存，可以反射获取 </p>
-</blockquote>
-<ul>
-<li>@Documented：注解是否应当被包含在 JavaDoc 文档中</li>
-<li>@Inherited：是否允许子类继承该注解</li>
-</ul>
-<h3 id="自定义注解"><a href="#自定义注解" class="headerlink" title="自定义注解"></a>自定义注解</h3><p>自定义注解的方法非常简单，可以使用元注解进行修饰，例如：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="meta">@Target</span>(ElementType.TYPE)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">    <span class="function">RetentionPolicy <span class="title">value</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="注解解析"><a href="#注解解析" class="headerlink" title="注解解析"></a>注解解析</h3><p>对于一个类、枚举、接口来说，java.lang.Class类提供了以下方法用于反射注解：</p>
-<ul>
-<li>getAnnotation：返回指定的注解</li>
-<li>isAnnotationPresent：判定当前元素是否被指定注解修饰</li>
-<li>getAnnotations：返回所有的注解</li>
-<li>getDeclaredAnnotation：返回本元素的指定注解</li>
-<li>getDeclaredAnnotations：返回本元素的所有注解，不包含父类继承而来的</li>
-</ul>
-<p>方法、参数的获取方法是类似的，这里不做详细介绍。</p>
-<p>下面将详细介绍反射获取注解的实现过程：</p>
-<ul>
-<li>自定义注解<code>MyAnnotation</code></li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.ElementType;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.Retention;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.RetentionPolicy;</span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.Target;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Target</span>(&#123;ElementType.TYPE,ElementType.METHOD&#125;)</span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> MyAnnotation &#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>测试类<code>AnnotationTest</code>解析注解</li>
-</ul>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@MyAnnotation</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AnnotationTest</span> </span>&#123;</span><br><span class="line">    <span class="meta">@MyAnnotation</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">hello</span><span class="params">()</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> ClassNotFoundException, NoSuchMethodException </span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span> present = Class.forName(<span class="string">"com.wusuiwei.hydrogen.AnnotationTest"</span>).isAnnotationPresent(MyAnnotation<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        System.out.println(present);</span><br><span class="line"></span><br><span class="line">        Method hello = Class.forName(<span class="string">"com.wusuiwei.hydrogen.AnnotationTest"</span>).getMethod(<span class="string">"hello"</span>);</span><br><span class="line">        MyAnnotation annotation = hello.getAnnotation(MyAnnotation<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">        System.out.println(annotation);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>运行结果：<code>true</code></p>
-</blockquote>
-<hr>
-]]></content>
-      <categories>
-        <category>Java笔记</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>Annotation</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【MySQL】基础知识点总结</title>
-    <url>/2018/05/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>这篇文章主要介绍MySQL的一些基本用法与总结。</p>
-<a id="more"></a>
-
-<h3 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h3><p><strong>MySQL(<a href="https://www.mysql.com)：轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：轻量级关系型数据库。</a></strong></p>
-<p><strong>基于Docker安装：</strong></p>
-<ul>
+<h2 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h2><p><strong>MySQL(<a href="https://www.mysql.com)：开源的轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：开源的轻量级关系型数据库。</a></strong></p>
+<h3 id="基于Docker安装MySQL"><a href="#基于Docker安装MySQL" class="headerlink" title="基于Docker安装MySQL"></a>基于Docker安装MySQL</h3><ul>
 <li>拉取最新的 MySQL 镜像：<code>docker pull mysql</code></li>
 <li>启动镜像，映射端口、指定root密码并挂载日志、配置文件及数据</li>
 </ul>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">DB_HOME=/home/mysql</span><br><span class="line">DB_CONF_PATH=$DB_HOME/conf:/etc/mysql/conf.d</span><br><span class="line">DB_LOG_PATH=$DB_HOME/logs:/var/log/mysql</span><br><span class="line">DB_DATA_PATH=$DB_HOME/data:/var/lib/mysql</span><br><span class="line">docker run -p 3306:3306 --name mysql -v $DB_CONF_PATH -v $DB_LOG_PATH -v $DB_DATA_PATH -e MYSQL_ROOT_PASSWORD=toor -d mysql</span><br></pre></td></tr></table></figure>
 
-<h3 id="MySQL-数据类型"><a href="#MySQL-数据类型" class="headerlink" title="MySQL 数据类型"></a>MySQL 数据类型</h3><h4 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h4><p>MySQL支持所有标准SQL中的数值类型，包括严格数值类型(INTEGER、SMALLINT、DECIMAL、NUMBERIC)，以及近似数值数据类型（FLOAT、REAL和DOUBLE PRECISION），并在此基础上做了拓展。</p>
-<p><strong>整型</strong></p>
-<table>
-<thead>
-<tr>
-<th>MySQL数据类型</th>
-<th>含义（有符号）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>tinyint(m)</td>
-<td>1个字节 范围(-128~127)</td>
-</tr>
-<tr>
-<td>smallint(m)</td>
-<td>2个字节 范围(-32768~32767)</td>
-</tr>
-<tr>
-<td>mediumint(m)</td>
-<td>3个字节 范围(-8388608~8388607)</td>
-</tr>
-<tr>
-<td>int(m)</td>
-<td>4个字节 范围(-2147483648~2147483647)</td>
-</tr>
-<tr>
-<td>bigint(m)</td>
-<td>8个字节 范围(+-9.22*10的18次方)</td>
-</tr>
-</tbody></table>
-<p><strong>浮点型</strong></p>
-<table>
-<thead>
-<tr>
-<th>MySQL数据类型</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>float(m,d)</td>
-<td>单精度浮点型  8位精度(4字节)   m总个数，d小数位</td>
-</tr>
-<tr>
-<td>double(m,d)</td>
-<td>双精度浮点型  16位精度(8字节)   m总个数，d小数位</td>
-</tr>
-</tbody></table>
-<p><strong>定点型</strong></p>
-<h4 id="日期和时间类型"><a href="#日期和时间类型" class="headerlink" title="日期和时间类型"></a>日期和时间类型</h4><h4 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h4><h3 id="MySQL-运算符"><a href="#MySQL-运算符" class="headerlink" title="MySQL 运算符"></a>MySQL 运算符</h3><p>MySQL支持多种类型的运算符，包括算术运算符、比较运算符、逻辑运算符、位运算符。</p>
-<h4 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h4><h4 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h4><h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><h4 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h4><h3 id="MySQL-常用函数"><a href="#MySQL-常用函数" class="headerlink" title="MySQL 常用函数"></a>MySQL 常用函数</h3><h4 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h4><h4 id="数值函数"><a href="#数值函数" class="headerlink" title="数值函数"></a>数值函数</h4><h4 id="日期和时间函数"><a href="#日期和时间函数" class="headerlink" title="日期和时间函数"></a>日期和时间函数</h4><h4 id="流程函数"><a href="#流程函数" class="headerlink" title="流程函数"></a>流程函数</h4><h4 id="其他常用函数"><a href="#其他常用函数" class="headerlink" title="其他常用函数"></a>其他常用函数</h4><h3 id="MySQL-SQL语句"><a href="#MySQL-SQL语句" class="headerlink" title="MySQL SQL语句"></a>MySQL SQL语句</h3><h4 id="DDL-Data-Definition-Languages"><a href="#DDL-Data-Definition-Languages" class="headerlink" title="DDL(Data Definition Languages)"></a>DDL(Data Definition Languages)</h4><p><strong>数据库操作</strong></p>
+<h3 id="MySQL-Server逻辑架构介绍"><a href="#MySQL-Server逻辑架构介绍" class="headerlink" title="MySQL Server逻辑架构介绍"></a>MySQL Server逻辑架构介绍</h3><p>MySQL虽然经历了多个版本的迭代，但都是基于MySQL基础架构的。MySQL的基础架构大致包括以下几个模块组件：</p>
+<p><img src="/images/vwjjm1jgjc.png" alt="img"></p>
 <ul>
-<li><p>查看当前所有数据库</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">databases</span>;</span><br></pre></td></tr></table></figure>
+<li><p><strong>连接层</strong>：提供向外的交互接口（Connectors)，如Java、python等语言可以通过该组件操作MySQL，实现与MySQL的交互</p>
 </li>
-<li><p>创建数据库：CREATE DATABASE 数据库名;</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">DATABASE</span> RUNOOB;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>选择数据库：use 数据库名;</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">use</span> RUNOOB;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除数据库：drop database &lt;数据库名&gt;;</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> RUNOOB;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p><strong>数据表操作</strong></p>
+<li><p><strong>服务层</strong>：</p>
 <ul>
-<li><p>查看所有数据表</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">tables</span>;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看单表创建语句</p>
-<p>语法：<code>show create table 数据表名 ;</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">create</span> <span class="keyword">table</span> emp;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>查看单表结构</p>
-<p>语法：<code>desc 数据库名;</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">desc temp;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建数据表</p>
-<p>语法：<code>CREATE TABLE table_name (column_name column_type);</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> <span class="string">`runoob_tbl`</span>(</span><br><span class="line">   <span class="string">`runoob_id`</span> <span class="built_in">INT</span> <span class="keyword">UNSIGNED</span> AUTO_INCREMENT,</span><br><span class="line">   <span class="string">`runoob_title`</span> <span class="built_in">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`runoob_author`</span> <span class="built_in">VARCHAR</span>(<span class="number">40</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`submission_date`</span> <span class="built_in">DATE</span>,</span><br><span class="line">   PRIMARY <span class="keyword">KEY</span> ( <span class="string">`runoob_id`</span> )</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除数据表</p>
-<p>语法：<code>DROP TABLE table_name ;</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> runoob_tbl;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改数据表名</p>
-<p>语法：<code>ALTER TABLE table_name RENAME [TO] new_table_name;</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">rename</span> emp1;</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<p><strong>数据表结构操作</strong></p>
-<ul>
-<li><p>增加表字段</p>
-<p>语法：<code>ALTER TABLE table_name ADD [COLUMN] column_definition [FIRST | AFTER col_name];</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">ADD</span> <span class="keyword">column</span> age <span class="built_in">int</span>(<span class="number">11</span>);</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>删除表字段</p>
-<p>语法：<code>ALTER TABLE table_name DROP [COLUMN] col_name;</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">DROP</span>  <span class="keyword">column</span> age;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改表字段</p>
-<p>说明：modify 和 change 都可以修改表结构定义，change 需要写两次列名，不方便，但可以修改列名，modify则不能</p>
-<ul>
-<li>修改表字段名</li>
-</ul>
-<p>语法：<code>ALTER TABLE table_name CHANGE [COLUMN] old_col_name column_definition  [FIRST | AFTER col_name];</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">CHANGE</span> age age1 <span class="built_in">int</span>(<span class="number">11</span>);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>修改表字段属性</li>
-</ul>
-<p>语法：<code>ALTER TABLE table_name MODIFY [COLUMN] old_col_name column_definition  [FIRST | AFTER col_name];</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">MODIFY</span> age <span class="built_in">varchar</span>(<span class="number">20</span>);</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>修改表字段排列顺序：ADD/CHANGE/MODIFY后</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">ADD</span> birth  <span class="built_in">date</span> <span class="keyword">after</span> age；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">change</span> birth birth1 <span class="built_in">date</span> <span class="keyword">after</span> gender；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">MODIFY</span> age <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">first</span>；</span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h4 id="DML-Data-Manipulation-Languages"><a href="#DML-Data-Manipulation-Languages" class="headerlink" title="DML(Data Manipulation Languages)"></a>DML(Data Manipulation Languages)</h4><p><strong>插入记录</strong></p>
-<p>语法：<code>INSERT INTO table_name[(field1,field2,...fieldn)] VALUES(value1,value2,...,valuen);</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">desc emp;<span class="comment">#ename,hiredate,sal,deptno</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> emp <span class="keyword">VALUES</span>(<span class="string">"lisa"</span>,<span class="string">"1993-06-04"</span>,<span class="string">"3000"</span>,<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
-
-<p><strong>删除记录</strong></p>
-<p>语法：<code>DELETE FROM table_name [WHERE CONDITION];</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> ename=<span class="string">"dony"</span>;</span><br></pre></td></tr></table></figure>
-
-<p><strong>更新记录</strong></p>
-<p>语法：<code>UPDATE table_name SET field1=value1,field2=value2,...,fieldn=valuen [WHERE CONDITION];</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> emp <span class="keyword">SET</span> sal = <span class="number">4000</span> <span class="keyword">WHERE</span> ename=<span class="string">"lisa"</span>;</span><br></pre></td></tr></table></figure>
-
-<p><strong>查询记录</strong></p>
-<p>语法：<code>SELETE * FROM table_name;</code></p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">SELETE * FROM emp;</span><br><span class="line"><span class="keyword">SELECT</span> ename,hiredate,sal,deptno <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>去重：<code>DISTINCT</code></li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> ename <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>条件:<code>WHERE</code></li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> deptno=<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>排序：<code>ORDER BY</code></p>
-<p>语法：<code>SELECT * FROM table_name [WHERE CONDITION] [ORDER BY field1 [DESC/ASC],field2 [DESC/ASC]]</code>;</p>
-</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">ORDER</span> <span class="keyword">BY</span> sal <span class="keyword">desc</span>;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>限制：<code>LIMIT</code></p>
-<p>语法：<code>SELECT * FROM table_name LIMIT offset_start,row_count</code></p>
-</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">LIMIT</span> <span class="number">1</span>,<span class="number">20</span>;<span class="comment">#从1开始，20行</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>聚合</p>
-<p>语法：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> [field1,field2,...,fieldn]fun_name</span><br><span class="line"><span class="keyword">FROM</span> table_name </span><br><span class="line">[<span class="keyword">WHERE</span> where_condition] </span><br><span class="line">[<span class="keyword">GROUP</span> <span class="keyword">BY</span> field1,field2,...,fieldn] </span><br><span class="line">[<span class="keyword">WITH</span> <span class="keyword">ROLLUP</span>] </span><br><span class="line">[<span class="keyword">HAVING</span> where_condition];</span><br></pre></td></tr></table></figure>
-
-<p>参数说明：</p>
-<ul>
-<li>fun_name表示要做的聚合操作，常用的有：sum,count(*),max,min</li>
-<li>GROUP BY 表示进行分类聚合的字段</li>
-<li>WITH ROLLUP 是可选语法，表明是否对分类聚合后的结果进行再汇总</li>
-<li>HAVING 表示对分类后的结果再进行条件的过滤</li>
-</ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">count</span>(<span class="number">1</span>) <span class="keyword">FROM</span> emp;<span class="comment">#查看总人数</span></span><br><span class="line"><span class="keyword">SELECT</span> deptno,<span class="keyword">count</span>(<span class="number">1</span>) <span class="keyword">FROM</span> emp <span class="keyword">GROUP</span> <span class="keyword">BY</span> deptno;<span class="comment">#统计各部门人数</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SUM</span>(sal),<span class="keyword">max</span>(sal),<span class="keyword">min</span>(sal) <span class="keyword">FROM</span> emp;<span class="comment">#查询员工工资总额，最高和最低薪水</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>表连接</p>
-<ul>
-<li>内连接</li>
-<li>外连接<ul>
-<li>左连接</li>
-<li>右连接</li>
+<li>管理服务组件和工具组件(Management Service &amp; Utilities) ：  提供对MySQL的集成管理，如备份(Backup),恢复(Recovery),安全管理(Security)等</li>
+<li>连接池组件(Connection Pool) ：负责监听对客户端向MySQL Server端的各种请求，接收请求，转发请求到目标模块</li>
+<li>SQL接口组件(SQL Interface) ：  接收用户SQL命令</li>
+<li>查询分析器组件(Parser) ：解析SQL命令</li>
+<li>优化器组件（Optimizer）：对SQL命令按照标准流程进行优化分析</li>
+<li>缓存主件（Caches &amp; Buffers） ： 缓存和缓冲组件 </li>
 </ul>
 </li>
-</ul>
+<li><p><strong>引擎层</strong>： 插件式存储引擎（Pluggable Storage Engines）</p>
 </li>
-<li><p>子查询</p>
+<li><p><strong>存储层</strong>： 物理文件（File System） 和日志文件存储</p>
 </li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<ul>
-<li>UNION联合查询</li>
+<h3 id="MySQL-存储引擎"><a href="#MySQL-存储引擎" class="headerlink" title="MySQL 存储引擎"></a>MySQL 存储引擎</h3><h3 id="索引-Index"><a href="#索引-Index" class="headerlink" title="索引(Index)"></a>索引(Index)</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><strong>MySQL官方对索引的定义：索引(Index)是帮助MySQL高效获取数据的数据结构。</strong></p>
+<p>可以简单理解为：<strong>排好序的快速查找数据结构</strong>。</p>
+<p>我们平时所说的索引，如果没有特别说明，都是指<strong>B树（多路搜索树）</strong>数据结构的索引，除了B+树索引外，当然也有<strong>哈希索引</strong>等。</p>
+<h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ul>
+<li>提高数据检索效率，降低数据库iO成本</li>
+<li>降低数据排序成本，降低CPU的消耗</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#插入记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#删除记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#更新记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#查询记录：</span></span><br><span class="line"><span class="comment"># 去重：DISTINCT</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 条件</span></span><br><span class="line"><span class="comment"># 排序:ORDER BY</span></span><br><span class="line"><span class="comment"># 限制：LIMIT</span></span><br><span class="line"><span class="comment"># 聚合:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接查询</span></span><br><span class="line"><span class="comment"># 子查询</span></span><br><span class="line"><span class="comment"># union联合查询</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h4 id="DCL-Data-Control-Languages"><a href="#DCL-Data-Control-Languages" class="headerlink" title="DCL(Data Control Languages)"></a>DCL(Data Control Languages)</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="MySQL-视图"><a href="#MySQL-视图" class="headerlink" title="MySQL 视图"></a>MySQL 视图</h3><h3 id="MySQL-存储过程"><a href="#MySQL-存储过程" class="headerlink" title="MySQL 存储过程"></a>MySQL 存储过程</h3><h3 id="MySQL-触发器"><a href="#MySQL-触发器" class="headerlink" title="MySQL 触发器"></a>MySQL 触发器</h3><h3 id="MySQL-事务"><a href="#MySQL-事务" class="headerlink" title="MySQL 事务"></a>MySQL 事务</h3><h3 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h3><ol>
-<li><p><strong>Navicat 连接 MySQL 数据库失败?</strong></p>
-<p>原因分析：MySQL 8.0 +使用了<code>caching_sha2_password</code>加密方式，而navicat不支持。</p>
-<p>解决方案：修改为原有的加密规则<code>mysql_native_password</code>.</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">use</span> mysql;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘root’@’localhost’ <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> ‘<span class="keyword">password</span>’ <span class="keyword">PASSWORD</span> <span class="keyword">EXPIRE</span> <span class="keyword">NEVER</span>; <span class="comment">#修改加密规则,如果远程需要连接，则'localhost'改为'%'</span></span><br><span class="line">4. <span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘root’@’localhost’ <span class="keyword">IDENTIFIED</span> <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> ‘<span class="keyword">password</span>’; <span class="comment">#更新一下用户的密码,,如果远程需要连接，则'localhost'改为'%'</span></span><br><span class="line"><span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>; <span class="comment">#刷新权限</span></span><br></pre></td></tr></table></figure>
+<h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><ul>
+<li>建立索引后，查询速度变快，但更新（insert、update、delete）数据变慢。</li>
+<li>性能下降的原因很可能是索引失效导致。</li>
+<li>索引创建的原则，经常查询的字段适合创建索引，频繁需要更新的数据不适合创建索引。 </li>
+<li>索引字段频繁更新，或者表数据物理删除容易造成索引失效。 </li>
+</ul>
+<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><ul>
+<li><p><strong>单值索引</strong>：一个索引只包含单列，一个表可以有多个单值索引</p>
 </li>
-<li></li>
-</ol>
-]]></content>
+<li><p><strong>唯一索引</strong>：索引列的值必须唯一，但允许有空值</p>
+</li>
+<li><p><strong>复合索引</strong>：一个索引包含多列</p>
+</li>
+</ul>
+<h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建索引</span></span><br><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line"><span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span>  [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line">	<span class="comment">#主键</span></span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">ADD</span> PRIMARY <span class="keyword">KEY</span> (column_list);</span><br><span class="line">	<span class="comment">#唯一索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#普通索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#全文索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> FULLTEXT index_name (column_list);</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除索引</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">INDEX</span> [indexname] <span class="keyword">ON</span> mytable;</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看索引</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">INDEX</span> <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure>
+
+<h4 id="索引结构"><a href="#索引结构" class="headerlink" title="索引结构"></a>索引结构</h4><ul>
+<li><p><strong>BTree索引</strong></p>
+</li>
+<li><p>Hash索引</p>
+</li>
+<li><p>full-text全文索引</p>
+</li>
+<li><p>R-Tree索引</p>
+</li>
+</ul>
+<h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><h3 id="查询截取分析"><a href="#查询截取分析" class="headerlink" title="查询截取分析"></a>查询截取分析</h3><h3 id="MySQL-锁机制"><a href="#MySQL-锁机制" class="headerlink" title="MySQL 锁机制"></a>MySQL 锁机制</h3><h3 id="主从复制"><a href="#主从复制" class="headerlink" title="主从复制"></a>主从复制</h3>]]></content>
       <categories>
-        <category>MySQL</category>
+        <category>Java</category>
       </categories>
       <tags>
-        <tag>MySQL</tag>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
-    <title>【面试题】JavaSE面试总结</title>
-    <url>/2018/05/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90%E9%9D%A2%E8%AF%95%E9%A2%98%E3%80%91JavaSE%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/</url>
+    <title>【IDE】IDEA 常用快捷键</title>
+    <url>/2018/02/12/Java%E7%AC%94%E8%AE%B0/%E3%80%90IDE%E3%80%91IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<p>本篇文章将介绍JavaSE面试过程中的题目及相关知识点总结。</p>
-<a id="more"></a>
-
-<h3 id="自增变量"><a href="#自增变量" class="headerlink" title="自增变量"></a>自增变量</h3><p>面试题：写出如下代码段的运行结果</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">    i = i++;</span><br><span class="line">    <span class="keyword">int</span> j = i++;</span><br><span class="line">    <span class="keyword">int</span> k = i + ++i * i++;</span><br><span class="line">    System.out.println(<span class="string">"i="</span> + i);</span><br><span class="line">    System.out.println(<span class="string">"j="</span> + j);</span><br><span class="line">    System.out.println(<span class="string">"k="</span> + k);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i=4</span><br><span class="line">j=1</span><br><span class="line">k=11</span><br></pre></td></tr></table></figure>
-
-]]></content>
+<a id="more"></a>]]></content>
       <categories>
-        <category>JavaSE</category>
+        <category>IDE</category>
       </categories>
       <tags>
-        <tag>JavaSE</tag>
-        <tag>面试总结</tag>
+        <tag>IDEA</tag>
       </tags>
   </entry>
 </search>
