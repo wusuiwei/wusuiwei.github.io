@@ -1280,6 +1280,20 @@
       </tags>
   </entry>
   <entry>
+    <title>【设计模式】工厂方法模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>Design Pattern</tag>
+        <tag>Factory Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【设计模式】概述</title>
     <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[ <img src="/images/Java-Design-Patterns.png" width="60%" height="30%">
@@ -1323,20 +1337,6 @@
       </categories>
       <tags>
         <tag>Design Pattern</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【设计模式】工厂方法模式</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>Design Pattern</tag>
-        <tag>Factory Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -3118,7 +3118,7 @@
 <p>这里存一张 IDEA 的快捷键映射表，方便以后查询。</p>
 <a id="more"></a>
 
-<p>![IDEA 快捷键_zh](/images/IDEA 快捷键_zh.jpg)</p>
+<p><img src="/images/IDEA_%E5%BF%AB%E6%8D%B7%E9%94%AE_zh.jpg" alt="IDEA 快捷键_zh"></p>
 ]]></content>
       <categories>
         <category>IDE</category>
