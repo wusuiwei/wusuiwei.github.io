@@ -1280,20 +1280,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【设计模式】工厂方法模式</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>Design Pattern</tag>
-        <tag>Factory Pattern</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【设计模式】概述</title>
     <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[ <img src="/images/Java-Design-Patterns.png" width="60%" height="30%">
@@ -1337,6 +1323,20 @@
       </categories>
       <tags>
         <tag>Design Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【设计模式】工厂方法模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>Design Pattern</tag>
+        <tag>Factory Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -3110,7 +3110,7 @@
       </tags>
   </entry>
   <entry>
-    <title>【IDE】IDEA 常用快捷键</title>
+    <title>【Tool】IDEA 常用快捷键</title>
     <url>/2018/02/12/Java%E7%AC%94%E8%AE%B0/%E3%80%90Tool%E3%80%91IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
