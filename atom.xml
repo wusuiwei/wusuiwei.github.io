@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wusuiwei.github.io/"/>
-  <updated>2020-03-04T11:15:31.898Z</updated>
+  <updated>2020-03-29T13:56:29.055Z</updated>
   <id>http://wusuiwei.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Java笔记/SpringMVC学习笔记</title>
-    <link href="http://wusuiwei.github.io/2020/03/04/Java%E7%AC%94%E8%AE%B0/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://wusuiwei.github.io/2020/03/04/Java笔记/SpringMVC学习笔记/</id>
-    <published>2020-03-04T11:15:31.898Z</published>
-    <updated>2020-03-04T11:15:31.898Z</updated>
+    <title>创业笔记/在线教育的遐想</title>
+    <link href="http://wusuiwei.github.io/2020/03/29/%E5%88%9B%E4%B8%9A%E7%AC%94%E8%AE%B0/%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2%E7%9A%84%E9%81%90%E6%83%B3/"/>
+    <id>http://wusuiwei.github.io/2020/03/29/创业笔记/在线教育的遐想/</id>
+    <published>2020-03-29T13:55:00.102Z</published>
+    <updated>2020-03-29T13:56:29.055Z</updated>
     
     <summary type="html">
     
@@ -32,11 +32,236 @@
   </entry>
   
   <entry>
-    <title>Java笔记/Spring学习笔记</title>
-    <link href="http://wusuiwei.github.io/2020/03/04/Java%E7%AC%94%E8%AE%B0/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://wusuiwei.github.io/2020/03/04/Java笔记/Spring学习笔记/</id>
-    <published>2020-03-04T11:14:17.763Z</published>
-    <updated>2020-03-04T11:14:17.763Z</updated>
+    <title>Java笔记/云原生的12要素</title>
+    <link href="http://wusuiwei.github.io/2020/03/10/Java%E7%AC%94%E8%AE%B0/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%9A%8412%E8%A6%81%E7%B4%A0/"/>
+    <id>http://wusuiwei.github.io/2020/03/10/Java笔记/云原生的12要素/</id>
+    <published>2020-03-10T10:27:42.582Z</published>
+    <updated>2020-03-10T10:27:42.582Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java笔记/Zookeeper学习笔记</title>
+    <link href="http://wusuiwei.github.io/2020/03/09/Java%E7%AC%94%E8%AE%B0/Zookeeper%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://wusuiwei.github.io/2020/03/09/Java笔记/Zookeeper学习笔记/</id>
+    <published>2020-03-09T13:42:10.618Z</published>
+    <updated>2020-03-09T14:40:59.235Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="Docker安装Zookeeper"><a href="#Docker安装Zookeeper" class="headerlink" title="Docker安装Zookeeper"></a>Docker安装Zookeeper</h3><h4 id="下载zookeeper镜像"><a href="#下载zookeeper镜像" class="headerlink" title="下载zookeeper镜像"></a>下载zookeeper镜像</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull zookeeper</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;Docker安装Zookeeper&quot;&gt;&lt;a href=&quot;#Docker安装Zookeeper&quot; class=&quot;headerlink&quot; title=&quot;Docker安装Zookeeper&quot;&gt;&lt;/a&gt;Docker安装Zookeeper&lt;/h3&gt;&lt;h4 id=&quot;下载zoo
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java笔记/SpringBoot学习笔记</title>
+    <link href="http://wusuiwei.github.io/2020/03/08/Java%E7%AC%94%E8%AE%B0/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://wusuiwei.github.io/2020/03/08/Java笔记/SpringBoot学习笔记/</id>
+    <published>2020-03-08T14:43:26.153Z</published>
+    <updated>2020-03-08T14:53:47.894Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="SpringBoot-与-数据访问"><a href="#SpringBoot-与-数据访问" class="headerlink" title="SpringBoot 与 数据访问"></a>SpringBoot 与 数据访问</h3><h4 id="集成JDBC"><a href="#集成JDBC" class="headerlink" title="集成JDBC"></a>集成JDBC</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;SpringBoot-与-数据访问&quot;&gt;&lt;a href=&quot;#SpringBoot-与-数据访问&quot; class=&quot;headerlink&quot; title=&quot;SpringBoot 与 数据访问&quot;&gt;&lt;/a&gt;SpringBoot 与 数据访问&lt;/h3&gt;&lt;h4 id=&quot;集成JDB
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java笔记/SpringCloud学习笔记</title>
+    <link href="http://wusuiwei.github.io/2020/03/08/Java%E7%AC%94%E8%AE%B0/SpringCloud%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://wusuiwei.github.io/2020/03/08/Java笔记/SpringCloud学习笔记/</id>
+    <published>2020-03-08T06:20:08.191Z</published>
+    <updated>2020-03-16T13:38:19.549Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h3><h4 id="架构演变史"><a href="#架构演变史" class="headerlink" title="架构演变史"></a>架构演变史</h4><p>随着互联网的发展，网站应用的规模不断扩大，常规的垂直应用架构已无法应对，分布式服务架构以及流动计算架构势在必行，亟需一个治理系统确保架构有条不紊的演进。</p><p><img src="../../images/dubbo-architecture-roadmap.jpg" alt="image"></p><p><strong>单一应用架构</strong></p><p>当网站流量很小时，只需一个应用，将所有功能都部署在一起，以减少部署节点和成本。此时，用于简化增删改查工作量的数据访问框架(ORM)是关键。</p><p><strong>垂直应用架构</strong></p><p>当访问量逐渐增大，单一应用增加机器带来的加速度越来越小，提升效率的方法之一是将应用拆成互不相干的几个应用，以提升效率。此时，用于加速前端页面开发的Web框架(MVC)是关键。</p><p><strong>分布式服务架构</strong></p><p>当垂直应用越来越多，应用之间交互不可避免，将核心业务抽取出来，作为独立的服务，逐渐形成稳定的服务中心，使前端应用能更快速的响应多变的市场需求。此时，用于提高业务复用及整合的分布式服务框架(RPC)是关键。</p><p><strong>流动计算架构</strong></p><p>当服务越来越多，容量的评估，小服务资源的浪费等问题逐渐显现，此时需增加一个调度中心基于访问压力实时管理集群容量，提高集群利用率。此时，用于提高机器利用率的资源调度和治理中心(SOA)是关键。</p><h4 id="微服务简介"><a href="#微服务简介" class="headerlink" title="微服务简介"></a>微服务简介</h4><p> <img src="https://docshome.gitbooks.io/microservices/content/resources/1-2.png" alt="图 1-2、一个单体应用分解成微服务"> </p><p> 微服务架构（Microservice Architecture）是一种架构概念，旨在通过将功能分解到各个离散的服务中以实现对解决方案的解耦。你可以将其看作是在架构层次而非获取服务的</p><p>类上应用很多SOLID原则。微服务架构是个很有趣的概念，它的主要作用是将功能分解到离散的各个服务当中，从而降低系统的耦合性，并提供更加灵活的服务支持。</p><p><strong>概念：</strong>把一个大型的单个应用程序和服务拆分为数个甚至数十个的支持微服务，它可扩展单个组件而不是整个的应用程序堆栈，从而满足服务等级协议。</p><p><strong>定义：</strong>围绕业务领域组件来创建应用，这些应用可独立地进行开发、管理和迭代。在分散的组件中使用云架构和平台式部署、管理和服务功能，使产品交付变得更加简单。</p><p><strong>本质：</strong>用一些功能比较明确、业务比较精练的服务去解决更大、更实际的问题。</p><blockquote><p>面向服务的架构（SOA) 与微服务架构 之间的区别？</p><p>1.SOA（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。一个服务 通常以独立的形式存在与操作系统进程中。各个服务之间 通过网络调用。</p><p> 2.微服务架构:其实和 SOA 架构类似,微服务是在 SOA 上做的升华，微服务架构强调的一个重点是“业务需要彻底的组件化和服务化”，原有的单个业务系统会拆分为多个可以独立开发、设计、运行的小应用。这些小应用之间通过服务完成交互和集成。</p><p> <strong>微服务架构 = 80%的SOA服务架构思想 + 100%的组件化架构思想 + 80%的领域建模思想</strong></p><p>微服务架构是SOA架构发展之后的产物。</p></blockquote><h4 id="微服务优点"><a href="#微服务优点" class="headerlink" title="微服务优点"></a>微服务优点</h4><p><strong>关键字：复杂度可控，独立按需扩展，技术选型灵活，容错，可用性高</strong> </p><p><strong>①</strong>它解决了复杂性的问题。它会将一种怪异的整体应用程序分解成一组服务。虽然功能总量 不变，但应用程序已分解为可管理的块或服务。每个服务都以RPC或消息驱动的API的</p><p>形式定义了一个明确的边界；Microservice架构模式实现了一个模块化水平。</p><p><strong>②</strong>这种架构使每个服务都能够由专注于该服务的团队独立开发。开发人员可以自由选择任何有用的技术，只要该服务符合API合同。当然，大多数组织都希望避免完全无政府状态并</p><p>限制技术选择。然而，这种自由意味着开发人员不再有义务使用在新项目开始时存在的可能过时的技术。在编写新服务时，他们可以选择使用当前的技术。此外，由于服务相对较小，</p><p>因此使用当前技术重写旧服务变得可行。</p><p><strong>③</strong>Microservice架构模式使每个微服务都能独立部署。开发人员不需要协调部署本地服务的变更。这些变化可以在测试后尽快部署。例如，UI团队可以执行A | B测试，并快速迭代</p><p>UI更改。Microservice架构模式使连续部署成为可能。</p><p><strong>④</strong>Microservice架构模式使每个服务都可以独立调整。您可以仅部署满足其容量和可用性限制的每个服务的实例数。此外，您可以使用最符合服务资源要求的硬件。</p><h4 id="微服务缺点"><a href="#微服务缺点" class="headerlink" title="微服务缺点"></a>微服务缺点</h4><p> <strong>关键点（挑战）：多服务运维难度，系统部署依赖，服务间通信成本，数据一致性，系统集成测试，重复工作，性能监控等</strong> </p><p><strong>①</strong>一个缺点是名称本身。术语microservice过度强调服务规模。但重要的是要记住，这是一种手段，而不是主要目标。微服务的目标是充分分解应用程序，以便于敏捷应用程序开发和部署。</p><p><strong>②</strong>微服务器的另一个主要缺点是分布式系统而产生的复杂性。开发人员需要选择和实现基于消息传递或RPC的进程间通信机制。此外，他们还必须编写代码来处理部分故障，因为请求的目的地可能很慢或不可用。</p><p><strong>③</strong>微服务器的另一个挑战是分区数据库架构。更新多个业务实体的业务交易是相当普遍的。但是，在基于微服务器的应用程序中，您需要更新不同服务所拥有的多个数据库。使用分布式事务通常不是一个选择，而不仅仅是因为CAP定理。许多今天高度可扩展的NoSQL数据库都不支持它们。你最终不得不使用最终的一致性方法，这对开发人员来说更具挑战性。</p><p><strong>④</strong>测试微服务应用程序也更复杂。服务类似的测试类将需要启动该服务及其所依赖的任何服务（或至少为这些服务配置存根）。再次，重要的是不要低估这样做的复杂性。</p><p><strong>⑤</strong>Microservice架构模式的另一个主要挑战是实现跨越多个服务的更改。例如，我们假设您正在实施一个需要更改服务A，B和C的故事，其中A取决于B和B取决于C.在单片应用程序中，您可以简单地更改相应的模块，整合更改，并一次性部署。相比之下，在Microservice架构模式中，您需要仔细规划和协调对每个服务的更改。例如，您需要更新服务C，然后更新服务B，然后再维修A.幸运的是，大多数更改通常仅影响一个服务，而需要协调的多服务变更相对较少。</p><p><strong>⑥</strong>部署基于微服务的应用程序也更复杂。单一应用程序简单地部署在传统负载平衡器后面的一组相同的服务器上。每个应用程序实例都配置有基础架构服务（如数据库和消息代理）的位置（主机和端口）。相比之下，微服务应用通常由大量服务组成。例如，每个服务将有多个运行时实例。更多的移动部件需要进行配置，部署，扩展和监控。此外，您还需要实现服务发现机制，使服务能够发现需要与之通信的任何其他服务的位置（主机和端口）。传统的基于故障单和手动操作的方法无法扩展到这种复杂程度。因此，成功部署微服务应用程序需要开发人员更好地控制部署方法，并实现高水平的自动化。</p><h3 id="Spring-Cloud-微服务架构"><a href="#Spring-Cloud-微服务架构" class="headerlink" title="Spring Cloud 微服务架构"></a>Spring Cloud 微服务架构</h3><p> <img src="https://spring.io/images/diagram-microservices-88e01c7d34c688cb49556435c130d352.svg" alt="Microservices diagram">  </p><p>Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具（例如配置管理，服务发现，断路器，智能路由，微代理，控制总线）。</p><p>Spring Cloud 提供的工具分为以下几类：</p><ul><li>服务注册与发现(Eureka、Consul、zookeeper、Nacos等)</li><li>服务调用（Ribbon、LoadBalancer、Feign、OpenFeign等）</li><li>服务降级（Hystrix、Resilience4j、Sentinel等）</li><li>服务网关（Zuul、Gateway等）</li><li>服务配置（Config、Nacos等）</li><li>服务总线（Bus、Nacos等）</li><li>…</li></ul><p>当前版本：<strong>Hoxton SR3</strong></p><p>支持的Spring Boot版本： <strong>2.2.5.RELEASE</strong> </p><blockquote><p>云原生的12要素（  <a href="https://12factor.net/zh_cn/" target="_blank" rel="noopener">https://12factor.net/zh_cn/</a> ）</p></blockquote><h3 id="服务注册与发现"><a href="#服务注册与发现" class="headerlink" title="服务注册与发现"></a>服务注册与发现</h3><h4 id="Eureka"><a href="#Eureka" class="headerlink" title="Eureka"></a>Eureka</h4><p>Eureka 是 <a href="https://github.com/Netflix" target="_blank" rel="noopener">Netflix</a> 公司开发的， 一个基于 REST 服务的，服务注册与发现的组件 。</p><p>包括  <strong>Eureka Server</strong> 和 *<em>Eureka  Client *</em> 组件：</p><ul><li>Eureka Client：一个Java客户端，用于简化与 Eureka Server 的交互（通常就是微服务中的客户端和服务端）</li><li>Eureka Server：提供服务注册和发现的能力（通常就是微服务中的注册中心）</li></ul><h5 id="Eureka-原理"><a href="#Eureka-原理" class="headerlink" title="Eureka 原理"></a>Eureka 原理</h5><h5 id="单个Eureka-Server-配置部署"><a href="#单个Eureka-Server-配置部署" class="headerlink" title="单个Eureka Server 配置部署"></a>单个Eureka Server 配置部署</h5><p>maven 依赖<code>pom.xml</code>：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-server<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><p>主启动类：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.wusuiwei.springcloud;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@EnableEurekaServer</span><span class="comment">//开启Eureka服务</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EurekaServerMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(EurekaServerMain<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>application.yml：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">7001</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">eureka-server</span></span><br><span class="line"></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="comment">#Eureka服务端的实例名称</span></span><br><span class="line">  <span class="attr">instance:</span></span><br><span class="line">    <span class="attr">hostname:</span> <span class="string">www.eureka7003.com</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="comment">#false表示不向注册中心注册</span></span><br><span class="line">    <span class="attr">register-with-eureka:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment">#false 表示本身就是注册中心，本身职责是维护服务实例，不需要去检索服务</span></span><br><span class="line">    <span class="attr">fetch-registry:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://$&#123;eureka.instance.hosthome&#125;:$&#123;server.port&#125;/eureka/</span></span><br></pre></td></tr></table></figure><p>启动服务~~，访问：<a href="http://localhost:7001" target="_blank" rel="noopener">http://localhost:7001</a>:</p><p><img src="../../images/image-20200312172743517.png" alt="image-20200312172743517"></p><h6 id="服务注册"><a href="#服务注册" class="headerlink" title="服务注册"></a>服务注册</h6><p>maven依赖：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h5 id="Eureka-Server-集群配置部署"><a href="#Eureka-Server-集群配置部署" class="headerlink" title="Eureka Server 集群配置部署"></a>Eureka Server 集群配置部署</h5><h6 id="服务注册-1"><a href="#服务注册-1" class="headerlink" title="服务注册"></a>服务注册</h6><h4 id="zookeeper"><a href="#zookeeper" class="headerlink" title="zookeeper"></a>zookeeper</h4><h4 id="Consul"><a href="#Consul" class="headerlink" title="Consul"></a>Consul</h4><h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="Nacos"><a href="#Nacos" class="headerlink" title="Nacos"></a>Nacos</h4><h3 id="服务调用"><a href="#服务调用" class="headerlink" title="服务调用"></a>服务调用</h3><h4 id="Ribbon"><a href="#Ribbon" class="headerlink" title="Ribbon"></a>Ribbon</h4><h4 id="LoadBalancer"><a href="#LoadBalancer" class="headerlink" title="LoadBalancer"></a>LoadBalancer</h4><h4 id="Feign"><a href="#Feign" class="headerlink" title="Feign"></a>Feign</h4><h4 id="OpenFeign"><a href="#OpenFeign" class="headerlink" title="OpenFeign"></a>OpenFeign</h4><h3 id="服务降级"><a href="#服务降级" class="headerlink" title="服务降级"></a>服务降级</h3><h4 id="Hystrix"><a href="#Hystrix" class="headerlink" title="Hystrix"></a>Hystrix</h4><h4 id="Resilience4j"><a href="#Resilience4j" class="headerlink" title="Resilience4j"></a>Resilience4j</h4><h4 id="Sentinel"><a href="#Sentinel" class="headerlink" title="Sentinel"></a>Sentinel</h4><h3 id="服务网关"><a href="#服务网关" class="headerlink" title="服务网关"></a>服务网关</h3><h4 id="Zuul"><a href="#Zuul" class="headerlink" title="Zuul"></a>Zuul</h4><h4 id="Gateway"><a href="#Gateway" class="headerlink" title="Gateway"></a>Gateway</h4><h3 id="服务配置"><a href="#服务配置" class="headerlink" title="服务配置"></a>服务配置</h3><h4 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h4><h4 id="Nacos-1"><a href="#Nacos-1" class="headerlink" title="Nacos"></a>Nacos</h4><h3 id="服务总线"><a href="#服务总线" class="headerlink" title="服务总线"></a>服务总线</h3><h4 id="Bus"><a href="#Bus" class="headerlink" title="Bus"></a>Bus</h4><h4 id="Nacos-2"><a href="#Nacos-2" class="headerlink" title="Nacos"></a>Nacos</h4>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;微服务&quot;&gt;&lt;a href=&quot;#微服务&quot; class=&quot;headerlink&quot; title=&quot;微服务&quot;&gt;&lt;/a&gt;微服务&lt;/h3&gt;&lt;h4 id=&quot;架构演变史&quot;&gt;&lt;a href=&quot;#架构演变史&quot; class=&quot;headerlink&quot; title=&quot;架构演变史&quot;&gt;&lt;/a&gt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java笔记/RPC框架原理</title>
+    <link href="http://wusuiwei.github.io/2020/03/08/Java%E7%AC%94%E8%AE%B0/RPC%E6%A1%86%E6%9E%B6%E5%8E%9F%E7%90%86/"/>
+    <id>http://wusuiwei.github.io/2020/03/08/Java笔记/RPC框架原理/</id>
+    <published>2020-03-08T02:45:45.983Z</published>
+    <updated>2020-03-08T02:45:45.983Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java笔记/Dubbo学习笔记</title>
+    <link href="http://wusuiwei.github.io/2020/03/08/Java%E7%AC%94%E8%AE%B0/Dubbo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://wusuiwei.github.io/2020/03/08/Java笔记/Dubbo学习笔记/</id>
+    <published>2020-03-08T02:14:58.506Z</published>
+    <updated>2020-03-08T02:14:58.506Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java笔记/Git学习笔记</title>
+    <link href="http://wusuiwei.github.io/2020/03/05/Java%E7%AC%94%E8%AE%B0/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://wusuiwei.github.io/2020/03/05/Java笔记/Git学习笔记/</id>
+    <published>2020-03-05T08:44:38.736Z</published>
+    <updated>2020-03-05T08:44:52.853Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java笔记/IDEA学习笔记</title>
+    <link href="http://wusuiwei.github.io/2020/03/05/Java%E7%AC%94%E8%AE%B0/IDEA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://wusuiwei.github.io/2020/03/05/Java笔记/IDEA学习笔记/</id>
+    <published>2020-03-05T07:29:32.467Z</published>
+    <updated>2020-03-05T08:40:56.741Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="使用已安装的maven及其配置"><a href="#使用已安装的maven及其配置" class="headerlink" title="使用已安装的maven及其配置"></a>使用已安装的maven及其配置</h4><p><img src="../../images/image-20200305163952800.png" alt="image-20200305163952800"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;使用已安装的maven及其配置&quot;&gt;&lt;a href=&quot;#使用已安装的maven及其配置&quot; class=&quot;headerlink&quot; title=&quot;使用已安装的maven及其配置&quot;&gt;&lt;/a&gt;使用已安装的maven及其配置&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;../../im
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java笔记/Maven学习笔记</title>
+    <link href="http://wusuiwei.github.io/2020/03/05/Java%E7%AC%94%E8%AE%B0/Maven%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://wusuiwei.github.io/2020/03/05/Java笔记/Maven学习笔记/</id>
+    <published>2020-03-05T07:09:43.886Z</published>
+    <updated>2020-03-27T14:35:18.901Z</updated>
+    
+    <content type="html"><![CDATA[<p>下载地址： <a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener">https://maven.apache.org/download.cgi</a> </p><p>安装步骤：</p><ol><li>解压maven压缩包到指定路径：C:\software\apache-maven-3.6.3</li><li>配置环境变量：<ul><li>新建环境变量 MAVEN_HOME，赋值 C:\software\apache-maven-3.6.3</li><li>编辑环境变量Path，追加<code>%MAVEN_HOME%\bin\</code></li></ul></li></ol><p>本地配置：</p><ol><li>修改C:\software\apache-maven-3.6.3\conf\settings.xml文件，添加本地仓库配置。</li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>C:\software\apache-maven-3.6.3\repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br></pre></td></tr></table></figure><ol start="2"><li>配置仓库镜像：</li></ol><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 阿里云仓库 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>        </span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 中央仓库1 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>repo1<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo1.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 中央仓库2 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>repo2<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo2.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;下载地址： &lt;a href=&quot;https://maven.apache.org/download.cgi&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://maven.apache.org/download.cgi&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;安装
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>项目笔记/谷粒学院/框架搭建</title>
+    <link href="http://wusuiwei.github.io/2020/03/05/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%B0%B7%E7%B2%92%E5%AD%A6%E9%99%A2/%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/"/>
+    <id>http://wusuiwei.github.io/2020/03/05/项目笔记/谷粒学院/框架搭建/</id>
+    <published>2020-03-05T05:44:48.761Z</published>
+    <updated>2020-03-05T15:06:22.349Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>从git/github下载仓库</li></ol><p><img src="../../../images/image-20200305172316151.png" alt="image-20200305172316151"></p><ol start="2"><li>设置本地maven</li></ol><p><img src="../../../images/image-20200305172357261.png" alt="image-20200305172357261"></p><ol start="3"><li>设置.gitignore</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ol&gt;
+&lt;li&gt;从git/github下载仓库&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;../../../images/image-20200305172316151.png&quot; alt=&quot;image-20200305172316151&quot;&gt;&lt;/p&gt;
+&lt;ol start=&quot;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>项目笔记/谷粒学院/项目概要</title>
+    <link href="http://wusuiwei.github.io/2020/03/05/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%B0%B7%E7%B2%92%E5%AD%A6%E9%99%A2/%E9%A1%B9%E7%9B%AE%E6%A6%82%E8%A6%81/"/>
+    <id>http://wusuiwei.github.io/2020/03/05/项目笔记/谷粒学院/项目概要/</id>
+    <published>2020-03-05T05:42:55.905Z</published>
+    <updated>2020-03-27T14:51:45.921Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>工具使用</strong>：</p><ul><li>IDEA</li><li>EZDML</li><li></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;工具使用&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IDEA&lt;/li&gt;
+&lt;li&gt;EZDML&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Java笔记/SpringMVC学习笔记</title>
+    <link href="http://wusuiwei.github.io/2020/03/04/Java%E7%AC%94%E8%AE%B0/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://wusuiwei.github.io/2020/03/04/Java笔记/SpringMVC学习笔记/</id>
+    <published>2020-03-04T11:15:31.898Z</published>
+    <updated>2020-03-04T11:15:31.898Z</updated>
     
     <summary type="html">
     
@@ -83,21 +308,6 @@
       
         &lt;h3 id=&quot;Mybatis概要&quot;&gt;&lt;a href=&quot;#Mybatis概要&quot; class=&quot;headerlink&quot; title=&quot;Mybatis概要&quot;&gt;&lt;/a&gt;Mybatis概要&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;Mybatis&lt;/strong&gt; 是 Apache的一个Java开源
       
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Java笔记/Untitled 1</title>
-    <link href="http://wusuiwei.github.io/2020/02/19/Java%E7%AC%94%E8%AE%B0/Untitled%201/"/>
-    <id>http://wusuiwei.github.io/2020/02/19/Java笔记/Untitled 1/</id>
-    <published>2020-02-19T15:54:05.347Z</published>
-    <updated>2020-02-19T15:54:05.347Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
@@ -155,9 +365,9 @@
     <link href="http://wusuiwei.github.io/2020/01/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Docker%E3%80%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%93/"/>
     <id>http://wusuiwei.github.io/2020/01/07/Java笔记/【Docker】常用操作总结/</id>
     <published>2020-01-07T08:22:55.247Z</published>
-    <updated>2020-01-10T07:10:19.826Z</updated>
+    <updated>2020-03-27T16:13:31.419Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Docker-概要"><a href="#Docker-概要" class="headerlink" title="Docker 概要"></a>Docker 概要</h2><p>官网： <a href="https://www.docker.com/" target="_blank" rel="noopener">https://www.docker.com/</a> </p><p>官方中文文档： <a href="https://docker-doc.readthedocs.io/zh_CN/latest/index.html" target="_blank" rel="noopener">https://docker-doc.readthedocs.io/zh_CN/latest/index.html</a> </p><h3 id="理念"><a href="#理念" class="headerlink" title="理念"></a>理念</h3><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>这里以CentOS 7安装过程为例，其他系统安装过程可参考官方文档。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 移除旧版本</span></span><br><span class="line">sudo yum remove docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-engine</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装一些docker安装必备的工具</span></span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">添加软件源信息（阿里云）</span></span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装docker</span></span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">启动 docker 后台服务</span></span><br><span class="line">sudo systemctl start docker</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">卸载docker-ce</span></span><br><span class="line"><span class="meta">#</span><span class="bash">卸载docker软件包（不会删除镜像、容器、卷及其他配置文件）</span></span><br><span class="line">sudo yum remove docker-ce</span><br><span class="line"><span class="meta">#</span><span class="bash">删除镜像、容器、卷及其他配置文件</span></span><br><span class="line">sudo rm -rf /var/lib/docker</span><br></pre></td></tr></table></figure><h2 id="Docker-常用命令"><a href="#Docker-常用命令" class="headerlink" title="Docker 常用命令"></a>Docker 常用命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 镜像操作相关</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 检索镜像（从 https://hub.docker.com 检索）</span></span><br><span class="line">docker search mysql #OFFICIAL表示官方发行版本</span><br><span class="line"><span class="meta">#</span><span class="bash"> 拉取镜像:dockerpull 镜像名:tag</span></span><br><span class="line">docker pull mysql #拉取latest的mysql镜像</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地镜像</span></span><br><span class="line">docker images</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除镜像:docker rmi image-id</span></span><br><span class="line">docker rmi 29e0a</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 容器操作相关</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 运行容器：docker run --name container-name:tag -d image-name -p 8080:8090</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> -d:表示后台运行容器</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> -p:端口映射，docker容器默认与外界是隔绝的，需要进行端口映射才能访问</span></span><br><span class="line">docker run --name myTomcat -d tomcat:8.5.32 -p 8090:8080</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看容器</span></span><br><span class="line">docker ps #查看所有运行中的容器</span><br><span class="line">docker ps -a #查看所有容器</span><br><span class="line"><span class="meta">#</span><span class="bash"> 停止运行容器:docker stop container-id</span></span><br><span class="line">docker stop 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动容器</span></span><br><span class="line">docker start 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除容器</span></span><br><span class="line">docker rm 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 容器日志：docker logs container-name/container-id</span></span><br><span class="line">docker logs myTtomcat1</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 仓库操作相关</span></span><br></pre></td></tr></table></figure><h2 id="Docker-数据管理"><a href="#Docker-数据管理" class="headerlink" title="Docker 数据管理"></a>Docker 数据管理</h2><p> <img src="../../images/types-of-mounts.png" alt="img"> </p><h2 id="DockerFile"><a href="#DockerFile" class="headerlink" title="DockerFile"></a>DockerFile</h2><h3 id="DockerFile的指令详解"><a href="#DockerFile的指令详解" class="headerlink" title="DockerFile的指令详解"></a>DockerFile的指令详解</h3><p><code>FROM</code>：基础镜像</p><p><code>MAINTAINER</code>：</p><p><code>RUN</code>：</p><p><code>EXPOSE</code>：</p><p><code>WORKDIR</code>:</p><p><code>ENV</code>：</p><p><code>ADD</code>：</p><p><code>COPY</code>：</p><p><code>VOLUME</code>：</p><p><code>CMD</code>：</p><p><code>ENTRYPOINT</code>：</p><p><code>ONBUILD</code>：</p><h2 id="常用镜像"><a href="#常用镜像" class="headerlink" title="常用镜像"></a>常用镜像</h2><h3 id="Docker安装MySQL"><a href="#Docker安装MySQL" class="headerlink" title="Docker安装MySQL"></a>Docker安装MySQL</h3><h3 id="Docker安装Redis"><a href="#Docker安装Redis" class="headerlink" title="Docker安装Redis"></a>Docker安装Redis</h3>]]></content>
+    <content type="html"><![CDATA[<h2 id="Docker-概要"><a href="#Docker-概要" class="headerlink" title="Docker 概要"></a>Docker 概要</h2><p>官网： <a href="https://www.docker.com/" target="_blank" rel="noopener">https://www.docker.com/</a> </p><p>官方中文文档： <a href="https://docker-doc.readthedocs.io/zh_CN/latest/index.html" target="_blank" rel="noopener">https://docker-doc.readthedocs.io/zh_CN/latest/index.html</a> </p><h3 id="理念"><a href="#理念" class="headerlink" title="理念"></a>理念</h3><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>这里以CentOS 7安装过程为例，其他系统安装过程可参考官方文档。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 移除旧版本</span></span><br><span class="line">sudo yum remove docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-engine</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装一些docker安装必备的工具</span></span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">添加软件源信息（阿里云）</span></span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装docker</span></span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">启动 docker 后台服务</span></span><br><span class="line">sudo systemctl start docker</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">卸载docker-ce</span></span><br><span class="line"><span class="meta">#</span><span class="bash">卸载docker软件包（不会删除镜像、容器、卷及其他配置文件）</span></span><br><span class="line">sudo yum remove docker-ce</span><br><span class="line"><span class="meta">#</span><span class="bash">删除镜像、容器、卷及其他配置文件</span></span><br><span class="line">sudo rm -rf /var/lib/docker</span><br></pre></td></tr></table></figure><h2 id="Docker-常用命令"><a href="#Docker-常用命令" class="headerlink" title="Docker 常用命令"></a>Docker 常用命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 镜像操作相关</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 检索镜像（从 https://hub.docker.com 检索）</span></span><br><span class="line">docker search mysql #OFFICIAL表示官方发行版本</span><br><span class="line"><span class="meta">#</span><span class="bash"> 拉取镜像:dockerpull 镜像名:tag</span></span><br><span class="line">docker pull mysql #拉取latest的mysql镜像</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地镜像</span></span><br><span class="line">docker images</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除镜像:docker rmi image-id</span></span><br><span class="line">docker rmi 29e0a</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 容器操作相关</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 运行容器：docker run --name container-name:tag -d image-name -p 8080:8090</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> -d:表示后台运行容器</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> -p:端口映射，docker容器默认与外界是隔绝的，需要进行端口映射才能访问</span></span><br><span class="line">docker run --name myTomcat -d tomcat:8.5.32 -p 8090:8080</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看容器</span></span><br><span class="line">docker ps #查看所有运行中的容器</span><br><span class="line">docker ps -a #查看所有容器</span><br><span class="line"><span class="meta">#</span><span class="bash"> 停止运行容器:docker stop container-id</span></span><br><span class="line">docker stop 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动容器</span></span><br><span class="line">docker start 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除容器</span></span><br><span class="line">docker rm 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 容器日志：docker logs container-name/container-id</span></span><br><span class="line">docker logs myTtomcat1</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 仓库操作相关</span></span><br></pre></td></tr></table></figure><h2 id="Docker-数据管理"><a href="#Docker-数据管理" class="headerlink" title="Docker 数据管理"></a>Docker 数据管理</h2><p> <img src="../../images/types-of-mounts.png" alt="img"> </p><h2 id="DockerFile"><a href="#DockerFile" class="headerlink" title="DockerFile"></a>DockerFile</h2><h3 id="DockerFile的指令详解"><a href="#DockerFile的指令详解" class="headerlink" title="DockerFile的指令详解"></a>DockerFile的指令详解</h3><p><code>FROM</code>：基础镜像</p><p><code>MAINTAINER</code>：</p><p><code>RUN</code>：</p><p><code>EXPOSE</code>：</p><p><code>WORKDIR</code>:</p><p><code>ENV</code>：</p><p><code>ADD</code>：</p><p><code>COPY</code>：</p><p><code>VOLUME</code>：</p><p><code>CMD</code>：</p><p><code>ENTRYPOINT</code>：</p><p><code>ONBUILD</code>：</p><h2 id="常用镜像"><a href="#常用镜像" class="headerlink" title="常用镜像"></a>常用镜像</h2><h3 id="Docker安装MySQL"><a href="#Docker安装MySQL" class="headerlink" title="Docker安装MySQL"></a>Docker安装MySQL</h3><h3 id="Docker安装Redis"><a href="#Docker安装Redis" class="headerlink" title="Docker安装Redis"></a>Docker安装Redis</h3><h3 id="IDEA下Docker一键部署-CentOS-7"><a href="#IDEA下Docker一键部署-CentOS-7" class="headerlink" title="IDEA下Docker一键部署(CentOS 7)"></a>IDEA下Docker一键部署(CentOS 7)</h3><h4 id="开启Docker远程连接端口"><a href="#开启Docker远程连接端口" class="headerlink" title="开启Docker远程连接端口"></a>开启Docker远程连接端口</h4><ol><li>修改<code>/lib/systemd/system/docker.service</code>文件中<code>ExecStart</code>开头的行：</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ExecStart=/usr/bin/dockerd   -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock</span><br></pre></td></tr></table></figure><ol start="2"><li>重新加载并启动docker</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure><ol start="3"><li>添加端口到服务器，并重启防火墙</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo  firewall-cmd --zone=public --add-port=2375/tcp --permanent</span><br><span class="line"><span class="meta">#</span><span class="bash">--zone <span class="comment">#作用域</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">--add-port=2375/tcp  <span class="comment">#添加端口，格式为：端口/通讯协议</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">--permanent  <span class="comment">#永久生效，没有此参数重启后失效</span></span></span><br><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure><ol start="4"><li>校验结果：</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl http://localhost:2375/version</span><br><span class="line"><span class="meta">#</span><span class="bash"> 本地虚拟机地址：curl http://192.168.159.128:2375/version</span></span><br></pre></td></tr></table></figure><h4 id="IDEA连接Docker"><a href="#IDEA连接Docker" class="headerlink" title="IDEA连接Docker"></a>IDEA连接Docker</h4><p><img src="../../images/image-20200328001250738.png" alt="image-20200328001250738"></p><h4 id="IDEA一键部署SpringBoot项目"><a href="#IDEA一键部署SpringBoot项目" class="headerlink" title="IDEA一键部署SpringBoot项目"></a>IDEA一键部署SpringBoot项目</h4>]]></content>
     
     <summary type="html">
     
@@ -189,253 +399,6 @@
 &lt;p&gt;表设计：&lt;/p&gt;
 
       
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【Linux】虚拟化技术</title>
-    <link href="http://wusuiwei.github.io/2019/12/23/Java%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/"/>
-    <id>http://wusuiwei.github.io/2019/12/23/Java笔记/【Linux】虚拟化技术/</id>
-    <published>2019-12-23T02:06:04.000Z</published>
-    <updated>2020-01-08T01:39:24.060Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><a id="more"></a><h2 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h2><p><strong>定义</strong>： 通过<strong>虚拟化</strong>技术将一台计算机<strong>虚拟</strong>为多台逻辑计算机。 在一台计算机上同时运行多个逻辑计算机，每个逻辑计算机可运行不同的操作系统，并且应用程序都可以在相互独立的空间内运行而互不影响，从而显著提高计算机的工作效率。 </p><p><strong>优势</strong>：</p><p><strong>劣势</strong>：</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="Linux" scheme="http://wusuiwei.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="http://wusuiwei.github.io/tags/Linux/"/>
-    
-      <category term="虚拟化技术" scheme="http://wusuiwei.github.io/tags/%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="Docker" scheme="http://wusuiwei.github.io/tags/Docker/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【NoSql】NoSql入门和概述</title>
-    <link href="http://wusuiwei.github.io/2019/12/23/Java%E7%AC%94%E8%AE%B0/%E3%80%90NoSql%E3%80%91NoSql%E5%85%A5%E9%97%A8%E5%92%8C%E6%A6%82%E8%BF%B0/"/>
-    <id>http://wusuiwei.github.io/2019/12/23/Java笔记/【NoSql】NoSql入门和概述/</id>
-    <published>2019-12-23T02:06:04.000Z</published>
-    <updated>2019-12-23T16:10:47.501Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="NoSQL" scheme="http://wusuiwei.github.io/categories/NoSQL/"/>
-    
-    
-      <category term="NoSql" scheme="http://wusuiwei.github.io/tags/NoSql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端知识/Vue知识框架</title>
-    <link href="http://wusuiwei.github.io/2019/12/07/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86/Vue%E7%9F%A5%E8%AF%86%E6%A1%86%E6%9E%B6/"/>
-    <id>http://wusuiwei.github.io/2019/12/07/前端知识/Vue知识框架/</id>
-    <published>2019-12-06T17:14:23.800Z</published>
-    <updated>2019-12-06T17:14:23.800Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>项目笔记/hydrogen-master/【Hydrogen】项目环境搭建</title>
-    <link href="http://wusuiwei.github.io/2019/11/29/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-master/%E3%80%90Hydrogen%E3%80%91%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://wusuiwei.github.io/2019/11/29/项目笔记/hydrogen-master/【Hydrogen】项目环境搭建/</id>
-    <published>2019-11-29T11:19:01.308Z</published>
-    <updated>2019-12-05T11:37:21.595Z</updated>
-    
-    <content type="html"><![CDATA[<p>登录页：</p><ul><li>登录（自动注册）</li><li>忘记密码</li></ul><p>账号信息</p><p>项目组管理：</p><ul><li>项目列表</li><li>邀请加入项目组</li><li>移交管理员</li><li>删除成员</li><li>退出项目组/解散项目组（仅自己一个人时可解散）</li></ul><p>测试数据库管理：</p><ul><li>mysql</li></ul><p>用例管理：</p><ul><li>新增用例</li><li>修改用例</li><li>删除用例</li><li>运行用例</li><li>复制用例</li></ul><p>测试用例集管理：</p><ul><li>新增用例集</li></ul><p>参数化环境管理</p><ul><li>查询</li><li>新增</li><li>修改</li><li>删除</li><li>参数值管理<ul><li>查询</li><li>新增</li><li>修改</li><li>删除</li></ul></li></ul><p>测试报告</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;登录页：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;登录（自动注册）&lt;/li&gt;
-&lt;li&gt;忘记密码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;账号信息&lt;/p&gt;
-&lt;p&gt;项目组管理：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;项目列表&lt;/li&gt;
-&lt;li&gt;邀请加入项目组&lt;/li&gt;
-&lt;li&gt;移交管理员&lt;/li&gt;
-&lt;li&gt;删除成员
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【Spring Boot】异常处理机制</title>
-    <link href="http://wusuiwei.github.io/2019/11/29/Java%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Boot%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/"/>
-    <id>http://wusuiwei.github.io/2019/11/29/Java笔记/【Spring Boot】异常处理机制/</id>
-    <published>2019-11-29T03:08:09.000Z</published>
-    <updated>2019-11-30T16:08:46.161Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p>今天，刚好用到了Spring Boot的统一异常处理，复习并总结一下。主要内容如下：</p><ul><li>Spring Boot 提供的默认异常处理机制</li><li>如何自定义异常</li><li>项目中如何使用统一异常处理</li></ul><a id="more"></a><h3 id="默认异常处理"><a href="#默认异常处理" class="headerlink" title="默认异常处理"></a>默认异常处理</h3><p>默认情况下，Spring Boot 分情况提供了两种处理方式：</p><ul><li>浏览器访问（ Accept: text/html ）：返回一个 error 页面</li></ul><p><img src="/images/image-20191130232129074.png" alt="image-20191130232129074"></p><ul><li>其他客户端访问（如Postman，Accept: */*）：返回一个json数据</li></ul><p><img src="/images/image-20191130232326570.png" alt="image-20191130232326570"></p><p>原理：</p><p>异常处理的自动配置类：<code>org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration</code> </p><p>向 Spring 容器中添加了以下组件：</p><ul><li>DefaultErrorAttributes</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure><ul><li>BasicErrorController</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"$&#123;server.error.path:$&#123;error.path:/error&#125;&#125;"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BasicErrorController</span> <span class="keyword">extends</span> <span class="title">AbstractErrorController</span> </span>&#123;</span><br><span class="line">    <span class="comment">//产生html类型的数据</span></span><br><span class="line">    <span class="meta">@RequestMapping</span>(produces = MediaType.TEXT_HTML_VALUE)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">errorHtml</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> </span>&#123;</span><br><span class="line">        HttpStatus status = getStatus(request);</span><br><span class="line">        Map&lt;String, Object&gt; model = Collections</span><br><span class="line">            .unmodifiableMap(getErrorAttributes(request, isIncludeStackTrace(request, MediaType.TEXT_HTML)));</span><br><span class="line">        response.setStatus(status.value());</span><br><span class="line">        <span class="comment">//去哪个页面作为错误页面，包含页面地址和页面内容</span></span><br><span class="line">        ModelAndView modelAndView = resolveErrorView(request, response, status, model);</span><br><span class="line">        <span class="keyword">return</span> (modelAndView != <span class="keyword">null</span>) ? modelAndView : <span class="keyword">new</span> ModelAndView(<span class="string">"error"</span>, model);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//产生json数据</span></span><br><span class="line">    <span class="meta">@RequestMapping</span></span><br><span class="line">    <span class="keyword">public</span> ResponseEntity&lt;Map&lt;String, Object&gt;&gt; error(HttpServletRequest request) &#123;</span><br><span class="line">        HttpStatus status = getStatus(request);</span><br><span class="line">        <span class="keyword">if</span> (status == HttpStatus.NO_CONTENT) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> ResponseEntity&lt;&gt;(status);</span><br><span class="line">        &#125;</span><br><span class="line">        Map&lt;String, Object&gt; body = getErrorAttributes(request, isIncludeStackTrace(request, MediaType.ALL));</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ResponseEntity&lt;&gt;(body, status);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ul><li>ErrorPageCustomizer</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Value</span>(<span class="string">"$&#123;error.path:/error&#125;"</span>)</span><br><span class="line"><span class="keyword">private</span> String path = <span class="string">"/error"</span>;<span class="comment">//系统错误之后来到error请求来进行处理；</span></span><br></pre></td></tr></table></figure><ul><li>DefaultErrorViewResolver</li></ul><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ModelAndView <span class="title">resolveErrorView</span><span class="params">(HttpServletRequest request, HttpStatus status, Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    ModelAndView modelAndView = resolve(String.valueOf(status.value()), model);</span><br><span class="line">    <span class="keyword">if</span> (modelAndView == <span class="keyword">null</span> &amp;&amp; SERIES_VIEWS.containsKey(status.series())) &#123;</span><br><span class="line">        modelAndView = resolve(SERIES_VIEWS.get(status.series()), model);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> modelAndView;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> ModelAndView <span class="title">resolve</span><span class="params">(String viewName, Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//默认Spring Boot可以去找到一个页面：/error/404.html</span></span><br><span class="line">    String errorViewName = <span class="string">"error/"</span> + viewName;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//模板引擎可以解析这个页面地址就用模板引擎解析</span></span><br><span class="line">    TemplateAvailabilityProvider provider = <span class="keyword">this</span>.templateAvailabilityProviders.getProvider(errorViewName,</span><br><span class="line">                                                                                           <span class="keyword">this</span>.applicationContext);</span><br><span class="line">    <span class="keyword">if</span> (provider != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="comment">//如果模板引擎可用的情况下返回到errorViewName指定的视图地址</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ModelAndView(errorViewName, model);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//模板引擎不可用，就在静态资源文件夹下找errorViewName对应的界面 error/404.html</span></span><br><span class="line">    <span class="keyword">return</span> resolveResource(errorViewName, model);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>异常处理步骤：</p><p>一旦系统出现4xx或5xx之类的错误；ErrorPageCustomizer就会生效（定制错误的响应规则）；就会来到/erroe请求，就会被BasicErrorController处理：</p><p>1) 响应页面，去哪个页面由DefaultErrorViewResolver解析</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> ModelAndView <span class="title">resolveErrorView</span><span class="params">(HttpServletRequest request, HttpServletResponse response, HttpStatus status,</span></span></span><br><span class="line"><span class="function"><span class="params">                                        Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (ErrorViewResolver resolver : <span class="keyword">this</span>.errorViewResolvers) &#123;</span><br><span class="line">        ModelAndView modelAndView = resolver.resolveErrorView(request, status, model);</span><br><span class="line">        <span class="keyword">if</span> (modelAndView != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> modelAndView;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>2）如何定制错误响应：</p><ul><li><p>如何定制错误的页面：</p><ul><li>在有模板引擎情况下，将错误页面命名为<code>404.html</code>，放在模板引擎文件夹下的error文件夹下<ul><li>也可以使用4xx或5xx作为错误页面的文件名来匹配错误，优先精确匹配404.html</li><li>页面可以获取到的信息：<ul><li>timestamp:时间戳</li><li>status：状态码</li><li>error：错误提示</li><li>exception：异常</li><li>message：异常消息</li><li>errors：JSR303数据校验的错误</li></ul></li></ul></li><li>没有模板引擎，静态资源文件夹下error文件中404.html页面</li><li>以上位置都未配置错误页面，则默认来到springboot默认错误页面</li></ul></li></ul><ul><li><p>如何定制错误的JSON数据：</p><ul><li></li></ul></li></ul><h3 id="自定义异常处理"><a href="#自定义异常处理" class="headerlink" title="自定义异常处理"></a>自定义异常处理</h3><p><strong>定制错误页面</strong></p><p><strong>定制错误JSON数据</strong></p><h3 id="统一异常处理实践"><a href="#统一异常处理实践" class="headerlink" title="统一异常处理实践"></a>统一异常处理实践</h3>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;今天，刚好用到了Spring Boot的统一异常处理，复习并总结一下。主要内容如下：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Spring Boot 提供的默认异常处理机制&lt;/li&gt;
-&lt;li&gt;如何自定义异常&lt;/li&gt;
-&lt;li&gt;项目中如何使用统一异常处理&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="SpringBoot" scheme="http://wusuiwei.github.io/categories/SpringBoot/"/>
-    
-    
-      <category term="SpringBoot" scheme="http://wusuiwei.github.io/tags/SpringBoot/"/>
-    
-      <category term="异常处理" scheme="http://wusuiwei.github.io/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【SpringBoot】拦截器</title>
-    <link href="http://wusuiwei.github.io/2019/11/29/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/"/>
-    <id>http://wusuiwei.github.io/2019/11/29/Java笔记/【SpringBoot】自定义拦截器/</id>
-    <published>2019-11-29T03:08:09.000Z</published>
-    <updated>2019-11-30T15:15:19.331Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote><p>实现java web token的拦截</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;
-&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id=&quot;应用实例&quot;&gt;&lt;a href=&quot;#应用实例&quot; class=&quot;headerlink&quot; title=&quot;应用实例&quot;&gt;&lt;/a&gt;应用实例&lt;/h3&gt;&lt;blockqu
-      
-    
-    </summary>
-    
-    
-      <category term="SpringBoot" scheme="http://wusuiwei.github.io/categories/SpringBoot/"/>
-    
-    
-      <category term="SpringBoot" scheme="http://wusuiwei.github.io/tags/SpringBoot/"/>
-    
-      <category term="拦截器" scheme="http://wusuiwei.github.io/tags/%E6%8B%A6%E6%88%AA%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【接口自动化测试框架（Java版）】基本环境搭建</title>
-    <link href="http://wusuiwei.github.io/2019/11/27/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://wusuiwei.github.io/2019/11/27/自动化测试/【接口自动化测试框架（Java版）】基本环境搭建/</id>
-    <published>2019-11-27T07:23:49.000Z</published>
-    <updated>2019-11-27T16:09:13.520Z</updated>
-    
-    <content type="html"><![CDATA[<p>从本文起，将详细介绍 Java 自动化框架的搭建及相关知识学习，我也是边写边学，不一定完全正确，如果有异常情况，请在评论区留言。</p><p>本文主要介绍JDK安装配置、IDEA安装配置、SpringBoot项目创建。</p><a id="more"></a><p>应用技术：SpringBoot、HttpClient、Spring Data JPA、TestNG、ReportNG、Jenkins、Vue等技术</p><h4 id="JDK-环境搭建"><a href="#JDK-环境搭建" class="headerlink" title="JDK 环境搭建"></a>JDK 环境搭建</h4><p>想要运行java项目，必须有jdk环境，我使用的是JDK8.</p><p>下载地址： <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a> </p><p>选择自己系统的相应版本并下载安装即可。</p><p>jdk需要配置环境变量：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">变量名：JAVA_HOME</span><br><span class="line">变量值：C:\Program Files (x86)\Java\jdk1.8.0_91        // 要根据自己的实际路径配置</span><br><span class="line">变量名：CLASSPATH</span><br><span class="line">变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;         //记得前面有个&quot;.&quot;</span><br><span class="line">变量名：Path</span><br><span class="line">变量值：%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</span><br></pre></td></tr></table></figure><p>检查是否安装成功：</p><p>运行CMD，执行命令：<code>java -version</code></p><p><img src="/images/image-20191127195442440.png" alt="image-20191127195442440"></p><h4 id="IDEA-环境搭建"><a href="#IDEA-环境搭建" class="headerlink" title="IDEA 环境搭建"></a>IDEA 环境搭建</h4><p>搭建过程非常简单，仅需要下载安装并输入注册码即可。</p><p>下载地址： <a href="https://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">https://www.jetbrains.com/idea/download/</a> ( <strong>Ultimate</strong> 版本)</p><p>注册码（亲测可用，建议官方购买)：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CATF44LT7C-eyJsaWNlbnNlSWQiOiJDQVRGNDRMVDdDIiwibGljZW5zZWVOYW1lIjoiVmxhZGlzbGF2IEtvdmFsZW5rbyIsImFzc2lnbmVlTmFtZSI6IiIsImFzc2lnbmVlRW1haWwiOiIiLCJsaWNlbnNlUmVzdHJpY3Rpb24iOiJGb3IgZWR1Y2F0aW9uYWwgdXNlIG9ubHkiLCJjaGVja0NvbmN1cnJlbnRVc2UiOmZhbHNlLCJwcm9kdWN0cyI6W3siY29kZSI6IklJIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In0seyJjb2RlIjoiQUMiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDgifSx7ImNvZGUiOiJEUE4iLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDgifSx7ImNvZGUiOiJQUyIsInBhaWRVcFRvIjoiMjAyMC0wMS0wOCJ9LHsiY29kZSI6IkdPIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In0seyJjb2RlIjoiRE0iLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDgifSx7ImNvZGUiOiJDTCIsInBhaWRVcFRvIjoiMjAyMC0wMS0wOCJ9LHsiY29kZSI6IlJTMCIsInBhaWRVcFRvIjoiMjAyMC0wMS0wOCJ9LHsiY29kZSI6IlJDIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In0seyJjb2RlIjoiUkQiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDgifSx7ImNvZGUiOiJQQyIsInBhaWRVcFRvIjoiMjAyMC0wMS0wOCJ9LHsiY29kZSI6IlJNIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In0seyJjb2RlIjoiV1MiLCJwYWlkVXBUbyI6IjIwMjAtMDEtMDgifSx7ImNvZGUiOiJEQiIsInBhaWRVcFRvIjoiMjAyMC0wMS0wOCJ9LHsiY29kZSI6IkRDIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In0seyJjb2RlIjoiUlNVIiwicGFpZFVwVG8iOiIyMDIwLTAxLTA4In1dLCJoYXNoIjoiMTE1MzA4ODUvMCIsImdyYWNlUGVyaW9kRGF5cyI6MCwiYXV0b1Byb2xvbmdhdGVkIjpmYWxzZSwiaXNBdXRvUHJvbG9uZ2F0ZWQiOmZhbHNlfQ==-BZLL+H88k449OQC56NsqU0fwb6wMAX1Di+CK5HS46DuOD1E68HPiTqREdn8DzrLVAoMkJReaH30RaIDLwUI8GEFifDcCYE5RbpE5ApNJ8mcUJr8oA1nrjY9IzZCgrSBFr4GAOLqSfXH+1UJ3K8UPqGh8nThomnKW9Jvv9pA7HIH/KrNm2RLV/aNMHWO8Q44A8ToXm7g5FS2lW903URPQ0KFgxT11w/KL81UkHm6yUXC7/LTAygIBArI8j+XUk3rlz4rpi2wrJclYXukrKQqH/V6CTbnVV3d6XAdtCqjryQ2Ga7bP/XTLjwAGwPEB3Q1W7LHNQ7CsyvZG/oTSOgD2YQ==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn/72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN/lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D/cXmgpOyW/1SmBz3XjVIi/zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV/bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit/pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow==</span><br></pre></td></tr></table></figure><h4 id="SpringBoot-项目创建"><a href="#SpringBoot-项目创建" class="headerlink" title="SpringBoot 项目创建"></a>SpringBoot 项目创建</h4><p>从IDEA搭建项目过程非常简单，下面将简要介绍一下</p><p><img src="/images/image-20191127194915867.png" alt="image-20191127194915867"></p><p>首先，选择”Spring Initalizr”,下一步：</p><p><img src="/images/image-20191127195614517.png" alt="image-20191127195614517"></p><p>输入Group、Artifact，下一步:</p><p><img src="/images/image-20191127195953736.png" alt="image-20191127195953736"></p><p>然后选择依赖，这里我们暂时先不选择任何依赖，下一步：</p><p><img src="/images/image-20191127200110798.png" alt="image-20191127200110798"></p><p>输入项目名及项目本次存储地址，”Finish”即可创建一个SpringBoot项目。</p><p><img src="/images/image-20191127200144375.png" alt="image-20191127200144375"></p><p>好了，至此，SpringBoot项目基本搭建完成，开心~~</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;从本文起，将详细介绍 Java 自动化框架的搭建及相关知识学习，我也是边写边学，不一定完全正确，如果有异常情况，请在评论区留言。&lt;/p&gt;
-&lt;p&gt;本文主要介绍JDK安装配置、IDEA安装配置、SpringBoot项目创建。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="接口自动化" scheme="http://wusuiwei.github.io/categories/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    
-      <category term="自动化测试" scheme="http://wusuiwei.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
-    
-      <category term="接口自动化" scheme="http://wusuiwei.github.io/tags/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
-    <link href="http://wusuiwei.github.io/2019/11/27/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/"/>
-    <id>http://wusuiwei.github.io/2019/11/27/自动化测试/【接口自动化测试框架（Java版）】集成HttpClient/</id>
-    <published>2019-11-27T07:23:49.000Z</published>
-    <updated>2019-11-27T13:07:58.271Z</updated>
-    
-    <content type="html"><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p><a id="more"></a><h4 id="HttpClient-介绍"><a href="#HttpClient-介绍" class="headerlink" title="HttpClient 介绍"></a>HttpClient 介绍</h4><p> <a href="http://hc.apache.org/index.html" target="_blank" rel="noopener">HttpClient</a>是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。 </p><p>HttpClient相比传统JDK自带的URLConnection，增加了易用性和灵活性，它不仅使客户端发送Http请求变得容易，而且也方便开发人员测试接口（基于Http协议的），提高了开发的效率，也方便提高代码的健壮性。因此熟练掌握HttpClient是很重要的必修内容，掌握HttpClient后，相信对于Http协议的了解会更加深入。</p><p><strong>org.apache.commons.httpclient.HttpClient与org.apache.http.client.HttpClient的区别</strong></p><p>Commons的HttpClient项目现在是生命的尽头，不再被开发,  已被Apache HttpComponents项目HttpClient和HttpCore  模组取代，提供更好的性能和更大的灵活性。  </p><p><strong>HttpClient 特性</strong></p><ul><li>实现了所有 HTTP 的方法（GET,POST,PUT,DELETE 等）</li><li>支持自动转向</li><li>支持 HTTPS 协议</li><li>支持代理服务器等</li></ul><p>引用HttpClient非常简单，仅需要在maven中添加相关依赖即可：</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="原生HttpClient使用"><a href="#原生HttpClient使用" class="headerlink" title="原生HttpClient使用"></a>原生HttpClient使用</h4><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testGet</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//申明Get请求</span></span><br><span class="line">    HttpGet httpGet = <span class="keyword">new</span> HttpGet(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpGet);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//4.判断状态码</span></span><br><span class="line">    <span class="keyword">if</span> (response.getStatusLine().getStatusCode() == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//从响应中取出实体</span></span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        <span class="comment">//使用工具类EntityUtils将实体并转换成字符串</span></span><br><span class="line">        String s = EntityUtils.toString(entity);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h5 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPost</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//声明Post请求</span></span><br><span class="line">    HttpPost httpPost = <span class="keyword">new</span> HttpPost(<span class="string">"https://www.oschina.net/"</span>);</span><br><span class="line">    <span class="comment">//3.开源中国为了安全，防止恶意攻击，在post请求中都限制了浏览器才能访问</span></span><br><span class="line">    httpPost.addHeader(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>);</span><br><span class="line">    ArrayList&lt;NameValuePair&gt; params = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"scope"</span>, <span class="string">"project"</span>));</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"q"</span>, <span class="string">"java"</span>));</span><br><span class="line">    UrlEncodedFormEntity formEntity = <span class="keyword">new</span> UrlEncodedFormEntity(params, Charset.forName(<span class="string">"utf-8"</span>));</span><br><span class="line">    httpPost.setEntity(formEntity);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpPost);</span><br><span class="line">    <span class="comment">//判断状态码</span></span><br><span class="line">    <span class="keyword">if</span>(response.getStatusLine().getStatusCode()==<span class="number">200</span>)&#123;</span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        String string = EntityUtils.toString(entity, <span class="string">"utf-8"</span>);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//6.关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="SpringBoot集成HttpClient"><a href="#SpringBoot集成HttpClient" class="headerlink" title="SpringBoot集成HttpClient"></a>SpringBoot集成HttpClient</h4><p>引入Maven依赖</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;本文主要介绍HttpClient的用法及与SpringBoot的集成。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="接口自动化" scheme="http://wusuiwei.github.io/categories/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-    
-      <category term="自动化测试" scheme="http://wusuiwei.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
-    
-      <category term="接口自动化" scheme="http://wusuiwei.github.io/tags/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自动化测试/自动化测试模式介绍</title>
-    <link href="http://wusuiwei.github.io/2019/11/21/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://wusuiwei.github.io/2019/11/21/自动化测试/自动化测试模式介绍/</id>
-    <published>2019-11-21T13:39:20.440Z</published>
-    <updated>2019-11-21T13:39:20.440Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>自动化测试/Web自动化测试之PageObject思想</title>
-    <link href="http://wusuiwei.github.io/2019/11/21/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BPageObject%E6%80%9D%E6%83%B3/"/>
-    <id>http://wusuiwei.github.io/2019/11/21/自动化测试/Web自动化测试之PageObject思想/</id>
-    <published>2019-11-21T13:36:27.439Z</published>
-    <updated>2019-11-21T13:36:27.439Z</updated>
-    
-    <summary type="html">
     
     </summary>
     

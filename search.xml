@@ -1,13 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Java笔记/SpringMVC学习笔记</title>
-    <url>/2020/03/04/Java%E7%AC%94%E8%AE%B0/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>创业笔记/在线教育的遐想</title>
+    <url>/2020/03/29/%E5%88%9B%E4%B8%9A%E7%AC%94%E8%AE%B0/%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2%E7%9A%84%E9%81%90%E6%83%B3/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Java笔记/Spring学习笔记</title>
-    <url>/2020/03/04/Java%E7%AC%94%E8%AE%B0/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>Java笔记/云原生的12要素</title>
+    <url>/2020/03/10/Java%E7%AC%94%E8%AE%B0/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%9A%8412%E8%A6%81%E7%B4%A0/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Java笔记/Zookeeper学习笔记</title>
+    <url>/2020/03/09/Java%E7%AC%94%E8%AE%B0/Zookeeper%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="Docker安装Zookeeper"><a href="#Docker安装Zookeeper" class="headerlink" title="Docker安装Zookeeper"></a>Docker安装Zookeeper</h3><h4 id="下载zookeeper镜像"><a href="#下载zookeeper镜像" class="headerlink" title="下载zookeeper镜像"></a>下载zookeeper镜像</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker pull zookeeper</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>Java笔记/SpringBoot学习笔记</title>
+    <url>/2020/03/08/Java%E7%AC%94%E8%AE%B0/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="SpringBoot-与-数据访问"><a href="#SpringBoot-与-数据访问" class="headerlink" title="SpringBoot 与 数据访问"></a>SpringBoot 与 数据访问</h3><h4 id="集成JDBC"><a href="#集成JDBC" class="headerlink" title="集成JDBC"></a>集成JDBC</h4>]]></content>
+  </entry>
+  <entry>
+    <title>Java笔记/SpringCloud学习笔记</title>
+    <url>/2020/03/08/Java%E7%AC%94%E8%AE%B0/SpringCloud%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h3 id="微服务"><a href="#微服务" class="headerlink" title="微服务"></a>微服务</h3><h4 id="架构演变史"><a href="#架构演变史" class="headerlink" title="架构演变史"></a>架构演变史</h4><p>随着互联网的发展，网站应用的规模不断扩大，常规的垂直应用架构已无法应对，分布式服务架构以及流动计算架构势在必行，亟需一个治理系统确保架构有条不紊的演进。</p>
+<p><img src="../../images/dubbo-architecture-roadmap.jpg" alt="image"></p>
+<p><strong>单一应用架构</strong></p>
+<p>当网站流量很小时，只需一个应用，将所有功能都部署在一起，以减少部署节点和成本。此时，用于简化增删改查工作量的数据访问框架(ORM)是关键。</p>
+<p><strong>垂直应用架构</strong></p>
+<p>当访问量逐渐增大，单一应用增加机器带来的加速度越来越小，提升效率的方法之一是将应用拆成互不相干的几个应用，以提升效率。此时，用于加速前端页面开发的Web框架(MVC)是关键。</p>
+<p><strong>分布式服务架构</strong></p>
+<p>当垂直应用越来越多，应用之间交互不可避免，将核心业务抽取出来，作为独立的服务，逐渐形成稳定的服务中心，使前端应用能更快速的响应多变的市场需求。此时，用于提高业务复用及整合的分布式服务框架(RPC)是关键。</p>
+<p><strong>流动计算架构</strong></p>
+<p>当服务越来越多，容量的评估，小服务资源的浪费等问题逐渐显现，此时需增加一个调度中心基于访问压力实时管理集群容量，提高集群利用率。此时，用于提高机器利用率的资源调度和治理中心(SOA)是关键。</p>
+<h4 id="微服务简介"><a href="#微服务简介" class="headerlink" title="微服务简介"></a>微服务简介</h4><p> <img src="https://docshome.gitbooks.io/microservices/content/resources/1-2.png" alt="图 1-2、一个单体应用分解成微服务"> </p>
+<p> 微服务架构（Microservice Architecture）是一种架构概念，旨在通过将功能分解到各个离散的服务中以实现对解决方案的解耦。你可以将其看作是在架构层次而非获取服务的</p>
+<p>类上应用很多SOLID原则。微服务架构是个很有趣的概念，它的主要作用是将功能分解到离散的各个服务当中，从而降低系统的耦合性，并提供更加灵活的服务支持。</p>
+<p><strong>概念：</strong>把一个大型的单个应用程序和服务拆分为数个甚至数十个的支持微服务，它可扩展单个组件而不是整个的应用程序堆栈，从而满足服务等级协议。</p>
+<p><strong>定义：</strong>围绕业务领域组件来创建应用，这些应用可独立地进行开发、管理和迭代。在分散的组件中使用云架构和平台式部署、管理和服务功能，使产品交付变得更加简单。</p>
+<p><strong>本质：</strong>用一些功能比较明确、业务比较精练的服务去解决更大、更实际的问题。</p>
+<blockquote>
+<p>面向服务的架构（SOA) 与微服务架构 之间的区别？</p>
+<p>1.SOA（Service Oriented Architecture）“面向服务的架构”:他是一种设计方法，其中包含多个服务， 服务之间通过相互依赖最终提供一系列的功能。一个服务 通常以独立的形式存在与操作系统进程中。各个服务之间 通过网络调用。</p>
+<p> 2.微服务架构:其实和 SOA 架构类似,微服务是在 SOA 上做的升华，微服务架构强调的一个重点是“业务需要彻底的组件化和服务化”，原有的单个业务系统会拆分为多个可以独立开发、设计、运行的小应用。这些小应用之间通过服务完成交互和集成。</p>
+<p> <strong>微服务架构 = 80%的SOA服务架构思想 + 100%的组件化架构思想 + 80%的领域建模思想</strong></p>
+<p>微服务架构是SOA架构发展之后的产物。</p>
+</blockquote>
+<h4 id="微服务优点"><a href="#微服务优点" class="headerlink" title="微服务优点"></a>微服务优点</h4><p><strong>关键字：复杂度可控，独立按需扩展，技术选型灵活，容错，可用性高</strong> </p>
+<p><strong>①</strong>它解决了复杂性的问题。它会将一种怪异的整体应用程序分解成一组服务。虽然功能总量 不变，但应用程序已分解为可管理的块或服务。每个服务都以RPC或消息驱动的API的</p>
+<p>形式定义了一个明确的边界；Microservice架构模式实现了一个模块化水平。</p>
+<p><strong>②</strong>这种架构使每个服务都能够由专注于该服务的团队独立开发。开发人员可以自由选择任何有用的技术，只要该服务符合API合同。当然，大多数组织都希望避免完全无政府状态并</p>
+<p>限制技术选择。然而，这种自由意味着开发人员不再有义务使用在新项目开始时存在的可能过时的技术。在编写新服务时，他们可以选择使用当前的技术。此外，由于服务相对较小，</p>
+<p>因此使用当前技术重写旧服务变得可行。</p>
+<p><strong>③</strong>Microservice架构模式使每个微服务都能独立部署。开发人员不需要协调部署本地服务的变更。这些变化可以在测试后尽快部署。例如，UI团队可以执行A | B测试，并快速迭代</p>
+<p>UI更改。Microservice架构模式使连续部署成为可能。</p>
+<p><strong>④</strong>Microservice架构模式使每个服务都可以独立调整。您可以仅部署满足其容量和可用性限制的每个服务的实例数。此外，您可以使用最符合服务资源要求的硬件。</p>
+<h4 id="微服务缺点"><a href="#微服务缺点" class="headerlink" title="微服务缺点"></a>微服务缺点</h4><p> <strong>关键点（挑战）：多服务运维难度，系统部署依赖，服务间通信成本，数据一致性，系统集成测试，重复工作，性能监控等</strong> </p>
+<p><strong>①</strong>一个缺点是名称本身。术语microservice过度强调服务规模。但重要的是要记住，这是一种手段，而不是主要目标。微服务的目标是充分分解应用程序，以便于敏捷应用程序开发和部署。</p>
+<p><strong>②</strong>微服务器的另一个主要缺点是分布式系统而产生的复杂性。开发人员需要选择和实现基于消息传递或RPC的进程间通信机制。此外，他们还必须编写代码来处理部分故障，因为请求的目的地可能很慢或不可用。</p>
+<p><strong>③</strong>微服务器的另一个挑战是分区数据库架构。更新多个业务实体的业务交易是相当普遍的。但是，在基于微服务器的应用程序中，您需要更新不同服务所拥有的多个数据库。使用分布式事务通常不是一个选择，而不仅仅是因为CAP定理。许多今天高度可扩展的NoSQL数据库都不支持它们。你最终不得不使用最终的一致性方法，这对开发人员来说更具挑战性。</p>
+<p><strong>④</strong>测试微服务应用程序也更复杂。服务类似的测试类将需要启动该服务及其所依赖的任何服务（或至少为这些服务配置存根）。再次，重要的是不要低估这样做的复杂性。</p>
+<p><strong>⑤</strong>Microservice架构模式的另一个主要挑战是实现跨越多个服务的更改。例如，我们假设您正在实施一个需要更改服务A，B和C的故事，其中A取决于B和B取决于C.在单片应用程序中，您可以简单地更改相应的模块，整合更改，并一次性部署。相比之下，在Microservice架构模式中，您需要仔细规划和协调对每个服务的更改。例如，您需要更新服务C，然后更新服务B，然后再维修A.幸运的是，大多数更改通常仅影响一个服务，而需要协调的多服务变更相对较少。</p>
+<p><strong>⑥</strong>部署基于微服务的应用程序也更复杂。单一应用程序简单地部署在传统负载平衡器后面的一组相同的服务器上。每个应用程序实例都配置有基础架构服务（如数据库和消息代理）的位置（主机和端口）。相比之下，微服务应用通常由大量服务组成。例如，每个服务将有多个运行时实例。更多的移动部件需要进行配置，部署，扩展和监控。此外，您还需要实现服务发现机制，使服务能够发现需要与之通信的任何其他服务的位置（主机和端口）。传统的基于故障单和手动操作的方法无法扩展到这种复杂程度。因此，成功部署微服务应用程序需要开发人员更好地控制部署方法，并实现高水平的自动化。</p>
+<h3 id="Spring-Cloud-微服务架构"><a href="#Spring-Cloud-微服务架构" class="headerlink" title="Spring Cloud 微服务架构"></a>Spring Cloud 微服务架构</h3><p> <img src="https://spring.io/images/diagram-microservices-88e01c7d34c688cb49556435c130d352.svg" alt="Microservices diagram">  </p>
+<p>Spring Cloud为开发人员提供了快速构建分布式系统中一些常见模式的工具（例如配置管理，服务发现，断路器，智能路由，微代理，控制总线）。</p>
+<p>Spring Cloud 提供的工具分为以下几类：</p>
+<ul>
+<li>服务注册与发现(Eureka、Consul、zookeeper、Nacos等)</li>
+<li>服务调用（Ribbon、LoadBalancer、Feign、OpenFeign等）</li>
+<li>服务降级（Hystrix、Resilience4j、Sentinel等）</li>
+<li>服务网关（Zuul、Gateway等）</li>
+<li>服务配置（Config、Nacos等）</li>
+<li>服务总线（Bus、Nacos等）</li>
+<li>…</li>
+</ul>
+<p>当前版本：<strong>Hoxton SR3</strong></p>
+<p>支持的Spring Boot版本： <strong>2.2.5.RELEASE</strong> </p>
+<blockquote>
+<p>云原生的12要素（  <a href="https://12factor.net/zh_cn/" target="_blank" rel="noopener">https://12factor.net/zh_cn/</a> ）</p>
+</blockquote>
+<h3 id="服务注册与发现"><a href="#服务注册与发现" class="headerlink" title="服务注册与发现"></a>服务注册与发现</h3><h4 id="Eureka"><a href="#Eureka" class="headerlink" title="Eureka"></a>Eureka</h4><p>Eureka 是 <a href="https://github.com/Netflix" target="_blank" rel="noopener">Netflix</a> 公司开发的， 一个基于 REST 服务的，服务注册与发现的组件 。</p>
+<p>包括  <strong>Eureka Server</strong> 和 *<em>Eureka  Client *</em> 组件：</p>
+<ul>
+<li>Eureka Client：一个Java客户端，用于简化与 Eureka Server 的交互（通常就是微服务中的客户端和服务端）</li>
+<li>Eureka Server：提供服务注册和发现的能力（通常就是微服务中的注册中心）</li>
+</ul>
+<h5 id="Eureka-原理"><a href="#Eureka-原理" class="headerlink" title="Eureka 原理"></a>Eureka 原理</h5><h5 id="单个Eureka-Server-配置部署"><a href="#单个Eureka-Server-配置部署" class="headerlink" title="单个Eureka Server 配置部署"></a>单个Eureka Server 配置部署</h5><p>maven 依赖<code>pom.xml</code>：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-server<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>主启动类：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">package</span> com.wusuiwei.springcloud;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@EnableEurekaServer</span><span class="comment">//开启Eureka服务</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EurekaServerMain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(EurekaServerMain<span class="class">.<span class="keyword">class</span>, <span class="title">args</span>)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>application.yml：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">7001</span></span><br><span class="line"></span><br><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">application:</span></span><br><span class="line">    <span class="attr">name:</span> <span class="string">eureka-server</span></span><br><span class="line"></span><br><span class="line"><span class="attr">eureka:</span></span><br><span class="line">  <span class="comment">#Eureka服务端的实例名称</span></span><br><span class="line">  <span class="attr">instance:</span></span><br><span class="line">    <span class="attr">hostname:</span> <span class="string">www.eureka7003.com</span></span><br><span class="line">  <span class="attr">client:</span></span><br><span class="line">    <span class="comment">#false表示不向注册中心注册</span></span><br><span class="line">    <span class="attr">register-with-eureka:</span> <span class="literal">false</span></span><br><span class="line">    <span class="comment">#false 表示本身就是注册中心，本身职责是维护服务实例，不需要去检索服务</span></span><br><span class="line">    <span class="attr">fetch-registry:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">service-url:</span></span><br><span class="line">      <span class="attr">defaultZone:</span> <span class="string">http://$&#123;eureka.instance.hosthome&#125;:$&#123;server.port&#125;/eureka/</span></span><br></pre></td></tr></table></figure>
+
+<p>启动服务~~，访问：<a href="http://localhost:7001" target="_blank" rel="noopener">http://localhost:7001</a>:</p>
+<p><img src="../../images/image-20200312172743517.png" alt="image-20200312172743517"></p>
+<h6 id="服务注册"><a href="#服务注册" class="headerlink" title="服务注册"></a>服务注册</h6><p>maven依赖：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.cloud<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-cloud-starter-netflix-eureka-client<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="Eureka-Server-集群配置部署"><a href="#Eureka-Server-集群配置部署" class="headerlink" title="Eureka Server 集群配置部署"></a>Eureka Server 集群配置部署</h5><h6 id="服务注册-1"><a href="#服务注册-1" class="headerlink" title="服务注册"></a>服务注册</h6><h4 id="zookeeper"><a href="#zookeeper" class="headerlink" title="zookeeper"></a>zookeeper</h4><h4 id="Consul"><a href="#Consul" class="headerlink" title="Consul"></a>Consul</h4><h4 id=""><a href="#" class="headerlink" title=""></a></h4><h4 id="Nacos"><a href="#Nacos" class="headerlink" title="Nacos"></a>Nacos</h4><h3 id="服务调用"><a href="#服务调用" class="headerlink" title="服务调用"></a>服务调用</h3><h4 id="Ribbon"><a href="#Ribbon" class="headerlink" title="Ribbon"></a>Ribbon</h4><h4 id="LoadBalancer"><a href="#LoadBalancer" class="headerlink" title="LoadBalancer"></a>LoadBalancer</h4><h4 id="Feign"><a href="#Feign" class="headerlink" title="Feign"></a>Feign</h4><h4 id="OpenFeign"><a href="#OpenFeign" class="headerlink" title="OpenFeign"></a>OpenFeign</h4><h3 id="服务降级"><a href="#服务降级" class="headerlink" title="服务降级"></a>服务降级</h3><h4 id="Hystrix"><a href="#Hystrix" class="headerlink" title="Hystrix"></a>Hystrix</h4><h4 id="Resilience4j"><a href="#Resilience4j" class="headerlink" title="Resilience4j"></a>Resilience4j</h4><h4 id="Sentinel"><a href="#Sentinel" class="headerlink" title="Sentinel"></a>Sentinel</h4><h3 id="服务网关"><a href="#服务网关" class="headerlink" title="服务网关"></a>服务网关</h3><h4 id="Zuul"><a href="#Zuul" class="headerlink" title="Zuul"></a>Zuul</h4><h4 id="Gateway"><a href="#Gateway" class="headerlink" title="Gateway"></a>Gateway</h4><h3 id="服务配置"><a href="#服务配置" class="headerlink" title="服务配置"></a>服务配置</h3><h4 id="Config"><a href="#Config" class="headerlink" title="Config"></a>Config</h4><h4 id="Nacos-1"><a href="#Nacos-1" class="headerlink" title="Nacos"></a>Nacos</h4><h3 id="服务总线"><a href="#服务总线" class="headerlink" title="服务总线"></a>服务总线</h3><h4 id="Bus"><a href="#Bus" class="headerlink" title="Bus"></a>Bus</h4><h4 id="Nacos-2"><a href="#Nacos-2" class="headerlink" title="Nacos"></a>Nacos</h4>]]></content>
+  </entry>
+  <entry>
+    <title>Java笔记/RPC框架原理</title>
+    <url>/2020/03/08/Java%E7%AC%94%E8%AE%B0/RPC%E6%A1%86%E6%9E%B6%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Java笔记/Dubbo学习笔记</title>
+    <url>/2020/03/08/Java%E7%AC%94%E8%AE%B0/Dubbo%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Java笔记/Git学习笔记</title>
+    <url>/2020/03/05/Java%E7%AC%94%E8%AE%B0/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Java笔记/IDEA学习笔记</title>
+    <url>/2020/03/05/Java%E7%AC%94%E8%AE%B0/IDEA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h4 id="使用已安装的maven及其配置"><a href="#使用已安装的maven及其配置" class="headerlink" title="使用已安装的maven及其配置"></a>使用已安装的maven及其配置</h4><p><img src="../../images/image-20200305163952800.png" alt="image-20200305163952800"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Java笔记/Maven学习笔记</title>
+    <url>/2020/03/05/Java%E7%AC%94%E8%AE%B0/Maven%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>下载地址： <a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener">https://maven.apache.org/download.cgi</a> </p>
+<p>安装步骤：</p>
+<ol>
+<li>解压maven压缩包到指定路径：C:\software\apache-maven-3.6.3</li>
+<li>配置环境变量：<ul>
+<li>新建环境变量 MAVEN_HOME，赋值 C:\software\apache-maven-3.6.3</li>
+<li>编辑环境变量Path，追加<code>%MAVEN_HOME%\bin\</code></li>
+</ul>
+</li>
+</ol>
+<p>本地配置：</p>
+<ol>
+<li>修改C:\software\apache-maven-3.6.3\conf\settings.xml文件，添加本地仓库配置。</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>C:\software\apache-maven-3.6.3\repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>配置仓库镜像：</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 阿里云仓库 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span>        </span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 中央仓库1 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>repo1<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo1.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 中央仓库2 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">id</span>&gt;</span>repo2<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo2.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
+  <entry>
+    <title>项目笔记/谷粒学院/框架搭建</title>
+    <url>/2020/03/05/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%B0%B7%E7%B2%92%E5%AD%A6%E9%99%A2/%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<ol>
+<li>从git/github下载仓库</li>
+</ol>
+<p><img src="../../../images/image-20200305172316151.png" alt="image-20200305172316151"></p>
+<ol start="2">
+<li>设置本地maven</li>
+</ol>
+<p><img src="../../../images/image-20200305172357261.png" alt="image-20200305172357261"></p>
+<ol start="3">
+<li>设置.gitignore</li>
+</ol>
+]]></content>
+  </entry>
+  <entry>
+    <title>项目笔记/谷粒学院/项目概要</title>
+    <url>/2020/03/05/%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%B0%B7%E7%B2%92%E5%AD%A6%E9%99%A2/%E9%A1%B9%E7%9B%AE%E6%A6%82%E8%A6%81/</url>
+    <content><![CDATA[<p><strong>工具使用</strong>：</p>
+<ul>
+<li>IDEA</li>
+<li>EZDML</li>
+<li></li>
+</ul>
+]]></content>
+  </entry>
+  <entry>
+    <title>Java笔记/SpringMVC学习笔记</title>
+    <url>/2020/03/04/Java%E7%AC%94%E8%AE%B0/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -225,11 +397,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Java笔记/Untitled 1</title>
-    <url>/2020/02/19/Java%E7%AC%94%E8%AE%B0/Untitled%201/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Java笔记/Spring Cloud 笔记之 Feign</title>
     <url>/2020/01/17/Java%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Feign/</url>
     <content><![CDATA[]]></content>
@@ -267,7 +434,28 @@
 <p><code>CMD</code>：</p>
 <p><code>ENTRYPOINT</code>：</p>
 <p><code>ONBUILD</code>：</p>
-<h2 id="常用镜像"><a href="#常用镜像" class="headerlink" title="常用镜像"></a>常用镜像</h2><h3 id="Docker安装MySQL"><a href="#Docker安装MySQL" class="headerlink" title="Docker安装MySQL"></a>Docker安装MySQL</h3><h3 id="Docker安装Redis"><a href="#Docker安装Redis" class="headerlink" title="Docker安装Redis"></a>Docker安装Redis</h3>]]></content>
+<h2 id="常用镜像"><a href="#常用镜像" class="headerlink" title="常用镜像"></a>常用镜像</h2><h3 id="Docker安装MySQL"><a href="#Docker安装MySQL" class="headerlink" title="Docker安装MySQL"></a>Docker安装MySQL</h3><h3 id="Docker安装Redis"><a href="#Docker安装Redis" class="headerlink" title="Docker安装Redis"></a>Docker安装Redis</h3><h3 id="IDEA下Docker一键部署-CentOS-7"><a href="#IDEA下Docker一键部署-CentOS-7" class="headerlink" title="IDEA下Docker一键部署(CentOS 7)"></a>IDEA下Docker一键部署(CentOS 7)</h3><h4 id="开启Docker远程连接端口"><a href="#开启Docker远程连接端口" class="headerlink" title="开启Docker远程连接端口"></a>开启Docker远程连接端口</h4><ol>
+<li>修改<code>/lib/systemd/system/docker.service</code>文件中<code>ExecStart</code>开头的行：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ExecStart=/usr/bin/dockerd   -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>重新加载并启动docker</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>添加端口到服务器，并重启防火墙</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo  firewall-cmd --zone=public --add-port=2375/tcp --permanent</span><br><span class="line"><span class="meta">#</span><span class="bash">--zone <span class="comment">#作用域</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">--add-port=2375/tcp  <span class="comment">#添加端口，格式为：端口/通讯协议</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">--permanent  <span class="comment">#永久生效，没有此参数重启后失效</span></span></span><br><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>校验结果：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl http://localhost:2375/version</span><br><span class="line"><span class="meta">#</span><span class="bash"> 本地虚拟机地址：curl http://192.168.159.128:2375/version</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="IDEA连接Docker"><a href="#IDEA连接Docker" class="headerlink" title="IDEA连接Docker"></a>IDEA连接Docker</h4><p><img src="../../images/image-20200328001250738.png" alt="image-20200328001250738"></p>
+<h4 id="IDEA一键部署SpringBoot项目"><a href="#IDEA一键部署SpringBoot项目" class="headerlink" title="IDEA一键部署SpringBoot项目"></a>IDEA一键部署SpringBoot项目</h4>]]></content>
   </entry>
   <entry>
     <title>项目笔记/hydrogen-master/【Hydrogen】团队维护</title>
@@ -479,7 +667,7 @@
   </entry>
   <entry>
     <title>【接口自动化测试框架（Java版）】基本环境搭建</title>
-    <url>/2019/11/27/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <url>/2019/11/27/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p>从本文起，将详细介绍 Java 自动化框架的搭建及相关知识学习，我也是边写边学，不一定完全正确，如果有异常情况，请在评论区留言。</p>
 <p>本文主要介绍JDK安装配置、IDEA安装配置、SpringBoot项目创建。</p>
 <a id="more"></a>
@@ -521,7 +709,7 @@
   </entry>
   <entry>
     <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
-    <url>/2019/11/27/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
+    <url>/2019/11/27/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
     <content><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p>
 <a id="more"></a>
 
@@ -556,18 +744,18 @@
       </tags>
   </entry>
   <entry>
-    <title>自动化测试/自动化测试模式介绍</title>
-    <url>/2019/11/21/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%BB%8B%E7%BB%8D/</url>
+    <title>软件测试/自动化测试模式介绍</title>
+    <url>/2019/11/21/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>自动化测试/Web自动化测试之PageObject思想</title>
-    <url>/2019/11/21/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BPageObject%E6%80%9D%E6%83%B3/</url>
+    <title>软件测试/Web自动化测试之PageObject思想</title>
+    <url>/2019/11/21/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BPageObject%E6%80%9D%E6%83%B3/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>自动化测试/Web自动化测试之Selenium Webdriver入门</title>
-    <url>/2019/11/21/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BSelenium%20Webdriver%E5%85%A5%E9%97%A8/</url>
+    <title>软件测试/Web自动化测试之Selenium Webdriver入门</title>
+    <url>/2019/11/21/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BSelenium%20Webdriver%E5%85%A5%E9%97%A8/</url>
     <content><![CDATA[<h2 id="元素定位方法"><a href="#元素定位方法" class="headerlink" title="元素定位方法"></a>元素定位方法</h2><p><code>id</code>定位</p>
 <p><code>class</code>定位</p>
 ]]></content>
@@ -717,25 +905,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【SpringBoot】Spring Data JPA</title>
-    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.2.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>Spring Data JPA</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【SpringBoot】JWT实现用户认证与鉴权</title>
     <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/</url>
     <content><![CDATA[<blockquote>
@@ -823,6 +992,25 @@
       <tags>
         <tag>SpringBoot</tag>
         <tag>JWT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SpringBoot】Spring Data JPA</title>
+    <url>/2019/11/08/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.2.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>Spring Data JPA</tag>
       </tags>
   </entry>
   <entry>
@@ -1324,7 +1512,7 @@
   </entry>
   <entry>
     <title>【自动化测试】Android自动化测试环境搭建</title>
-    <url>/2019/11/07/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Android%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <url>/2019/11/07/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/Android%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<a id="more"></a>
 
 <ol>
@@ -1361,7 +1549,7 @@
   </entry>
   <entry>
     <title>【自动化测试】测试报告生成</title>
-    <url>/2019/11/07/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/</url>
+    <url>/2019/11/07/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/</url>
     <content><![CDATA[<p>这里汇集了使用到的所有测试报告生成方法。</p>
 <ul>
 <li>IDEA+Maven+TestNG+ReportNG 生成测试报告</li>
@@ -1451,6 +1639,20 @@
       </tags>
   </entry>
   <entry>
+    <title>【设计模式】建造者模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>Design Pattern</tag>
+        <tag>Builder Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【设计模式】单例模式</title>
     <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<blockquote>
@@ -1478,20 +1680,6 @@
       </categories>
   </entry>
   <entry>
-    <title>【设计模式】建造者模式</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>Design Pattern</tag>
-        <tag>Builder Pattern</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【设计模式】面向对象设计原则</title>
     <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</url>
     <content><![CDATA[<a id="more"></a>]]></content>
@@ -1501,20 +1689,6 @@
       <tags>
         <tag>Design Pattern</tag>
         <tag>Design Principles</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【设计模式】工厂方法模式</title>
-    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>设计模式</category>
-      </categories>
-      <tags>
-        <tag>Design Pattern</tag>
-        <tag>Factory Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -1561,6 +1735,20 @@
       </categories>
       <tags>
         <tag>Design Pattern</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【设计模式】工厂方法模式</title>
+    <url>/2019/11/07/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>设计模式</category>
+      </categories>
+      <tags>
+        <tag>Design Pattern</tag>
+        <tag>Factory Pattern</tag>
       </tags>
   </entry>
   <entry>
@@ -1770,6 +1958,40 @@
       </categories>
       <tags>
         <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MybatisPlus学习笔记</title>
+    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/MybatisPlus%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>Mybatis-Plus（简称MP）是一个Mybatis的增强工具包，只做增强不做改变，为简化开发工作、提高生产率而生。</p>
+<p>我们的愿景是成为Mybatis最好的搭档，就像魂斗罗中的1P、2P，基友搭配，效率翻倍。</p>
+<a id="more"></a>
+
+<h3 id="Mybatis-Plus简介"><a href="#Mybatis-Plus简介" class="headerlink" title="Mybatis-Plus简介"></a>Mybatis-Plus简介</h3><p>官方地址： <a href="https://mp.baomidou.com/" target="_blank" rel="noopener">https://mp.baomidou.com/</a> </p>
+<h4 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h4><ul>
+<li><strong>无侵入</strong>：只做增强不做改变，引入它不会对现有工程产生影响，如丝般顺滑</li>
+<li><strong>损耗小</strong>：启动即会自动注入基本 CURD，性能基本无损耗，直接面向对象操作</li>
+<li><strong>强大的 CRUD 操作</strong>：内置通用 Mapper、通用 Service，仅仅通过少量配置即可实现单表大部分 CRUD 操作，更有强大的条件构造器，满足各类使用需求</li>
+<li><strong>支持 Lambda 形式调用</strong>：通过 Lambda 表达式，方便的编写各类查询条件，无需再担心字段写错</li>
+<li><strong>支持主键自动生成</strong>：支持多达 4 种主键策略（内含分布式唯一 ID 生成器 - Sequence），可自由配置，完美解决主键问题</li>
+<li><strong>支持 ActiveRecord 模式</strong>：支持 ActiveRecord 形式调用，实体类只需继承 Model 类即可进行强大的 CRUD 操作</li>
+<li><strong>支持自定义全局通用操作</strong>：支持全局通用方法注入（ Write once, use anywhere ）</li>
+<li><strong>内置代码生成器</strong>：采用代码或者 Maven 插件可快速生成 Mapper 、 Model 、 Service 、 Controller 层代码，支持模板引擎，更有超多自定义配置等您来使用</li>
+<li><strong>内置分页插件</strong>：基于 MyBatis 物理分页，开发者无需关心具体操作，配置好插件之后，写分页等同于普通 List 查询</li>
+<li><strong>分页插件支持多种数据库</strong>：支持 MySQL、MariaDB、Oracle、DB2、H2、HSQL、SQLite、Postgre、SQLServer 等多种数据库</li>
+<li><strong>内置性能分析插件</strong>：可输出 Sql 语句以及其执行时间，建议开发测试时启用该功能，能快速揪出慢查询</li>
+<li><strong>内置全局拦截插件</strong>：提供全表 delete 、 update 操作智能分析阻断，也可自定义拦截规则，预防误操作</li>
+</ul>
+<h4 id="框架结构"><a href="#框架结构" class="headerlink" title="框架结构"></a>框架结构</h4><p> <img src="https://mybatis.plus/img/mybatis-plus-framework.jpg" alt="framework"> </p>
+<h3 id="SpringBoot集成Mybatis-Plus"><a href="#SpringBoot集成Mybatis-Plus" class="headerlink" title="SpringBoot集成Mybatis-Plus"></a>SpringBoot集成Mybatis-Plus</h3><h3 id="CRUD接口"><a href="#CRUD接口" class="headerlink" title="CRUD接口"></a>CRUD接口</h3><h4 id="Service-CRUD接口"><a href="#Service-CRUD接口" class="headerlink" title="Service CRUD接口"></a>Service CRUD接口</h4><h4 id="Mapper-CRUD接口"><a href="#Mapper-CRUD接口" class="headerlink" title="Mapper CRUD接口"></a>Mapper CRUD接口</h4><h3 id="条件构造器"><a href="#条件构造器" class="headerlink" title="条件构造器"></a>条件构造器</h3><h3 id="插件拓展"><a href="#插件拓展" class="headerlink" title="插件拓展"></a>插件拓展</h3><h4 id="mybatis插件机制"><a href="#mybatis插件机制" class="headerlink" title="mybatis插件机制"></a>mybatis插件机制</h4><h4 id="分页插件"><a href="#分页插件" class="headerlink" title="分页插件"></a>分页插件</h4><h4 id="逻辑删除"><a href="#逻辑删除" class="headerlink" title="逻辑删除"></a>逻辑删除</h4>]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>MybatisPlus</tag>
       </tags>
   </entry>
   <entry>
@@ -2325,6 +2547,20 @@
       </tags>
   </entry>
   <entry>
+    <title>Spring学习笔记</title>
+    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>Spring</category>
+      </categories>
+      <tags>
+        <tag>Spring</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【SpringBoot】集成Redis</title>
     <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E9%9B%86%E6%88%90Redis/</url>
     <content><![CDATA[<blockquote>
@@ -2638,6 +2874,117 @@
       <tags>
         <tag>JavaSE</tag>
         <tag>面试总结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MySQL学习总结</title>
+    <url>/2018/03/05/Java%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>本文主要是 MySQL 学习及使用过程中的总结，内容将随理解的不断加深优化。</p>
+<a id="more"></a>
+
+<h2 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h2><p><strong>MySQL(<a href="https://www.mysql.com)：开源的轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：开源的轻量级关系型数据库。</a></strong></p>
+<h3 id="基于Docker安装MySQL"><a href="#基于Docker安装MySQL" class="headerlink" title="基于Docker安装MySQL"></a>基于Docker安装MySQL</h3><ul>
+<li>拉取最新的 MySQL 镜像：<code>docker pull mysql</code></li>
+<li>启动镜像，映射端口、指定root密码并挂载日志、配置文件及数据</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">DB_HOME=/home/mysql</span><br><span class="line">DB_CONF_PATH=$DB_HOME/conf:/etc/mysql/conf.d</span><br><span class="line">DB_LOG_PATH=$DB_HOME/logs:/var/log/mysql</span><br><span class="line">DB_DATA_PATH=$DB_HOME/data:/var/lib/mysql</span><br><span class="line">docker run -p 3306:3306 --name mysql -v $DB_CONF_PATH -v $DB_LOG_PATH -v $DB_DATA_PATH -e MYSQL_ROOT_PASSWORD=toor -d mysql</span><br></pre></td></tr></table></figure>
+
+<h3 id="MySQL-Server逻辑架构介绍"><a href="#MySQL-Server逻辑架构介绍" class="headerlink" title="MySQL Server逻辑架构介绍"></a>MySQL Server逻辑架构介绍</h3><p>MySQL虽然经历了多个版本的迭代，但都是基于MySQL基础架构的。MySQL的基础架构大致包括以下几个模块组件：</p>
+<p><img src="/images/vwjjm1jgjc.png" alt="img"></p>
+<ul>
+<li><p><strong>连接层</strong>：提供向外的交互接口（Connectors)，如Java、python等语言可以通过该组件操作MySQL，实现与MySQL的交互</p>
+</li>
+<li><p><strong>服务层</strong>：</p>
+<ul>
+<li>管理服务组件和工具组件(Management Service &amp; Utilities) ：  提供对MySQL的集成管理，如备份(Backup),恢复(Recovery),安全管理(Security)等</li>
+<li>连接池组件(Connection Pool) ：负责监听对客户端向MySQL Server端的各种请求，接收请求，转发请求到目标模块</li>
+<li>SQL接口组件(SQL Interface) ：  接收用户SQL命令</li>
+<li>查询分析器组件(Parser) ：解析SQL命令</li>
+<li>优化器组件（Optimizer）：对SQL命令按照标准流程进行优化分析</li>
+<li>缓存主件（Caches &amp; Buffers） ： 缓存和缓冲组件 </li>
+</ul>
+</li>
+<li><p><strong>引擎层</strong>： 插件式存储引擎（Pluggable Storage Engines）</p>
+</li>
+<li><p><strong>存储层</strong>： 物理文件（File System） 和日志文件存储</p>
+</li>
+</ul>
+<h3 id="MySQL-存储引擎"><a href="#MySQL-存储引擎" class="headerlink" title="MySQL 存储引擎"></a>MySQL 存储引擎</h3><h3 id="索引-Index"><a href="#索引-Index" class="headerlink" title="索引(Index)"></a>索引(Index)</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><strong>MySQL官方对索引的定义：索引(Index)是帮助MySQL高效获取数据的数据结构。</strong></p>
+<p>可以简单理解为：<strong>排好序的快速查找数据结构</strong>。</p>
+<p>我们平时所说的索引，如果没有特别说明，都是指<strong>B树（多路搜索树）</strong>数据结构的索引，除了B+树索引外，当然也有<strong>哈希索引</strong>等。</p>
+<h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ul>
+<li>提高数据检索效率，降低数据库iO成本</li>
+<li>降低数据排序成本，降低CPU的消耗</li>
+</ul>
+<h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><ul>
+<li>建立索引后，查询速度变快，但更新（insert、update、delete）数据变慢。</li>
+<li>性能下降的原因很可能是索引失效导致。</li>
+<li>索引创建的原则，经常查询的字段适合创建索引，频繁需要更新的数据不适合创建索引。 </li>
+<li>索引字段频繁更新，或者表数据物理删除容易造成索引失效。 </li>
+</ul>
+<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><ul>
+<li><p><strong>单值索引</strong>：一个索引只包含单列，一个表可以有多个单值索引</p>
+</li>
+<li><p><strong>唯一索引</strong>：索引列的值必须唯一，但允许有空值</p>
+</li>
+<li><p><strong>复合索引</strong>：一个索引包含多列</p>
+</li>
+</ul>
+<h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建索引</span></span><br><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line"><span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span>  [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line">	<span class="comment">#主键</span></span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">ADD</span> PRIMARY <span class="keyword">KEY</span> (column_list);</span><br><span class="line">	<span class="comment">#唯一索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#普通索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#全文索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> FULLTEXT index_name (column_list);</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除索引</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">INDEX</span> [indexname] <span class="keyword">ON</span> mytable;</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看索引</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">INDEX</span> <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure>
+
+<h4 id="索引结构"><a href="#索引结构" class="headerlink" title="索引结构"></a>索引结构</h4><ul>
+<li><p><strong>BTree索引</strong></p>
+</li>
+<li><p>Hash索引</p>
+</li>
+<li><p>full-text全文索引</p>
+</li>
+<li><p>R-Tree索引</p>
+</li>
+</ul>
+<h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><h4 id="EXPALIN"><a href="#EXPALIN" class="headerlink" title="EXPALIN"></a>EXPALIN</h4><ol>
+<li>定义：</li>
+<li>作用：<ul>
+<li>表的读取顺序</li>
+<li>数据读取的操作类型</li>
+<li>那些索引可以使用</li>
+<li>那些索引被实际使用</li>
+<li>表之间的引用</li>
+<li>每张表有含多少行被优化器查询</li>
+</ul>
+</li>
+</ol>
+<p><strong>EXPLAIN</strong> 信息有10列，分别为：id、select_type、table、type、possible_keys、key、 key_len、ref、rows、Extra。</p>
+<p><img src="/images/image-20200223111307335.png" alt="image-20200223111307335"></p>
+<p>列名解释：</p>
+<p><strong>id：</strong>select 查询的序列号，包括一个数字，表示查询中执行select子句或操作表的顺序，值有三种：</p>
+<ul>
+<li>id相同，执行顺序由上至下；</li>
+<li>id不同，如果是子查询，id的序号会递增，id值越大优先级越高，越先被执行</li>
+<li>id相同不同，同时存在</li>
+</ul>
+<p><strong>select_type:</strong>查询的类型，用于区别普通查询，联合查询，子查询的复杂查询；</p>
+<p>取值有：SIMPLE、PRIMARY、SUBQUERY、 DERIVED、UNION、UNION RESULT。</p>
+<ul>
+<li><strong>SIMPLE</strong>：简单的查询，查询中不包括子查询或UNION</li>
+<li><strong>PRIMARY</strong>：查询中若包含任何复杂查询，最外层查询标记为<strong>PRIMARY</strong></li>
+<li><strong>SUBQUERY</strong>：在SELECT 或 WHERE 中包括子查询</li>
+<li><strong>DERIVED</strong>：在FROM 列表中包含的子查询被标记为衍生表（DERIVED)，MySQL会递归执行这些查询，把结果放到临时表里。</li>
+<li><strong>UNION</strong>：若第二个查询出现在UNION之后，则被标记为UNION</li>
+<li><strong>UNION RESULT</strong>：从UNION表获取结果的select</li>
+</ul>
+<p><strong>table</strong>：操作的数据表名</p>
+<p><strong>type</strong>：显示查询使用了哪种类型。</p>
+<p>从最好到最差依次是：<strong>system&gt;const&gt;eq_ref&gt;ref&gt;range&gt;index&gt;ALL</strong></p>
+<h3 id="查询截取分析"><a href="#查询截取分析" class="headerlink" title="查询截取分析"></a>查询截取分析</h3><h3 id="MySQL-锁机制"><a href="#MySQL-锁机制" class="headerlink" title="MySQL 锁机制"></a>MySQL 锁机制</h3><h3 id="主从复制"><a href="#主从复制" class="headerlink" title="主从复制"></a>主从复制</h3>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
@@ -3254,117 +3601,6 @@
         <tag>泛型</tag>
         <tag>网络编程</tag>
         <tag>反射</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL学习总结</title>
-    <url>/2018/03/05/Java%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>本文主要是 MySQL 学习及使用过程中的总结，内容将随理解的不断加深优化。</p>
-<a id="more"></a>
-
-<h2 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h2><p><strong>MySQL(<a href="https://www.mysql.com)：开源的轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：开源的轻量级关系型数据库。</a></strong></p>
-<h3 id="基于Docker安装MySQL"><a href="#基于Docker安装MySQL" class="headerlink" title="基于Docker安装MySQL"></a>基于Docker安装MySQL</h3><ul>
-<li>拉取最新的 MySQL 镜像：<code>docker pull mysql</code></li>
-<li>启动镜像，映射端口、指定root密码并挂载日志、配置文件及数据</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">DB_HOME=/home/mysql</span><br><span class="line">DB_CONF_PATH=$DB_HOME/conf:/etc/mysql/conf.d</span><br><span class="line">DB_LOG_PATH=$DB_HOME/logs:/var/log/mysql</span><br><span class="line">DB_DATA_PATH=$DB_HOME/data:/var/lib/mysql</span><br><span class="line">docker run -p 3306:3306 --name mysql -v $DB_CONF_PATH -v $DB_LOG_PATH -v $DB_DATA_PATH -e MYSQL_ROOT_PASSWORD=toor -d mysql</span><br></pre></td></tr></table></figure>
-
-<h3 id="MySQL-Server逻辑架构介绍"><a href="#MySQL-Server逻辑架构介绍" class="headerlink" title="MySQL Server逻辑架构介绍"></a>MySQL Server逻辑架构介绍</h3><p>MySQL虽然经历了多个版本的迭代，但都是基于MySQL基础架构的。MySQL的基础架构大致包括以下几个模块组件：</p>
-<p><img src="/images/vwjjm1jgjc.png" alt="img"></p>
-<ul>
-<li><p><strong>连接层</strong>：提供向外的交互接口（Connectors)，如Java、python等语言可以通过该组件操作MySQL，实现与MySQL的交互</p>
-</li>
-<li><p><strong>服务层</strong>：</p>
-<ul>
-<li>管理服务组件和工具组件(Management Service &amp; Utilities) ：  提供对MySQL的集成管理，如备份(Backup),恢复(Recovery),安全管理(Security)等</li>
-<li>连接池组件(Connection Pool) ：负责监听对客户端向MySQL Server端的各种请求，接收请求，转发请求到目标模块</li>
-<li>SQL接口组件(SQL Interface) ：  接收用户SQL命令</li>
-<li>查询分析器组件(Parser) ：解析SQL命令</li>
-<li>优化器组件（Optimizer）：对SQL命令按照标准流程进行优化分析</li>
-<li>缓存主件（Caches &amp; Buffers） ： 缓存和缓冲组件 </li>
-</ul>
-</li>
-<li><p><strong>引擎层</strong>： 插件式存储引擎（Pluggable Storage Engines）</p>
-</li>
-<li><p><strong>存储层</strong>： 物理文件（File System） 和日志文件存储</p>
-</li>
-</ul>
-<h3 id="MySQL-存储引擎"><a href="#MySQL-存储引擎" class="headerlink" title="MySQL 存储引擎"></a>MySQL 存储引擎</h3><h3 id="索引-Index"><a href="#索引-Index" class="headerlink" title="索引(Index)"></a>索引(Index)</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><strong>MySQL官方对索引的定义：索引(Index)是帮助MySQL高效获取数据的数据结构。</strong></p>
-<p>可以简单理解为：<strong>排好序的快速查找数据结构</strong>。</p>
-<p>我们平时所说的索引，如果没有特别说明，都是指<strong>B树（多路搜索树）</strong>数据结构的索引，除了B+树索引外，当然也有<strong>哈希索引</strong>等。</p>
-<h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ul>
-<li>提高数据检索效率，降低数据库iO成本</li>
-<li>降低数据排序成本，降低CPU的消耗</li>
-</ul>
-<h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><ul>
-<li>建立索引后，查询速度变快，但更新（insert、update、delete）数据变慢。</li>
-<li>性能下降的原因很可能是索引失效导致。</li>
-<li>索引创建的原则，经常查询的字段适合创建索引，频繁需要更新的数据不适合创建索引。 </li>
-<li>索引字段频繁更新，或者表数据物理删除容易造成索引失效。 </li>
-</ul>
-<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><ul>
-<li><p><strong>单值索引</strong>：一个索引只包含单列，一个表可以有多个单值索引</p>
-</li>
-<li><p><strong>唯一索引</strong>：索引列的值必须唯一，但允许有空值</p>
-</li>
-<li><p><strong>复合索引</strong>：一个索引包含多列</p>
-</li>
-</ul>
-<h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建索引</span></span><br><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line"><span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span>  [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line">	<span class="comment">#主键</span></span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">ADD</span> PRIMARY <span class="keyword">KEY</span> (column_list);</span><br><span class="line">	<span class="comment">#唯一索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#普通索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#全文索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> FULLTEXT index_name (column_list);</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除索引</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">INDEX</span> [indexname] <span class="keyword">ON</span> mytable;</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看索引</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">INDEX</span> <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure>
-
-<h4 id="索引结构"><a href="#索引结构" class="headerlink" title="索引结构"></a>索引结构</h4><ul>
-<li><p><strong>BTree索引</strong></p>
-</li>
-<li><p>Hash索引</p>
-</li>
-<li><p>full-text全文索引</p>
-</li>
-<li><p>R-Tree索引</p>
-</li>
-</ul>
-<h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><h4 id="EXPALIN"><a href="#EXPALIN" class="headerlink" title="EXPALIN"></a>EXPALIN</h4><ol>
-<li>定义：</li>
-<li>作用：<ul>
-<li>表的读取顺序</li>
-<li>数据读取的操作类型</li>
-<li>那些索引可以使用</li>
-<li>那些索引被实际使用</li>
-<li>表之间的引用</li>
-<li>每张表有含多少行被优化器查询</li>
-</ul>
-</li>
-</ol>
-<p><strong>EXPLAIN</strong> 信息有10列，分别为：id、select_type、table、type、possible_keys、key、 key_len、ref、rows、Extra。</p>
-<p><img src="/images/image-20200223111307335.png" alt="image-20200223111307335"></p>
-<p>列名解释：</p>
-<p><strong>id：</strong>select 查询的序列号，包括一个数字，表示查询中执行select子句或操作表的顺序，值有三种：</p>
-<ul>
-<li>id相同，执行顺序由上至下；</li>
-<li>id不同，如果是子查询，id的序号会递增，id值越大优先级越高，越先被执行</li>
-<li>id相同不同，同时存在</li>
-</ul>
-<p><strong>select_type:</strong>查询的类型，用于区别普通查询，联合查询，子查询的复杂查询；</p>
-<p>取值有：SIMPLE、PRIMARY、SUBQUERY、 DERIVED、UNION、UNION RESULT。</p>
-<ul>
-<li><strong>SIMPLE</strong>：简单的查询，查询中不包括子查询或UNION</li>
-<li><strong>PRIMARY</strong>：查询中若包含任何复杂查询，最外层查询标记为<strong>PRIMARY</strong></li>
-<li><strong>SUBQUERY</strong>：在SELECT 或 WHERE 中包括子查询</li>
-<li><strong>DERIVED</strong>：在FROM 列表中包含的子查询被标记为衍生表（DERIVED)，MySQL会递归执行这些查询，把结果放到临时表里。</li>
-<li><strong>UNION</strong>：若第二个查询出现在UNION之后，则被标记为UNION</li>
-<li><strong>UNION RESULT</strong>：从UNION表获取结果的select</li>
-</ul>
-<p><strong>table</strong>：操作的数据表名</p>
-<p><strong>type</strong>：显示查询使用了哪种类型。</p>
-<p>从最好到最差依次是：<strong>system&gt;const&gt;eq_ref&gt;ref&gt;range&gt;index&gt;ALL</strong></p>
-<h3 id="查询截取分析"><a href="#查询截取分析" class="headerlink" title="查询截取分析"></a>查询截取分析</h3><h3 id="MySQL-锁机制"><a href="#MySQL-锁机制" class="headerlink" title="MySQL 锁机制"></a>MySQL 锁机制</h3><h3 id="主从复制"><a href="#主从复制" class="headerlink" title="主从复制"></a>主从复制</h3>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
