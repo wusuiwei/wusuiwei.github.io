@@ -69,28 +69,6 @@
   </entry>
   
   <entry>
-    <title>Java笔记/SpringBoot学习笔记</title>
-    <link href="http://wusuiwei.github.io/2020/03/08/Java%E7%AC%94%E8%AE%B0/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://wusuiwei.github.io/2020/03/08/Java笔记/SpringBoot学习笔记/</id>
-    <published>2020-03-08T14:43:26.153Z</published>
-    <updated>2020-03-08T14:53:47.894Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="SpringBoot-与-数据访问"><a href="#SpringBoot-与-数据访问" class="headerlink" title="SpringBoot 与 数据访问"></a>SpringBoot 与 数据访问</h3><h4 id="集成JDBC"><a href="#集成JDBC" class="headerlink" title="集成JDBC"></a>集成JDBC</h4>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;SpringBoot-与-数据访问&quot;&gt;&lt;a href=&quot;#SpringBoot-与-数据访问&quot; class=&quot;headerlink&quot; title=&quot;SpringBoot 与 数据访问&quot;&gt;&lt;/a&gt;SpringBoot 与 数据访问&lt;/h3&gt;&lt;h4 id=&quot;集成JDB
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Java笔记/SpringCloud学习笔记</title>
     <link href="http://wusuiwei.github.io/2020/03/08/Java%E7%AC%94%E8%AE%B0/SpringCloud%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://wusuiwei.github.io/2020/03/08/Java笔记/SpringCloud学习笔记/</id>
@@ -403,6 +381,35 @@
     </summary>
     
     
+    
+  </entry>
+  
+  <entry>
+    <title>【Linux】虚拟化技术</title>
+    <link href="http://wusuiwei.github.io/2019/12/23/Java%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/"/>
+    <id>http://wusuiwei.github.io/2019/12/23/Java笔记/【Linux】虚拟化技术/</id>
+    <published>2019-12-23T02:06:04.000Z</published>
+    <updated>2020-01-08T01:39:24.060Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><a id="more"></a><h2 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h2><p><strong>定义</strong>： 通过<strong>虚拟化</strong>技术将一台计算机<strong>虚拟</strong>为多台逻辑计算机。 在一台计算机上同时运行多个逻辑计算机，每个逻辑计算机可运行不同的操作系统，并且应用程序都可以在相互独立的空间内运行而互不影响，从而显著提高计算机的工作效率。 </p><p><strong>优势</strong>：</p><p><strong>劣势</strong>：</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://wusuiwei.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://wusuiwei.github.io/tags/Linux/"/>
+    
+      <category term="虚拟化技术" scheme="http://wusuiwei.github.io/tags/%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="Docker" scheme="http://wusuiwei.github.io/tags/Docker/"/>
     
   </entry>
   
