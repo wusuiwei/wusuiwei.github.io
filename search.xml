@@ -385,8 +385,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title>Java笔记/Spring Cloud 笔记之 Ribbon</title>
-    <url>/2020/01/17/Java%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Ribbon/</url>
+    <title>Java笔记/【SpringCloud】Eureka</title>
+    <url>/2020/01/17/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringCloud%E3%80%91Eureka/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -395,55 +395,9 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Java笔记/【SpringCloud】Eureka</title>
-    <url>/2020/01/17/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringCloud%E3%80%91Eureka/</url>
+    <title>Java笔记/Spring Cloud 笔记之 Ribbon</title>
+    <url>/2020/01/17/Java%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Ribbon/</url>
     <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>Java笔记/【Docker】常用操作总结</title>
-    <url>/2020/01/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Docker%E3%80%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h2 id="Docker-概要"><a href="#Docker-概要" class="headerlink" title="Docker 概要"></a>Docker 概要</h2><p>官网： <a href="https://www.docker.com/" target="_blank" rel="noopener">https://www.docker.com/</a> </p>
-<p>官方中文文档： <a href="https://docker-doc.readthedocs.io/zh_CN/latest/index.html" target="_blank" rel="noopener">https://docker-doc.readthedocs.io/zh_CN/latest/index.html</a> </p>
-<h3 id="理念"><a href="#理念" class="headerlink" title="理念"></a>理念</h3><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>这里以CentOS 7安装过程为例，其他系统安装过程可参考官方文档。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 移除旧版本</span></span><br><span class="line">sudo yum remove docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-engine</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装一些docker安装必备的工具</span></span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">添加软件源信息（阿里云）</span></span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装docker</span></span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">启动 docker 后台服务</span></span><br><span class="line">sudo systemctl start docker</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">卸载docker-ce</span></span><br><span class="line"><span class="meta">#</span><span class="bash">卸载docker软件包（不会删除镜像、容器、卷及其他配置文件）</span></span><br><span class="line">sudo yum remove docker-ce</span><br><span class="line"><span class="meta">#</span><span class="bash">删除镜像、容器、卷及其他配置文件</span></span><br><span class="line">sudo rm -rf /var/lib/docker</span><br></pre></td></tr></table></figure>
-
-<h2 id="Docker-常用命令"><a href="#Docker-常用命令" class="headerlink" title="Docker 常用命令"></a>Docker 常用命令</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 镜像操作相关</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 检索镜像（从 https://hub.docker.com 检索）</span></span><br><span class="line">docker search mysql #OFFICIAL表示官方发行版本</span><br><span class="line"><span class="meta">#</span><span class="bash"> 拉取镜像:dockerpull 镜像名:tag</span></span><br><span class="line">docker pull mysql #拉取latest的mysql镜像</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地镜像</span></span><br><span class="line">docker images</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除镜像:docker rmi image-id</span></span><br><span class="line">docker rmi 29e0a</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 容器操作相关</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 运行容器：docker run --name container-name:tag -d image-name -p 8080:8090</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> -d:表示后台运行容器</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> -p:端口映射，docker容器默认与外界是隔绝的，需要进行端口映射才能访问</span></span><br><span class="line">docker run --name myTomcat -d tomcat:8.5.32 -p 8090:8080</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看容器</span></span><br><span class="line">docker ps #查看所有运行中的容器</span><br><span class="line">docker ps -a #查看所有容器</span><br><span class="line"><span class="meta">#</span><span class="bash"> 停止运行容器:docker stop container-id</span></span><br><span class="line">docker stop 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动容器</span></span><br><span class="line">docker start 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除容器</span></span><br><span class="line">docker rm 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 容器日志：docker logs container-name/container-id</span></span><br><span class="line">docker logs myTtomcat1</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 仓库操作相关</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Docker-数据管理"><a href="#Docker-数据管理" class="headerlink" title="Docker 数据管理"></a>Docker 数据管理</h2><p> <img src="../../images/types-of-mounts.png" alt="img"> </p>
-<h2 id="DockerFile"><a href="#DockerFile" class="headerlink" title="DockerFile"></a>DockerFile</h2><h3 id="DockerFile的指令详解"><a href="#DockerFile的指令详解" class="headerlink" title="DockerFile的指令详解"></a>DockerFile的指令详解</h3><p><code>FROM</code>：基础镜像</p>
-<p><code>MAINTAINER</code>：</p>
-<p><code>RUN</code>：</p>
-<p><code>EXPOSE</code>：</p>
-<p><code>WORKDIR</code>:</p>
-<p><code>ENV</code>：</p>
-<p><code>ADD</code>：</p>
-<p><code>COPY</code>：</p>
-<p><code>VOLUME</code>：</p>
-<p><code>CMD</code>：</p>
-<p><code>ENTRYPOINT</code>：</p>
-<p><code>ONBUILD</code>：</p>
-<h2 id="常用镜像"><a href="#常用镜像" class="headerlink" title="常用镜像"></a>常用镜像</h2><h3 id="Docker安装MySQL"><a href="#Docker安装MySQL" class="headerlink" title="Docker安装MySQL"></a>Docker安装MySQL</h3><h3 id="Docker安装Redis"><a href="#Docker安装Redis" class="headerlink" title="Docker安装Redis"></a>Docker安装Redis</h3><h3 id="IDEA下Docker一键部署-CentOS-7"><a href="#IDEA下Docker一键部署-CentOS-7" class="headerlink" title="IDEA下Docker一键部署(CentOS 7)"></a>IDEA下Docker一键部署(CentOS 7)</h3><h4 id="开启Docker远程连接端口"><a href="#开启Docker远程连接端口" class="headerlink" title="开启Docker远程连接端口"></a>开启Docker远程连接端口</h4><ol>
-<li>修改<code>/lib/systemd/system/docker.service</code>文件中<code>ExecStart</code>开头的行：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ExecStart=/usr/bin/dockerd   -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>重新加载并启动docker</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>添加端口到服务器，并重启防火墙</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo  firewall-cmd --zone=public --add-port=2375/tcp --permanent</span><br><span class="line"><span class="meta">#</span><span class="bash">--zone <span class="comment">#作用域</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">--add-port=2375/tcp  <span class="comment">#添加端口，格式为：端口/通讯协议</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">--permanent  <span class="comment">#永久生效，没有此参数重启后失效</span></span></span><br><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>校验结果：</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl http://localhost:2375/version</span><br><span class="line"><span class="meta">#</span><span class="bash"> 本地虚拟机地址：curl http://192.168.159.128:2375/version</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="IDEA连接Docker"><a href="#IDEA连接Docker" class="headerlink" title="IDEA连接Docker"></a>IDEA连接Docker</h4><p><img src="../../images/image-20200328001250738.png" alt="image-20200328001250738"></p>
-<h4 id="IDEA一键部署SpringBoot项目"><a href="#IDEA一键部署SpringBoot项目" class="headerlink" title="IDEA一键部署SpringBoot项目"></a>IDEA一键部署SpringBoot项目</h4>]]></content>
   </entry>
   <entry>
     <title>项目笔记/hydrogen-master/【Hydrogen】团队维护</title>
@@ -2000,6 +1954,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Spring Boot 笔记之 缓存</title>
+    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20%E7%BC%93%E5%AD%98/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="JSR107"><a href="#JSR107" class="headerlink" title="JSR107"></a>JSR107</h3><h3 id="Spring-缓存原理"><a href="#Spring-缓存原理" class="headerlink" title="Spring 缓存原理"></a>Spring 缓存原理</h3>]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>Spring Boot</tag>
+        <tag>缓存</tag>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Redis 学习总结</title>
     <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/Redis%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
@@ -2517,24 +2489,6 @@
   </entry>
   <entry>
     <title>Spring Boot 笔记之 缓存</title>
-    <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20%E7%BC%93%E5%AD%98/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="JSR107"><a href="#JSR107" class="headerlink" title="JSR107"></a>JSR107</h3><h3 id="Spring-缓存原理"><a href="#Spring-缓存原理" class="headerlink" title="Spring 缓存原理"></a>Spring 缓存原理</h3>]]></content>
-      <categories>
-        <category>Spring Boot</category>
-      </categories>
-      <tags>
-        <tag>Spring Boot</tag>
-        <tag>缓存</tag>
-        <tag>redis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring Boot 笔记之 缓存</title>
     <url>/2018/06/15/Java%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%20/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
@@ -2703,8 +2657,8 @@
         <category>项目笔记</category>
       </categories>
       <tags>
-        <tag>MySQL</tag>
         <tag>Linux</tag>
+        <tag>MySQL</tag>
         <tag>Docker</tag>
         <tag>SpringBoot</tag>
         <tag>IDEA</tag>
@@ -2717,6 +2671,84 @@
         <tag>Logstash</tag>
         <tag>Kibana</tag>
         <tag>Dubbo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【面试题】JavaSE面试总结</title>
+    <url>/2018/05/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Docker%E3%80%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>当下微服务架构盛行，随之而来的还有虚拟化技术Docker的普及，日常工作中经常需要使用docker，所以对docker需要进行简单的了解，本文主要描述docker的基本架构、基本使用、Dockerfile的编写及项目中docker的使用。</p>
+<a id="more"></a>
+
+<h3 id="Docker-简介"><a href="#Docker-简介" class="headerlink" title="Docker 简介"></a>Docker 简介</h3><p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
+<h4 id="Docker-架构"><a href="#Docker-架构" class="headerlink" title="Docker 架构"></a>Docker 架构</h4><p>Docker使用了C/S体系架构，Docker客户端与Docker守护进程通信，Docker守护进程负责构建，运行和分发Docker容器。Docker客户端和守护进程可以在同一个系统上运行，也可以将Docker客户端连接到远程Docker守护进程。Docker客户端和守护进程使用REST API通过UNIX套接字或网络接口进行通信。<br><img src="../../images/image-20200331165743372.png" alt="image-20200331165743372"></p>
+<h4 id="Docker-基本组成"><a href="#Docker-基本组成" class="headerlink" title="Docker 基本组成"></a>Docker 基本组成</h4><h5 id="Docker-镜像（Docker-Images）"><a href="#Docker-镜像（Docker-Images）" class="headerlink" title="Docker 镜像（Docker Images）"></a>Docker 镜像（Docker Images）</h5><p> <strong>Docker 镜像（Image）</strong>，就相当于是一个 root 文件系统。比如官方镜像 ubuntu:16.04 就包含了完整的一套 Ubuntu16.04 最小系统的 root 文件系统。 </p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">检索镜像（从 https://hub.docker.com 检索）</span></span><br><span class="line">docker search mysql #OFFICIAL表示官方发行版本</span><br><span class="line"><span class="meta">#</span><span class="bash">拉取镜像:dockerpull 镜像名:tag</span></span><br><span class="line">docker pull mysql #拉取latest的mysql镜像</span><br><span class="line"><span class="meta">#</span><span class="bash">查看本地镜像</span></span><br><span class="line">docker images</span><br><span class="line"><span class="meta">#</span><span class="bash">删除镜像:docker rmi image-id</span></span><br><span class="line">docker rmi 29e0a</span><br></pre></td></tr></table></figure>
+
+<h5 id="Docker-容器（Docker-Containers）"><a href="#Docker-容器（Docker-Containers）" class="headerlink" title="Docker 容器（Docker Containers）"></a>Docker 容器（Docker Containers）</h5><p> <strong>镜像（Image）</strong>和<strong>容器（Container）</strong>的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。 </p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 运行容器：docker run --name container-name:tag -d image-name -p 8080:8090</span></span><br><span class="line"><span class="meta">#</span><span class="bash">-d:表示后台运行容器</span></span><br><span class="line"><span class="meta">#</span><span class="bash">-p:端口映射，docker容器默认与外界是隔绝的，需要进行端口映射才能访问</span></span><br><span class="line">docker run --name myTomcat -d tomcat:8.5.32 -p 8090:8080</span><br><span class="line"><span class="meta">#</span><span class="bash">查看容器</span></span><br><span class="line">docker ps #查看所有运行中的容器</span><br><span class="line">docker ps -a #查看所有容器</span><br><span class="line"><span class="meta">#</span><span class="bash">停止运行容器:docker stop container-id</span></span><br><span class="line">docker stop 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash">启动容器</span></span><br><span class="line">docker start 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash">删除容器</span></span><br><span class="line">docker rm 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash">容器日志：docker logs container-name/container-id</span></span><br><span class="line">docker logs myTtomcat1</span><br></pre></td></tr></table></figure>
+
+<h5 id="Docker-仓库（Docker-Repository）"><a href="#Docker-仓库（Docker-Repository）" class="headerlink" title="Docker 仓库（Docker Repository）"></a>Docker 仓库（Docker Repository）</h5><p> <strong>仓库（Repository）</strong>可看着一个代码控制中心，用来保存镜像。 可以分为公有仓库和私有仓库。</p>
+<h4 id="Docker安装（CentOS7）"><a href="#Docker安装（CentOS7）" class="headerlink" title="Docker安装（CentOS7）"></a>Docker安装（CentOS7）</h4><p>官方地址： <a href="https://docs.docker.com/install/linux/docker-ce/centos/" target="_blank" rel="noopener">https://docs.docker.com/install/linux/docker-ce/centos/</a> </p>
+<h5 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
+
+<h5 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<h5 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h5><ul>
+<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
+<li>重启docker：<code>sudo systemctl restart docker</code></li>
+</ul>
+<h3 id="DockerFile"><a href="#DockerFile" class="headerlink" title="DockerFile"></a>DockerFile</h3><h4 id="DockerFile的指令详解"><a href="#DockerFile的指令详解" class="headerlink" title="DockerFile的指令详解"></a>DockerFile的指令详解</h4><p><code>FROM</code>：基础镜像</p>
+<p><code>MAINTAINER</code>：</p>
+<p><code>RUN</code>：</p>
+<p><code>EXPOSE</code>：</p>
+<p><code>WORKDIR</code>:</p>
+<p><code>ENV</code>：</p>
+<p><code>ADD</code>：</p>
+<p><code>COPY</code>：</p>
+<p><code>VOLUME</code>：</p>
+<p><code>CMD</code>：</p>
+<p><code>ENTRYPOINT</code>：</p>
+<p><code>ONBUILD</code>：</p>
+<h4 id="DockerFile编写实例"><a href="#DockerFile编写实例" class="headerlink" title="DockerFile编写实例"></a>DockerFile编写实例</h4><p>需求：</p>
+<p>Dockerfile：</p>
+<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="常用镜像"><a href="#常用镜像" class="headerlink" title="常用镜像"></a>常用镜像</h3><h4 id="Docker安装MySQL"><a href="#Docker安装MySQL" class="headerlink" title="Docker安装MySQL"></a>Docker安装MySQL</h4><h4 id="Docker安装Redis"><a href="#Docker安装Redis" class="headerlink" title="Docker安装Redis"></a>Docker安装Redis</h4><h4 id="Docker安装Zookeeper"><a href="#Docker安装Zookeeper" class="headerlink" title="Docker安装Zookeeper"></a>Docker安装Zookeeper</h4><h3 id="IDEA下Docker部署SpringBoot项目"><a href="#IDEA下Docker部署SpringBoot项目" class="headerlink" title="IDEA下Docker部署SpringBoot项目"></a>IDEA下Docker部署SpringBoot项目</h3><h4 id="开启Docker远程连接端口"><a href="#开启Docker远程连接端口" class="headerlink" title="开启Docker远程连接端口"></a>开启Docker远程连接端口</h4><ol>
+<li>修改<code>/lib/systemd/system/docker.service</code>文件中<code>ExecStart</code>开头的行：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ExecStart=/usr/bin/dockerd   -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>重新加载并启动docker</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl daemon-reloadsystemctl start docker</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>添加端口到服务器，并重启防火墙</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo  firewall-cmd --zone=public --add-port=2375/tcp --permanent</span><br><span class="line">#--zone #作用域</span><br><span class="line">#--add-port=2375/tcp  #添加端口，格式为：端口/通讯协议</span><br><span class="line">#--permanent  #永久生效，没有此参数重启后失效</span><br><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>校验结果：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl http://localhost:2375/version# 本地虚拟机地址：curl http://192.168.159.128:2375/version</span><br></pre></td></tr></table></figure>
+
+<h4 id="IDEA连接Docker"><a href="#IDEA连接Docker" class="headerlink" title="IDEA连接Docker"></a>IDEA连接Docker</h4><p><img src="../../images/image-20200331175746687.png" alt="image-20200331175746687"></p>
+<h4 id="一键部署SpringBoot项目"><a href="#一键部署SpringBoot项目" class="headerlink" title="一键部署SpringBoot项目"></a>一键部署SpringBoot项目</h4>]]></content>
+      <categories>
+        <category>JavaSE</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>面试总结</tag>
       </tags>
   </entry>
   <entry>
@@ -3708,6 +3740,57 @@
       </categories>
       <tags>
         <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Linux下安装maven</title>
+    <url>/2018/03/03/Java%E7%AC%94%E8%AE%B0/Linux%E5%AE%89%E8%A3%85Maven/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>最近项目中使用到了maven，需要在服务器端安装一个maven。</p>
+<a id="more"></a>
+
+<p>maven官网： <a href="http://maven.apache.org" target="_blank" rel="noopener">http://maven.apache.org</a></p>
+<p>下载地址：<a href="https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz" target="_blank" rel="noopener">https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</a></p>
+<p>安装步骤：</p>
+<ol>
+<li>下载</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>解压</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar zxvf apache-maven-3.6.1-bin.tar.gz -C /opt/</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>环境变量配置</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+
+<p>在文件后面添加一下信息：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export M2_HOME=/opt/apache-maven-3.6.1</span><br><span class="line">export PATH=$PATH:$M2_HOME/bin</span><br></pre></td></tr></table></figure>
+
+<p>让配置文件生效：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>验证</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mvn -version</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>配置文件详解</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag"><span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 存放本地仓库的地方 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>/opt/apache-maven-3.6.3/repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br><span class="line">  	</span><br><span class="line">	<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>spring<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/spring<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云中央仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/central<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云apache仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/apache<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 一些自定义配置 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">profiles</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>myProfile<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 激活这个配置 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">activeByDefault</span>&gt;</span>true<span class="tag">&lt;/<span class="name">activeByDefault</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">jdk</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">activation</span>&gt;</span></span><br><span class="line"></span><br><span class="line">			<span class="comment">&lt;!-- 全局属性配置，让所有 maven 项目新建时默认都是 java8、UTF-8 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">jdk.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk.version</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Maven</tag>
       </tags>
   </entry>
   <entry>

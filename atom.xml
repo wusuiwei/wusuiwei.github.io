@@ -291,11 +291,11 @@
   </entry>
   
   <entry>
-    <title>Java笔记/Spring Cloud 笔记之 Ribbon</title>
-    <link href="http://wusuiwei.github.io/2020/01/17/Java%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Ribbon/"/>
-    <id>http://wusuiwei.github.io/2020/01/17/Java笔记/Spring Cloud 笔记之 Ribbon/</id>
+    <title>Java笔记/【SpringCloud】Eureka</title>
+    <link href="http://wusuiwei.github.io/2020/01/17/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringCloud%E3%80%91Eureka/"/>
+    <id>http://wusuiwei.github.io/2020/01/17/Java笔记/【SpringCloud】Eureka/</id>
     <published>2020-01-17T08:35:25.505Z</published>
-    <updated>2020-01-17T08:38:00.621Z</updated>
+    <updated>2020-01-17T08:35:25.505Z</updated>
     
     <summary type="html">
     
@@ -321,35 +321,13 @@
   </entry>
   
   <entry>
-    <title>Java笔记/【SpringCloud】Eureka</title>
-    <link href="http://wusuiwei.github.io/2020/01/17/Java%E7%AC%94%E8%AE%B0/%E3%80%90SpringCloud%E3%80%91Eureka/"/>
-    <id>http://wusuiwei.github.io/2020/01/17/Java笔记/【SpringCloud】Eureka/</id>
+    <title>Java笔记/Spring Cloud 笔记之 Ribbon</title>
+    <link href="http://wusuiwei.github.io/2020/01/17/Java%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Ribbon/"/>
+    <id>http://wusuiwei.github.io/2020/01/17/Java笔记/Spring Cloud 笔记之 Ribbon/</id>
     <published>2020-01-17T08:35:25.505Z</published>
-    <updated>2020-01-17T08:35:25.505Z</updated>
+    <updated>2020-01-17T08:38:00.621Z</updated>
     
     <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Java笔记/【Docker】常用操作总结</title>
-    <link href="http://wusuiwei.github.io/2020/01/07/Java%E7%AC%94%E8%AE%B0/%E3%80%90Docker%E3%80%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%93/"/>
-    <id>http://wusuiwei.github.io/2020/01/07/Java笔记/【Docker】常用操作总结/</id>
-    <published>2020-01-07T08:22:55.247Z</published>
-    <updated>2020-03-27T16:13:31.419Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Docker-概要"><a href="#Docker-概要" class="headerlink" title="Docker 概要"></a>Docker 概要</h2><p>官网： <a href="https://www.docker.com/" target="_blank" rel="noopener">https://www.docker.com/</a> </p><p>官方中文文档： <a href="https://docker-doc.readthedocs.io/zh_CN/latest/index.html" target="_blank" rel="noopener">https://docker-doc.readthedocs.io/zh_CN/latest/index.html</a> </p><h3 id="理念"><a href="#理念" class="headerlink" title="理念"></a>理念</h3><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>这里以CentOS 7安装过程为例，其他系统安装过程可参考官方文档。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 移除旧版本</span></span><br><span class="line">sudo yum remove docker \</span><br><span class="line">                  docker-client \</span><br><span class="line">                  docker-client-latest \</span><br><span class="line">                  docker-common \</span><br><span class="line">                  docker-latest \</span><br><span class="line">                  docker-latest-logrotate \</span><br><span class="line">                  docker-logrotate \</span><br><span class="line">                  docker-engine</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装一些docker安装必备的工具</span></span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">添加软件源信息（阿里云）</span></span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">安装docker</span></span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">启动 docker 后台服务</span></span><br><span class="line">sudo systemctl start docker</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">卸载docker-ce</span></span><br><span class="line"><span class="meta">#</span><span class="bash">卸载docker软件包（不会删除镜像、容器、卷及其他配置文件）</span></span><br><span class="line">sudo yum remove docker-ce</span><br><span class="line"><span class="meta">#</span><span class="bash">删除镜像、容器、卷及其他配置文件</span></span><br><span class="line">sudo rm -rf /var/lib/docker</span><br></pre></td></tr></table></figure><h2 id="Docker-常用命令"><a href="#Docker-常用命令" class="headerlink" title="Docker 常用命令"></a>Docker 常用命令</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 镜像操作相关</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 检索镜像（从 https://hub.docker.com 检索）</span></span><br><span class="line">docker search mysql #OFFICIAL表示官方发行版本</span><br><span class="line"><span class="meta">#</span><span class="bash"> 拉取镜像:dockerpull 镜像名:tag</span></span><br><span class="line">docker pull mysql #拉取latest的mysql镜像</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看本地镜像</span></span><br><span class="line">docker images</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除镜像:docker rmi image-id</span></span><br><span class="line">docker rmi 29e0a</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 容器操作相关</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 运行容器：docker run --name container-name:tag -d image-name -p 8080:8090</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> -d:表示后台运行容器</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> -p:端口映射，docker容器默认与外界是隔绝的，需要进行端口映射才能访问</span></span><br><span class="line">docker run --name myTomcat -d tomcat:8.5.32 -p 8090:8080</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看容器</span></span><br><span class="line">docker ps #查看所有运行中的容器</span><br><span class="line">docker ps -a #查看所有容器</span><br><span class="line"><span class="meta">#</span><span class="bash"> 停止运行容器:docker stop container-id</span></span><br><span class="line">docker stop 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 启动容器</span></span><br><span class="line">docker start 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除容器</span></span><br><span class="line">docker rm 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash"> 容器日志：docker logs container-name/container-id</span></span><br><span class="line">docker logs myTtomcat1</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 仓库操作相关</span></span><br></pre></td></tr></table></figure><h2 id="Docker-数据管理"><a href="#Docker-数据管理" class="headerlink" title="Docker 数据管理"></a>Docker 数据管理</h2><p> <img src="../../images/types-of-mounts.png" alt="img"> </p><h2 id="DockerFile"><a href="#DockerFile" class="headerlink" title="DockerFile"></a>DockerFile</h2><h3 id="DockerFile的指令详解"><a href="#DockerFile的指令详解" class="headerlink" title="DockerFile的指令详解"></a>DockerFile的指令详解</h3><p><code>FROM</code>：基础镜像</p><p><code>MAINTAINER</code>：</p><p><code>RUN</code>：</p><p><code>EXPOSE</code>：</p><p><code>WORKDIR</code>:</p><p><code>ENV</code>：</p><p><code>ADD</code>：</p><p><code>COPY</code>：</p><p><code>VOLUME</code>：</p><p><code>CMD</code>：</p><p><code>ENTRYPOINT</code>：</p><p><code>ONBUILD</code>：</p><h2 id="常用镜像"><a href="#常用镜像" class="headerlink" title="常用镜像"></a>常用镜像</h2><h3 id="Docker安装MySQL"><a href="#Docker安装MySQL" class="headerlink" title="Docker安装MySQL"></a>Docker安装MySQL</h3><h3 id="Docker安装Redis"><a href="#Docker安装Redis" class="headerlink" title="Docker安装Redis"></a>Docker安装Redis</h3><h3 id="IDEA下Docker一键部署-CentOS-7"><a href="#IDEA下Docker一键部署-CentOS-7" class="headerlink" title="IDEA下Docker一键部署(CentOS 7)"></a>IDEA下Docker一键部署(CentOS 7)</h3><h4 id="开启Docker远程连接端口"><a href="#开启Docker远程连接端口" class="headerlink" title="开启Docker远程连接端口"></a>开启Docker远程连接端口</h4><ol><li>修改<code>/lib/systemd/system/docker.service</code>文件中<code>ExecStart</code>开头的行：</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ExecStart=/usr/bin/dockerd   -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock</span><br></pre></td></tr></table></figure><ol start="2"><li>重新加载并启动docker</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">systemctl daemon-reload</span><br><span class="line">systemctl start docker</span><br></pre></td></tr></table></figure><ol start="3"><li>添加端口到服务器，并重启防火墙</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo  firewall-cmd --zone=public --add-port=2375/tcp --permanent</span><br><span class="line"><span class="meta">#</span><span class="bash">--zone <span class="comment">#作用域</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">--add-port=2375/tcp  <span class="comment">#添加端口，格式为：端口/通讯协议</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash">--permanent  <span class="comment">#永久生效，没有此参数重启后失效</span></span></span><br><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure><ol start="4"><li>校验结果：</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl http://localhost:2375/version</span><br><span class="line"><span class="meta">#</span><span class="bash"> 本地虚拟机地址：curl http://192.168.159.128:2375/version</span></span><br></pre></td></tr></table></figure><h4 id="IDEA连接Docker"><a href="#IDEA连接Docker" class="headerlink" title="IDEA连接Docker"></a>IDEA连接Docker</h4><p><img src="../../images/image-20200328001250738.png" alt="image-20200328001250738"></p><h4 id="IDEA一键部署SpringBoot项目"><a href="#IDEA一键部署SpringBoot项目" class="headerlink" title="IDEA一键部署SpringBoot项目"></a>IDEA一键部署SpringBoot项目</h4>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;Docker-概要&quot;&gt;&lt;a href=&quot;#Docker-概要&quot; class=&quot;headerlink&quot; title=&quot;Docker 概要&quot;&gt;&lt;/a&gt;Docker 概要&lt;/h2&gt;&lt;p&gt;官网： &lt;a href=&quot;https://www.docker.com/&quot; targ
-      
     
     </summary>
     
@@ -407,6 +385,31 @@
       <category term="虚拟化技术" scheme="http://wusuiwei.github.io/tags/%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/"/>
     
       <category term="Docker" scheme="http://wusuiwei.github.io/tags/Docker/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【NoSql】NoSql入门和概述</title>
+    <link href="http://wusuiwei.github.io/2019/12/23/Java%E7%AC%94%E8%AE%B0/%E3%80%90NoSql%E3%80%91NoSql%E5%85%A5%E9%97%A8%E5%92%8C%E6%A6%82%E8%BF%B0/"/>
+    <id>http://wusuiwei.github.io/2019/12/23/Java笔记/【NoSql】NoSql入门和概述/</id>
+    <published>2019-12-23T02:06:04.000Z</published>
+    <updated>2019-12-23T16:10:47.501Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="NoSQL" scheme="http://wusuiwei.github.io/categories/NoSQL/"/>
+    
+    
+      <category term="NoSql" scheme="http://wusuiwei.github.io/tags/NoSql/"/>
     
   </entry>
   
