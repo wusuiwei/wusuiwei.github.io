@@ -346,26 +346,6 @@
       </tags>
   </entry>
   <entry>
-    <title>windows下其他软件安装</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/windows%E4%B8%8B%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>这里汇总了经常需要使用的软件及破解过程，仅作学习，建议官方购买。</p>
-<p>包括以下软件：</p>
-<ul>
-<li><a id="more"></a>
-
-
-
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-  </entry>
-  <entry>
     <title>CentOS下Docker安装Nacos</title>
     <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/%E3%80%90CentOS%E3%80%91%E4%BD%BF%E7%94%A8Docker%E5%AE%89%E8%A3%85Nacos/</url>
     <content><![CDATA[<blockquote>
@@ -427,6 +407,26 @@
       <tags>
         <tag>docker</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>windows下其他软件安装</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/windows%E4%B8%8B%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>这里汇总了经常需要使用的软件及破解过程，仅作学习，建议官方购买。</p>
+<p>包括以下软件：</p>
+<ul>
+<li><a id="more"></a>
+
+
+
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
   </entry>
   <entry>
     <title>CentOS下Docker安装与配置</title>
