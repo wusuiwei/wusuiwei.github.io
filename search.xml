@@ -440,6 +440,9 @@
         <category>项目笔记</category>
       </categories>
       <tags>
+        <tag>Spring Boot</tag>
+        <tag>Spring Cloud</tag>
+        <tag>Spring Data JPA</tag>
         <tag>Gmall</tag>
       </tags>
   </entry>
@@ -1158,8 +1161,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【Spring Cloud Alibaba】Nacos注册中心</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Sentinel/</url>
+    <title>【Spring Cloud Alibaba】Nacos</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1174,8 +1177,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【Spring Cloud Alibaba】Nacos</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
+    <title>【Spring Cloud Alibaba】Nacos注册中心</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Sentinel/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
