@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>02_全栈笔记/JPA/【JPA】集成Spring</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E9%9B%86%E6%88%90Spring/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>02_全栈笔记/JPA/【JPA】主键生成策略</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E4%B8%BB%E9%94%AE%E7%94%9F%E6%88%90%E7%AD%96%E7%95%A5/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>02_全栈笔记/JPA/【JPA】基本注解</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>02_全栈笔记/JPA/【JPA】映射关系-一对一</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>02_全栈笔记/【Jmeter】命令行运行</title>
     <url>/2020/07/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C/</url>
     <content><![CDATA[]]></content>
@@ -228,6 +248,26 @@
       </tags>
   </entry>
   <entry>
+    <title>windows下其他软件安装</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/windows%E4%B8%8B%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>这里汇总了经常需要使用的软件及破解过程，仅作学习，建议官方购买。</p>
+<p>包括以下软件：</p>
+<ul>
+<li><a id="more"></a>
+
+
+
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+  </entry>
+  <entry>
     <title>windows下tomcat9安装与配置</title>
     <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/windows%E4%B8%8Btomcat9%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<blockquote>
@@ -263,24 +303,37 @@
       </tags>
   </entry>
   <entry>
-    <title>windows下其他软件安装</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/windows%E4%B8%8B%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</url>
+    <title>CentOS下Docker安装与配置</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<p>这里汇总了经常需要使用的软件及破解过程，仅作学习，建议官方购买。</p>
-<p>包括以下软件：</p>
+<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
+<p>官方地址： <a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/centos/</a></p>
+<p><strong>安装环境：CentOS 7</strong></p>
+<p><strong>安装版本：Docker v19.03</strong></p>
+<a id="more"></a>
+
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
+
+<h4 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h4><ul>
+<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li><a id="more"></a>
-
-
-
-</li>
+<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
+<li>重启docker：<code>sudo systemctl restart docker</code></li>
 </ul>
 ]]></content>
       <categories>
         <category>software</category>
       </categories>
+      <tags>
+        <tag>docker</tag>
+      </tags>
   </entry>
   <entry>
     <title>CentOS下Docker安装Nacos</title>
@@ -337,39 +390,6 @@
 
 
 
-]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-      <tags>
-        <tag>docker</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CentOS下Docker安装与配置</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
-<p>官方地址： <a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/centos/</a></p>
-<p><strong>安装环境：CentOS 7</strong></p>
-<p><strong>安装版本：Docker v19.03</strong></p>
-<a id="more"></a>
-
-<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
-
-<h4 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
-
-<h4 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h4><ul>
-<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
-<li>重启docker：<code>sudo systemctl restart docker</code></li>
-</ul>
 ]]></content>
       <categories>
         <category>software</category>
@@ -443,7 +463,54 @@
         <tag>Spring Boot</tag>
         <tag>Spring Cloud</tag>
         <tag>Spring Data JPA</tag>
-        <tag>Gmall</tag>
+        <tag>Gmall项目笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【设计模式】前端控制器模式</title>
+    <url>/2019/12/23/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%89%8D%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><strong>前端控制器(Front Controller Pattern)</strong>  用来提供一个<strong>集中的请求处理机制</strong>，所有的请求都将由一个单一的处理程序处理。该处理程序可以做认证/授权/记录日志，或者跟踪请求，然后把请求传给相应的处理程序。</p>
+<a id="more"></a>
+
+<h3 id="模式结构"><a href="#模式结构" class="headerlink" title="模式结构"></a>模式结构</h3><p><strong>前端控制器(Front Controller Pattern)</strong> 模式角色如下：</p>
+<ul>
+<li><strong>前端控制器（Front Controller）</strong> - 处理应用程序所有类型请求的单个处理程序，应用程序可以是基于 web 的应用程序，也可以是基于桌面的应用程序。</li>
+<li><strong>调度器（Dispatcher）</strong> - 前端控制器可能使用一个调度器对象来调度请求到相应的具体处理程序。</li>
+<li><strong>视图（View）</strong> - 视图是为请求而创建的对象。</li>
+</ul>
+<p><strong>模式结构图如下：</strong></p>
+<p><img src="/images/892594-20160623194328953-1886361315.jpg" alt="img"></p>
+<h3 id="应用示例"><a href="#应用示例" class="headerlink" title="应用示例"></a>应用示例</h3><p>我们将创建 <em>FrontController<em>、</em>Dispatcher</em> 分别当作前端控制器和调度器。<em>HomeView</em> 和 <em>StudentView</em> 表示各种为前端控制器接收到的请求而创建的视图。</p>
+<p><em>FrontControllerPatternDemo*，我们的演示类使用 *FrontController</em> 来演示前端控制器设计模式。</p>
+<p><strong>前端控制器：</strong>FrontController.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">   <span class="keyword">private</span> Dispatcher dispatcher;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">FrontController</span><span class="params">()</span></span>&#123;</span><br><span class="line">      dispatcher = <span class="keyword">new</span> Dispatcher();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isAuthenticUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"User is authenticated successfully."</span>);</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">trackRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Page requested: "</span> + request);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatchRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="comment">//记录每一个请求</span></span><br><span class="line">      trackRequest(request);</span><br><span class="line">      <span class="comment">//对用户进行身份验证</span></span><br><span class="line">      <span class="keyword">if</span>(isAuthenticUser())&#123;</span><br><span class="line">         dispatcher.dispatch(request);</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>调度器：</strong>Dispatcher.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dispatcher</span> </span>&#123;</span><br><span class="line">   <span class="keyword">private</span> StudentView studentView;</span><br><span class="line">   <span class="keyword">private</span> HomeView homeView;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Dispatcher</span><span class="params">()</span></span>&#123;</span><br><span class="line">      studentView = <span class="keyword">new</span> StudentView();</span><br><span class="line">      homeView = <span class="keyword">new</span> HomeView();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatch</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(request.equalsIgnoreCase(<span class="string">"STUDENT"</span>))&#123;</span><br><span class="line">         studentView.show();</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">         homeView.show();</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>视图：</strong>HomeView 和 StudentView</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HomeView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Home Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Student Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>测试</strong>：FrontControllerPatternDemo.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontControllerPatternDemo</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      FrontController frontController = <span class="keyword">new</span> FrontController();</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"HOME"</span>);</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"STUDENT"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>测试结果</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Page requested: HOME</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Home Page</span><br><span class="line">Page requested: STUDENT</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Student Page</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+      <tags>
+        <tag>前端控制器模式</tag>
+        <tag>设计模式</tag>
       </tags>
   </entry>
   <entry>
@@ -512,6 +579,27 @@
       </tags>
   </entry>
   <entry>
+    <title>【Linux】虚拟化技术</title>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h2><p><strong>定义</strong>： 通过<strong>虚拟化</strong>技术将一台计算机<strong>虚拟</strong>为多台逻辑计算机。 在一台计算机上同时运行多个逻辑计算机，每个逻辑计算机可运行不同的操作系统，并且应用程序都可以在相互独立的空间内运行而互不影响，从而显著提高计算机的工作效率。 </p>
+<p><strong>优势</strong>：</p>
+<p><strong>劣势</strong>：</p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>虚拟化技术</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Jmeter】目录结构与配置文件说明</title>
     <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<blockquote>
@@ -531,27 +619,6 @@
       <tags>
         <tag>MyBatis Generator</tag>
         <tag>MyBatis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Linux】虚拟化技术</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h2 id="虚拟化"><a href="#虚拟化" class="headerlink" title="虚拟化"></a>虚拟化</h2><p><strong>定义</strong>： 通过<strong>虚拟化</strong>技术将一台计算机<strong>虚拟</strong>为多台逻辑计算机。 在一台计算机上同时运行多个逻辑计算机，每个逻辑计算机可运行不同的操作系统，并且应用程序都可以在相互独立的空间内运行而互不影响，从而显著提高计算机的工作效率。 </p>
-<p><strong>优势</strong>：</p>
-<p><strong>劣势</strong>：</p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>虚拟化技术</tag>
-        <tag>Docker</tag>
       </tags>
   </entry>
   <entry>
@@ -685,50 +752,21 @@
       </tags>
   </entry>
   <entry>
-    <title>【设计模式】前端控制器模式</title>
-    <url>/2019/12/23/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%89%8D%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <title>【SpringBoot】拦截器</title>
+    <url>/2019/11/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<p><strong>前端控制器(Front Controller Pattern)</strong>  用来提供一个<strong>集中的请求处理机制</strong>，所有的请求都将由一个单一的处理程序处理。该处理程序可以做认证/授权/记录日志，或者跟踪请求，然后把请求传给相应的处理程序。</p>
-<a id="more"></a>
-
-<h3 id="模式结构"><a href="#模式结构" class="headerlink" title="模式结构"></a>模式结构</h3><p><strong>前端控制器(Front Controller Pattern)</strong> 模式角色如下：</p>
-<ul>
-<li><strong>前端控制器（Front Controller）</strong> - 处理应用程序所有类型请求的单个处理程序，应用程序可以是基于 web 的应用程序，也可以是基于桌面的应用程序。</li>
-<li><strong>调度器（Dispatcher）</strong> - 前端控制器可能使用一个调度器对象来调度请求到相应的具体处理程序。</li>
-<li><strong>视图（View）</strong> - 视图是为请求而创建的对象。</li>
-</ul>
-<p><strong>模式结构图如下：</strong></p>
-<p><img src="/images/892594-20160623194328953-1886361315.jpg" alt="img"></p>
-<h3 id="应用示例"><a href="#应用示例" class="headerlink" title="应用示例"></a>应用示例</h3><p>我们将创建 <em>FrontController<em>、</em>Dispatcher</em> 分别当作前端控制器和调度器。<em>HomeView</em> 和 <em>StudentView</em> 表示各种为前端控制器接收到的请求而创建的视图。</p>
-<p><em>FrontControllerPatternDemo*，我们的演示类使用 *FrontController</em> 来演示前端控制器设计模式。</p>
-<p><strong>前端控制器：</strong>FrontController.java</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">   <span class="keyword">private</span> Dispatcher dispatcher;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">FrontController</span><span class="params">()</span></span>&#123;</span><br><span class="line">      dispatcher = <span class="keyword">new</span> Dispatcher();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isAuthenticUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"User is authenticated successfully."</span>);</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">trackRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Page requested: "</span> + request);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatchRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="comment">//记录每一个请求</span></span><br><span class="line">      trackRequest(request);</span><br><span class="line">      <span class="comment">//对用户进行身份验证</span></span><br><span class="line">      <span class="keyword">if</span>(isAuthenticUser())&#123;</span><br><span class="line">         dispatcher.dispatch(request);</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>调度器：</strong>Dispatcher.java</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dispatcher</span> </span>&#123;</span><br><span class="line">   <span class="keyword">private</span> StudentView studentView;</span><br><span class="line">   <span class="keyword">private</span> HomeView homeView;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Dispatcher</span><span class="params">()</span></span>&#123;</span><br><span class="line">      studentView = <span class="keyword">new</span> StudentView();</span><br><span class="line">      homeView = <span class="keyword">new</span> HomeView();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatch</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(request.equalsIgnoreCase(<span class="string">"STUDENT"</span>))&#123;</span><br><span class="line">         studentView.show();</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">         homeView.show();</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>视图：</strong>HomeView 和 StudentView</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HomeView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Home Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Student Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>测试</strong>：FrontControllerPatternDemo.java</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontControllerPatternDemo</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      FrontController frontController = <span class="keyword">new</span> FrontController();</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"HOME"</span>);</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"STUDENT"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>测试结果</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Page requested: HOME</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Home Page</span><br><span class="line">Page requested: STUDENT</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Student Page</span><br></pre></td></tr></table></figure>
-
-
-
+<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
+<p>实现java web token的拦截</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>编程思想</category>
+        <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>设计模式</tag>
-        <tag>前端控制器模式</tag>
+        <tag>SpringBoot</tag>
+        <tag>拦截器</tag>
       </tags>
   </entry>
   <entry>
@@ -823,21 +861,39 @@
       </tags>
   </entry>
   <entry>
-    <title>【SpringBoot】拦截器</title>
-    <url>/2019/11/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
-<p>实现java web token的拦截</p>
-</blockquote>
+    <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
+    <url>/2019/11/27/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
+    <content><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p>
+<a id="more"></a>
+
+<h4 id="HttpClient-介绍"><a href="#HttpClient-介绍" class="headerlink" title="HttpClient 介绍"></a>HttpClient 介绍</h4><p> <a href="http://hc.apache.org/index.html" target="_blank" rel="noopener">HttpClient</a>是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。 </p>
+<p>HttpClient相比传统JDK自带的URLConnection，增加了易用性和灵活性，它不仅使客户端发送Http请求变得容易，而且也方便开发人员测试接口（基于Http协议的），提高了开发的效率，也方便提高代码的健壮性。因此熟练掌握HttpClient是很重要的必修内容，掌握HttpClient后，相信对于Http协议的了解会更加深入。</p>
+<p><strong>org.apache.commons.httpclient.HttpClient与org.apache.http.client.HttpClient的区别</strong></p>
+<p>Commons的HttpClient项目现在是生命的尽头，不再被开发,  已被Apache HttpComponents项目HttpClient和HttpCore  模组取代，提供更好的性能和更大的灵活性。  </p>
+<p><strong>HttpClient 特性</strong></p>
+<ul>
+<li>实现了所有 HTTP 的方法（GET,POST,PUT,DELETE 等）</li>
+<li>支持自动转向</li>
+<li>支持 HTTPS 协议</li>
+<li>支持代理服务器等</li>
+</ul>
+<p>引用HttpClient非常简单，仅需要在maven中添加相关依赖即可：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="原生HttpClient使用"><a href="#原生HttpClient使用" class="headerlink" title="原生HttpClient使用"></a>原生HttpClient使用</h4><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testGet</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//申明Get请求</span></span><br><span class="line">    HttpGet httpGet = <span class="keyword">new</span> HttpGet(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpGet);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//4.判断状态码</span></span><br><span class="line">    <span class="keyword">if</span> (response.getStatusLine().getStatusCode() == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//从响应中取出实体</span></span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        <span class="comment">//使用工具类EntityUtils将实体并转换成字符串</span></span><br><span class="line">        String s = EntityUtils.toString(entity);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPost</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//声明Post请求</span></span><br><span class="line">    HttpPost httpPost = <span class="keyword">new</span> HttpPost(<span class="string">"https://www.oschina.net/"</span>);</span><br><span class="line">    <span class="comment">//3.开源中国为了安全，防止恶意攻击，在post请求中都限制了浏览器才能访问</span></span><br><span class="line">    httpPost.addHeader(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>);</span><br><span class="line">    ArrayList&lt;NameValuePair&gt; params = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"scope"</span>, <span class="string">"project"</span>));</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"q"</span>, <span class="string">"java"</span>));</span><br><span class="line">    UrlEncodedFormEntity formEntity = <span class="keyword">new</span> UrlEncodedFormEntity(params, Charset.forName(<span class="string">"utf-8"</span>));</span><br><span class="line">    httpPost.setEntity(formEntity);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpPost);</span><br><span class="line">    <span class="comment">//判断状态码</span></span><br><span class="line">    <span class="keyword">if</span>(response.getStatusLine().getStatusCode()==<span class="number">200</span>)&#123;</span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        String string = EntityUtils.toString(entity, <span class="string">"utf-8"</span>);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//6.关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="SpringBoot集成HttpClient"><a href="#SpringBoot集成HttpClient" class="headerlink" title="SpringBoot集成HttpClient"></a>SpringBoot集成HttpClient</h4><p>引入Maven依赖</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>SpringBoot</category>
+        <category>接口自动化</category>
       </categories>
       <tags>
-        <tag>SpringBoot</tag>
-        <tag>拦截器</tag>
+        <tag>自动化测试</tag>
+        <tag>接口自动化</tag>
       </tags>
   </entry>
   <entry>
@@ -873,42 +929,6 @@
 <p>输入项目名及项目本次存储地址，”Finish”即可创建一个SpringBoot项目。</p>
 <p><img src="/images/image-20191127200144375.png" alt="image-20191127200144375"></p>
 <p>好了，至此，SpringBoot项目基本搭建完成，开心~~</p>
-]]></content>
-      <categories>
-        <category>接口自动化</category>
-      </categories>
-      <tags>
-        <tag>自动化测试</tag>
-        <tag>接口自动化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
-    <url>/2019/11/27/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
-    <content><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p>
-<a id="more"></a>
-
-<h4 id="HttpClient-介绍"><a href="#HttpClient-介绍" class="headerlink" title="HttpClient 介绍"></a>HttpClient 介绍</h4><p> <a href="http://hc.apache.org/index.html" target="_blank" rel="noopener">HttpClient</a>是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。 </p>
-<p>HttpClient相比传统JDK自带的URLConnection，增加了易用性和灵活性，它不仅使客户端发送Http请求变得容易，而且也方便开发人员测试接口（基于Http协议的），提高了开发的效率，也方便提高代码的健壮性。因此熟练掌握HttpClient是很重要的必修内容，掌握HttpClient后，相信对于Http协议的了解会更加深入。</p>
-<p><strong>org.apache.commons.httpclient.HttpClient与org.apache.http.client.HttpClient的区别</strong></p>
-<p>Commons的HttpClient项目现在是生命的尽头，不再被开发,  已被Apache HttpComponents项目HttpClient和HttpCore  模组取代，提供更好的性能和更大的灵活性。  </p>
-<p><strong>HttpClient 特性</strong></p>
-<ul>
-<li>实现了所有 HTTP 的方法（GET,POST,PUT,DELETE 等）</li>
-<li>支持自动转向</li>
-<li>支持 HTTPS 协议</li>
-<li>支持代理服务器等</li>
-</ul>
-<p>引用HttpClient非常简单，仅需要在maven中添加相关依赖即可：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="原生HttpClient使用"><a href="#原生HttpClient使用" class="headerlink" title="原生HttpClient使用"></a>原生HttpClient使用</h4><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testGet</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//申明Get请求</span></span><br><span class="line">    HttpGet httpGet = <span class="keyword">new</span> HttpGet(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpGet);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//4.判断状态码</span></span><br><span class="line">    <span class="keyword">if</span> (response.getStatusLine().getStatusCode() == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//从响应中取出实体</span></span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        <span class="comment">//使用工具类EntityUtils将实体并转换成字符串</span></span><br><span class="line">        String s = EntityUtils.toString(entity);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPost</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//声明Post请求</span></span><br><span class="line">    HttpPost httpPost = <span class="keyword">new</span> HttpPost(<span class="string">"https://www.oschina.net/"</span>);</span><br><span class="line">    <span class="comment">//3.开源中国为了安全，防止恶意攻击，在post请求中都限制了浏览器才能访问</span></span><br><span class="line">    httpPost.addHeader(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>);</span><br><span class="line">    ArrayList&lt;NameValuePair&gt; params = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"scope"</span>, <span class="string">"project"</span>));</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"q"</span>, <span class="string">"java"</span>));</span><br><span class="line">    UrlEncodedFormEntity formEntity = <span class="keyword">new</span> UrlEncodedFormEntity(params, Charset.forName(<span class="string">"utf-8"</span>));</span><br><span class="line">    httpPost.setEntity(formEntity);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpPost);</span><br><span class="line">    <span class="comment">//判断状态码</span></span><br><span class="line">    <span class="keyword">if</span>(response.getStatusLine().getStatusCode()==<span class="number">200</span>)&#123;</span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        String string = EntityUtils.toString(entity, <span class="string">"utf-8"</span>);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//6.关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="SpringBoot集成HttpClient"><a href="#SpringBoot集成HttpClient" class="headerlink" title="SpringBoot集成HttpClient"></a>SpringBoot集成HttpClient</h4><p>引入Maven依赖</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>接口自动化</category>
@@ -1146,22 +1166,6 @@
   </entry>
   <entry>
     <title>【Spring Cloud Alibaba】Nacos</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Nacos/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Nacos作为注册中心"><a href="#Nacos作为注册中心" class="headerlink" title="Nacos作为注册中心"></a>Nacos作为注册中心</h3>]]></content>
-      <categories>
-        <category>Spring Cloud</category>
-      </categories>
-      <tags>
-        <tag>Spring Cloud</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Spring Cloud Alibaba】Nacos</title>
     <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
@@ -1193,6 +1197,22 @@
       </tags>
   </entry>
   <entry>
+    <title>【Spring Cloud Alibaba】Nacos</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Nacos/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Nacos作为注册中心"><a href="#Nacos作为注册中心" class="headerlink" title="Nacos作为注册中心"></a>Nacos作为注册中心</h3>]]></content>
+      <categories>
+        <category>Spring Cloud</category>
+      </categories>
+      <tags>
+        <tag>Spring Cloud</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Spring Cloud Alibaba】Nacos注册中心</title>
     <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%E3%80%91GateWay/</url>
     <content><![CDATA[<blockquote>
@@ -1206,6 +1226,25 @@
       </categories>
       <tags>
         <tag>Spring Cloud</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SpringBoot】Spring Data JPA</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.2.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>Spring Data JPA</tag>
       </tags>
   </entry>
   <entry>
@@ -1296,25 +1335,6 @@
       <tags>
         <tag>SpringBoot</tag>
         <tag>JWT</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【SpringBoot】Spring Data JPA</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.2.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>Spring Data JPA</tag>
       </tags>
   </entry>
   <entry>
@@ -1459,6 +1479,20 @@
         <tag>SpringBoot</tag>
         <tag>hydrogen</tag>
         <tag>jwt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MVC模式</title>
+    <url>/2019/11/08/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/MVC%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+      <tags>
+        <tag>MVC模式</tag>
       </tags>
   </entry>
   <entry>
@@ -1761,20 +1795,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MVC模式</title>
-    <url>/2019/11/08/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/MVC%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
-      <tags>
-        <tag>MVC模式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Spring笔记】框架概述</title>
     <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<blockquote>
@@ -1852,6 +1872,16 @@
 ]]></content>
   </entry>
   <entry>
+    <title>【设计模式】适配器模式</title>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+  </entry>
+  <entry>
     <title>【自动化测试】Android自动化测试环境搭建</title>
     <url>/2019/11/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Android%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<a id="more"></a>
@@ -1913,16 +1943,6 @@
       <tags>
         <tag>自动化测试</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>【设计模式】适配器模式</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
   </entry>
   <entry>
     <title>【Hydrogen-ui】Vue.js 环境准备（IDEA）</title>
@@ -2302,6 +2322,21 @@
       </tags>
   </entry>
   <entry>
+    <title>【JPA】简介及HelloWorld</title>
+    <url>/2018/10/06/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E7%AE%80%E4%BB%8B%E5%8F%8AHelloWorld/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>全栈笔记</category>
+      </categories>
+      <tags>
+        <tag>JPA</tag>
+        <tag>HelloWorld</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>设计模式学习笔记</title>
     <url>/2018/09/25/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
@@ -2350,6 +2385,24 @@
       </tags>
   </entry>
   <entry>
+    <title>Spring Boot 笔记之 缓存</title>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20%E7%BC%93%E5%AD%98/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="JSR107"><a href="#JSR107" class="headerlink" title="JSR107"></a>JSR107</h3><h3 id="Spring-缓存原理"><a href="#Spring-缓存原理" class="headerlink" title="Spring 缓存原理"></a>Spring 缓存原理</h3>]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>Spring Boot</tag>
+        <tag>缓存</tag>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>MybatisPlus学习笔记</title>
     <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MybatisPlus%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
@@ -2381,6 +2434,24 @@
       </categories>
       <tags>
         <tag>MybatisPlus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring Boot 笔记之 缓存</title>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%20/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>Spring Boot</tag>
+        <tag>缓存</tag>
+        <tag>redis</tag>
       </tags>
   </entry>
   <entry>
@@ -2897,42 +2968,6 @@
       <tags>
         <tag>Redis</tag>
         <tag>Jedis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring Boot 笔记之 缓存</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20%E7%BC%93%E5%AD%98/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="JSR107"><a href="#JSR107" class="headerlink" title="JSR107"></a>JSR107</h3><h3 id="Spring-缓存原理"><a href="#Spring-缓存原理" class="headerlink" title="Spring 缓存原理"></a>Spring 缓存原理</h3>]]></content>
-      <categories>
-        <category>Spring Boot</category>
-      </categories>
-      <tags>
-        <tag>Spring Boot</tag>
-        <tag>缓存</tag>
-        <tag>redis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Spring Boot 笔记之 缓存</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%20/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>Spring Boot</category>
-      </categories>
-      <tags>
-        <tag>Spring Boot</tag>
-        <tag>缓存</tag>
-        <tag>redis</tag>
       </tags>
   </entry>
   <entry>

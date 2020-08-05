@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wusuiwei.github.io/"/>
-  <updated>2020-07-08T02:58:05.100Z</updated>
+  <updated>2020-07-26T14:27:02.418Z</updated>
   <id>http://wusuiwei.github.io/</id>
   
   <author>
@@ -15,6 +15,66 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>02_全栈笔记/JPA/【JPA】集成Spring</title>
+    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E9%9B%86%E6%88%90Spring/"/>
+    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA/【JPA】集成Spring/</id>
+    <published>2020-07-26T14:27:02.418Z</published>
+    <updated>2020-07-26T14:27:02.418Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>02_全栈笔记/JPA/【JPA】主键生成策略</title>
+    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E4%B8%BB%E9%94%AE%E7%94%9F%E6%88%90%E7%AD%96%E7%95%A5/"/>
+    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA/【JPA】主键生成策略/</id>
+    <published>2020-07-26T14:25:27.158Z</published>
+    <updated>2020-07-26T14:25:47.689Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>02_全栈笔记/JPA/【JPA】基本注解</title>
+    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/"/>
+    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA/【JPA】基本注解/</id>
+    <published>2020-07-26T14:25:27.158Z</published>
+    <updated>2020-07-26T14:25:27.158Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>02_全栈笔记/JPA/【JPA】映射关系-一对一</title>
+    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/"/>
+    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA/【JPA】映射关系-一对一/</id>
+    <published>2020-07-26T14:25:27.158Z</published>
+    <updated>2020-07-26T14:26:11.277Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>02_全栈笔记/【Jmeter】命令行运行</title>
@@ -315,73 +375,6 @@
     <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/SpringMVC学习笔记/</id>
     <published>2020-05-24T14:28:44.450Z</published>
     <updated>2020-05-24T14:28:44.450Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Spring Cloud 笔记之 Ribbon</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Ribbon/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Spring Cloud 笔记之 Ribbon/</id>
-    <published>2020-05-24T14:28:44.445Z</published>
-    <updated>2020-05-24T14:28:44.445Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Spring Cloud 笔记之 Feign</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Feign/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Spring Cloud 笔记之 Feign/</id>
-    <published>2020-05-24T14:28:44.444Z</published>
-    <updated>2020-05-24T14:28:44.444Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/SSM 框架整合笔记</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/SSM%20%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88%E7%AC%94%E8%AE%B0/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/SSM 框架整合笔记/</id>
-    <published>2020-05-24T14:28:44.440Z</published>
-    <updated>2020-05-24T14:28:44.441Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="SSM框架整合笔记"><a href="#SSM框架整合笔记" class="headerlink" title="SSM框架整合笔记"></a>SSM框架整合笔记</h3>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;SSM框架整合笔记&quot;&gt;&lt;a href=&quot;#SSM框架整合笔记&quot; class=&quot;headerlink&quot; title=&quot;SSM框架整合笔记&quot;&gt;&lt;/a&gt;SSM框架整合笔记&lt;/h3&gt;
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/RPC框架原理</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/RPC%E6%A1%86%E6%9E%B6%E5%8E%9F%E7%90%86/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/RPC框架原理/</id>
-    <published>2020-05-24T14:28:44.434Z</published>
-    <updated>2020-05-24T14:28:44.434Z</updated>
     
     <summary type="html">
     
