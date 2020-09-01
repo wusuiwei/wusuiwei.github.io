@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>02_全栈笔记/JPA/【JPA】集成Spring</title>
-    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E9%9B%86%E6%88%90Spring/</url>
+    <title>02_全栈笔记/【Selenium】元素定位</title>
+    <url>/2020/09/02/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Selenium%E3%80%91%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/JPA/【JPA】主键生成策略</title>
-    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E4%B8%BB%E9%94%AE%E7%94%9F%E6%88%90%E7%AD%96%E7%95%A5/</url>
+    <title>01_软件/软件列表</title>
+    <url>/2020/09/02/01_%E8%BD%AF%E4%BB%B6/%E8%BD%AF%E4%BB%B6%E5%88%97%E8%A1%A8/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/JPA/【JPA】基本注解</title>
-    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/</url>
+    <title>03_编程思想/自动化测试/【AutoTester】测试框架搭建计划</title>
+    <url>/2020/08/19/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90AutoTester%E3%80%91%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/JPA/【JPA】映射关系-一对一</title>
-    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/</url>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】集成Spring</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E9%9B%86%E6%88%90Spring/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/【Jmeter】命令行运行</title>
-    <url>/2020/07/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C/</url>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】主键生成策略</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E4%B8%BB%E9%94%AE%E7%94%9F%E6%88%90%E7%AD%96%E7%95%A5/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/【Mockito】</title>
-    <url>/2020/06/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Mockito%E3%80%91/</url>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】基本注解</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>02_全栈笔记/Jmeter 学习笔记/【Jmeter】命令行运行</title>
+    <url>/2020/07/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>02_全栈笔记/Mockito 学习笔记/【Mockito】</title>
+    <url>/2020/06/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Mockito%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Mockito%E3%80%91/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -62,8 +77,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title>04_项目笔记/hydrogen-master/【Hydrogen】项目环境搭建</title>
-    <url>/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-master/%E3%80%90Hydrogen%E3%80%91%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <title>04_项目笔记/自动化测试平台/【Hydrogen】项目环境搭建</title>
+    <url>/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p>登录页：</p>
 <ul>
 <li>登录（自动注册）</li>
@@ -112,84 +127,84 @@
 ]]></content>
   </entry>
   <entry>
-    <title>04_项目笔记/hydrogen-master/【Hydrogen】团队维护</title>
-    <url>/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-master/%E3%80%90Hydrogen%E3%80%91%E5%9B%A2%E9%98%9F%E7%BB%B4%E6%8A%A4/</url>
+    <title>04_项目笔记/自动化测试平台/【Hydrogen】团队维护</title>
+    <url>/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E5%9B%A2%E9%98%9F%E7%BB%B4%E6%8A%A4/</url>
     <content><![CDATA[<p>整个界面采用简单的人员管理界面，提供<strong>人员名称</strong>、<strong>邮箱</strong>模糊搜索功能，分页功能，邀请加入功能，移除功能；</p>
 <p>表设计：</p>
 ]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/自动化测试模式介绍</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%BB%8B%E7%BB%8D/</url>
+    <title>03_编程思想/自动化测试/自动化测试模式介绍</title>
+    <url>/2020/05/24/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%BB%8B%E7%BB%8D/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/云原生的12要素</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%9A%8412%E8%A6%81%E7%B4%A0/</url>
+    <title>03_编程思想/微服务架构/云原生的12要素</title>
+    <url>/2020/05/24/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%9A%8412%E8%A6%81%E7%B4%A0/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/【SpringCloud】Eureka</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringCloud%E3%80%91Eureka/</url>
+    <title>02_全栈笔记/Spring Cloud 学习笔记/【SpringCloud】Eureka</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringCloud%E3%80%91Eureka/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Zookeeper学习笔记</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Zookeeper%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>02_全栈笔记/Zookeeper 学习笔记/Zookeeper学习笔记</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Zookeeper%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Zookeeper%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h3 id="Docker安装Zookeeper"><a href="#Docker安装Zookeeper" class="headerlink" title="Docker安装Zookeeper"></a>Docker安装Zookeeper</h3><h4 id="下载zookeeper镜像"><a href="#下载zookeeper镜像" class="headerlink" title="下载zookeeper镜像"></a>下载zookeeper镜像</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">docker pull zookeeper</span><br></pre></td></tr></table></figure>
 
 ]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Web自动化测试之Selenium Webdriver入门</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BSelenium%20Webdriver%E5%85%A5%E9%97%A8/</url>
+    <title>02_全栈笔记/Selenium 学习笔记/Web自动化测试之Selenium Webdriver入门</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Selenium%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BSelenium%20Webdriver%E5%85%A5%E9%97%A8/</url>
     <content><![CDATA[<h2 id="元素定位方法"><a href="#元素定位方法" class="headerlink" title="元素定位方法"></a>元素定位方法</h2><p><code>id</code>定位</p>
 <p><code>class</code>定位</p>
 ]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Vue知识框架</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Vue%E7%9F%A5%E8%AF%86%E6%A1%86%E6%9E%B6/</url>
+    <title>02_全栈笔记/Selenium 学习笔记/Web自动化测试之PageObject思想</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Selenium%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BPageObject%E6%80%9D%E6%83%B3/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Web自动化测试之PageObject思想</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BPageObject%E6%80%9D%E6%83%B3/</url>
+    <title>02_全栈笔记/Vue 学习笔记/Vue知识框架</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Vue%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Vue%E7%9F%A5%E8%AF%86%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/SpringMVC学习笔记</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>02_全栈笔记/Spring MVC 学习笔记/SpringMVC学习笔记</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20MVC%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Spring Cloud 笔记之 Ribbon</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Ribbon/</url>
+    <title>02_全栈笔记/Spring Cloud 学习笔记/Spring Cloud 笔记之 Ribbon</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Ribbon/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Spring Cloud 笔记之 Feign</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Feign/</url>
+    <title>02_全栈笔记/Spring Cloud 学习笔记/Spring Cloud 笔记之 Feign</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20Feign/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/SSM 框架整合笔记</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/SSM%20%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88%E7%AC%94%E8%AE%B0/</url>
+    <title>02_全栈笔记/Spring MVC 学习笔记/SSM 框架整合笔记</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20MVC%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SSM%20%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h3 id="SSM框架整合笔记"><a href="#SSM框架整合笔记" class="headerlink" title="SSM框架整合笔记"></a>SSM框架整合笔记</h3>]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/RPC框架原理</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/RPC%E6%A1%86%E6%9E%B6%E5%8E%9F%E7%90%86/</url>
+    <title>03_编程思想/RPC框架原理</title>
+    <url>/2020/05/24/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/RPC%E6%A1%86%E6%9E%B6%E5%8E%9F%E7%90%86/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/RPC原理详解</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/RPC%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</url>
+    <title>03_编程思想/RPC原理详解</title>
+    <url>/2020/05/24/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/RPC%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Maven学习笔记</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Maven%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>02_全栈笔记/Maven 学习笔记/Maven学习笔记</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Maven%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Maven%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<p>下载地址： <a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener">https://maven.apache.org/download.cgi</a> </p>
 <p>安装步骤：</p>
 <ol>
@@ -214,62 +229,24 @@
 ]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Git学习笔记</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>02_全栈笔记/Git 学习笔记/Git学习笔记</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Git%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/IDEA学习笔记</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/IDEA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <title>02_全栈笔记/IDEA 学习笔记/IDEA学习笔记</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/IDEA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/IDEA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h4 id="使用已安装的maven及其配置"><a href="#使用已安装的maven及其配置" class="headerlink" title="使用已安装的maven及其配置"></a>使用已安装的maven及其配置</h4><p><img src="../../images/image-20200305163952800.png" alt="image-20200305163952800"></p>
 ]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Dubbo原理详解</title>
-    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Dubbo%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</url>
+    <title>02_全栈笔记/Dubbo 学习笔记/Dubbo原理详解</title>
+    <url>/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Dubbo%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Dubbo%E5%8E%9F%E7%90%86%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>windows下JDK8安装与配置</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/windows%E4%B8%8BJDK8%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p><strong>版本：jdk 8</strong></p>
-<p><strong>下载地址：</strong><a href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html" target="_blank" rel="noopener">https://www.oracle.com/java/technologies/javase-jdk8-downloads.html</a></p>
-<a id="more"></a>
-
-<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3>]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-      <tags>
-        <tag>jdk</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>windows下其他软件安装</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/windows%E4%B8%8B%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>这里汇总了经常需要使用的软件及破解过程，仅作学习，建议官方购买。</p>
-<p>包括以下软件：</p>
-<ul>
-<li><a id="more"></a>
-
-
-
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>windows下tomcat9安装与配置</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/windows%E4%B8%8Btomcat9%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <title>tomcat9安装与配置</title>
+    <url>/2020/05/18/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Tomcat%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tomcat%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -289,7 +266,8 @@
 <li>打开浏览器访问”localhost：8080“，出现下图则安装成功</li>
 </ul>
 <p><img src="/images/20190701112345662.png" alt="在这里插入图片描述"></p>
-<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><h4 id="1-运行-tomcat-，日志出现乱码"><a href="#1-运行-tomcat-，日志出现乱码" class="headerlink" title="1.运行 tomcat ，日志出现乱码"></a>1.运行 tomcat ，日志出现乱码</h4><p><img src="/images/image-20200519172810156.png" alt="image-20200519172810156"></p>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>1.运行 tomcat ，日志出现乱码</p>
+<p><img src="/images/image-20200519172810156.png" alt="image-20200519172810156"></p>
 <p>解决方案：</p>
 <p>修改<code>C:\software\apache-tomcat-9.0.35\conf\logging.properties</code>文件中<code>java.util.logging.ConsoleHandler.encoding</code>值为<code>GBK</code>.</p>
 <p><img src="/images/image-20200519172937817.png" alt="image-20200519172937817"></p>
@@ -303,41 +281,8 @@
       </tags>
   </entry>
   <entry>
-    <title>CentOS下Docker安装与配置</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
-<p>官方地址： <a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/centos/</a></p>
-<p><strong>安装环境：CentOS 7</strong></p>
-<p><strong>安装版本：Docker v19.03</strong></p>
-<a id="more"></a>
-
-<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
-
-<h4 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
-
-<h4 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h4><ul>
-<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
-<li>重启docker：<code>sudo systemctl restart docker</code></li>
-</ul>
-]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-      <tags>
-        <tag>docker</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CentOS下Docker安装Nacos</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/%E3%80%90CentOS%E3%80%91%E4%BD%BF%E7%94%A8Docker%E5%AE%89%E8%A3%85Nacos/</url>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90CentOS%E3%80%91%E4%BD%BF%E7%94%A8Docker%E5%AE%89%E8%A3%85Nacos/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -399,8 +344,59 @@
       </tags>
   </entry>
   <entry>
-    <title>tomcat9安装与配置</title>
-    <url>/2020/05/18/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/tomcat%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <title>CentOS下Docker安装与配置</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
+<p>官方地址： <a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/centos/</a></p>
+<p><strong>安装环境：CentOS 7</strong></p>
+<p><strong>安装版本：Docker v19.03</strong></p>
+<a id="more"></a>
+
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
+
+<h4 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h4><ul>
+<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
+<li>重启docker：<code>sudo systemctl restart docker</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows下JDK8安装与配置</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/windows%E4%B8%8BJDK8%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><strong>版本：jdk 8</strong></p>
+<p><strong>下载地址：</strong><a href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html" target="_blank" rel="noopener">https://www.oracle.com/java/technologies/javase-jdk8-downloads.html</a></p>
+<a id="more"></a>
+
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3>]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>jdk</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows下tomcat9安装与配置</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/windows%E4%B8%8Btomcat9%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -420,8 +416,7 @@
 <li>打开浏览器访问”localhost：8080“，出现下图则安装成功</li>
 </ul>
 <p><img src="/images/20190701112345662.png" alt="在这里插入图片描述"></p>
-<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>1.运行 tomcat ，日志出现乱码</p>
-<p><img src="/images/image-20200519172810156.png" alt="image-20200519172810156"></p>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><h4 id="1-运行-tomcat-，日志出现乱码"><a href="#1-运行-tomcat-，日志出现乱码" class="headerlink" title="1.运行 tomcat ，日志出现乱码"></a>1.运行 tomcat ，日志出现乱码</h4><p><img src="/images/image-20200519172810156.png" alt="image-20200519172810156"></p>
 <p>解决方案：</p>
 <p>修改<code>C:\software\apache-tomcat-9.0.35\conf\logging.properties</code>文件中<code>java.util.logging.ConsoleHandler.encoding</code>值为<code>GBK</code>.</p>
 <p><img src="/images/image-20200519172937817.png" alt="image-20200519172937817"></p>
@@ -433,6 +428,26 @@
       <tags>
         <tag>tomcat</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>windows下其他软件安装</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/windows%E4%B8%8B%E5%85%B6%E4%BB%96%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>这里汇总了经常需要使用的软件及破解过程，仅作学习，建议官方购买。</p>
+<p>包括以下软件：</p>
+<ul>
+<li><a id="more"></a>
+
+
+
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
   </entry>
   <entry>
     <title>ReadME</title>
@@ -461,61 +476,36 @@
       </categories>
       <tags>
         <tag>Spring Boot</tag>
-        <tag>Spring Cloud</tag>
         <tag>Spring Data JPA</tag>
+        <tag>Spring Cloud</tag>
         <tag>Gmall项目笔记</tag>
       </tags>
   </entry>
   <entry>
-    <title>【设计模式】前端控制器模式</title>
-    <url>/2019/12/23/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%89%8D%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <title>【Jmeter】目录结构与配置文件说明</title>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<p><strong>前端控制器(Front Controller Pattern)</strong>  用来提供一个<strong>集中的请求处理机制</strong>，所有的请求都将由一个单一的处理程序处理。该处理程序可以做认证/授权/记录日志，或者跟踪请求，然后把请求传给相应的处理程序。</p>
 <a id="more"></a>
 
-<h3 id="模式结构"><a href="#模式结构" class="headerlink" title="模式结构"></a>模式结构</h3><p><strong>前端控制器(Front Controller Pattern)</strong> 模式角色如下：</p>
-<ul>
-<li><strong>前端控制器（Front Controller）</strong> - 处理应用程序所有类型请求的单个处理程序，应用程序可以是基于 web 的应用程序，也可以是基于桌面的应用程序。</li>
-<li><strong>调度器（Dispatcher）</strong> - 前端控制器可能使用一个调度器对象来调度请求到相应的具体处理程序。</li>
-<li><strong>视图（View）</strong> - 视图是为请求而创建的对象。</li>
-</ul>
-<p><strong>模式结构图如下：</strong></p>
-<p><img src="/images/892594-20160623194328953-1886361315.jpg" alt="img"></p>
-<h3 id="应用示例"><a href="#应用示例" class="headerlink" title="应用示例"></a>应用示例</h3><p>我们将创建 <em>FrontController<em>、</em>Dispatcher</em> 分别当作前端控制器和调度器。<em>HomeView</em> 和 <em>StudentView</em> 表示各种为前端控制器接收到的请求而创建的视图。</p>
-<p><em>FrontControllerPatternDemo*，我们的演示类使用 *FrontController</em> 来演示前端控制器设计模式。</p>
-<p><strong>前端控制器：</strong>FrontController.java</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">   <span class="keyword">private</span> Dispatcher dispatcher;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">FrontController</span><span class="params">()</span></span>&#123;</span><br><span class="line">      dispatcher = <span class="keyword">new</span> Dispatcher();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isAuthenticUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"User is authenticated successfully."</span>);</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">trackRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Page requested: "</span> + request);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatchRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="comment">//记录每一个请求</span></span><br><span class="line">      trackRequest(request);</span><br><span class="line">      <span class="comment">//对用户进行身份验证</span></span><br><span class="line">      <span class="keyword">if</span>(isAuthenticUser())&#123;</span><br><span class="line">         dispatcher.dispatch(request);</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Jmeter-目录说明"><a href="#Jmeter-目录说明" class="headerlink" title="Jmeter 目录说明"></a>Jmeter 目录说明</h3><h3 id="Jmeter-常用配置文件"><a href="#Jmeter-常用配置文件" class="headerlink" title="Jmeter 常用配置文件"></a>Jmeter 常用配置文件</h3><p>一般情况下，不建议修改<code>jmeter.properties</code>和<code>reportgenerator.properties</code>，在<code>user.properties</code>文件中完成配置，需要重启才能生效。</p>
+<p>仅记录常用配置，其他配置请参考官网：<a href="https://jmeter.apache.org/usermanual/properties_reference.html" target="_blank" rel="noopener">https://jmeter.apache.org/usermanual/properties_reference.html</a></p>
+<h4 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h4><p>默认情况下，GUI 语言为英文，可以修改为中文(<code>zh_CN</code>)，此属性是唯一一个必须配置在<code>jmeter.properties</code>。</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">language=zh_CN</span><br></pre></td></tr></table></figure>
 
-<p><strong>调度器：</strong>Dispatcher.java</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dispatcher</span> </span>&#123;</span><br><span class="line">   <span class="keyword">private</span> StudentView studentView;</span><br><span class="line">   <span class="keyword">private</span> HomeView homeView;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Dispatcher</span><span class="params">()</span></span>&#123;</span><br><span class="line">      studentView = <span class="keyword">new</span> StudentView();</span><br><span class="line">      homeView = <span class="keyword">new</span> HomeView();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatch</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(request.equalsIgnoreCase(<span class="string">"STUDENT"</span>))&#123;</span><br><span class="line">         studentView.show();</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">         homeView.show();</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>视图：</strong>HomeView 和 StudentView</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HomeView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Home Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Student Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>测试</strong>：FrontControllerPatternDemo.java</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontControllerPatternDemo</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      FrontController frontController = <span class="keyword">new</span> FrontController();</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"HOME"</span>);</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"STUDENT"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>测试结果</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Page requested: HOME</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Home Page</span><br><span class="line">Page requested: STUDENT</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Student Page</span><br></pre></td></tr></table></figure>
-
-
-
-]]></content>
+<h4 id="SSL配置"><a href="#SSL配置" class="headerlink" title="SSL配置"></a>SSL配置</h4><h4 id="JDBC请求配置"><a href="#JDBC请求配置" class="headerlink" title="JDBC请求配置"></a>JDBC请求配置</h4><h4 id="jmeter集群配置"><a href="#jmeter集群配置" class="headerlink" title="jmeter集群配置"></a>jmeter集群配置</h4><h4 id="请求结果文件配置"><a href="#请求结果文件配置" class="headerlink" title="请求结果文件配置"></a>请求结果文件配置</h4>]]></content>
       <categories>
-        <category>编程思想</category>
+        <category>全栈笔记</category>
       </categories>
       <tags>
-        <tag>前端控制器模式</tag>
-        <tag>设计模式</tag>
+        <tag>MyBatis Generator</tag>
+        <tag>MyBatis</tag>
       </tags>
   </entry>
   <entry>
     <title>Java日志框架体系</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6%E4%BD%93%E7%B3%BB/</url>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%E6%97%A5%E5%BF%97%E6%A1%86%E6%9E%B6%E4%BD%93%E7%B3%BB/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -580,7 +570,7 @@
   </entry>
   <entry>
     <title>【Linux】虚拟化技术</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/</url>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -600,30 +590,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【Jmeter】目录结构与配置文件说明</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Jmeter-目录说明"><a href="#Jmeter-目录说明" class="headerlink" title="Jmeter 目录说明"></a>Jmeter 目录说明</h3><h3 id="Jmeter-常用配置文件"><a href="#Jmeter-常用配置文件" class="headerlink" title="Jmeter 常用配置文件"></a>Jmeter 常用配置文件</h3><p>一般情况下，不建议修改<code>jmeter.properties</code>和<code>reportgenerator.properties</code>，在<code>user.properties</code>文件中完成配置，需要重启才能生效。</p>
-<p>仅记录常用配置，其他配置请参考官网：<a href="https://jmeter.apache.org/usermanual/properties_reference.html" target="_blank" rel="noopener">https://jmeter.apache.org/usermanual/properties_reference.html</a></p>
-<h4 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h4><p>默认情况下，GUI 语言为英文，可以修改为中文(<code>zh_CN</code>)，此属性是唯一一个必须配置在<code>jmeter.properties</code>。</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">language=zh_CN</span><br></pre></td></tr></table></figure>
-
-<h4 id="SSL配置"><a href="#SSL配置" class="headerlink" title="SSL配置"></a>SSL配置</h4><h4 id="JDBC请求配置"><a href="#JDBC请求配置" class="headerlink" title="JDBC请求配置"></a>JDBC请求配置</h4><h4 id="jmeter集群配置"><a href="#jmeter集群配置" class="headerlink" title="jmeter集群配置"></a>jmeter集群配置</h4><h4 id="请求结果文件配置"><a href="#请求结果文件配置" class="headerlink" title="请求结果文件配置"></a>请求结果文件配置</h4>]]></content>
-      <categories>
-        <category>全栈笔记</category>
-      </categories>
-      <tags>
-        <tag>MyBatis Generator</tag>
-        <tag>MyBatis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【MyBatis】MyBatis Generator的使用</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90MyBatis%E3%80%91MyBatis%20Generator%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Mybatis%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MyBatis%E3%80%91MyBatis%20Generator%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -670,7 +638,7 @@
   </entry>
   <entry>
     <title>【NoSql】NoSql入门和概述</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90NoSql%E3%80%91NoSql%E5%85%A5%E9%97%A8%E5%92%8C%E6%A6%82%E8%BF%B0/</url>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/NoSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90NoSql%E3%80%91NoSql%E5%85%A5%E9%97%A8%E5%92%8C%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -686,7 +654,7 @@
   </entry>
   <entry>
     <title>【Spring】集成Spring MVC</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringMVC%E3%80%91%E8%AF%B7%E6%B1%82%E6%B5%81%E7%A8%8B%E8%AF%A6%E8%A7%A3/</url>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20MVC%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringMVC%E3%80%91%E8%AF%B7%E6%B1%82%E6%B5%81%E7%A8%8B%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -701,7 +669,7 @@
   </entry>
   <entry>
     <title>【Spring】集成MyBatis</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E3%80%91%E9%9B%86%E6%88%90MyBatis/</url>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E3%80%91%E9%9B%86%E6%88%90MyBatis/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -747,31 +715,60 @@
         <category>全栈笔记</category>
       </categories>
       <tags>
-        <tag>Spring</tag>
         <tag>MyBatis</tag>
+        <tag>Spring</tag>
       </tags>
   </entry>
   <entry>
-    <title>【SpringBoot】拦截器</title>
-    <url>/2019/11/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
+    <title>【设计模式】前端控制器模式</title>
+    <url>/2019/12/23/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%89%8D%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
-<p>实现java web token的拦截</p>
-</blockquote>
+<p><strong>前端控制器(Front Controller Pattern)</strong>  用来提供一个<strong>集中的请求处理机制</strong>，所有的请求都将由一个单一的处理程序处理。该处理程序可以做认证/授权/记录日志，或者跟踪请求，然后把请求传给相应的处理程序。</p>
+<a id="more"></a>
+
+<h3 id="模式结构"><a href="#模式结构" class="headerlink" title="模式结构"></a>模式结构</h3><p><strong>前端控制器(Front Controller Pattern)</strong> 模式角色如下：</p>
+<ul>
+<li><strong>前端控制器（Front Controller）</strong> - 处理应用程序所有类型请求的单个处理程序，应用程序可以是基于 web 的应用程序，也可以是基于桌面的应用程序。</li>
+<li><strong>调度器（Dispatcher）</strong> - 前端控制器可能使用一个调度器对象来调度请求到相应的具体处理程序。</li>
+<li><strong>视图（View）</strong> - 视图是为请求而创建的对象。</li>
+</ul>
+<p><strong>模式结构图如下：</strong></p>
+<p><img src="/images/892594-20160623194328953-1886361315.jpg" alt="img"></p>
+<h3 id="应用示例"><a href="#应用示例" class="headerlink" title="应用示例"></a>应用示例</h3><p>我们将创建 <em>FrontController<em>、</em>Dispatcher</em> 分别当作前端控制器和调度器。<em>HomeView</em> 和 <em>StudentView</em> 表示各种为前端控制器接收到的请求而创建的视图。</p>
+<p><em>FrontControllerPatternDemo*，我们的演示类使用 *FrontController</em> 来演示前端控制器设计模式。</p>
+<p><strong>前端控制器：</strong>FrontController.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">   <span class="keyword">private</span> Dispatcher dispatcher;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">FrontController</span><span class="params">()</span></span>&#123;</span><br><span class="line">      dispatcher = <span class="keyword">new</span> Dispatcher();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isAuthenticUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"User is authenticated successfully."</span>);</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">trackRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Page requested: "</span> + request);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatchRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="comment">//记录每一个请求</span></span><br><span class="line">      trackRequest(request);</span><br><span class="line">      <span class="comment">//对用户进行身份验证</span></span><br><span class="line">      <span class="keyword">if</span>(isAuthenticUser())&#123;</span><br><span class="line">         dispatcher.dispatch(request);</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>调度器：</strong>Dispatcher.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dispatcher</span> </span>&#123;</span><br><span class="line">   <span class="keyword">private</span> StudentView studentView;</span><br><span class="line">   <span class="keyword">private</span> HomeView homeView;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Dispatcher</span><span class="params">()</span></span>&#123;</span><br><span class="line">      studentView = <span class="keyword">new</span> StudentView();</span><br><span class="line">      homeView = <span class="keyword">new</span> HomeView();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatch</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(request.equalsIgnoreCase(<span class="string">"STUDENT"</span>))&#123;</span><br><span class="line">         studentView.show();</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">         homeView.show();</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>视图：</strong>HomeView 和 StudentView</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HomeView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Home Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Student Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>测试</strong>：FrontControllerPatternDemo.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontControllerPatternDemo</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      FrontController frontController = <span class="keyword">new</span> FrontController();</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"HOME"</span>);</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"STUDENT"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>测试结果</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Page requested: HOME</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Home Page</span><br><span class="line">Page requested: STUDENT</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Student Page</span><br></pre></td></tr></table></figure>
+
+
+
 ]]></content>
       <categories>
-        <category>SpringBoot</category>
+        <category>编程思想</category>
       </categories>
       <tags>
-        <tag>SpringBoot</tag>
-        <tag>拦截器</tag>
+        <tag>前端控制器模式</tag>
+        <tag>设计模式</tag>
       </tags>
   </entry>
   <entry>
     <title>【Spring Boot】异常处理机制</title>
-    <url>/2019/11/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Boot%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/</url>
+    <url>/2019/11/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Boot%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -861,44 +858,26 @@
       </tags>
   </entry>
   <entry>
-    <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
-    <url>/2019/11/27/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
-    <content><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p>
-<a id="more"></a>
-
-<h4 id="HttpClient-介绍"><a href="#HttpClient-介绍" class="headerlink" title="HttpClient 介绍"></a>HttpClient 介绍</h4><p> <a href="http://hc.apache.org/index.html" target="_blank" rel="noopener">HttpClient</a>是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。 </p>
-<p>HttpClient相比传统JDK自带的URLConnection，增加了易用性和灵活性，它不仅使客户端发送Http请求变得容易，而且也方便开发人员测试接口（基于Http协议的），提高了开发的效率，也方便提高代码的健壮性。因此熟练掌握HttpClient是很重要的必修内容，掌握HttpClient后，相信对于Http协议的了解会更加深入。</p>
-<p><strong>org.apache.commons.httpclient.HttpClient与org.apache.http.client.HttpClient的区别</strong></p>
-<p>Commons的HttpClient项目现在是生命的尽头，不再被开发,  已被Apache HttpComponents项目HttpClient和HttpCore  模组取代，提供更好的性能和更大的灵活性。  </p>
-<p><strong>HttpClient 特性</strong></p>
-<ul>
-<li>实现了所有 HTTP 的方法（GET,POST,PUT,DELETE 等）</li>
-<li>支持自动转向</li>
-<li>支持 HTTPS 协议</li>
-<li>支持代理服务器等</li>
-</ul>
-<p>引用HttpClient非常简单，仅需要在maven中添加相关依赖即可：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="原生HttpClient使用"><a href="#原生HttpClient使用" class="headerlink" title="原生HttpClient使用"></a>原生HttpClient使用</h4><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testGet</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//申明Get请求</span></span><br><span class="line">    HttpGet httpGet = <span class="keyword">new</span> HttpGet(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpGet);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//4.判断状态码</span></span><br><span class="line">    <span class="keyword">if</span> (response.getStatusLine().getStatusCode() == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//从响应中取出实体</span></span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        <span class="comment">//使用工具类EntityUtils将实体并转换成字符串</span></span><br><span class="line">        String s = EntityUtils.toString(entity);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPost</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//声明Post请求</span></span><br><span class="line">    HttpPost httpPost = <span class="keyword">new</span> HttpPost(<span class="string">"https://www.oschina.net/"</span>);</span><br><span class="line">    <span class="comment">//3.开源中国为了安全，防止恶意攻击，在post请求中都限制了浏览器才能访问</span></span><br><span class="line">    httpPost.addHeader(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>);</span><br><span class="line">    ArrayList&lt;NameValuePair&gt; params = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"scope"</span>, <span class="string">"project"</span>));</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"q"</span>, <span class="string">"java"</span>));</span><br><span class="line">    UrlEncodedFormEntity formEntity = <span class="keyword">new</span> UrlEncodedFormEntity(params, Charset.forName(<span class="string">"utf-8"</span>));</span><br><span class="line">    httpPost.setEntity(formEntity);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpPost);</span><br><span class="line">    <span class="comment">//判断状态码</span></span><br><span class="line">    <span class="keyword">if</span>(response.getStatusLine().getStatusCode()==<span class="number">200</span>)&#123;</span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        String string = EntityUtils.toString(entity, <span class="string">"utf-8"</span>);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//6.关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="SpringBoot集成HttpClient"><a href="#SpringBoot集成HttpClient" class="headerlink" title="SpringBoot集成HttpClient"></a>SpringBoot集成HttpClient</h4><p>引入Maven依赖</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
+    <title>【SpringBoot】拦截器</title>
+    <url>/2019/11/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
+<p>实现java web token的拦截</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>接口自动化</category>
+        <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>自动化测试</tag>
-        <tag>接口自动化</tag>
+        <tag>SpringBoot</tag>
+        <tag>拦截器</tag>
       </tags>
   </entry>
   <entry>
     <title>【接口自动化测试框架（Java版）】基本环境搭建</title>
-    <url>/2019/11/27/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <url>/2019/11/27/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p>从本文起，将详细介绍 Java 自动化框架的搭建及相关知识学习，我也是边写边学，不一定完全正确，如果有异常情况，请在评论区留言。</p>
 <p>本文主要介绍JDK安装配置、IDEA安装配置、SpringBoot项目创建。</p>
 <a id="more"></a>
@@ -939,8 +918,44 @@
       </tags>
   </entry>
   <entry>
+    <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
+    <url>/2019/11/27/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
+    <content><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p>
+<a id="more"></a>
+
+<h4 id="HttpClient-介绍"><a href="#HttpClient-介绍" class="headerlink" title="HttpClient 介绍"></a>HttpClient 介绍</h4><p> <a href="http://hc.apache.org/index.html" target="_blank" rel="noopener">HttpClient</a>是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。 </p>
+<p>HttpClient相比传统JDK自带的URLConnection，增加了易用性和灵活性，它不仅使客户端发送Http请求变得容易，而且也方便开发人员测试接口（基于Http协议的），提高了开发的效率，也方便提高代码的健壮性。因此熟练掌握HttpClient是很重要的必修内容，掌握HttpClient后，相信对于Http协议的了解会更加深入。</p>
+<p><strong>org.apache.commons.httpclient.HttpClient与org.apache.http.client.HttpClient的区别</strong></p>
+<p>Commons的HttpClient项目现在是生命的尽头，不再被开发,  已被Apache HttpComponents项目HttpClient和HttpCore  模组取代，提供更好的性能和更大的灵活性。  </p>
+<p><strong>HttpClient 特性</strong></p>
+<ul>
+<li>实现了所有 HTTP 的方法（GET,POST,PUT,DELETE 等）</li>
+<li>支持自动转向</li>
+<li>支持 HTTPS 协议</li>
+<li>支持代理服务器等</li>
+</ul>
+<p>引用HttpClient非常简单，仅需要在maven中添加相关依赖即可：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="原生HttpClient使用"><a href="#原生HttpClient使用" class="headerlink" title="原生HttpClient使用"></a>原生HttpClient使用</h4><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testGet</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//申明Get请求</span></span><br><span class="line">    HttpGet httpGet = <span class="keyword">new</span> HttpGet(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpGet);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//4.判断状态码</span></span><br><span class="line">    <span class="keyword">if</span> (response.getStatusLine().getStatusCode() == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//从响应中取出实体</span></span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        <span class="comment">//使用工具类EntityUtils将实体并转换成字符串</span></span><br><span class="line">        String s = EntityUtils.toString(entity);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPost</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//声明Post请求</span></span><br><span class="line">    HttpPost httpPost = <span class="keyword">new</span> HttpPost(<span class="string">"https://www.oschina.net/"</span>);</span><br><span class="line">    <span class="comment">//3.开源中国为了安全，防止恶意攻击，在post请求中都限制了浏览器才能访问</span></span><br><span class="line">    httpPost.addHeader(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>);</span><br><span class="line">    ArrayList&lt;NameValuePair&gt; params = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"scope"</span>, <span class="string">"project"</span>));</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"q"</span>, <span class="string">"java"</span>));</span><br><span class="line">    UrlEncodedFormEntity formEntity = <span class="keyword">new</span> UrlEncodedFormEntity(params, Charset.forName(<span class="string">"utf-8"</span>));</span><br><span class="line">    httpPost.setEntity(formEntity);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpPost);</span><br><span class="line">    <span class="comment">//判断状态码</span></span><br><span class="line">    <span class="keyword">if</span>(response.getStatusLine().getStatusCode()==<span class="number">200</span>)&#123;</span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        String string = EntityUtils.toString(entity, <span class="string">"utf-8"</span>);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//6.关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="SpringBoot集成HttpClient"><a href="#SpringBoot集成HttpClient" class="headerlink" title="SpringBoot集成HttpClient"></a>SpringBoot集成HttpClient</h4><p>引入Maven依赖</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>接口自动化</category>
+      </categories>
+      <tags>
+        <tag>自动化测试</tag>
+        <tag>接口自动化</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【设计模式】装饰者模式</title>
-    <url>/2019/11/21/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
+    <url>/2019/11/21/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E8%A3%85%E9%A5%B0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<p><strong>“装饰者模式”</strong>动态的将责任附加到对象上。若要扩展功能，装饰者提供了比继承更有弹性的替代方案。</p>
 <a id="more"></a>
 
@@ -955,7 +970,7 @@
   </entry>
   <entry>
     <title>【设计模式】观察者模式</title>
-    <url>/2019/11/18/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
+    <url>/2019/11/18/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<p><strong>观察者模式</strong>（又被称为发布-订阅（Publish/Subscribe）模式，属于行为型模式的一种，它定义了一种一对多的依赖关系，让多个观察者对象同时监听某一个主题对象。这个主题对象在状态变化时，会通知所有的观察者对象，使他们能够自动更新自己。</p>
 <a id="more"></a>
 
@@ -1005,7 +1020,7 @@
   </entry>
   <entry>
     <title>【设计模式】策略模式</title>
-    <url>/2019/11/15/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</url>
+    <url>/2019/11/15/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<p><strong>策略模式：</strong>定义了算法族，分别封装起来，让它们之间可以互相替换，此模式让算法的变化独立于使用算法的客户。策略模式的结构如下：</p>
 <p> <img src="/images/3-1Q116103K1205.gif" alt="Strategy Pattern"> </p>
 <a id="more"></a>
@@ -1057,8 +1072,196 @@
       </tags>
   </entry>
   <entry>
+    <title>【SpringBoot】Spring Data JPA</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91JPA%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>JPA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Spring Boot】整合Spring Data JPA</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Boot%E3%80%91%E6%95%B4%E5%90%88Spring%20Data%20JPA/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>Spring Boot</tag>
+        <tag>Spring Data JPA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SpringBoot】JWT实现用户认证与鉴权</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>Http协议是无状态协议，通常需要实现用户认证，实现认证的方式有传统的Session认证和基于Token的认证，下面将介绍基于token的认证方式。</p>
+<a id="more"></a>
+
+<h3 id="JWT概要"><a href="#JWT概要" class="headerlink" title="JWT概要"></a>JWT概要</h3><blockquote>
+<p> JSON Web Token（JWT）是一个开放的标准（RFC 7519），它定义了一个紧凑且自包含的方式，用于在各方之间以JSON对象安全地传输信息。这些信息可以通过数字签名进行验证和信任。可以使用秘密（使用HMAC算法）或使用RSA的公钥/私钥对来对JWT进行签名。<br>具体的jwt介绍可以查看官网的介绍：<a href="https://jwt.io/introduction/" target="_blank" rel="noopener">https://jwt.io/introduction/</a> </p>
+</blockquote>
+<h3 id="JWT请求流程"><a href="#JWT请求流程" class="headerlink" title="JWT请求流程"></a>JWT请求流程<img src="/images/17.png" alt="JSON Web令牌如何工作"></h3><p>中文介绍：</p>
+<ol>
+<li>用户使用账号和面发出post请求；</li>
+<li>服务器使用私钥创建一个jwt；</li>
+<li>服务器返回这个jwt给浏览器；</li>
+<li>浏览器将该jwt串在请求头中像服务器发送请求；</li>
+<li>服务器验证该jwt；</li>
+<li>返回响应的资源给浏览器。</li>
+</ol>
+<h3 id="JWT组成"><a href="#JWT组成" class="headerlink" title="JWT组成"></a>JWT组成</h3><p> jwt含有三部分：头部（header）、载荷（payload）、签证（signature） </p>
+<p><strong>Header</strong></p>
+<p>头部一般有两部分信息：声明类型、声明加密的算法（通常使用HMAC SHA256）<br>头部一般使用base64加密：<code>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9</code><br>解密后：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"typ"</span>:<span class="string">"JWT"</span>,</span><br><span class="line">    <span class="attr">"alg"</span>:<span class="string">"HS256"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>payload</strong></p>
+<p>该部分一般存放一些有效的信息。jwt的标准定义包含五个字段：</p>
+<ul>
+<li><code>iss</code>：该JWT的签发者</li>
+<li><code>sub</code>: 该JWT所面向的用户</li>
+<li><code>aud</code>: 接收该JWT的一方</li>
+<li><code>exp(expires)</code>: 什么时候过期，这里是一个Unix时间戳</li>
+<li><code>iat(issued at)</code>: 在什么时候签发的</li>
+</ul>
+<p>这个只是JWT的定义标准，不强制使用。另外自己也可以添加一些公开的不涉及安全的方面的信息。</p>
+<p><strong>signature</strong></p>
+<p>JWT最后一个部分。该部分是使用了HS256加密后的数据；包含三个部分：</p>
+<ul>
+<li>header (base64后的)</li>
+<li>payload (base64后的)</li>
+<li>secret 私钥</li>
+</ul>
+<p>secret是保存在服务器端的，jwt的签发生成也是在服务器端的，secret就是用来进行jwt的签发和jwt的验证，所以，它就是你服务端的私钥，在任何场景都不应该流露出去。一旦客户端得知这个secret, 那就意味着客户端是可以自我签发jwt了。</p>
+<h3 id="SpringBoot项目集成JWT"><a href="#SpringBoot项目集成JWT" class="headerlink" title="SpringBoot项目集成JWT"></a>SpringBoot项目集成JWT</h3><ol>
+<li>添加JWT依赖：</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.jsonwebtoken<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jjwt<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.9.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>SpringBoot配置文件中配置JWT配置信息</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#jwt配置</span></span><br><span class="line"><span class="attr">jwt:</span></span><br><span class="line">  <span class="attr">secret:</span> <span class="string">VTBoc2EyTnRPVzVhVnpkdGJra3piR2x4U0c1eE5qZzk=</span></span><br><span class="line">  <span class="attr">issuer:</span> <span class="string">hydrogen网关服务器</span></span><br><span class="line">  <span class="attr">subject:</span> <span class="string">hydrogen用户</span></span><br><span class="line">  <span class="attr">ttlMillis:</span> <span class="number">86400000</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>定义一个接口<code>Payload</code>，用于拓展的JWT载荷。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Payload</span> </span>&#123;</span><br><span class="line">    <span class="function">String <span class="title">key</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>定义一个JwtConfig类，用于加载配置：</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.context.properties.ConfigurationProperties;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@ConfigurationProperties</span>(prefix = <span class="string">"jwt"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JwtConfig</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 秘钥</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String secret;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 签发主体</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String issuer;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 签发主题</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String subject;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * token有效期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long ttlMillis;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>提供JWT的工具类：</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wusuiwei</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/11/29</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JwtUtil</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">createJWT</span><span class="params">(Payload payload, JwtConfig jwtConfig)</span> </span>&#123;</span><br><span class="line">        Claims claims = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">//载荷</span></span><br><span class="line">        String key = payload.key();</span><br><span class="line">        <span class="keyword">if</span> (key != <span class="keyword">null</span>) &#123;</span><br><span class="line">            String value = JSON.toJSONString(payload);</span><br><span class="line">            claims = <span class="keyword">new</span> DefaultClaims();</span><br><span class="line">            claims.put(<span class="string">"module"</span>, key);</span><br><span class="line">            claims.put(key, value);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Date expiration = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">//过期时间</span></span><br><span class="line">        <span class="keyword">if</span> (jwtConfig.getTtlMillis() != <span class="keyword">null</span> &amp;&amp; jwtConfig.getTtlMillis() &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            expiration = <span class="keyword">new</span> Date(System.currentTimeMillis() + jwtConfig.getTtlMillis());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//签名密钥</span></span><br><span class="line">        <span class="keyword">byte</span>[] secretBytes = DatatypeConverter.parseBase64Binary(jwtConfig.getSecret());</span><br><span class="line">        Key secretKey = <span class="keyword">new</span> SecretKeySpec(secretBytes, SignatureAlgorithm.HS256.getJcaName());</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> Jwts.builder().setHeaderParam(<span class="string">"typ"</span>, <span class="string">"JWT"</span>)</span><br><span class="line">                .setClaims(claims)</span><br><span class="line">                .setExpiration(expiration)</span><br><span class="line">                .signWith(SignatureAlgorithm.HS256, secretKey).compact();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Claims <span class="title">parseJWT</span><span class="params">(String token, JwtConfig jwtConfig)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Jwts.parser()</span><br><span class="line">                .setSigningKey(DatatypeConverter.parseBase64Binary(jwtConfig.getSecret()))</span><br><span class="line">                .parseClaimsJws(token)</span><br><span class="line">                .getBody();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>实现一个拦截器，处理鉴权</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">import com.wusuiwei.hydrogen.base.jwt.JwtConfig;</span><br><span class="line">import com.wusuiwei.hydrogen.base.jwt.JwtUtil;</span><br><span class="line">import org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line">import org.springframework.http.HttpMethod;</span><br><span class="line">import org.springframework.web.method.HandlerMethod;</span><br><span class="line">import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;</span><br><span class="line"></span><br><span class="line">import javax.servlet.http.HttpServletRequest;</span><br><span class="line">import javax.servlet.http.HttpServletResponse;</span><br><span class="line">import java.lang.annotation.Annotation;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @author wusuiwei</span><br><span class="line"> * @since 2019/11/29</span><br><span class="line"> */</span><br><span class="line">public class JWTIntercepter extends HandlerInterceptorAdapter &#123;</span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line">    private JwtConfig jwtConfig;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception &#123;</span><br><span class="line">        // 忽略带JwtIgnore注解的请求, 不做后续token认证校验</span><br><span class="line">        if (handler instanceof HandlerMethod) &#123;</span><br><span class="line">            HandlerMethod handlerMethod = (HandlerMethod) handler;</span><br><span class="line">            Annotation annotation = handlerMethod.getMethod().getAnnotation(JwtIgnore.class);</span><br><span class="line">//            JwtIgnore jwtIgnore = handlerMethod.getMethodAnnotation(JwtIgnore.class);</span><br><span class="line">            if (annotation != null) &#123;</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        String authHeader = request.getHeader(&quot;authorization&quot;);</span><br><span class="line">        if (HttpMethod.OPTIONS.equals(request.getMethod())) &#123;</span><br><span class="line">            response.setStatus(HttpServletResponse.SC_OK);</span><br><span class="line">            return true;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            if (authHeader == null || !authHeader.startsWith(&quot;Bearer&quot;)) &#123;</span><br><span class="line">                throw new RuntimeException(&quot;请登录~&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            //获取token</span><br><span class="line">            String token = authHeader.substring(7);</span><br><span class="line">            JwtUtil.parseJWT(token, jwtConfig);</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中，为了实现绕过登录认证，提供了<code>@JwtIgnore</code>注解，只需要将其注解在请求方法上，则可以绕过登录：</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.*;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wusuiwei</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/11/29</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Target</span>(ElementType.METHOD)</span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> JwtIgnore &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>注：jwt可能会出现跨域问题，暂时不予处理，等后期相关知识具备时再处理。</strong></p>
+<hr>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>JWT</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SpringBoot】Spring Data JPA</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.2.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>Spring Data JPA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Spring Cloud Alibaba】Nacos</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Nacos/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Nacos作为注册中心"><a href="#Nacos作为注册中心" class="headerlink" title="Nacos作为注册中心"></a>Nacos作为注册中心</h3>]]></content>
+      <categories>
+        <category>Spring Cloud</category>
+      </categories>
+      <tags>
+        <tag>Spring Cloud</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Spring Cloud Alibaba】Nacos</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Nacos作为注册中心"><a href="#Nacos作为注册中心" class="headerlink" title="Nacos作为注册中心"></a>Nacos作为注册中心</h3>]]></content>
+      <categories>
+        <category>Spring Cloud</category>
+      </categories>
+      <tags>
+        <tag>Spring Cloud</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Spring Cloud Alibaba】Nacos注册中心</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Sentinel/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Nacos作为注册中心"><a href="#Nacos作为注册中心" class="headerlink" title="Nacos作为注册中心"></a>Nacos作为注册中心</h3>]]></content>
+      <categories>
+        <category>Spring Cloud</category>
+      </categories>
+      <tags>
+        <tag>Spring Cloud</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>SpringCloud学习笔记</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/SpringCloud%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringCloud%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1149,40 +1352,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【SpringBoot】Spring Data JPA</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91JPA%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>JPA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Spring Cloud Alibaba】Nacos</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Nacos作为注册中心"><a href="#Nacos作为注册中心" class="headerlink" title="Nacos作为注册中心"></a>Nacos作为注册中心</h3>]]></content>
-      <categories>
-        <category>Spring Cloud</category>
-      </categories>
-      <tags>
-        <tag>Spring Cloud</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Spring Cloud Alibaba】Nacos注册中心</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Sentinel/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%E3%80%91GateWay/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1194,152 +1365,11 @@
       </categories>
       <tags>
         <tag>Spring Cloud</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Spring Cloud Alibaba】Nacos</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Nacos/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Nacos作为注册中心"><a href="#Nacos作为注册中心" class="headerlink" title="Nacos作为注册中心"></a>Nacos作为注册中心</h3>]]></content>
-      <categories>
-        <category>Spring Cloud</category>
-      </categories>
-      <tags>
-        <tag>Spring Cloud</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Spring Cloud Alibaba】Nacos注册中心</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%E3%80%91GateWay/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Nacos作为注册中心"><a href="#Nacos作为注册中心" class="headerlink" title="Nacos作为注册中心"></a>Nacos作为注册中心</h3>]]></content>
-      <categories>
-        <category>Spring Cloud</category>
-      </categories>
-      <tags>
-        <tag>Spring Cloud</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【SpringBoot】Spring Data JPA</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-data-jpa<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2.2.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>Spring Data JPA</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【SpringBoot】JWT实现用户认证与鉴权</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>Http协议是无状态协议，通常需要实现用户认证，实现认证的方式有传统的Session认证和基于Token的认证，下面将介绍基于token的认证方式。</p>
-<a id="more"></a>
-
-<h3 id="JWT概要"><a href="#JWT概要" class="headerlink" title="JWT概要"></a>JWT概要</h3><blockquote>
-<p> JSON Web Token（JWT）是一个开放的标准（RFC 7519），它定义了一个紧凑且自包含的方式，用于在各方之间以JSON对象安全地传输信息。这些信息可以通过数字签名进行验证和信任。可以使用秘密（使用HMAC算法）或使用RSA的公钥/私钥对来对JWT进行签名。<br>具体的jwt介绍可以查看官网的介绍：<a href="https://jwt.io/introduction/" target="_blank" rel="noopener">https://jwt.io/introduction/</a> </p>
-</blockquote>
-<h3 id="JWT请求流程"><a href="#JWT请求流程" class="headerlink" title="JWT请求流程"></a>JWT请求流程<img src="/images/17.png" alt="JSON Web令牌如何工作"></h3><p>中文介绍：</p>
-<ol>
-<li>用户使用账号和面发出post请求；</li>
-<li>服务器使用私钥创建一个jwt；</li>
-<li>服务器返回这个jwt给浏览器；</li>
-<li>浏览器将该jwt串在请求头中像服务器发送请求；</li>
-<li>服务器验证该jwt；</li>
-<li>返回响应的资源给浏览器。</li>
-</ol>
-<h3 id="JWT组成"><a href="#JWT组成" class="headerlink" title="JWT组成"></a>JWT组成</h3><p> jwt含有三部分：头部（header）、载荷（payload）、签证（signature） </p>
-<p><strong>Header</strong></p>
-<p>头部一般有两部分信息：声明类型、声明加密的算法（通常使用HMAC SHA256）<br>头部一般使用base64加密：<code>eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9</code><br>解密后：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"typ"</span>:<span class="string">"JWT"</span>,</span><br><span class="line">    <span class="attr">"alg"</span>:<span class="string">"HS256"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>payload</strong></p>
-<p>该部分一般存放一些有效的信息。jwt的标准定义包含五个字段：</p>
-<ul>
-<li><code>iss</code>：该JWT的签发者</li>
-<li><code>sub</code>: 该JWT所面向的用户</li>
-<li><code>aud</code>: 接收该JWT的一方</li>
-<li><code>exp(expires)</code>: 什么时候过期，这里是一个Unix时间戳</li>
-<li><code>iat(issued at)</code>: 在什么时候签发的</li>
-</ul>
-<p>这个只是JWT的定义标准，不强制使用。另外自己也可以添加一些公开的不涉及安全的方面的信息。</p>
-<p><strong>signature</strong></p>
-<p>JWT最后一个部分。该部分是使用了HS256加密后的数据；包含三个部分：</p>
-<ul>
-<li>header (base64后的)</li>
-<li>payload (base64后的)</li>
-<li>secret 私钥</li>
-</ul>
-<p>secret是保存在服务器端的，jwt的签发生成也是在服务器端的，secret就是用来进行jwt的签发和jwt的验证，所以，它就是你服务端的私钥，在任何场景都不应该流露出去。一旦客户端得知这个secret, 那就意味着客户端是可以自我签发jwt了。</p>
-<h3 id="SpringBoot项目集成JWT"><a href="#SpringBoot项目集成JWT" class="headerlink" title="SpringBoot项目集成JWT"></a>SpringBoot项目集成JWT</h3><ol>
-<li>添加JWT依赖：</li>
-</ol>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.jsonwebtoken<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jjwt<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.9.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>SpringBoot配置文件中配置JWT配置信息</li>
-</ol>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment">#jwt配置</span></span><br><span class="line"><span class="attr">jwt:</span></span><br><span class="line">  <span class="attr">secret:</span> <span class="string">VTBoc2EyTnRPVzVhVnpkdGJra3piR2x4U0c1eE5qZzk=</span></span><br><span class="line">  <span class="attr">issuer:</span> <span class="string">hydrogen网关服务器</span></span><br><span class="line">  <span class="attr">subject:</span> <span class="string">hydrogen用户</span></span><br><span class="line">  <span class="attr">ttlMillis:</span> <span class="number">86400000</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>定义一个接口<code>Payload</code>，用于拓展的JWT载荷。</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">Payload</span> </span>&#123;</span><br><span class="line">    <span class="function">String <span class="title">key</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>定义一个JwtConfig类，用于加载配置：</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.context.properties.ConfigurationProperties;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Component;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@ConfigurationProperties</span>(prefix = <span class="string">"jwt"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JwtConfig</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 秘钥</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String secret;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 签发主体</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String issuer;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 签发主题</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String subject;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * token有效期</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long ttlMillis;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>提供JWT的工具类：</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wusuiwei</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/11/29</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JwtUtil</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">createJWT</span><span class="params">(Payload payload, JwtConfig jwtConfig)</span> </span>&#123;</span><br><span class="line">        Claims claims = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">//载荷</span></span><br><span class="line">        String key = payload.key();</span><br><span class="line">        <span class="keyword">if</span> (key != <span class="keyword">null</span>) &#123;</span><br><span class="line">            String value = JSON.toJSONString(payload);</span><br><span class="line">            claims = <span class="keyword">new</span> DefaultClaims();</span><br><span class="line">            claims.put(<span class="string">"module"</span>, key);</span><br><span class="line">            claims.put(key, value);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Date expiration = <span class="keyword">null</span>;</span><br><span class="line">        <span class="comment">//过期时间</span></span><br><span class="line">        <span class="keyword">if</span> (jwtConfig.getTtlMillis() != <span class="keyword">null</span> &amp;&amp; jwtConfig.getTtlMillis() &gt;= <span class="number">0</span>) &#123;</span><br><span class="line">            expiration = <span class="keyword">new</span> Date(System.currentTimeMillis() + jwtConfig.getTtlMillis());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//签名密钥</span></span><br><span class="line">        <span class="keyword">byte</span>[] secretBytes = DatatypeConverter.parseBase64Binary(jwtConfig.getSecret());</span><br><span class="line">        Key secretKey = <span class="keyword">new</span> SecretKeySpec(secretBytes, SignatureAlgorithm.HS256.getJcaName());</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> Jwts.builder().setHeaderParam(<span class="string">"typ"</span>, <span class="string">"JWT"</span>)</span><br><span class="line">                .setClaims(claims)</span><br><span class="line">                .setExpiration(expiration)</span><br><span class="line">                .signWith(SignatureAlgorithm.HS256, secretKey).compact();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Claims <span class="title">parseJWT</span><span class="params">(String token, JwtConfig jwtConfig)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> Jwts.parser()</span><br><span class="line">                .setSigningKey(DatatypeConverter.parseBase64Binary(jwtConfig.getSecret()))</span><br><span class="line">                .parseClaimsJws(token)</span><br><span class="line">                .getBody();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="6">
-<li>实现一个拦截器，处理鉴权</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">import com.wusuiwei.hydrogen.base.jwt.JwtConfig;</span><br><span class="line">import com.wusuiwei.hydrogen.base.jwt.JwtUtil;</span><br><span class="line">import org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line">import org.springframework.http.HttpMethod;</span><br><span class="line">import org.springframework.web.method.HandlerMethod;</span><br><span class="line">import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;</span><br><span class="line"></span><br><span class="line">import javax.servlet.http.HttpServletRequest;</span><br><span class="line">import javax.servlet.http.HttpServletResponse;</span><br><span class="line">import java.lang.annotation.Annotation;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * @author wusuiwei</span><br><span class="line"> * @since 2019/11/29</span><br><span class="line"> */</span><br><span class="line">public class JWTIntercepter extends HandlerInterceptorAdapter &#123;</span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line">    private JwtConfig jwtConfig;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception &#123;</span><br><span class="line">        // 忽略带JwtIgnore注解的请求, 不做后续token认证校验</span><br><span class="line">        if (handler instanceof HandlerMethod) &#123;</span><br><span class="line">            HandlerMethod handlerMethod = (HandlerMethod) handler;</span><br><span class="line">            Annotation annotation = handlerMethod.getMethod().getAnnotation(JwtIgnore.class);</span><br><span class="line">//            JwtIgnore jwtIgnore = handlerMethod.getMethodAnnotation(JwtIgnore.class);</span><br><span class="line">            if (annotation != null) &#123;</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        String authHeader = request.getHeader(&quot;authorization&quot;);</span><br><span class="line">        if (HttpMethod.OPTIONS.equals(request.getMethod())) &#123;</span><br><span class="line">            response.setStatus(HttpServletResponse.SC_OK);</span><br><span class="line">            return true;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            if (authHeader == null || !authHeader.startsWith(&quot;Bearer&quot;)) &#123;</span><br><span class="line">                throw new RuntimeException(&quot;请登录~&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            //获取token</span><br><span class="line">            String token = authHeader.substring(7);</span><br><span class="line">            JwtUtil.parseJWT(token, jwtConfig);</span><br><span class="line">            return true;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>其中，为了实现绕过登录认证，提供了<code>@JwtIgnore</code>注解，只需要将其注解在请求方法上，则可以绕过登录：</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.annotation.*;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> wusuiwei</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@since</span> 2019/11/29</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Target</span>(ElementType.METHOD)</span><br><span class="line"><span class="meta">@Retention</span>(RetentionPolicy.RUNTIME)</span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> JwtIgnore &#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p><strong>注：jwt可能会出现跨域问题，暂时不予处理，等后期相关知识具备时再处理。</strong></p>
-<hr>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>JWT</tag>
       </tags>
   </entry>
   <entry>
     <title>【Spring笔记】面向切面编程</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1467,7 +1497,7 @@
   </entry>
   <entry>
     <title>【Spring笔记】面向切面编程</title>
-    <url>/2019/11/08/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-master/%E3%80%90Hydrogen%E3%80%91%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/</url>
+    <url>/2019/11/08/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>本系统将采用前后端分离的架构，后端采用SpringBoot等相关框架，前端采用Vue相关框架。</p>
 <a id="more"></a>
 
@@ -1482,22 +1512,8 @@
       </tags>
   </entry>
   <entry>
-    <title>MVC模式</title>
-    <url>/2019/11/08/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/MVC%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
-      <tags>
-        <tag>MVC模式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【SpringMVC】框架体系</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringMVC%E3%80%91%E6%A1%86%E6%9E%B6%E4%BD%93%E7%B3%BB/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20MVC%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringMVC%E3%80%91%E6%A1%86%E6%9E%B6%E4%BD%93%E7%B3%BB/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1511,7 +1527,7 @@
   </entry>
   <entry>
     <title>【Spring】事务管理</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E3%80%91%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E3%80%91%E4%BA%8B%E5%8A%A1%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1525,7 +1541,7 @@
   </entry>
   <entry>
     <title>【Spring笔记】核心容器</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A0%B8%E5%BF%83%E5%AE%B9%E5%99%A8/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A0%B8%E5%BF%83%E5%AE%B9%E5%99%A8/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1795,8 +1811,22 @@
       </tags>
   </entry>
   <entry>
+    <title>MVC模式</title>
+    <url>/2019/11/08/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/MVC%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+      <tags>
+        <tag>MVC模式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Spring笔记】框架概述</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1872,18 +1902,8 @@
 ]]></content>
   </entry>
   <entry>
-    <title>【设计模式】适配器模式</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
-  </entry>
-  <entry>
     <title>【自动化测试】Android自动化测试环境搭建</title>
-    <url>/2019/11/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Android%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Android%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<a id="more"></a>
 
 <ol>
@@ -1920,7 +1940,7 @@
   </entry>
   <entry>
     <title>【自动化测试】测试报告生成</title>
-    <url>/2019/11/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/</url>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A%E7%94%9F%E6%88%90/</url>
     <content><![CDATA[<p>这里汇集了使用到的所有测试报告生成方法。</p>
 <ul>
 <li>IDEA+Maven+TestNG+ReportNG 生成测试报告</li>
@@ -1945,8 +1965,18 @@
       </tags>
   </entry>
   <entry>
+    <title>【设计模式】适配器模式</title>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%80%82%E9%85%8D%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+  </entry>
+  <entry>
     <title>【Hydrogen-ui】Vue.js 环境准备（IDEA）</title>
-    <url>/2019/11/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-ui-master/%E3%80%90Hydrogen-ui%E3%80%91Vue.js%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%EF%BC%88IDEA%EF%BC%89/</url>
+    <url>/2019/11/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen-ui%E3%80%91Vue.js%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%EF%BC%88IDEA%EF%BC%89/</url>
     <content><![CDATA[<p>记录了IDEA下编辑Vue.js 代码的配置</p>
 <a id="more"></a>
 
@@ -2001,7 +2031,7 @@
   </entry>
   <entry>
     <title>【设计模式】单例模式</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<blockquote>
 <p> 单例模式(Singleton Pattern)：单例模式确保某一个类只有一个实例，并提供一个访问它的全剧访问点。 </p>
 </blockquote>
@@ -2018,7 +2048,7 @@
   </entry>
   <entry>
     <title>【设计模式】建造者模式</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<a id="more"></a>
 
 ]]></content>
@@ -2032,7 +2062,7 @@
   </entry>
   <entry>
     <title>【设计模式】抽象工厂模式</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<a id="more"></a>
 
 ]]></content>
@@ -2042,7 +2072,7 @@
   </entry>
   <entry>
     <title>【设计模式】面向对象设计原则</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</url>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</url>
     <content><![CDATA[<a id="more"></a>]]></content>
       <categories>
         <category>编程思想</category>
@@ -2054,7 +2084,7 @@
   </entry>
   <entry>
     <title>【设计模式】工厂方法模式</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<a id="more"></a>
 
 ]]></content>
@@ -2068,7 +2098,7 @@
   </entry>
   <entry>
     <title>【设计模式】概述</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%A6%82%E8%BF%B0/</url>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[ <img src="/images/Java-Design-Patterns.png" width="60%" height="30%">
 
 <a id="more"></a>
@@ -2114,7 +2144,7 @@
   </entry>
   <entry>
     <title>Java 学习路线图</title>
-    <url>/2019/11/07/Java%20%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <url>/2019/11/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF%E5%9B%BE/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -2323,7 +2353,7 @@
   </entry>
   <entry>
     <title>【JPA】简介及HelloWorld</title>
-    <url>/2018/10/06/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E7%AE%80%E4%BB%8B%E5%8F%8AHelloWorld/</url>
+    <url>/2018/10/06/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E7%AE%80%E4%BB%8B%E5%8F%8AHelloWorld/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -2338,7 +2368,7 @@
   </entry>
   <entry>
     <title>设计模式学习笔记</title>
-    <url>/2018/09/25/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2018/09/25/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -2355,7 +2385,7 @@
   </entry>
   <entry>
     <title>Spring Boot学习笔记</title>
-    <url>/2018/06/30/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2018/06/30/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringBoot%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -2372,7 +2402,7 @@
   </entry>
   <entry>
     <title>Dubbo框架学习总结</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Dubbo%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Dubbo%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Dubbo%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -2385,26 +2415,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Spring Boot 笔记之 缓存</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20%E7%BC%93%E5%AD%98/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="JSR107"><a href="#JSR107" class="headerlink" title="JSR107"></a>JSR107</h3><h3 id="Spring-缓存原理"><a href="#Spring-缓存原理" class="headerlink" title="Spring 缓存原理"></a>Spring 缓存原理</h3>]]></content>
-      <categories>
-        <category>Spring Boot</category>
-      </categories>
-      <tags>
-        <tag>Spring Boot</tag>
-        <tag>缓存</tag>
-        <tag>redis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>MybatisPlus学习笔记</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MybatisPlus%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Mybatis%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MybatisPlus%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -2437,26 +2449,8 @@
       </tags>
   </entry>
   <entry>
-    <title>Spring Boot 笔记之 缓存</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%20/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>Spring Boot</category>
-      </categories>
-      <tags>
-        <tag>Spring Boot</tag>
-        <tag>缓存</tag>
-        <tag>redis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Redis 学习总结</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Redis%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Redis%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Redis%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -2971,8 +2965,61 @@
       </tags>
   </entry>
   <entry>
+    <title>Spring Boot 笔记之 缓存</title>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20%E7%BC%93%E5%AD%98/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="JSR107"><a href="#JSR107" class="headerlink" title="JSR107"></a>JSR107</h3><h3 id="Spring-缓存原理"><a href="#Spring-缓存原理" class="headerlink" title="Spring 缓存原理"></a>Spring 缓存原理</h3>]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>Spring Boot</tag>
+        <tag>缓存</tag>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【SpringBoot】集成Redis</title>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E9%9B%86%E6%88%90Redis/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>Reids</category>
+      </categories>
+      <tags>
+        <tag>Redis</tag>
+        <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring Boot 笔记之 缓存</title>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E7%AC%94%E8%AE%B0%E4%B9%8B%E6%9C%8D%E5%8A%A1%E7%86%94%E6%96%AD%20/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>Spring Boot</tag>
+        <tag>缓存</tag>
+        <tag>redis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Spring学习笔记</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -3054,25 +3101,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【SpringBoot】集成Redis</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E9%9B%86%E6%88%90Redis/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>Reids</category>
-      </categories>
-      <tags>
-        <tag>Redis</tag>
-        <tag>SpringBoot</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>理解微服务架构</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E7%90%86%E8%A7%A3%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/</url>
+    <url>/2018/06/15/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E7%90%86%E8%A7%A3%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -3088,7 +3118,7 @@
   </entry>
   <entry>
     <title>【微服务】网关</title>
-    <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E7%BD%91%E5%85%B3/</url>
+    <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E7%BD%91%E5%85%B3/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -3103,7 +3133,7 @@
   </entry>
   <entry>
     <title>【微服务】配置中心</title>
-    <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/</url>
+    <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -3117,8 +3147,23 @@
       </tags>
   </entry>
   <entry>
+    <title>【UI自动化测试】PageObject模式</title>
+    <url>/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E3%80%91PageObject%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+      <tags>
+        <tag>UI自动化测试</tag>
+        <tag>PageObject</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【微服务】注册与发现</title>
-    <url>/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/</url>
+    <url>/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -3197,7 +3242,7 @@
   </entry>
   <entry>
     <title>【MySQL】优化篇</title>
-    <url>/2018/05/10/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E4%BC%98%E5%8C%96%E7%AF%87/</url>
+    <url>/2018/05/10/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E4%BC%98%E5%8C%96%E7%AF%87/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -3302,11 +3347,11 @@
         <category>项目笔记</category>
       </categories>
       <tags>
+        <tag>IDEA</tag>
         <tag>Linux</tag>
         <tag>Docker</tag>
         <tag>MySQL</tag>
         <tag>SpringBoot</tag>
-        <tag>IDEA</tag>
         <tag>gmall</tag>
         <tag>Git</tag>
         <tag>GitHub</tag>
@@ -3320,7 +3365,7 @@
   </entry>
   <entry>
     <title>【面试题】JavaSE面试总结</title>
-    <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Docker%E3%80%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%93/</url>
+    <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Docker%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Docker%E3%80%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -3397,8 +3442,32 @@
       </tags>
   </entry>
   <entry>
+    <title>【面试题】JavaSE面试总结</title>
+    <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90%E9%9D%A2%E8%AF%95%E9%A2%98%E3%80%91JavaSE%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>本篇文章将介绍JavaSE面试过程中的题目及相关知识点总结。</p>
+<a id="more"></a>
+
+<h3 id="自增变量"><a href="#自增变量" class="headerlink" title="自增变量"></a>自增变量</h3><p>面试题：写出如下代码段的运行结果</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">    i = i++;</span><br><span class="line">    <span class="keyword">int</span> j = i++;</span><br><span class="line">    <span class="keyword">int</span> k = i + ++i * i++;</span><br><span class="line">    System.out.println(<span class="string">"i="</span> + i);</span><br><span class="line">    System.out.println(<span class="string">"j="</span> + j);</span><br><span class="line">    System.out.println(<span class="string">"k="</span> + k);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>运行结果：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i=4</span><br><span class="line">j=1</span><br><span class="line">k=11</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>JavaSE</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>面试总结</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【MySQL】基础知识点总结</title>
-    <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/</url>
+    <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -3637,32 +3706,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【面试题】JavaSE面试总结</title>
-    <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90%E9%9D%A2%E8%AF%95%E9%A2%98%E3%80%91JavaSE%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>本篇文章将介绍JavaSE面试过程中的题目及相关知识点总结。</p>
-<a id="more"></a>
-
-<h3 id="自增变量"><a href="#自增变量" class="headerlink" title="自增变量"></a>自增变量</h3><p>面试题：写出如下代码段的运行结果</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i = <span class="number">1</span>;</span><br><span class="line">    i = i++;</span><br><span class="line">    <span class="keyword">int</span> j = i++;</span><br><span class="line">    <span class="keyword">int</span> k = i + ++i * i++;</span><br><span class="line">    System.out.println(<span class="string">"i="</span> + i);</span><br><span class="line">    System.out.println(<span class="string">"j="</span> + j);</span><br><span class="line">    System.out.println(<span class="string">"k="</span> + k);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>运行结果：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">i=4</span><br><span class="line">j=1</span><br><span class="line">k=11</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>JavaSE</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>面试总结</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Hydrogen】整体框架设计</title>
-    <url>/2018/05/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-master/%E3%80%90Hydrogen%E3%80%91%E6%95%B4%E4%BD%93%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1/</url>
+    <url>/2018/05/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E6%95%B4%E4%BD%93%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -3704,7 +3749,7 @@
   </entry>
   <entry>
     <title>【Java】Java核心技术</title>
-    <url>/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%20SE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -4320,7 +4365,7 @@
   </entry>
   <entry>
     <title>MySQL学习总结</title>
-    <url>/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -4431,58 +4476,7 @@
   </entry>
   <entry>
     <title>Linux下安装maven</title>
-    <url>/2018/03/03/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%E5%AE%89%E8%A3%85Maven/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>最近项目中使用到了maven，需要在服务器端安装一个maven。</p>
-<a id="more"></a>
-
-<p>maven官网： <a href="http://maven.apache.org" target="_blank" rel="noopener">http://maven.apache.org</a></p>
-<p>下载地址：<a href="https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz" target="_blank" rel="noopener">https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</a></p>
-<p>安装步骤：</p>
-<ol>
-<li>下载</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>解压</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar zxvf apache-maven-3.6.1-bin.tar.gz -C /opt/</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>环境变量配置</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
-
-<p>在文件后面添加一下信息：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export M2_HOME=/opt/apache-maven-3.6.1</span><br><span class="line">export PATH=$PATH:$M2_HOME/bin</span><br></pre></td></tr></table></figure>
-
-<p>让配置文件生效：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>验证</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mvn -version</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>配置文件详解</li>
-</ol>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag"><span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 存放本地仓库的地方 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>/opt/apache-maven-3.6.3/repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br><span class="line">  	</span><br><span class="line">	<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>spring<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/spring<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云中央仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/central<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云apache仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/apache<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 一些自定义配置 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">profiles</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>myProfile<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 激活这个配置 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">activeByDefault</span>&gt;</span>true<span class="tag">&lt;/<span class="name">activeByDefault</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">jdk</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">activation</span>&gt;</span></span><br><span class="line"></span><br><span class="line">			<span class="comment">&lt;!-- 全局属性配置，让所有 maven 项目新建时默认都是 java8、UTF-8 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">jdk.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk.version</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux下安装maven</title>
-    <url>/2018/03/03/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Mybatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <url>/2018/03/03/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Mybatis%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Mybatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -4702,8 +4696,59 @@
       </tags>
   </entry>
   <entry>
+    <title>【Linux】CentOS 8 下安装maven</title>
+    <url>/2018/03/03/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Linux%E3%80%91CentOS%208%E5%AE%89%E8%A3%85Maven/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>最近项目中使用到了maven，需要在服务器端安装一个maven。</p>
+<a id="more"></a>
+
+<p>maven官网： <a href="http://maven.apache.org" target="_blank" rel="noopener">http://maven.apache.org</a></p>
+<p>下载地址：<a href="https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz" target="_blank" rel="noopener">https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</a></p>
+<p>安装步骤：</p>
+<ol>
+<li>下载</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>解压</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar zxvf apache-maven-3.6.1-bin.tar.gz -C /opt/</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>环境变量配置</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+
+<p>在文件后面添加一下信息：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export M2_HOME=/opt/apache-maven-3.6.1</span><br><span class="line">export PATH=$PATH:$M2_HOME/bin</span><br></pre></td></tr></table></figure>
+
+<p>让配置文件生效：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>验证</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mvn -version</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>配置文件详解</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag"><span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 存放本地仓库的地方 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>/opt/apache-maven-3.6.3/repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br><span class="line">  	</span><br><span class="line">	<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>spring<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/spring<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云中央仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/central<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云apache仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/apache<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 一些自定义配置 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">profiles</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>myProfile<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 激活这个配置 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">activeByDefault</span>&gt;</span>true<span class="tag">&lt;/<span class="name">activeByDefault</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">jdk</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">activation</span>&gt;</span></span><br><span class="line"></span><br><span class="line">			<span class="comment">&lt;!-- 全局属性配置，让所有 maven 项目新建时默认都是 java8、UTF-8 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">jdk.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk.version</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Tool】IDEA 常用快捷键</title>
-    <url>/2018/02/12/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Tool%E3%80%91IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <url>/2018/02/12/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/IDEA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Tool%E3%80%91IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -4764,6 +4809,77 @@
       </categories>
       <tags>
         <tag>众筹</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>vue环境搭建</title>
+    <url>/2016/05/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/vue%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h2 id="安装-node-环境"><a href="#安装-node-环境" class="headerlink" title="安装 node 环境"></a>安装 node 环境</h2><ol>
+<li>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></li>
+</ol>
+<ul>
+<li>校验是否安装成功：<code>node -v</code></li>
+</ul>
+<p><img src="/images/image-20200820181810541.png" alt="image-20200820181810541"></p>
+<ol start="2">
+<li>安装国内npm镜像：</li>
+</ol>
+<p><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></p>
+<ul>
+<li>校验是否安装成功：<code>cnpm -v</code></li>
+</ul>
+<p><img src="/images/image-20200820182034693.png" alt="image-20200820182034693"></p>
+<h2 id="搭建-vue-项目环境"><a href="#搭建-vue-项目环境" class="headerlink" title="搭建 vue 项目环境"></a>搭建 vue 项目环境</h2><ul>
+<li>cnpm 全局安装 vue-cli ：<code>cnpm intall --global vue-cli</code></li>
+<li>校验 vue-cli 是否安装成功</li>
+</ul>
+<p><img src="/images/image-20200820182735520.png" alt="image-20200820182735520"></p>
+<h2 id="vue-项目搭建"><a href="#vue-项目搭建" class="headerlink" title="vue 项目搭建"></a>vue 项目搭建</h2><ul>
+<li>创建 vue 项目：<code>vue init webpack [dirName]</code> </li>
+</ul>
+<p>如：<code>vue init webpack hydrogen-vue</code></p>
+<p>需要设置以下内容：</p>
+<p>Project name hydrogen-vue  　　　　　　　　　 // 你的项目名称<br>Project description A Vue.js project 　　          // 你的项目描述<br>Author wusuiwei　　　　　　　　　　　　　　 // 作者的名称<br>Vue build standalone 　　　　　　　　　　   // 打包方式，默认，直接回车<br>Install vue-router? No 　　　　　　　　　      // 是否安装 vue-router，路由，选(Y)<br>Use ESLint to lint your code? No 　　　// 是否安装 eslint管理代码，不推荐，不然你还会想办法关掉它，选(N)<br>Setup unit tests with Karma + Mocha? No　　// 是否安装Karma + Mocha 单元测试工具，选（N）<br>Setup e2e tests with Nightwatch? No　　　　// 是否安装e2e端到端测试工具，选（N）</p>
+<ul>
+<li>项目初始化：<code>npm install</code></li>
+<li>项目启动：<code>npm run dev</code></li>
+</ul>
+<h2 id="项目结构详解"><a href="#项目结构详解" class="headerlink" title="项目结构详解"></a>项目结构详解</h2><p><img src="/images/image-20200820184108762.png" alt="image-20200820184108762"></p>
+<p>　　1、build：构建脚本目录</p>
+<p>　　　　1）build.js  ==&gt; 生产环境构建脚本；``</p>
+<p>　　　　2）check-versions.js  ==&gt; 检查npm，node.js版本；</p>
+<p>　　　　3）utils.js  ==&gt; 构建相关工具方法；</p>
+<p>　　　　4）vue-loader.conf.js  ==&gt; 配置了css加载器以及编译css之后自动添加前缀；</p>
+<p>　　　　5）webpack.base.conf.js  ==&gt; webpack基本配置；</p>
+<p>　　　　6）webpack.dev.conf.js  ==&gt; webpack开发环境配置；</p>
+<p>　　　　7）webpack.prod.conf.js  ==&gt; webpack生产环境配置；</p>
+<p>　　2、config：项目配置</p>
+<p>　　　　1）dev.env.js  ==&gt; 开发环境变量；</p>
+<p>　　　　2）index.js  ==&gt; 项目配置文件；</p>
+<p>　　　　3）prod.env.js  ==&gt; 生产环境变量；</p>
+<p>　　3、node_modules：npm 加载的项目依赖模块（依赖包都在这里）</p>
+<p>　　4、src：这里是我们要开发的目录，基本上要做的事情都在这个目录里。里面包含了几个目录及文件：</p>
+<p>　　　　1）assets：资源目录，放置一些图片或者公共js、公共css。这里的资源会被webpack构建；</p>
+<p>　　　　2）components：组件目录，我们写的组件就放在这个目录里面；</p>
+<p>　　　　3）router：前端路由，我们需要配置的路由路径写在index.js里面；</p>
+<p>　　　　4）App.vue：根组件；</p>
+<p>　　　　5）main.js：入口js文件；</p>
+<p>　　5、static：静态资源目录，如图片、字体等。不会被webpack构建</p>
+<p>　　6、index.html：首页入口文件，可以添加一些 meta 信息等</p>
+<p>　　7、package.json：npm包配置文件，定义了项目的npm脚本，依赖包等信息``</p>
+<p>　　8、README.md：项目的说明文档，markdown 格式</p>
+<p>　　9、.xxxx文件：这些是一些配置文件，包括语法配置，git配置等</p>
+]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+      <tags>
+        <tag>自动化测试平台</tag>
       </tags>
   </entry>
 </search>

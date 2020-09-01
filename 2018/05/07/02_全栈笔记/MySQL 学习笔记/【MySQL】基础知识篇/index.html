@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"always","offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: true,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
+    },
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。  这篇文章主要介绍MySQL的一些基本用法与总结。">
+<meta name="keywords" content="MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【MySQL】基础知识点总结">
+<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2018&#x2F;05&#x2F;07&#x2F;02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0&#x2F;MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87&#x2F;index.html">
+<meta property="og:site_name" content="wusuiwei">
+<meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。  这篇文章主要介绍MySQL的一些基本用法与总结。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2020-05-24T14:28:44.494Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://wusuiwei.github.io/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>【MySQL】基础知识点总结 | wusuiwei</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?e27da276b03ffda0411a313bdbcfd4fe";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">wusuiwei</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-bullhorn"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://wusuiwei.github.io/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="wusuiwei">
+      <meta itemprop="description" content="爱生活爱技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="wusuiwei">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          【MySQL】基础知识点总结
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2018-05-07 14:06:04" itemprop="dateCreated datePublished" datetime="2018-05-07T14:06:04+08:00">2018-05-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-24 22:28:44" itemprop="dateModified" datetime="2020-05-24T22:28:44+08:00">2020-05-24</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
+                  </a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-users"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="firestore-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>这篇文章主要介绍MySQL的一些基本用法与总结。</p>
+<a id="more"></a>
+
+<h3 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h3><p><strong>MySQL(<a href="https://www.mysql.com)：轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：轻量级关系型数据库。</a></strong></p>
+<p><strong>基于Docker安装：</strong></p>
+<ul>
+<li>拉取最新的 MySQL 镜像：<code>docker pull mysql</code></li>
+<li>启动镜像，映射端口、指定root密码并挂载日志、配置文件及数据</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">DB_HOME=/home/mysql</span><br><span class="line">DB_CONF_PATH=$DB_HOME/conf:/etc/mysql/conf.d</span><br><span class="line">DB_LOG_PATH=$DB_HOME/logs:/var/log/mysql</span><br><span class="line">DB_DATA_PATH=$DB_HOME/data:/var/lib/mysql</span><br><span class="line">docker run -p 3306:3306 --name mysql -v $DB_CONF_PATH -v $DB_LOG_PATH -v $DB_DATA_PATH -e MYSQL_ROOT_PASSWORD=toor -d mysql</span><br></pre></td></tr></table></figure>
+
+<h3 id="MySQL-数据类型"><a href="#MySQL-数据类型" class="headerlink" title="MySQL 数据类型"></a>MySQL 数据类型</h3><h4 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h4><p>MySQL支持所有标准SQL中的数值类型，包括严格数值类型(INTEGER、SMALLINT、DECIMAL、NUMBERIC)，以及近似数值数据类型（FLOAT、REAL和DOUBLE PRECISION），并在此基础上做了拓展。</p>
+<p><strong>整型</strong></p>
+<table>
+<thead>
+<tr>
+<th>MySQL数据类型</th>
+<th>含义（有符号）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tinyint(m)</td>
+<td>1个字节 范围(-128~127)</td>
+</tr>
+<tr>
+<td>smallint(m)</td>
+<td>2个字节 范围(-32768~32767)</td>
+</tr>
+<tr>
+<td>mediumint(m)</td>
+<td>3个字节 范围(-8388608~8388607)</td>
+</tr>
+<tr>
+<td>int(m)</td>
+<td>4个字节 范围(-2147483648~2147483647)</td>
+</tr>
+<tr>
+<td>bigint(m)</td>
+<td>8个字节 范围(+-9.22*10的18次方)</td>
+</tr>
+</tbody></table>
+<p><strong>浮点型</strong></p>
+<table>
+<thead>
+<tr>
+<th>MySQL数据类型</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>float(m,d)</td>
+<td>单精度浮点型  8位精度(4字节)   m总个数，d小数位</td>
+</tr>
+<tr>
+<td>double(m,d)</td>
+<td>双精度浮点型  16位精度(8字节)   m总个数，d小数位</td>
+</tr>
+</tbody></table>
+<p><strong>定点型</strong></p>
+<h4 id="日期和时间类型"><a href="#日期和时间类型" class="headerlink" title="日期和时间类型"></a>日期和时间类型</h4><h4 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h4><h3 id="MySQL-运算符"><a href="#MySQL-运算符" class="headerlink" title="MySQL 运算符"></a>MySQL 运算符</h3><p>MySQL支持多种类型的运算符，包括算术运算符、比较运算符、逻辑运算符、位运算符。</p>
+<h4 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h4><h4 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h4><h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><h4 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h4><h3 id="MySQL-常用函数"><a href="#MySQL-常用函数" class="headerlink" title="MySQL 常用函数"></a>MySQL 常用函数</h3><h4 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h4><h4 id="数值函数"><a href="#数值函数" class="headerlink" title="数值函数"></a>数值函数</h4><h4 id="日期和时间函数"><a href="#日期和时间函数" class="headerlink" title="日期和时间函数"></a>日期和时间函数</h4><h4 id="流程函数"><a href="#流程函数" class="headerlink" title="流程函数"></a>流程函数</h4><h4 id="其他常用函数"><a href="#其他常用函数" class="headerlink" title="其他常用函数"></a>其他常用函数</h4><h3 id="MySQL-SQL语句"><a href="#MySQL-SQL语句" class="headerlink" title="MySQL SQL语句"></a>MySQL SQL语句</h3><h4 id="DDL-Data-Definition-Languages"><a href="#DDL-Data-Definition-Languages" class="headerlink" title="DDL(Data Definition Languages)"></a>DDL(Data Definition Languages)</h4><p><strong>数据库操作</strong></p>
+<ul>
+<li><p>查看当前所有数据库</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">databases</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建数据库：CREATE DATABASE 数据库名;</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">DATABASE</span> RUNOOB;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>选择数据库：use 数据库名;</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> RUNOOB;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除数据库：drop database &lt;数据库名&gt;;</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> RUNOOB;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><strong>数据表操作</strong></p>
+<ul>
+<li><p>查看所有数据表</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">tables</span>;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看单表创建语句</p>
+<p>语法：<code>show create table 数据表名 ;</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">create</span> <span class="keyword">table</span> emp;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>查看单表结构</p>
+<p>语法：<code>desc 数据库名;</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">desc temp;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建数据表</p>
+<p>语法：<code>CREATE TABLE table_name (column_name column_type);</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> <span class="string">`runoob_tbl`</span>(</span><br><span class="line">   <span class="string">`runoob_id`</span> <span class="built_in">INT</span> <span class="keyword">UNSIGNED</span> AUTO_INCREMENT,</span><br><span class="line">   <span class="string">`runoob_title`</span> <span class="built_in">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`runoob_author`</span> <span class="built_in">VARCHAR</span>(<span class="number">40</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`submission_date`</span> <span class="built_in">DATE</span>,</span><br><span class="line">   PRIMARY <span class="keyword">KEY</span> ( <span class="string">`runoob_id`</span> )</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除数据表</p>
+<p>语法：<code>DROP TABLE table_name ;</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> runoob_tbl;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改数据表名</p>
+<p>语法：<code>ALTER TABLE table_name RENAME [TO] new_table_name;</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">rename</span> emp1;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<p><strong>数据表结构操作</strong></p>
+<ul>
+<li><p>增加表字段</p>
+<p>语法：<code>ALTER TABLE table_name ADD [COLUMN] column_definition [FIRST | AFTER col_name];</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">ADD</span> <span class="keyword">column</span> age <span class="built_in">int</span>(<span class="number">11</span>);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>删除表字段</p>
+<p>语法：<code>ALTER TABLE table_name DROP [COLUMN] col_name;</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">DROP</span>  <span class="keyword">column</span> age;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改表字段</p>
+<p>说明：modify 和 change 都可以修改表结构定义，change 需要写两次列名，不方便，但可以修改列名，modify则不能</p>
+<ul>
+<li>修改表字段名</li>
+</ul>
+<p>语法：<code>ALTER TABLE table_name CHANGE [COLUMN] old_col_name column_definition  [FIRST | AFTER col_name];</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">CHANGE</span> age age1 <span class="built_in">int</span>(<span class="number">11</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改表字段属性</li>
+</ul>
+<p>语法：<code>ALTER TABLE table_name MODIFY [COLUMN] old_col_name column_definition  [FIRST | AFTER col_name];</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">MODIFY</span> age <span class="built_in">varchar</span>(<span class="number">20</span>);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改表字段排列顺序：ADD/CHANGE/MODIFY后</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">ADD</span> birth  <span class="built_in">date</span> <span class="keyword">after</span> age；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">change</span> birth birth1 <span class="built_in">date</span> <span class="keyword">after</span> gender；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">MODIFY</span> age <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">first</span>；</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h4 id="DML-Data-Manipulation-Languages"><a href="#DML-Data-Manipulation-Languages" class="headerlink" title="DML(Data Manipulation Languages)"></a>DML(Data Manipulation Languages)</h4><p><strong>插入记录</strong></p>
+<p>语法：<code>INSERT INTO table_name[(field1,field2,...fieldn)] VALUES(value1,value2,...,valuen);</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">desc emp;<span class="comment">#ename,hiredate,sal,deptno</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> emp <span class="keyword">VALUES</span>(<span class="string">"lisa"</span>,<span class="string">"1993-06-04"</span>,<span class="string">"3000"</span>,<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+
+<p><strong>删除记录</strong></p>
+<p>语法：<code>DELETE FROM table_name [WHERE CONDITION];</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> ename=<span class="string">"dony"</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>更新记录</strong></p>
+<p>语法：<code>UPDATE table_name SET field1=value1,field2=value2,...,fieldn=valuen [WHERE CONDITION];</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> emp <span class="keyword">SET</span> sal = <span class="number">4000</span> <span class="keyword">WHERE</span> ename=<span class="string">"lisa"</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>查询记录</strong></p>
+<p>语法：<code>SELETE * FROM table_name;</code></p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELETE * FROM emp;</span><br><span class="line"><span class="keyword">SELECT</span> ename,hiredate,sal,deptno <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>去重：<code>DISTINCT</code></li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">DISTINCT</span> ename <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>条件:<code>WHERE</code></li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> deptno=<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>排序：<code>ORDER BY</code></p>
+<p>语法：<code>SELECT * FROM table_name [WHERE CONDITION] [ORDER BY field1 [DESC/ASC],field2 [DESC/ASC]]</code>;</p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">ORDER</span> <span class="keyword">BY</span> sal <span class="keyword">desc</span>;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>限制：<code>LIMIT</code></p>
+<p>语法：<code>SELECT * FROM table_name LIMIT offset_start,row_count</code></p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">LIMIT</span> <span class="number">1</span>,<span class="number">20</span>;<span class="comment">#从1开始，20行</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>聚合</p>
+<p>语法：</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> [field1,field2,...,fieldn]fun_name</span><br><span class="line"><span class="keyword">FROM</span> table_name </span><br><span class="line">[<span class="keyword">WHERE</span> where_condition] </span><br><span class="line">[<span class="keyword">GROUP</span> <span class="keyword">BY</span> field1,field2,...,fieldn] </span><br><span class="line">[<span class="keyword">WITH</span> <span class="keyword">ROLLUP</span>] </span><br><span class="line">[<span class="keyword">HAVING</span> where_condition];</span><br></pre></td></tr></table></figure>
+
+<p>参数说明：</p>
+<ul>
+<li>fun_name表示要做的聚合操作，常用的有：sum,count(*),max,min</li>
+<li>GROUP BY 表示进行分类聚合的字段</li>
+<li>WITH ROLLUP 是可选语法，表明是否对分类聚合后的结果进行再汇总</li>
+<li>HAVING 表示对分类后的结果再进行条件的过滤</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">count</span>(<span class="number">1</span>) <span class="keyword">FROM</span> emp;<span class="comment">#查看总人数</span></span><br><span class="line"><span class="keyword">SELECT</span> deptno,<span class="keyword">count</span>(<span class="number">1</span>) <span class="keyword">FROM</span> emp <span class="keyword">GROUP</span> <span class="keyword">BY</span> deptno;<span class="comment">#统计各部门人数</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SUM</span>(sal),<span class="keyword">max</span>(sal),<span class="keyword">min</span>(sal) <span class="keyword">FROM</span> emp;<span class="comment">#查询员工工资总额，最高和最低薪水</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>表连接</p>
+<ul>
+<li>内连接</li>
+<li>外连接<ul>
+<li>左连接</li>
+<li>右连接</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>子查询</p>
+</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>UNION联合查询</li>
+</ul>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#插入记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#删除记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#更新记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#查询记录：</span></span><br><span class="line"><span class="comment"># 去重：DISTINCT</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 条件</span></span><br><span class="line"><span class="comment"># 排序:ORDER BY</span></span><br><span class="line"><span class="comment"># 限制：LIMIT</span></span><br><span class="line"><span class="comment"># 聚合:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接查询</span></span><br><span class="line"><span class="comment"># 子查询</span></span><br><span class="line"><span class="comment"># union联合查询</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="DCL-Data-Control-Languages"><a href="#DCL-Data-Control-Languages" class="headerlink" title="DCL(Data Control Languages)"></a>DCL(Data Control Languages)</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="MySQL-视图"><a href="#MySQL-视图" class="headerlink" title="MySQL 视图"></a>MySQL 视图</h3><h3 id="MySQL-存储过程"><a href="#MySQL-存储过程" class="headerlink" title="MySQL 存储过程"></a>MySQL 存储过程</h3><h3 id="MySQL-触发器"><a href="#MySQL-触发器" class="headerlink" title="MySQL 触发器"></a>MySQL 触发器</h3><h3 id="MySQL-事务"><a href="#MySQL-事务" class="headerlink" title="MySQL 事务"></a>MySQL 事务</h3><h3 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h3><ol>
+<li><p><strong>Navicat 连接 MySQL 数据库失败?</strong></p>
+<p>原因分析：MySQL 8.0 +使用了<code>caching_sha2_password</code>加密方式，而navicat不支持。</p>
+<p>解决方案：修改为原有的加密规则<code>mysql_native_password</code>.</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> mysql;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘root’@’localhost’ <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> ‘<span class="keyword">password</span>’ <span class="keyword">PASSWORD</span> <span class="keyword">EXPIRE</span> <span class="keyword">NEVER</span>; <span class="comment">#修改加密规则,如果远程需要连接，则'localhost'改为'%'</span></span><br><span class="line">4. <span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘root’@’localhost’ <span class="keyword">IDENTIFIED</span> <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> ‘<span class="keyword">password</span>’; <span class="comment">#更新一下用户的密码,,如果远程需要连接，则'localhost'改为'%'</span></span><br><span class="line"><span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>; <span class="comment">#刷新权限</span></span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+</ol>
+
+    </div>
+
+    
+    
+    
+      
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="wusuiwei 微信支付">
+        <p>微信支付</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2018/05/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E6%95%B4%E4%BD%93%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1/" rel="next" title="【Hydrogen】整体框架设计">
+                  <i class="fa fa-chevron-left"></i> 【Hydrogen】整体框架设计
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90%E9%9D%A2%E8%AF%95%E9%A2%98%E3%80%91JavaSE%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/" rel="prev" title="【面试题】JavaSE面试总结">
+                  【面试题】JavaSE面试总结 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    <div class="comments" id="comments"></div>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-概要"><span class="nav-number">1.</span> <span class="nav-text">MySQL 概要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-数据类型"><span class="nav-number">2.</span> <span class="nav-text">MySQL 数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数值类型"><span class="nav-number">2.1.</span> <span class="nav-text">数值类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#日期和时间类型"><span class="nav-number">2.2.</span> <span class="nav-text">日期和时间类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串类型"><span class="nav-number">2.3.</span> <span class="nav-text">字符串类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-运算符"><span class="nav-number">3.</span> <span class="nav-text">MySQL 运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算术运算符"><span class="nav-number">3.1.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#比较运算符"><span class="nav-number">3.2.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">3.3.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#位运算符"><span class="nav-number">3.4.</span> <span class="nav-text">位运算符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-常用函数"><span class="nav-number">4.</span> <span class="nav-text">MySQL 常用函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串函数"><span class="nav-number">4.1.</span> <span class="nav-text">字符串函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数值函数"><span class="nav-number">4.2.</span> <span class="nav-text">数值函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#日期和时间函数"><span class="nav-number">4.3.</span> <span class="nav-text">日期和时间函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#流程函数"><span class="nav-number">4.4.</span> <span class="nav-text">流程函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他常用函数"><span class="nav-number">4.5.</span> <span class="nav-text">其他常用函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-SQL语句"><span class="nav-number">5.</span> <span class="nav-text">MySQL SQL语句</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DDL-Data-Definition-Languages"><span class="nav-number">5.1.</span> <span class="nav-text">DDL(Data Definition Languages)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DML-Data-Manipulation-Languages"><span class="nav-number">5.2.</span> <span class="nav-text">DML(Data Manipulation Languages)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DCL-Data-Control-Languages"><span class="nav-number">5.3.</span> <span class="nav-text">DCL(Data Control Languages)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-视图"><span class="nav-number">6.</span> <span class="nav-text">MySQL 视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-存储过程"><span class="nav-number">7.</span> <span class="nav-text">MySQL 存储过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-触发器"><span class="nav-number">8.</span> <span class="nav-text">MySQL 触发器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-事务"><span class="nav-number">9.</span> <span class="nav-text">MySQL 事务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见问题总结"><span class="nav-number">10.</span> <span class="nav-text">常见问题总结</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="site-author-image" itemprop="image" alt="wusuiwei"
+    src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">wusuiwei</p>
+  <div class="site-description" itemprop="description">爱生活爱技术</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">113</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">90</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wusuiwei" title="GitHub &amp;rarr; https:&#x2F;&#x2F;github.com&#x2F;wusuiwei" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/wusuiwei0415" title="Weibo &amp;rarr; https:&#x2F;&#x2F;weibo.com&#x2F;wusuiwei0415" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/wust_wusuiwei" title="知乎 &amp;rarr; https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wust_wusuiwei" rel="noopener" target="_blank"><i class="fa fa-fw fa-globe"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/images/wechat.jpg" title="WeChat &amp;rarr; &#x2F;images&#x2F;wechat.jpg"><i class="fa fa-fw fa-weixin"></i>WeChat</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wusuiwei</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
+  <script>
+    firebase.initializeApp({
+      apiKey: '',
+      projectId: ''
+    });
+
+    function getCount(doc, increaseCount) {
+      // IncreaseCount will be false when not in article page
+
+      return doc.get().then(d => {
+        var count = 0;
+        if (!d.exists) { // Has no data, initialize count
+          if (increaseCount) {
+            doc.set({
+              count: 1
+            });
+            count = 1;
+          }
+        } else { // Has data
+          count = d.data().count;
+          if (increaseCount) {
+            // If first view this article
+            doc.set({ // Increase count
+              count: count + 1
+            });
+            count++;
+          }
+        }
+
+        return count;
+      });
+    }
+
+    function appendCountTo(el) {
+      return count => {
+        el.innerText = count;
+      }
+    }
+  </script>
+  <script>
+    (function() {
+      var db = firebase.firestore();
+      var articles = db.collection('articles');
+
+      if (CONFIG.page.isPost) { // Is article page
+        var title = document.querySelector('.post-title').innerText.trim();
+        var doc = articles.doc(title);
+        var increaseCount = true;
+        if (localStorage.getItem(title)) {
+          increaseCount = false;
+        } else {
+          // Mark as visited
+          localStorage.setItem(title, true);
+        }
+        getCount(doc, increaseCount).then(appendCountTo(document.querySelector('.firestore-visitors-count')));
+      } else if (CONFIG.page.isHome) { // Is index page
+        var promises = [...document.querySelectorAll('.post-title')].map(element => {
+          var title = element.innerText.trim();
+          var doc = articles.doc(title);
+          return getCount(doc);
+        });
+        Promise.all(promises).then(counts => {
+          var metas = document.querySelectorAll('.firestore-visitors-count');
+          counts.forEach((val, idx) => {
+            appendCountTo(metas[idx])(val);
+          });
+        });
+      }
+    })();
+  </script>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="//cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<style type="text/css">
+    div.info{
+        display: none;
+    }
+</style>
+<script>
+NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(item => {
+    return GUEST.includes(item);
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: false,
+    appId: 'GmxHaCbMFRH9emPIa201GM0z-gzGzoHsz',
+    appKey: 'CGStYS7ELOPiYkYrs7MBpkMV',
+    placeholder: "Just go go",
+    avatar: 'wavatar',
+    meta: guest,
+    pageSize: '5' || 10,
+    visitor: false,
+    lang: 'zh-cn' || 'zh-cn',
+    path: location.pathname,
+    recordIP: false,
+    serverURLs: ''
+  });
+}, window.Valine);
+</script>
+
+</body>
+</html>

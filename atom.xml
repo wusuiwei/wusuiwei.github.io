@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wusuiwei.github.io/"/>
-  <updated>2020-07-26T14:27:02.418Z</updated>
+  <updated>2020-09-01T23:36:38.812Z</updated>
   <id>http://wusuiwei.github.io/</id>
   
   <author>
@@ -17,9 +17,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>02_全栈笔记/JPA/【JPA】集成Spring</title>
-    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E9%9B%86%E6%88%90Spring/"/>
-    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA/【JPA】集成Spring/</id>
+    <title>02_全栈笔记/【Selenium】元素定位</title>
+    <link href="http://wusuiwei.github.io/2020/09/02/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Selenium%E3%80%91%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/"/>
+    <id>http://wusuiwei.github.io/2020/09/02/02_全栈笔记/【Selenium】元素定位/</id>
+    <published>2020-09-01T23:36:38.812Z</published>
+    <updated>2020-09-01T23:36:38.812Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>01_软件/软件列表</title>
+    <link href="http://wusuiwei.github.io/2020/09/02/01_%E8%BD%AF%E4%BB%B6/%E8%BD%AF%E4%BB%B6%E5%88%97%E8%A1%A8/"/>
+    <id>http://wusuiwei.github.io/2020/09/02/01_软件/软件列表/</id>
+    <published>2020-09-01T23:32:59.962Z</published>
+    <updated>2020-09-01T23:32:59.962Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>03_编程思想/自动化测试/【AutoTester】测试框架搭建计划</title>
+    <link href="http://wusuiwei.github.io/2020/08/19/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90AutoTester%E3%80%91%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/"/>
+    <id>http://wusuiwei.github.io/2020/08/19/03_编程思想/自动化测试/【AutoTester】测试框架搭建计划/</id>
+    <published>2020-08-19T15:54:56.205Z</published>
+    <updated>2020-08-19T15:54:56.205Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】集成Spring</title>
+    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E9%9B%86%E6%88%90Spring/"/>
+    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】集成Spring/</id>
     <published>2020-07-26T14:27:02.418Z</published>
     <updated>2020-07-26T14:27:02.418Z</updated>
     
@@ -32,9 +77,9 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/JPA/【JPA】主键生成策略</title>
-    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E4%B8%BB%E9%94%AE%E7%94%9F%E6%88%90%E7%AD%96%E7%95%A5/"/>
-    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA/【JPA】主键生成策略/</id>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】主键生成策略</title>
+    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E4%B8%BB%E9%94%AE%E7%94%9F%E6%88%90%E7%AD%96%E7%95%A5/"/>
+    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】主键生成策略/</id>
     <published>2020-07-26T14:25:27.158Z</published>
     <updated>2020-07-26T14:25:47.689Z</updated>
     
@@ -47,9 +92,9 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/JPA/【JPA】基本注解</title>
-    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/"/>
-    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA/【JPA】基本注解/</id>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】基本注解</title>
+    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/"/>
+    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】基本注解/</id>
     <published>2020-07-26T14:25:27.158Z</published>
     <updated>2020-07-26T14:25:27.158Z</updated>
     
@@ -62,9 +107,9 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/JPA/【JPA】映射关系-一对一</title>
-    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/"/>
-    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA/【JPA】映射关系-一对一/</id>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一</title>
+    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/"/>
+    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一/</id>
     <published>2020-07-26T14:25:27.158Z</published>
     <updated>2020-07-26T14:26:11.277Z</updated>
     
@@ -77,9 +122,9 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/【Jmeter】命令行运行</title>
-    <link href="http://wusuiwei.github.io/2020/07/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C/"/>
-    <id>http://wusuiwei.github.io/2020/07/08/02_全栈笔记/【Jmeter】命令行运行/</id>
+    <title>02_全栈笔记/Jmeter 学习笔记/【Jmeter】命令行运行</title>
+    <link href="http://wusuiwei.github.io/2020/07/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C/"/>
+    <id>http://wusuiwei.github.io/2020/07/08/02_全栈笔记/Jmeter 学习笔记/【Jmeter】命令行运行/</id>
     <published>2020-07-08T02:58:05.100Z</published>
     <updated>2020-07-08T02:58:05.100Z</updated>
     
@@ -92,9 +137,9 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/【Mockito】</title>
-    <link href="http://wusuiwei.github.io/2020/06/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90Mockito%E3%80%91/"/>
-    <id>http://wusuiwei.github.io/2020/06/05/02_全栈笔记/【Mockito】/</id>
+    <title>02_全栈笔记/Mockito 学习笔记/【Mockito】</title>
+    <link href="http://wusuiwei.github.io/2020/06/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Mockito%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Mockito%E3%80%91/"/>
+    <id>http://wusuiwei.github.io/2020/06/05/02_全栈笔记/Mockito 学习笔记/【Mockito】/</id>
     <published>2020-06-05T03:54:08.356Z</published>
     <updated>2020-06-05T03:54:08.356Z</updated>
     
@@ -192,9 +237,9 @@
   </entry>
   
   <entry>
-    <title>04_项目笔记/hydrogen-master/【Hydrogen】项目环境搭建</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-master/%E3%80%90Hydrogen%E3%80%91%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/04_项目笔记/hydrogen-master/【Hydrogen】项目环境搭建/</id>
+    <title>04_项目笔记/自动化测试平台/【Hydrogen】项目环境搭建</title>
+    <link href="http://wusuiwei.github.io/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://wusuiwei.github.io/2020/05/24/04_项目笔记/自动化测试平台/【Hydrogen】项目环境搭建/</id>
     <published>2020-05-24T14:28:44.556Z</published>
     <updated>2020-05-24T14:28:44.557Z</updated>
     
@@ -225,9 +270,9 @@
   </entry>
   
   <entry>
-    <title>04_项目笔记/hydrogen-master/【Hydrogen】团队维护</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/hydrogen-master/%E3%80%90Hydrogen%E3%80%91%E5%9B%A2%E9%98%9F%E7%BB%B4%E6%8A%A4/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/04_项目笔记/hydrogen-master/【Hydrogen】团队维护/</id>
+    <title>04_项目笔记/自动化测试平台/【Hydrogen】团队维护</title>
+    <link href="http://wusuiwei.github.io/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E5%9B%A2%E9%98%9F%E7%BB%B4%E6%8A%A4/"/>
+    <id>http://wusuiwei.github.io/2020/05/24/04_项目笔记/自动化测试平台/【Hydrogen】团队维护/</id>
     <published>2020-05-24T14:28:44.552Z</published>
     <updated>2020-05-24T14:28:44.552Z</updated>
     
@@ -249,9 +294,9 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/自动化测试模式介绍</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/自动化测试模式介绍/</id>
+    <title>03_编程思想/自动化测试/自动化测试模式介绍</title>
+    <link href="http://wusuiwei.github.io/2020/05/24/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://wusuiwei.github.io/2020/05/24/03_编程思想/自动化测试/自动化测试模式介绍/</id>
     <published>2020-05-24T14:28:44.528Z</published>
     <updated>2020-05-24T14:28:44.528Z</updated>
     
@@ -264,9 +309,9 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/云原生的12要素</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%9A%8412%E8%A6%81%E7%B4%A0/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/云原生的12要素/</id>
+    <title>03_编程思想/微服务架构/云原生的12要素</title>
+    <link href="http://wusuiwei.github.io/2020/05/24/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%9A%8412%E8%A6%81%E7%B4%A0/"/>
+    <id>http://wusuiwei.github.io/2020/05/24/03_编程思想/微服务架构/云原生的12要素/</id>
     <published>2020-05-24T14:28:44.520Z</published>
     <updated>2020-05-24T14:28:44.520Z</updated>
     
@@ -279,9 +324,9 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/【SpringCloud】Eureka</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/%E3%80%90SpringCloud%E3%80%91Eureka/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/【SpringCloud】Eureka/</id>
+    <title>02_全栈笔记/Spring Cloud 学习笔记/【SpringCloud】Eureka</title>
+    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringCloud%E3%80%91Eureka/"/>
+    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Spring Cloud 学习笔记/【SpringCloud】Eureka/</id>
     <published>2020-05-24T14:28:44.504Z</published>
     <updated>2020-05-24T14:28:44.504Z</updated>
     
@@ -294,9 +339,9 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/Zookeeper学习笔记</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Zookeeper%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Zookeeper学习笔记/</id>
+    <title>02_全栈笔记/Zookeeper 学习笔记/Zookeeper学习笔记</title>
+    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Zookeeper%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Zookeeper%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Zookeeper 学习笔记/Zookeeper学习笔记/</id>
     <published>2020-05-24T14:28:44.459Z</published>
     <updated>2020-05-24T14:28:44.460Z</updated>
     
@@ -316,9 +361,9 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/Web自动化测试之Selenium Webdriver入门</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BSelenium%20Webdriver%E5%85%A5%E9%97%A8/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Web自动化测试之Selenium Webdriver入门/</id>
+    <title>02_全栈笔记/Selenium 学习笔记/Web自动化测试之Selenium Webdriver入门</title>
+    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Selenium%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BSelenium%20Webdriver%E5%85%A5%E9%97%A8/"/>
+    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Selenium 学习笔记/Web自动化测试之Selenium Webdriver入门/</id>
     <published>2020-05-24T14:28:44.455Z</published>
     <updated>2020-05-24T14:28:44.455Z</updated>
     
@@ -332,51 +377,6 @@
 &lt;p&gt;&lt;code&gt;class&lt;/code&gt;定位&lt;/p&gt;
 
       
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Vue知识框架</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Vue%E7%9F%A5%E8%AF%86%E6%A1%86%E6%9E%B6/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Vue知识框架/</id>
-    <published>2020-05-24T14:28:44.452Z</published>
-    <updated>2020-05-24T14:28:44.452Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Web自动化测试之PageObject思想</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8BPageObject%E6%80%9D%E6%83%B3/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Web自动化测试之PageObject思想/</id>
-    <published>2020-05-24T14:28:44.452Z</published>
-    <updated>2020-05-24T14:28:44.452Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/SpringMVC学习笔记</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/SpringMVC%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/SpringMVC学习笔记/</id>
-    <published>2020-05-24T14:28:44.450Z</published>
-    <updated>2020-05-24T14:28:44.450Z</updated>
-    
-    <summary type="html">
     
     </summary>
     
