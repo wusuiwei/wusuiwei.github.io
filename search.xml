@@ -55,13 +55,13 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/JPA 学习笔记/【JPA】基本注解</title>
-    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/</url>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】主键生成策略</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E4%B8%BB%E9%94%AE%E7%94%9F%E6%88%90%E7%AD%96%E7%95%A5/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/JPA 学习笔记/【JPA】主键生成策略</title>
-    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E4%B8%BB%E9%94%AE%E7%94%9F%E6%88%90%E7%AD%96%E7%95%A5/</url>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】基本注解</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -576,6 +576,23 @@
       </tags>
   </entry>
   <entry>
+    <title>【Linux】Linux 目录结构</title>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91Linux%20%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><strong>在Linux世界里，一切皆文件。</strong></p>
+<a id="more"></a>
+
+<h2 id="Linux-目录结构"><a href="#Linux-目录结构" class="headerlink" title="Linux 目录结构"></a>Linux 目录结构</h2><h2 id="文件分类"><a href="#文件分类" class="headerlink" title="文件分类"></a>文件分类</h2>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Jmeter】目录结构与配置文件说明</title>
     <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<blockquote>
@@ -595,23 +612,6 @@
       <tags>
         <tag>MyBatis Generator</tag>
         <tag>MyBatis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Linux】Linux 目录结构</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91Linux%20%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p><strong>在Linux世界里，一切皆文件。</strong></p>
-<a id="more"></a>
-
-<h2 id="Linux-目录结构"><a href="#Linux-目录结构" class="headerlink" title="Linux 目录结构"></a>Linux 目录结构</h2><h2 id="文件分类"><a href="#文件分类" class="headerlink" title="文件分类"></a>文件分类</h2>]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1342,22 +1342,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【Spring Cloud Alibaba】Nacos注册中心</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%E3%80%91GateWay/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="Nacos作为注册中心"><a href="#Nacos作为注册中心" class="headerlink" title="Nacos作为注册中心"></a>Nacos作为注册中心</h3>]]></content>
-      <categories>
-        <category>Spring Cloud</category>
-      </categories>
-      <tags>
-        <tag>Spring Cloud</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>SpringCloud学习笔记</title>
     <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringCloud%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
@@ -1447,6 +1431,22 @@
       </categories>
       <tags>
         <tag>JPA</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Spring Cloud Alibaba】Nacos注册中心</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%E3%80%91GateWay/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="Nacos作为注册中心"><a href="#Nacos作为注册中心" class="headerlink" title="Nacos作为注册中心"></a>Nacos作为注册中心</h3>]]></content>
+      <categories>
+        <category>Spring Cloud</category>
+      </categories>
+      <tags>
+        <tag>Spring Cloud</tag>
       </tags>
   </entry>
   <entry>
@@ -2040,61 +2040,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>【Hydrogen-ui】Vue.js 环境准备（IDEA）</title>
-    <url>/2019/11/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen-ui%E3%80%91Vue.js%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%EF%BC%88IDEA%EF%BC%89/</url>
-    <content><![CDATA[<p>记录了IDEA下编辑Vue.js 代码的配置</p>
-<a id="more"></a>
-
-<ol>
-<li>添加”vue.js”插件</li>
-</ol>
-<p><img src="/images/1574915669322.png" alt="1574915669322"></p>
-<ol start="2">
-<li>配置支持 ECMAScript 6</li>
-</ol>
-<p><img src="/images/1574915705512.png" alt="1574915705512"></p>
-<ol start="3">
-<li>搭建Vue项目</li>
-</ol>
-<p><img src="/images/20190509180042603.png" alt="img"></p>
-<p><img src="/images/20190509180056736.png" alt="img"></p>
-<p><img src="/images/20190509180117154.png" alt="img"></p>
-<ol start="4">
-<li>安装 Vue脚手架</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i -g vue-cli</span><br></pre></td></tr></table></figure>
-
-<p>验证是否安装成功：<code>vue -V</code></p>
-<p><strong>npm下载慢的问题</strong>：添加国内镜像。</p>
-<p>临时使用:<code>npm --registry https://registry.npm.taobao.org install express</code></p>
-<p>持久使用:<code>npm config set registry https://registry.npm.taobao.org</code></p>
-<p>验证是否配置成功：<code>npm config get registry</code>或<code>npm info express</code></p>
-<ol start="5">
-<li>项目初始化</li>
-</ol>
-<p>切换到项目的上级目录，执行：<code>vue init webpack demo</code></p>
-<ol start="6">
-<li>运行项目</li>
-</ol>
-<p>运行项目：<code>npm run dev</code></p>
-<ol start="7">
-<li>验证项目是否运行成功：localhost:8080</li>
-</ol>
-<p><img src="/images/1574918874140.png" alt="1574918874140"></p>
-<hr>
-<ul>
-<li><strong>webpack</strong> ：一个现代 JavaScript 应用程序的<em>静态模块打包器(module bundler)</em>。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>项目笔记</category>
-      </categories>
-      <tags>
-        <tag>hydrogen</tag>
-        <tag>hydrogen-ui-master</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【自动化测试】Android自动化测试环境搭建</title>
     <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Android%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<a id="more"></a>
@@ -2166,6 +2111,61 @@
       <categories>
         <category>编程思想</category>
       </categories>
+  </entry>
+  <entry>
+    <title>【Hydrogen-ui】Vue.js 环境准备（IDEA）</title>
+    <url>/2019/11/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen-ui%E3%80%91Vue.js%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%EF%BC%88IDEA%EF%BC%89/</url>
+    <content><![CDATA[<p>记录了IDEA下编辑Vue.js 代码的配置</p>
+<a id="more"></a>
+
+<ol>
+<li>添加”vue.js”插件</li>
+</ol>
+<p><img src="/images/1574915669322.png" alt="1574915669322"></p>
+<ol start="2">
+<li>配置支持 ECMAScript 6</li>
+</ol>
+<p><img src="/images/1574915705512.png" alt="1574915705512"></p>
+<ol start="3">
+<li>搭建Vue项目</li>
+</ol>
+<p><img src="/images/20190509180042603.png" alt="img"></p>
+<p><img src="/images/20190509180056736.png" alt="img"></p>
+<p><img src="/images/20190509180117154.png" alt="img"></p>
+<ol start="4">
+<li>安装 Vue脚手架</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i -g vue-cli</span><br></pre></td></tr></table></figure>
+
+<p>验证是否安装成功：<code>vue -V</code></p>
+<p><strong>npm下载慢的问题</strong>：添加国内镜像。</p>
+<p>临时使用:<code>npm --registry https://registry.npm.taobao.org install express</code></p>
+<p>持久使用:<code>npm config set registry https://registry.npm.taobao.org</code></p>
+<p>验证是否配置成功：<code>npm config get registry</code>或<code>npm info express</code></p>
+<ol start="5">
+<li>项目初始化</li>
+</ol>
+<p>切换到项目的上级目录，执行：<code>vue init webpack demo</code></p>
+<ol start="6">
+<li>运行项目</li>
+</ol>
+<p>运行项目：<code>npm run dev</code></p>
+<ol start="7">
+<li>验证项目是否运行成功：localhost:8080</li>
+</ol>
+<p><img src="/images/1574918874140.png" alt="1574918874140"></p>
+<hr>
+<ul>
+<li><strong>webpack</strong> ：一个现代 JavaScript 应用程序的<em>静态模块打包器(module bundler)</em>。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>项目笔记</category>
+      </categories>
+      <tags>
+        <tag>hydrogen</tag>
+        <tag>hydrogen-ui-master</tag>
+      </tags>
   </entry>
   <entry>
     <title>【设计模式】单例模式</title>
@@ -3279,21 +3279,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【微服务】配置中心</title>
-    <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
-      <tags>
-        <tag>微服务</tag>
-        <tag>配置中心</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【微服务】网关</title>
     <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E7%BD%91%E5%85%B3/</url>
     <content><![CDATA[<blockquote>
@@ -3306,6 +3291,21 @@
       <tags>
         <tag>微服务</tag>
         <tag>网关</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【微服务】配置中心</title>
+    <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+      <tags>
+        <tag>微服务</tag>
+        <tag>配置中心</tag>
       </tags>
   </entry>
   <entry>
