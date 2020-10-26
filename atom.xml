@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wusuiwei.github.io/"/>
-  <updated>2020-09-06T07:09:49.218Z</updated>
+  <updated>2020-10-26T14:32:06.966Z</updated>
   <id>http://wusuiwei.github.io/</id>
   
   <author>
@@ -15,6 +15,76 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>02_全栈笔记/Linux 学习笔记/【Linux】README</title>
+    <link href="http://wusuiwei.github.io/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91README/"/>
+    <id>http://wusuiwei.github.io/2020/10/26/02_全栈笔记/Linux 学习笔记/【Linux】README/</id>
+    <published>2020-10-26T14:32:06.966Z</published>
+    <updated>2020-10-26T14:32:06.966Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>02_全栈笔记/Linux 学习笔记/【Linux】权限管理</title>
+    <link href="http://wusuiwei.github.io/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
+    <id>http://wusuiwei.github.io/2020/10/26/02_全栈笔记/Linux 学习笔记/【Linux】权限管理/</id>
+    <published>2020-10-26T14:32:06.966Z</published>
+    <updated>2020-10-26T14:32:06.966Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>02_全栈笔记/Linux 学习笔记/【Linux】用户和用户组管理</title>
+    <link href="http://wusuiwei.github.io/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86/"/>
+    <id>http://wusuiwei.github.io/2020/10/26/02_全栈笔记/Linux 学习笔记/【Linux】用户和用户组管理/</id>
+    <published>2020-10-26T14:32:06.966Z</published>
+    <updated>2020-10-26T14:32:06.966Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【XPath】XPath 用法整理</title>
+    <link href="http://wusuiwei.github.io/2020/09/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/XPath%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90XPath%E3%80%91XPath%20%E7%94%A8%E6%B3%95%E6%95%B4%E7%90%86/"/>
+    <id>http://wusuiwei.github.io/2020/09/07/02_全栈笔记/XPath 学习笔记/【XPath】XPath 用法整理/</id>
+    <published>2020-09-07T05:08:09.000Z</published>
+    <updated>2020-10-26T14:32:06.982Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="全栈笔记" scheme="http://wusuiwei.github.io/categories/%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="xpath" scheme="http://wusuiwei.github.io/tags/xpath/"/>
+    
+  </entry>
   
   <entry>
     <title>02_全栈笔记/Selenium 学习笔记/【Selenium】元素定位</title>
@@ -300,73 +370,6 @@
         &lt;p&gt;整个界面采用简单的人员管理界面，提供&lt;strong&gt;人员名称&lt;/strong&gt;、&lt;strong&gt;邮箱&lt;/strong&gt;模糊搜索功能，分页功能，邀请加入功能，移除功能；&lt;/p&gt;
 &lt;p&gt;表设计：&lt;/p&gt;
 
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>03_编程思想/自动化测试/自动化测试模式介绍</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%BC%8F%E4%BB%8B%E7%BB%8D/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/03_编程思想/自动化测试/自动化测试模式介绍/</id>
-    <published>2020-05-24T14:28:44.528Z</published>
-    <updated>2020-05-24T14:28:44.528Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>03_编程思想/微服务架构/云原生的12要素</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E4%BA%91%E5%8E%9F%E7%94%9F%E7%9A%8412%E8%A6%81%E7%B4%A0/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/03_编程思想/微服务架构/云原生的12要素/</id>
-    <published>2020-05-24T14:28:44.520Z</published>
-    <updated>2020-05-24T14:28:44.520Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Spring Cloud 学习笔记/【SpringCloud】Eureka</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringCloud%E3%80%91Eureka/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Spring Cloud 学习笔记/【SpringCloud】Eureka/</id>
-    <published>2020-05-24T14:28:44.504Z</published>
-    <updated>2020-05-24T14:28:44.504Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Zookeeper 学习笔记/Zookeeper学习笔记</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Zookeeper%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Zookeeper%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/02_全栈笔记/Zookeeper 学习笔记/Zookeeper学习笔记/</id>
-    <published>2020-05-24T14:28:44.459Z</published>
-    <updated>2020-05-24T14:28:44.460Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="Docker安装Zookeeper"><a href="#Docker安装Zookeeper" class="headerlink" title="Docker安装Zookeeper"></a>Docker安装Zookeeper</h3><h4 id="下载zookeeper镜像"><a href="#下载zookeeper镜像" class="headerlink" title="下载zookeeper镜像"></a>下载zookeeper镜像</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull zookeeper</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h3 id=&quot;Docker安装Zookeeper&quot;&gt;&lt;a href=&quot;#Docker安装Zookeeper&quot; class=&quot;headerlink&quot; title=&quot;Docker安装Zookeeper&quot;&gt;&lt;/a&gt;Docker安装Zookeeper&lt;/h3&gt;&lt;h4 id=&quot;下载zoo
       
     
     </summary>
