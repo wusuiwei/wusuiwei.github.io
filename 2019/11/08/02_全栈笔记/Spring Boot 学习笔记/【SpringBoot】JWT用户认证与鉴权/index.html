@@ -55,16 +55,16 @@
 <meta name="keywords" content="SpringBoot,JWT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【SpringBoot】JWT实现用户认证与鉴权">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2019&#x2F;11&#x2F;08&#x2F;02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0&#x2F;Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83&#x2F;index.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;08&#x2F;02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0&#x2F;Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83&#x2F;index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。  Http协议是无状态协议，通常需要实现用户认证，实现认证的方式有传统的Session认证和基于Token的认证，下面将介绍基于token的认证方式。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;17.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;17.png">
 <meta property="og:updated_time" content="2020-05-24T14:28:44.499Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;17.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;17.png">
 
-<link rel="canonical" href="http://wusuiwei.github.io/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/">
+<link rel="canonical" href="http://yoursite.com/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/">
 
 
 <script id="page-configurations">
@@ -226,7 +226,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://wusuiwei.github.io/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -413,16 +413,16 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="next" title="【SpringBoot】Spring Data JPA">
-                  <i class="fa fa-chevron-left"></i> 【SpringBoot】Spring Data JPA
+                <a href="/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Nacos/" rel="next" title="【Spring Cloud Alibaba】Nacos">
+                  <i class="fa fa-chevron-left"></i> 【Spring Cloud Alibaba】Nacos
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Boot%E3%80%91%E6%95%B4%E5%90%88Spring%20Data%20JPA/" rel="prev" title="【Spring Boot】整合Spring Data JPA">
-                  【Spring Boot】整合Spring Data JPA <i class="fa fa-chevron-right"></i>
+                <a href="/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="prev" title="【SpringBoot】Spring Data JPA">
+                  【SpringBoot】Spring Data JPA <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
