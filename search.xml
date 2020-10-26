@@ -60,13 +60,13 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/JPA 学习笔记/【JPA】基本注解</title>
-    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/</url>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一</title>
-    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/</url>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】基本注解</title>
+    <url>/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -337,24 +337,6 @@
       </tags>
   </entry>
   <entry>
-    <title>windows下JDK8安装与配置</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/windows%E4%B8%8BJDK8%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p><strong>版本：jdk 8</strong></p>
-<p><strong>下载地址：</strong><a href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html" target="_blank" rel="noopener">https://www.oracle.com/java/technologies/javase-jdk8-downloads.html</a></p>
-<a id="more"></a>
-
-<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3>]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-      <tags>
-        <tag>jdk</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CentOS下Docker安装与配置</title>
     <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<blockquote>
@@ -385,6 +367,24 @@
       </categories>
       <tags>
         <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows下JDK8安装与配置</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/windows%E4%B8%8BJDK8%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><strong>版本：jdk 8</strong></p>
+<p><strong>下载地址：</strong><a href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html" target="_blank" rel="noopener">https://www.oracle.com/java/technologies/javase-jdk8-downloads.html</a></p>
+<a id="more"></a>
+
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3>]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>jdk</tag>
       </tags>
   </entry>
   <entry>
@@ -615,22 +615,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【Linux】docker 安装</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85Centos%208/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>虚拟化技术</tag>
-        <tag>Docker</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Linux】虚拟化技术</title>
     <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/</url>
     <content><![CDATA[<blockquote>
@@ -642,6 +626,22 @@
 <p><strong>优势</strong>：</p>
 <p><strong>劣势</strong>：</p>
 ]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>虚拟化技术</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Linux】docker 安装</title>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85Centos%208/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
       <categories>
         <category>Linux</category>
       </categories>
@@ -938,42 +938,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
-    <url>/2019/11/27/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
-    <content><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p>
-<a id="more"></a>
-
-<h4 id="HttpClient-介绍"><a href="#HttpClient-介绍" class="headerlink" title="HttpClient 介绍"></a>HttpClient 介绍</h4><p> <a href="http://hc.apache.org/index.html" target="_blank" rel="noopener">HttpClient</a>是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。 </p>
-<p>HttpClient相比传统JDK自带的URLConnection，增加了易用性和灵活性，它不仅使客户端发送Http请求变得容易，而且也方便开发人员测试接口（基于Http协议的），提高了开发的效率，也方便提高代码的健壮性。因此熟练掌握HttpClient是很重要的必修内容，掌握HttpClient后，相信对于Http协议的了解会更加深入。</p>
-<p><strong>org.apache.commons.httpclient.HttpClient与org.apache.http.client.HttpClient的区别</strong></p>
-<p>Commons的HttpClient项目现在是生命的尽头，不再被开发,  已被Apache HttpComponents项目HttpClient和HttpCore  模组取代，提供更好的性能和更大的灵活性。  </p>
-<p><strong>HttpClient 特性</strong></p>
-<ul>
-<li>实现了所有 HTTP 的方法（GET,POST,PUT,DELETE 等）</li>
-<li>支持自动转向</li>
-<li>支持 HTTPS 协议</li>
-<li>支持代理服务器等</li>
-</ul>
-<p>引用HttpClient非常简单，仅需要在maven中添加相关依赖即可：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="原生HttpClient使用"><a href="#原生HttpClient使用" class="headerlink" title="原生HttpClient使用"></a>原生HttpClient使用</h4><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testGet</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//申明Get请求</span></span><br><span class="line">    HttpGet httpGet = <span class="keyword">new</span> HttpGet(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpGet);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//4.判断状态码</span></span><br><span class="line">    <span class="keyword">if</span> (response.getStatusLine().getStatusCode() == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//从响应中取出实体</span></span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        <span class="comment">//使用工具类EntityUtils将实体并转换成字符串</span></span><br><span class="line">        String s = EntityUtils.toString(entity);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPost</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//声明Post请求</span></span><br><span class="line">    HttpPost httpPost = <span class="keyword">new</span> HttpPost(<span class="string">"https://www.oschina.net/"</span>);</span><br><span class="line">    <span class="comment">//3.开源中国为了安全，防止恶意攻击，在post请求中都限制了浏览器才能访问</span></span><br><span class="line">    httpPost.addHeader(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>);</span><br><span class="line">    ArrayList&lt;NameValuePair&gt; params = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"scope"</span>, <span class="string">"project"</span>));</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"q"</span>, <span class="string">"java"</span>));</span><br><span class="line">    UrlEncodedFormEntity formEntity = <span class="keyword">new</span> UrlEncodedFormEntity(params, Charset.forName(<span class="string">"utf-8"</span>));</span><br><span class="line">    httpPost.setEntity(formEntity);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpPost);</span><br><span class="line">    <span class="comment">//判断状态码</span></span><br><span class="line">    <span class="keyword">if</span>(response.getStatusLine().getStatusCode()==<span class="number">200</span>)&#123;</span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        String string = EntityUtils.toString(entity, <span class="string">"utf-8"</span>);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//6.关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="SpringBoot集成HttpClient"><a href="#SpringBoot集成HttpClient" class="headerlink" title="SpringBoot集成HttpClient"></a>SpringBoot集成HttpClient</h4><p>引入Maven依赖</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>接口自动化</category>
-      </categories>
-      <tags>
-        <tag>自动化测试</tag>
-        <tag>接口自动化</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【接口自动化测试框架（Java版）】基本环境搭建</title>
     <url>/2019/11/27/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<p>从本文起，将详细介绍 Java 自动化框架的搭建及相关知识学习，我也是边写边学，不一定完全正确，如果有异常情况，请在评论区留言。</p>
@@ -1006,6 +970,42 @@
 <p>输入项目名及项目本次存储地址，”Finish”即可创建一个SpringBoot项目。</p>
 <p><img src="/images/image-20191127200144375.png" alt="image-20191127200144375"></p>
 <p>好了，至此，SpringBoot项目基本搭建完成，开心~~</p>
+]]></content>
+      <categories>
+        <category>接口自动化</category>
+      </categories>
+      <tags>
+        <tag>自动化测试</tag>
+        <tag>接口自动化</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
+    <url>/2019/11/27/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
+    <content><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p>
+<a id="more"></a>
+
+<h4 id="HttpClient-介绍"><a href="#HttpClient-介绍" class="headerlink" title="HttpClient 介绍"></a>HttpClient 介绍</h4><p> <a href="http://hc.apache.org/index.html" target="_blank" rel="noopener">HttpClient</a>是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。 </p>
+<p>HttpClient相比传统JDK自带的URLConnection，增加了易用性和灵活性，它不仅使客户端发送Http请求变得容易，而且也方便开发人员测试接口（基于Http协议的），提高了开发的效率，也方便提高代码的健壮性。因此熟练掌握HttpClient是很重要的必修内容，掌握HttpClient后，相信对于Http协议的了解会更加深入。</p>
+<p><strong>org.apache.commons.httpclient.HttpClient与org.apache.http.client.HttpClient的区别</strong></p>
+<p>Commons的HttpClient项目现在是生命的尽头，不再被开发,  已被Apache HttpComponents项目HttpClient和HttpCore  模组取代，提供更好的性能和更大的灵活性。  </p>
+<p><strong>HttpClient 特性</strong></p>
+<ul>
+<li>实现了所有 HTTP 的方法（GET,POST,PUT,DELETE 等）</li>
+<li>支持自动转向</li>
+<li>支持 HTTPS 协议</li>
+<li>支持代理服务器等</li>
+</ul>
+<p>引用HttpClient非常简单，仅需要在maven中添加相关依赖即可：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="原生HttpClient使用"><a href="#原生HttpClient使用" class="headerlink" title="原生HttpClient使用"></a>原生HttpClient使用</h4><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testGet</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//申明Get请求</span></span><br><span class="line">    HttpGet httpGet = <span class="keyword">new</span> HttpGet(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpGet);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//4.判断状态码</span></span><br><span class="line">    <span class="keyword">if</span> (response.getStatusLine().getStatusCode() == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//从响应中取出实体</span></span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        <span class="comment">//使用工具类EntityUtils将实体并转换成字符串</span></span><br><span class="line">        String s = EntityUtils.toString(entity);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPost</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//声明Post请求</span></span><br><span class="line">    HttpPost httpPost = <span class="keyword">new</span> HttpPost(<span class="string">"https://www.oschina.net/"</span>);</span><br><span class="line">    <span class="comment">//3.开源中国为了安全，防止恶意攻击，在post请求中都限制了浏览器才能访问</span></span><br><span class="line">    httpPost.addHeader(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>);</span><br><span class="line">    ArrayList&lt;NameValuePair&gt; params = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"scope"</span>, <span class="string">"project"</span>));</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"q"</span>, <span class="string">"java"</span>));</span><br><span class="line">    UrlEncodedFormEntity formEntity = <span class="keyword">new</span> UrlEncodedFormEntity(params, Charset.forName(<span class="string">"utf-8"</span>));</span><br><span class="line">    httpPost.setEntity(formEntity);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpPost);</span><br><span class="line">    <span class="comment">//判断状态码</span></span><br><span class="line">    <span class="keyword">if</span>(response.getStatusLine().getStatusCode()==<span class="number">200</span>)&#123;</span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        String string = EntityUtils.toString(entity, <span class="string">"utf-8"</span>);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//6.关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="SpringBoot集成HttpClient"><a href="#SpringBoot集成HttpClient" class="headerlink" title="SpringBoot集成HttpClient"></a>SpringBoot集成HttpClient</h4><p>引入Maven依赖</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
         <category>接口自动化</category>
@@ -1295,7 +1295,7 @@
   </entry>
   <entry>
     <title>【Spring Cloud Alibaba】Nacos</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Nacos/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1311,7 +1311,7 @@
   </entry>
   <entry>
     <title>【Spring Cloud Alibaba】Nacos</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Nacos/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -2040,6 +2040,61 @@
 ]]></content>
   </entry>
   <entry>
+    <title>【Hydrogen-ui】Vue.js 环境准备（IDEA）</title>
+    <url>/2019/11/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen-ui%E3%80%91Vue.js%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%EF%BC%88IDEA%EF%BC%89/</url>
+    <content><![CDATA[<p>记录了IDEA下编辑Vue.js 代码的配置</p>
+<a id="more"></a>
+
+<ol>
+<li>添加”vue.js”插件</li>
+</ol>
+<p><img src="/images/1574915669322.png" alt="1574915669322"></p>
+<ol start="2">
+<li>配置支持 ECMAScript 6</li>
+</ol>
+<p><img src="/images/1574915705512.png" alt="1574915705512"></p>
+<ol start="3">
+<li>搭建Vue项目</li>
+</ol>
+<p><img src="/images/20190509180042603.png" alt="img"></p>
+<p><img src="/images/20190509180056736.png" alt="img"></p>
+<p><img src="/images/20190509180117154.png" alt="img"></p>
+<ol start="4">
+<li>安装 Vue脚手架</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i -g vue-cli</span><br></pre></td></tr></table></figure>
+
+<p>验证是否安装成功：<code>vue -V</code></p>
+<p><strong>npm下载慢的问题</strong>：添加国内镜像。</p>
+<p>临时使用:<code>npm --registry https://registry.npm.taobao.org install express</code></p>
+<p>持久使用:<code>npm config set registry https://registry.npm.taobao.org</code></p>
+<p>验证是否配置成功：<code>npm config get registry</code>或<code>npm info express</code></p>
+<ol start="5">
+<li>项目初始化</li>
+</ol>
+<p>切换到项目的上级目录，执行：<code>vue init webpack demo</code></p>
+<ol start="6">
+<li>运行项目</li>
+</ol>
+<p>运行项目：<code>npm run dev</code></p>
+<ol start="7">
+<li>验证项目是否运行成功：localhost:8080</li>
+</ol>
+<p><img src="/images/1574918874140.png" alt="1574918874140"></p>
+<hr>
+<ul>
+<li><strong>webpack</strong> ：一个现代 JavaScript 应用程序的<em>静态模块打包器(module bundler)</em>。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>项目笔记</category>
+      </categories>
+      <tags>
+        <tag>hydrogen</tag>
+        <tag>hydrogen-ui-master</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【自动化测试】Android自动化测试环境搭建</title>
     <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/Android%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
     <content><![CDATA[<a id="more"></a>
@@ -2113,61 +2168,6 @@
       </categories>
   </entry>
   <entry>
-    <title>【Hydrogen-ui】Vue.js 环境准备（IDEA）</title>
-    <url>/2019/11/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen-ui%E3%80%91Vue.js%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%EF%BC%88IDEA%EF%BC%89/</url>
-    <content><![CDATA[<p>记录了IDEA下编辑Vue.js 代码的配置</p>
-<a id="more"></a>
-
-<ol>
-<li>添加”vue.js”插件</li>
-</ol>
-<p><img src="/images/1574915669322.png" alt="1574915669322"></p>
-<ol start="2">
-<li>配置支持 ECMAScript 6</li>
-</ol>
-<p><img src="/images/1574915705512.png" alt="1574915705512"></p>
-<ol start="3">
-<li>搭建Vue项目</li>
-</ol>
-<p><img src="/images/20190509180042603.png" alt="img"></p>
-<p><img src="/images/20190509180056736.png" alt="img"></p>
-<p><img src="/images/20190509180117154.png" alt="img"></p>
-<ol start="4">
-<li>安装 Vue脚手架</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm i -g vue-cli</span><br></pre></td></tr></table></figure>
-
-<p>验证是否安装成功：<code>vue -V</code></p>
-<p><strong>npm下载慢的问题</strong>：添加国内镜像。</p>
-<p>临时使用:<code>npm --registry https://registry.npm.taobao.org install express</code></p>
-<p>持久使用:<code>npm config set registry https://registry.npm.taobao.org</code></p>
-<p>验证是否配置成功：<code>npm config get registry</code>或<code>npm info express</code></p>
-<ol start="5">
-<li>项目初始化</li>
-</ol>
-<p>切换到项目的上级目录，执行：<code>vue init webpack demo</code></p>
-<ol start="6">
-<li>运行项目</li>
-</ol>
-<p>运行项目：<code>npm run dev</code></p>
-<ol start="7">
-<li>验证项目是否运行成功：localhost:8080</li>
-</ol>
-<p><img src="/images/1574918874140.png" alt="1574918874140"></p>
-<hr>
-<ul>
-<li><strong>webpack</strong> ：一个现代 JavaScript 应用程序的<em>静态模块打包器(module bundler)</em>。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>项目笔记</category>
-      </categories>
-      <tags>
-        <tag>hydrogen</tag>
-        <tag>hydrogen-ui-master</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【设计模式】单例模式</title>
     <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<blockquote>
@@ -2185,16 +2185,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【设计模式】抽象工厂模式</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
-  </entry>
-  <entry>
     <title>【设计模式】建造者模式</title>
     <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<a id="more"></a>
@@ -2207,6 +2197,16 @@
         <tag>Design Pattern</tag>
         <tag>Builder Pattern</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>【设计模式】抽象工厂模式</title>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
   </entry>
   <entry>
     <title>【设计模式】面向对象设计原则</title>
@@ -2539,20 +2539,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Dubbo框架学习总结</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Dubbo%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Dubbo%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>Reids</category>
-      </categories>
-      <tags>
-        <tag>微服务</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Git 学习笔记</title>
     <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Git%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
@@ -2574,6 +2560,20 @@
       </categories>
       <tags>
         <tag>Git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dubbo框架学习总结</title>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Dubbo%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Dubbo%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>Reids</category>
+      </categories>
+      <tags>
+        <tag>微服务</tag>
       </tags>
   </entry>
   <entry>
@@ -3527,84 +3527,6 @@
   </entry>
   <entry>
     <title>【面试题】JavaSE面试总结</title>
-    <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Docker%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Docker%E3%80%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>当下微服务架构盛行，随之而来的还有虚拟化技术Docker的普及，日常工作中经常需要使用docker，所以对docker需要进行简单的了解，本文主要描述docker的基本架构、基本使用、Dockerfile的编写及项目中docker的使用。</p>
-<a id="more"></a>
-
-<h3 id="Docker-简介"><a href="#Docker-简介" class="headerlink" title="Docker 简介"></a>Docker 简介</h3><p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
-<h4 id="Docker-架构"><a href="#Docker-架构" class="headerlink" title="Docker 架构"></a>Docker 架构</h4><p>Docker使用了C/S体系架构，Docker客户端与Docker守护进程通信，Docker守护进程负责构建，运行和分发Docker容器。Docker客户端和守护进程可以在同一个系统上运行，也可以将Docker客户端连接到远程Docker守护进程。Docker客户端和守护进程使用REST API通过UNIX套接字或网络接口进行通信。<br><img src="/images/image-20200331165743372.png" alt="image-20200331165743372"></p>
-<h4 id="Docker-基本组成"><a href="#Docker-基本组成" class="headerlink" title="Docker 基本组成"></a>Docker 基本组成</h4><h5 id="Docker-镜像（Docker-Images）"><a href="#Docker-镜像（Docker-Images）" class="headerlink" title="Docker 镜像（Docker Images）"></a>Docker 镜像（Docker Images）</h5><p> <strong>Docker 镜像（Image）</strong>，就相当于是一个 root 文件系统。比如官方镜像 ubuntu:16.04 就包含了完整的一套 Ubuntu16.04 最小系统的 root 文件系统。 </p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">检索镜像（从 https://hub.docker.com 检索）</span></span><br><span class="line">docker search mysql #OFFICIAL表示官方发行版本</span><br><span class="line"><span class="meta">#</span><span class="bash">拉取镜像:dockerpull 镜像名:tag</span></span><br><span class="line">docker pull mysql #拉取latest的mysql镜像</span><br><span class="line"><span class="meta">#</span><span class="bash">查看本地镜像</span></span><br><span class="line">docker images</span><br><span class="line"><span class="meta">#</span><span class="bash">删除镜像:docker rmi image-id</span></span><br><span class="line">docker rmi 29e0a</span><br></pre></td></tr></table></figure>
-
-<h5 id="Docker-容器（Docker-Containers）"><a href="#Docker-容器（Docker-Containers）" class="headerlink" title="Docker 容器（Docker Containers）"></a>Docker 容器（Docker Containers）</h5><p> <strong>镜像（Image）</strong>和<strong>容器（Container）</strong>的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。 </p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 运行容器：docker run --name container-name:tag -d image-name -p 8080:8090</span></span><br><span class="line"><span class="meta">#</span><span class="bash">-d:表示后台运行容器</span></span><br><span class="line"><span class="meta">#</span><span class="bash">-p:端口映射，docker容器默认与外界是隔绝的，需要进行端口映射才能访问</span></span><br><span class="line">docker run --name myTomcat -d tomcat:8.5.32 -p 8090:8080</span><br><span class="line"><span class="meta">#</span><span class="bash">查看容器</span></span><br><span class="line">docker ps #查看所有运行中的容器</span><br><span class="line">docker ps -a #查看所有容器</span><br><span class="line"><span class="meta">#</span><span class="bash">停止运行容器:docker stop container-id</span></span><br><span class="line">docker stop 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash">启动容器</span></span><br><span class="line">docker start 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash">删除容器</span></span><br><span class="line">docker rm 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash">容器日志：docker logs container-name/container-id</span></span><br><span class="line">docker logs myTtomcat1</span><br></pre></td></tr></table></figure>
-
-<h5 id="Docker-仓库（Docker-Repository）"><a href="#Docker-仓库（Docker-Repository）" class="headerlink" title="Docker 仓库（Docker Repository）"></a>Docker 仓库（Docker Repository）</h5><p> <strong>仓库（Repository）</strong>可看着一个代码控制中心，用来保存镜像。 可以分为公有仓库和私有仓库。</p>
-<h4 id="Docker安装（CentOS7）"><a href="#Docker安装（CentOS7）" class="headerlink" title="Docker安装（CentOS7）"></a>Docker安装（CentOS7）</h4><p>官方地址： <a href="https://docs.docker.com/install/linux/docker-ce/centos/" target="_blank" rel="noopener">https://docs.docker.com/install/linux/docker-ce/centos/</a> </p>
-<h5 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
-
-<h5 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
-
-<h5 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h5><ul>
-<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
-<li>重启docker：<code>sudo systemctl restart docker</code></li>
-</ul>
-<h3 id="DockerFile"><a href="#DockerFile" class="headerlink" title="DockerFile"></a>DockerFile</h3><h4 id="DockerFile的指令详解"><a href="#DockerFile的指令详解" class="headerlink" title="DockerFile的指令详解"></a>DockerFile的指令详解</h4><p><code>FROM</code>：基础镜像</p>
-<p><code>MAINTAINER</code>：</p>
-<p><code>RUN</code>：</p>
-<p><code>EXPOSE</code>：</p>
-<p><code>WORKDIR</code>:</p>
-<p><code>ENV</code>：</p>
-<p><code>ADD</code>：</p>
-<p><code>COPY</code>：</p>
-<p><code>VOLUME</code>：</p>
-<p><code>CMD</code>：</p>
-<p><code>ENTRYPOINT</code>：</p>
-<p><code>ONBUILD</code>：</p>
-<h4 id="DockerFile编写实例"><a href="#DockerFile编写实例" class="headerlink" title="DockerFile编写实例"></a>DockerFile编写实例</h4><p>需求：</p>
-<p>Dockerfile：</p>
-<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="常用镜像"><a href="#常用镜像" class="headerlink" title="常用镜像"></a>常用镜像</h3><h4 id="Docker安装MySQL"><a href="#Docker安装MySQL" class="headerlink" title="Docker安装MySQL"></a>Docker安装MySQL</h4><h4 id="Docker安装Redis"><a href="#Docker安装Redis" class="headerlink" title="Docker安装Redis"></a>Docker安装Redis</h4><h4 id="Docker安装Zookeeper"><a href="#Docker安装Zookeeper" class="headerlink" title="Docker安装Zookeeper"></a>Docker安装Zookeeper</h4><h3 id="IDEA下Docker部署SpringBoot项目"><a href="#IDEA下Docker部署SpringBoot项目" class="headerlink" title="IDEA下Docker部署SpringBoot项目"></a>IDEA下Docker部署SpringBoot项目</h3><h4 id="开启Docker远程连接端口"><a href="#开启Docker远程连接端口" class="headerlink" title="开启Docker远程连接端口"></a>开启Docker远程连接端口</h4><ol>
-<li>修改<code>/lib/systemd/system/docker.service</code>文件中<code>ExecStart</code>开头的行：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ExecStart=/usr/bin/dockerd   -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>重新加载并启动docker</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl daemon-reloadsystemctl start docker</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>添加端口到服务器，并重启防火墙</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo  firewall-cmd --zone=public --add-port=2375/tcp --permanent</span><br><span class="line">#--zone #作用域</span><br><span class="line">#--add-port=2375/tcp  #添加端口，格式为：端口/通讯协议</span><br><span class="line">#--permanent  #永久生效，没有此参数重启后失效</span><br><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure>
-
-<ol>
-<li>校验结果：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl http://localhost:2375/version# 本地虚拟机地址：curl http://192.168.159.128:2375/version</span><br></pre></td></tr></table></figure>
-
-<h4 id="IDEA连接Docker"><a href="#IDEA连接Docker" class="headerlink" title="IDEA连接Docker"></a>IDEA连接Docker</h4><p><img src="/images/image-20200331175746687.png" alt="image-20200331175746687"></p>
-<h4 id="一键部署SpringBoot项目"><a href="#一键部署SpringBoot项目" class="headerlink" title="一键部署SpringBoot项目"></a>一键部署SpringBoot项目</h4>]]></content>
-      <categories>
-        <category>JavaSE</category>
-      </categories>
-      <tags>
-        <tag>JavaSE</tag>
-        <tag>面试总结</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【面试题】JavaSE面试总结</title>
     <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90%E9%9D%A2%E8%AF%95%E9%A2%98%E3%80%91JavaSE%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
@@ -3907,6 +3829,84 @@
       </categories>
       <tags>
         <tag>框架设计</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【面试题】JavaSE面试总结</title>
+    <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Docker%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Docker%E3%80%91%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>当下微服务架构盛行，随之而来的还有虚拟化技术Docker的普及，日常工作中经常需要使用docker，所以对docker需要进行简单的了解，本文主要描述docker的基本架构、基本使用、Dockerfile的编写及项目中docker的使用。</p>
+<a id="more"></a>
+
+<h3 id="Docker-简介"><a href="#Docker-简介" class="headerlink" title="Docker 简介"></a>Docker 简介</h3><p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的Linux机器上，也可以实现虚拟化，容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
+<h4 id="Docker-架构"><a href="#Docker-架构" class="headerlink" title="Docker 架构"></a>Docker 架构</h4><p>Docker使用了C/S体系架构，Docker客户端与Docker守护进程通信，Docker守护进程负责构建，运行和分发Docker容器。Docker客户端和守护进程可以在同一个系统上运行，也可以将Docker客户端连接到远程Docker守护进程。Docker客户端和守护进程使用REST API通过UNIX套接字或网络接口进行通信。<br><img src="/images/image-20200331165743372.png" alt="image-20200331165743372"></p>
+<h4 id="Docker-基本组成"><a href="#Docker-基本组成" class="headerlink" title="Docker 基本组成"></a>Docker 基本组成</h4><h5 id="Docker-镜像（Docker-Images）"><a href="#Docker-镜像（Docker-Images）" class="headerlink" title="Docker 镜像（Docker Images）"></a>Docker 镜像（Docker Images）</h5><p> <strong>Docker 镜像（Image）</strong>，就相当于是一个 root 文件系统。比如官方镜像 ubuntu:16.04 就包含了完整的一套 Ubuntu16.04 最小系统的 root 文件系统。 </p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">检索镜像（从 https://hub.docker.com 检索）</span></span><br><span class="line">docker search mysql #OFFICIAL表示官方发行版本</span><br><span class="line"><span class="meta">#</span><span class="bash">拉取镜像:dockerpull 镜像名:tag</span></span><br><span class="line">docker pull mysql #拉取latest的mysql镜像</span><br><span class="line"><span class="meta">#</span><span class="bash">查看本地镜像</span></span><br><span class="line">docker images</span><br><span class="line"><span class="meta">#</span><span class="bash">删除镜像:docker rmi image-id</span></span><br><span class="line">docker rmi 29e0a</span><br></pre></td></tr></table></figure>
+
+<h5 id="Docker-容器（Docker-Containers）"><a href="#Docker-容器（Docker-Containers）" class="headerlink" title="Docker 容器（Docker Containers）"></a>Docker 容器（Docker Containers）</h5><p> <strong>镜像（Image）</strong>和<strong>容器（Container）</strong>的关系，就像是面向对象程序设计中的类和实例一样，镜像是静态的定义，容器是镜像运行时的实体。容器可以被创建、启动、停止、删除、暂停等。 </p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 运行容器：docker run --name container-name:tag -d image-name -p 8080:8090</span></span><br><span class="line"><span class="meta">#</span><span class="bash">-d:表示后台运行容器</span></span><br><span class="line"><span class="meta">#</span><span class="bash">-p:端口映射，docker容器默认与外界是隔绝的，需要进行端口映射才能访问</span></span><br><span class="line">docker run --name myTomcat -d tomcat:8.5.32 -p 8090:8080</span><br><span class="line"><span class="meta">#</span><span class="bash">查看容器</span></span><br><span class="line">docker ps #查看所有运行中的容器</span><br><span class="line">docker ps -a #查看所有容器</span><br><span class="line"><span class="meta">#</span><span class="bash">停止运行容器:docker stop container-id</span></span><br><span class="line">docker stop 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash">启动容器</span></span><br><span class="line">docker start 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash">删除容器</span></span><br><span class="line">docker rm 1cbabce49b84</span><br><span class="line"><span class="meta">#</span><span class="bash">容器日志：docker logs container-name/container-id</span></span><br><span class="line">docker logs myTtomcat1</span><br></pre></td></tr></table></figure>
+
+<h5 id="Docker-仓库（Docker-Repository）"><a href="#Docker-仓库（Docker-Repository）" class="headerlink" title="Docker 仓库（Docker Repository）"></a>Docker 仓库（Docker Repository）</h5><p> <strong>仓库（Repository）</strong>可看着一个代码控制中心，用来保存镜像。 可以分为公有仓库和私有仓库。</p>
+<h4 id="Docker安装（CentOS7）"><a href="#Docker安装（CentOS7）" class="headerlink" title="Docker安装（CentOS7）"></a>Docker安装（CentOS7）</h4><p>官方地址： <a href="https://docs.docker.com/install/linux/docker-ce/centos/" target="_blank" rel="noopener">https://docs.docker.com/install/linux/docker-ce/centos/</a> </p>
+<h5 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h5><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
+
+<h5 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h5><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<h5 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h5><ul>
+<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
+<li>重启docker：<code>sudo systemctl restart docker</code></li>
+</ul>
+<h3 id="DockerFile"><a href="#DockerFile" class="headerlink" title="DockerFile"></a>DockerFile</h3><h4 id="DockerFile的指令详解"><a href="#DockerFile的指令详解" class="headerlink" title="DockerFile的指令详解"></a>DockerFile的指令详解</h4><p><code>FROM</code>：基础镜像</p>
+<p><code>MAINTAINER</code>：</p>
+<p><code>RUN</code>：</p>
+<p><code>EXPOSE</code>：</p>
+<p><code>WORKDIR</code>:</p>
+<p><code>ENV</code>：</p>
+<p><code>ADD</code>：</p>
+<p><code>COPY</code>：</p>
+<p><code>VOLUME</code>：</p>
+<p><code>CMD</code>：</p>
+<p><code>ENTRYPOINT</code>：</p>
+<p><code>ONBUILD</code>：</p>
+<h4 id="DockerFile编写实例"><a href="#DockerFile编写实例" class="headerlink" title="DockerFile编写实例"></a>DockerFile编写实例</h4><p>需求：</p>
+<p>Dockerfile：</p>
+<figure class="highlight dockerfile"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="常用镜像"><a href="#常用镜像" class="headerlink" title="常用镜像"></a>常用镜像</h3><h4 id="Docker安装MySQL"><a href="#Docker安装MySQL" class="headerlink" title="Docker安装MySQL"></a>Docker安装MySQL</h4><h4 id="Docker安装Redis"><a href="#Docker安装Redis" class="headerlink" title="Docker安装Redis"></a>Docker安装Redis</h4><h4 id="Docker安装Zookeeper"><a href="#Docker安装Zookeeper" class="headerlink" title="Docker安装Zookeeper"></a>Docker安装Zookeeper</h4><h3 id="IDEA下Docker部署SpringBoot项目"><a href="#IDEA下Docker部署SpringBoot项目" class="headerlink" title="IDEA下Docker部署SpringBoot项目"></a>IDEA下Docker部署SpringBoot项目</h3><h4 id="开启Docker远程连接端口"><a href="#开启Docker远程连接端口" class="headerlink" title="开启Docker远程连接端口"></a>开启Docker远程连接端口</h4><ol>
+<li>修改<code>/lib/systemd/system/docker.service</code>文件中<code>ExecStart</code>开头的行：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">ExecStart=/usr/bin/dockerd   -H tcp://0.0.0.0:2375 -H unix://var/run/docker.sock</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>重新加载并启动docker</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">systemctl daemon-reloadsystemctl start docker</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>添加端口到服务器，并重启防火墙</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo  firewall-cmd --zone=public --add-port=2375/tcp --permanent</span><br><span class="line">#--zone #作用域</span><br><span class="line">#--add-port=2375/tcp  #添加端口，格式为：端口/通讯协议</span><br><span class="line">#--permanent  #永久生效，没有此参数重启后失效</span><br><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>校验结果：</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">curl http://localhost:2375/version# 本地虚拟机地址：curl http://192.168.159.128:2375/version</span><br></pre></td></tr></table></figure>
+
+<h4 id="IDEA连接Docker"><a href="#IDEA连接Docker" class="headerlink" title="IDEA连接Docker"></a>IDEA连接Docker</h4><p><img src="/images/image-20200331175746687.png" alt="image-20200331175746687"></p>
+<h4 id="一键部署SpringBoot项目"><a href="#一键部署SpringBoot项目" class="headerlink" title="一键部署SpringBoot项目"></a>一键部署SpringBoot项目</h4>]]></content>
+      <categories>
+        <category>JavaSE</category>
+      </categories>
+      <tags>
+        <tag>JavaSE</tag>
+        <tag>面试总结</tag>
       </tags>
   </entry>
   <entry>
@@ -4970,7 +4970,7 @@
   </entry>
   <entry>
     <title>【Java SE】Java 注解</title>
-    <url>/2016/07/16/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20SE%E3%80%91Java%20%E6%B3%A8%E8%A7%A3/</url>
+    <url>/2016/07/16/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20SE%E3%80%91Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -4984,7 +4984,7 @@
   </entry>
   <entry>
     <title>【Java SE】Java 注解</title>
-    <url>/2016/07/16/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20SE%E3%80%91Java%20%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/</url>
+    <url>/2016/07/16/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20SE%E3%80%91Java%20%E6%B3%A8%E8%A7%A3/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>

@@ -177,11 +177,11 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/JPA 学习笔记/【JPA】基本注解</title>
-    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/"/>
-    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】基本注解/</id>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一</title>
+    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/"/>
+    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一/</id>
     <published>2020-07-26T14:25:27.158Z</published>
-    <updated>2020-07-26T14:25:27.158Z</updated>
+    <updated>2020-07-26T14:26:11.277Z</updated>
     
     <summary type="html">
     
@@ -192,11 +192,11 @@
   </entry>
   
   <entry>
-    <title>02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一</title>
-    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/"/>
-    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一/</id>
+    <title>02_全栈笔记/JPA 学习笔记/【JPA】基本注解</title>
+    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/"/>
+    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】基本注解/</id>
     <published>2020-07-26T14:25:27.158Z</published>
-    <updated>2020-07-26T14:26:11.277Z</updated>
+    <updated>2020-07-26T14:25:27.158Z</updated>
     
     <summary type="html">
     
