@@ -6,13 +6,13 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Linux 学习笔记/【Linux】用户和用户组管理</title>
-    <url>/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86/</url>
+    <title>02_全栈笔记/Linux 学习笔记/【Linux】权限管理</title>
+    <url>/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>02_全栈笔记/Linux 学习笔记/【Linux】权限管理</title>
-    <url>/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/</url>
+    <title>02_全栈笔记/Linux 学习笔记/【Linux】用户和用户组管理</title>
+    <url>/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[]]></content>
   </entry>
   <entry>
@@ -274,6 +274,75 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>tomcat9安装与配置</title>
+    <url>/2020/05/18/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Tomcat%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tomcat%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><strong>版本：tomcat 9</strong></p>
+<p><strong>官网地址：</strong><a href="https://tomcat.apache.org" target="_blank" rel="noopener">https://tomcat.apache.org</a></p>
+<a id="more"></a>
+
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="1-下载tomcat安装包"><a href="#1-下载tomcat安装包" class="headerlink" title="1.下载tomcat安装包"></a>1.下载tomcat安装包</h4><p><img src="/images/image-20200519171750938.png" alt="image-20200519171750938"></p>
+<h4 id="2-解压至安装路径"><a href="#2-解压至安装路径" class="headerlink" title="2.解压至安装路径"></a>2.解压至安装路径</h4><p><img src="/images/image-20200519171918160.png" alt="image-20200519171918160"></p>
+<h4 id="3-配置环境变量"><a href="#3-配置环境变量" class="headerlink" title="3.配置环境变量"></a>3.配置环境变量</h4><ul>
+<li>“CATALINA_HOME”：”C:\software\apache-tomcat-9.0.35”</li>
+<li>“Path”:”%CATALINA_HOME%\bin 和 %CATALINA_HOME%\lib”</li>
+</ul>
+<h4 id="4-tomcat服务安装"><a href="#4-tomcat服务安装" class="headerlink" title="4.tomcat服务安装"></a>4.tomcat服务安装</h4><p>在 <code>C:\software\apache-tomcat-9.0.35\bin</code> 目录下运行cmd，执行<code>service.bat install</code>命令安装</p>
+<h4 id="5-校验是否安装成功"><a href="#5-校验是否安装成功" class="headerlink" title="5.校验是否安装成功"></a>5.校验是否安装成功</h4><ul>
+<li>双击运行”C:\software\apache-tomcat-9.0.35\bin\tomcat9.exe”、双击执行“startup.bat”或cmd运行“startup.bat”。</li>
+<li>打开浏览器访问”localhost：8080“，出现下图则安装成功</li>
+</ul>
+<p><img src="/images/20190701112345662.png" alt="在这里插入图片描述"></p>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>1.运行 tomcat ，日志出现乱码</p>
+<p><img src="/images/image-20200519172810156.png" alt="image-20200519172810156"></p>
+<p>解决方案：</p>
+<p>修改<code>C:\software\apache-tomcat-9.0.35\conf\logging.properties</code>文件中<code>java.util.logging.ConsoleHandler.encoding</code>值为<code>GBK</code>.</p>
+<p><img src="/images/image-20200519172937817.png" alt="image-20200519172937817"></p>
+<h3 id="IDEA使用Tomcat"><a href="#IDEA使用Tomcat" class="headerlink" title="IDEA使用Tomcat"></a>IDEA使用Tomcat</h3><p><img src="/images/image-20200519173333627.png" alt="image-20200519173333627"></p>
+]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>tomcat</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CentOS下Docker安装与配置</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
+<p>官方地址： <a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/centos/</a></p>
+<p><strong>安装环境：CentOS 7</strong></p>
+<p><strong>安装版本：Docker v19.03</strong></p>
+<a id="more"></a>
+
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
+
+<h4 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h4><ul>
+<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
+<li>重启docker：<code>sudo systemctl restart docker</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CentOS下Docker安装Nacos</title>
     <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90CentOS%E3%80%91%E4%BD%BF%E7%94%A8Docker%E5%AE%89%E8%A3%85Nacos/</url>
     <content><![CDATA[<blockquote>
@@ -337,36 +406,38 @@
       </tags>
   </entry>
   <entry>
-    <title>CentOS下Docker安装与配置</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <title>windows下tomcat9安装与配置</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/windows%E4%B8%8Btomcat9%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
-<p>官方地址： <a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/centos/</a></p>
-<p><strong>安装环境：CentOS 7</strong></p>
-<p><strong>安装版本：Docker v19.03</strong></p>
+<p><strong>版本：tomcat 9</strong></p>
+<p><strong>官网地址：</strong><a href="https://tomcat.apache.org" target="_blank" rel="noopener">https://tomcat.apache.org</a></p>
 <a id="more"></a>
 
-<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
-
-<h4 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
-
-<h4 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h4><ul>
-<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="1-下载tomcat安装包"><a href="#1-下载tomcat安装包" class="headerlink" title="1.下载tomcat安装包"></a>1.下载tomcat安装包</h4><p><img src="/images/image-20200519171750938.png" alt="image-20200519171750938"></p>
+<h4 id="2-解压至安装路径"><a href="#2-解压至安装路径" class="headerlink" title="2.解压至安装路径"></a>2.解压至安装路径</h4><p><img src="/images/image-20200519171918160.png" alt="image-20200519171918160"></p>
+<h4 id="3-配置环境变量"><a href="#3-配置环境变量" class="headerlink" title="3.配置环境变量"></a>3.配置环境变量</h4><ul>
+<li>“CATALINA_HOME”：”C:\software\apache-tomcat-9.0.35”</li>
+<li>“Path”:”%CATALINA_HOME%\bin 和 %CATALINA_HOME%\lib”</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
-<li>重启docker：<code>sudo systemctl restart docker</code></li>
+<h4 id="4-tomcat服务安装"><a href="#4-tomcat服务安装" class="headerlink" title="4.tomcat服务安装"></a>4.tomcat服务安装</h4><p>在 <code>C:\software\apache-tomcat-9.0.35\bin</code> 目录下运行cmd，执行<code>service.bat install</code>命令安装</p>
+<h4 id="5-校验是否安装成功"><a href="#5-校验是否安装成功" class="headerlink" title="5.校验是否安装成功"></a>5.校验是否安装成功</h4><ul>
+<li>双击运行”C:\software\apache-tomcat-9.0.35\bin\tomcat9.exe”、双击执行“startup.bat”或cmd运行“startup.bat”。</li>
+<li>打开浏览器访问”localhost：8080“，出现下图则安装成功</li>
 </ul>
+<p><img src="/images/20190701112345662.png" alt="在这里插入图片描述"></p>
+<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><h4 id="1-运行-tomcat-，日志出现乱码"><a href="#1-运行-tomcat-，日志出现乱码" class="headerlink" title="1.运行 tomcat ，日志出现乱码"></a>1.运行 tomcat ，日志出现乱码</h4><p><img src="/images/image-20200519172810156.png" alt="image-20200519172810156"></p>
+<p>解决方案：</p>
+<p>修改<code>C:\software\apache-tomcat-9.0.35\conf\logging.properties</code>文件中<code>java.util.logging.ConsoleHandler.encoding</code>值为<code>GBK</code>.</p>
+<p><img src="/images/image-20200519172937817.png" alt="image-20200519172937817"></p>
+<h3 id="IDEA使用Tomcat"><a href="#IDEA使用Tomcat" class="headerlink" title="IDEA使用Tomcat"></a>IDEA使用Tomcat</h3><p><img src="/images/image-20200519173333627.png" alt="image-20200519173333627"></p>
 ]]></content>
       <categories>
         <category>software</category>
       </categories>
       <tags>
-        <tag>docker</tag>
+        <tag>tomcat</tag>
       </tags>
   </entry>
   <entry>
@@ -406,77 +477,6 @@
       <categories>
         <category>software</category>
       </categories>
-  </entry>
-  <entry>
-    <title>windows下tomcat9安装与配置</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/windows%E4%B8%8Btomcat9%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p><strong>版本：tomcat 9</strong></p>
-<p><strong>官网地址：</strong><a href="https://tomcat.apache.org" target="_blank" rel="noopener">https://tomcat.apache.org</a></p>
-<a id="more"></a>
-
-<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="1-下载tomcat安装包"><a href="#1-下载tomcat安装包" class="headerlink" title="1.下载tomcat安装包"></a>1.下载tomcat安装包</h4><p><img src="/images/image-20200519171750938.png" alt="image-20200519171750938"></p>
-<h4 id="2-解压至安装路径"><a href="#2-解压至安装路径" class="headerlink" title="2.解压至安装路径"></a>2.解压至安装路径</h4><p><img src="/images/image-20200519171918160.png" alt="image-20200519171918160"></p>
-<h4 id="3-配置环境变量"><a href="#3-配置环境变量" class="headerlink" title="3.配置环境变量"></a>3.配置环境变量</h4><ul>
-<li>“CATALINA_HOME”：”C:\software\apache-tomcat-9.0.35”</li>
-<li>“Path”:”%CATALINA_HOME%\bin 和 %CATALINA_HOME%\lib”</li>
-</ul>
-<h4 id="4-tomcat服务安装"><a href="#4-tomcat服务安装" class="headerlink" title="4.tomcat服务安装"></a>4.tomcat服务安装</h4><p>在 <code>C:\software\apache-tomcat-9.0.35\bin</code> 目录下运行cmd，执行<code>service.bat install</code>命令安装</p>
-<h4 id="5-校验是否安装成功"><a href="#5-校验是否安装成功" class="headerlink" title="5.校验是否安装成功"></a>5.校验是否安装成功</h4><ul>
-<li>双击运行”C:\software\apache-tomcat-9.0.35\bin\tomcat9.exe”、双击执行“startup.bat”或cmd运行“startup.bat”。</li>
-<li>打开浏览器访问”localhost：8080“，出现下图则安装成功</li>
-</ul>
-<p><img src="/images/20190701112345662.png" alt="在这里插入图片描述"></p>
-<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><h4 id="1-运行-tomcat-，日志出现乱码"><a href="#1-运行-tomcat-，日志出现乱码" class="headerlink" title="1.运行 tomcat ，日志出现乱码"></a>1.运行 tomcat ，日志出现乱码</h4><p><img src="/images/image-20200519172810156.png" alt="image-20200519172810156"></p>
-<p>解决方案：</p>
-<p>修改<code>C:\software\apache-tomcat-9.0.35\conf\logging.properties</code>文件中<code>java.util.logging.ConsoleHandler.encoding</code>值为<code>GBK</code>.</p>
-<p><img src="/images/image-20200519172937817.png" alt="image-20200519172937817"></p>
-<h3 id="IDEA使用Tomcat"><a href="#IDEA使用Tomcat" class="headerlink" title="IDEA使用Tomcat"></a>IDEA使用Tomcat</h3><p><img src="/images/image-20200519173333627.png" alt="image-20200519173333627"></p>
-]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-      <tags>
-        <tag>tomcat</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>tomcat9安装与配置</title>
-    <url>/2020/05/18/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Tomcat%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/tomcat%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p><strong>版本：tomcat 9</strong></p>
-<p><strong>官网地址：</strong><a href="https://tomcat.apache.org" target="_blank" rel="noopener">https://tomcat.apache.org</a></p>
-<a id="more"></a>
-
-<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="1-下载tomcat安装包"><a href="#1-下载tomcat安装包" class="headerlink" title="1.下载tomcat安装包"></a>1.下载tomcat安装包</h4><p><img src="/images/image-20200519171750938.png" alt="image-20200519171750938"></p>
-<h4 id="2-解压至安装路径"><a href="#2-解压至安装路径" class="headerlink" title="2.解压至安装路径"></a>2.解压至安装路径</h4><p><img src="/images/image-20200519171918160.png" alt="image-20200519171918160"></p>
-<h4 id="3-配置环境变量"><a href="#3-配置环境变量" class="headerlink" title="3.配置环境变量"></a>3.配置环境变量</h4><ul>
-<li>“CATALINA_HOME”：”C:\software\apache-tomcat-9.0.35”</li>
-<li>“Path”:”%CATALINA_HOME%\bin 和 %CATALINA_HOME%\lib”</li>
-</ul>
-<h4 id="4-tomcat服务安装"><a href="#4-tomcat服务安装" class="headerlink" title="4.tomcat服务安装"></a>4.tomcat服务安装</h4><p>在 <code>C:\software\apache-tomcat-9.0.35\bin</code> 目录下运行cmd，执行<code>service.bat install</code>命令安装</p>
-<h4 id="5-校验是否安装成功"><a href="#5-校验是否安装成功" class="headerlink" title="5.校验是否安装成功"></a>5.校验是否安装成功</h4><ul>
-<li>双击运行”C:\software\apache-tomcat-9.0.35\bin\tomcat9.exe”、双击执行“startup.bat”或cmd运行“startup.bat”。</li>
-<li>打开浏览器访问”localhost：8080“，出现下图则安装成功</li>
-</ul>
-<p><img src="/images/20190701112345662.png" alt="在这里插入图片描述"></p>
-<h3 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h3><p>1.运行 tomcat ，日志出现乱码</p>
-<p><img src="/images/image-20200519172810156.png" alt="image-20200519172810156"></p>
-<p>解决方案：</p>
-<p>修改<code>C:\software\apache-tomcat-9.0.35\conf\logging.properties</code>文件中<code>java.util.logging.ConsoleHandler.encoding</code>值为<code>GBK</code>.</p>
-<p><img src="/images/image-20200519172937817.png" alt="image-20200519172937817"></p>
-<h3 id="IDEA使用Tomcat"><a href="#IDEA使用Tomcat" class="headerlink" title="IDEA使用Tomcat"></a>IDEA使用Tomcat</h3><p><img src="/images/image-20200519173333627.png" alt="image-20200519173333627"></p>
-]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-      <tags>
-        <tag>tomcat</tag>
-      </tags>
   </entry>
   <entry>
     <title>ReadME</title>
@@ -576,23 +576,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【Linux】Linux 目录结构</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91Linux%20%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p><strong>在Linux世界里，一切皆文件。</strong></p>
-<a id="more"></a>
-
-<h2 id="Linux-目录结构"><a href="#Linux-目录结构" class="headerlink" title="Linux 目录结构"></a>Linux 目录结构</h2><h2 id="文件分类"><a href="#文件分类" class="headerlink" title="文件分类"></a>文件分类</h2>]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Jmeter】目录结构与配置文件说明</title>
     <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/</url>
     <content><![CDATA[<blockquote>
@@ -612,6 +595,23 @@
       <tags>
         <tag>MyBatis Generator</tag>
         <tag>MyBatis</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【Linux】Linux 目录结构</title>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91Linux%20%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><strong>在Linux世界里，一切皆文件。</strong></p>
+<a id="more"></a>
+
+<h2 id="Linux-目录结构"><a href="#Linux-目录结构" class="headerlink" title="Linux 目录结构"></a>Linux 目录结构</h2><h2 id="文件分类"><a href="#文件分类" class="headerlink" title="文件分类"></a>文件分类</h2>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
       </tags>
   </entry>
   <entry>
@@ -1295,7 +1295,7 @@
   </entry>
   <entry>
     <title>【Spring Cloud Alibaba】Nacos</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Nacos/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1311,7 +1311,7 @@
   </entry>
   <entry>
     <title>【Spring Cloud Alibaba】Nacos</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Nacos/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -3509,9 +3509,9 @@
         <category>项目笔记</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-        <tag>IDEA</tag>
         <tag>Git</tag>
+        <tag>IDEA</tag>
+        <tag>Linux</tag>
         <tag>Docker</tag>
         <tag>MySQL</tag>
         <tag>SpringBoot</tag>
@@ -4637,57 +4637,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【Linux】CentOS 8 下安装maven</title>
-    <url>/2018/03/03/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Linux%E3%80%91CentOS%208%E5%AE%89%E8%A3%85Maven/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>最近项目中使用到了maven，需要在服务器端安装一个maven。</p>
-<a id="more"></a>
-
-<p>maven官网： <a href="http://maven.apache.org" target="_blank" rel="noopener">http://maven.apache.org</a></p>
-<p>下载地址：<a href="https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz" target="_blank" rel="noopener">https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</a></p>
-<p>安装步骤：</p>
-<ol>
-<li>下载</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>解压</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar zxvf apache-maven-3.6.1-bin.tar.gz -C /opt/</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>环境变量配置</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
-
-<p>在文件后面添加一下信息：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export M2_HOME=/opt/apache-maven-3.6.1</span><br><span class="line">export PATH=$PATH:$M2_HOME/bin</span><br></pre></td></tr></table></figure>
-
-<p>让配置文件生效：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>验证</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mvn -version</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>配置文件详解</li>
-</ol>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag"><span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 存放本地仓库的地方 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>/opt/apache-maven-3.6.3/repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br><span class="line">  	</span><br><span class="line">	<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>spring<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/spring<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云中央仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/central<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云apache仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/apache<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 一些自定义配置 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">profiles</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>myProfile<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 激活这个配置 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">activeByDefault</span>&gt;</span>true<span class="tag">&lt;/<span class="name">activeByDefault</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">jdk</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">activation</span>&gt;</span></span><br><span class="line"></span><br><span class="line">			<span class="comment">&lt;!-- 全局属性配置，让所有 maven 项目新建时默认都是 java8、UTF-8 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">jdk.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk.version</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Maven</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Linux下安装maven</title>
     <url>/2018/03/03/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Mybatis%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Mybatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
@@ -4909,6 +4858,57 @@
       </tags>
   </entry>
   <entry>
+    <title>【Linux】CentOS 8 下安装maven</title>
+    <url>/2018/03/03/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Linux%E3%80%91CentOS%208%E5%AE%89%E8%A3%85Maven/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>最近项目中使用到了maven，需要在服务器端安装一个maven。</p>
+<a id="more"></a>
+
+<p>maven官网： <a href="http://maven.apache.org" target="_blank" rel="noopener">http://maven.apache.org</a></p>
+<p>下载地址：<a href="https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz" target="_blank" rel="noopener">https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</a></p>
+<p>安装步骤：</p>
+<ol>
+<li>下载</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">wget https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>解压</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">tar zxvf apache-maven-3.6.1-bin.tar.gz -C /opt/</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>环境变量配置</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+
+<p>在文件后面添加一下信息：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">export M2_HOME=/opt/apache-maven-3.6.1</span><br><span class="line">export PATH=$PATH:$M2_HOME/bin</span><br></pre></td></tr></table></figure>
+
+<p>让配置文件生效：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>验证</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mvn -version</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>配置文件详解</li>
+</ol>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag"><span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 存放本地仓库的地方 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>/opt/apache-maven-3.6.3/repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br><span class="line">  	</span><br><span class="line">	<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>spring<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/spring<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云中央仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/central<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云apache仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/apache<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 一些自定义配置 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">profiles</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>myProfile<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 激活这个配置 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">activeByDefault</span>&gt;</span>true<span class="tag">&lt;/<span class="name">activeByDefault</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">jdk</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">activation</span>&gt;</span></span><br><span class="line"></span><br><span class="line">			<span class="comment">&lt;!-- 全局属性配置，让所有 maven 项目新建时默认都是 java8、UTF-8 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">jdk.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk.version</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Maven</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Tool】IDEA 常用快捷键</title>
     <url>/2018/02/12/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/IDEA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Tool%E3%80%91IDEA%20%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
     <content><![CDATA[<blockquote>
@@ -4927,8 +4927,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【Java SE】Java 注解</title>
-    <url>/2016/07/16/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20SE%E3%80%91Java%20IO%E6%B5%81/</url>
+    <title>【Java SE】Java 反射</title>
+    <url>/2016/07/16/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20SE%E3%80%91Java%20%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -4941,8 +4941,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【Java SE】Java 反射</title>
-    <url>/2016/07/16/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20SE%E3%80%91Java%20%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6/</url>
+    <title>【Java SE】Java 注解</title>
+    <url>/2016/07/16/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20SE%E3%80%91Java%20IO%E6%B5%81/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -5069,6 +5069,20 @@
       </tags>
   </entry>
   <entry>
+    <title>【众筹-后台】环境搭建</title>
+    <url>/2016/05/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E4%BC%97%E7%AD%B9%E9%A1%B9%E7%9B%AE/%E3%80%90%E4%BC%97%E7%AD%B9-%E5%90%8E%E5%8F%B0%E3%80%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>project</category>
+      </categories>
+      <tags>
+        <tag>众筹</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【众筹-后台】数据库设计</title>
     <url>/2016/05/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E4%BC%97%E7%AD%B9%E9%A1%B9%E7%9B%AE/%E3%80%90%E4%BC%97%E7%AD%B9-%E5%90%8E%E5%8F%B0%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/</url>
     <content><![CDATA[<blockquote>
@@ -5078,20 +5092,6 @@
 
 <h3 id="权限管理数据库设计"><a href="#权限管理数据库设计" class="headerlink" title="权限管理数据库设计"></a>权限管理数据库设计</h3><p>根据 <strong>RBAC权限模型</strong> 设计该模块数据库数据表，采用 <strong>RBAC0模型</strong> 。</p>
 ]]></content>
-      <categories>
-        <category>project</category>
-      </categories>
-      <tags>
-        <tag>众筹</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【众筹-后台】环境搭建</title>
-    <url>/2016/05/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E4%BC%97%E7%AD%B9%E9%A1%B9%E7%9B%AE/%E3%80%90%E4%BC%97%E7%AD%B9-%E5%90%8E%E5%8F%B0%E3%80%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>]]></content>
       <categories>
         <category>project</category>
       </categories>
