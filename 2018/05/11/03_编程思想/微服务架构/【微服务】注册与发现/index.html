@@ -55,16 +55,16 @@
 <meta name="keywords" content="微服务,注册中心">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【微服务】注册与发现">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;05&#x2F;11&#x2F;03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3&#x2F;%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84&#x2F;%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0&#x2F;index.html">
+<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2018&#x2F;05&#x2F;11&#x2F;03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3&#x2F;%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84&#x2F;%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0&#x2F;index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。  为了实现服务间的调用，如果硬编码服务提供者的地址，则会有不少问题，比如：  适用场景有限（如果提供者的网络地址发生变化，将会影响服务消费者） 无法动态伸缩（生产环境一般需要运行多个实例，从而实现容灾和负载均衡，硬编码服务满足这种需求）  因此，要解决这些问题，则需要微服务注册与发现机制。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;2019062410270551.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;2019062410270551.png">
 <meta property="og:updated_time" content="2020-07-11T12:26:54.327Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;2019062410270551.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;2019062410270551.png">
 
-<link rel="canonical" href="http://yoursite.com/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/">
+<link rel="canonical" href="http://wusuiwei.github.io/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/">
 
 
 <script id="page-configurations">
@@ -226,7 +226,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/">
+    <link itemprop="mainEntityOfPage" href="http://wusuiwei.github.io/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E6%B3%A8%E5%86%8C%E4%B8%8E%E5%8F%91%E7%8E%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
