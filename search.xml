@@ -445,6 +445,39 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>CentOS下Docker安装与配置</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
+<p>官方地址： <a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/centos/</a></p>
+<p><strong>安装环境：CentOS 7</strong></p>
+<p><strong>安装版本：Docker v19.03</strong></p>
+<a id="more"></a>
+
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
+
+<h4 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h4><ul>
+<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
+<li>重启docker：<code>sudo systemctl restart docker</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CentOS下Docker安装Nacos</title>
     <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90CentOS%E3%80%91%E4%BD%BF%E7%94%A8Docker%E5%AE%89%E8%A3%85Nacos/</url>
     <content><![CDATA[<blockquote>
@@ -499,39 +532,6 @@
 
 
 
-]]></content>
-      <categories>
-        <category>software</category>
-      </categories>
-      <tags>
-        <tag>docker</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CentOS下Docker安装与配置</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
-<p>官方地址： <a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/centos/</a></p>
-<p><strong>安装环境：CentOS 7</strong></p>
-<p><strong>安装版本：Docker v19.03</strong></p>
-<a id="more"></a>
-
-<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
-
-<h4 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
-
-<h4 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h4><ul>
-<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
-<li>重启docker：<code>sudo systemctl restart docker</code></li>
-</ul>
 ]]></content>
       <categories>
         <category>software</category>
@@ -1507,8 +1507,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【Spring Cloud Alibaba】Nacos注册中心</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Sentinel/</url>
+    <title>【Spring Cloud Alibaba】Nacos</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1523,8 +1523,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【Spring Cloud Alibaba】Nacos</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
+    <title>【Spring Cloud Alibaba】Nacos注册中心</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Sentinel/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -2386,6 +2386,16 @@
       </tags>
   </entry>
   <entry>
+    <title>【设计模式】抽象工厂模式</title>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+  </entry>
+  <entry>
     <title>【设计模式】建造者模式</title>
     <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<a id="more"></a>
@@ -2398,16 +2408,6 @@
         <tag>Design Pattern</tag>
         <tag>Builder Pattern</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>【设计模式】抽象工厂模式</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
   </entry>
   <entry>
     <title>【设计模式】面向对象设计原则</title>
@@ -3571,21 +3571,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【微服务】网关</title>
-    <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E7%BD%91%E5%85%B3/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
-      <tags>
-        <tag>微服务</tag>
-        <tag>网关</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【微服务】配置中心</title>
     <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83/</url>
     <content><![CDATA[<blockquote>
@@ -3598,6 +3583,21 @@
       <tags>
         <tag>微服务</tag>
         <tag>配置中心</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【微服务】网关</title>
+    <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E7%BD%91%E5%85%B3/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+      <tags>
+        <tag>微服务</tag>
+        <tag>网关</tag>
       </tags>
   </entry>
   <entry>
@@ -4262,6 +4262,117 @@
       </tags>
   </entry>
   <entry>
+    <title>MySQL学习总结</title>
+    <url>/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>本文主要是 MySQL 学习及使用过程中的总结，内容将随理解的不断加深优化。</p>
+<a id="more"></a>
+
+<h2 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h2><p><strong>MySQL(<a href="https://www.mysql.com)：开源的轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：开源的轻量级关系型数据库。</a></strong></p>
+<h3 id="基于Docker安装MySQL"><a href="#基于Docker安装MySQL" class="headerlink" title="基于Docker安装MySQL"></a>基于Docker安装MySQL</h3><ul>
+<li>拉取最新的 MySQL 镜像：<code>docker pull mysql</code></li>
+<li>启动镜像，映射端口、指定root密码并挂载日志、配置文件及数据</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">DB_HOME=/home/mysql</span><br><span class="line">DB_CONF_PATH=$DB_HOME/conf:/etc/mysql/conf.d</span><br><span class="line">DB_LOG_PATH=$DB_HOME/logs:/var/log/mysql</span><br><span class="line">DB_DATA_PATH=$DB_HOME/data:/var/lib/mysql</span><br><span class="line">docker run -p 3306:3306 --name mysql -v $DB_CONF_PATH -v $DB_LOG_PATH -v $DB_DATA_PATH -e MYSQL_ROOT_PASSWORD=toor -d mysql</span><br></pre></td></tr></table></figure>
+
+<h3 id="MySQL-Server逻辑架构介绍"><a href="#MySQL-Server逻辑架构介绍" class="headerlink" title="MySQL Server逻辑架构介绍"></a>MySQL Server逻辑架构介绍</h3><p>MySQL虽然经历了多个版本的迭代，但都是基于MySQL基础架构的。MySQL的基础架构大致包括以下几个模块组件：</p>
+<p><img src="/images/vwjjm1jgjc.png" alt="img"></p>
+<ul>
+<li><p><strong>连接层</strong>：提供向外的交互接口（Connectors)，如Java、python等语言可以通过该组件操作MySQL，实现与MySQL的交互</p>
+</li>
+<li><p><strong>服务层</strong>：</p>
+<ul>
+<li>管理服务组件和工具组件(Management Service &amp; Utilities) ：  提供对MySQL的集成管理，如备份(Backup),恢复(Recovery),安全管理(Security)等</li>
+<li>连接池组件(Connection Pool) ：负责监听对客户端向MySQL Server端的各种请求，接收请求，转发请求到目标模块</li>
+<li>SQL接口组件(SQL Interface) ：  接收用户SQL命令</li>
+<li>查询分析器组件(Parser) ：解析SQL命令</li>
+<li>优化器组件（Optimizer）：对SQL命令按照标准流程进行优化分析</li>
+<li>缓存主件（Caches &amp; Buffers） ： 缓存和缓冲组件 </li>
+</ul>
+</li>
+<li><p><strong>引擎层</strong>： 插件式存储引擎（Pluggable Storage Engines）</p>
+</li>
+<li><p><strong>存储层</strong>： 物理文件（File System） 和日志文件存储</p>
+</li>
+</ul>
+<h3 id="MySQL-存储引擎"><a href="#MySQL-存储引擎" class="headerlink" title="MySQL 存储引擎"></a>MySQL 存储引擎</h3><h3 id="索引-Index"><a href="#索引-Index" class="headerlink" title="索引(Index)"></a>索引(Index)</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><strong>MySQL官方对索引的定义：索引(Index)是帮助MySQL高效获取数据的数据结构。</strong></p>
+<p>可以简单理解为：<strong>排好序的快速查找数据结构</strong>。</p>
+<p>我们平时所说的索引，如果没有特别说明，都是指<strong>B树（多路搜索树）</strong>数据结构的索引，除了B+树索引外，当然也有<strong>哈希索引</strong>等。</p>
+<h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ul>
+<li>提高数据检索效率，降低数据库iO成本</li>
+<li>降低数据排序成本，降低CPU的消耗</li>
+</ul>
+<h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><ul>
+<li>建立索引后，查询速度变快，但更新（insert、update、delete）数据变慢。</li>
+<li>性能下降的原因很可能是索引失效导致。</li>
+<li>索引创建的原则，经常查询的字段适合创建索引，频繁需要更新的数据不适合创建索引。 </li>
+<li>索引字段频繁更新，或者表数据物理删除容易造成索引失效。 </li>
+</ul>
+<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><ul>
+<li><p><strong>单值索引</strong>：一个索引只包含单列，一个表可以有多个单值索引</p>
+</li>
+<li><p><strong>唯一索引</strong>：索引列的值必须唯一，但允许有空值</p>
+</li>
+<li><p><strong>复合索引</strong>：一个索引包含多列</p>
+</li>
+</ul>
+<h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建索引</span></span><br><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line"><span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span>  [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line">	<span class="comment">#主键</span></span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">ADD</span> PRIMARY <span class="keyword">KEY</span> (column_list);</span><br><span class="line">	<span class="comment">#唯一索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#普通索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#全文索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> FULLTEXT index_name (column_list);</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除索引</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">INDEX</span> [indexname] <span class="keyword">ON</span> mytable;</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看索引</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">INDEX</span> <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure>
+
+<h4 id="索引结构"><a href="#索引结构" class="headerlink" title="索引结构"></a>索引结构</h4><ul>
+<li><p><strong>BTree索引</strong></p>
+</li>
+<li><p>Hash索引</p>
+</li>
+<li><p>full-text全文索引</p>
+</li>
+<li><p>R-Tree索引</p>
+</li>
+</ul>
+<h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><h4 id="EXPALIN"><a href="#EXPALIN" class="headerlink" title="EXPALIN"></a>EXPALIN</h4><ol>
+<li>定义：</li>
+<li>作用：<ul>
+<li>表的读取顺序</li>
+<li>数据读取的操作类型</li>
+<li>那些索引可以使用</li>
+<li>那些索引被实际使用</li>
+<li>表之间的引用</li>
+<li>每张表有含多少行被优化器查询</li>
+</ul>
+</li>
+</ol>
+<p><strong>EXPLAIN</strong> 信息有10列，分别为：id、select_type、table、type、possible_keys、key、 key_len、ref、rows、Extra。</p>
+<p><img src="/images/image-20200223111307335.png" alt="image-20200223111307335"></p>
+<p>列名解释：</p>
+<p><strong>id：</strong>select 查询的序列号，包括一个数字，表示查询中执行select子句或操作表的顺序，值有三种：</p>
+<ul>
+<li>id相同，执行顺序由上至下；</li>
+<li>id不同，如果是子查询，id的序号会递增，id值越大优先级越高，越先被执行</li>
+<li>id相同不同，同时存在</li>
+</ul>
+<p><strong>select_type:</strong>查询的类型，用于区别普通查询，联合查询，子查询的复杂查询；</p>
+<p>取值有：SIMPLE、PRIMARY、SUBQUERY、 DERIVED、UNION、UNION RESULT。</p>
+<ul>
+<li><strong>SIMPLE</strong>：简单的查询，查询中不包括子查询或UNION</li>
+<li><strong>PRIMARY</strong>：查询中若包含任何复杂查询，最外层查询标记为<strong>PRIMARY</strong></li>
+<li><strong>SUBQUERY</strong>：在SELECT 或 WHERE 中包括子查询</li>
+<li><strong>DERIVED</strong>：在FROM 列表中包含的子查询被标记为衍生表（DERIVED)，MySQL会递归执行这些查询，把结果放到临时表里。</li>
+<li><strong>UNION</strong>：若第二个查询出现在UNION之后，则被标记为UNION</li>
+<li><strong>UNION RESULT</strong>：从UNION表获取结果的select</li>
+</ul>
+<p><strong>table</strong>：操作的数据表名</p>
+<p><strong>type</strong>：显示查询使用了哪种类型。</p>
+<p>从最好到最差依次是：<strong>system&gt;const&gt;eq_ref&gt;ref&gt;range&gt;index&gt;ALL</strong></p>
+<h3 id="查询截取分析"><a href="#查询截取分析" class="headerlink" title="查询截取分析"></a>查询截取分析</h3><h3 id="MySQL-锁机制"><a href="#MySQL-锁机制" class="headerlink" title="MySQL 锁机制"></a>MySQL 锁机制</h3><h3 id="主从复制"><a href="#主从复制" class="headerlink" title="主从复制"></a>主从复制</h3>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>mysql</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Java】Java核心技术</title>
     <url>/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%20SE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<blockquote>
@@ -4875,117 +4986,6 @@
         <tag>泛型</tag>
         <tag>网络编程</tag>
         <tag>反射</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>MySQL学习总结</title>
-    <url>/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>本文主要是 MySQL 学习及使用过程中的总结，内容将随理解的不断加深优化。</p>
-<a id="more"></a>
-
-<h2 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h2><p><strong>MySQL(<a href="https://www.mysql.com)：开源的轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：开源的轻量级关系型数据库。</a></strong></p>
-<h3 id="基于Docker安装MySQL"><a href="#基于Docker安装MySQL" class="headerlink" title="基于Docker安装MySQL"></a>基于Docker安装MySQL</h3><ul>
-<li>拉取最新的 MySQL 镜像：<code>docker pull mysql</code></li>
-<li>启动镜像，映射端口、指定root密码并挂载日志、配置文件及数据</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">DB_HOME=/home/mysql</span><br><span class="line">DB_CONF_PATH=$DB_HOME/conf:/etc/mysql/conf.d</span><br><span class="line">DB_LOG_PATH=$DB_HOME/logs:/var/log/mysql</span><br><span class="line">DB_DATA_PATH=$DB_HOME/data:/var/lib/mysql</span><br><span class="line">docker run -p 3306:3306 --name mysql -v $DB_CONF_PATH -v $DB_LOG_PATH -v $DB_DATA_PATH -e MYSQL_ROOT_PASSWORD=toor -d mysql</span><br></pre></td></tr></table></figure>
-
-<h3 id="MySQL-Server逻辑架构介绍"><a href="#MySQL-Server逻辑架构介绍" class="headerlink" title="MySQL Server逻辑架构介绍"></a>MySQL Server逻辑架构介绍</h3><p>MySQL虽然经历了多个版本的迭代，但都是基于MySQL基础架构的。MySQL的基础架构大致包括以下几个模块组件：</p>
-<p><img src="/images/vwjjm1jgjc.png" alt="img"></p>
-<ul>
-<li><p><strong>连接层</strong>：提供向外的交互接口（Connectors)，如Java、python等语言可以通过该组件操作MySQL，实现与MySQL的交互</p>
-</li>
-<li><p><strong>服务层</strong>：</p>
-<ul>
-<li>管理服务组件和工具组件(Management Service &amp; Utilities) ：  提供对MySQL的集成管理，如备份(Backup),恢复(Recovery),安全管理(Security)等</li>
-<li>连接池组件(Connection Pool) ：负责监听对客户端向MySQL Server端的各种请求，接收请求，转发请求到目标模块</li>
-<li>SQL接口组件(SQL Interface) ：  接收用户SQL命令</li>
-<li>查询分析器组件(Parser) ：解析SQL命令</li>
-<li>优化器组件（Optimizer）：对SQL命令按照标准流程进行优化分析</li>
-<li>缓存主件（Caches &amp; Buffers） ： 缓存和缓冲组件 </li>
-</ul>
-</li>
-<li><p><strong>引擎层</strong>： 插件式存储引擎（Pluggable Storage Engines）</p>
-</li>
-<li><p><strong>存储层</strong>： 物理文件（File System） 和日志文件存储</p>
-</li>
-</ul>
-<h3 id="MySQL-存储引擎"><a href="#MySQL-存储引擎" class="headerlink" title="MySQL 存储引擎"></a>MySQL 存储引擎</h3><h3 id="索引-Index"><a href="#索引-Index" class="headerlink" title="索引(Index)"></a>索引(Index)</h3><h4 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h4><p><strong>MySQL官方对索引的定义：索引(Index)是帮助MySQL高效获取数据的数据结构。</strong></p>
-<p>可以简单理解为：<strong>排好序的快速查找数据结构</strong>。</p>
-<p>我们平时所说的索引，如果没有特别说明，都是指<strong>B树（多路搜索树）</strong>数据结构的索引，除了B+树索引外，当然也有<strong>哈希索引</strong>等。</p>
-<h4 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h4><ul>
-<li>提高数据检索效率，降低数据库iO成本</li>
-<li>降低数据排序成本，降低CPU的消耗</li>
-</ul>
-<h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><ul>
-<li>建立索引后，查询速度变快，但更新（insert、update、delete）数据变慢。</li>
-<li>性能下降的原因很可能是索引失效导致。</li>
-<li>索引创建的原则，经常查询的字段适合创建索引，频繁需要更新的数据不适合创建索引。 </li>
-<li>索引字段频繁更新，或者表数据物理删除容易造成索引失效。 </li>
-</ul>
-<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><ul>
-<li><p><strong>单值索引</strong>：一个索引只包含单列，一个表可以有多个单值索引</p>
-</li>
-<li><p><strong>唯一索引</strong>：索引列的值必须唯一，但允许有空值</p>
-</li>
-<li><p><strong>复合索引</strong>：一个索引包含多列</p>
-</li>
-</ul>
-<h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 创建索引</span></span><br><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line"><span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span>  [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line">	<span class="comment">#主键</span></span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">ADD</span> PRIMARY <span class="keyword">KEY</span> (column_list);</span><br><span class="line">	<span class="comment">#唯一索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#普通索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#全文索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> FULLTEXT index_name (column_list);</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除索引</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">INDEX</span> [indexname] <span class="keyword">ON</span> mytable;</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看索引</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">INDEX</span> <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure>
-
-<h4 id="索引结构"><a href="#索引结构" class="headerlink" title="索引结构"></a>索引结构</h4><ul>
-<li><p><strong>BTree索引</strong></p>
-</li>
-<li><p>Hash索引</p>
-</li>
-<li><p>full-text全文索引</p>
-</li>
-<li><p>R-Tree索引</p>
-</li>
-</ul>
-<h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><h4 id="EXPALIN"><a href="#EXPALIN" class="headerlink" title="EXPALIN"></a>EXPALIN</h4><ol>
-<li>定义：</li>
-<li>作用：<ul>
-<li>表的读取顺序</li>
-<li>数据读取的操作类型</li>
-<li>那些索引可以使用</li>
-<li>那些索引被实际使用</li>
-<li>表之间的引用</li>
-<li>每张表有含多少行被优化器查询</li>
-</ul>
-</li>
-</ol>
-<p><strong>EXPLAIN</strong> 信息有10列，分别为：id、select_type、table、type、possible_keys、key、 key_len、ref、rows、Extra。</p>
-<p><img src="/images/image-20200223111307335.png" alt="image-20200223111307335"></p>
-<p>列名解释：</p>
-<p><strong>id：</strong>select 查询的序列号，包括一个数字，表示查询中执行select子句或操作表的顺序，值有三种：</p>
-<ul>
-<li>id相同，执行顺序由上至下；</li>
-<li>id不同，如果是子查询，id的序号会递增，id值越大优先级越高，越先被执行</li>
-<li>id相同不同，同时存在</li>
-</ul>
-<p><strong>select_type:</strong>查询的类型，用于区别普通查询，联合查询，子查询的复杂查询；</p>
-<p>取值有：SIMPLE、PRIMARY、SUBQUERY、 DERIVED、UNION、UNION RESULT。</p>
-<ul>
-<li><strong>SIMPLE</strong>：简单的查询，查询中不包括子查询或UNION</li>
-<li><strong>PRIMARY</strong>：查询中若包含任何复杂查询，最外层查询标记为<strong>PRIMARY</strong></li>
-<li><strong>SUBQUERY</strong>：在SELECT 或 WHERE 中包括子查询</li>
-<li><strong>DERIVED</strong>：在FROM 列表中包含的子查询被标记为衍生表（DERIVED)，MySQL会递归执行这些查询，把结果放到临时表里。</li>
-<li><strong>UNION</strong>：若第二个查询出现在UNION之后，则被标记为UNION</li>
-<li><strong>UNION RESULT</strong>：从UNION表获取结果的select</li>
-</ul>
-<p><strong>table</strong>：操作的数据表名</p>
-<p><strong>type</strong>：显示查询使用了哪种类型。</p>
-<p>从最好到最差依次是：<strong>system&gt;const&gt;eq_ref&gt;ref&gt;range&gt;index&gt;ALL</strong></p>
-<h3 id="查询截取分析"><a href="#查询截取分析" class="headerlink" title="查询截取分析"></a>查询截取分析</h3><h3 id="MySQL-锁机制"><a href="#MySQL-锁机制" class="headerlink" title="MySQL 锁机制"></a>MySQL 锁机制</h3><h3 id="主从复制"><a href="#主从复制" class="headerlink" title="主从复制"></a>主从复制</h3>]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>mysql</tag>
       </tags>
   </entry>
   <entry>
