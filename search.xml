@@ -1,6 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>02_全栈笔记/Python 学习笔记/python操作数据库</title>
+    <url>/2021/01/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Python%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    <content><![CDATA[<p>“ Don’t aim for success if you really want it. Just stick to what you love and believe in,and it will come naturally. ”<br>少一些功利主义的追求，多一些不为什么的坚持。</p>
+<p>一、DB API概述：<br>     早期python版本中，由于不同的服务器提供商，导致服务器和数据库通信协议各有不同，每一种数据库都带有自己的python模块，这些模块都各自以不同的方式工作，并提供不同的函数，非常不便于编写能够在多种数据库服务器类型中运行的代码。于是DB-API 库函数产生，在DB-API中，所有连接数据库的模块即便是底层网络协议不同，也会提供统一的接口。类似于JAVA中的JDBC和ODBC。<br>     目前版本为2.0，支持的数据库有 IBM DB2、Firebird (and Interbase) 、Informix、Ingres、MySQL、Oracle 、PostgreSQL 、SAP DB (also known as “MaxDB”) 、Microsoft SQL Server 、Sybase等。</p>
+<p>二、python操作mysql数据库基础：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!usr/bin/python</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"></span><br><span class="line">__author__ = <span class="string">"wusuiwei"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line">db = MySQLdb.Connection(host = <span class="string">'127.0.0.1'</span>,user = <span class="string">'root'</span>,passwd = <span class="string">'root'</span>,db = <span class="string">'mysite'</span>)</span><br><span class="line">cursor = db.cursor()</span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    cursor.execute(<span class="string">"SELECT * FROM mytable"</span>)</span><br><span class="line"><span class="keyword">except</span> Exception,e:</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"错误：%s"</span>%e</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    db.commit()</span><br><span class="line">    data = cursor.fetchone()</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"Data: %s"</span>%data[<span class="number">1</span>]</span><br><span class="line">    cursor.close()</span><br><span class="line">    db.close()</span><br><span class="line">---connect()方法用于创建数据库的连接，里面指定参数：用户名，密码，主机等信息；</span><br><span class="line">---cursor()方法创建数据库连接下的游标；</span><br></pre></td></tr></table></figure>
+
+<p>三、插入数据、批量插入数据、更新数据等：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    conn=MySQLdb.connect(host=<span class="string">'localhost'</span>,user=<span class="string">'root'</span>,passwd=<span class="string">'root'</span>,port=<span class="number">3306</span>)</span><br><span class="line">    cur=conn.cursor()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    cur.execute(<span class="string">'create database if not exists python'</span>)</span><br><span class="line">    conn.select_db(<span class="string">'python'</span>)</span><br><span class="line">    cur.execute(<span class="string">'create table test(id int,info varchar(20))'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    value=[<span class="number">1</span>,<span class="string">'hi rollen'</span>]</span><br><span class="line">    cur.execute(<span class="string">'insert into test values(%s,%s)'</span>,value)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    values=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">20</span>):</span><br><span class="line">        values.append((i,<span class="string">'hi rollen'</span>+str(i)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    cur.executemany(<span class="string">'insert into test values(%s,%s)'</span>,values)</span><br><span class="line"></span><br><span class="line">    cur.execute(<span class="string">'update test set info="I am rollen" where id=3'</span>)</span><br><span class="line"></span><br><span class="line">    conn.commit()</span><br><span class="line">    cur.close()</span><br><span class="line">    conn.close()</span><br><span class="line"></span><br><span class="line"><span class="keyword">except</span> MySQLdb.Error,e:</span><br><span class="line">     <span class="keyword">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[<span class="number">0</span>], e.args[<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    conn=MySQLdb.connect(host=<span class="string">'localhost'</span>,user=<span class="string">'root'</span>,passwd=<span class="string">'root'</span>,port=<span class="number">3306</span>)</span><br><span class="line">    cur=conn.cursor()</span><br><span class="line"></span><br><span class="line">    conn.select_db(<span class="string">'python'</span>)</span><br><span class="line"></span><br><span class="line">    count=cur.execute(<span class="string">'select * from test'</span>)</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'there has %s rows record'</span> % count</span><br><span class="line"></span><br><span class="line">    result=cur.fetchone()</span><br><span class="line">    <span class="keyword">print</span> result</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'ID: %s info %s'</span> % result</span><br><span class="line"></span><br><span class="line">    results=cur.fetchmany(<span class="number">5</span>)</span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> results:</span><br><span class="line">        <span class="keyword">print</span> r</span><br><span class="line"></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'=='</span>*<span class="number">10</span></span><br><span class="line">    cur.scroll(<span class="number">0</span>,mode=<span class="string">'absolute'</span>)</span><br><span class="line"></span><br><span class="line">    results=cur.fetchall()</span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> results:</span><br><span class="line">        <span class="keyword">print</span> r[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    conn.commit()</span><br><span class="line">    cur.close()</span><br><span class="line">    conn.close()</span><br><span class="line"></span><br><span class="line"><span class="keyword">except</span> MySQLdb.Error,e:</span><br><span class="line">     <span class="keyword">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[<span class="number">0</span>], e.args[<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+
+<p>查询后中文会正确显示，但在数据库中却是乱码的。经过我从网上查找，发现用一个属性有可搞定：<br>在Python代码<br>conn = MySQLdb.Connect(host=’localhost’, user=’root’, passwd=’root’, db=’python’) 中加一个属性：<br> 改为：<br>conn = MySQLdb.Connect(host=’localhost’, user=’root’, passwd=’root’, db=’python’,charset=’utf8’)<br>charset是要跟你数据库的编码一样，如果是数据库是gb2312 ,则写charset=’gb2312’。</p>
+<p>下面贴一下常用的函数：<br>然后,这个连接对象也提供了对事务操作的支持,标准的方法<br>commit() 提交<br>rollback() 回滚</p>
+<p>cursor用来执行命令的方法:<br>callproc(self, procname, args):用来执行存储过程,接收的参数为存储过程名和参数列表,返回值为受影响的行数<br>execute(self, query, args):执行单条sql语句,接收的参数为sql语句本身和使用的参数列表,返回值为受影响的行数<br>executemany(self, query, args):执行单挑sql语句,但是重复执行参数列表里的参数,返回值为受影响的行数<br>nextset(self):移动到下一个结果集</p>
+<p>cursor用来接收返回值的方法:<br>fetchall(self):接收全部的返回结果行.<br>fetchmany(self, size=None):接收size条返回结果行.如果size的值大于返回的结果行的数量,则会返回cursor.arraysize条数据.<br>fetchone(self):返回一条结果行.<br>scroll(self, value, mode=’relative’):移动指针到某一行.如果mode=’relative’,则表示从当前所在行移动value条,如果 mode=’absolute’,则表示从结果集的第一行移动value条.</p>
+<p>参考资料：<br>MySQLdb’s user guide<br>package MySQLdb</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>02_全栈笔记/Java Web 学习笔记/【Java Web】Html & CSS</title>
+    <url>/2021/01/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20Web%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20Web%E3%80%91Html%20&amp;%20CSS/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Ubuntu-20.04.1虚拟机安装与配置</title>
+    <url>/2021/01/27/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/Ubuntu-20.04.1%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>为了</p>
+<a id="more"></a>
+
+<h3 id="Docker-安装与配置"><a href="#Docker-安装与配置" class="headerlink" title="Docker 安装与配置"></a>Docker 安装与配置</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu-20.04.1虚拟机安装与配置</title>
+    <url>/2021/01/27/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/VMware%20Workstation%2016%20Pro%20%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><strong>VMware Workstation 16 Pro 及激活码 下载链接：</strong><a href="https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg" target="_blank" rel="noopener">https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg</a> 提取码：<code>ve3r</code>（<strong>推荐<a href="https://www.vmware.com/cn/products/workstation-pro.html" target="_blank" rel="noopener">官网</a>购买</strong>）</p>
+<p><strong>VMware Workstation Pro 文档：</strong><a href="https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html" target="_blank" rel="noopener">https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html</a></p>
+<a id="more"></a>
+
+<h3 id="共享文件夹"><a href="#共享文件夹" class="headerlink" title="共享文件夹"></a>共享文件夹</h3><h4 id="启用共享文件夹"><a href="#启用共享文件夹" class="headerlink" title="启用共享文件夹"></a>启用共享文件夹</h4><ol>
+<li>选择该虚拟机，然后选择<strong>虚拟机</strong> &gt; <strong>设置</strong>。</li>
+<li>在<strong>选项</strong>选项卡中，选择<strong>共享文件夹</strong>，<strong>文件夹共享</strong> 选择 <strong>总是启用</strong>，添加 <strong>文件夹</strong> 并保存即可。</li>
+</ol>
+<h4 id="Linux-挂载共享文件夹"><a href="#Linux-挂载共享文件夹" class="headerlink" title="Linux 挂载共享文件夹"></a>Linux 挂载共享文件夹</h4><table>
+<thead>
+<tr>
+<th align="left">4.0 之前的 Linux 内核</th>
+<th align="left">4.0 及更高版本的 Linux 内核</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>mount -t vmhgfs .host:/ /home/user1/shares</code></td>
+<td align="left"><code>/usr/bin/vmhgfs-fuse .host:/ /home/user1/shares -o subtype=vmhgfs-fuse,allow_other</code></td>
+<td align="left">将所有共享装载到 /home/user1/shares</td>
+</tr>
+<tr>
+<td align="left"><code>mount -t vmhgfs .host:/foo /tmp/foo</code></td>
+<td align="left"><code>/usr/bin/vmhgfs-fuse .host:/foo /tmp/foo -o subtype=vmhgfs-fuse,allow_other</code></td>
+<td align="left">将名为 <code>foo</code> 的共享装载到 <code>/tmp/foo</code></td>
+</tr>
+<tr>
+<td align="left"><code>mount -t vmhgfs .host:/foo/bar /var/lib/bar</code></td>
+<td align="left"><code>/usr/bin/vmhgfs-fuse .host:/foo/bar /var/lib/bar -o subtype=vmhgfs-fuse,allow_other</code></td>
+<td align="left">将共享 <code>foo</code> 中的子目录 <code>bar</code> 装载到 /var/lib/bar</td>
+</tr>
+</tbody></table>
+<h4 id="Linux-移除共享文件夹"><a href="#Linux-移除共享文件夹" class="headerlink" title="Linux 移除共享文件夹"></a>Linux 移除共享文件夹</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">umount /home/user1/shares</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu-20.04.1虚拟机安装与配置</title>
+    <url>/2021/01/27/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Ubuntu%E3%80%91MySQL%208%20%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><strong>安装环境：Ubuntu 20.04.1</strong></p>
+<p><strong>安装版本：MySQL 8</strong></p>
+<a id="more"></a>
+
+<h3 id="MySQL-8-安装"><a href="#MySQL-8-安装" class="headerlink" title="MySQL  8 安装"></a>MySQL  8 安装</h3><p>下载MySQL配置文件，网址：<a href="https://dev.mysql.com/downloads/repo/apt/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/apt/</a> 打开如下图：</p>
+<p><img src="/images/20181106001648309.png" alt="img"></p>
+<p>​     打开后将下拉到网页底部点击Download按钮下载deb文件，打开如下图：</p>
+<p><img src="/images/20181106001652753.png" alt="img"></p>
+<p>​     进入下载页面，选择<strong><em>\</em>No thanks, just start my download**</strong>，操作如下图：</p>
+<p><img src="/images/20181106001658455.png" alt="img"></p>
+<p>​     进入下载文件目录，打开终端，执行命令：<strong><em>\</em>sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb**</strong></p>
+<p><img src="/images/2018110600170298.png" alt="img"></p>
+<p>​     输入密码继续安装</p>
+<p><img src="/images/20181106001706197.png" alt="img"></p>
+<p>​     选择<strong><em>\</em>MySQL-8.0**</strong> 点击<strong><em>\</em>OK**</strong>继续安装</p>
+<p><img src="/images/20181106001711769.png" alt="img"></p>
+<p>​     执行更新命令：<strong><em>\</em>sudo apt update**</strong></p>
+<p><img src="/images/20181106001716750.png" alt="img"></p>
+<p>  安装<strong><em>\</em>MySQL 8.0**</strong>，执行命令：<strong><em>\</em>sudo apt install mysql-server**</strong></p>
+<p><img src="/images/20181106001721694.png" alt="img"></p>
+<p>​     输入Y同意继续安装:</p>
+<p><img src="/images/20181106001726135.png" alt="img"></p>
+<p>  设置<strong><em>\</em>root**</strong>密码</p>
+<p><img src="/images/20181106001729990.png" alt="img"></p>
+<p>  确认密码</p>
+<p><img src="/images/20181106001738156.png" alt="img"></p>
+<p>  阅读配置MySQ社区服务器，翻到末尾点使用Tab键选中<ok>按钮，击Enter键</p>
+<p><img src="/images/20181106001750332.png" alt="img"></p>
+<p>  加密方式选择<strong><em>\</em>Retain MySQL 5.x Compatibility**</strong><br><img src="/images/20181106001755185.png" alt="img"></p>
+<p>  登录MySQL ：mysql –u root –p</p>
+<p><img src="/images/20181106001759489.png" alt="img"></p>
+<h3 id="开启远程访问"><a href="#开启远程访问" class="headerlink" title="开启远程访问"></a><strong>开启远程访问</strong></h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">use mysql; #选择数据库</span><br><span class="line">update user set host = ‘%’ where user =’root’; #更新host值</span><br><span class="line">flush privileges; #刷新权限</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring Boot 集成 Springfox-Swagger2</title>
+    <url>/2021/01/19/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Swagger2%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringBoot%E9%9B%86%E6%88%90Springfox-Swagger2/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>全栈笔记</category>
+      </categories>
+      <tags>
+        <tag>Spring Boot</tag>
+        <tag>Swagger2</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>02_全栈笔记/Linux 学习笔记/【Linux】README</title>
     <url>/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91README/</url>
     <content><![CDATA[]]></content>
@@ -14,6 +169,22 @@
     <title>02_全栈笔记/Linux 学习笔记/【Linux】用户和用户组管理</title>
     <url>/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86/</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>共享图书馆的畅想</title>
+    <url>/2020/10/20/06_%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/%E5%85%B1%E4%BA%AB%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%9A%84%E7%95%85%E6%83%B3/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>共享图书馆的想法源自四年前，当时在一家初创型科技公司任职，和同事闲聊时，提出了自己懵懂的想法。最近，一直有创业的想法，于是想起了四年前的这个 idea ，于是，动笔写下来。</p>
+<a id="more"></a>
+
+<p>首先，我们来盘算一下开一家普通传统书店，需要那些条件：</p>
+<p>- </p>
+]]></content>
+      <categories>
+        <category>头脑风暴</category>
+      </categories>
   </entry>
   <entry>
     <title>【XPath】XPath 用法整理</title>
@@ -275,35 +446,25 @@
   </entry>
   <entry>
     <title>CentOS下Docker安装与配置</title>
-    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Linux%E3%80%91CentOS%208%20%E5%AE%89%E8%A3%85%20Git/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
-<p>官方地址： <a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/centos/</a></p>
-<p><strong>安装环境：CentOS 7</strong></p>
-<p><strong>安装版本：Docker v19.03</strong></p>
+<p><strong>Git</strong> 是目前最先进的<strong>分布式版本控制系统</strong>。</p>
+<p>官方地址： <a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p>
+<p><strong>安装环境：CentOS 8</strong></p>
+<p><strong>安装版本：2.29.1</strong></p>
 <a id="more"></a>
 
-<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
-
-<h4 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
-
-<h4 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h4><ul>
-<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
-<li>重启docker：<code>sudo systemctl restart docker</code></li>
-</ul>
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><blockquote>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo dnf install git-all</span><br></pre></td></tr></table></figure>
+</blockquote>
 ]]></content>
       <categories>
         <category>software</category>
       </categories>
       <tags>
-        <tag>docker</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -361,6 +522,39 @@
 
 
 
+]]></content>
+      <categories>
+        <category>software</category>
+      </categories>
+      <tags>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CentOS下Docker安装与配置</title>
+    <url>/2020/05/18/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Centos%E3%80%91Docker%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>Docker 是一个开源的应用容器引擎，让开发者可以打包他们的应用以及依赖包到一个可移植的镜像中，然后发布到任何流行的 Linux或Windows机器上，也可以实现虚拟化。容器是完全使用沙箱机制，相互之间不会有任何接口。</p>
+<p>官方地址： <a href="https://docs.docker.com/engine/install/centos/" target="_blank" rel="noopener">https://docs.docker.com/engine/install/centos/</a></p>
+<p><strong>安装环境：CentOS 7</strong></p>
+<p><strong>安装版本：Docker v19.03</strong></p>
+<a id="more"></a>
+
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="卸载已安装的Docker"><a href="#卸载已安装的Docker" class="headerlink" title="卸载已安装的Docker"></a><strong>卸载已安装的Docker</strong></h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看已安装的docker</span></span><br><span class="line">yum list installed | grep docker</span><br><span class="line"><span class="meta">#</span><span class="bash"> 卸载已安装的docker</span></span><br><span class="line">yum remove docker \</span><br><span class="line">           docker-client \</span><br><span class="line">           docker-client-latest \</span><br><span class="line">           docker-common \</span><br><span class="line">           docker-latest \</span><br><span class="line">           docker-latest-logrotate \</span><br><span class="line">           docker-logrotate \</span><br><span class="line">           docker-engine</span><br><span class="line">           </span><br><span class="line"><span class="meta">#</span><span class="bash"> 删除已安装过的镜像、容器等</span></span><br><span class="line">rm -rf /var/lib/docker/</span><br></pre></td></tr></table></figure>
+
+<h4 id="安装Docker"><a href="#安装Docker" class="headerlink" title="安装Docker"></a>安装Docker</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 安装依赖包</span><br><span class="line">sudo yum install -y yum-utils \</span><br><span class="line">  device-mapper-persistent-data \</span><br><span class="line">  lvm2</span><br><span class="line"></span><br><span class="line"># 设置稳定的仓库</span><br><span class="line">sudo yum-config-manager \</span><br><span class="line">    --add-repo \</span><br><span class="line">    https://download.docker.com/linux/centos/docker-ce.repo</span><br><span class="line">    </span><br><span class="line"># 查看docker版本</span><br><span class="line">yum list docker-ce --showduplicates | sort -r</span><br><span class="line"></span><br><span class="line"># 安装docker-ce（The Docker Engine - Community package）</span><br><span class="line"># 指定版本：sudo yum install docker-ce-&lt;VERSION_STRING&gt; docker-ce-cli-&lt;VERSION_STRING&gt; containerd.io</span><br><span class="line">sudo yum install docker-ce docker-ce-cli containerd.io</span><br><span class="line"># 启动docker</span><br><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
+
+<h4 id="配置docker镜像加速"><a href="#配置docker镜像加速" class="headerlink" title="配置docker镜像加速"></a>配置docker镜像加速</h4><ul>
+<li>创建daemon配置文件<code>/etc/docker/daemon.json</code>:</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;:[&quot;https://tnxkcso1.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>重新读取daemon文件：<code>sudo systemctl daemon-reload</code></li>
+<li>重启docker：<code>sudo systemctl restart docker</code></li>
+</ul>
 ]]></content>
       <categories>
         <category>software</category>
@@ -481,7 +675,10 @@
   <entry>
     <title>ReadME</title>
     <url>/2020/03/30/ReadME/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h3 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h3><p><strong>网名：</strong> 小哥</p>
+<p><strong>爱好：</strong> 电影、旅游、读书</p>
+<p><strong>签名：</strong> 曾梦想仗剑走天涯，醒来忙碌柴米油盐茶</p>
+]]></content>
   </entry>
   <entry>
     <title>【Gmall】商品服务业务分析与数据库设计</title>
@@ -508,6 +705,53 @@
         <tag>Spring Boot</tag>
         <tag>Spring Cloud</tag>
         <tag>Gmall项目笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【设计模式】前端控制器模式</title>
+    <url>/2019/12/23/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%89%8D%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p><strong>前端控制器(Front Controller Pattern)</strong>  用来提供一个<strong>集中的请求处理机制</strong>，所有的请求都将由一个单一的处理程序处理。该处理程序可以做认证/授权/记录日志，或者跟踪请求，然后把请求传给相应的处理程序。</p>
+<a id="more"></a>
+
+<h3 id="模式结构"><a href="#模式结构" class="headerlink" title="模式结构"></a>模式结构</h3><p><strong>前端控制器(Front Controller Pattern)</strong> 模式角色如下：</p>
+<ul>
+<li><strong>前端控制器（Front Controller）</strong> - 处理应用程序所有类型请求的单个处理程序，应用程序可以是基于 web 的应用程序，也可以是基于桌面的应用程序。</li>
+<li><strong>调度器（Dispatcher）</strong> - 前端控制器可能使用一个调度器对象来调度请求到相应的具体处理程序。</li>
+<li><strong>视图（View）</strong> - 视图是为请求而创建的对象。</li>
+</ul>
+<p><strong>模式结构图如下：</strong></p>
+<p><img src="/images/892594-20160623194328953-1886361315.jpg" alt="img"></p>
+<h3 id="应用示例"><a href="#应用示例" class="headerlink" title="应用示例"></a>应用示例</h3><p>我们将创建 <em>FrontController<em>、</em>Dispatcher</em> 分别当作前端控制器和调度器。<em>HomeView</em> 和 <em>StudentView</em> 表示各种为前端控制器接收到的请求而创建的视图。</p>
+<p><em>FrontControllerPatternDemo*，我们的演示类使用 *FrontController</em> 来演示前端控制器设计模式。</p>
+<p><strong>前端控制器：</strong>FrontController.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">   <span class="keyword">private</span> Dispatcher dispatcher;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">FrontController</span><span class="params">()</span></span>&#123;</span><br><span class="line">      dispatcher = <span class="keyword">new</span> Dispatcher();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isAuthenticUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"User is authenticated successfully."</span>);</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">trackRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Page requested: "</span> + request);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatchRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="comment">//记录每一个请求</span></span><br><span class="line">      trackRequest(request);</span><br><span class="line">      <span class="comment">//对用户进行身份验证</span></span><br><span class="line">      <span class="keyword">if</span>(isAuthenticUser())&#123;</span><br><span class="line">         dispatcher.dispatch(request);</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>调度器：</strong>Dispatcher.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dispatcher</span> </span>&#123;</span><br><span class="line">   <span class="keyword">private</span> StudentView studentView;</span><br><span class="line">   <span class="keyword">private</span> HomeView homeView;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Dispatcher</span><span class="params">()</span></span>&#123;</span><br><span class="line">      studentView = <span class="keyword">new</span> StudentView();</span><br><span class="line">      homeView = <span class="keyword">new</span> HomeView();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatch</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(request.equalsIgnoreCase(<span class="string">"STUDENT"</span>))&#123;</span><br><span class="line">         studentView.show();</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">         homeView.show();</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>视图：</strong>HomeView 和 StudentView</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HomeView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Home Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Student Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>测试</strong>：FrontControllerPatternDemo.java</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontControllerPatternDemo</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      FrontController frontController = <span class="keyword">new</span> FrontController();</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"HOME"</span>);</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"STUDENT"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>测试结果</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Page requested: HOME</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Home Page</span><br><span class="line">Page requested: STUDENT</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Student Page</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+      <tags>
+        <tag>前端控制器模式</tag>
+        <tag>设计模式</tag>
       </tags>
   </entry>
   <entry>
@@ -615,6 +859,22 @@
       </tags>
   </entry>
   <entry>
+    <title>【Linux】docker 安装</title>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85Centos%208/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>虚拟化技术</tag>
+        <tag>Docker</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【Linux】虚拟化技术</title>
     <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E5%8C%96%E6%8A%80%E6%9C%AF/</url>
     <content><![CDATA[<blockquote>
@@ -636,19 +896,19 @@
       </tags>
   </entry>
   <entry>
-    <title>【Linux】docker 安装</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85Centos%208/</url>
+    <title>【NoSql】NoSql入门和概述</title>
+    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/NoSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90NoSql%E3%80%91NoSql%E5%85%A5%E9%97%A8%E5%92%8C%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<a id="more"></a>]]></content>
+<a id="more"></a>
+
+]]></content>
       <categories>
-        <category>Linux</category>
+        <category>NoSQL</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-        <tag>虚拟化技术</tag>
-        <tag>Docker</tag>
+        <tag>NoSql</tag>
       </tags>
   </entry>
   <entry>
@@ -696,22 +956,6 @@
       <tags>
         <tag>MyBatis Generator</tag>
         <tag>MyBatis</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【NoSql】NoSql入门和概述</title>
-    <url>/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/NoSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90NoSql%E3%80%91NoSql%E5%85%A5%E9%97%A8%E5%92%8C%E6%A6%82%E8%BF%B0/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>NoSQL</category>
-      </categories>
-      <tags>
-        <tag>NoSql</tag>
       </tags>
   </entry>
   <entry>
@@ -782,50 +1026,21 @@
       </tags>
   </entry>
   <entry>
-    <title>【设计模式】前端控制器模式</title>
-    <url>/2019/12/23/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%89%8D%E7%AB%AF%E6%8E%A7%E5%88%B6%E5%99%A8%E6%A8%A1%E5%BC%8F/</url>
+    <title>【SpringBoot】拦截器</title>
+    <url>/2019/11/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<p><strong>前端控制器(Front Controller Pattern)</strong>  用来提供一个<strong>集中的请求处理机制</strong>，所有的请求都将由一个单一的处理程序处理。该处理程序可以做认证/授权/记录日志，或者跟踪请求，然后把请求传给相应的处理程序。</p>
-<a id="more"></a>
-
-<h3 id="模式结构"><a href="#模式结构" class="headerlink" title="模式结构"></a>模式结构</h3><p><strong>前端控制器(Front Controller Pattern)</strong> 模式角色如下：</p>
-<ul>
-<li><strong>前端控制器（Front Controller）</strong> - 处理应用程序所有类型请求的单个处理程序，应用程序可以是基于 web 的应用程序，也可以是基于桌面的应用程序。</li>
-<li><strong>调度器（Dispatcher）</strong> - 前端控制器可能使用一个调度器对象来调度请求到相应的具体处理程序。</li>
-<li><strong>视图（View）</strong> - 视图是为请求而创建的对象。</li>
-</ul>
-<p><strong>模式结构图如下：</strong></p>
-<p><img src="/images/892594-20160623194328953-1886361315.jpg" alt="img"></p>
-<h3 id="应用示例"><a href="#应用示例" class="headerlink" title="应用示例"></a>应用示例</h3><p>我们将创建 <em>FrontController<em>、</em>Dispatcher</em> 分别当作前端控制器和调度器。<em>HomeView</em> 和 <em>StudentView</em> 表示各种为前端控制器接收到的请求而创建的视图。</p>
-<p><em>FrontControllerPatternDemo*，我们的演示类使用 *FrontController</em> 来演示前端控制器设计模式。</p>
-<p><strong>前端控制器：</strong>FrontController.java</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontController</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">   <span class="keyword">private</span> Dispatcher dispatcher;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">FrontController</span><span class="params">()</span></span>&#123;</span><br><span class="line">      dispatcher = <span class="keyword">new</span> Dispatcher();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isAuthenticUser</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"User is authenticated successfully."</span>);</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">trackRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Page requested: "</span> + request);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatchRequest</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="comment">//记录每一个请求</span></span><br><span class="line">      trackRequest(request);</span><br><span class="line">      <span class="comment">//对用户进行身份验证</span></span><br><span class="line">      <span class="keyword">if</span>(isAuthenticUser())&#123;</span><br><span class="line">         dispatcher.dispatch(request);</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>调度器：</strong>Dispatcher.java</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dispatcher</span> </span>&#123;</span><br><span class="line">   <span class="keyword">private</span> StudentView studentView;</span><br><span class="line">   <span class="keyword">private</span> HomeView homeView;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="title">Dispatcher</span><span class="params">()</span></span>&#123;</span><br><span class="line">      studentView = <span class="keyword">new</span> StudentView();</span><br><span class="line">      homeView = <span class="keyword">new</span> HomeView();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">dispatch</span><span class="params">(String request)</span></span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(request.equalsIgnoreCase(<span class="string">"STUDENT"</span>))&#123;</span><br><span class="line">         studentView.show();</span><br><span class="line">      &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">         homeView.show();</span><br><span class="line">      &#125;    </span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>视图：</strong>HomeView 和 StudentView</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HomeView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Home Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">StudentView</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">show</span><span class="params">()</span></span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"Displaying Student Page"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>测试</strong>：FrontControllerPatternDemo.java</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FrontControllerPatternDemo</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">      FrontController frontController = <span class="keyword">new</span> FrontController();</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"HOME"</span>);</span><br><span class="line">      frontController.dispatchRequest(<span class="string">"STUDENT"</span>);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>测试结果</strong>：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Page requested: HOME</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Home Page</span><br><span class="line">Page requested: STUDENT</span><br><span class="line">User is authenticated successfully.</span><br><span class="line">Displaying Student Page</span><br></pre></td></tr></table></figure>
-
-
-
+<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
+<p>实现java web token的拦截</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>编程思想</category>
+        <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>前端控制器模式</tag>
-        <tag>设计模式</tag>
+        <tag>SpringBoot</tag>
+        <tag>拦截器</tag>
       </tags>
   </entry>
   <entry>
@@ -920,21 +1135,39 @@
       </tags>
   </entry>
   <entry>
-    <title>【SpringBoot】拦截器</title>
-    <url>/2019/11/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E8%87%AA%E5%AE%9A%E4%B9%89%E6%8B%A6%E6%88%AA%E5%99%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<h3 id="应用实例"><a href="#应用实例" class="headerlink" title="应用实例"></a>应用实例</h3><blockquote>
-<p>实现java web token的拦截</p>
-</blockquote>
+    <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
+    <url>/2019/11/27/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
+    <content><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p>
+<a id="more"></a>
+
+<h4 id="HttpClient-介绍"><a href="#HttpClient-介绍" class="headerlink" title="HttpClient 介绍"></a>HttpClient 介绍</h4><p> <a href="http://hc.apache.org/index.html" target="_blank" rel="noopener">HttpClient</a>是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。 </p>
+<p>HttpClient相比传统JDK自带的URLConnection，增加了易用性和灵活性，它不仅使客户端发送Http请求变得容易，而且也方便开发人员测试接口（基于Http协议的），提高了开发的效率，也方便提高代码的健壮性。因此熟练掌握HttpClient是很重要的必修内容，掌握HttpClient后，相信对于Http协议的了解会更加深入。</p>
+<p><strong>org.apache.commons.httpclient.HttpClient与org.apache.http.client.HttpClient的区别</strong></p>
+<p>Commons的HttpClient项目现在是生命的尽头，不再被开发,  已被Apache HttpComponents项目HttpClient和HttpCore  模组取代，提供更好的性能和更大的灵活性。  </p>
+<p><strong>HttpClient 特性</strong></p>
+<ul>
+<li>实现了所有 HTTP 的方法（GET,POST,PUT,DELETE 等）</li>
+<li>支持自动转向</li>
+<li>支持 HTTPS 协议</li>
+<li>支持代理服务器等</li>
+</ul>
+<p>引用HttpClient非常简单，仅需要在maven中添加相关依赖即可：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="原生HttpClient使用"><a href="#原生HttpClient使用" class="headerlink" title="原生HttpClient使用"></a>原生HttpClient使用</h4><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testGet</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//申明Get请求</span></span><br><span class="line">    HttpGet httpGet = <span class="keyword">new</span> HttpGet(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpGet);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//4.判断状态码</span></span><br><span class="line">    <span class="keyword">if</span> (response.getStatusLine().getStatusCode() == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//从响应中取出实体</span></span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        <span class="comment">//使用工具类EntityUtils将实体并转换成字符串</span></span><br><span class="line">        String s = EntityUtils.toString(entity);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPost</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//声明Post请求</span></span><br><span class="line">    HttpPost httpPost = <span class="keyword">new</span> HttpPost(<span class="string">"https://www.oschina.net/"</span>);</span><br><span class="line">    <span class="comment">//3.开源中国为了安全，防止恶意攻击，在post请求中都限制了浏览器才能访问</span></span><br><span class="line">    httpPost.addHeader(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>);</span><br><span class="line">    ArrayList&lt;NameValuePair&gt; params = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"scope"</span>, <span class="string">"project"</span>));</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"q"</span>, <span class="string">"java"</span>));</span><br><span class="line">    UrlEncodedFormEntity formEntity = <span class="keyword">new</span> UrlEncodedFormEntity(params, Charset.forName(<span class="string">"utf-8"</span>));</span><br><span class="line">    httpPost.setEntity(formEntity);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpPost);</span><br><span class="line">    <span class="comment">//判断状态码</span></span><br><span class="line">    <span class="keyword">if</span>(response.getStatusLine().getStatusCode()==<span class="number">200</span>)&#123;</span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        String string = EntityUtils.toString(entity, <span class="string">"utf-8"</span>);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//6.关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="SpringBoot集成HttpClient"><a href="#SpringBoot集成HttpClient" class="headerlink" title="SpringBoot集成HttpClient"></a>SpringBoot集成HttpClient</h4><p>引入Maven依赖</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
 ]]></content>
       <categories>
-        <category>SpringBoot</category>
+        <category>接口自动化</category>
       </categories>
       <tags>
-        <tag>SpringBoot</tag>
-        <tag>拦截器</tag>
+        <tag>自动化测试</tag>
+        <tag>接口自动化</tag>
       </tags>
   </entry>
   <entry>
@@ -970,42 +1203,6 @@
 <p>输入项目名及项目本次存储地址，”Finish”即可创建一个SpringBoot项目。</p>
 <p><img src="/images/image-20191127200144375.png" alt="image-20191127200144375"></p>
 <p>好了，至此，SpringBoot项目基本搭建完成，开心~~</p>
-]]></content>
-      <categories>
-        <category>接口自动化</category>
-      </categories>
-      <tags>
-        <tag>自动化测试</tag>
-        <tag>接口自动化</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【接口自动化测试框架（Java版）】集成HttpClient</title>
-    <url>/2019/11/27/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%EF%BC%88Java%E7%89%88%EF%BC%89%E3%80%91%E9%9B%86%E6%88%90HttpClient/</url>
-    <content><![CDATA[<p>本文主要介绍HttpClient的用法及与SpringBoot的集成。</p>
-<a id="more"></a>
-
-<h4 id="HttpClient-介绍"><a href="#HttpClient-介绍" class="headerlink" title="HttpClient 介绍"></a>HttpClient 介绍</h4><p> <a href="http://hc.apache.org/index.html" target="_blank" rel="noopener">HttpClient</a>是Apache Jakarta Common下的子项目，用来提供高效的、最新的、功能丰富的支持HTTP协议的客户端编程工具包，并且它支持HTTP协议最新的版本和建议。 </p>
-<p>HttpClient相比传统JDK自带的URLConnection，增加了易用性和灵活性，它不仅使客户端发送Http请求变得容易，而且也方便开发人员测试接口（基于Http协议的），提高了开发的效率，也方便提高代码的健壮性。因此熟练掌握HttpClient是很重要的必修内容，掌握HttpClient后，相信对于Http协议的了解会更加深入。</p>
-<p><strong>org.apache.commons.httpclient.HttpClient与org.apache.http.client.HttpClient的区别</strong></p>
-<p>Commons的HttpClient项目现在是生命的尽头，不再被开发,  已被Apache HttpComponents项目HttpClient和HttpCore  模组取代，提供更好的性能和更大的灵活性。  </p>
-<p><strong>HttpClient 特性</strong></p>
-<ul>
-<li>实现了所有 HTTP 的方法（GET,POST,PUT,DELETE 等）</li>
-<li>支持自动转向</li>
-<li>支持 HTTPS 协议</li>
-<li>支持代理服务器等</li>
-</ul>
-<p>引用HttpClient非常简单，仅需要在maven中添加相关依赖即可：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="原生HttpClient使用"><a href="#原生HttpClient使用" class="headerlink" title="原生HttpClient使用"></a>原生HttpClient使用</h4><h5 id="Get请求"><a href="#Get请求" class="headerlink" title="Get请求"></a>Get请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testGet</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//申明Get请求</span></span><br><span class="line">    HttpGet httpGet = <span class="keyword">new</span> HttpGet(<span class="string">"http://www.baidu.com"</span>);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpGet);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//4.判断状态码</span></span><br><span class="line">    <span class="keyword">if</span> (response.getStatusLine().getStatusCode() == <span class="number">200</span>) &#123;</span><br><span class="line">        <span class="comment">//从响应中取出实体</span></span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        <span class="comment">//使用工具类EntityUtils将实体并转换成字符串</span></span><br><span class="line">        String s = EntityUtils.toString(entity);</span><br><span class="line">        System.out.println(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="Post请求"><a href="#Post请求" class="headerlink" title="Post请求"></a>Post请求</h5><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">testPost</span><span class="params">()</span> <span class="keyword">throws</span> IOException </span>&#123;</span><br><span class="line">    <span class="comment">//打开浏览器</span></span><br><span class="line">    CloseableHttpClient httpClient = HttpClients.createDefault();</span><br><span class="line">    <span class="comment">//声明Post请求</span></span><br><span class="line">    HttpPost httpPost = <span class="keyword">new</span> HttpPost(<span class="string">"https://www.oschina.net/"</span>);</span><br><span class="line">    <span class="comment">//3.开源中国为了安全，防止恶意攻击，在post请求中都限制了浏览器才能访问</span></span><br><span class="line">    httpPost.addHeader(<span class="string">"User-Agent"</span>,<span class="string">"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36"</span>);</span><br><span class="line">    ArrayList&lt;NameValuePair&gt; params = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"scope"</span>, <span class="string">"project"</span>));</span><br><span class="line">    params.add(<span class="keyword">new</span> BasicNameValuePair(<span class="string">"q"</span>, <span class="string">"java"</span>));</span><br><span class="line">    UrlEncodedFormEntity formEntity = <span class="keyword">new</span> UrlEncodedFormEntity(params, Charset.forName(<span class="string">"utf-8"</span>));</span><br><span class="line">    httpPost.setEntity(formEntity);</span><br><span class="line">    <span class="comment">//发送请求</span></span><br><span class="line">    CloseableHttpResponse response = httpClient.execute(httpPost);</span><br><span class="line">    <span class="comment">//判断状态码</span></span><br><span class="line">    <span class="keyword">if</span>(response.getStatusLine().getStatusCode()==<span class="number">200</span>)&#123;</span><br><span class="line">        HttpEntity entity = response.getEntity();</span><br><span class="line">        String string = EntityUtils.toString(entity, <span class="string">"utf-8"</span>);</span><br><span class="line">        System.out.println(string);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//6.关闭资源</span></span><br><span class="line">    response.close();</span><br><span class="line">    httpClient.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="SpringBoot集成HttpClient"><a href="#SpringBoot集成HttpClient" class="headerlink" title="SpringBoot集成HttpClient"></a>SpringBoot集成HttpClient</h4><p>引入Maven依赖</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 集成 httpclient --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
 ]]></content>
       <categories>
         <category>接口自动化</category>
@@ -1188,6 +1385,22 @@
       </tags>
   </entry>
   <entry>
+    <title>【SpringBoot】Spring Data JPA</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+]]></content>
+      <categories>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>Spring Data JPA</tag>
+        <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【SpringBoot】JWT实现用户认证与鉴权</title>
     <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91JWT%E7%94%A8%E6%88%B7%E8%AE%A4%E8%AF%81%E4%B8%8E%E9%89%B4%E6%9D%83/</url>
     <content><![CDATA[<blockquote>
@@ -1278,24 +1491,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【SpringBoot】Spring Data JPA</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91Spring%20Data%20JPA%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-]]></content>
-      <categories>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>Spring Data JPA</tag>
-        <tag>SpringBoot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【Spring Cloud Alibaba】Nacos</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
+    <title>【Spring Cloud Alibaba】Nacos注册中心</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Sentinel/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1326,8 +1523,8 @@
       </tags>
   </entry>
   <entry>
-    <title>【Spring Cloud Alibaba】Nacos注册中心</title>
-    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Sentinel/</url>
+    <title>【Spring Cloud Alibaba】Nacos</title>
+    <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Cloud%20Alibaba%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Cloud%20Alibaba%E3%80%91Seata/</url>
     <content><![CDATA[<blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
@@ -1578,6 +1775,50 @@
       </tags>
   </entry>
   <entry>
+    <title>【AutoTest】功能列表</title>
+    <url>/2019/11/08/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90AutoTest%E3%80%91%E5%B7%B2%E5%AE%9E%E7%8E%B0%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<ul>
+<li>权限管理</li>
+<li>项目管理</li>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Spring笔记</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>hydrogen</tag>
+        <tag>jwt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【AutoTest】搭建关键字驱动的Web UI 自动化框架</title>
+    <url>/2019/11/08/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90AutoTest%E3%80%91%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<p>本文将详细介绍如何使用<code>autotest-spring-boot-starter</code>快速搭建<strong>关键字</strong>驱动的Web UI 自动化测试框架。</p>
+<p><code>autotest-spring-boot-starter</code>项目地址：<a href="https://github.com/wusuiwei/autotest-spring-boot" target="_blank" rel="noopener">https://github.com/wusuiwei/autotest-spring-boot</a></p>
+<a id="more"></a>
+
+<h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><p>- </p>
+]]></content>
+      <categories>
+        <category>Spring笔记</category>
+      </categories>
+      <tags>
+        <tag>SpringBoot</tag>
+        <tag>hydrogen</tag>
+        <tag>jwt</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【AutoTest】搭建关键字驱动的Web UI 自动化框架</title>
     <url>/2019/11/08/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90AutoTest%E3%80%91%E6%90%AD%E5%BB%BA%E5%85%B3%E9%94%AE%E5%AD%97%E9%A9%B1%E5%8A%A8%E7%9A%84Web%20UI%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/</url>
     <content><![CDATA[<blockquote>
@@ -1613,27 +1854,6 @@
       </tags>
   </entry>
   <entry>
-    <title>【AutoTest】搭建关键字驱动的Web UI 自动化框架</title>
-    <url>/2019/11/08/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90AutoTest%E3%80%91%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<p>本文将详细介绍如何使用<code>autotest-spring-boot-starter</code>快速搭建<strong>关键字</strong>驱动的Web UI 自动化测试框架。</p>
-<p><code>autotest-spring-boot-starter</code>项目地址：<a href="https://github.com/wusuiwei/autotest-spring-boot" target="_blank" rel="noopener">https://github.com/wusuiwei/autotest-spring-boot</a></p>
-<a id="more"></a>
-
-<h3 id="前置条件"><a href="#前置条件" class="headerlink" title="前置条件"></a>前置条件</h3><p>- </p>
-]]></content>
-      <categories>
-        <category>Spring笔记</category>
-      </categories>
-      <tags>
-        <tag>SpringBoot</tag>
-        <tag>hydrogen</tag>
-        <tag>jwt</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Spring笔记】面向切面编程</title>
     <url>/2019/11/08/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E7%99%BB%E5%BD%95%E5%8A%9F%E8%83%BD/</url>
     <content><![CDATA[<p>本系统将采用前后端分离的架构，后端采用SpringBoot等相关框架，前端采用Vue相关框架。</p>
@@ -1647,6 +1867,20 @@
         <tag>SpringBoot</tag>
         <tag>hydrogen</tag>
         <tag>jwt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>MVC模式</title>
+    <url>/2019/11/08/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/MVC%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+      <tags>
+        <tag>MVC模式</tag>
       </tags>
   </entry>
   <entry>
@@ -1949,20 +2183,6 @@
       </tags>
   </entry>
   <entry>
-    <title>MVC模式</title>
-    <url>/2019/11/08/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/MVC%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
-      <tags>
-        <tag>MVC模式</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Spring笔记】框架概述</title>
     <url>/2019/11/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%E7%AC%94%E8%AE%B0%E3%80%91%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0/</url>
     <content><![CDATA[<blockquote>
@@ -2019,25 +2239,6 @@
       <tags>
         <tag>Spring</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>【每日英语】The Unbearable Lightness of Being</title>
-    <url>/2019/11/08/07_%E6%AF%8F%E6%97%A5%E8%8B%B1%E8%AF%AD/%E3%80%90%E6%AF%8F%E6%97%A5%E8%8B%B1%E8%AF%AD%E3%80%912019-11-8/</url>
-    <content><![CDATA[<p> 没有任何办法可以检验何种选择更好我们经历着生活中突然临头的一切，毫无防备，就像演员进入初排如果生活的第一排练便是生活本身，那生活有什么价值呢？ </p>
-<hr>
-<a id="more"></a>
-
-<p>If eternal return is the heaviest of burdens, then our lives can stand out against it in all their splendid lightness. But, is heaviness truly deplorable and lightness splendid? The heaviest of burdens crushes us. We sink beneath it. It pins us to the ground. The heaviest of burdens is, therefore, simultaneously an image of life’s most intense fulfillment. The heavier the burden, the closer our lives come to the earth; the more real and truthful they become.</p>
-<p>Conversely, the absolute absence of a burden causes man to be lighter than air, to soar into the heights. Take leave of the earth and his earthly being and become only half real. His movements as free as they are insignificant. What then shall we choose; weight or lightness?</p>
-<p>I have been thinking about Tomas for many years. But only in the light of these reflections did I see him clearly. I saw him standing at the window of his flat and looking across the courtyard at the opposite walls not knowing what to do.</p>
-<p>He had first met Tereza about three weeks earlier in a small Czech town. They had spent scarcely an hour together. She had accompanied him to the station and waited with him until he boarded the train. Ten days later she paid him a visit. They made love the day she arrived. That night she came down with a fever and stayed a whole week in his flat with the flu. He had come to feel an in-explicable love for this all but complete stranger. She seemed a child to him, a child someone had put in a bulrush basket docked with pitch and sent downstream for Tomas to fetch under the riverbank of his bed.</p>
-<p>He knelt down next to her. Her feverous breath quickened and she gave out a weak moan. He pressed his face to hers and whispered calming words into her sleep. And all at once he fancied she had been with him for many years and was dying. He had a sudden clear feeling that he would not survive her death. He would lie down beside her and want to die with her. He pressed his face into the pillow beside her head and kept it there for a long time.</p>
-<p>Now he was standing at the window trying to call that moment to account. What could it have been if not love declaring itself to him? But was it love? The feeling of wanting to die beside her was clearly exaggerated; he had seen her only once before in his life. Was it simply the hysteria of a man who aware deep down of his inaptitude for love, felt the self-deluding need to simulate it? His unconscious was so cowardly that the best partner he could choose for his life comedy was this miserable provincial waitress with practically no chance at all to enter his life.</p>
-<p>He remained annoyed with himself until he realized that not knowing what he really wanted was actually quite natural. We can never know what to want because, living only one life, we can neither compare it with our previous lives nor perfect it in our lives to come.</p>
-<p>There is no means of testing which decision is better because there is no basis for comparison. We live even-thing as it comes. Without warming, like an actor going on cold. And what can life be worth if the first rehearsal for life is life itself?</p>
-<p>“Einmal ist keinmal”, says Tomas to himself. What happens but once, says the German adage, might as well not have happened at all. If we have only one life to live, we might as well not have lived at all.</p>
-<hr>
-]]></content>
   </entry>
   <entry>
     <title>【自动化测试】Android自动化测试环境搭建</title>
@@ -2185,6 +2386,16 @@
       </tags>
   </entry>
   <entry>
+    <title>【设计模式】抽象工厂模式</title>
+    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+  </entry>
+  <entry>
     <title>【设计模式】建造者模式</title>
     <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E5%BB%BA%E9%80%A0%E8%80%85%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<a id="more"></a>
@@ -2197,16 +2408,6 @@
         <tag>Design Pattern</tag>
         <tag>Builder Pattern</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>【设计模式】抽象工厂模式</title>
-    <url>/2019/11/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E3%80%90%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E3%80%91%E6%8A%BD%E8%B1%A1%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
   </entry>
   <entry>
     <title>【设计模式】面向对象设计原则</title>
@@ -2481,6 +2682,74 @@
 <li>数据结构与算法</li>
 </ul>
 <p>前端技术：html–&gt;css–&gt;javascript–&gt;jQuery–&gt;Ajax–&gt;Vue</p>
+<h1 id="前端学习路线图"><a href="#前端学习路线图" class="headerlink" title="前端学习路线图"></a>前端学习路线图</h1><p><a href="https://www.bilibili.com/read/cv5650633?spm_id_from=333.788.b_636f6d6d656e74.6" target="_blank" rel="noopener">https://www.bilibili.com/read/cv5650633?spm_id_from=333.788.b_636f6d6d656e74.6</a></p>
+<h2 id="第一阶段-HTML-CSS核心基础"><a href="#第一阶段-HTML-CSS核心基础" class="headerlink" title="第一阶段 HTML+CSS核心基础"></a>第一阶段 HTML+CSS核心基础</h2><p>学习目标：</p>
+<ol>
+<li>熟练HTML, CSS核心语法</li>
+<li>熟练H5,CSS3新特性</li>
+<li>掌握多种布局技巧</li>
+<li>能够独立绘制前端静态页面</li>
+</ol>
+<p>学习内容：</p>
+<ul>
+<li>HTML,CSS核心基础</li>
+<li>HTML5语义化标签</li>
+<li>HTML新增标签属性</li>
+<li>表单项新增属性</li>
+<li>CSS选择器</li>
+<li>CSS3伪类</li>
+<li>CSS伪元素</li>
+<li>CSS过渡</li>
+<li>线性渐变，径向渐变</li>
+<li>CSS动画Animation</li>
+<li>弹性盒模型</li>
+<li>经典布局练习(双飞翼，品字布局) + 案例</li>
+<li>响应式布局</li>
+</ul>
+<p>视频链接：</p>
+<ol>
+<li>HTML&amp;CSS核心基础教程：<a href="https://www.bilibili.com/video/BV1XJ411X7Ud" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1XJ411X7Ud</a></li>
+<li>HTML实战：<a href="https://www.bilibili.com/video/BV1YW411T7p3" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1YW411T7p3</a></li>
+</ol>
+<h2 id="第二阶段-JavaScript"><a href="#第二阶段-JavaScript" class="headerlink" title="第二阶段 JavaScript"></a>第二阶段 JavaScript</h2><p>学习目标：</p>
+<ol>
+<li>熟悉JavaScript核心语法</li>
+<li>熟练DOM，BOM操作</li>
+<li>熟练面向对象编程</li>
+</ol>
+<p>学习内容：</p>
+<ul>
+<li>JavaScript基础</li>
+<li>JavaScript操作DOM</li>
+<li>JavaScript面向对象(js高级)</li>
+</ul>
+<p>视频链接：</p>
+<ol>
+<li>JavaScript基础：<a href="https://www.bilibili.com/video/BV1YW411T7GX" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1YW411T7GX</a></li>
+<li>JavaScript操作DOM：<a href="https://www.bilibili.com/video/BV14W411u7bC" target="_blank" rel="noopener">https://www.bilibili.com/video/BV14W411u7bC</a></li>
+<li>JavaScript高级：<a href="https://www.bilibili.com/video/BV14s411E7qf" target="_blank" rel="noopener">https://www.bilibili.com/video/BV14s411E7qf</a></li>
+</ol>
+<h2 id="第三阶段-PC端整栈开发"><a href="#第三阶段-PC端整栈开发" class="headerlink" title="第三阶段 PC端整栈开发"></a>第三阶段 PC端整栈开发</h2><p>学习目标：</p>
+<ol>
+<li>PC项目</li>
+<li>jQuery</li>
+<li>jQuery项目</li>
+<li>less</li>
+<li>bootStrap</li>
+</ol>
+<p>学习内容：</p>
+<ul>
+<li>掌握前端必备框架jQuery</li>
+<li>掌握前端UI框架bootStrap</li>
+<li>掌握css预编译语言less</li>
+<li>针对前边所学知识进行综合性项目练习</li>
+</ul>
+<p>视频链接：</p>
+<ol>
+<li>jQeury教程：<a href="https://www.bilibili.com/video/BV1ts411E7ag" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1ts411E7ag</a></li>
+<li>Bootstrap教程：<a href="https://www.bilibili.com/video/BV1YW411T7yy" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1YW411T7yy</a></li>
+<li>Less教程：<a href="https://www.bilibili.com/video/BV1YW411T7vd" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1YW411T7vd</a></li>
+</ol>
 ]]></content>
       <categories>
         <category>Java</category>
@@ -2539,6 +2808,22 @@
       </tags>
   </entry>
   <entry>
+    <title>理解微服务架构</title>
+    <url>/2018/06/15/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E7%90%86%E8%A7%A3%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+]]></content>
+      <categories>
+        <category>Reids</category>
+      </categories>
+      <tags>
+        <tag>微服务</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Dubbo框架学习总结</title>
     <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Dubbo%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Dubbo%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<blockquote>
@@ -2568,7 +2853,30 @@
 <h3 id="安装与配置"><a href="#安装与配置" class="headerlink" title="安装与配置"></a>安装与配置</h3><blockquote>
 <figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> CentOS 8 安装</span></span><br><span class="line">sudo dnf install git-all</span><br><span class="line"><span class="meta">#</span><span class="bash"> 检查安装是否成功</span></span><br><span class="line">git --version</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 设置用户信息</span></span><br><span class="line">git config --global user.name "John Doe"</span><br><span class="line">git config --global user.email johndoe@example.com</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> 检查配置信息</span></span><br><span class="line">git config --list</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">生成 SSH 公钥</span></span><br><span class="line">cd ~/.ssh # 查看是否已生成公钥</span><br><span class="line">ssh-keygen -o # 生成公钥</span><br><span class="line">cat ~/.ssh/id_rsa.pub # 查看ssh公钥</span><br></pre></td></tr></table></figure>
 </blockquote>
-<h3 id="Git-本地工作流程"><a href="#Git-本地工作流程" class="headerlink" title="Git 本地工作流程"></a>Git 本地工作流程</h3><h3 id="Git-Flow-工作流程"><a href="#Git-Flow-工作流程" class="headerlink" title="Git Flow 工作流程"></a>Git Flow 工作流程</h3>]]></content>
+<h3 id="Git-本地工作流程"><a href="#Git-本地工作流程" class="headerlink" title="Git 本地工作流程"></a>Git 本地工作流程</h3><p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 初始化仓库</span></span><br><span class="line">git init</span><br><span class="line"><span class="meta">#</span><span class="bash"> 关联远程仓库</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+<h3 id="Git-Flow-工作流程"><a href="#Git-Flow-工作流程" class="headerlink" title="Git Flow 工作流程"></a>Git Flow 工作流程</h3><p>=======</p>
+<h3 id="Git-Flow-工作流程-1"><a href="#Git-Flow-工作流程-1" class="headerlink" title="Git Flow 工作流程"></a>Git Flow 工作流程</h3><blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>5f77c01154800dc2f958f647d8dfd5ffc15b5060</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+]]></content>
       <categories>
         <category>Git</category>
       </categories>
@@ -2608,6 +2916,24 @@
       </categories>
       <tags>
         <tag>MybatisPlus</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Spring Boot 笔记之 缓存</title>
+    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20%E7%BC%93%E5%AD%98/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>
+
+<h3 id="JSR107"><a href="#JSR107" class="headerlink" title="JSR107"></a>JSR107</h3><h3 id="Spring-缓存原理"><a href="#Spring-缓存原理" class="headerlink" title="Spring 缓存原理"></a>Spring 缓存原理</h3>]]></content>
+      <categories>
+        <category>Spring Boot</category>
+      </categories>
+      <tags>
+        <tag>Spring Boot</tag>
+        <tag>缓存</tag>
+        <tag>redis</tag>
       </tags>
   </entry>
   <entry>
@@ -3127,24 +3453,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Spring Boot 笔记之 缓存</title>
-    <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E7%AC%94%E8%AE%B0%E4%B9%8B%20%E7%BC%93%E5%AD%98/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-<h3 id="JSR107"><a href="#JSR107" class="headerlink" title="JSR107"></a>JSR107</h3><h3 id="Spring-缓存原理"><a href="#Spring-缓存原理" class="headerlink" title="Spring 缓存原理"></a>Spring 缓存原理</h3>]]></content>
-      <categories>
-        <category>Spring Boot</category>
-      </categories>
-      <tags>
-        <tag>Spring Boot</tag>
-        <tag>缓存</tag>
-        <tag>redis</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【SpringBoot】集成Redis</title>
     <url>/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90SpringBoot%E3%80%91%E9%9B%86%E6%88%90Redis/</url>
     <content><![CDATA[<blockquote>
@@ -3263,22 +3571,6 @@
       </tags>
   </entry>
   <entry>
-    <title>理解微服务架构</title>
-    <url>/2018/06/15/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E7%90%86%E8%A7%A3%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>
-
-]]></content>
-      <categories>
-        <category>Reids</category>
-      </categories>
-      <tags>
-        <tag>微服务</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【微服务】网关</title>
     <url>/2018/05/13/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E6%9E%B6%E6%9E%84/%E3%80%90%E5%BE%AE%E6%9C%8D%E5%8A%A1%E3%80%91%E7%BD%91%E5%85%B3/</url>
     <content><![CDATA[<blockquote>
@@ -3306,21 +3598,6 @@
       <tags>
         <tag>微服务</tag>
         <tag>配置中心</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>【UI自动化测试】PageObject模式</title>
-    <url>/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E3%80%90UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E3%80%91PageObject%E6%A8%A1%E5%BC%8F/</url>
-    <content><![CDATA[<blockquote>
-<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
-</blockquote>
-<a id="more"></a>]]></content>
-      <categories>
-        <category>编程思想</category>
-      </categories>
-      <tags>
-        <tag>UI自动化测试</tag>
-        <tag>PageObject</tag>
       </tags>
   </entry>
   <entry>
@@ -3400,6 +3677,21 @@
       <tags>
         <tag>微服务</tag>
         <tag>注册中心</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>【UI自动化测试】PageObject模式</title>
+    <url>/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E3%80%91PageObject%E6%A8%A1%E5%BC%8F/</url>
+    <content><![CDATA[<blockquote>
+<p>不积跬步，无以至千里；不积小流，无以成江海。</p>
+</blockquote>
+<a id="more"></a>]]></content>
+      <categories>
+        <category>编程思想</category>
+      </categories>
+      <tags>
+        <tag>UI自动化测试</tag>
+        <tag>PageObject</tag>
       </tags>
   </entry>
   <entry>
@@ -3509,11 +3801,11 @@
         <category>项目笔记</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
         <tag>Git</tag>
+        <tag>Linux</tag>
+        <tag>MySQL</tag>
         <tag>IDEA</tag>
         <tag>Docker</tag>
-        <tag>MySQL</tag>
         <tag>SpringBoot</tag>
         <tag>gmall</tag>
         <tag>GitHub</tag>
@@ -3628,6 +3920,65 @@
       </tags>
   </entry>
   <entry>
+    <title>【MySQL】CentOS 8 安装 MySQL 8.0</title>
+    <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91CentOS%208%20%E5%AE%89%E8%A3%85%20MySQL%208.0%20/</url>
+    <content><![CDATA[<p>本文记录了虚拟机 CentOS 8 下安装MySQL 8.0的步骤及遇到的问题。</p>
+<p>官方地址： <a href="https://www.mysql.com/" target="_blank" rel="noopener">https://www.mysql.com/</a></p>
+<p>安装说明：<a href="https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html" target="_blank" rel="noopener">https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html</a></p>
+<p><strong>安装环境：CentOS 8</strong></p>
+<p><strong>安装版本：MySQL 8.0</strong></p>
+<a id="more"></a>
+
+<h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><h4 id="1-安装-yum-repository"><a href="#1-安装-yum-repository" class="headerlink" title="1. 安装 yum repository"></a>1. 安装 yum repository</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 下载yum repository(https://dev.mysql.com/downloads/repo/yum/)</span></span><br><span class="line">wget https://dev.mysql.com/get/mysql80-community-release-el8-1.noarch.rpm</span><br><span class="line">sudo yum install mysql80-community-release-el8-1.noarch.rpm</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-禁用默认的-MySQL-模块"><a href="#2-禁用默认的-MySQL-模块" class="headerlink" title="2.禁用默认的 MySQL 模块"></a>2.禁用默认的 MySQL 模块</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 基于EL8的系统默认包含启用的MySQL module,除非禁用此模块，否则将屏蔽mysql repository 提供的软件包</span></span><br><span class="line">sudo yum module disable mysql</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-安装-MySQL"><a href="#3-安装-MySQL" class="headerlink" title="3. 安装 MySQL"></a>3. 安装 MySQL</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 安装MySQL</span></span><br><span class="line">sudo yum install mysql-community-server</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-启动-MySQL服务器"><a href="#4-启动-MySQL服务器" class="headerlink" title="4.启动 MySQL服务器"></a>4.启动 MySQL服务器</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 启用MySQL服务器</span></span><br><span class="line">sudo systemctl start mysqld</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看MySQL服务器状态</span></span><br><span class="line">sudo systemctl status mysqld</span><br></pre></td></tr></table></figure>
+
+<p>系统默认创建了root用户，临时密码存储在日志中：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo grep 'temporary password' /var/log/mysqld.log</span><br></pre></td></tr></table></figure>
+
+<p>登录MySQL:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure>
+
+<p>执行SQL修改密码：</p>
+<blockquote>
+<p>ALTER USER ‘root’@’localhost’ IDENTIFIED BY ‘MyNewPass4!’;</p>
+</blockquote>
+<h3 id="远程访问配置"><a href="#远程访问配置" class="headerlink" title="远程访问配置"></a>远程访问配置</h3><p>默认情况下，无法使用navicat等数据库连接工具连接使用，需要做以下配置。</p>
+<h4 id="1-开启-MySQL-远程访问"><a href="#1-开启-MySQL-远程访问" class="headerlink" title="1.开启 MySQL 远程访问"></a>1.开启 MySQL 远程访问</h4><p>登录：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mysql -uroot -p</span><br></pre></td></tr></table></figure>
+
+<p>执行sql：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">use</span> mysql;</span><br><span class="line"><span class="keyword">update</span> <span class="keyword">user</span> <span class="keyword">set</span> user.Host=’%’ <span class="keyword">where</span> user.User=‘root’;</span><br><span class="line"><span class="keyword">flush</span> <span class="keyword">privileges</span>;</span><br></pre></td></tr></table></figure>
+
+<p>如果远程连接遇到如下报错：</p>
+<p><code>Unable to load authentication plugin &#39;caching_sha2_password&#39;.</code></p>
+<p><strong>原因：</strong> MySQL 8.0 +使用了<code>caching_sha2_password</code>加密方式，而navicat等不支持。</p>
+<p><strong>解决方法：</strong></p>
+<ol>
+<li>修改远程连接用户的加密规则。</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘<span class="keyword">test</span>’@’%’ <span class="keyword">IDENTIFIED</span> <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> ‘<span class="number">12345</span>’;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>修改配置文件。</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim /etc/my.cnf</span><br></pre></td></tr></table></figure>
+
+<p>加入配置<code>default_authentication_plugin=mysql_native_password</code></p>
+<h4 id="2-开启防火墙端口"><a href="#2-开启防火墙端口" class="headerlink" title="2.开启防火墙端口"></a>2.开启防火墙端口</h4><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=3306/tcp --permanent</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+        <tag>CentOS 8</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>【MySQL】基础知识点总结</title>
     <url>/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/</url>
     <content><![CDATA[<blockquote>
@@ -3637,12 +3988,13 @@
 <a id="more"></a>
 
 <h3 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h3><p><strong>MySQL(<a href="https://www.mysql.com)：轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：轻量级关系型数据库。</a></strong></p>
+<p><strong>CentOS下yum安装：</strong><a href="https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html" target="_blank" rel="noopener">https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html</a></p>
 <p><strong>基于Docker安装：</strong></p>
 <ul>
 <li>拉取最新的 MySQL 镜像：<code>docker pull mysql</code></li>
 <li>启动镜像，映射端口、指定root密码并挂载日志、配置文件及数据</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">DB_HOME=/home/mysql</span><br><span class="line">DB_CONF_PATH=$DB_HOME/conf:/etc/mysql/conf.d</span><br><span class="line">DB_LOG_PATH=$DB_HOME/logs:/var/log/mysql</span><br><span class="line">DB_DATA_PATH=$DB_HOME/data:/var/lib/mysql</span><br><span class="line">docker run -p 3306:3306 --name mysql -v $DB_CONF_PATH -v $DB_LOG_PATH -v $DB_DATA_PATH -e MYSQL_ROOT_PASSWORD=toor -d mysql</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">DB_HOME=/home/mysql</span><br><span class="line">DB_CONF_PATH=$DB_HOME/conf:/etc/mysql/conf.d</span><br><span class="line">DB_LOG_PATH=$DB_HOME/logs:/var/log/mysql</span><br><span class="line">DB_DATA_PATH=$DB_HOME/data:/var/lib/mysql</span><br><span class="line">docker run -p 3306:3306 --name mysql -v $DB_CONF_PATH -v $DB_LOG_PATH -v $DB_DATA_PATH -e MYSQL_ROOT_PASSWORD=root -d mysql</span><br></pre></td></tr></table></figure>
 
 <h3 id="MySQL-数据类型"><a href="#MySQL-数据类型" class="headerlink" title="MySQL 数据类型"></a>MySQL 数据类型</h3><h4 id="数值类型"><a href="#数值类型" class="headerlink" title="数值类型"></a>数值类型</h4><p>MySQL支持所有标准SQL中的数值类型，包括严格数值类型(INTEGER、SMALLINT、DECIMAL、NUMBERIC)，以及近似数值数据类型（FLOAT、REAL和DOUBLE PRECISION），并在此基础上做了拓展。</p>
 <p><strong>整型</strong></p>
@@ -4966,6 +5318,95 @@
       </categories>
       <tags>
         <tag>JavaSE</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java 面向对象</title>
+    <url>/2016/07/16/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%20%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</url>
+    <content><![CDATA[<p>好记性不如烂笔头，学习Java面向对象的过程中，发现知识点真的很多，写一篇文档记录一下，方便以后查阅。</p>
+<a id="more"></a>
+
+<h2 id="面向对象的思想"><a href="#面向对象的思想" class="headerlink" title="面向对象的思想"></a>面向对象的思想</h2><p>类(Class)和对象(Object)是面向对象的核心概念。  </p>
+<ul>
+<li>类是对一类事物的描述，是抽象的、概念上的定义  </li>
+<li>对象是实际存在的该类事物的每个个体，因而也称为<strong>实例</strong>(instance)。  </li>
+</ul>
+<blockquote>
+<p><strong>问题：面向对象与面向过程？</strong></p>
+<ul>
+<li>二者都是一种思想，面向对象是相对于面向过程而言的。面向过程， 强调的<br>是功能行为，以函数为最小单位，考虑怎么做。 面向对象，将功能封装进对<br>象， 强调具备了功能的对象，以类/对象为最小单位，考虑谁来做。  </li>
+<li>面向对象更加强调运用人类在日常的思维逻辑中采用的思想方法与原则，如<br>抽象、分类、继承、聚合、多态等。  </li>
+</ul>
+</blockquote>
+<h2 id="类与对象"><a href="#类与对象" class="headerlink" title="类与对象"></a>类与对象</h2><h3 id="类"><a href="#类" class="headerlink" title="类"></a>类</h3><h4 id="类的成员——属性"><a href="#类的成员——属性" class="headerlink" title="类的成员——属性"></a>类的成员——属性</h4><h4 id="类的成员——方法"><a href="#类的成员——方法" class="headerlink" title="类的成员——方法"></a>类的成员——方法</h4><h4 id="类的成员——构造器"><a href="#类的成员——构造器" class="headerlink" title="类的成员——构造器"></a>类的成员——构造器</h4><h4 id="类的成员——代码块"><a href="#类的成员——代码块" class="headerlink" title="类的成员——代码块"></a>类的成员——代码块</h4><h4 id="类的成员——内部类"><a href="#类的成员——内部类" class="headerlink" title="类的成员——内部类"></a>类的成员——内部类</h4><h4 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h4><h4 id="修饰符"><a href="#修饰符" class="headerlink" title="修饰符"></a>修饰符</h4><h5 id="访问修饰符"><a href="#访问修饰符" class="headerlink" title="访问修饰符"></a>访问修饰符</h5><table>
+<thead>
+<tr>
+<th align="left">修饰符</th>
+<th align="left">当前类</th>
+<th align="left">同一包内</th>
+<th align="left">子孙类(同一包)</th>
+<th align="left">子孙类(不同包)</th>
+<th align="left">其他包</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>public</code></td>
+<td align="left">Y</td>
+<td align="left">Y</td>
+<td align="left">Y</td>
+<td align="left">Y</td>
+<td align="left">Y</td>
+</tr>
+<tr>
+<td align="left"><code>protected</code></td>
+<td align="left">Y</td>
+<td align="left">Y</td>
+<td align="left">Y</td>
+<td align="left">Y/N（<a href="https://www.runoob.com/java/java-modifier-types.html#protected-desc" target="_blank" rel="noopener">说明</a>）</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left"><code>default</code></td>
+<td align="left">Y</td>
+<td align="left">Y</td>
+<td align="left">Y</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left"><code>private</code></td>
+<td align="left">Y</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+</tbody></table>
+<ul>
+<li><code>public</code>：访问权限最宽，可以<strong>跨包访问</strong>，意为“公开的”。</li>
+<li><code>protected</code><ul>
+<li>父类的<code>protected</code>成员是包内可见的，并且对子类可见。</li>
+<li>若子类与父类不在同一个包中，那么在子类实例中，只能访问子类继承的父类的<code>protected</code>成员，而不能访问父类实例的<code>protected</code>成员。</li>
+</ul>
+</li>
+<li><code>private</code>：被修饰的类、属性、方法只能由其对象访问。</li>
+<li>default ： 被修饰的类、属性、方法只能在同一个包中访问。</li>
+</ul>
+<h5 id="非访问修饰符"><a href="#非访问修饰符" class="headerlink" title="非访问修饰符"></a>非访问修饰符</h5><p><code>static</code></p>
+<p><code>final</code></p>
+<p><code>abstract</code></p>
+<p><code>synchronized</code></p>
+<p><code>transient</code></p>
+<p><code>volatile</code></p>
+<h4 id="对象的创建与使用"><a href="#对象的创建与使用" class="headerlink" title="对象的创建与使用"></a>对象的创建与使用</h4><h5 id=""><a href="#" class="headerlink" title=""></a></h5><h4 id="类的实例化过程"><a href="#类的实例化过程" class="headerlink" title="类的实例化过程"></a>类的实例化过程</h4><h4 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h4><h5 id="this"><a href="#this" class="headerlink" title="this"></a>this</h5><h5 id="package"><a href="#package" class="headerlink" title="package"></a>package</h5><h5 id="import"><a href="#import" class="headerlink" title="import"></a>import</h5><h5 id="super"><a href="#super" class="headerlink" title="super"></a>super</h5><blockquote>
+<p>问题：this 和 super 的区别？</p>
+</blockquote>
+<h5 id="instanceof"><a href="#instanceof" class="headerlink" title="instanceof"></a>instanceof</h5><h5 id="static"><a href="#static" class="headerlink" title="static"></a>static</h5><h5 id="final"><a href="#final" class="headerlink" title="final"></a>final</h5><h2 id="面向对象的三大特征"><a href="#面向对象的三大特征" class="headerlink" title="面向对象的三大特征"></a>面向对象的三大特征</h2><h3 id="封装性"><a href="#封装性" class="headerlink" title="封装性"></a>封装性</h3><h3 id="继承性"><a href="#继承性" class="headerlink" title="继承性"></a>继承性</h3><h3 id="多态性"><a href="#多态性" class="headerlink" title="多态性"></a>多态性</h3>]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
       </tags>
   </entry>
   <entry>

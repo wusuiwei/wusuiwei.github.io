@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wusuiwei.github.io/"/>
-  <updated>2020-10-26T14:32:06.966Z</updated>
+  <updated>2021-01-28T16:31:19.507Z</updated>
   <id>http://wusuiwei.github.io/</id>
   
   <author>
@@ -15,6 +15,154 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>02_全栈笔记/Python 学习笔记/python操作数据库</title>
+    <link href="http://wusuiwei.github.io/2021/01/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Python%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <id>http://wusuiwei.github.io/2021/01/29/02_全栈笔记/Python 学习笔记/python操作数据库/</id>
+    <published>2021-01-28T16:31:19.507Z</published>
+    <updated>2021-01-28T16:31:19.507Z</updated>
+    
+    <content type="html"><![CDATA[<p>“ Don’t aim for success if you really want it. Just stick to what you love and believe in,and it will come naturally. ”<br>少一些功利主义的追求，多一些不为什么的坚持。</p><p>一、DB API概述：<br>     早期python版本中，由于不同的服务器提供商，导致服务器和数据库通信协议各有不同，每一种数据库都带有自己的python模块，这些模块都各自以不同的方式工作，并提供不同的函数，非常不便于编写能够在多种数据库服务器类型中运行的代码。于是DB-API 库函数产生，在DB-API中，所有连接数据库的模块即便是底层网络协议不同，也会提供统一的接口。类似于JAVA中的JDBC和ODBC。<br>     目前版本为2.0，支持的数据库有 IBM DB2、Firebird (and Interbase) 、Informix、Ingres、MySQL、Oracle 、PostgreSQL 、SAP DB (also known as “MaxDB”) 、Microsoft SQL Server 、Sybase等。</p><p>二、python操作mysql数据库基础：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!usr/bin/python</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"></span><br><span class="line">__author__ = <span class="string">"wusuiwei"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line">db = MySQLdb.Connection(host = <span class="string">'127.0.0.1'</span>,user = <span class="string">'root'</span>,passwd = <span class="string">'root'</span>,db = <span class="string">'mysite'</span>)</span><br><span class="line">cursor = db.cursor()</span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    cursor.execute(<span class="string">"SELECT * FROM mytable"</span>)</span><br><span class="line"><span class="keyword">except</span> Exception,e:</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"错误：%s"</span>%e</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    db.commit()</span><br><span class="line">    data = cursor.fetchone()</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"Data: %s"</span>%data[<span class="number">1</span>]</span><br><span class="line">    cursor.close()</span><br><span class="line">    db.close()</span><br><span class="line">---connect()方法用于创建数据库的连接，里面指定参数：用户名，密码，主机等信息；</span><br><span class="line">---cursor()方法创建数据库连接下的游标；</span><br></pre></td></tr></table></figure><p>三、插入数据、批量插入数据、更新数据等：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    conn=MySQLdb.connect(host=<span class="string">'localhost'</span>,user=<span class="string">'root'</span>,passwd=<span class="string">'root'</span>,port=<span class="number">3306</span>)</span><br><span class="line">    cur=conn.cursor()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    cur.execute(<span class="string">'create database if not exists python'</span>)</span><br><span class="line">    conn.select_db(<span class="string">'python'</span>)</span><br><span class="line">    cur.execute(<span class="string">'create table test(id int,info varchar(20))'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    value=[<span class="number">1</span>,<span class="string">'hi rollen'</span>]</span><br><span class="line">    cur.execute(<span class="string">'insert into test values(%s,%s)'</span>,value)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    values=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">20</span>):</span><br><span class="line">        values.append((i,<span class="string">'hi rollen'</span>+str(i)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    cur.executemany(<span class="string">'insert into test values(%s,%s)'</span>,values)</span><br><span class="line"></span><br><span class="line">    cur.execute(<span class="string">'update test set info="I am rollen" where id=3'</span>)</span><br><span class="line"></span><br><span class="line">    conn.commit()</span><br><span class="line">    cur.close()</span><br><span class="line">    conn.close()</span><br><span class="line"></span><br><span class="line"><span class="keyword">except</span> MySQLdb.Error,e:</span><br><span class="line">     <span class="keyword">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[<span class="number">0</span>], e.args[<span class="number">1</span>])</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    conn=MySQLdb.connect(host=<span class="string">'localhost'</span>,user=<span class="string">'root'</span>,passwd=<span class="string">'root'</span>,port=<span class="number">3306</span>)</span><br><span class="line">    cur=conn.cursor()</span><br><span class="line"></span><br><span class="line">    conn.select_db(<span class="string">'python'</span>)</span><br><span class="line"></span><br><span class="line">    count=cur.execute(<span class="string">'select * from test'</span>)</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'there has %s rows record'</span> % count</span><br><span class="line"></span><br><span class="line">    result=cur.fetchone()</span><br><span class="line">    <span class="keyword">print</span> result</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'ID: %s info %s'</span> % result</span><br><span class="line"></span><br><span class="line">    results=cur.fetchmany(<span class="number">5</span>)</span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> results:</span><br><span class="line">        <span class="keyword">print</span> r</span><br><span class="line"></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'=='</span>*<span class="number">10</span></span><br><span class="line">    cur.scroll(<span class="number">0</span>,mode=<span class="string">'absolute'</span>)</span><br><span class="line"></span><br><span class="line">    results=cur.fetchall()</span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> results:</span><br><span class="line">        <span class="keyword">print</span> r[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    conn.commit()</span><br><span class="line">    cur.close()</span><br><span class="line">    conn.close()</span><br><span class="line"></span><br><span class="line"><span class="keyword">except</span> MySQLdb.Error,e:</span><br><span class="line">     <span class="keyword">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[<span class="number">0</span>], e.args[<span class="number">1</span>])</span><br></pre></td></tr></table></figure><p>查询后中文会正确显示，但在数据库中却是乱码的。经过我从网上查找，发现用一个属性有可搞定：<br>在Python代码<br>conn = MySQLdb.Connect(host=’localhost’, user=’root’, passwd=’root’, db=’python’) 中加一个属性：<br> 改为：<br>conn = MySQLdb.Connect(host=’localhost’, user=’root’, passwd=’root’, db=’python’,charset=’utf8’)<br>charset是要跟你数据库的编码一样，如果是数据库是gb2312 ,则写charset=’gb2312’。</p><p>下面贴一下常用的函数：<br>然后,这个连接对象也提供了对事务操作的支持,标准的方法<br>commit() 提交<br>rollback() 回滚</p><p>cursor用来执行命令的方法:<br>callproc(self, procname, args):用来执行存储过程,接收的参数为存储过程名和参数列表,返回值为受影响的行数<br>execute(self, query, args):执行单条sql语句,接收的参数为sql语句本身和使用的参数列表,返回值为受影响的行数<br>executemany(self, query, args):执行单挑sql语句,但是重复执行参数列表里的参数,返回值为受影响的行数<br>nextset(self):移动到下一个结果集</p><p>cursor用来接收返回值的方法:<br>fetchall(self):接收全部的返回结果行.<br>fetchmany(self, size=None):接收size条返回结果行.如果size的值大于返回的结果行的数量,则会返回cursor.arraysize条数据.<br>fetchone(self):返回一条结果行.<br>scroll(self, value, mode=’relative’):移动指针到某一行.如果mode=’relative’,则表示从当前所在行移动value条,如果 mode=’absolute’,则表示从结果集的第一行移动value条.</p><p>参考资料：<br>MySQLdb’s user guide<br>package MySQLdb</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;“ Don’t aim for success if you really want it. Just stick to what you love and believe in,and it will come naturally. ”&lt;br&gt;少一些功利主义的追求，多一些
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>02_全栈笔记/Java Web 学习笔记/【Java Web】Html &amp; CSS</title>
+    <link href="http://wusuiwei.github.io/2021/01/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20Web%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20Web%E3%80%91Html%20&amp;%20CSS/"/>
+    <id>http://wusuiwei.github.io/2021/01/29/02_全栈笔记/Java Web 学习笔记/【Java Web】Html &amp; CSS/</id>
+    <published>2021-01-28T16:31:19.500Z</published>
+    <updated>2021-01-28T16:31:19.500Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu-20.04.1虚拟机安装与配置</title>
+    <link href="http://wusuiwei.github.io/2021/01/27/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/Ubuntu-20.04.1%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    <id>http://wusuiwei.github.io/2021/01/27/01_软件/Linux 软件/Ubuntu-20.04.1虚拟机安装与配置/</id>
+    <published>2021-01-27T07:31:09.000Z</published>
+    <updated>2021-01-28T11:27:32.100Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p>为了</p><a id="more"></a><h3 id="Docker-安装与配置"><a href="#Docker-安装与配置" class="headerlink" title="Docker 安装与配置"></a>Docker 安装与配置</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;为了&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://wusuiwei.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://wusuiwei.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu-20.04.1虚拟机安装与配置</title>
+    <link href="http://wusuiwei.github.io/2021/01/27/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/VMware%20Workstation%2016%20Pro%20%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>http://wusuiwei.github.io/2021/01/27/01_软件/Windows 软件/VMware Workstation 16 Pro 使用记录/</id>
+    <published>2021-01-27T07:31:09.000Z</published>
+    <updated>2021-01-28T16:29:50.015Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p><strong>VMware Workstation 16 Pro 及激活码 下载链接：</strong><a href="https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg" target="_blank" rel="noopener">https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg</a> 提取码：<code>ve3r</code>（<strong>推荐<a href="https://www.vmware.com/cn/products/workstation-pro.html" target="_blank" rel="noopener">官网</a>购买</strong>）</p><p><strong>VMware Workstation Pro 文档：</strong><a href="https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html" target="_blank" rel="noopener">https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html</a></p><a id="more"></a><h3 id="共享文件夹"><a href="#共享文件夹" class="headerlink" title="共享文件夹"></a>共享文件夹</h3><h4 id="启用共享文件夹"><a href="#启用共享文件夹" class="headerlink" title="启用共享文件夹"></a>启用共享文件夹</h4><ol><li>选择该虚拟机，然后选择<strong>虚拟机</strong> &gt; <strong>设置</strong>。</li><li>在<strong>选项</strong>选项卡中，选择<strong>共享文件夹</strong>，<strong>文件夹共享</strong> 选择 <strong>总是启用</strong>，添加 <strong>文件夹</strong> 并保存即可。</li></ol><h4 id="Linux-挂载共享文件夹"><a href="#Linux-挂载共享文件夹" class="headerlink" title="Linux 挂载共享文件夹"></a>Linux 挂载共享文件夹</h4><table><thead><tr><th align="left">4.0 之前的 Linux 内核</th><th align="left">4.0 及更高版本的 Linux 内核</th><th align="left">说明</th></tr></thead><tbody><tr><td align="left"><code>mount -t vmhgfs .host:/ /home/user1/shares</code></td><td align="left"><code>/usr/bin/vmhgfs-fuse .host:/ /home/user1/shares -o subtype=vmhgfs-fuse,allow_other</code></td><td align="left">将所有共享装载到 /home/user1/shares</td></tr><tr><td align="left"><code>mount -t vmhgfs .host:/foo /tmp/foo</code></td><td align="left"><code>/usr/bin/vmhgfs-fuse .host:/foo /tmp/foo -o subtype=vmhgfs-fuse,allow_other</code></td><td align="left">将名为 <code>foo</code> 的共享装载到 <code>/tmp/foo</code></td></tr><tr><td align="left"><code>mount -t vmhgfs .host:/foo/bar /var/lib/bar</code></td><td align="left"><code>/usr/bin/vmhgfs-fuse .host:/foo/bar /var/lib/bar -o subtype=vmhgfs-fuse,allow_other</code></td><td align="left">将共享 <code>foo</code> 中的子目录 <code>bar</code> 装载到 /var/lib/bar</td></tr></tbody></table><h4 id="Linux-移除共享文件夹"><a href="#Linux-移除共享文件夹" class="headerlink" title="Linux 移除共享文件夹"></a>Linux 移除共享文件夹</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">umount /home/user1/shares</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;VMware Workstation 16 Pro 及激活码 下载链接：&lt;/strong&gt;&lt;a href=&quot;https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg&lt;/a&gt; 提取码：&lt;code&gt;ve3r&lt;/code&gt;（&lt;strong&gt;推荐&lt;a href=&quot;https://www.vmware.com/cn/products/workstation-pro.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网&lt;/a&gt;购买&lt;/strong&gt;）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VMware Workstation Pro 文档：&lt;/strong&gt;&lt;a href=&quot;https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://wusuiwei.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://wusuiwei.github.io/tags/Linux/"/>
+    
+      <category term="MySQL" scheme="http://wusuiwei.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu-20.04.1虚拟机安装与配置</title>
+    <link href="http://wusuiwei.github.io/2021/01/27/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Ubuntu%E3%80%91MySQL%208%20%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    <id>http://wusuiwei.github.io/2021/01/27/01_软件/Linux 软件/【Ubuntu】MySQL 8 安装与配置/</id>
+    <published>2021-01-27T07:31:09.000Z</published>
+    <updated>2021-01-28T15:52:49.778Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p><strong>安装环境：Ubuntu 20.04.1</strong></p><p><strong>安装版本：MySQL 8</strong></p><a id="more"></a><h3 id="MySQL-8-安装"><a href="#MySQL-8-安装" class="headerlink" title="MySQL  8 安装"></a>MySQL  8 安装</h3><p>下载MySQL配置文件，网址：<a href="https://dev.mysql.com/downloads/repo/apt/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/apt/</a> 打开如下图：</p><p><img src="/images/20181106001648309.png" alt="img"></p><p>​     打开后将下拉到网页底部点击Download按钮下载deb文件，打开如下图：</p><p><img src="/images/20181106001652753.png" alt="img"></p><p>​     进入下载页面，选择<strong><em>\</em>No thanks, just start my download**</strong>，操作如下图：</p><p><img src="/images/20181106001658455.png" alt="img"></p><p>​     进入下载文件目录，打开终端，执行命令：<strong><em>\</em>sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb**</strong></p><p><img src="/images/2018110600170298.png" alt="img"></p><p>​     输入密码继续安装</p><p><img src="/images/20181106001706197.png" alt="img"></p><p>​     选择<strong><em>\</em>MySQL-8.0**</strong> 点击<strong><em>\</em>OK**</strong>继续安装</p><p><img src="/images/20181106001711769.png" alt="img"></p><p>​     执行更新命令：<strong><em>\</em>sudo apt update**</strong></p><p><img src="/images/20181106001716750.png" alt="img"></p><p>  安装<strong><em>\</em>MySQL 8.0**</strong>，执行命令：<strong><em>\</em>sudo apt install mysql-server**</strong></p><p><img src="/images/20181106001721694.png" alt="img"></p><p>​     输入Y同意继续安装:</p><p><img src="/images/20181106001726135.png" alt="img"></p><p>  设置<strong><em>\</em>root**</strong>密码</p><p><img src="/images/20181106001729990.png" alt="img"></p><p>  确认密码</p><p><img src="/images/20181106001738156.png" alt="img"></p><p>  阅读配置MySQ社区服务器，翻到末尾点使用Tab键选中<ok>按钮，击Enter键</p><p><img src="/images/20181106001750332.png" alt="img"></p><p>  加密方式选择<strong><em>\</em>Retain MySQL 5.x Compatibility**</strong><br><img src="/images/20181106001755185.png" alt="img"></p><p>  登录MySQL ：mysql –u root –p</p><p><img src="/images/20181106001759489.png" alt="img"></p><h3 id="开启远程访问"><a href="#开启远程访问" class="headerlink" title="开启远程访问"></a><strong>开启远程访问</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">use mysql; #选择数据库</span><br><span class="line">update user set host = ‘%’ where user =’root’; #更新host值</span><br><span class="line">flush privileges; #刷新权限</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;安装环境：Ubuntu 20.04.1&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安装版本：MySQL 8&lt;/strong&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="http://wusuiwei.github.io/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://wusuiwei.github.io/tags/Linux/"/>
+    
+      <category term="MySQL" scheme="http://wusuiwei.github.io/tags/MySQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring Boot 集成 Springfox-Swagger2</title>
+    <link href="http://wusuiwei.github.io/2021/01/19/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Swagger2%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringBoot%E9%9B%86%E6%88%90Springfox-Swagger2/"/>
+    <id>http://wusuiwei.github.io/2021/01/19/02_全栈笔记/Swagger2 学习笔记/SpringBoot集成Springfox-Swagger2/</id>
+    <published>2021-01-19T12:06:04.000Z</published>
+    <updated>2021-01-19T08:13:21.321Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="全栈笔记" scheme="http://wusuiwei.github.io/categories/%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="Spring Boot" scheme="http://wusuiwei.github.io/tags/Spring-Boot/"/>
+    
+      <category term="Swagger2" scheme="http://wusuiwei.github.io/tags/Swagger2/"/>
+    
+  </entry>
   
   <entry>
     <title>02_全栈笔记/Linux 学习笔记/【Linux】README</title>
@@ -57,6 +205,30 @@
     
     </summary>
     
+    
+    
+  </entry>
+  
+  <entry>
+    <title>共享图书馆的畅想</title>
+    <link href="http://wusuiwei.github.io/2020/10/20/06_%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/%E5%85%B1%E4%BA%AB%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%9A%84%E7%95%85%E6%83%B3/"/>
+    <id>http://wusuiwei.github.io/2020/10/20/06_头脑风暴/共享图书馆的畅想/</id>
+    <published>2020-10-19T16:00:00.000Z</published>
+    <updated>2021-01-28T16:31:19.515Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p>共享图书馆的想法源自四年前，当时在一家初创型科技公司任职，和同事闲聊时，提出了自己懵懂的想法。最近，一直有创业的想法，于是想起了四年前的这个 idea ，于是，动笔写下来。</p><a id="more"></a><p>首先，我们来盘算一下开一家普通传统书店，需要那些条件：</p><p>- </p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;共享图书馆的想法源自四年前，当时在一家初创型科技公司任职，和同事闲聊时，提出了自己懵懂的想法。最近，一直有创业的想法，于是想起了四年前的这个 idea ，于是，动笔写下来。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="头脑风暴" scheme="http://wusuiwei.github.io/categories/%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/"/>
     
     
   </entry>
@@ -214,163 +386,6 @@
     <updated>2020-07-08T02:58:05.100Z</updated>
     
     <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Mockito 学习笔记/【Mockito】</title>
-    <link href="http://wusuiwei.github.io/2020/06/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Mockito%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Mockito%E3%80%91/"/>
-    <id>http://wusuiwei.github.io/2020/06/05/02_全栈笔记/Mockito 学习笔记/【Mockito】/</id>
-    <published>2020-06-05T03:54:08.356Z</published>
-    <updated>2020-06-05T03:54:08.356Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>06_头脑风暴/在线教育的遐想</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/06_%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2%E7%9A%84%E9%81%90%E6%83%B3/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/06_头脑风暴/在线教育的遐想/</id>
-    <published>2020-05-24T14:28:44.566Z</published>
-    <updated>2020-05-24T14:28:44.566Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>05_读书笔记/书籍购买-20191112</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/05_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E4%B9%A6%E7%B1%8D%E8%B4%AD%E4%B9%B0-20191112/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/05_读书笔记/书籍购买-20191112/</id>
-    <published>2020-05-24T14:28:44.565Z</published>
-    <updated>2020-05-24T14:28:44.565Z</updated>
-    
-    <content type="html"><![CDATA[<p>计算机基础相关</p><p>数据库</p><p>java语言相关</p><p>网络</p><p>《计算机程序的构造和解释》</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;计算机基础相关&lt;/p&gt;
-&lt;p&gt;数据库&lt;/p&gt;
-&lt;p&gt;java语言相关&lt;/p&gt;
-&lt;p&gt;网络&lt;/p&gt;
-&lt;p&gt;《计算机程序的构造和解释》&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>05_读书笔记/《白说》</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/05_%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/%E3%80%8A%E7%99%BD%E8%AF%B4%E3%80%8B/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/05_读书笔记/《白说》/</id>
-    <published>2020-05-24T14:28:44.563Z</published>
-    <updated>2020-05-24T14:28:44.563Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>04_项目笔记/谷粒学院/项目概要</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%B0%B7%E7%B2%92%E5%AD%A6%E9%99%A2/%E9%A1%B9%E7%9B%AE%E6%A6%82%E8%A6%81/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/04_项目笔记/谷粒学院/项目概要/</id>
-    <published>2020-05-24T14:28:44.562Z</published>
-    <updated>2020-05-24T14:28:44.562Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>工具使用</strong>：</p><ul><li>IDEA</li><li>EZDML</li><li></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;工具使用&lt;/strong&gt;：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;IDEA&lt;/li&gt;
-&lt;li&gt;EZDML&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>04_项目笔记/自动化测试平台/【Hydrogen】项目环境搭建</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/04_项目笔记/自动化测试平台/【Hydrogen】项目环境搭建/</id>
-    <published>2020-05-24T14:28:44.556Z</published>
-    <updated>2020-05-24T14:28:44.557Z</updated>
-    
-    <content type="html"><![CDATA[<p>登录页：</p><ul><li>登录（自动注册）</li><li>忘记密码</li></ul><p>账号信息</p><p>项目组管理：</p><ul><li>项目列表</li><li>邀请加入项目组</li><li>移交管理员</li><li>删除成员</li><li>退出项目组/解散项目组（仅自己一个人时可解散）</li></ul><p>测试数据库管理：</p><ul><li>mysql</li></ul><p>用例管理：</p><ul><li>新增用例</li><li>修改用例</li><li>删除用例</li><li>运行用例</li><li>复制用例</li></ul><p>测试用例集管理：</p><ul><li>新增用例集</li></ul><p>参数化环境管理</p><ul><li>查询</li><li>新增</li><li>修改</li><li>删除</li><li>参数值管理<ul><li>查询</li><li>新增</li><li>修改</li><li>删除</li></ul></li></ul><p>测试报告</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;登录页：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;登录（自动注册）&lt;/li&gt;
-&lt;li&gt;忘记密码&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;账号信息&lt;/p&gt;
-&lt;p&gt;项目组管理：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;项目列表&lt;/li&gt;
-&lt;li&gt;邀请加入项目组&lt;/li&gt;
-&lt;li&gt;移交管理员&lt;/li&gt;
-&lt;li&gt;删除成员
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>04_项目笔记/自动化测试平台/【Hydrogen】团队维护</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E5%9B%A2%E9%98%9F%E7%BB%B4%E6%8A%A4/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/04_项目笔记/自动化测试平台/【Hydrogen】团队维护/</id>
-    <published>2020-05-24T14:28:44.552Z</published>
-    <updated>2020-05-24T14:28:44.552Z</updated>
-    
-    <content type="html"><![CDATA[<p>整个界面采用简单的人员管理界面，提供<strong>人员名称</strong>、<strong>邮箱</strong>模糊搜索功能，分页功能，邀请加入功能，移除功能；</p><p>表设计：</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;整个界面采用简单的人员管理界面，提供&lt;strong&gt;人员名称&lt;/strong&gt;、&lt;strong&gt;邮箱&lt;/strong&gt;模糊搜索功能，分页功能，邀请加入功能，移除功能；&lt;/p&gt;
-&lt;p&gt;表设计：&lt;/p&gt;
-
-      
     
     </summary>
     
