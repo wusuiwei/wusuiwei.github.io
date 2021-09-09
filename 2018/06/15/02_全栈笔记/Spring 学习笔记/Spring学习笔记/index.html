@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -51,20 +51,22 @@
   };
 </script>
 
-  <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。  Spring 框架学习过程中，主要以 IOC *与 *AOP 为学习重点，并汇总解答相关的面试题。 官网地址：https:&#x2F;&#x2F;docs.spring.io&#x2F;spring-framework&#x2F;docs&#x2F;current&#x2F;spring-framework-reference&#x2F;index.html 当前版本：5.2.6.RELEASE">
-<meta name="keywords" content="Spring">
+  <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。  Spring 框架学习过程中，主要以 **IOC **与 AOP 为学习重点，并汇总解答相关的面试题。 官网地址：https:&#x2F;&#x2F;docs.spring.io&#x2F;spring-framework&#x2F;docs&#x2F;current&#x2F;spring-framework-reference&#x2F;index.html 当前版本：5.2.6.RELEASE">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring学习笔记">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2018&#x2F;06&#x2F;15&#x2F;02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0&#x2F;Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;index.html">
+<meta property="og:url" content="http://wusuiwei.github.io/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="wusuiwei">
-<meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。  Spring 框架学习过程中，主要以 IOC *与 *AOP 为学习重点，并汇总解答相关的面试题。 官网地址：https:&#x2F;&#x2F;docs.spring.io&#x2F;spring-framework&#x2F;docs&#x2F;current&#x2F;spring-framework-reference&#x2F;index.html 当前版本：5.2.6.RELEASE">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;spring-overview.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;5ab6e3c3c7c024947945a20841bd20ea_498x296.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;1545965390369.png">
-<meta property="og:updated_time" content="2021-01-28T16:31:19.509Z">
+<meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。  Spring 框架学习过程中，主要以 **IOC **与 AOP 为学习重点，并汇总解答相关的面试题。 官网地址：https:&#x2F;&#x2F;docs.spring.io&#x2F;spring-framework&#x2F;docs&#x2F;current&#x2F;spring-framework-reference&#x2F;index.html 当前版本：5.2.6.RELEASE">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://wusuiwei.github.io/images/spring-overview.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/5ab6e3c3c7c024947945a20841bd20ea_498x296.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/1545965390369.png">
+<meta property="article:published_time" content="2018-06-15T06:06:04.000Z">
+<meta property="article:modified_time" content="2021-01-28T16:31:19.509Z">
+<meta property="article:author" content="wusuiwei">
+<meta property="article:tag" content="Spring">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;spring-overview.png">
+<meta name="twitter:image" content="http://wusuiwei.github.io/images/spring-overview.png">
 
 <link rel="canonical" href="http://wusuiwei.github.io/2018/06/15/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
@@ -120,6 +122,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="wusuiwei" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -170,6 +173,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-finance">
+
+    <a href="/finance/" rel="section"><i class="fa fa-fw fa-line-chart"></i>理财</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -307,10 +315,10 @@
         <blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<p>Spring 框架学习过程中，主要以 <strong>IOC *<em>与 *</em>AOP</strong> 为学习重点，并汇总解答相关的面试题。</p>
-<p>官网地址：<a href="https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/index.html" target="_blank" rel="noopener">https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/index.html</a></p>
+<p>Spring 框架学习过程中，主要以 **IOC **与 <strong>AOP</strong> 为学习重点，并汇总解答相关的面试题。</p>
+<p>官网地址：<a target="_blank" rel="noopener" href="https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/index.html">https://docs.spring.io/spring-framework/docs/current/spring-framework-reference/index.html</a></p>
 <p>当前版本：<strong>5.2.6.RELEASE</strong></p>
-<a id="more"></a>
+<span id="more"></span>
 
 <p>[Core](#Spring Core Technologies)                 IoC Container, Events, Resources, i18n, Validation, Data Binding, Type Conversion, SpEL, AOP.</p>
 <p>[Data Access](#Spring Data Access)    Transactions, DAO Support, JDBC, O/R Mapping, XML Marshalling.</p>
@@ -320,7 +328,7 @@
 <p><a href="#Integration">Integration</a>       Remoting, JMS, JCA, JMX, Email, Tasks, Scheduling, Caching.</p>
 <p><a href="#Languages">Languages</a>        Kotlin, Groovy, Dynamic Languages.</p>
 <h1 id="Spring框架概述"><a href="#Spring框架概述" class="headerlink" title="Spring框架概述"></a>Spring框架概述</h1><p><strong>Spring框架是分层的Java SE/EE 应用 full-stack 轻量级开源框架。</strong></p>
-<p>Spring框架核心特性：<strong>IOC(Inverse Of Control)</strong> 和 <strong>AOP(Aspect Oriented Programming)</strong>。</p>
+<p>Spring框架核心特性：<strong>IOC(Inverse Of Control)</strong> 和 **AOP(Aspect Oriented Programming)**。</p>
 <blockquote>
 <p> <strong>JEE – Java Enterprise Edition / Java企业版</strong><br> 主要用于开发企业软件的Java版本。企业软件例子：会计软件、帐单管理、业务流程管理、CMS、CRM、ERP等。 </p>
 </blockquote>
@@ -349,7 +357,7 @@
 </ul>
 <p><code>ConfigurableApplicationContext</code> extends <code>ApplicationContext</code>，主要新增了refresh()和close()方法，让ApplicationContext具有启动、刷新和关闭上下文的能力。</p>
 <p>示例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建 ApplicationContext</span></span><br><span class="line">ApplicationContext context = <span class="keyword">new</span> FileSystemXmlApplicationContext(<span class="string">"beans.xml"</span>);</span><br><span class="line"><span class="comment">//获取bean对象</span></span><br><span class="line">HelloWorld obj = (HelloWorld) context.getBean(<span class="string">"helloWorld"</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建 ApplicationContext</span></span><br><span class="line">ApplicationContext context = <span class="keyword">new</span> FileSystemXmlApplicationContext(<span class="string">&quot;beans.xml&quot;</span>);</span><br><span class="line"><span class="comment">//获取bean对象</span></span><br><span class="line">HelloWorld obj = (HelloWorld) context.getBean(<span class="string">&quot;helloWorld&quot;</span>);</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p><strong>什么是Java Bean？</strong></p>
@@ -361,16 +369,16 @@
 </ul>
 <p>在Spring中，Bean就是普通的Java类，由Spring IoC容器实例化、组装、管理。</p>
 </blockquote>
-<h3 id="Bean的配置"><a href="#Bean的配置" class="headerlink" title="Bean的配置"></a>Bean的配置</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h3 id="Bean的配置"><a href="#Bean的配置" class="headerlink" title="Bean的配置"></a>Bean的配置</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
 <h4 id="bean的实例化"><a href="#bean的实例化" class="headerlink" title="bean的实例化"></a>bean的实例化</h4><ul>
 <li>通过构造器实例化</li>
 </ul>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--无参构造器 实例化--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"student1"</span> <span class="attr">class</span>=<span class="string">"com.wusuiwei.spring.core.bean.Student"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"student2"</span> <span class="attr">class</span>=<span class="string">"com.wusuiwei.spring.core.bean.Student"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--通过setter方法指定参数值--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">value</span>=<span class="string">"a"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"age"</span> <span class="attr">value</span>=<span class="string">"1"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--无参构造器 实例化--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"student3"</span> <span class="attr">class</span>=<span class="string">"com.wusuiwei.spring.core.bean.Student"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">"name"</span> <span class="attr">value</span>=<span class="string">"a"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">"age"</span> <span class="attr">value</span>=<span class="string">"1"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">"gender"</span> <span class="attr">value</span>=<span class="string">"man"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--无参构造器 实例化--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;student1&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.wusuiwei.spring.core.bean.Student&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;student2&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.wusuiwei.spring.core.bean.Student&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--通过setter方法指定参数值--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span> <span class="attr">value</span>=<span class="string">&quot;a&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;age&quot;</span> <span class="attr">value</span>=<span class="string">&quot;1&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--无参构造器 实例化--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;student3&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.wusuiwei.spring.core.bean.Student&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span> <span class="attr">value</span>=<span class="string">&quot;a&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">&quot;age&quot;</span> <span class="attr">value</span>=<span class="string">&quot;1&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">constructor-arg</span> <span class="attr">name</span>=<span class="string">&quot;gender&quot;</span> <span class="attr">value</span>=<span class="string">&quot;man&quot;</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.wusuiwei.spring.core.bean;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> String gender;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name, Integer age, String gender)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">        <span class="keyword">this</span>.gender = gender;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(Integer age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setGender</span><span class="params">(String gender)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.gender = gender;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"Student&#123;"</span> +</span><br><span class="line">                <span class="string">"name='"</span> + name + <span class="string">'\''</span> +</span><br><span class="line">                <span class="string">", age="</span> + age +</span><br><span class="line">                <span class="string">", gender='"</span> + gender + <span class="string">'\''</span> +</span><br><span class="line">                <span class="string">'&#125;'</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.wusuiwei.spring.core.bean;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Student</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> String gender;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Student</span><span class="params">(String name, Integer age, String gender)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">        <span class="keyword">this</span>.gender = gender;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setAge</span><span class="params">(Integer age)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.age = age;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setGender</span><span class="params">(String gender)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.gender = gender;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;Student&#123;&quot;</span> +</span><br><span class="line">                <span class="string">&quot;name=&#x27;&quot;</span> + name + <span class="string">&#x27;\&#x27;&#x27;</span> +</span><br><span class="line">                <span class="string">&quot;, age=&quot;</span> + age +</span><br><span class="line">                <span class="string">&quot;, gender=&#x27;&quot;</span> + gender + <span class="string">&#x27;\&#x27;&#x27;</span> +</span><br><span class="line">                <span class="string">&#x27;&#125;&#x27;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>通过静态工厂方法实例化</li>
@@ -458,7 +466,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring框架概述"><span class="nav-number">1.</span> <span class="nav-text">Spring框架概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-核心技术"><span class="nav-number">2.</span> <span class="nav-text">Spring 核心技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#IoC-容器"><span class="nav-number">2.1.</span> <span class="nav-text">IoC 容器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Bean的配置"><span class="nav-number">2.1.1.</span> <span class="nav-text">Bean的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#bean的实例化"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">bean的实例化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bean的命名"><span class="nav-number">2.1.1.2.</span> <span class="nav-text">bean的命名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bean的作用域"><span class="nav-number">2.1.1.3.</span> <span class="nav-text">bean的作用域</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bean之间的依赖"><span class="nav-number">2.1.1.4.</span> <span class="nav-text">bean之间的依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bean之间的继承"><span class="nav-number">2.1.1.5.</span> <span class="nav-text">bean之间的继承</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bean的生命周期"><span class="nav-number">2.1.1.6.</span> <span class="nav-text">bean的生命周期</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AOP"><span class="nav-number">2.2.</span> <span class="nav-text">AOP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Events"><span class="nav-number">2.3.</span> <span class="nav-text">Events</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Resource"><span class="nav-number">2.4.</span> <span class="nav-text">Resource</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Validation"><span class="nav-number">2.5.</span> <span class="nav-text">Validation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Binding"><span class="nav-number">2.6.</span> <span class="nav-text">Data Binding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Type-Conversion"><span class="nav-number">2.7.</span> <span class="nav-text">Type Conversion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SpEL"><span class="nav-number">2.8.</span> <span class="nav-text">SpEL</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Data-Access"><span class="nav-number">3.</span> <span class="nav-text">Spring Data Access</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring%E6%A1%86%E6%9E%B6%E6%A6%82%E8%BF%B0"><span class="nav-number">1.</span> <span class="nav-text">Spring框架概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-%E6%A0%B8%E5%BF%83%E6%8A%80%E6%9C%AF"><span class="nav-number">2.</span> <span class="nav-text">Spring 核心技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#IoC-%E5%AE%B9%E5%99%A8"><span class="nav-number">2.1.</span> <span class="nav-text">IoC 容器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Bean%E7%9A%84%E9%85%8D%E7%BD%AE"><span class="nav-number">2.1.1.</span> <span class="nav-text">Bean的配置</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#bean%E7%9A%84%E5%AE%9E%E4%BE%8B%E5%8C%96"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">bean的实例化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bean%E7%9A%84%E5%91%BD%E5%90%8D"><span class="nav-number">2.1.1.2.</span> <span class="nav-text">bean的命名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bean%E7%9A%84%E4%BD%9C%E7%94%A8%E5%9F%9F"><span class="nav-number">2.1.1.3.</span> <span class="nav-text">bean的作用域</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bean%E4%B9%8B%E9%97%B4%E7%9A%84%E4%BE%9D%E8%B5%96"><span class="nav-number">2.1.1.4.</span> <span class="nav-text">bean之间的依赖</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bean%E4%B9%8B%E9%97%B4%E7%9A%84%E7%BB%A7%E6%89%BF"><span class="nav-number">2.1.1.5.</span> <span class="nav-text">bean之间的继承</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#bean%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">2.1.1.6.</span> <span class="nav-text">bean的生命周期</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AOP"><span class="nav-number">2.2.</span> <span class="nav-text">AOP</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Events"><span class="nav-number">2.3.</span> <span class="nav-text">Events</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Resource"><span class="nav-number">2.4.</span> <span class="nav-text">Resource</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Validation"><span class="nav-number">2.5.</span> <span class="nav-text">Validation</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Binding"><span class="nav-number">2.6.</span> <span class="nav-text">Data Binding</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Type-Conversion"><span class="nav-number">2.7.</span> <span class="nav-text">Type Conversion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SpEL"><span class="nav-number">2.8.</span> <span class="nav-text">SpEL</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-Data-Access"><span class="nav-number">3.</span> <span class="nav-text">Spring Data Access</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -474,20 +482,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">138</span>
+          <span class="site-state-item-count">159</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">92</span>
+        <span class="site-state-item-count">113</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -642,9 +650,17 @@
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
@@ -653,7 +669,9 @@
 
 
 
-  <script src="/js/local-search.js"></script>
+  
+<script src="/js/local-search.js"></script>
+
 
 
 

@@ -3,10 +3,10 @@
   <title>wusuiwei</title>
   
   
-  <link href="/atom.xml" rel="self"/>
+  <link href="http://wusuiwei.github.io/atom.xml" rel="self"/>
   
   <link href="http://wusuiwei.github.io/"/>
-  <updated>2021-01-28T16:31:19.507Z</updated>
+  <updated>2021-09-09T04:44:46.663Z</updated>
   <id>http://wusuiwei.github.io/</id>
   
   <author>
@@ -14,40 +14,323 @@
     
   </author>
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>02_全栈笔记/Python 学习笔记/python操作数据库</title>
-    <link href="http://wusuiwei.github.io/2021/01/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Python%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/python%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    <id>http://wusuiwei.github.io/2021/01/29/02_全栈笔记/Python 学习笔记/python操作数据库/</id>
-    <published>2021-01-28T16:31:19.507Z</published>
-    <updated>2021-01-28T16:31:19.507Z</updated>
+    <title></title>
+    <link href="http://wusuiwei.github.io/2021/09/09/06_%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/%E5%98%BB%E5%93%88/"/>
+    <id>http://wusuiwei.github.io/2021/09/09/06_%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/%E5%98%BB%E5%93%88/</id>
+    <published>2021-09-09T04:44:46.663Z</published>
+    <updated>2021-09-09T04:44:46.663Z</updated>
     
-    <content type="html"><![CDATA[<p>“ Don’t aim for success if you really want it. Just stick to what you love and believe in,and it will come naturally. ”<br>少一些功利主义的追求，多一些不为什么的坚持。</p><p>一、DB API概述：<br>     早期python版本中，由于不同的服务器提供商，导致服务器和数据库通信协议各有不同，每一种数据库都带有自己的python模块，这些模块都各自以不同的方式工作，并提供不同的函数，非常不便于编写能够在多种数据库服务器类型中运行的代码。于是DB-API 库函数产生，在DB-API中，所有连接数据库的模块即便是底层网络协议不同，也会提供统一的接口。类似于JAVA中的JDBC和ODBC。<br>     目前版本为2.0，支持的数据库有 IBM DB2、Firebird (and Interbase) 、Informix、Ingres、MySQL、Oracle 、PostgreSQL 、SAP DB (also known as “MaxDB”) 、Microsoft SQL Server 、Sybase等。</p><p>二、python操作mysql数据库基础：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!usr/bin/python</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># -*- coding:utf-8 -*-</span></span><br><span class="line"></span><br><span class="line">__author__ = <span class="string">"wusuiwei"</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line">db = MySQLdb.Connection(host = <span class="string">'127.0.0.1'</span>,user = <span class="string">'root'</span>,passwd = <span class="string">'root'</span>,db = <span class="string">'mysite'</span>)</span><br><span class="line">cursor = db.cursor()</span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    cursor.execute(<span class="string">"SELECT * FROM mytable"</span>)</span><br><span class="line"><span class="keyword">except</span> Exception,e:</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"错误：%s"</span>%e</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    db.commit()</span><br><span class="line">    data = cursor.fetchone()</span><br><span class="line">    <span class="keyword">print</span> <span class="string">"Data: %s"</span>%data[<span class="number">1</span>]</span><br><span class="line">    cursor.close()</span><br><span class="line">    db.close()</span><br><span class="line">---connect()方法用于创建数据库的连接，里面指定参数：用户名，密码，主机等信息；</span><br><span class="line">---cursor()方法创建数据库连接下的游标；</span><br></pre></td></tr></table></figure><p>三、插入数据、批量插入数据、更新数据等：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    conn=MySQLdb.connect(host=<span class="string">'localhost'</span>,user=<span class="string">'root'</span>,passwd=<span class="string">'root'</span>,port=<span class="number">3306</span>)</span><br><span class="line">    cur=conn.cursor()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    cur.execute(<span class="string">'create database if not exists python'</span>)</span><br><span class="line">    conn.select_db(<span class="string">'python'</span>)</span><br><span class="line">    cur.execute(<span class="string">'create table test(id int,info varchar(20))'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    value=[<span class="number">1</span>,<span class="string">'hi rollen'</span>]</span><br><span class="line">    cur.execute(<span class="string">'insert into test values(%s,%s)'</span>,value)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    values=[]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">20</span>):</span><br><span class="line">        values.append((i,<span class="string">'hi rollen'</span>+str(i)))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    cur.executemany(<span class="string">'insert into test values(%s,%s)'</span>,values)</span><br><span class="line"></span><br><span class="line">    cur.execute(<span class="string">'update test set info="I am rollen" where id=3'</span>)</span><br><span class="line"></span><br><span class="line">    conn.commit()</span><br><span class="line">    cur.close()</span><br><span class="line">    conn.close()</span><br><span class="line"></span><br><span class="line"><span class="keyword">except</span> MySQLdb.Error,e:</span><br><span class="line">     <span class="keyword">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[<span class="number">0</span>], e.args[<span class="number">1</span>])</span><br></pre></td></tr></table></figure><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> MySQLdb</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    conn=MySQLdb.connect(host=<span class="string">'localhost'</span>,user=<span class="string">'root'</span>,passwd=<span class="string">'root'</span>,port=<span class="number">3306</span>)</span><br><span class="line">    cur=conn.cursor()</span><br><span class="line"></span><br><span class="line">    conn.select_db(<span class="string">'python'</span>)</span><br><span class="line"></span><br><span class="line">    count=cur.execute(<span class="string">'select * from test'</span>)</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'there has %s rows record'</span> % count</span><br><span class="line"></span><br><span class="line">    result=cur.fetchone()</span><br><span class="line">    <span class="keyword">print</span> result</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'ID: %s info %s'</span> % result</span><br><span class="line"></span><br><span class="line">    results=cur.fetchmany(<span class="number">5</span>)</span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> results:</span><br><span class="line">        <span class="keyword">print</span> r</span><br><span class="line"></span><br><span class="line">    <span class="keyword">print</span> <span class="string">'=='</span>*<span class="number">10</span></span><br><span class="line">    cur.scroll(<span class="number">0</span>,mode=<span class="string">'absolute'</span>)</span><br><span class="line"></span><br><span class="line">    results=cur.fetchall()</span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> results:</span><br><span class="line">        <span class="keyword">print</span> r[<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    conn.commit()</span><br><span class="line">    cur.close()</span><br><span class="line">    conn.close()</span><br><span class="line"></span><br><span class="line"><span class="keyword">except</span> MySQLdb.Error,e:</span><br><span class="line">     <span class="keyword">print</span> <span class="string">"Mysql Error %d: %s"</span> % (e.args[<span class="number">0</span>], e.args[<span class="number">1</span>])</span><br></pre></td></tr></table></figure><p>查询后中文会正确显示，但在数据库中却是乱码的。经过我从网上查找，发现用一个属性有可搞定：<br>在Python代码<br>conn = MySQLdb.Connect(host=’localhost’, user=’root’, passwd=’root’, db=’python’) 中加一个属性：<br> 改为：<br>conn = MySQLdb.Connect(host=’localhost’, user=’root’, passwd=’root’, db=’python’,charset=’utf8’)<br>charset是要跟你数据库的编码一样，如果是数据库是gb2312 ,则写charset=’gb2312’。</p><p>下面贴一下常用的函数：<br>然后,这个连接对象也提供了对事务操作的支持,标准的方法<br>commit() 提交<br>rollback() 回滚</p><p>cursor用来执行命令的方法:<br>callproc(self, procname, args):用来执行存储过程,接收的参数为存储过程名和参数列表,返回值为受影响的行数<br>execute(self, query, args):执行单条sql语句,接收的参数为sql语句本身和使用的参数列表,返回值为受影响的行数<br>executemany(self, query, args):执行单挑sql语句,但是重复执行参数列表里的参数,返回值为受影响的行数<br>nextset(self):移动到下一个结果集</p><p>cursor用来接收返回值的方法:<br>fetchall(self):接收全部的返回结果行.<br>fetchmany(self, size=None):接收size条返回结果行.如果size的值大于返回的结果行的数量,则会返回cursor.arraysize条数据.<br>fetchone(self):返回一条结果行.<br>scroll(self, value, mode=’relative’):移动指针到某一行.如果mode=’relative’,则表示从当前所在行移动value条,如果 mode=’absolute’,则表示从结果集的第一行移动value条.</p><p>参考资料：<br>MySQLdb’s user guide<br>package MySQLdb</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="微观"><a href="#微观" class="headerlink" title="微观"></a>微观</h1><h3 id="衣"><a href="#衣" class="headerlink" title="衣"></a>衣</h3><h3 id="食"><a href="#食" class="headerlink" title="食"></a>食</h3><h3 id="住"><a href="#住" class="headerlink" title="住"></a>住</h3><h3 id="行"><a href="#行" class="headerlink" title="行"></a>行</h3><h3 id="医疗"><a href="#医疗" class="headerlink" title="医疗"></a>医疗</h3><h3 id="教育"><a href="#教育" class="headerlink" title="教育"></a>教育</h3><h1 id="宏观"><a href="#宏观" class="headerlink" title="宏观"></a>宏观</h1><h3 id="军工"><a href="#军工" class="headerlink" title="军工"></a>军工</h3><p>金融</p>]]></content>
     
-    <summary type="html">
     
       
       
-        &lt;p&gt;“ Don’t aim for success if you really want it. Just stick to what you love and believe in,and it will come naturally. ”&lt;br&gt;少一些功利主义的追求，多一些
+    <summary type="html">&lt;h1 id=&quot;微观&quot;&gt;&lt;a href=&quot;#微观&quot; class=&quot;headerlink&quot; title=&quot;微观&quot;&gt;&lt;/a&gt;微观&lt;/h1&gt;&lt;h3 id=&quot;衣&quot;&gt;&lt;a href=&quot;#衣&quot; class=&quot;headerlink&quot; title=&quot;衣&quot;&gt;&lt;/a&gt;衣&lt;/h3&gt;&lt;h3 id=&quot;食&quot;</summary>
       
     
-    </summary>
     
     
     
   </entry>
   
   <entry>
-    <title>02_全栈笔记/Java Web 学习笔记/【Java Web】Html &amp; CSS</title>
+    <title></title>
+    <link href="http://wusuiwei.github.io/2021/09/09/06_%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/%E5%88%9B%E4%B8%9A%E6%83%B3%E6%B3%95%E6%80%BB%E7%BB%93/"/>
+    <id>http://wusuiwei.github.io/2021/09/09/06_%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/%E5%88%9B%E4%B8%9A%E6%83%B3%E6%B3%95%E6%80%BB%E7%BB%93/</id>
+    <published>2021-09-09T04:44:46.661Z</published>
+    <updated>2021-09-09T04:44:46.661Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://wusuiwei.github.io/2021/09/09/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/CICD%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Jenkins%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
+    <id>http://wusuiwei.github.io/2021/09/09/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/CICD%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Jenkins%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</id>
+    <published>2021-09-09T04:44:46.642Z</published>
+    <updated>2021-09-09T04:44:46.642Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【Linux】安装与配置</title>
+    <link href="http://wusuiwei.github.io/2021/06/30/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
+    <id>http://wusuiwei.github.io/2021/06/30/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</id>
+    <published>2021-06-29T16:00:00.000Z</published>
+    <updated>2021-09-09T04:44:46.646Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p><strong>系统版本：CentOS 7</strong></p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;系统版本：CentOS 7&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Linux" scheme="http://wusuiwei.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="http://wusuiwei.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Kubernetes 概述</title>
+    <link href="http://wusuiwei.github.io/2021/06/21/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Kubernetes%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Kubernetes%20%E6%A6%82%E8%BF%B0/"/>
+    <id>http://wusuiwei.github.io/2021/06/21/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Kubernetes%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Kubernetes%20%E6%A6%82%E8%BF%B0/</id>
+    <published>2021-06-20T16:00:00.000Z</published>
+    <updated>2021-09-09T04:44:46.645Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="kubernetes" scheme="http://wusuiwei.github.io/categories/kubernetes/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【JMeter】JMeter 学习总结</title>
+    <link href="http://wusuiwei.github.io/2021/06/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91Jmeter%20%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    <id>http://wusuiwei.github.io/2021/06/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91Jmeter%20%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</id>
+    <published>2021-06-08T02:06:04.000Z</published>
+    <updated>2021-09-09T04:44:46.644Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><span id="more"></span><h3 id="Linux下安装-JMeter"><a href="#Linux下安装-JMeter" class="headerlink" title="Linux下安装 JMeter"></a>Linux下安装 JMeter</h3><p>下载：</p><p>Swagger </p>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="全栈笔记" scheme="http://wusuiwei.github.io/categories/%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="JMeter" scheme="http://wusuiwei.github.io/tags/JMeter/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack 学习笔记</title>
+    <link href="http://wusuiwei.github.io/2021/05/31/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/React%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/webpack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://wusuiwei.github.io/2021/05/31/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/React%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/webpack%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2021-05-31T06:06:04.000Z</published>
+    <updated>2021-09-09T04:44:46.652Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="React" scheme="http://wusuiwei.github.io/categories/React/"/>
+    
+    
+    <category term="webpack" scheme="http://wusuiwei.github.io/tags/webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://wusuiwei.github.io/2021/05/28/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/React%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/react%20%E7%AE%80%E4%BB%8B/"/>
+    <id>http://wusuiwei.github.io/2021/05/28/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/React%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/react%20%E7%AE%80%E4%BB%8B/</id>
+    <published>2021-05-28T13:27:42.498Z</published>
+    <updated>2021-05-28T14:54:59.580Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【PostgreSQL】概述</title>
+    <link href="http://wusuiwei.github.io/2021/04/20/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/PostgreSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/PostgreSQL%20%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+    <id>http://wusuiwei.github.io/2021/04/20/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/PostgreSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/PostgreSQL%20%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</id>
+    <published>2021-04-20T03:32:04.000Z</published>
+    <updated>2021-09-09T04:44:46.647Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="PostgreSQL" scheme="http://wusuiwei.github.io/categories/PostgreSQL/"/>
+    
+    
+    <category term="PostgreSQL" scheme="http://wusuiwei.github.io/tags/PostgreSQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【PostgreSQL】概述</title>
+    <link href="http://wusuiwei.github.io/2021/04/20/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/PostgreSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90PostgreSQL%E3%80%91SQL%E8%AF%AD%E6%B3%95/"/>
+    <id>http://wusuiwei.github.io/2021/04/20/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/PostgreSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90PostgreSQL%E3%80%91SQL%E8%AF%AD%E6%B3%95/</id>
+    <published>2021-04-20T03:32:04.000Z</published>
+    <updated>2021-09-09T04:44:46.648Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p><strong>Nacos</strong> 英文全称 <strong>Dynamic Naming and Configuration Service</strong>。</p><p><strong>Nacos</strong>就是 <strong>配置中心(Config)</strong> <strong>+</strong> **注册中心(Eureka)**。</p><p><strong>官方地址：<a href="https://nacos.io/">https://nacos.io/</a></strong></p><p><strong>安装环境：CentOS 7 Docker v19.03</strong></p><p><strong>安装版本：Nacos 1.3.0</strong></p><span id="more"></span><hr>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nacos&lt;/strong&gt; 英文全称 &lt;strong&gt;Dynamic Naming and Configuration Service&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nacos&lt;/strong&gt;就是 &lt;strong&gt;配置中心(Config)&lt;/strong&gt; &lt;strong&gt;+&lt;/strong&gt; **注册中心(Eureka)**。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官方地址：&lt;a href=&quot;https://nacos.io/&quot;&gt;https://nacos.io/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安装环境：CentOS 7 Docker v19.03&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安装版本：Nacos 1.3.0&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="PostgreSQL" scheme="http://wusuiwei.github.io/categories/PostgreSQL/"/>
+    
+    
+    <category term="PostgreSQL" scheme="http://wusuiwei.github.io/tags/PostgreSQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【PostgreSQL】概述</title>
+    <link href="http://wusuiwei.github.io/2021/04/20/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/PostgreSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90PostgreSQL%E3%80%91%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/"/>
+    <id>http://wusuiwei.github.io/2021/04/20/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/PostgreSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90PostgreSQL%E3%80%91%E5%A4%87%E4%BB%BD%E4%B8%8E%E6%81%A2%E5%A4%8D/</id>
+    <published>2021-04-20T03:32:04.000Z</published>
+    <updated>2021-09-09T04:44:46.649Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p><strong>Nacos</strong> 英文全称 <strong>Dynamic Naming and Configuration Service</strong>。</p><p><strong>Nacos</strong>就是 <strong>配置中心(Config)</strong> <strong>+</strong> **注册中心(Eureka)**。</p><p><strong>官方地址：<a href="https://nacos.io/">https://nacos.io/</a></strong></p><p><strong>安装环境：CentOS 7 Docker v19.03</strong></p><p><strong>安装版本：Nacos 1.3.0</strong></p><span id="more"></span><hr>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nacos&lt;/strong&gt; 英文全称 &lt;strong&gt;Dynamic Naming and Configuration Service&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nacos&lt;/strong&gt;就是 &lt;strong&gt;配置中心(Config)&lt;/strong&gt; &lt;strong&gt;+&lt;/strong&gt; **注册中心(Eureka)**。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官方地址：&lt;a href=&quot;https://nacos.io/&quot;&gt;https://nacos.io/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安装环境：CentOS 7 Docker v19.03&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安装版本：Nacos 1.3.0&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="PostgreSQL" scheme="http://wusuiwei.github.io/categories/PostgreSQL/"/>
+    
+    
+    <category term="PostgreSQL" scheme="http://wusuiwei.github.io/tags/PostgreSQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【PostgreSQL】数据库角色</title>
+    <link href="http://wusuiwei.github.io/2021/04/20/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/PostgreSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90PostgreSQL%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%92%E8%89%B2/"/>
+    <id>http://wusuiwei.github.io/2021/04/20/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/PostgreSQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90PostgreSQL%E3%80%91%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A7%92%E8%89%B2/</id>
+    <published>2021-04-20T03:32:04.000Z</published>
+    <updated>2021-09-09T04:44:46.651Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p><strong>Nacos</strong> 英文全称 <strong>Dynamic Naming and Configuration Service</strong>。</p><p><strong>Nacos</strong>就是 <strong>配置中心(Config)</strong> <strong>+</strong> **注册中心(Eureka)**。</p><p><strong>官方地址：<a href="https://nacos.io/">https://nacos.io/</a></strong></p><p><strong>安装环境：CentOS 7 Docker v19.03</strong></p><p><strong>安装版本：Nacos 1.3.0</strong></p><span id="more"></span><hr>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nacos&lt;/strong&gt; 英文全称 &lt;strong&gt;Dynamic Naming and Configuration Service&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nacos&lt;/strong&gt;就是 &lt;strong&gt;配置中心(Config)&lt;/strong&gt; &lt;strong&gt;+&lt;/strong&gt; **注册中心(Eureka)**。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;官方地址：&lt;a href=&quot;https://nacos.io/&quot;&gt;https://nacos.io/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安装环境：CentOS 7 Docker v19.03&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;安装版本：Nacos 1.3.0&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="PostgreSQL" scheme="http://wusuiwei.github.io/categories/PostgreSQL/"/>
+    
+    
+    <category term="PostgreSQL" scheme="http://wusuiwei.github.io/tags/PostgreSQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://wusuiwei.github.io/2021/04/04/07_%E7%90%86%E8%B4%A2%E7%AC%94%E8%AE%B0/K%E7%BA%BF/"/>
+    <id>http://wusuiwei.github.io/2021/04/04/07_%E7%90%86%E8%B4%A2%E7%AC%94%E8%AE%B0/K%E7%BA%BF/</id>
+    <published>2021-04-04T14:06:44.495Z</published>
+    <updated>2021-04-04T14:06:44.495Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://wusuiwei.github.io/2021/03/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://wusuiwei.github.io/2021/03/07/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%90%86%E8%AE%BA/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E8%AE%BE%E8%AE%A1/</id>
+    <published>2021-03-07T14:03:45.134Z</published>
+    <updated>2021-03-07T14:03:45.134Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>软件测试知识架构</title>
+    <link href="http://wusuiwei.github.io/2021/02/22/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9F%A5%E8%AF%86%E6%9E%B6%E6%9E%84/"/>
+    <id>http://wusuiwei.github.io/2021/02/22/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%E7%9F%A5%E8%AF%86%E6%9E%B6%E6%9E%84/</id>
+    <published>2021-02-22T02:54:00.000Z</published>
+    <updated>2021-02-22T03:08:31.149Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p>​    经过多年软件测试工作积累，逐步对【软件测试】形成了自我的知识架构体系，在此做一下总结和记录。</p><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;​    经过多年软件测试工作积累，逐步对【软件测试】形成了自我的知识架构体系，在此做一下总结和记录。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="知识架构" scheme="http://wusuiwei.github.io/categories/%E7%9F%A5%E8%AF%86%E6%9E%B6%E6%9E%84/"/>
+    
+    
+    <category term="软件测试" scheme="http://wusuiwei.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
     <link href="http://wusuiwei.github.io/2021/01/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20Web%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20Web%E3%80%91Html%20&amp;%20CSS/"/>
-    <id>http://wusuiwei.github.io/2021/01/29/02_全栈笔记/Java Web 学习笔记/【Java Web】Html &amp; CSS/</id>
+    <id>http://wusuiwei.github.io/2021/01/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20Web%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Java%20Web%E3%80%91Html%20&amp;%20CSS/</id>
     <published>2021-01-28T16:31:19.500Z</published>
     <updated>2021-01-28T16:31:19.500Z</updated>
     
-    <summary type="html">
     
-    </summary>
     
     
     
@@ -56,327 +339,90 @@
   <entry>
     <title>Ubuntu-20.04.1虚拟机安装与配置</title>
     <link href="http://wusuiwei.github.io/2021/01/27/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Ubuntu%E3%80%91MySQL%208%20%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/"/>
-    <id>http://wusuiwei.github.io/2021/01/27/01_软件/Linux 软件/【Ubuntu】MySQL 8 安装与配置/</id>
+    <id>http://wusuiwei.github.io/2021/01/27/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90Ubuntu%E3%80%91MySQL%208%20%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/</id>
     <published>2021-01-27T07:31:09.000Z</published>
     <updated>2021-01-28T15:52:49.778Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p><strong>安装环境：Ubuntu 20.04.1</strong></p><p><strong>安装版本：MySQL 8</strong></p><a id="more"></a><h3 id="MySQL-8-安装"><a href="#MySQL-8-安装" class="headerlink" title="MySQL  8 安装"></a>MySQL  8 安装</h3><p>下载MySQL配置文件，网址：<a href="https://dev.mysql.com/downloads/repo/apt/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/repo/apt/</a> 打开如下图：</p><p><img src="/images/20181106001648309.png" alt="img"></p><p>​     打开后将下拉到网页底部点击Download按钮下载deb文件，打开如下图：</p><p><img src="/images/20181106001652753.png" alt="img"></p><p>​     进入下载页面，选择<strong><em>\</em>No thanks, just start my download**</strong>，操作如下图：</p><p><img src="/images/20181106001658455.png" alt="img"></p><p>​     进入下载文件目录，打开终端，执行命令：<strong><em>\</em>sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb**</strong></p><p><img src="/images/2018110600170298.png" alt="img"></p><p>​     输入密码继续安装</p><p><img src="/images/20181106001706197.png" alt="img"></p><p>​     选择<strong><em>\</em>MySQL-8.0**</strong> 点击<strong><em>\</em>OK**</strong>继续安装</p><p><img src="/images/20181106001711769.png" alt="img"></p><p>​     执行更新命令：<strong><em>\</em>sudo apt update**</strong></p><p><img src="/images/20181106001716750.png" alt="img"></p><p>  安装<strong><em>\</em>MySQL 8.0**</strong>，执行命令：<strong><em>\</em>sudo apt install mysql-server**</strong></p><p><img src="/images/20181106001721694.png" alt="img"></p><p>​     输入Y同意继续安装:</p><p><img src="/images/20181106001726135.png" alt="img"></p><p>  设置<strong><em>\</em>root**</strong>密码</p><p><img src="/images/20181106001729990.png" alt="img"></p><p>  确认密码</p><p><img src="/images/20181106001738156.png" alt="img"></p><p>  阅读配置MySQ社区服务器，翻到末尾点使用Tab键选中<ok>按钮，击Enter键</p><p><img src="/images/20181106001750332.png" alt="img"></p><p>  加密方式选择<strong><em>\</em>Retain MySQL 5.x Compatibility**</strong><br><img src="/images/20181106001755185.png" alt="img"></p><p>  登录MySQL ：mysql –u root –p</p><p><img src="/images/20181106001759489.png" alt="img"></p><h3 id="开启远程访问"><a href="#开启远程访问" class="headerlink" title="开启远程访问"></a><strong>开启远程访问</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">use mysql; #选择数据库</span><br><span class="line">update user set host = ‘%’ where user =’root’; #更新host值</span><br><span class="line">flush privileges; #刷新权限</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p><strong>安装环境：Ubuntu 20.04.1</strong></p><p><strong>安装版本：MySQL 8</strong></p><span id="more"></span><h3 id="MySQL-8-安装"><a href="#MySQL-8-安装" class="headerlink" title="MySQL  8 安装"></a>MySQL  8 安装</h3><p>下载MySQL配置文件，网址：<a href="https://dev.mysql.com/downloads/repo/apt/">https://dev.mysql.com/downloads/repo/apt/</a> 打开如下图：</p><p><img src="/images/20181106001648309.png" alt="img"></p><p>​     打开后将下拉到网页底部点击Download按钮下载deb文件，打开如下图：</p><p><img src="/images/20181106001652753.png" alt="img"></p><p>​     进入下载页面，选择****No thanks, just start my download****，操作如下图：</p><p><img src="/images/20181106001658455.png" alt="img"></p><p>​     进入下载文件目录，打开终端，执行命令：<em><strong>*sudo dpkg -i mysql-apt-config_0.8.10-1_all.deb*</strong></em></p><p><img src="/images/2018110600170298.png" alt="img"></p><p>​     输入密码继续安装</p><p><img src="/images/20181106001706197.png" alt="img"></p><p>​     选择<em><strong>*MySQL-8.0*</strong></em> 点击****OK****继续安装</p><p><img src="/images/20181106001711769.png" alt="img"></p><p>​     执行更新命令：<em><strong>*sudo apt update*</strong></em></p><p><img src="/images/20181106001716750.png" alt="img"></p><p>  安装<em><strong>*MySQL 8.0*<em><strong>，执行命令：</strong></em>*sudo apt install mysql-server*</strong></em></p><p><img src="/images/20181106001721694.png" alt="img"></p><p>​     输入Y同意继续安装:</p><p><img src="/images/20181106001726135.png" alt="img"></p><p>  设置****root****密码</p><p><img src="/images/20181106001729990.png" alt="img"></p><p>  确认密码</p><p><img src="/images/20181106001738156.png" alt="img"></p><p>  阅读配置MySQ社区服务器，翻到末尾点使用Tab键选中<ok>按钮，击Enter键</p><p><img src="/images/20181106001750332.png" alt="img"></p><p>  加密方式选择<em><strong>*Retain MySQL 5.x Compatibility*</strong></em><br><img src="/images/20181106001755185.png" alt="img"></p><p>  登录MySQL ：mysql –u root –p</p><p><img src="/images/20181106001759489.png" alt="img"></p><h3 id="开启远程访问"><a href="#开启远程访问" class="headerlink" title="开启远程访问"></a><strong>开启远程访问</strong></h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">use mysql; #选择数据库</span><br><span class="line">update user set host = ‘%’ where user =’root’; #更新host值</span><br><span class="line">flush privileges; #刷新权限</span><br></pre></td></tr></table></figure>]]></content>
     
-    <summary type="html">
     
-      &lt;blockquote&gt;
+    <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;安装环境：Ubuntu 20.04.1&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;安装版本：MySQL 8&lt;/strong&gt;&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;&lt;strong&gt;安装版本：MySQL 8&lt;/strong&gt;&lt;/p&gt;</summary>
     
     
-      <category term="Linux" scheme="http://wusuiwei.github.io/categories/Linux/"/>
+    
+    <category term="Linux" scheme="http://wusuiwei.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://wusuiwei.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://wusuiwei.github.io/tags/Linux/"/>
     
-      <category term="MySQL" scheme="http://wusuiwei.github.io/tags/MySQL/"/>
+    <category term="MySQL" scheme="http://wusuiwei.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
-    <title>Ubuntu-20.04.1虚拟机安装与配置</title>
+    <title>【Windows】VMware Workstation 16 Pro 使用记录</title>
     <link href="http://wusuiwei.github.io/2021/01/27/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/%E3%80%90Windows%E3%80%91VMware%20Workstation%2016%20Pro%20%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
-    <id>http://wusuiwei.github.io/2021/01/27/01_软件/Windows 软件/【Windows】VMware Workstation 16 Pro 使用记录/</id>
+    <id>http://wusuiwei.github.io/2021/01/27/01_%E8%BD%AF%E4%BB%B6/Windows%20%E8%BD%AF%E4%BB%B6/%E3%80%90Windows%E3%80%91VMware%20Workstation%2016%20Pro%20%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</id>
     <published>2021-01-27T07:31:09.000Z</published>
-    <updated>2021-01-28T16:49:04.144Z</updated>
+    <updated>2021-02-20T02:19:26.776Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p><strong>VMware Workstation 16 Pro 及激活码 下载链接：</strong><a href="https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg" target="_blank" rel="noopener">https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg</a> 提取码：<code>ve3r</code>（<strong>推荐<a href="https://www.vmware.com/cn/products/workstation-pro.html" target="_blank" rel="noopener">官网</a>购买</strong>）</p><p><strong>VMware Workstation Pro 文档：</strong><a href="https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html" target="_blank" rel="noopener">https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html</a></p><a id="more"></a><h3 id="共享文件夹"><a href="#共享文件夹" class="headerlink" title="共享文件夹"></a>共享文件夹</h3><h4 id="启用共享文件夹"><a href="#启用共享文件夹" class="headerlink" title="启用共享文件夹"></a>启用共享文件夹</h4><ol><li>选择该虚拟机，然后选择<strong>虚拟机</strong> &gt; <strong>设置</strong>。</li><li>在<strong>选项</strong>选项卡中，选择<strong>共享文件夹</strong>，<strong>文件夹共享</strong> 选择 <strong>总是启用</strong>，添加 <strong>文件夹</strong> 并保存即可。</li></ol><img src="/images/image-20210129004106967.png" alt="image-20210129004106967" style="zoom: 67%;" /><h4 id="Linux-挂载共享文件夹"><a href="#Linux-挂载共享文件夹" class="headerlink" title="Linux 挂载共享文件夹"></a>Linux 挂载共享文件夹</h4><table><thead><tr><th align="left">4.0 之前的 Linux 内核</th><th align="left">4.0 及更高版本的 Linux 内核</th><th align="left">说明</th></tr></thead><tbody><tr><td align="left"><code>mount -t vmhgfs .host:/ /home/user1/shares</code></td><td align="left"><code>/usr/bin/vmhgfs-fuse .host:/ /home/user1/shares -o subtype=vmhgfs-fuse,allow_other</code></td><td align="left">将所有共享装载到 /home/user1/shares</td></tr><tr><td align="left"><code>mount -t vmhgfs .host:/foo /tmp/foo</code></td><td align="left"><code>/usr/bin/vmhgfs-fuse .host:/foo /tmp/foo -o subtype=vmhgfs-fuse,allow_other</code></td><td align="left">将名为 <code>foo</code> 的共享装载到 <code>/tmp/foo</code></td></tr><tr><td align="left"><code>mount -t vmhgfs .host:/foo/bar /var/lib/bar</code></td><td align="left"><code>/usr/bin/vmhgfs-fuse .host:/foo/bar /var/lib/bar -o subtype=vmhgfs-fuse,allow_other</code></td><td align="left">将共享 <code>foo</code> 中的子目录 <code>bar</code> 装载到 /var/lib/bar</td></tr></tbody></table><h4 id="Linux-移除共享文件夹"><a href="#Linux-移除共享文件夹" class="headerlink" title="Linux 移除共享文件夹"></a>Linux 移除共享文件夹</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">umount /home/user1/shares</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p><strong>VMware Workstation 16 Pro 及激活码 下载链接：</strong><a href="https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg">https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg</a> 提取码：<code>ve3r </code>（<strong>推荐<a href="https://www.vmware.com/cn/products/workstation-pro.html">官网</a>购买</strong>）</p><p><strong>VMware Workstation Pro 文档：</strong><a href="https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html">https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html</a></p><span id="more"></span><h3 id="Linux-安装-vmtools"><a href="#Linux-安装-vmtools" class="headerlink" title="Linux 安装 vmtools"></a>Linux 安装 vmtools</h3><ol><li>装载VMware Tools 虚拟磁盘：<strong>虚拟机</strong> &gt; <strong>安装（或升级）VMware Tools</strong></li><li>挂载VMware Tools 虚拟 CD-ROM 映像（需创建装载点：<code>mkdir /mnt/cdrom</code>）:<code>mount /dev/cdrom /mnt/cdrom</code></li><li>转到工作目录：<code>cd /tmp</code></li><li>解压缩安装程序：<code>tar zxpf /mnt/cdrom/VMwareTools-x.x.x-yyyy.tar.gz</code></li><li>以root身份安装VMware Tools：</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd vmware-tools-distrib</span><br><span class="line">sudo ./vmware-install.pl</span><br></pre></td></tr></table></figure><ol start="6"><li>卸载 CD-ROM 映像：<code>umount /dev/cdrom </code></li></ol><hr><p>安装过程中遇到一些问题：</p><ol><li><p>报错内容：<code>bash: ./vmware-install.pl: /usr/bin/perl: bad interpreter: ......</code></p><p>解决方案：<code>yum groupinstall &quot;Perl Support&quot;</code></p></li><li><p>报错内容：<code>Searching for GCC...  The path &quot;&quot; is not valid path to the gcc binary.</code></p><p>解决方案：<code>yum -y install gcc</code></p></li><li><p>报错内容：<code>Searching for GCC...  The path &quot;&quot; is not valid path to the gcc binary.</code></p><p>解决方案：<code>yum -y install kernel-headers kernel-devel</code></p></li></ol><h3 id="共享文件夹"><a href="#共享文件夹" class="headerlink" title="共享文件夹"></a>共享文件夹</h3><h4 id="启用共享文件夹"><a href="#启用共享文件夹" class="headerlink" title="启用共享文件夹"></a>启用共享文件夹</h4><ol><li>选择该虚拟机，然后选择<strong>虚拟机</strong> &gt; <strong>设置</strong>。</li><li>在<strong>选项</strong>选项卡中，选择<strong>共享文件夹</strong>，<strong>文件夹共享</strong> 选择 <strong>总是启用</strong>，添加 <strong>文件夹</strong> 并保存即可。</li></ol><img src="/images/image-20210129004106967.png" alt="image-20210129004106967" style="zoom: 67%;" /><h4 id="Linux-挂载共享文件夹"><a href="#Linux-挂载共享文件夹" class="headerlink" title="Linux 挂载共享文件夹"></a>Linux 挂载共享文件夹</h4><table><thead><tr><th align="left">4.0 之前的 Linux 内核</th><th align="left">4.0 及更高版本的 Linux 内核</th><th align="left">说明</th></tr></thead><tbody><tr><td align="left"><code>mount -t vmhgfs .host:/ /home/user1/shares</code></td><td align="left"><code>/usr/bin/vmhgfs-fuse .host:/ /home/user1/shares -o subtype=vmhgfs-fuse,allow_other</code></td><td align="left">将所有共享装载到 /home/user1/shares</td></tr><tr><td align="left"><code>mount -t vmhgfs .host:/foo /tmp/foo</code></td><td align="left"><code>/usr/bin/vmhgfs-fuse .host:/foo /tmp/foo -o subtype=vmhgfs-fuse,allow_other</code></td><td align="left">将名为 <code>foo</code> 的共享装载到 <code>/tmp/foo</code></td></tr><tr><td align="left"><code>mount -t vmhgfs .host:/foo/bar /var/lib/bar</code></td><td align="left"><code>/usr/bin/vmhgfs-fuse .host:/foo/bar /var/lib/bar -o subtype=vmhgfs-fuse,allow_other</code></td><td align="left">将共享 <code>foo</code> 中的子目录 <code>bar</code> 装载到 /var/lib/bar</td></tr></tbody></table><h4 id="Linux-移除共享文件夹"><a href="#Linux-移除共享文件夹" class="headerlink" title="Linux 移除共享文件夹"></a>Linux 移除共享文件夹</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">umount /home/user1/shares</span><br></pre></td></tr></table></figure><h3 id="Windows下VMware虚拟机开机自启"><a href="#Windows下VMware虚拟机开机自启" class="headerlink" title="Windows下VMware虚拟机开机自启"></a>Windows下VMware虚拟机开机自启</h3><ol><li>创建自启动脚本文件<code>startup.bat</code></li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">ECHO &quot;start centos7&quot;</span><br><span class="line">&quot;C:\software\VMware Workstation Pro\vmrun.exe&quot; start &quot;E:\VM\centos7\CentOS 7 64 位.vmx&quot; nogui</span><br><span class="line">::pause</span><br></pre></td></tr></table></figure><ol start="2"><li>打开组策略（运行-&gt;执行<code>gpedit.msc</code>)，选择<code>计算机配置-&gt;Windows配置-脚本(启动/关机)</code>,修改<strong>启动</strong>属性，添加脚本；</li></ol><h3 id="Windows下VMware虚拟机关机自动关闭"><a href="#Windows下VMware虚拟机关机自动关闭" class="headerlink" title="Windows下VMware虚拟机关机自动关闭"></a>Windows下VMware虚拟机关机自动关闭</h3><ol><li>虚拟机完成 vmware tools 安装</li><li>创建自动关闭脚本<code>shutdown.bat</code></li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@echo off</span><br><span class="line">ECHO &quot;stop centos7&quot;</span><br><span class="line">&quot;C:\software\VMware Workstation Pro\vmrun.exe&quot; -gu root -gp root runProgramInGuest &quot;E:\VM\centos7\CentOS 7 64 位.vmx&quot; shutdown -h now</span><br></pre></td></tr></table></figure><ol start="3"><li>打开组策略（运行-&gt;执行<code>gpedit.msc</code>)，选择<code>计算机配置-&gt;Windows配置-脚本(启动/关机)</code>,修改<strong>关机</strong>属性，添加脚本；</li></ol>]]></content>
     
-    <summary type="html">
     
-      &lt;blockquote&gt;
+    <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;VMware Workstation 16 Pro 及激活码 下载链接：&lt;/strong&gt;&lt;a href=&quot;https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg&lt;/a&gt; 提取码：&lt;code&gt;ve3r&lt;/code&gt;（&lt;strong&gt;推荐&lt;a href=&quot;https://www.vmware.com/cn/products/workstation-pro.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;官网&lt;/a&gt;购买&lt;/strong&gt;）&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;VMware Workstation Pro 文档：&lt;/strong&gt;&lt;a href=&quot;https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
+&lt;p&gt;&lt;strong&gt;VMware Workstation 16 Pro 及激活码 下载链接：&lt;/strong&gt;&lt;a href=&quot;https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg&quot;&gt;https://pan.baidu.com/s/1wuBgmPe5WPJ7xCZH1wHKzg&lt;/a&gt; 提取码：&lt;code&gt;ve3r &lt;/code&gt;（&lt;strong&gt;推荐&lt;a href=&quot;https://www.vmware.com/cn/products/workstation-pro.html&quot;&gt;官网&lt;/a&gt;购买&lt;/strong&gt;）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;VMware Workstation Pro 文档：&lt;/strong&gt;&lt;a href=&quot;https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html&quot;&gt;https://docs.vmware.com/cn/VMware-Workstation-Pro/index.html&lt;/a&gt;&lt;/p&gt;</summary>
     
     
-      <category term="Linux" scheme="http://wusuiwei.github.io/categories/Linux/"/>
+    
+    <category term="Linux" scheme="http://wusuiwei.github.io/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="http://wusuiwei.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://wusuiwei.github.io/tags/Linux/"/>
     
-      <category term="MySQL" scheme="http://wusuiwei.github.io/tags/MySQL/"/>
+    <category term="MySQL" scheme="http://wusuiwei.github.io/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Spring Boot 集成 Springfox-Swagger2</title>
     <link href="http://wusuiwei.github.io/2021/01/19/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Swagger2%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringBoot%E9%9B%86%E6%88%90Springfox-Swagger2/"/>
-    <id>http://wusuiwei.github.io/2021/01/19/02_全栈笔记/Swagger2 学习笔记/SpringBoot集成Springfox-Swagger2/</id>
+    <id>http://wusuiwei.github.io/2021/01/19/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Swagger2%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/SpringBoot%E9%9B%86%E6%88%90Springfox-Swagger2/</id>
     <published>2021-01-19T12:06:04.000Z</published>
     <updated>2021-01-19T08:13:21.321Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><span id="more"></span>]]></content>
     
-    <summary type="html">
     
-      &lt;blockquote&gt;
+    <summary type="html">&lt;blockquote&gt;
 &lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
+&lt;/blockquote&gt;</summary>
     
     
-      <category term="全栈笔记" scheme="http://wusuiwei.github.io/categories/%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="全栈笔记" scheme="http://wusuiwei.github.io/categories/%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="Spring Boot" scheme="http://wusuiwei.github.io/tags/Spring-Boot/"/>
+    <category term="Spring Boot" scheme="http://wusuiwei.github.io/tags/Spring-Boot/"/>
     
-      <category term="Swagger2" scheme="http://wusuiwei.github.io/tags/Swagger2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Linux 学习笔记/【Linux】README</title>
-    <link href="http://wusuiwei.github.io/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91README/"/>
-    <id>http://wusuiwei.github.io/2020/10/26/02_全栈笔记/Linux 学习笔记/【Linux】README/</id>
-    <published>2020-10-26T14:32:06.966Z</published>
-    <updated>2020-10-26T14:32:06.966Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
+    <category term="Swagger2" scheme="http://wusuiwei.github.io/tags/Swagger2/"/>
     
   </entry>
   
   <entry>
-    <title>02_全栈笔记/Linux 学习笔记/【Linux】权限管理</title>
+    <title></title>
     <link href="http://wusuiwei.github.io/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/"/>
-    <id>http://wusuiwei.github.io/2020/10/26/02_全栈笔记/Linux 学习笔记/【Linux】权限管理/</id>
+    <id>http://wusuiwei.github.io/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86/</id>
     <published>2020-10-26T14:32:06.966Z</published>
     <updated>2020-10-26T14:32:06.966Z</updated>
     
-    <summary type="html">
     
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Linux 学习笔记/【Linux】用户和用户组管理</title>
-    <link href="http://wusuiwei.github.io/2020/10/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91%E7%94%A8%E6%88%B7%E5%92%8C%E7%94%A8%E6%88%B7%E7%BB%84%E7%AE%A1%E7%90%86/"/>
-    <id>http://wusuiwei.github.io/2020/10/26/02_全栈笔记/Linux 学习笔记/【Linux】用户和用户组管理/</id>
-    <published>2020-10-26T14:32:06.966Z</published>
-    <updated>2020-10-26T14:32:06.966Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>共享图书馆的畅想</title>
-    <link href="http://wusuiwei.github.io/2020/10/20/06_%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/%E5%85%B1%E4%BA%AB%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%9A%84%E7%95%85%E6%83%B3/"/>
-    <id>http://wusuiwei.github.io/2020/10/20/06_头脑风暴/共享图书馆的畅想/</id>
-    <published>2020-10-19T16:00:00.000Z</published>
-    <updated>2021-01-28T16:31:19.515Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><p>共享图书馆的想法源自四年前，当时在一家初创型科技公司任职，和同事闲聊时，提出了自己懵懂的想法。最近，一直有创业的想法，于是想起了四年前的这个 idea ，于是，动笔写下来。</p><a id="more"></a><p>首先，我们来盘算一下开一家普通传统书店，需要那些条件：</p><p>- </p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;共享图书馆的想法源自四年前，当时在一家初创型科技公司任职，和同事闲聊时，提出了自己懵懂的想法。最近，一直有创业的想法，于是想起了四年前的这个 idea ，于是，动笔写下来。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="头脑风暴" scheme="http://wusuiwei.github.io/categories/%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【XPath】XPath 用法整理</title>
-    <link href="http://wusuiwei.github.io/2020/09/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/XPath%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90XPath%E3%80%91XPath%20%E7%94%A8%E6%B3%95%E6%95%B4%E7%90%86/"/>
-    <id>http://wusuiwei.github.io/2020/09/07/02_全栈笔记/XPath 学习笔记/【XPath】XPath 用法整理/</id>
-    <published>2020-09-07T05:08:09.000Z</published>
-    <updated>2020-10-26T14:32:06.982Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>不积跬步，无以至千里；不积小流，无以成江海。</p></blockquote><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;不积跬步，无以至千里；不积小流，无以成江海。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="全栈笔记" scheme="http://wusuiwei.github.io/categories/%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="xpath" scheme="http://wusuiwei.github.io/tags/xpath/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Selenium 学习笔记/【Selenium】元素定位</title>
-    <link href="http://wusuiwei.github.io/2020/09/06/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Selenium%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Selenium%E3%80%91%E5%85%83%E7%B4%A0%E5%AE%9A%E4%BD%8D/"/>
-    <id>http://wusuiwei.github.io/2020/09/06/02_全栈笔记/Selenium 学习笔记/【Selenium】元素定位/</id>
-    <published>2020-09-06T07:09:49.218Z</published>
-    <updated>2020-09-06T07:09:49.218Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Java SE 学习笔记/Untitled</title>
-    <link href="http://wusuiwei.github.io/2020/09/06/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Untitled/"/>
-    <id>http://wusuiwei.github.io/2020/09/06/02_全栈笔记/Java SE 学习笔记/Untitled/</id>
-    <published>2020-09-06T07:09:49.207Z</published>
-    <updated>2020-09-06T07:09:49.207Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>03_编程思想/自动化测试/【AutoTester】测试框架搭建计划</title>
-    <link href="http://wusuiwei.github.io/2020/08/19/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90AutoTester%E3%80%91%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA%E8%AE%A1%E5%88%92/"/>
-    <id>http://wusuiwei.github.io/2020/08/19/03_编程思想/自动化测试/【AutoTester】测试框架搭建计划/</id>
-    <published>2020-08-19T15:54:56.205Z</published>
-    <updated>2020-08-19T15:54:56.205Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/JPA 学习笔记/【JPA】集成Spring</title>
-    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E9%9B%86%E6%88%90Spring/"/>
-    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】集成Spring/</id>
-    <published>2020-07-26T14:27:02.418Z</published>
-    <updated>2020-07-26T14:27:02.418Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/JPA 学习笔记/【JPA】主键生成策略</title>
-    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E4%B8%BB%E9%94%AE%E7%94%9F%E6%88%90%E7%AD%96%E7%95%A5/"/>
-    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】主键生成策略/</id>
-    <published>2020-07-26T14:25:27.158Z</published>
-    <updated>2020-07-26T14:25:47.689Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/JPA 学习笔记/【JPA】基本注解</title>
-    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E5%9F%BA%E6%9C%AC%E6%B3%A8%E8%A7%A3/"/>
-    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】基本注解/</id>
-    <published>2020-07-26T14:25:27.158Z</published>
-    <updated>2020-07-26T14:25:27.158Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一</title>
-    <link href="http://wusuiwei.github.io/2020/07/26/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/JPA%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90JPA%E3%80%91%E6%98%A0%E5%B0%84%E5%85%B3%E7%B3%BB-%E4%B8%80%E5%AF%B9%E4%B8%80/"/>
-    <id>http://wusuiwei.github.io/2020/07/26/02_全栈笔记/JPA 学习笔记/【JPA】映射关系-一对一/</id>
-    <published>2020-07-26T14:25:27.158Z</published>
-    <updated>2020-07-26T14:26:11.277Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Jmeter 学习笔记/【Jmeter】命令行运行</title>
-    <link href="http://wusuiwei.github.io/2020/07/08/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%BF%90%E8%A1%8C/"/>
-    <id>http://wusuiwei.github.io/2020/07/08/02_全栈笔记/Jmeter 学习笔记/【Jmeter】命令行运行/</id>
-    <published>2020-07-08T02:58:05.100Z</published>
-    <updated>2020-07-08T02:58:05.100Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>02_全栈笔记/Mockito 学习笔记/【Mockito】</title>
-    <link href="http://wusuiwei.github.io/2020/06/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Mockito%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Mockito%E3%80%91/"/>
-    <id>http://wusuiwei.github.io/2020/06/05/02_全栈笔记/Mockito 学习笔记/【Mockito】/</id>
-    <published>2020-06-05T03:54:08.356Z</published>
-    <updated>2020-06-05T03:54:08.356Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>06_头脑风暴/在线教育的遐想</title>
-    <link href="http://wusuiwei.github.io/2020/05/24/06_%E5%A4%B4%E8%84%91%E9%A3%8E%E6%9A%B4/%E5%9C%A8%E7%BA%BF%E6%95%99%E8%82%B2%E7%9A%84%E9%81%90%E6%83%B3/"/>
-    <id>http://wusuiwei.github.io/2020/05/24/06_头脑风暴/在线教育的遐想/</id>
-    <published>2020-05-24T14:28:44.566Z</published>
-    <updated>2020-05-24T14:28:44.566Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
     
     
     

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -52,14 +52,17 @@
 </script>
 
   <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。  最近项目中使用到了maven，需要在服务器端安装一个maven。">
-<meta name="keywords" content="Linux,Maven">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Linux】CentOS 8 下安装maven">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2018&#x2F;03&#x2F;03&#x2F;01_%E8%BD%AF%E4%BB%B6&#x2F;Linux%20%E8%BD%AF%E4%BB%B6&#x2F;%E3%80%90CentOS%208%E3%80%91Maven%20%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE&#x2F;index.html">
+<meta property="og:title" content="【CentOS 8】Maven 安装与配置">
+<meta property="og:url" content="http://wusuiwei.github.io/2018/03/03/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90CentOS%208%E3%80%91Maven%20%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。  最近项目中使用到了maven，需要在服务器端安装一个maven。">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-01-28T16:48:55.181Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-03-03T06:06:04.000Z">
+<meta property="article:modified_time" content="2021-01-28T17:19:10.299Z">
+<meta property="article:author" content="wusuiwei">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Maven">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://wusuiwei.github.io/2018/03/03/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90CentOS%208%E3%80%91Maven%20%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/">
@@ -76,7 +79,7 @@
   };
 </script>
 
-  <title>【Linux】CentOS 8 下安装maven | wusuiwei</title>
+  <title>【CentOS 8】Maven 安装与配置 | wusuiwei</title>
   
 
 
@@ -116,6 +119,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="wusuiwei" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -166,6 +170,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-finance">
+
+    <a href="/finance/" rel="section"><i class="fa fa-fw fa-line-chart"></i>理财</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -237,7 +246,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          【Linux】CentOS 8 下安装maven
+          【CentOS 8】Maven 安装与配置
         </h1>
 
         <div class="post-meta">
@@ -254,7 +263,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-29 00:48:55" itemprop="dateModified" datetime="2021-01-29T00:48:55+08:00">2021-01-29</time>
+                <time title="修改时间：2021-01-29 01:19:10" itemprop="dateModified" datetime="2021-01-29T01:19:10+08:00">2021-01-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -304,10 +313,10 @@
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
 <p>最近项目中使用到了maven，需要在服务器端安装一个maven。</p>
-<a id="more"></a>
+<span id="more"></span>
 
-<p>maven官网： <a href="http://maven.apache.org" target="_blank" rel="noopener">http://maven.apache.org</a></p>
-<p>下载地址：<a href="https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz" target="_blank" rel="noopener">https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</a></p>
+<p>maven官网： <a target="_blank" rel="noopener" href="http://maven.apache.org/">http://maven.apache.org</a></p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz">https://downloads.apache.org/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz</a></p>
 <p>安装步骤：</p>
 <ol>
 <li>下载</li>
@@ -322,7 +331,7 @@
 <ol start="3">
 <li>环境变量配置</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile </span><br></pre></td></tr></table></figure>
 
 <p>在文件后面添加一下信息：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export M2_HOME=/opt/apache-maven-3.6.1</span><br><span class="line">export PATH=$PATH:$M2_HOME/bin</span><br></pre></td></tr></table></figure>
@@ -338,7 +347,7 @@
 <ol start="5">
 <li>配置文件详解</li>
 </ol>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag"><span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 存放本地仓库的地方 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>/opt/apache-maven-3.6.3/repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br><span class="line">  	</span><br><span class="line">	<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>spring<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/spring<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云中央仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/central<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云apache仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/apache<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 一些自定义配置 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">profiles</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>myProfile<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 激活这个配置 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">activeByDefault</span>&gt;</span>true<span class="tag">&lt;/<span class="name">activeByDefault</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">jdk</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">activation</span>&gt;</span></span><br><span class="line"></span><br><span class="line">			<span class="comment">&lt;!-- 全局属性配置，让所有 maven 项目新建时默认都是 java8、UTF-8 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">jdk.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk.version</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag"><span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 存放本地仓库的地方 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>/opt/apache-maven-3.6.3/repository<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></span><br><span class="line">  	</span><br><span class="line">	<span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>spring<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/spring<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云中央仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/central<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云公共仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/public<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyunmaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>*<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">name</span>&gt;</span>阿里云apache仓库<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">url</span>&gt;</span>https://maven.aliyun.com/repository/apache<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line">	</span><br><span class="line">    <span class="comment">&lt;!-- 一些自定义配置 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">profiles</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">profile</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>myProfile<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 激活这个配置 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">activation</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">activeByDefault</span>&gt;</span>true<span class="tag">&lt;/<span class="name">activeByDefault</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">jdk</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">activation</span>&gt;</span></span><br><span class="line"></span><br><span class="line">			<span class="comment">&lt;!-- 全局属性配置，让所有 maven 项目新建时默认都是 java8、UTF-8 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">jdk.version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">jdk.version</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">profile</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">profiles</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
     </div>
 
@@ -380,8 +389,8 @@
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="MySQL学习总结">
-                  MySQL学习总结 <i class="fa fa-chevron-right"></i>
+                <a href="/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%20SE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="【Java】Java核心技术">
+                  【Java】Java核心技术 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -437,20 +446,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">138</span>
+          <span class="site-state-item-count">159</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">92</span>
+        <span class="site-state-item-count">113</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -605,9 +614,17 @@
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
@@ -616,7 +633,9 @@
 
 
 
-  <script src="/js/local-search.js"></script>
+  
+<script src="/js/local-search.js"></script>
+
 
 
 

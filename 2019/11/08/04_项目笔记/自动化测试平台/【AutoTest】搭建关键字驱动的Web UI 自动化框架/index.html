@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -52,17 +52,21 @@
 </script>
 
   <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。  本文将详细介绍如何使用autotest-spring-boot-starter快速搭建关键字驱动的Web UI 自动化测试框架。  使用 IDEA 搭建Spring Boot项目 引入maven依赖 默认提供的关键字列表 自定义关键字 启动项目">
-<meta name="keywords" content="SpringBoot,hydrogen,jwt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【AutoTest】搭建关键字驱动的Web UI 自动化框架">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2019&#x2F;11&#x2F;08&#x2F;04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0&#x2F;%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0&#x2F;%E3%80%90AutoTest%E3%80%91%E6%90%AD%E5%BB%BA%E5%85%B3%E9%94%AE%E5%AD%97%E9%A9%B1%E5%8A%A8%E7%9A%84Web%20UI%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6&#x2F;index.html">
+<meta property="og:url" content="http://wusuiwei.github.io/2019/11/08/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90AutoTest%E3%80%91%E6%90%AD%E5%BB%BA%E5%85%B3%E9%94%AE%E5%AD%97%E9%A9%B1%E5%8A%A8%E7%9A%84Web%20UI%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。  本文将详细介绍如何使用autotest-spring-boot-starter快速搭建关键字驱动的Web UI 自动化测试框架。  使用 IDEA 搭建Spring Boot项目 引入maven依赖 默认提供的关键字列表 自定义关键字 启动项目">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20200903105805800.png">
-<meta property="og:updated_time" content="2020-09-06T07:09:49.221Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://wusuiwei.github.io/images/image-20200903105805800.png">
+<meta property="article:published_time" content="2019-11-08T05:08:09.000Z">
+<meta property="article:modified_time" content="2020-09-06T07:09:49.221Z">
+<meta property="article:author" content="wusuiwei">
+<meta property="article:tag" content="SpringBoot">
+<meta property="article:tag" content="hydrogen">
+<meta property="article:tag" content="jwt">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20200903105805800.png">
+<meta name="twitter:image" content="http://wusuiwei.github.io/images/image-20200903105805800.png">
 
 <link rel="canonical" href="http://wusuiwei.github.io/2019/11/08/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90AutoTest%E3%80%91%E6%90%AD%E5%BB%BA%E5%85%B3%E9%94%AE%E5%AD%97%E9%A9%B1%E5%8A%A8%E7%9A%84Web%20UI%20%E8%87%AA%E5%8A%A8%E5%8C%96%E6%A1%86%E6%9E%B6/">
 
@@ -118,6 +122,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="wusuiwei" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -168,6 +173,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-finance">
+
+    <a href="/finance/" rel="section"><i class="fa fa-fw fa-line-chart"></i>理财</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -313,7 +323,7 @@
 <li>自定义关键字</li>
 <li>启动项目</li>
 </ul>
-<a id="more"></a>
+<span id="more"></span>
 
 <h3 id="搭建-Spring-Boot-项目"><a href="#搭建-Spring-Boot-项目" class="headerlink" title="搭建 Spring Boot 项目"></a>搭建 Spring Boot 项目</h3><blockquote>
 <p>开发工具：IDEA</p>
@@ -321,7 +331,7 @@
 <h3 id="引入maven依赖"><a href="#引入maven依赖" class="headerlink" title="引入maven依赖"></a>引入maven依赖</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">properties</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">autotest.version</span>&gt;</span>1.0.0-SNAPSHOT<span class="tag">&lt;/<span class="name">autotest.version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">properties</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.github.wusuiwei<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>autotest-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>$&#123;autotest.version&#125;<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="默认关键字列表"><a href="#默认关键字列表" class="headerlink" title="默认关键字列表"></a>默认关键字列表</h3><h3 id="自定义关键字"><a href="#自定义关键字" class="headerlink" title="自定义关键字"></a>自定义关键字</h3><p>自定义关键字也是非常建单的，只需要新建一个java类，并标识<code>@keywords</code>注解，并在每个方法上标注<code>@keyword</code>.</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Keywords</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SeleniumActionKeywords</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> WebDriver driver;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Keyword</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">openBrowser</span><span class="params">(String browserName)</span> </span>&#123;</span><br><span class="line">        System.setProperty(<span class="string">"webdriver.chrome.driver"</span>, <span class="string">"D:\\code\\github\\autotest-spring-boot\\baidu-webui-autotest\\src\\main\\resources\\chromedriver.exe"</span>);</span><br><span class="line">        driver = <span class="keyword">new</span> ChromeDriver();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Thread.sleep(<span class="number">2000</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        driver.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Keywords</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SeleniumActionKeywords</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> WebDriver driver;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Keyword</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">openBrowser</span><span class="params">(String browserName)</span> </span>&#123;</span><br><span class="line">        System.setProperty(<span class="string">&quot;webdriver.chrome.driver&quot;</span>, <span class="string">&quot;D:\\code\\github\\autotest-spring-boot\\baidu-webui-autotest\\src\\main\\resources\\chromedriver.exe&quot;</span>);</span><br><span class="line">        driver = <span class="keyword">new</span> ChromeDriver();</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Thread.sleep(<span class="number">2000</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (InterruptedException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">        driver.close();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="启动项目"><a href="#启动项目" class="headerlink" title="启动项目"></a>启动项目</h3><p><img src="/images/image-20200903105805800.png" alt="image-20200903105805800"></p>
 
@@ -408,7 +418,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#搭建-Spring-Boot-项目"><span class="nav-number">1.</span> <span class="nav-text">搭建 Spring Boot 项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#引入maven依赖"><span class="nav-number">2.</span> <span class="nav-text">引入maven依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#默认关键字列表"><span class="nav-number">3.</span> <span class="nav-text">默认关键字列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义关键字"><span class="nav-number">4.</span> <span class="nav-text">自定义关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启动项目"><span class="nav-number">5.</span> <span class="nav-text">启动项目</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA-Spring-Boot-%E9%A1%B9%E7%9B%AE"><span class="nav-number">1.</span> <span class="nav-text">搭建 Spring Boot 项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E5%85%A5maven%E4%BE%9D%E8%B5%96"><span class="nav-number">2.</span> <span class="nav-text">引入maven依赖</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E5%85%B3%E9%94%AE%E5%AD%97%E5%88%97%E8%A1%A8"><span class="nav-number">3.</span> <span class="nav-text">默认关键字列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-number">4.</span> <span class="nav-text">自定义关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE"><span class="nav-number">5.</span> <span class="nav-text">启动项目</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -424,20 +434,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">138</span>
+          <span class="site-state-item-count">159</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">92</span>
+        <span class="site-state-item-count">113</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -592,9 +602,17 @@
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
@@ -603,7 +621,9 @@
 
 
 
-  <script src="/js/local-search.js"></script>
+  
+<script src="/js/local-search.js"></script>
+
 
 
 

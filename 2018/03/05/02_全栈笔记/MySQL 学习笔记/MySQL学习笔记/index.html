@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -52,18 +52,20 @@
 </script>
 
   <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。  本文主要是 MySQL 学习及使用过程中的总结，内容将随理解的不断加深优化。">
-<meta name="keywords" content="mysql">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MySQL学习总结">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2018&#x2F;03&#x2F;05&#x2F;02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0&#x2F;MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;index.html">
+<meta property="og:url" content="http://wusuiwei.github.io/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。  本文主要是 MySQL 学习及使用过程中的总结，内容将随理解的不断加深优化。">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;vwjjm1jgjc.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20200223111307335.png">
-<meta property="og:updated_time" content="2021-01-19T02:53:12.447Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://wusuiwei.github.io/images/vwjjm1jgjc.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/image-20200223111307335.png">
+<meta property="article:published_time" content="2018-03-05T06:06:04.000Z">
+<meta property="article:modified_time" content="2021-01-19T02:53:12.447Z">
+<meta property="article:author" content="wusuiwei">
+<meta property="article:tag" content="mysql">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;vwjjm1jgjc.png">
+<meta name="twitter:image" content="http://wusuiwei.github.io/images/vwjjm1jgjc.png">
 
 <link rel="canonical" href="http://wusuiwei.github.io/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
@@ -119,6 +121,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="wusuiwei" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -169,6 +172,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-finance">
+
+    <a href="/finance/" rel="section"><i class="fa fa-fw fa-line-chart"></i>理财</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -307,9 +315,9 @@
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
 <p>本文主要是 MySQL 学习及使用过程中的总结，内容将随理解的不断加深优化。</p>
-<a id="more"></a>
+<span id="more"></span>
 
-<h2 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h2><p><strong>MySQL(<a href="https://www.mysql.com)：开源的轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：开源的轻量级关系型数据库。</a></strong></p>
+<h2 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h2><p><strong>MySQL(<a href="https://www.mysql.com)：开源的轻量级关系型数据库。">https://www.mysql.com)：开源的轻量级关系型数据库。</a></strong></p>
 <h3 id="基于Docker安装MySQL"><a href="#基于Docker安装MySQL" class="headerlink" title="基于Docker安装MySQL"></a>基于Docker安装MySQL</h3><ul>
 <li>拉取最新的 MySQL 镜像：<code>docker pull mysql</code></li>
 <li>启动镜像，映射端口、指定root密码并挂载日志、配置文件及数据</li>
@@ -323,12 +331,12 @@
 </li>
 <li><p><strong>服务层</strong>：</p>
 <ul>
-<li>管理服务组件和工具组件(Management Service &amp; Utilities) ：  提供对MySQL的集成管理，如备份(Backup),恢复(Recovery),安全管理(Security)等</li>
-<li>连接池组件(Connection Pool) ：负责监听对客户端向MySQL Server端的各种请求，接收请求，转发请求到目标模块</li>
-<li>SQL接口组件(SQL Interface) ：  接收用户SQL命令</li>
-<li>查询分析器组件(Parser) ：解析SQL命令</li>
-<li>优化器组件（Optimizer）：对SQL命令按照标准流程进行优化分析</li>
-<li>缓存主件（Caches &amp; Buffers） ： 缓存和缓冲组件 </li>
+<li> 管理服务组件和工具组件(Management Service &amp; Utilities) ：  提供对MySQL的集成管理，如备份(Backup),恢复(Recovery),安全管理(Security)等</li>
+<li> 连接池组件(Connection Pool) ：负责监听对客户端向MySQL Server端的各种请求，接收请求，转发请求到目标模块</li>
+<li> SQL接口组件(SQL Interface) ：  接收用户SQL命令</li>
+<li> 查询分析器组件(Parser) ：解析SQL命令</li>
+<li> 优化器组件（Optimizer）：对SQL命令按照标准流程进行优化分析</li>
+<li> 缓存主件（Caches &amp; Buffers） ： 缓存和缓冲组件 </li>
 </ul>
 </li>
 <li><p><strong>引擎层</strong>： 插件式存储引擎（Pluggable Storage Engines）</p>
@@ -345,9 +353,9 @@
 </ul>
 <h4 id="劣势"><a href="#劣势" class="headerlink" title="劣势"></a>劣势</h4><ul>
 <li>建立索引后，查询速度变快，但更新（insert、update、delete）数据变慢。</li>
-<li>性能下降的原因很可能是索引失效导致。</li>
-<li>索引创建的原则，经常查询的字段适合创建索引，频繁需要更新的数据不适合创建索引。 </li>
-<li>索引字段频繁更新，或者表数据物理删除容易造成索引失效。 </li>
+<li> 性能下降的原因很可能是索引失效导致。</li>
+<li> 索引创建的原则，经常查询的字段适合创建索引，频繁需要更新的数据不适合创建索引。 </li>
+<li> 索引字段频繁更新，或者表数据物理删除容易造成索引失效。 </li>
 </ul>
 <h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><ul>
 <li><p><strong>单值索引</strong>：一个索引只包含单列，一个表可以有多个单值索引</p>
@@ -357,7 +365,7 @@
 <li><p><strong>复合索引</strong>：一个索引包含多列</p>
 </li>
 </ul>
-<h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建索引</span></span><br><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line"><span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span>  [<span class="keyword">UNIQUE</span>] <span class="keyword">INDEX</span> index_name <span class="keyword">ON</span> mytable(column_name(<span class="keyword">length</span>));</span><br><span class="line">	<span class="comment">#主键</span></span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">ADD</span> PRIMARY <span class="keyword">KEY</span> (column_list);</span><br><span class="line">	<span class="comment">#唯一索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#普通索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">INDEX</span> index_name (column_list);</span><br><span class="line">	<span class="comment">#全文索引</span></span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> FULLTEXT index_name (column_list);</span><br><span class="line"></span><br><span class="line"><span class="comment">#删除索引</span></span><br><span class="line"><span class="keyword">DROP</span> <span class="keyword">INDEX</span> [indexname] <span class="keyword">ON</span> mytable;</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看索引</span></span><br><span class="line"><span class="keyword">SHOW</span> <span class="keyword">INDEX</span> <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure>
+<h4 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"># 创建索引</span><br><span class="line"><span class="keyword">CREATE</span> [<span class="keyword">UNIQUE</span>] INDEX index_name <span class="keyword">ON</span> mytable(column_name(length));</span><br><span class="line"><span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span>  [<span class="keyword">UNIQUE</span>] INDEX index_name <span class="keyword">ON</span> mytable(column_name(length));</span><br><span class="line">	#主键</span><br><span class="line">	<span class="keyword">ALTER</span> <span class="keyword">TABLE</span> tbl_name <span class="keyword">ADD</span> <span class="keyword">PRIMARY</span> KEY (column_list);</span><br><span class="line">	#唯一索引</span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> <span class="keyword">UNIQUE</span> INDEX index_name (column_list);</span><br><span class="line">	#普通索引</span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> INDEX index_name (column_list);</span><br><span class="line">	#全文索引</span><br><span class="line">	<span class="keyword">ALTER</span> mytable <span class="keyword">ADD</span> FULLTEXT index_name (column_list);</span><br><span class="line"></span><br><span class="line">#删除索引</span><br><span class="line"><span class="keyword">DROP</span> INDEX [indexname] <span class="keyword">ON</span> mytable;</span><br><span class="line"></span><br><span class="line">#查看索引</span><br><span class="line"><span class="keyword">SHOW</span> INDEX <span class="keyword">FROM</span> table_name</span><br></pre></td></tr></table></figure>
 
 <h4 id="索引结构"><a href="#索引结构" class="headerlink" title="索引结构"></a>索引结构</h4><ul>
 <li><p><strong>BTree索引</strong></p>
@@ -390,7 +398,7 @@
 <li>id不同，如果是子查询，id的序号会递增，id值越大优先级越高，越先被执行</li>
 <li>id相同不同，同时存在</li>
 </ul>
-<p><strong>select_type:</strong>查询的类型，用于区别普通查询，联合查询，子查询的复杂查询；</p>
+<p>**select_type:**查询的类型，用于区别普通查询，联合查询，子查询的复杂查询；</p>
 <p>取值有：SIMPLE、PRIMARY、SUBQUERY、 DERIVED、UNION、UNION RESULT。</p>
 <ul>
 <li><strong>SIMPLE</strong>：简单的查询，查询中不包括子查询或UNION</li>
@@ -435,16 +443,16 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2018/03/03/01_%E8%BD%AF%E4%BB%B6/Linux%20%E8%BD%AF%E4%BB%B6/%E3%80%90CentOS%208%E3%80%91Maven%20%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" rel="next" title="【Linux】CentOS 8 下安装maven">
-                  <i class="fa fa-chevron-left"></i> 【Linux】CentOS 8 下安装maven
+                <a href="/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%20SE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next" title="【Java】Java核心技术">
+                  <i class="fa fa-chevron-left"></i> 【Java】Java核心技术
                 </a>
             </div>
 
             <span class="post-nav-divider"></span>
 
             <div class="post-nav-prev post-nav-item">
-                <a href="/2018/03/05/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Java%20SE%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Java%20SE%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="prev" title="【Java】Java核心技术">
-                  【Java】Java核心技术 <i class="fa fa-chevron-right"></i>
+                <a href="/2018/05/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen%E3%80%91%E6%95%B4%E4%BD%93%E6%A1%86%E6%9E%B6%E8%AE%BE%E8%AE%A1/" rel="prev" title="【Hydrogen】整体框架设计">
+                  【Hydrogen】整体框架设计 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -485,7 +493,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL-概要"><span class="nav-number">1.</span> <span class="nav-text">MySQL 概要</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基于Docker安装MySQL"><span class="nav-number">1.1.</span> <span class="nav-text">基于Docker安装MySQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-Server逻辑架构介绍"><span class="nav-number">1.2.</span> <span class="nav-text">MySQL Server逻辑架构介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-存储引擎"><span class="nav-number">1.3.</span> <span class="nav-text">MySQL 存储引擎</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#索引-Index"><span class="nav-number">1.4.</span> <span class="nav-text">索引(Index)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#简介"><span class="nav-number">1.4.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#优势"><span class="nav-number">1.4.2.</span> <span class="nav-text">优势</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#劣势"><span class="nav-number">1.4.3.</span> <span class="nav-text">劣势</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分类"><span class="nav-number">1.4.4.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基本语法"><span class="nav-number">1.4.5.</span> <span class="nav-text">基本语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#索引结构"><span class="nav-number">1.4.6.</span> <span class="nav-text">索引结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#性能分析"><span class="nav-number">1.5.</span> <span class="nav-text">性能分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#EXPALIN"><span class="nav-number">1.5.1.</span> <span class="nav-text">EXPALIN</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查询截取分析"><span class="nav-number">1.6.</span> <span class="nav-text">查询截取分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-锁机制"><span class="nav-number">1.7.</span> <span class="nav-text">MySQL 锁机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#主从复制"><span class="nav-number">1.8.</span> <span class="nav-text">主从复制</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL-%E6%A6%82%E8%A6%81"><span class="nav-number">1.</span> <span class="nav-text">MySQL 概要</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E4%BA%8EDocker%E5%AE%89%E8%A3%85MySQL"><span class="nav-number">1.1.</span> <span class="nav-text">基于Docker安装MySQL</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-Server%E9%80%BB%E8%BE%91%E6%9E%B6%E6%9E%84%E4%BB%8B%E7%BB%8D"><span class="nav-number">1.2.</span> <span class="nav-text">MySQL Server逻辑架构介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E"><span class="nav-number">1.3.</span> <span class="nav-text">MySQL 存储引擎</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95-Index"><span class="nav-number">1.4.</span> <span class="nav-text">索引(Index)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%80%E4%BB%8B"><span class="nav-number">1.4.1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BC%98%E5%8A%BF"><span class="nav-number">1.4.2.</span> <span class="nav-text">优势</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8A%A3%E5%8A%BF"><span class="nav-number">1.4.3.</span> <span class="nav-text">劣势</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%86%E7%B1%BB"><span class="nav-number">1.4.4.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-number">1.4.5.</span> <span class="nav-text">基本语法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%B4%A2%E5%BC%95%E7%BB%93%E6%9E%84"><span class="nav-number">1.4.6.</span> <span class="nav-text">索引结构</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%80%A7%E8%83%BD%E5%88%86%E6%9E%90"><span class="nav-number">1.5.</span> <span class="nav-text">性能分析</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#EXPALIN"><span class="nav-number">1.5.1.</span> <span class="nav-text">EXPALIN</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9F%A5%E8%AF%A2%E6%88%AA%E5%8F%96%E5%88%86%E6%9E%90"><span class="nav-number">1.6.</span> <span class="nav-text">查询截取分析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-%E9%94%81%E6%9C%BA%E5%88%B6"><span class="nav-number">1.7.</span> <span class="nav-text">MySQL 锁机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6"><span class="nav-number">1.8.</span> <span class="nav-text">主从复制</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -501,20 +509,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">138</span>
+          <span class="site-state-item-count">159</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">92</span>
+        <span class="site-state-item-count">113</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -669,9 +677,17 @@
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
@@ -680,7 +696,9 @@
 
 
 
-  <script src="/js/local-search.js"></script>
+  
+<script src="/js/local-search.js"></script>
+
 
 
 

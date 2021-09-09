@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -52,14 +52,16 @@
 </script>
 
   <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。  这篇文章主要介绍MySQL的一些基本用法与总结。">
-<meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【MySQL】基础知识点总结">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2018&#x2F;05&#x2F;07&#x2F;02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0&#x2F;MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87&#x2F;index.html">
+<meta property="og:url" content="http://wusuiwei.github.io/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。  这篇文章主要介绍MySQL的一些基本用法与总结。">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-01-28T16:31:19.504Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-05-07T06:06:04.000Z">
+<meta property="article:modified_time" content="2021-01-31T14:40:54.423Z">
+<meta property="article:author" content="wusuiwei">
+<meta property="article:tag" content="MySQL">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://wusuiwei.github.io/2018/05/07/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/MySQL%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90MySQL%E3%80%91%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E7%AF%87/">
@@ -116,6 +118,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="wusuiwei" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -166,6 +169,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-finance">
+
+    <a href="/finance/" rel="section"><i class="fa fa-fw fa-line-chart"></i>理财</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -254,7 +262,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-01-29 00:31:19" itemprop="dateModified" datetime="2021-01-29T00:31:19+08:00">2021-01-29</time>
+                <time title="修改时间：2021-01-31 22:40:54" itemprop="dateModified" datetime="2021-01-31T22:40:54+08:00">2021-01-31</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -304,10 +312,10 @@
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
 <p>这篇文章主要介绍MySQL的一些基本用法与总结。</p>
-<a id="more"></a>
+<span id="more"></span>
 
-<h3 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h3><p><strong>MySQL(<a href="https://www.mysql.com)：轻量级关系型数据库。" target="_blank" rel="noopener">https://www.mysql.com)：轻量级关系型数据库。</a></strong></p>
-<p><strong>CentOS下yum安装：</strong><a href="https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html" target="_blank" rel="noopener">https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html</a></p>
+<h3 id="MySQL-概要"><a href="#MySQL-概要" class="headerlink" title="MySQL 概要"></a>MySQL 概要</h3><p><strong>MySQL(<a href="https://www.mysql.com)：轻量级关系型数据库。">https://www.mysql.com)：轻量级关系型数据库。</a></strong></p>
+<p><strong>CentOS下yum安装：</strong><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html">https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html</a></p>
 <p><strong>基于Docker安装：</strong></p>
 <ul>
 <li>拉取最新的 MySQL 镜像：<code>docker pull mysql</code></li>
@@ -367,92 +375,76 @@
 <h4 id="算术运算符"><a href="#算术运算符" class="headerlink" title="算术运算符"></a>算术运算符</h4><h4 id="比较运算符"><a href="#比较运算符" class="headerlink" title="比较运算符"></a>比较运算符</h4><h4 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h4><h4 id="位运算符"><a href="#位运算符" class="headerlink" title="位运算符"></a>位运算符</h4><h3 id="MySQL-常用函数"><a href="#MySQL-常用函数" class="headerlink" title="MySQL 常用函数"></a>MySQL 常用函数</h3><h4 id="字符串函数"><a href="#字符串函数" class="headerlink" title="字符串函数"></a>字符串函数</h4><h4 id="数值函数"><a href="#数值函数" class="headerlink" title="数值函数"></a>数值函数</h4><h4 id="日期和时间函数"><a href="#日期和时间函数" class="headerlink" title="日期和时间函数"></a>日期和时间函数</h4><h4 id="流程函数"><a href="#流程函数" class="headerlink" title="流程函数"></a>流程函数</h4><h4 id="其他常用函数"><a href="#其他常用函数" class="headerlink" title="其他常用函数"></a>其他常用函数</h4><h3 id="MySQL-SQL语句"><a href="#MySQL-SQL语句" class="headerlink" title="MySQL SQL语句"></a>MySQL SQL语句</h3><h4 id="DDL-Data-Definition-Languages"><a href="#DDL-Data-Definition-Languages" class="headerlink" title="DDL(Data Definition Languages)"></a>DDL(Data Definition Languages)</h4><p><strong>数据库操作</strong></p>
 <ul>
 <li><p>查看当前所有数据库</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">databases</span>;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> databases;</span><br></pre></td></tr></table></figure></li>
 <li><p>创建数据库：CREATE DATABASE 数据库名;</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">DATABASE</span> RUNOOB;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">create</span> DATABASE RUNOOB;</span><br></pre></td></tr></table></figure></li>
 <li><p>选择数据库：use 数据库名;</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> RUNOOB;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use RUNOOB;</span><br></pre></td></tr></table></figure></li>
 <li><p>删除数据库：drop database &lt;数据库名&gt;;</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> RUNOOB;</span><br></pre></td></tr></table></figure>
-
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> database RUNOOB;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <p><strong>数据表操作</strong></p>
 <ul>
 <li><p>查看所有数据表</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">tables</span>;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> tables;</span><br></pre></td></tr></table></figure></li>
 <li><p>查看单表创建语句</p>
 <p>语法：<code>show create table 数据表名 ;</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">create</span> <span class="keyword">table</span> emp;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">show</span> <span class="keyword">create</span> <span class="keyword">table</span> emp;</span><br></pre></td></tr></table></figure></li>
 <li><p>查看单表结构</p>
 <p>语法：<code>desc 数据库名;</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">desc temp;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">desc</span> temp;</span><br></pre></td></tr></table></figure></li>
 <li><p>创建数据表</p>
 <p>语法：<code>CREATE TABLE table_name (column_name column_type);</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> <span class="keyword">IF</span> <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> <span class="string">`runoob_tbl`</span>(</span><br><span class="line">   <span class="string">`runoob_id`</span> <span class="built_in">INT</span> <span class="keyword">UNSIGNED</span> AUTO_INCREMENT,</span><br><span class="line">   <span class="string">`runoob_title`</span> <span class="built_in">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`runoob_author`</span> <span class="built_in">VARCHAR</span>(<span class="number">40</span>) <span class="keyword">NOT</span> <span class="literal">NULL</span>,</span><br><span class="line">   <span class="string">`submission_date`</span> <span class="built_in">DATE</span>,</span><br><span class="line">   PRIMARY <span class="keyword">KEY</span> ( <span class="string">`runoob_id`</span> )</span><br><span class="line">)<span class="keyword">ENGINE</span>=<span class="keyword">InnoDB</span> <span class="keyword">DEFAULT</span> <span class="keyword">CHARSET</span>=utf8;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">TABLE</span> IF <span class="keyword">NOT</span> <span class="keyword">EXISTS</span> `runoob_tbl`(</span><br><span class="line">   `runoob_id` <span class="type">INT</span> UNSIGNED AUTO_INCREMENT,</span><br><span class="line">   `runoob_title` <span class="type">VARCHAR</span>(<span class="number">100</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">   `runoob_author` <span class="type">VARCHAR</span>(<span class="number">40</span>) <span class="keyword">NOT</span> <span class="keyword">NULL</span>,</span><br><span class="line">   `submission_date` <span class="type">DATE</span>,</span><br><span class="line">   <span class="keyword">PRIMARY</span> KEY ( `runoob_id` )</span><br><span class="line">)ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8;</span><br></pre></td></tr></table></figure></li>
 <li><p>删除数据表</p>
 <p>语法：<code>DROP TABLE table_name ;</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> runoob_tbl;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DROP</span> <span class="keyword">TABLE</span> runoob_tbl;</span><br></pre></td></tr></table></figure></li>
 <li><p>修改数据表名</p>
 <p>语法：<code>ALTER TABLE table_name RENAME [TO] new_table_name;</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">rename</span> emp1;</span><br></pre></td></tr></table></figure>
-
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp rename emp1;</span><br></pre></td></tr></table></figure></li>
 </ul>
 <p><strong>数据表结构操作</strong></p>
 <ul>
 <li><p>增加表字段</p>
 <p>语法：<code>ALTER TABLE table_name ADD [COLUMN] column_definition [FIRST | AFTER col_name];</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">ADD</span> <span class="keyword">column</span> age <span class="built_in">int</span>(<span class="number">11</span>);</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">ADD</span> <span class="keyword">column</span> age <span class="type">int</span>(<span class="number">11</span>);</span><br></pre></td></tr></table></figure></li>
 <li><p>删除表字段</p>
 <p>语法：<code>ALTER TABLE table_name DROP [COLUMN] col_name;</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">DROP</span>  <span class="keyword">column</span> age;</span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">DROP</span>  <span class="keyword">column</span> age;</span><br></pre></td></tr></table></figure></li>
 <li><p>修改表字段</p>
 <p>说明：modify 和 change 都可以修改表结构定义，change 需要写两次列名，不方便，但可以修改列名，modify则不能</p>
 <ul>
 <li>修改表字段名</li>
 </ul>
 <p>语法：<code>ALTER TABLE table_name CHANGE [COLUMN] old_col_name column_definition  [FIRST | AFTER col_name];</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">CHANGE</span> age age1 <span class="built_in">int</span>(<span class="number">11</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp CHANGE age age1 <span class="type">int</span>(<span class="number">11</span>);</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>修改表字段属性</li>
 </ul>
 <p>语法：<code>ALTER TABLE table_name MODIFY [COLUMN] old_col_name column_definition  [FIRST | AFTER col_name];</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">MODIFY</span> age <span class="built_in">varchar</span>(<span class="number">20</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp MODIFY age <span class="type">varchar</span>(<span class="number">20</span>);</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>修改表字段排列顺序：ADD/CHANGE/MODIFY后</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">ADD</span> birth  <span class="built_in">date</span> <span class="keyword">after</span> age；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">change</span> birth birth1 <span class="built_in">date</span> <span class="keyword">after</span> gender；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">MODIFY</span> age <span class="built_in">int</span>(<span class="number">11</span>) <span class="keyword">first</span>；</span><br></pre></td></tr></table></figure>
-
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp <span class="keyword">ADD</span> birth  <span class="type">date</span> after age；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp change birth birth1 <span class="type">date</span> after gender；</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">TABLE</span> emp MODIFY age <span class="type">int</span>(<span class="number">11</span>) <span class="keyword">first</span>；</span><br></pre></td></tr></table></figure></li>
 </ul>
 <h4 id="DML-Data-Manipulation-Languages"><a href="#DML-Data-Manipulation-Languages" class="headerlink" title="DML(Data Manipulation Languages)"></a>DML(Data Manipulation Languages)</h4><p><strong>插入记录</strong></p>
 <p>语法：<code>INSERT INTO table_name[(field1,field2,...fieldn)] VALUES(value1,value2,...,valuen);</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">desc emp;<span class="comment">#ename,hiredate,sal,deptno</span></span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> emp <span class="keyword">VALUES</span>(<span class="string">"lisa"</span>,<span class="string">"1993-06-04"</span>,<span class="string">"3000"</span>,<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">desc</span> emp;#ename,hiredate,sal,deptno</span><br><span class="line"><span class="keyword">INSERT</span> <span class="keyword">INTO</span> emp <span class="keyword">VALUES</span>(&quot;lisa&quot;,&quot;1993-06-04&quot;,&quot;3000&quot;,<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
 
 <p><strong>删除记录</strong></p>
 <p>语法：<code>DELETE FROM table_name [WHERE CONDITION];</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> ename=<span class="string">"dony"</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">DELETE</span> <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> ename<span class="operator">=</span>&quot;dony&quot;;</span><br></pre></td></tr></table></figure>
 
 <p><strong>更新记录</strong></p>
 <p>语法：<code>UPDATE table_name SET field1=value1,field2=value2,...,fieldn=valuen [WHERE CONDITION];</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">UPDATE</span> emp <span class="keyword">SET</span> sal = <span class="number">4000</span> <span class="keyword">WHERE</span> ename=<span class="string">"lisa"</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UPDATE emp <span class="keyword">SET</span> sal <span class="operator">=</span> <span class="number">4000</span> <span class="keyword">WHERE</span> ename<span class="operator">=</span>&quot;lisa&quot;;</span><br></pre></td></tr></table></figure>
 
 <p><strong>查询记录</strong></p>
 <p>语法：<code>SELETE * FROM table_name;</code></p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELETE * FROM emp;</span><br><span class="line"><span class="keyword">SELECT</span> ename,hiredate,sal,deptno <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SELETE <span class="operator">*</span> <span class="keyword">FROM</span> emp;</span><br><span class="line"><span class="keyword">SELECT</span> ename,hiredate,sal,deptno <span class="keyword">FROM</span> emp;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>去重：<code>DISTINCT</code></li>
@@ -462,21 +454,21 @@
 <ul>
 <li>条件:<code>WHERE</code></li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> deptno=<span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> emp <span class="keyword">WHERE</span> deptno<span class="operator">=</span><span class="number">1</span>;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>排序：<code>ORDER BY</code></p>
 <p>语法：<code>SELECT * FROM table_name [WHERE CONDITION] [ORDER BY field1 [DESC/ASC],field2 [DESC/ASC]]</code>;</p>
 </li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">ORDER</span> <span class="keyword">BY</span> sal <span class="keyword">desc</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> emp <span class="keyword">ORDER</span> <span class="keyword">BY</span> sal <span class="keyword">desc</span>;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>限制：<code>LIMIT</code></p>
 <p>语法：<code>SELECT * FROM table_name LIMIT offset_start,row_count</code></p>
 </li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> emp <span class="keyword">LIMIT</span> <span class="number">1</span>,<span class="number">20</span>;<span class="comment">#从1开始，20行</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> emp LIMIT <span class="number">1</span>,<span class="number">20</span>;#从<span class="number">1</span>开始，<span class="number">20</span>行</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li><p>聚合</p>
@@ -490,8 +482,7 @@
 <li>WITH ROLLUP 是可选语法，表明是否对分类聚合后的结果进行再汇总</li>
 <li>HAVING 表示对分类后的结果再进行条件的过滤</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="keyword">count</span>(<span class="number">1</span>) <span class="keyword">FROM</span> emp;<span class="comment">#查看总人数</span></span><br><span class="line"><span class="keyword">SELECT</span> deptno,<span class="keyword">count</span>(<span class="number">1</span>) <span class="keyword">FROM</span> emp <span class="keyword">GROUP</span> <span class="keyword">BY</span> deptno;<span class="comment">#统计各部门人数</span></span><br><span class="line"><span class="keyword">SELECT</span> <span class="keyword">SUM</span>(sal),<span class="keyword">max</span>(sal),<span class="keyword">min</span>(sal) <span class="keyword">FROM</span> emp;<span class="comment">#查询员工工资总额，最高和最低薪水</span></span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="built_in">count</span>(<span class="number">1</span>) <span class="keyword">FROM</span> emp;#查看总人数</span><br><span class="line"><span class="keyword">SELECT</span> deptno,<span class="built_in">count</span>(<span class="number">1</span>) <span class="keyword">FROM</span> emp <span class="keyword">GROUP</span> <span class="keyword">BY</span> deptno;#统计各部门人数</span><br><span class="line"><span class="keyword">SELECT</span> <span class="built_in">SUM</span>(sal),<span class="built_in">max</span>(sal),<span class="built_in">min</span>(sal) <span class="keyword">FROM</span> emp;#查询员工工资总额，最高和最低薪水</span><br></pre></td></tr></table></figure></li>
 <li><p>表连接</p>
 <ul>
 <li>内连接</li>
@@ -505,29 +496,28 @@
 <li><p>子查询</p>
 </li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
 <ul>
 <li>UNION联合查询</li>
 </ul>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#插入记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#删除记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#更新记录：</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#查询记录：</span></span><br><span class="line"><span class="comment"># 去重：DISTINCT</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 条件</span></span><br><span class="line"><span class="comment"># 排序:ORDER BY</span></span><br><span class="line"><span class="comment"># 限制：LIMIT</span></span><br><span class="line"><span class="comment"># 聚合:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 连接查询</span></span><br><span class="line"><span class="comment"># 子查询</span></span><br><span class="line"><span class="comment"># union联合查询</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">#插入记录：</span><br><span class="line"></span><br><span class="line">#删除记录：</span><br><span class="line"></span><br><span class="line">#更新记录：</span><br><span class="line"></span><br><span class="line">#查询记录：</span><br><span class="line"># 去重：<span class="keyword">DISTINCT</span></span><br><span class="line"></span><br><span class="line"># 条件</span><br><span class="line"># 排序:<span class="keyword">ORDER</span> <span class="keyword">BY</span></span><br><span class="line"># 限制：LIMIT</span><br><span class="line"># 聚合:</span><br><span class="line"></span><br><span class="line"># 连接查询</span><br><span class="line"># 子查询</span><br><span class="line"># <span class="keyword">union</span>联合查询</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 
 
-<h4 id="DCL-Data-Control-Languages"><a href="#DCL-Data-Control-Languages" class="headerlink" title="DCL(Data Control Languages)"></a>DCL(Data Control Languages)</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="DCL-Data-Control-Languages"><a href="#DCL-Data-Control-Languages" class="headerlink" title="DCL(Data Control Languages)"></a>DCL(Data Control Languages)</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h3 id="MySQL-视图"><a href="#MySQL-视图" class="headerlink" title="MySQL 视图"></a>MySQL 视图</h3><h3 id="MySQL-存储过程"><a href="#MySQL-存储过程" class="headerlink" title="MySQL 存储过程"></a>MySQL 存储过程</h3><h3 id="MySQL-触发器"><a href="#MySQL-触发器" class="headerlink" title="MySQL 触发器"></a>MySQL 触发器</h3><h3 id="MySQL-事务"><a href="#MySQL-事务" class="headerlink" title="MySQL 事务"></a>MySQL 事务</h3><h3 id="常见问题总结"><a href="#常见问题总结" class="headerlink" title="常见问题总结"></a>常见问题总结</h3><ol>
 <li><p><strong>Navicat 连接 MySQL 数据库失败?</strong></p>
 <p>原因分析：MySQL 8.0 +使用了<code>caching_sha2_password</code>加密方式，而navicat不支持。</p>
 <p>解决方案：修改为原有的加密规则<code>mysql_native_password</code>.</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">use</span> mysql;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘root’@’localhost’ <span class="keyword">IDENTIFIED</span> <span class="keyword">BY</span> ‘<span class="keyword">password</span>’ <span class="keyword">PASSWORD</span> <span class="keyword">EXPIRE</span> <span class="keyword">NEVER</span>; <span class="comment">#修改加密规则,如果远程需要连接，则'localhost'改为'%'</span></span><br><span class="line">4. <span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘root’@’localhost’ <span class="keyword">IDENTIFIED</span> <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> ‘<span class="keyword">password</span>’; <span class="comment">#更新一下用户的密码,,如果远程需要连接，则'localhost'改为'%'</span></span><br><span class="line"><span class="keyword">FLUSH</span> <span class="keyword">PRIVILEGES</span>; <span class="comment">#刷新权限</span></span><br></pre></td></tr></table></figure>
-</li>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br><span class="line"><span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘root’@’localhost’ IDENTIFIED <span class="keyword">BY</span> ‘password’ PASSWORD EXPIRE NEVER; #修改加密规则,如果远程需要连接，则<span class="string">&#x27;localhost&#x27;</span>改为<span class="string">&#x27;%&#x27;</span></span><br><span class="line"><span class="number">4.</span> <span class="keyword">ALTER</span> <span class="keyword">USER</span> ‘root’@’localhost’ IDENTIFIED <span class="keyword">WITH</span> mysql_native_password <span class="keyword">BY</span> ‘password’; #更新一下用户的密码,,如果远程需要连接，则<span class="string">&#x27;localhost&#x27;</span>改为<span class="string">&#x27;%&#x27;</span></span><br><span class="line">FLUSH PRIVILEGES; #刷新权限</span><br></pre></td></tr></table></figure></li>
 <li></li>
 </ol>
 
@@ -612,7 +602,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-概要"><span class="nav-number">1.</span> <span class="nav-text">MySQL 概要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-数据类型"><span class="nav-number">2.</span> <span class="nav-text">MySQL 数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数值类型"><span class="nav-number">2.1.</span> <span class="nav-text">数值类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#日期和时间类型"><span class="nav-number">2.2.</span> <span class="nav-text">日期和时间类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串类型"><span class="nav-number">2.3.</span> <span class="nav-text">字符串类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-运算符"><span class="nav-number">3.</span> <span class="nav-text">MySQL 运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#算术运算符"><span class="nav-number">3.1.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#比较运算符"><span class="nav-number">3.2.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#逻辑运算符"><span class="nav-number">3.3.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#位运算符"><span class="nav-number">3.4.</span> <span class="nav-text">位运算符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-常用函数"><span class="nav-number">4.</span> <span class="nav-text">MySQL 常用函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串函数"><span class="nav-number">4.1.</span> <span class="nav-text">字符串函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数值函数"><span class="nav-number">4.2.</span> <span class="nav-text">数值函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#日期和时间函数"><span class="nav-number">4.3.</span> <span class="nav-text">日期和时间函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#流程函数"><span class="nav-number">4.4.</span> <span class="nav-text">流程函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#其他常用函数"><span class="nav-number">4.5.</span> <span class="nav-text">其他常用函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-SQL语句"><span class="nav-number">5.</span> <span class="nav-text">MySQL SQL语句</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DDL-Data-Definition-Languages"><span class="nav-number">5.1.</span> <span class="nav-text">DDL(Data Definition Languages)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DML-Data-Manipulation-Languages"><span class="nav-number">5.2.</span> <span class="nav-text">DML(Data Manipulation Languages)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DCL-Data-Control-Languages"><span class="nav-number">5.3.</span> <span class="nav-text">DCL(Data Control Languages)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-视图"><span class="nav-number">6.</span> <span class="nav-text">MySQL 视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-存储过程"><span class="nav-number">7.</span> <span class="nav-text">MySQL 存储过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-触发器"><span class="nav-number">8.</span> <span class="nav-text">MySQL 触发器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-事务"><span class="nav-number">9.</span> <span class="nav-text">MySQL 事务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见问题总结"><span class="nav-number">10.</span> <span class="nav-text">常见问题总结</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-%E6%A6%82%E8%A6%81"><span class="nav-number">1.</span> <span class="nav-text">MySQL 概要</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.</span> <span class="nav-text">MySQL 数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.1.</span> <span class="nav-text">数值类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.2.</span> <span class="nav-text">日期和时间类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%B1%BB%E5%9E%8B"><span class="nav-number">2.3.</span> <span class="nav-text">字符串类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">3.</span> <span class="nav-text">MySQL 运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">3.1.</span> <span class="nav-text">算术运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">3.2.</span> <span class="nav-text">比较运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">3.3.</span> <span class="nav-text">逻辑运算符</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">3.4.</span> <span class="nav-text">位运算符</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0"><span class="nav-number">4.</span> <span class="nav-text">MySQL 常用函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%87%BD%E6%95%B0"><span class="nav-number">4.1.</span> <span class="nav-text">字符串函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E5%87%BD%E6%95%B0"><span class="nav-number">4.2.</span> <span class="nav-text">数值函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%E5%87%BD%E6%95%B0"><span class="nav-number">4.3.</span> <span class="nav-text">日期和时间函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%81%E7%A8%8B%E5%87%BD%E6%95%B0"><span class="nav-number">4.4.</span> <span class="nav-text">流程函数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0"><span class="nav-number">4.5.</span> <span class="nav-text">其他常用函数</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-SQL%E8%AF%AD%E5%8F%A5"><span class="nav-number">5.</span> <span class="nav-text">MySQL SQL语句</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DDL-Data-Definition-Languages"><span class="nav-number">5.1.</span> <span class="nav-text">DDL(Data Definition Languages)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DML-Data-Manipulation-Languages"><span class="nav-number">5.2.</span> <span class="nav-text">DML(Data Manipulation Languages)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DCL-Data-Control-Languages"><span class="nav-number">5.3.</span> <span class="nav-text">DCL(Data Control Languages)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-%E8%A7%86%E5%9B%BE"><span class="nav-number">6.</span> <span class="nav-text">MySQL 视图</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B"><span class="nav-number">7.</span> <span class="nav-text">MySQL 存储过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-%E8%A7%A6%E5%8F%91%E5%99%A8"><span class="nav-number">8.</span> <span class="nav-text">MySQL 触发器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#MySQL-%E4%BA%8B%E5%8A%A1"><span class="nav-number">9.</span> <span class="nav-text">MySQL 事务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93"><span class="nav-number">10.</span> <span class="nav-text">常见问题总结</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -628,20 +618,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">138</span>
+          <span class="site-state-item-count">159</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">92</span>
+        <span class="site-state-item-count">113</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -796,9 +786,17 @@
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
@@ -807,7 +805,9 @@
 
 
 
-  <script src="/js/local-search.js"></script>
+  
+<script src="/js/local-search.js"></script>
+
 
 
 

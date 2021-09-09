@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -52,18 +52,21 @@
 </script>
 
   <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。  今天，刚好用到了Spring Boot的统一异常处理，复习并总结一下。主要内容如下：  Spring Boot 提供的默认异常处理机制 如何自定义异常 项目中如何使用统一异常处理">
-<meta name="keywords" content="SpringBoot,异常处理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【Spring Boot】异常处理机制">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2019&#x2F;11&#x2F;29&#x2F;02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0&#x2F;Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;%E3%80%90Spring%20Boot%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6&#x2F;index.html">
+<meta property="og:url" content="http://wusuiwei.github.io/2019/11/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Boot%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。  今天，刚好用到了Spring Boot的统一异常处理，复习并总结一下。主要内容如下：  Spring Boot 提供的默认异常处理机制 如何自定义异常 项目中如何使用统一异常处理">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20191130232129074.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20191130232326570.png">
-<meta property="og:updated_time" content="2020-05-24T14:28:44.497Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://wusuiwei.github.io/images/image-20191130232129074.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/image-20191130232326570.png">
+<meta property="article:published_time" content="2019-11-29T03:08:09.000Z">
+<meta property="article:modified_time" content="2020-05-24T14:28:44.497Z">
+<meta property="article:author" content="wusuiwei">
+<meta property="article:tag" content="SpringBoot">
+<meta property="article:tag" content="异常处理">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20191130232129074.png">
+<meta name="twitter:image" content="http://wusuiwei.github.io/images/image-20191130232129074.png">
 
 <link rel="canonical" href="http://wusuiwei.github.io/2019/11/29/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Spring%20Boot%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Spring%20Boot%E3%80%91%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E6%9C%BA%E5%88%B6/">
 
@@ -119,6 +122,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="wusuiwei" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -169,6 +173,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-finance">
+
+    <a href="/finance/" rel="section"><i class="fa fa-fw fa-line-chart"></i>理财</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -312,7 +321,7 @@
 <li>如何自定义异常</li>
 <li>项目中如何使用统一异常处理</li>
 </ul>
-<a id="more"></a>
+<span id="more"></span>
 
 <h3 id="默认异常处理"><a href="#默认异常处理" class="headerlink" title="默认异常处理"></a>默认异常处理</h3><p>默认情况下，Spring Boot 分情况提供了两种处理方式：</p>
 <ul>
@@ -329,27 +338,29 @@
 <ul>
 <li>DefaultErrorAttributes</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>BasicErrorController</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="meta">@RequestMapping</span>(<span class="string">"$&#123;server.error.path:$&#123;error.path:/error&#125;&#125;"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BasicErrorController</span> <span class="keyword">extends</span> <span class="title">AbstractErrorController</span> </span>&#123;</span><br><span class="line">    <span class="comment">//产生html类型的数据</span></span><br><span class="line">    <span class="meta">@RequestMapping</span>(produces = MediaType.TEXT_HTML_VALUE)</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">errorHtml</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> </span>&#123;</span><br><span class="line">        HttpStatus status = getStatus(request);</span><br><span class="line">        Map&lt;String, Object&gt; model = Collections</span><br><span class="line">            .unmodifiableMap(getErrorAttributes(request, isIncludeStackTrace(request, MediaType.TEXT_HTML)));</span><br><span class="line">        response.setStatus(status.value());</span><br><span class="line">        <span class="comment">//去哪个页面作为错误页面，包含页面地址和页面内容</span></span><br><span class="line">        ModelAndView modelAndView = resolveErrorView(request, response, status, model);</span><br><span class="line">        <span class="keyword">return</span> (modelAndView != <span class="keyword">null</span>) ? modelAndView : <span class="keyword">new</span> ModelAndView(<span class="string">"error"</span>, model);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//产生json数据</span></span><br><span class="line">    <span class="meta">@RequestMapping</span></span><br><span class="line">    <span class="keyword">public</span> ResponseEntity&lt;Map&lt;String, Object&gt;&gt; error(HttpServletRequest request) &#123;</span><br><span class="line">        HttpStatus status = getStatus(request);</span><br><span class="line">        <span class="keyword">if</span> (status == HttpStatus.NO_CONTENT) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> ResponseEntity&lt;&gt;(status);</span><br><span class="line">        &#125;</span><br><span class="line">        Map&lt;String, Object&gt; body = getErrorAttributes(request, isIncludeStackTrace(request, MediaType.ALL));</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ResponseEntity&lt;&gt;(body, status);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Controller</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;$&#123;server.error.path:$&#123;error.path:/error&#125;&#125;&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BasicErrorController</span> <span class="keyword">extends</span> <span class="title">AbstractErrorController</span> </span>&#123;</span><br><span class="line">    <span class="comment">//产生html类型的数据</span></span><br><span class="line">    <span class="meta">@RequestMapping(produces = MediaType.TEXT_HTML_VALUE)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> ModelAndView <span class="title">errorHtml</span><span class="params">(HttpServletRequest request, HttpServletResponse response)</span> </span>&#123;</span><br><span class="line">        HttpStatus status = getStatus(request);</span><br><span class="line">        Map&lt;String, Object&gt; model = Collections</span><br><span class="line">            .unmodifiableMap(getErrorAttributes(request, isIncludeStackTrace(request, MediaType.TEXT_HTML)));</span><br><span class="line">        response.setStatus(status.value());</span><br><span class="line">        <span class="comment">//去哪个页面作为错误页面，包含页面地址和页面内容</span></span><br><span class="line">        ModelAndView modelAndView = resolveErrorView(request, response, status, model);</span><br><span class="line">        <span class="keyword">return</span> (modelAndView != <span class="keyword">null</span>) ? modelAndView : <span class="keyword">new</span> ModelAndView(<span class="string">&quot;error&quot;</span>, model);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//产生json数据</span></span><br><span class="line">    <span class="meta">@RequestMapping</span></span><br><span class="line">    <span class="keyword">public</span> ResponseEntity&lt;Map&lt;String, Object&gt;&gt; error(HttpServletRequest request) &#123;</span><br><span class="line">        HttpStatus status = getStatus(request);</span><br><span class="line">        <span class="keyword">if</span> (status == HttpStatus.NO_CONTENT) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> ResponseEntity&lt;&gt;(status);</span><br><span class="line">        &#125;</span><br><span class="line">        Map&lt;String, Object&gt; body = getErrorAttributes(request, isIncludeStackTrace(request, MediaType.ALL));</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ResponseEntity&lt;&gt;(body, status);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>ErrorPageCustomizer</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Value</span>(<span class="string">"$&#123;error.path:/error&#125;"</span>)</span><br><span class="line"><span class="keyword">private</span> String path = <span class="string">"/error"</span>;<span class="comment">//系统错误之后来到error请求来进行处理；</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Value(&quot;$&#123;error.path:/error&#125;&quot;)</span></span><br><span class="line"><span class="keyword">private</span> String path = <span class="string">&quot;/error&quot;</span>;<span class="comment">//系统错误之后来到error请求来进行处理；</span></span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>DefaultErrorViewResolver</li>
 </ul>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ModelAndView <span class="title">resolveErrorView</span><span class="params">(HttpServletRequest request, HttpStatus status, Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    ModelAndView modelAndView = resolve(String.valueOf(status.value()), model);</span><br><span class="line">    <span class="keyword">if</span> (modelAndView == <span class="keyword">null</span> &amp;&amp; SERIES_VIEWS.containsKey(status.series())) &#123;</span><br><span class="line">        modelAndView = resolve(SERIES_VIEWS.get(status.series()), model);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> modelAndView;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> ModelAndView <span class="title">resolve</span><span class="params">(String viewName, Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//默认Spring Boot可以去找到一个页面：/error/404.html</span></span><br><span class="line">    String errorViewName = <span class="string">"error/"</span> + viewName;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//模板引擎可以解析这个页面地址就用模板引擎解析</span></span><br><span class="line">    TemplateAvailabilityProvider provider = <span class="keyword">this</span>.templateAvailabilityProviders.getProvider(errorViewName,</span><br><span class="line">                                                                                           <span class="keyword">this</span>.applicationContext);</span><br><span class="line">    <span class="keyword">if</span> (provider != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="comment">//如果模板引擎可用的情况下返回到errorViewName指定的视图地址</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ModelAndView(errorViewName, model);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//模板引擎不可用，就在静态资源文件夹下找errorViewName对应的界面 error/404.html</span></span><br><span class="line">    <span class="keyword">return</span> resolveResource(errorViewName, model);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> ModelAndView <span class="title">resolveErrorView</span><span class="params">(HttpServletRequest request, HttpStatus status, Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    ModelAndView modelAndView = resolve(String.valueOf(status.value()), model);</span><br><span class="line">    <span class="keyword">if</span> (modelAndView == <span class="keyword">null</span> &amp;&amp; SERIES_VIEWS.containsKey(status.series())) &#123;</span><br><span class="line">        modelAndView = resolve(SERIES_VIEWS.get(status.series()), model);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> modelAndView;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">private</span> ModelAndView <span class="title">resolve</span><span class="params">(String viewName, Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    <span class="comment">//默认Spring Boot可以去找到一个页面：/error/404.html</span></span><br><span class="line">    String errorViewName = <span class="string">&quot;error/&quot;</span> + viewName;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//模板引擎可以解析这个页面地址就用模板引擎解析</span></span><br><span class="line">    TemplateAvailabilityProvider provider = <span class="keyword">this</span>.templateAvailabilityProviders.getProvider(errorViewName,</span><br><span class="line">                                                                                           <span class="keyword">this</span>.applicationContext);</span><br><span class="line">    <span class="keyword">if</span> (provider != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="comment">//如果模板引擎可用的情况下返回到errorViewName指定的视图地址</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ModelAndView(errorViewName, model);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//模板引擎不可用，就在静态资源文件夹下找errorViewName对应的界面 error/404.html</span></span><br><span class="line">    <span class="keyword">return</span> resolveResource(errorViewName, model);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>异常处理步骤：</p>
 <p>一旦系统出现4xx或5xx之类的错误；ErrorPageCustomizer就会生效（定制错误的响应规则）；就会来到/erroe请求，就会被BasicErrorController处理：</p>
-<p>1) 响应页面，去哪个页面由DefaultErrorViewResolver解析</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> ModelAndView <span class="title">resolveErrorView</span><span class="params">(HttpServletRequest request, HttpServletResponse response, HttpStatus status,</span></span></span><br><span class="line"><span class="function"><span class="params">                                        Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (ErrorViewResolver resolver : <span class="keyword">this</span>.errorViewResolvers) &#123;</span><br><span class="line">        ModelAndView modelAndView = resolver.resolveErrorView(request, status, model);</span><br><span class="line">        <span class="keyword">if</span> (modelAndView != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> modelAndView;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ol>
+<li>响应页面，去哪个页面由DefaultErrorViewResolver解析</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">protected</span> ModelAndView <span class="title">resolveErrorView</span><span class="params">(HttpServletRequest request, HttpServletResponse response, HttpStatus status,</span></span></span><br><span class="line"><span class="params"><span class="function">                                        Map&lt;String, Object&gt; model)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (ErrorViewResolver resolver : <span class="keyword">this</span>.errorViewResolvers) &#123;</span><br><span class="line">        ModelAndView modelAndView = resolver.resolveErrorView(request, status, model);</span><br><span class="line">        <span class="keyword">if</span> (modelAndView != <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> modelAndView;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>2）如何定制错误响应：</p>
 <ul>
@@ -372,12 +383,8 @@
 <li>以上位置都未配置错误页面，则默认来到springboot默认错误页面</li>
 </ul>
 </li>
-</ul>
-<ul>
 <li><p>如何定制错误的JSON数据：</p>
-<ul>
-<li></li>
-</ul>
+<p>- </p>
 </li>
 </ul>
 <h3 id="自定义异常处理"><a href="#自定义异常处理" class="headerlink" title="自定义异常处理"></a>自定义异常处理</h3><p><strong>定制错误页面</strong></p>
@@ -465,7 +472,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#默认异常处理"><span class="nav-number">1.</span> <span class="nav-text">默认异常处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义异常处理"><span class="nav-number">2.</span> <span class="nav-text">自定义异常处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#统一异常处理实践"><span class="nav-number">3.</span> <span class="nav-text">统一异常处理实践</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%BB%98%E8%AE%A4%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">默认异常处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">2.</span> <span class="nav-text">自定义异常处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%9F%E4%B8%80%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%E5%AE%9E%E8%B7%B5"><span class="nav-number">3.</span> <span class="nav-text">统一异常处理实践</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -481,20 +488,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">138</span>
+          <span class="site-state-item-count">159</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">92</span>
+        <span class="site-state-item-count">113</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -649,9 +656,17 @@
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
@@ -660,7 +675,9 @@
 
 
 
-  <script src="/js/local-search.js"></script>
+  
+<script src="/js/local-search.js"></script>
+
 
 
 

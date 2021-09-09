@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -52,22 +52,25 @@
 </script>
 
   <meta name="description" content="记录了IDEA下编辑Vue.js 代码的配置">
-<meta name="keywords" content="hydrogen,hydrogen-ui-master">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【Hydrogen-ui】Vue.js 环境准备（IDEA）">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2019&#x2F;11&#x2F;07&#x2F;04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0&#x2F;%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0&#x2F;%E3%80%90Hydrogen-ui%E3%80%91Vue.js%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%EF%BC%88IDEA%EF%BC%89&#x2F;index.html">
+<meta property="og:url" content="http://wusuiwei.github.io/2019/11/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen-ui%E3%80%91Vue.js%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%EF%BC%88IDEA%EF%BC%89/index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="记录了IDEA下编辑Vue.js 代码的配置">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;1574915669322.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;1574915705512.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;20190509180042603.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;20190509180056736.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;20190509180117154.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;1574918874140.png">
-<meta property="og:updated_time" content="2020-05-24T14:28:44.559Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://wusuiwei.github.io/images/1574915669322.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/1574915705512.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/20190509180042603.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/20190509180056736.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/20190509180117154.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/1574918874140.png">
+<meta property="article:published_time" content="2019-11-07T07:23:49.000Z">
+<meta property="article:modified_time" content="2020-05-24T14:28:44.559Z">
+<meta property="article:author" content="wusuiwei">
+<meta property="article:tag" content="hydrogen">
+<meta property="article:tag" content="hydrogen-ui-master">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;1574915669322.png">
+<meta name="twitter:image" content="http://wusuiwei.github.io/images/1574915669322.png">
 
 <link rel="canonical" href="http://wusuiwei.github.io/2019/11/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/%E3%80%90Hydrogen-ui%E3%80%91Vue.js%20%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87%EF%BC%88IDEA%EF%BC%89/">
 
@@ -123,6 +126,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="wusuiwei" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -173,6 +177,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-finance">
+
+    <a href="/finance/" rel="section"><i class="fa fa-fw fa-line-chart"></i>理财</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -308,7 +317,7 @@
 
       
         <p>记录了IDEA下编辑Vue.js 代码的配置</p>
-<a id="more"></a>
+<span id="more"></span>
 
 <ol>
 <li>添加”vue.js”插件</li>
@@ -327,7 +336,7 @@
 <ol start="4">
 <li>安装 Vue脚手架</li>
 </ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g vue-cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -g vue-cli</span><br></pre></td></tr></table></figure>
 
 <p>验证是否安装成功：<code>vue -V</code></p>
 <p><strong>npm下载慢的问题</strong>：添加国内镜像。</p>
@@ -348,7 +357,7 @@
 <p><img src="/images/1574918874140.png" alt="1574918874140"></p>
 <hr>
 <ul>
-<li><strong>webpack</strong> ：一个现代 JavaScript 应用程序的<em>静态模块打包器(module bundler)</em>。</li>
+<li><strong>webpack</strong> ：一个现代 JavaScript 应用程序的*静态模块打包器(module bundler)*。</li>
 </ul>
 
     </div>
@@ -448,20 +457,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">138</span>
+          <span class="site-state-item-count">159</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">92</span>
+        <span class="site-state-item-count">113</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -616,9 +625,17 @@
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
@@ -627,7 +644,9 @@
 
 
 
-  <script src="/js/local-search.js"></script>
+  
+<script src="/js/local-search.js"></script>
+
 
 
 

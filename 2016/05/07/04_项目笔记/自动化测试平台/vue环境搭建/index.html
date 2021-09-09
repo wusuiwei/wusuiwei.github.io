@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -52,20 +52,22 @@
 </script>
 
   <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。">
-<meta name="keywords" content="自动化测试平台">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue环境搭建">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2016&#x2F;05&#x2F;07&#x2F;04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0&#x2F;%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0&#x2F;vue%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA&#x2F;index.html">
+<meta property="og:url" content="http://wusuiwei.github.io/2016/05/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/vue%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20200820181810541.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20200820182034693.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20200820182735520.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20200820184108762.png">
-<meta property="og:updated_time" content="2020-08-20T13:16:51.552Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://wusuiwei.github.io/images/image-20200820181810541.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/image-20200820182034693.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/image-20200820182735520.png">
+<meta property="og:image" content="http://wusuiwei.github.io/images/image-20200820184108762.png">
+<meta property="article:published_time" content="2016-05-07T06:06:04.000Z">
+<meta property="article:modified_time" content="2020-08-20T13:16:51.552Z">
+<meta property="article:author" content="wusuiwei">
+<meta property="article:tag" content="自动化测试平台">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;images&#x2F;image-20200820181810541.png">
+<meta name="twitter:image" content="http://wusuiwei.github.io/images/image-20200820181810541.png">
 
 <link rel="canonical" href="http://wusuiwei.github.io/2016/05/07/04_%E9%A1%B9%E7%9B%AE%E7%AC%94%E8%AE%B0/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E5%B9%B3%E5%8F%B0/vue%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/">
 
@@ -121,6 +123,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="wusuiwei" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -171,6 +174,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-finance">
+
+    <a href="/finance/" rel="section"><i class="fa fa-fw fa-line-chart"></i>理财</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -308,10 +316,10 @@
         <blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<a id="more"></a>
+<span id="more"></span>
 
 <h2 id="安装-node-环境"><a href="#安装-node-环境" class="headerlink" title="安装 node 环境"></a>安装 node 环境</h2><ol>
-<li>下载地址：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">https://nodejs.org/en/</a></li>
+<li>下载地址：<a target="_blank" rel="noopener" href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
 </ol>
 <ul>
 <li>校验是否安装成功：<code>node -v</code></li>
@@ -444,7 +452,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-node-环境"><span class="nav-number">1.</span> <span class="nav-text">安装 node 环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#搭建-vue-项目环境"><span class="nav-number">2.</span> <span class="nav-text">搭建 vue 项目环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-项目搭建"><span class="nav-number">3.</span> <span class="nav-text">vue 项目搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目结构详解"><span class="nav-number">4.</span> <span class="nav-text">项目结构详解</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-node-%E7%8E%AF%E5%A2%83"><span class="nav-number">1.</span> <span class="nav-text">安装 node 环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA-vue-%E9%A1%B9%E7%9B%AE%E7%8E%AF%E5%A2%83"><span class="nav-number">2.</span> <span class="nav-text">搭建 vue 项目环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA"><span class="nav-number">3.</span> <span class="nav-text">vue 项目搭建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%AF%A6%E8%A7%A3"><span class="nav-number">4.</span> <span class="nav-text">项目结构详解</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -460,20 +468,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">138</span>
+          <span class="site-state-item-count">159</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">92</span>
+        <span class="site-state-item-count">113</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -628,9 +636,17 @@
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
@@ -639,7 +655,9 @@
 
 
 
-  <script src="/js/local-search.js"></script>
+  
+<script src="/js/local-search.js"></script>
+
 
 
 

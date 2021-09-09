@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -52,14 +52,17 @@
 </script>
 
   <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。">
-<meta name="keywords" content="UI自动化测试,PageObject">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【UI自动化测试】PageObject模式">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2018&#x2F;05&#x2F;11&#x2F;03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3&#x2F;%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&#x2F;%E3%80%90UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E3%80%91PageObject%E6%A8%A1%E5%BC%8F&#x2F;index.html">
+<meta property="og:url" content="http://wusuiwei.github.io/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E3%80%91PageObject%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2021-01-28T16:31:19.513Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-05-11T11:38:09.000Z">
+<meta property="article:modified_time" content="2021-01-28T16:31:19.513Z">
+<meta property="article:author" content="wusuiwei">
+<meta property="article:tag" content="UI自动化测试">
+<meta property="article:tag" content="PageObject">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://wusuiwei.github.io/2018/05/11/03_%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/%E3%80%90UI%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E3%80%91PageObject%E6%A8%A1%E5%BC%8F/">
@@ -116,6 +119,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="wusuiwei" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -166,6 +170,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-finance">
+
+    <a href="/finance/" rel="section"><i class="fa fa-fw fa-line-chart"></i>理财</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -303,7 +312,7 @@
         <blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<a id="more"></a>
+<span id="more"></span>
     </div>
 
     
@@ -401,20 +410,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">138</span>
+          <span class="site-state-item-count">159</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">92</span>
+        <span class="site-state-item-count">113</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -569,9 +578,17 @@
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
@@ -580,7 +597,9 @@
 
 
 
-  <script src="/js/local-search.js"></script>
+  
+<script src="/js/local-search.js"></script>
+
 
 
 

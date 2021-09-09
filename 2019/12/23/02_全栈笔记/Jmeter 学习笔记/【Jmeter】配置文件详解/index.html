@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 5.4.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -52,14 +52,17 @@
 </script>
 
   <meta name="description" content="不积跬步，无以至千里；不积小流，无以成江海。">
-<meta name="keywords" content="MyBatis Generator,MyBatis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【Jmeter】目录结构与配置文件说明">
-<meta property="og:url" content="http:&#x2F;&#x2F;wusuiwei.github.io&#x2F;2019&#x2F;12&#x2F;23&#x2F;02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0&#x2F;Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0&#x2F;%E3%80%90Jmeter%E3%80%91%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3&#x2F;index.html">
+<meta property="og:url" content="http://wusuiwei.github.io/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/index.html">
 <meta property="og:site_name" content="wusuiwei">
 <meta property="og:description" content="不积跬步，无以至千里；不积小流，无以成江海。">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-07-22T15:40:40.458Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-12-23T02:06:04.000Z">
+<meta property="article:modified_time" content="2020-07-22T15:40:40.458Z">
+<meta property="article:author" content="wusuiwei">
+<meta property="article:tag" content="MyBatis Generator">
+<meta property="article:tag" content="MyBatis">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="http://wusuiwei.github.io/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Jmeter%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Jmeter%E3%80%91%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/">
@@ -116,6 +119,7 @@
   </style>
 </noscript>
 
+<link rel="alternate" href="/atom.xml" title="wusuiwei" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -166,6 +170,11 @@
         <li class="menu-item menu-item-archives">
 
     <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-finance">
+
+    <a href="/finance/" rel="section"><i class="fa fa-fw fa-line-chart"></i>理财</a>
 
   </li>
         <li class="menu-item menu-item-about">
@@ -303,12 +312,12 @@
         <blockquote>
 <p>不积跬步，无以至千里；不积小流，无以成江海。</p>
 </blockquote>
-<a id="more"></a>
+<span id="more"></span>
 
 <h3 id="Jmeter-目录说明"><a href="#Jmeter-目录说明" class="headerlink" title="Jmeter 目录说明"></a>Jmeter 目录说明</h3><h3 id="Jmeter-常用配置文件"><a href="#Jmeter-常用配置文件" class="headerlink" title="Jmeter 常用配置文件"></a>Jmeter 常用配置文件</h3><p>一般情况下，不建议修改<code>jmeter.properties</code>和<code>reportgenerator.properties</code>，在<code>user.properties</code>文件中完成配置，需要重启才能生效。</p>
-<p>仅记录常用配置，其他配置请参考官网：<a href="https://jmeter.apache.org/usermanual/properties_reference.html" target="_blank" rel="noopener">https://jmeter.apache.org/usermanual/properties_reference.html</a></p>
+<p>仅记录常用配置，其他配置请参考官网：<a target="_blank" rel="noopener" href="https://jmeter.apache.org/usermanual/properties_reference.html">https://jmeter.apache.org/usermanual/properties_reference.html</a></p>
 <h4 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h4><p>默认情况下，GUI 语言为英文，可以修改为中文(<code>zh_CN</code>)，此属性是唯一一个必须配置在<code>jmeter.properties</code>。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">language=zh_CN</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">language=zh_CN</span><br></pre></td></tr></table></figure>
 
 <h4 id="SSL配置"><a href="#SSL配置" class="headerlink" title="SSL配置"></a>SSL配置</h4><h4 id="JDBC请求配置"><a href="#JDBC请求配置" class="headerlink" title="JDBC请求配置"></a>JDBC请求配置</h4><h4 id="jmeter集群配置"><a href="#jmeter集群配置" class="headerlink" title="jmeter集群配置"></a>jmeter集群配置</h4><h4 id="请求结果文件配置"><a href="#请求结果文件配置" class="headerlink" title="请求结果文件配置"></a>请求结果文件配置</h4>
     </div>
@@ -343,8 +352,8 @@
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
-                <a href="/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E3%80%90Linux%E3%80%91Linux%20%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84/" rel="next" title="【Linux】Linux 目录结构">
-                  <i class="fa fa-chevron-left"></i> 【Linux】Linux 目录结构
+                <a href="/2019/12/23/02_%E5%85%A8%E6%A0%88%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Linux%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next" title="Linux 学习笔记">
+                  <i class="fa fa-chevron-left"></i> Linux 学习笔记
                 </a>
             </div>
 
@@ -393,7 +402,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jmeter-目录说明"><span class="nav-number">1.</span> <span class="nav-text">Jmeter 目录说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jmeter-常用配置文件"><span class="nav-number">2.</span> <span class="nav-text">Jmeter 常用配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#语言"><span class="nav-number">2.1.</span> <span class="nav-text">语言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SSL配置"><span class="nav-number">2.2.</span> <span class="nav-text">SSL配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JDBC请求配置"><span class="nav-number">2.3.</span> <span class="nav-text">JDBC请求配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#jmeter集群配置"><span class="nav-number">2.4.</span> <span class="nav-text">jmeter集群配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#请求结果文件配置"><span class="nav-number">2.5.</span> <span class="nav-text">请求结果文件配置</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Jmeter-%E7%9B%AE%E5%BD%95%E8%AF%B4%E6%98%8E"><span class="nav-number">1.</span> <span class="nav-text">Jmeter 目录说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Jmeter-%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">Jmeter 常用配置文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%AD%E8%A8%80"><span class="nav-number">2.1.</span> <span class="nav-text">语言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SSL%E9%85%8D%E7%BD%AE"><span class="nav-number">2.2.</span> <span class="nav-text">SSL配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#JDBC%E8%AF%B7%E6%B1%82%E9%85%8D%E7%BD%AE"><span class="nav-number">2.3.</span> <span class="nav-text">JDBC请求配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#jmeter%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE"><span class="nav-number">2.4.</span> <span class="nav-text">jmeter集群配置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%B7%E6%B1%82%E7%BB%93%E6%9E%9C%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="nav-number">2.5.</span> <span class="nav-text">请求结果文件配置</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -409,20 +418,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">138</span>
+          <span class="site-state-item-count">159</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-count">29</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">92</span>
+        <span class="site-state-item-count">113</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -577,9 +586,17 @@
   <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/pisces.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
+
 
 
 
@@ -588,7 +605,9 @@
 
 
 
-  <script src="/js/local-search.js"></script>
+  
+<script src="/js/local-search.js"></script>
+
 
 
 
